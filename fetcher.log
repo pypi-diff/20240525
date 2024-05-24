@@ -97,3 +97,44 @@
 [2024-05-25 00:06:16] INFO root fetch - processPackages [fluidimage]: Remove: archive file [/home/abi/fetcher/tmp/fluidimage-0.5.2.tar.gz]
 [2024-05-25 00:06:16] INFO root fetch - main [MainThread]: End processing [fluidimage]: success
 [2024-05-25 00:06:16] INFO root fetch - main [MainThread]: Store serial: [23368547]
+[2024-05-25 00:08:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368547]
+[2024-05-25 00:08:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 00:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyspimdbg
+[2024-05-25 00:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dyff-schema
+[2024-05-25 00:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LiteEFG
+[2024-05-25 00:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkrhistoryparser
+[2024-05-25 00:08:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: latch
+[2024-05-25 00:08:26] INFO root fetch - processPackages [dyff-schema]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-05-25 00:08:26] INFO root fetch - processPackages [pkrhistoryparser]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-25 00:08:26] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-05-25 00:08:26] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/23/01/4782de6061773c418c83e33960ebaa64925b82ee8c41b73c46065d37b42c/dyff_schema-0.7.2.tar.gz
+[2024-05-25 00:08:26] WARNING root fetch - processPackages [pyspimdbg]: Skipping, unable to determine old version
+[2024-05-25 00:08:26] INFO root fetch - main [MainThread]: End processing [pyspimdbg] error
+[2024-05-25 00:08:26] INFO root fetch - processPackages [pkrhistoryparser]: Downloading https://files.pythonhosted.org/packages/d7/25/5225806e6b8f790a543b343782c496e63f49f25bc5ab48b2ee628b1e5968/pkrhistoryparser-1.1.0.tar.gz
+[2024-05-25 00:08:26] INFO root fetch - processPackages [LiteEFG]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 00:08:26] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-05-25 00:08:26] INFO root fetch - processPackages [LiteEFG]: Downloading https://files.pythonhosted.org/packages/ed/19/73a477eab9ea536531409f5b4d1bd29aee51a781d6c9115ff588c21843af/LiteEFG-0.0.5.tar.gz
+[2024-05-25 00:08:26] INFO root fetch - processPackages [pkrhistoryparser]: Downloading https://files.pythonhosted.org/packages/37/9c/56668eee739aa354b398bfa3ba42e068f1b9c4d628912798ca7e5cbd14fc/pkrhistoryparser-1.1.1.tar.gz
+[2024-05-25 00:08:26] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/6f/04/aa853d92ee00224b97b4c3532dd3e476343a025441316004bdf8cdaa95b9/dyff_schema-0.8.0.tar.gz
+[2024-05-25 00:08:26] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-05-25 00:08:26] INFO root fetch - processPackages [pkrhistoryparser]: executing diffoscope
+[2024-05-25 00:08:26] INFO root fetch - processPackages [pkrhistoryparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkrhistoryparser-1.1.0.tar.gz tmp/pkrhistoryparser-1.1.1.tar.gz --markdown 20240525/p/pkrhistoryparser/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-25 00:08:26] INFO root fetch - processPackages [dyff-schema]: executing diffoscope
+[2024-05-25 00:08:26] INFO root fetch - processPackages [dyff-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_schema-0.7.2.tar.gz tmp/dyff_schema-0.8.0.tar.gz --markdown 20240525/d/dyff-schema/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-05-25 00:08:26] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-05-25 00:08:26] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240525/l/latch/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-05-25 00:08:27] INFO root fetch - processPackages [pkrhistoryparser]: Remove: archive file [/home/abi/fetcher/tmp/pkrhistoryparser-1.1.0.tar.gz]
+[2024-05-25 00:08:27] INFO root fetch - processPackages [pkrhistoryparser]: Remove: archive file [/home/abi/fetcher/tmp/pkrhistoryparser-1.1.1.tar.gz]
+[2024-05-25 00:08:27] INFO root fetch - main [MainThread]: End processing [pkrhistoryparser]: success
+[2024-05-25 00:08:27] INFO root fetch - processPackages [LiteEFG]: Downloading https://files.pythonhosted.org/packages/8b/59/72a25319766878c15c68a3558d8a7845a2c17e8c491bd0e0fe753706ed6a/LiteEFG-0.0.6.tar.gz
+[2024-05-25 00:08:27] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-05-25 00:08:27] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.7.2.tar.gz]
+[2024-05-25 00:08:27] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-05-25 00:08:27] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.8.0.tar.gz]
+[2024-05-25 00:08:27] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-05-25 00:08:27] INFO root fetch - main [MainThread]: End processing [dyff-schema]: success
+[2024-05-25 00:08:28] INFO root fetch - processPackages [LiteEFG]: executing diffoscope
+[2024-05-25 00:08:28] INFO root fetch - processPackages [LiteEFG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LiteEFG-0.0.5.tar.gz tmp/LiteEFG-0.0.6.tar.gz --markdown 20240525/L/LiteEFG/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 00:11:28] ERROR root fetch - processPackages [LiteEFG]: Timeout during execution of pkgdiff
+[2024-05-25 00:11:28] INFO root fetch - main [MainThread]: End processing [LiteEFG] error
+[2024-05-25 00:11:28] INFO root fetch - main [MainThread]: Store serial: [23368560]
