@@ -1323,3 +1323,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:08:34] INFO root fetch - processPackages [blendsql]: Remove: archive file [/home/abi/fetcher/tmp/blendsql-0.0.16.tar.gz]
 [2024-05-25 01:08:34] INFO root fetch - main [MainThread]: End processing [blendsql]: success
 [2024-05-25 01:08:34] INFO root fetch - main [MainThread]: Store serial: [23369001]
+[2024-05-25 01:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369001]
+[2024-05-25 01:10:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 01:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hddm-s
+[2024-05-25 01:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-appointment
+[2024-05-25 01:10:42] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.72]
+[2024-05-25 01:10:42] INFO root fetch - processPackages [django-appointment]: New version: [3.6.0] Old Version: [3.5.2]
+[2024-05-25 01:10:42] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/a0/0c/583f2e3088aa999790d37fbf8bf14de52b053a583bee77d845d26387f317/hddm_s-1.0.72.tar.gz
+[2024-05-25 01:10:42] INFO root fetch - processPackages [django-appointment]: Downloading https://files.pythonhosted.org/packages/cd/f4/2e357ddc47f2202dfbd45aae6dc3296fe55d582017b30cec3838db3cf30f/django_appointment-3.5.2.tar.gz
+[2024-05-25 01:10:42] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 01:10:43] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 01:10:43] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.72.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.72-1.0.9/README.md --exclude *.pyd
+[2024-05-25 01:10:43] INFO root fetch - processPackages [django-appointment]: Downloading https://files.pythonhosted.org/packages/45/dd/bdf7886647579a88611b97cea37ce9e73b043b9780f56d8c4207a7f4bfd4/django_appointment-3.6.0.tar.gz
+[2024-05-25 01:10:43] INFO root fetch - processPackages [django-appointment]: executing diffoscope
+[2024-05-25 01:10:43] INFO root fetch - processPackages [django-appointment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_appointment-3.5.2.tar.gz tmp/django_appointment-3.6.0.tar.gz --markdown 20240525/d/django-appointment/3.5.2-3.6.0/README.md --exclude *.pyd
+[2024-05-25 01:10:43] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.72.tar.gz]
+[2024-05-25 01:10:43] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 01:10:43] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 01:10:44] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django_appointment-3.5.2.tar.gz]
+[2024-05-25 01:10:44] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django_appointment-3.6.0.tar.gz]
+[2024-05-25 01:10:44] INFO root fetch - main [MainThread]: End processing [django-appointment]: success
+[2024-05-25 01:10:44] INFO root fetch - main [MainThread]: Store serial: [23369006]
