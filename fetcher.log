@@ -1356,3 +1356,34 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:12:53] INFO root fetch - processPackages [story-protocol-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/story_protocol_python_sdk-0.2.8.tar.gz]
 [2024-05-25 01:12:53] INFO root fetch - main [MainThread]: End processing [story-protocol-python-sdk]: success
 [2024-05-25 01:12:53] INFO root fetch - main [MainThread]: Store serial: [23369009]
+[2024-05-25 01:14:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369009]
+[2024-05-25 01:15:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 01:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-merge
+[2024-05-25 01:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airbyte-source-punk-api
+[2024-05-25 01:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-azure-table
+[2024-05-25 01:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-source-lokalise
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-merge]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-azure-table]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-punk-api]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-lokalise]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-merge]: Downloading https://files.pythonhosted.org/packages/75/22/32846268ae68f08039461f70ad5b5e473c3a68865d3aa7c24940ff3984a3/airbyte-source-merge-0.1.0.tar.gz
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-punk-api]: Downloading https://files.pythonhosted.org/packages/68/bb/cea288acf1b6fc6ce4d610cbe61fa7802b97dd6019e6d6304ef5c7dfa0a1/airbyte-source-punk-api-0.1.0.tar.gz
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-azure-table]: Downloading https://files.pythonhosted.org/packages/7d/df/1c76fe6a75721e419c29fca74c0ba3b8485f8b433b98898291b764c30a55/airbyte-source-azure-table-0.1.4.tar.gz
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-lokalise]: Downloading https://files.pythonhosted.org/packages/9c/51/d30ccb5f77f3afd360066a27372bc4d24a41ecf77ac78954bdfd02b88a79/airbyte-source-lokalise-0.1.0.tar.gz
+[2024-05-25 01:15:02] ERROR root fetch - processPackages [airbyte-source-azure-table]: Unable to fetch info: No such project/version 'airbyte-source-azure-table' 0.1.5
+[2024-05-25 01:15:02] INFO root fetch - main [MainThread]: End processing [airbyte-source-azure-table] error
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-merge]: Downloading https://files.pythonhosted.org/packages/b6/7c/93cb7532641d632f62239045623833fd82dcfc2fc50c5a6d62a0ea6a5b40/airbyte_source_merge-0.1.1.tar.gz
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-punk-api]: Downloading https://files.pythonhosted.org/packages/37/e7/328dceca593456b228cb1b497940410d2004a79e237bb9d0f67b0f0983b9/airbyte_source_punk_api-0.1.1.tar.gz
+[2024-05-25 01:15:02] ERROR root fetch - processPackages [airbyte-source-lokalise]: Unable to fetch info: No such project/version 'airbyte-source-lokalise' 0.1.1
+[2024-05-25 01:15:02] INFO root fetch - main [MainThread]: End processing [airbyte-source-lokalise] error
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-merge]: executing diffoscope
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-merge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-merge-0.1.0.tar.gz tmp/airbyte_source_merge-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-merge/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-punk-api]: executing diffoscope
+[2024-05-25 01:15:02] INFO root fetch - processPackages [airbyte-source-punk-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-punk-api-0.1.0.tar.gz tmp/airbyte_source_punk_api-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-punk-api/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:15:03] INFO root fetch - processPackages [airbyte-source-merge]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-merge-0.1.0.tar.gz]
+[2024-05-25 01:15:03] INFO root fetch - processPackages [airbyte-source-merge]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_merge-0.1.1.tar.gz]
+[2024-05-25 01:15:03] INFO root fetch - main [MainThread]: End processing [airbyte-source-merge]: success
+[2024-05-25 01:15:03] INFO root fetch - processPackages [airbyte-source-punk-api]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-punk-api-0.1.0.tar.gz]
+[2024-05-25 01:15:03] INFO root fetch - processPackages [airbyte-source-punk-api]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_punk_api-0.1.1.tar.gz]
+[2024-05-25 01:15:03] INFO root fetch - main [MainThread]: End processing [airbyte-source-punk-api]: success
+[2024-05-25 01:15:03] INFO root fetch - main [MainThread]: Store serial: [23369025]
