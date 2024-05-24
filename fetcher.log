@@ -615,3 +615,18 @@
 [2024-05-25 00:39:34] INFO root fetch - processPackages [pypdf2htmlex]: Remove: archive file [/home/abi/fetcher/tmp/pypdf2htmlex-1.1.tar.gz]
 [2024-05-25 00:39:34] INFO root fetch - main [MainThread]: End processing [pypdf2htmlex]: success
 [2024-05-25 00:39:34] INFO root fetch - main [MainThread]: Store serial: [23368732]
+[2024-05-25 00:41:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368732]
+[2024-05-25 00:41:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 00:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyQuadriFlow
+[2024-05-25 00:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-grasshopper-energy
+[2024-05-25 00:41:44] WARNING root fetch - processPackages [pyQuadriFlow]: Skipping, unable to determine old version
+[2024-05-25 00:41:44] INFO root fetch - main [MainThread]: End processing [pyQuadriFlow] error
+[2024-05-25 00:41:44] INFO root fetch - processPackages [honeybee-grasshopper-energy]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-25 00:41:44] INFO root fetch - processPackages [honeybee-grasshopper-energy]: Downloading https://files.pythonhosted.org/packages/8d/41/2b1f8fcb0e971555f5d09037fa11e4fabeb60e1537e6d7116ac16db47a14/honeybee-grasshopper-energy-1.9.1.tar.gz
+[2024-05-25 00:41:46] INFO root fetch - processPackages [honeybee-grasshopper-energy]: Downloading https://files.pythonhosted.org/packages/c0/77/5ea4f5cbf977edd2c2511c83b34d974baf46a246f689d9228b3fb66f7a48/honeybee-grasshopper-energy-1.9.2.tar.gz
+[2024-05-25 00:41:47] INFO root fetch - processPackages [honeybee-grasshopper-energy]: executing diffoscope
+[2024-05-25 00:41:47] INFO root fetch - processPackages [honeybee-grasshopper-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-grasshopper-energy-1.9.1.tar.gz tmp/honeybee-grasshopper-energy-1.9.2.tar.gz --markdown 20240525/h/honeybee-grasshopper-energy/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-25 00:41:48] INFO root fetch - processPackages [honeybee-grasshopper-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-grasshopper-energy-1.9.1.tar.gz]
+[2024-05-25 00:41:48] INFO root fetch - processPackages [honeybee-grasshopper-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-grasshopper-energy-1.9.2.tar.gz]
+[2024-05-25 00:41:48] INFO root fetch - main [MainThread]: End processing [honeybee-grasshopper-energy]: success
+[2024-05-25 00:41:48] INFO root fetch - main [MainThread]: Store serial: [23368739]
