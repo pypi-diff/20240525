@@ -729,3 +729,42 @@
 [2024-05-25 00:46:10] INFO root fetch - processPackages [commit-message-validator]: Remove: archive file [/home/abi/fetcher/tmp/commit_message_validator-2.1.0.tar.gz]
 [2024-05-25 00:46:10] INFO root fetch - main [MainThread]: End processing [commit-message-validator]: success
 [2024-05-25 00:46:10] INFO root fetch - main [MainThread]: Store serial: [23368772]
+[2024-05-25 00:48:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368772]
+[2024-05-25 00:48:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 00:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-05-25 00:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: story-protocol-python-sdk
+[2024-05-25 00:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EasyOIDC
+[2024-05-25 00:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigraph-schema
+[2024-05-25 00:48:19] INFO root fetch - processPackages [story-protocol-python-sdk]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-25 00:48:19] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b2] Old Version: [1.5.0b1]
+[2024-05-25 00:48:19] INFO root fetch - processPackages [EasyOIDC]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 00:48:19] INFO root fetch - processPackages [bigraph-schema]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 00:48:19] INFO root fetch - processPackages [story-protocol-python-sdk]: Downloading https://files.pythonhosted.org/packages/80/1e/5927b637dab79000bcc3e51de18a6a4d4ac46aee335649339a2c955613af/story_protocol_python_sdk-0.2.6.tar.gz
+[2024-05-25 00:48:19] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/26/f9/b56d0a77b8b295640fdbc36e8e27eb0ae41e5235646b5490f7f1d0887023/scrapegraphai-1.5.0b1.tar.gz
+[2024-05-25 00:48:19] INFO root fetch - processPackages [EasyOIDC]: Downloading https://files.pythonhosted.org/packages/4b/79/4f2ac86738de2e8159df953939af1b850d9d463f80e29b09848227988826/easyoidc-0.1.8.tar.gz
+[2024-05-25 00:48:19] INFO root fetch - processPackages [bigraph-schema]: Downloading https://files.pythonhosted.org/packages/df/8e/61432e7e2966e9e03a0109b78f810b877d0a4243c7fc3e9379a460c0dbc4/bigraph-schema-0.0.8.tar.gz
+[2024-05-25 00:48:19] INFO root fetch - processPackages [EasyOIDC]: Downloading https://files.pythonhosted.org/packages/50/f2/b1d044897ca6a947ebc48cef8b5576249bb061227a14ae5f24cdffcaeb99/easyoidc-0.1.9.tar.gz
+[2024-05-25 00:48:20] INFO root fetch - processPackages [story-protocol-python-sdk]: Downloading https://files.pythonhosted.org/packages/60/e0/8d1e9cfe84e777778a63db2f07ebe03490836bf282f2032d8e1df4dc11f6/story_protocol_python_sdk-0.2.7.tar.gz
+[2024-05-25 00:48:20] INFO root fetch - processPackages [EasyOIDC]: executing diffoscope
+[2024-05-25 00:48:20] INFO root fetch - processPackages [EasyOIDC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyoidc-0.1.8.tar.gz tmp/easyoidc-0.1.9.tar.gz --markdown 20240525/E/EasyOIDC/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 00:48:20] INFO root fetch - processPackages [story-protocol-python-sdk]: executing diffoscope
+[2024-05-25 00:48:20] INFO root fetch - processPackages [story-protocol-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/story_protocol_python_sdk-0.2.6.tar.gz tmp/story_protocol_python_sdk-0.2.7.tar.gz --markdown 20240525/s/story-protocol-python-sdk/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-25 00:48:20] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/3d/9c/a428022cfffac859c8a5622c284157408dc0f6f2e9e1ee083dde27672a79/scrapegraphai-1.5.0b2.tar.gz
+[2024-05-25 00:48:20] INFO root fetch - processPackages [bigraph-schema]: Downloading https://files.pythonhosted.org/packages/18/e5/fff625d433358f1bf734149e805b1d565b616ead4a146f56f4807198801e/bigraph-schema-0.0.9.tar.gz
+[2024-05-25 00:48:20] INFO root fetch - processPackages [bigraph-schema]: executing diffoscope
+[2024-05-25 00:48:20] INFO root fetch - processPackages [bigraph-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-schema-0.0.8.tar.gz tmp/bigraph-schema-0.0.9.tar.gz --markdown 20240525/b/bigraph-schema/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 00:48:20] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-25 00:48:20] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b1.tar.gz tmp/scrapegraphai-1.5.0b2.tar.gz --markdown 20240525/s/scrapegraphai/1.5.0b1-1.5.0b2/README.md --exclude *.pyd
+[2024-05-25 00:48:20] INFO root fetch - processPackages [EasyOIDC]: Remove: archive file [/home/abi/fetcher/tmp/easyoidc-0.1.8.tar.gz]
+[2024-05-25 00:48:20] INFO root fetch - processPackages [EasyOIDC]: Remove: archive file [/home/abi/fetcher/tmp/easyoidc-0.1.9.tar.gz]
+[2024-05-25 00:48:20] INFO root fetch - main [MainThread]: End processing [EasyOIDC]: success
+[2024-05-25 00:48:20] INFO root fetch - processPackages [story-protocol-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/story_protocol_python_sdk-0.2.6.tar.gz]
+[2024-05-25 00:48:20] INFO root fetch - processPackages [story-protocol-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/story_protocol_python_sdk-0.2.7.tar.gz]
+[2024-05-25 00:48:20] INFO root fetch - main [MainThread]: End processing [story-protocol-python-sdk]: success
+[2024-05-25 00:48:20] INFO root fetch - processPackages [bigraph-schema]: Remove: archive file [/home/abi/fetcher/tmp/bigraph-schema-0.0.8.tar.gz]
+[2024-05-25 00:48:20] INFO root fetch - processPackages [bigraph-schema]: Remove: archive file [/home/abi/fetcher/tmp/bigraph-schema-0.0.9.tar.gz]
+[2024-05-25 00:48:20] INFO root fetch - main [MainThread]: End processing [bigraph-schema]: success
+[2024-05-25 00:48:22] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b1.tar.gz]
+[2024-05-25 00:48:22] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b2.tar.gz]
+[2024-05-25 00:48:22] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-25 00:48:22] INFO root fetch - main [MainThread]: Store serial: [23368783]
