@@ -1302,3 +1302,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:06:23] INFO root fetch - processPackages [jupyterlab-optumi]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab-optumi-3.9.9.tar.gz]
 [2024-05-25 01:06:23] INFO root fetch - main [MainThread]: End processing [jupyterlab-optumi]: success
 [2024-05-25 01:06:23] INFO root fetch - main [MainThread]: Store serial: [23368995]
+[2024-05-25 01:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368995]
+[2024-05-25 01:08:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 01:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hddm-s
+[2024-05-25 01:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blendsql
+[2024-05-25 01:08:33] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.71]
+[2024-05-25 01:08:33] INFO root fetch - processPackages [blendsql]: New version: [0.0.16] Old Version: [0.0.15]
+[2024-05-25 01:08:33] INFO root fetch - processPackages [blendsql]: Downloading https://files.pythonhosted.org/packages/23/ea/cc5817bfce365fc7459776b313cc8bdc2d5417645bb93638050410966ce2/blendsql-0.0.15.tar.gz
+[2024-05-25 01:08:33] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/51/27/ffcc9b4d32a839a76e7da9b85b47c2c675ea66591c4a848a11b155736803/hddm_s-1.0.71.tar.gz
+[2024-05-25 01:08:33] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 01:08:33] INFO root fetch - processPackages [blendsql]: Downloading https://files.pythonhosted.org/packages/29/8e/6501f47cdcb157b6173a7f88d70071dea7d98f781adbef965aef6a095019/blendsql-0.0.16.tar.gz
+[2024-05-25 01:08:33] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 01:08:33] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.71.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.71-1.0.9/README.md --exclude *.pyd
+[2024-05-25 01:08:33] INFO root fetch - processPackages [blendsql]: executing diffoscope
+[2024-05-25 01:08:33] INFO root fetch - processPackages [blendsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blendsql-0.0.15.tar.gz tmp/blendsql-0.0.16.tar.gz --markdown 20240525/b/blendsql/0.0.15-0.0.16/README.md --exclude *.pyd
+[2024-05-25 01:08:34] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.71.tar.gz]
+[2024-05-25 01:08:34] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 01:08:34] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 01:08:34] INFO root fetch - processPackages [blendsql]: Remove: archive file [/home/abi/fetcher/tmp/blendsql-0.0.15.tar.gz]
+[2024-05-25 01:08:34] INFO root fetch - processPackages [blendsql]: Remove: archive file [/home/abi/fetcher/tmp/blendsql-0.0.16.tar.gz]
+[2024-05-25 01:08:34] INFO root fetch - main [MainThread]: End processing [blendsql]: success
+[2024-05-25 01:08:34] INFO root fetch - main [MainThread]: Store serial: [23369001]
