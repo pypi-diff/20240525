@@ -1821,3 +1821,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:56:23] INFO root fetch - processPackages [chainladder]: Remove: archive file [/home/abi/fetcher/tmp/chainladder-0.8.9.tar.gz]
 [2024-05-25 01:56:23] INFO root fetch - main [MainThread]: End processing [chainladder]: success
 [2024-05-25 01:56:23] INFO root fetch - main [MainThread]: Store serial: [23369270]
+[2024-05-25 01:58:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369270]
+[2024-05-25 01:58:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 01:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blaze-double-bot
+[2024-05-25 01:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cleanlab
+[2024-05-25 01:58:32] INFO root fetch - processPackages [blaze-double-bot]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 01:58:32] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/9e/0a/69f6ceec04e4bbc97fecf7f11c5ed94f4c1686df5dde01044f1394ceeaf6/blaze_double_bot-0.2.0.tar.gz
+[2024-05-25 01:58:32] INFO root fetch - processPackages [cleanlab]: New version: [2.6.5] Old Version: [2.6.4]
+[2024-05-25 01:58:32] INFO root fetch - processPackages [cleanlab]: Downloading https://files.pythonhosted.org/packages/15/58/3bad0d9900fba562de1af1cee5184705346e30db0d9c65df0c50212092c0/cleanlab-2.6.4.tar.gz
+[2024-05-25 01:58:32] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/8b/44/c0ce56e4c12b40079705c1f553f8083f26b07b57fa376d63967751c07762/blaze_double_bot-0.2.1.tar.gz
+[2024-05-25 01:58:32] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-05-25 01:58:32] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-0.2.0.tar.gz tmp/blaze_double_bot-0.2.1.tar.gz --markdown 20240525/b/blaze-double-bot/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-25 01:58:32] INFO root fetch - processPackages [cleanlab]: Downloading https://files.pythonhosted.org/packages/ff/d1/60d90f8ca831d32b4dc1ec020c2c197bcacdf2c9e51ca395acfabdebf712/cleanlab-2.6.5.tar.gz
+[2024-05-25 01:58:33] INFO root fetch - processPackages [cleanlab]: executing diffoscope
+[2024-05-25 01:58:33] INFO root fetch - processPackages [cleanlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleanlab-2.6.4.tar.gz tmp/cleanlab-2.6.5.tar.gz --markdown 20240525/c/cleanlab/2.6.4-2.6.5/README.md --exclude *.pyd
+[2024-05-25 01:58:33] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.0.tar.gz]
+[2024-05-25 01:58:33] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-0.2.1.tar.gz]
+[2024-05-25 01:58:33] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-05-25 01:58:34] INFO root fetch - processPackages [cleanlab]: Remove: archive file [/home/abi/fetcher/tmp/cleanlab-2.6.4.tar.gz]
+[2024-05-25 01:58:34] INFO root fetch - processPackages [cleanlab]: Remove: archive file [/home/abi/fetcher/tmp/cleanlab-2.6.5.tar.gz]
+[2024-05-25 01:58:34] INFO root fetch - main [MainThread]: End processing [cleanlab]: success
+[2024-05-25 01:58:34] INFO root fetch - main [MainThread]: Store serial: [23369276]
