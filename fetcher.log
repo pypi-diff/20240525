@@ -1387,3 +1387,43 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:15:03] INFO root fetch - processPackages [airbyte-source-punk-api]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_punk_api-0.1.1.tar.gz]
 [2024-05-25 01:15:03] INFO root fetch - main [MainThread]: End processing [airbyte-source-punk-api]: success
 [2024-05-25 01:15:03] INFO root fetch - main [MainThread]: Store serial: [23369025]
+[2024-05-25 01:17:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369025]
+[2024-05-25 01:17:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 01:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-databricks
+[2024-05-25 01:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autowsgr
+[2024-05-25 01:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-userextensions
+[2024-05-25 01:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-source-waiteraid
+[2024-05-25 01:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airbyte-source-gocardless
+[2024-05-25 01:17:12] INFO root fetch - processPackages [airbyte-source-waiteraid]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:17:12] INFO root fetch - processPackages [autowsgr]: New version: [0.2.2.9] Old Version: [0.2.2.8]
+[2024-05-25 01:17:12] INFO root fetch - processPackages [django-userextensions]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-25 01:17:12] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2024-05-25 01:17:12] INFO root fetch - processPackages [airbyte-source-gocardless]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:17:12] INFO root fetch - processPackages [airbyte-source-waiteraid]: Downloading https://files.pythonhosted.org/packages/d1/f8/cfc14706bd005bba3083c77a1243e0fe916b6fa9974842952fffd6379336/airbyte-source-waiteraid-0.1.0.tar.gz
+[2024-05-25 01:17:12] INFO root fetch - processPackages [django-userextensions]: Downloading https://files.pythonhosted.org/packages/4b/0e/10013dc8081395ee130e9261d3a9fdee10b4eec25859e4e5e3b12fb578a3/django-userextensions-0.3.2.tar.gz
+[2024-05-25 01:17:12] INFO root fetch - processPackages [autowsgr]: Downloading https://files.pythonhosted.org/packages/20/db/bb4942509a54b1f01fa10e10e3dca250f9cf92488729f8292657988ac8e2/autowsgr-0.2.2.8.tar.gz
+[2024-05-25 01:17:12] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/1f/91/a029f2344eeb56c6dee818184e323ba7e2014013c42c08396688882d5dae/pulumi_databricks-1.8.0a1678127428.tar.gz
+[2024-05-25 01:17:12] INFO root fetch - processPackages [airbyte-source-gocardless]: Downloading https://files.pythonhosted.org/packages/0b/48/b815422deb633bcff0f022d093e9c7205ecbd98db9c4eff9d7b195325aa5/airbyte-source-gocardless-0.1.0.tar.gz
+[2024-05-25 01:17:13] INFO root fetch - processPackages [airbyte-source-waiteraid]: Downloading https://files.pythonhosted.org/packages/ea/67/a3f3109964b45e3aea19e9be5e486ed51c189e4e778f965caec5733c10e5/airbyte_source_waiteraid-0.1.1.tar.gz
+[2024-05-25 01:17:13] INFO root fetch - processPackages [django-userextensions]: Downloading https://files.pythonhosted.org/packages/10/1c/f3d8e30482e9b361d7fbc1be43d7388a79319bf1a2902440af18fca299b2/django_userextensions-0.3.3.tar.gz
+[2024-05-25 01:17:13] ERROR root fetch - processPackages [airbyte-source-gocardless]: Unable to fetch info: No such project/version 'airbyte-source-gocardless' 0.1.1
+[2024-05-25 01:17:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-gocardless] error
+[2024-05-25 01:17:13] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/b1/ff/c67ee9a9d6e1f19f6530fdfef065568afe6ec72af786e3dba340b58ca4c4/pulumi_databricks-1.9.0a1678745257.tar.gz
+[2024-05-25 01:17:13] INFO root fetch - processPackages [django-userextensions]: executing diffoscope
+[2024-05-25 01:17:13] INFO root fetch - processPackages [django-userextensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-userextensions-0.3.2.tar.gz tmp/django_userextensions-0.3.3.tar.gz --markdown 20240525/d/django-userextensions/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-25 01:17:13] INFO root fetch - processPackages [airbyte-source-waiteraid]: executing diffoscope
+[2024-05-25 01:17:13] INFO root fetch - processPackages [airbyte-source-waiteraid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-waiteraid-0.1.0.tar.gz tmp/airbyte_source_waiteraid-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-waiteraid/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:17:13] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2024-05-25 01:17:13] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20240525/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/README.md --exclude *.pyd
+[2024-05-25 01:17:13] INFO root fetch - processPackages [airbyte-source-waiteraid]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-waiteraid-0.1.0.tar.gz]
+[2024-05-25 01:17:13] INFO root fetch - processPackages [airbyte-source-waiteraid]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_waiteraid-0.1.1.tar.gz]
+[2024-05-25 01:17:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-waiteraid]: success
+[2024-05-25 01:17:13] INFO root fetch - processPackages [django-userextensions]: Remove: archive file [/home/abi/fetcher/tmp/django-userextensions-0.3.2.tar.gz]
+[2024-05-25 01:17:13] INFO root fetch - processPackages [django-userextensions]: Remove: archive file [/home/abi/fetcher/tmp/django_userextensions-0.3.3.tar.gz]
+[2024-05-25 01:17:13] INFO root fetch - main [MainThread]: End processing [django-userextensions]: success
+[2024-05-25 01:17:14] WARNING root fetch - processPackages [autowsgr]: Skipping package: exceeds size limit 18156638>=10485760
+[2024-05-25 01:17:14] INFO root fetch - main [MainThread]: End processing [autowsgr] error
+[2024-05-25 01:17:14] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.8.0a1678127428.tar.gz]
+[2024-05-25 01:17:14] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
+[2024-05-25 01:17:14] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2024-05-25 01:17:14] INFO root fetch - main [MainThread]: Store serial: [23369038]
