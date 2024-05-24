@@ -1057,3 +1057,58 @@
 [2024-05-25 01:01:51] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.99.0-py3-none-any.whl.zip]
 [2024-05-25 01:01:51] INFO root fetch - main [MainThread]: End processing [pulumi]: success
 [2024-05-25 01:01:51] INFO root fetch - main [MainThread]: Store serial: [23368880]
+[2024-05-25 01:03:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368880]
+[2024-05-25 01:03:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lastmile-eval
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airbyte-source-twitter
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onceuponai
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neurocaps
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airbyte-source-pardot
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airbyte-source-babelforce
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-randomprime
+[2024-05-25 01:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: neuralgcm
+[2024-05-25 01:04:00] INFO root fetch - processPackages [lastmile-eval]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 01:04:00] INFO root fetch - processPackages [neurocaps]: New version: [0.9.1.post2] Old Version: [0.9.1.post1]
+[2024-05-25 01:04:00] WARNING root fetch - processPackages [onceuponai]: Skipping, unable to determine old version
+[2024-05-25 01:04:00] INFO root fetch - main [MainThread]: End processing [onceuponai] error
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-pardot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-twitter]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-babelforce]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 01:04:00] INFO root fetch - processPackages [lastmile-eval]: Downloading https://files.pythonhosted.org/packages/46/5f/eaa8c53cc1857a1e835ad32892f28b3fa98a02c5409d7c53012941237304/lastmile_eval-0.0.7.tar.gz
+[2024-05-25 01:04:00] WARNING root fetch - processPackages [neuralgcm]: Skipping, unable to determine old version
+[2024-05-25 01:04:00] INFO root fetch - main [MainThread]: End processing [neuralgcm] error
+[2024-05-25 01:04:00] INFO root fetch - processPackages [py-randomprime]: New version: [16.3] Old Version: [1.9.6]
+[2024-05-25 01:04:00] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/a5/02/57de4269400f6813145338d3b7f1731bc84c3237709722245e2a9243d982/neurocaps-0.9.1.post1.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-pardot]: Downloading https://files.pythonhosted.org/packages/59/9f/949306ec3a382396c5b0eadf44898a97514040f0dd23a24ffe75a2931440/airbyte-source-pardot-0.1.1.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-twitter]: Downloading https://files.pythonhosted.org/packages/25/f1/38d53f564b96249672d0f1e0bd54aefc2a86b3e5514ba69b789728c686b4/airbyte-source-twitter-0.1.2.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-babelforce]: Downloading https://files.pythonhosted.org/packages/cb/cc/941d10141274b75f9e5d1b09e257bc4e4d15980b4f5749cbf14fe1e3f53f/airbyte-source-babelforce-0.2.0.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [lastmile-eval]: Downloading https://files.pythonhosted.org/packages/82/d9/5b33fa58ced21ee69c2876303b4babbb7449325885a320341f99edabf464/lastmile_eval-0.0.8.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [lastmile-eval]: executing diffoscope
+[2024-05-25 01:04:00] INFO root fetch - processPackages [lastmile-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lastmile_eval-0.0.7.tar.gz tmp/lastmile_eval-0.0.8.tar.gz --markdown 20240525/l/lastmile-eval/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 01:04:00] INFO root fetch - processPackages [py-randomprime]: Downloading https://files.pythonhosted.org/packages/c5/cb/9cc1448eb361b462e124fc84bb2c65b7f7564775472990df44de475a065c/py-randomprime-16.3.tar.gz
+[2024-05-25 01:04:00] ERROR root fetch - processPackages [airbyte-source-babelforce]: Unable to fetch info: No such project/version 'airbyte-source-babelforce' 0.2.1
+[2024-05-25 01:04:00] INFO root fetch - main [MainThread]: End processing [airbyte-source-babelforce] error
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-pardot]: Downloading https://files.pythonhosted.org/packages/c5/5d/2e5fa65d3da69f05dc7e07aef47e9dbde39df6a7ef39d6c2db3bbfc33516/airbyte_source_pardot-0.1.2.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/fa/ab/4eebfa56d51c67ddebbfabf373bcab589761e3a4a8950e64c35ee41cdab6/neurocaps-0.9.1.post2.tar.gz
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-twitter]: Downloading https://files.pythonhosted.org/packages/92/f3/bd800b819c60472872fb8255ac1d50a7c0c3264e4b212f594e14378d9e05/airbyte_source_twitter-0.1.3.tar.gz
+[2024-05-25 01:04:00] WARNING root fetch - processPackages [py-randomprime]: Skipping package: exceeds size limit 32716661>=10485760
+[2024-05-25 01:04:00] INFO root fetch - main [MainThread]: End processing [py-randomprime] error
+[2024-05-25 01:04:00] INFO root fetch - processPackages [neurocaps]: executing diffoscope
+[2024-05-25 01:04:00] INFO root fetch - processPackages [neurocaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurocaps-0.9.1.post1.tar.gz tmp/neurocaps-0.9.1.post2.tar.gz --markdown 20240525/n/neurocaps/0.9.1.post1-0.9.1.post2/README.md --exclude *.pyd
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-pardot]: executing diffoscope
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-pardot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-pardot-0.1.1.tar.gz tmp/airbyte_source_pardot-0.1.2.tar.gz --markdown 20240525/a/airbyte-source-pardot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-twitter]: executing diffoscope
+[2024-05-25 01:04:00] INFO root fetch - processPackages [airbyte-source-twitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-twitter-0.1.2.tar.gz tmp/airbyte_source_twitter-0.1.3.tar.gz --markdown 20240525/a/airbyte-source-twitter/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 01:04:01] INFO root fetch - processPackages [lastmile-eval]: Remove: archive file [/home/abi/fetcher/tmp/lastmile_eval-0.0.7.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - processPackages [lastmile-eval]: Remove: archive file [/home/abi/fetcher/tmp/lastmile_eval-0.0.8.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - main [MainThread]: End processing [lastmile-eval]: success
+[2024-05-25 01:04:01] INFO root fetch - processPackages [airbyte-source-pardot]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-pardot-0.1.1.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - processPackages [airbyte-source-pardot]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_pardot-0.1.2.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - main [MainThread]: End processing [airbyte-source-pardot]: success
+[2024-05-25 01:04:01] INFO root fetch - processPackages [airbyte-source-twitter]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-twitter-0.1.2.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - processPackages [airbyte-source-twitter]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_twitter-0.1.3.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - main [MainThread]: End processing [airbyte-source-twitter]: success
+[2024-05-25 01:04:01] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.1.post1.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.1.post2.tar.gz]
+[2024-05-25 01:04:01] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
+[2024-05-25 01:04:01] INFO root fetch - main [MainThread]: Store serial: [23368904]
