@@ -861,3 +861,105 @@
 [2024-05-25 00:50:34] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
 [2024-05-25 00:50:34] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2024-05-25 00:50:34] INFO root fetch - main [MainThread]: Store serial: [23368810]
+[2024-05-25 00:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368810]
+[2024-05-25 00:52:43] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybrid-api-id-python
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyoframe
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfactory
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aqora-cli
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zuspec-parser
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ourskyai_platform_api
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ourskyai_astro_api
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ourskyai_sda_api
+[2024-05-25 00:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tach
+[2024-05-25 00:52:44] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_astro_api]: New version: [1.3.3668] Old Version: [1.3.3664]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [balsamic]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_platform_api]: New version: [1.3.3668] Old Version: [1.3.3664]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_sda_api]: New version: [1.3.3668] Old Version: [1.3.3664]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [aqora-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.9230735755] Old Version: [0.0.1.9185186023]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [pyoframe]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [kfactory]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [tach]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_platform_api]: Downloading https://files.pythonhosted.org/packages/f9/92/6c80e00e8ee3c481b5b547fd541035f50fdedc762dafd861e20f2f64f526/ourskyai_platform_api-1.3.3664.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/2d/66/0d5dc17801b737dd53e021a1548eb784ef8520799bdffbae60e088bf723c/cybrid-api-id-python-0.98.2.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_astro_api]: Downloading https://files.pythonhosted.org/packages/95/37/cf1f2f690a532d93304f01a7528dbb5288b89823a7e5e9c303c81e4688f7/ourskyai_astro_api-1.3.3664.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/34/0b/5d4b6c4bc5d0e865df29231cdf80ea645592559fbc11b05b2e3b2d4ed993/balsamic-0.2.8.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_sda_api]: Downloading https://files.pythonhosted.org/packages/05/93/3b5055a72b0b829cd57438209cf8077055b12c37b4215bf772b68e331543/ourskyai_sda_api-1.3.3664.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [aqora-cli]: Downloading https://files.pythonhosted.org/packages/e3/78/852ebf4bfa86346947575c017d14c3eb1e7dce505bc70ddc8181bb836cf5/aqora_cli-0.1.8.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/d8/70/b7e844dcfa3f8fdabdff1718bb13a44d226004fd857cb969baca70ab57eb/zuspec_parser-0.0.1.9185186023-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 00:52:44] INFO root fetch - processPackages [tach]: Downloading https://files.pythonhosted.org/packages/5f/ac/28c4c5907b484e2a04aa7c8f502c225bffcfa2cabeae4d974156791cf33d/tach-0.2.4.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [kfactory]: Downloading https://files.pythonhosted.org/packages/0f/b6/721b57bf8b2ae07b65396295ba273e13669561ae94fadbe9eb4afd8e9b00/kfactory-0.9.2.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [pyoframe]: Downloading https://files.pythonhosted.org/packages/66/15/ad35f7d5b0cece20039453181b4ca4629d42173e057d3420f55b32622421/pyoframe-0.0.5.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/de/07/de389a95ca98f482f653401dbe8342cf8d4930d1efee86d1f28f3c1afcd1/cybrid-api-id-python-0.99.0.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_platform_api]: Downloading https://files.pythonhosted.org/packages/00/84/06f28046f051ee26720c72980ef614f4477b10bb6c0845755745b8325465/ourskyai_platform_api-1.3.3668.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [aqora-cli]: Downloading https://files.pythonhosted.org/packages/ef/58/11e52164a10e8c7e6d60343bd48fdd441be4d871f46cb1a58ec53052f47f/aqora_cli-0.1.9.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/d9/6c/d6528e91c6ff8d153f2ce4f226c6062f2e357b7a3f996730a53cc77ddd05/balsamic-0.2.9.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_sda_api]: Downloading https://files.pythonhosted.org/packages/7e/c3/462aef6485f87314e75682ebe695c94db7ffc6d835a1f316881f8d510c48/ourskyai_sda_api-1.3.3668.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2024-05-25 00:52:44] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.98.2.tar.gz tmp/cybrid-api-id-python-0.99.0.tar.gz --markdown 20240525/c/cybrid-api-id-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_platform_api]: executing diffoscope
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_platform_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_platform_api-1.3.3664.tar.gz tmp/ourskyai_platform_api-1.3.3668.tar.gz --markdown 20240525/o/ourskyai_platform_api/1.3.3664-1.3.3668/README.md --exclude *.pyd
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_astro_api]: Downloading https://files.pythonhosted.org/packages/d1/ff/63fa80fa915451a47aa7b013ae9684b2e7d5bdd403d7033bacab6ab34306/ourskyai_astro_api-1.3.3668.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:52:44] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.8.tar.gz tmp/balsamic-0.2.9.tar.gz --markdown 20240525/b/balsamic/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 00:52:44] INFO root fetch - processPackages [aqora-cli]: executing diffoscope
+[2024-05-25 00:52:44] INFO root fetch - processPackages [aqora-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aqora_cli-0.1.8.tar.gz tmp/aqora_cli-0.1.9.tar.gz --markdown 20240525/a/aqora-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_sda_api]: executing diffoscope
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_sda_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_sda_api-1.3.3664.tar.gz tmp/ourskyai_sda_api-1.3.3668.tar.gz --markdown 20240525/o/ourskyai_sda_api/1.3.3664-1.3.3668/README.md --exclude *.pyd
+[2024-05-25 00:52:44] INFO root fetch - processPackages [tach]: Downloading https://files.pythonhosted.org/packages/b7/03/fc553ee3a3648125b66d6436d36244feac0b2de58e2fb3bb36e8982c0c72/tach-0.2.5.tar.gz
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_astro_api]: executing diffoscope
+[2024-05-25 00:52:44] INFO root fetch - processPackages [ourskyai_astro_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_astro_api-1.3.3664.tar.gz tmp/ourskyai_astro_api-1.3.3668.tar.gz --markdown 20240525/o/ourskyai_astro_api/1.3.3664-1.3.3668/README.md --exclude *.pyd
+[2024-05-25 00:52:44] INFO root fetch - processPackages [pyoframe]: Downloading https://files.pythonhosted.org/packages/2a/b1/9c3f4d16736dc64ad2c85991c551308380a9c0489ea8e3b7d34e54692559/pyoframe-0.0.6.tar.gz
+[2024-05-25 00:52:45] INFO root fetch - processPackages [tach]: executing diffoscope
+[2024-05-25 00:52:45] INFO root fetch - processPackages [tach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tach-0.2.4.tar.gz tmp/tach-0.2.5.tar.gz --markdown 20240525/t/tach/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-25 00:52:45] INFO root fetch - processPackages [kfactory]: Downloading https://files.pythonhosted.org/packages/c9/36/7559666b6cdc35c7cc7128cb3f2c99b3f5fcdca3d73c396d4c13a34f7466/kfactory-0.9.3.tar.gz
+[2024-05-25 00:52:45] INFO root fetch - processPackages [pyoframe]: executing diffoscope
+[2024-05-25 00:52:45] INFO root fetch - processPackages [pyoframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoframe-0.0.5.tar.gz tmp/pyoframe-0.0.6.tar.gz --markdown 20240525/p/pyoframe/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 00:52:45] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/26/b8/1482db146fff6f63ae2f6f458f8f1f5ed0d5140d3849d08bc9b089473c6b/zuspec_parser-0.0.1.9230735755-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 00:52:45] INFO root fetch - processPackages [kfactory]: executing diffoscope
+[2024-05-25 00:52:45] INFO root fetch - processPackages [kfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfactory-0.9.2.tar.gz tmp/kfactory-0.9.3.tar.gz --markdown 20240525/k/kfactory/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-25 00:52:45] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.8.tar.gz]
+[2024-05-25 00:52:45] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.9.tar.gz]
+[2024-05-25 00:52:45] INFO root fetch - processPackages [balsamic]: Start processing: pulumi-databricks
+[2024-05-25 00:52:45] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:52:45] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/1f/91/a029f2344eeb56c6dee818184e323ba7e2014013c42c08396688882d5dae/pulumi_databricks-1.8.0a1678127428.tar.gz
+[2024-05-25 00:52:46] INFO root fetch - processPackages [aqora-cli]: Remove: archive file [/home/abi/fetcher/tmp/aqora_cli-0.1.8.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [aqora-cli]: Remove: archive file [/home/abi/fetcher/tmp/aqora_cli-0.1.9.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [aqora-cli]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2024-05-25 00:52:46] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.9185186023-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.9230735755-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240525/z/zuspec-parser/0.0.1.9185186023-0.0.1.9230735755/README.md --exclude *.pyd
+[2024-05-25 00:52:46] INFO root fetch - processPackages [pyoframe]: Remove: archive file [/home/abi/fetcher/tmp/pyoframe-0.0.5.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [pyoframe]: Remove: archive file [/home/abi/fetcher/tmp/pyoframe-0.0.6.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [pyoframe]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/b1/ff/c67ee9a9d6e1f19f6530fdfef065568afe6ec72af786e3dba340b58ca4c4/pulumi_databricks-1.9.0a1678745257.tar.gz
+[2024-05-25 00:52:46] INFO root fetch - processPackages [ourskyai_platform_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_platform_api-1.3.3664.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [ourskyai_platform_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_platform_api-1.3.3668.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [ourskyai_platform_api]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.98.2.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.99.0.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2024-05-25 00:52:46] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20240525/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/README.md --exclude *.pyd
+[2024-05-25 00:52:46] INFO root fetch - processPackages [tach]: Remove: archive file [/home/abi/fetcher/tmp/tach-0.2.4.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [tach]: Remove: archive file [/home/abi/fetcher/tmp/tach-0.2.5.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [tach]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [kfactory]: Remove: archive file [/home/abi/fetcher/tmp/kfactory-0.9.2.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [kfactory]: Remove: archive file [/home/abi/fetcher/tmp/kfactory-0.9.3.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [kfactory]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [ourskyai_sda_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_sda_api-1.3.3664.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [ourskyai_sda_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_sda_api-1.3.3668.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [ourskyai_sda_api]: success
+[2024-05-25 00:52:46] INFO root fetch - processPackages [ourskyai_astro_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_astro_api-1.3.3664.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - processPackages [ourskyai_astro_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_astro_api-1.3.3668.tar.gz]
+[2024-05-25 00:52:46] INFO root fetch - main [MainThread]: End processing [ourskyai_astro_api]: success
+[2024-05-25 00:52:47] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.8.0a1678127428.tar.gz]
+[2024-05-25 00:52:47] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
+[2024-05-25 00:52:47] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2024-05-25 00:53:05] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.9185186023-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 00:53:05] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.9230735755-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 00:53:05] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2024-05-25 00:53:05] INFO root fetch - main [MainThread]: Store serial: [23368850]
