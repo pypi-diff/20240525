@@ -1708,3 +1708,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-airflow]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-airflow-1.9.1.tar.gz]
 [2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-airflow]: success
 [2024-05-25 01:41:19] INFO root fetch - main [MainThread]: Store serial: [23369233]
+[2024-05-25 01:43:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369233]
+[2024-05-25 01:43:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neurocaps
+[2024-05-25 01:43:29] INFO root fetch - processPackages [neurocaps]: New version: [0.9.1.post2] Old Version: [0.9.1.post1]
+[2024-05-25 01:43:29] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/a5/02/57de4269400f6813145338d3b7f1731bc84c3237709722245e2a9243d982/neurocaps-0.9.1.post1.tar.gz
+[2024-05-25 01:43:29] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/fa/ab/4eebfa56d51c67ddebbfabf373bcab589761e3a4a8950e64c35ee41cdab6/neurocaps-0.9.1.post2.tar.gz
+[2024-05-25 01:43:29] INFO root fetch - processPackages [neurocaps]: executing diffoscope
+[2024-05-25 01:43:29] INFO root fetch - processPackages [neurocaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurocaps-0.9.1.post1.tar.gz tmp/neurocaps-0.9.1.post2.tar.gz --markdown 20240525/n/neurocaps/0.9.1.post1-0.9.1.post2/README.md --exclude *.pyd
+[2024-05-25 01:43:30] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.1.post1.tar.gz]
+[2024-05-25 01:43:30] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.1.post2.tar.gz]
+[2024-05-25 01:43:30] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
+[2024-05-25 01:43:30] INFO root fetch - main [MainThread]: Store serial: [23369237]
