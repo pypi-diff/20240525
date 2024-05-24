@@ -214,3 +214,63 @@
 [2024-05-25 00:13:39] INFO root fetch - main [MainThread]: End processing [dfvue]: success
 [2024-05-25 00:13:39] INFO root fetch - main [MainThread]: End processing [dnplab]: success
 [2024-05-25 00:13:39] INFO root fetch - main [MainThread]: Store serial: [23368593]
+[2024-05-25 00:15:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368593]
+[2024-05-25 00:15:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyatls
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipefunc
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Scrapelytix
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: instagram-profile-downloader
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marimo
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hybridkf
+[2024-05-25 00:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opaqueprompts
+[2024-05-25 00:15:47] INFO root fetch - processPackages [opaqueprompts]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 00:15:47] INFO root fetch - processPackages [pyatls]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-25 00:15:47] INFO root fetch - processPackages [instagram-profile-downloader]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 00:15:47] INFO root fetch - processPackages [hybridkf]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 00:15:47] INFO root fetch - processPackages [marimo]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-05-25 00:15:47] INFO root fetch - processPackages [pipefunc]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 00:15:48] WARNING root fetch - processPackages [Scrapelytix]: Skipping, unable to determine old version
+[2024-05-25 00:15:48] INFO root fetch - main [MainThread]: End processing [Scrapelytix] error
+[2024-05-25 00:15:48] INFO root fetch - processPackages [opaqueprompts]: Downloading https://files.pythonhosted.org/packages/b1/49/84e6b8f141f0bd3ccd078db93b1b759f573f190fd0f6627bb010ad1b3650/opaqueprompts-0.1.0.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/1a/51/ccfb2a21279a7bf1fe8580177cc8172e2414e98b32bc1c5c5c70cedd6546/hybridkf-1.0.3.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pyatls]: Downloading https://files.pythonhosted.org/packages/a7/7c/f89d5680879d37564fd29618a287c4e20648d78c1676d0615648372d121e/pyatls-0.0.3.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/70/d0/cf6e408da6af92699e2aba85b407c027bfebc9e30d8365059be31b000b83/marimo-0.6.4.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/87/a7/6f7aab781798ddd46fc8941b0aca8b5bcf44815bc3c67fdb96d6c29f018c/instagram_profile_downloader-1.0.0.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pipefunc]: Downloading https://files.pythonhosted.org/packages/dc/02/cad08264252c99297e7606a3d50072402181d2595f9168f47de19f42103c/pipefunc-0.8.0.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [opaqueprompts]: Downloading https://files.pythonhosted.org/packages/c5/d3/e7987a7169c9ff2ee01c369b46e85864dc4e35b3bb891b644c695ea4334f/opaqueprompts-0.1.1.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pyatls]: Downloading https://files.pythonhosted.org/packages/fe/b4/9a248a9a47c6b53ac93fd1b508cb8470dc3fb00bd0f87e169511ccf0bf9b/pyatls-0.0.5.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [opaqueprompts]: executing diffoscope
+[2024-05-25 00:15:48] INFO root fetch - processPackages [opaqueprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opaqueprompts-0.1.0.tar.gz tmp/opaqueprompts-0.1.1.tar.gz --markdown 20240525/o/opaqueprompts/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pyatls]: executing diffoscope
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pyatls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyatls-0.0.3.tar.gz tmp/pyatls-0.0.5.tar.gz --markdown 20240525/p/pyatls/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-25 00:15:48] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/5d/34/2dbf47d1eb2d6b84ced3d1e44c29e448735f6706bc2aecdc2e411c8dcfef/hybridkf-1.0.4.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/ed/09/a3a6d495eac69ae179b59449f0128faa6256a935a69a463bf6a22f5220cb/instagram_profile_downloader-1.0.1.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pipefunc]: Downloading https://files.pythonhosted.org/packages/d6/d8/c97abd147aa742f65e1eb6988f074ead5449a683baa09e792bf27505efed/pipefunc-0.9.0.tar.gz
+[2024-05-25 00:15:48] INFO root fetch - processPackages [hybridkf]: executing diffoscope
+[2024-05-25 00:15:48] INFO root fetch - processPackages [hybridkf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybridkf-1.0.3.tar.gz tmp/hybridkf-1.0.4.tar.gz --markdown 20240525/h/hybridkf/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 00:15:48] INFO root fetch - processPackages [instagram-profile-downloader]: executing diffoscope
+[2024-05-25 00:15:48] INFO root fetch - processPackages [instagram-profile-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instagram_profile_downloader-1.0.0.tar.gz tmp/instagram_profile_downloader-1.0.1.tar.gz --markdown 20240525/i/instagram-profile-downloader/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pipefunc]: executing diffoscope
+[2024-05-25 00:15:48] INFO root fetch - processPackages [pipefunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipefunc-0.8.0.tar.gz tmp/pipefunc-0.9.0.tar.gz --markdown 20240525/p/pipefunc/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 00:15:48] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/e0/08/e97cff5c29d3eeff4b978349c64f1d4de2f044180c86d1f18788582c48ff/marimo-0.6.5.tar.gz
+[2024-05-25 00:15:49] INFO root fetch - processPackages [opaqueprompts]: Remove: archive file [/home/abi/fetcher/tmp/opaqueprompts-0.1.0.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - processPackages [opaqueprompts]: Remove: archive file [/home/abi/fetcher/tmp/opaqueprompts-0.1.1.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - main [MainThread]: End processing [opaqueprompts]: success
+[2024-05-25 00:15:49] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.3.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.4.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - main [MainThread]: End processing [hybridkf]: success
+[2024-05-25 00:15:49] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.0.0.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.0.1.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - main [MainThread]: End processing [instagram-profile-downloader]: success
+[2024-05-25 00:15:49] INFO root fetch - processPackages [marimo]: executing diffoscope
+[2024-05-25 00:15:49] INFO root fetch - processPackages [marimo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marimo-0.6.4.tar.gz tmp/marimo-0.6.5.tar.gz --markdown 20240525/m/marimo/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-05-25 00:15:49] INFO root fetch - processPackages [pipefunc]: Remove: archive file [/home/abi/fetcher/tmp/pipefunc-0.8.0.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - processPackages [pipefunc]: Remove: archive file [/home/abi/fetcher/tmp/pipefunc-0.9.0.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - main [MainThread]: End processing [pipefunc]: success
+[2024-05-25 00:15:49] INFO root fetch - processPackages [pyatls]: Remove: archive file [/home/abi/fetcher/tmp/pyatls-0.0.3.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - processPackages [pyatls]: Remove: archive file [/home/abi/fetcher/tmp/pyatls-0.0.5.tar.gz]
+[2024-05-25 00:15:49] INFO root fetch - main [MainThread]: End processing [pyatls]: success
+[2024-05-25 00:17:36] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.4.tar.gz]
+[2024-05-25 00:17:36] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.5.tar.gz]
+[2024-05-25 00:17:36] INFO root fetch - main [MainThread]: End processing [marimo]: success
+[2024-05-25 00:17:36] INFO root fetch - main [MainThread]: Store serial: [23368614]
