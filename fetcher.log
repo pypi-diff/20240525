@@ -364,3 +364,15 @@
 [2024-05-25 00:21:57] INFO root fetch - processPackages [martian-adapters]: Remove: archive file [/home/abi/fetcher/tmp/martian_adapters-5.6.0.tar.gz]
 [2024-05-25 00:21:57] INFO root fetch - main [MainThread]: End processing [martian-adapters]: success
 [2024-05-25 00:21:57] INFO root fetch - main [MainThread]: Store serial: [23368644]
+[2024-05-25 00:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368644]
+[2024-05-25 00:24:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 00:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lumipy
+[2024-05-25 00:24:06] INFO root fetch - processPackages [lumipy]: New version: [1.0.96] Old Version: [1.0.94]
+[2024-05-25 00:24:06] INFO root fetch - processPackages [lumipy]: Downloading https://files.pythonhosted.org/packages/a9/ba/0d436c6ca7abdc6d796f4a2b758b41391e0281ae7650f44fd3dd977291ca/lumipy-1.0.94-py3-none-any.whl
+[2024-05-25 00:24:06] INFO root fetch - processPackages [lumipy]: Downloading https://files.pythonhosted.org/packages/ce/af/9f61dc75371921841d2d9598bc827a3c8f6076c57348a1c565b70e2bb60a/lumipy-1.0.96-py3-none-any.whl
+[2024-05-25 00:24:06] INFO root fetch - processPackages [lumipy]: executing diffoscope
+[2024-05-25 00:24:06] INFO root fetch - processPackages [lumipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumipy-1.0.94-py3-none-any.whl.zip tmp/lumipy-1.0.96-py3-none-any.whl.zip --markdown 20240525/l/lumipy/1.0.94-1.0.96/README.md --exclude *.pyd
+[2024-05-25 00:24:07] INFO root fetch - processPackages [lumipy]: Remove: archive file [/home/abi/fetcher/tmp/lumipy-1.0.94-py3-none-any.whl.zip]
+[2024-05-25 00:24:07] INFO root fetch - processPackages [lumipy]: Remove: archive file [/home/abi/fetcher/tmp/lumipy-1.0.96-py3-none-any.whl.zip]
+[2024-05-25 00:24:07] INFO root fetch - main [MainThread]: End processing [lumipy]: success
+[2024-05-25 00:24:07] INFO root fetch - main [MainThread]: Store serial: [23368646]
