@@ -274,3 +274,63 @@
 [2024-05-25 00:17:36] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.6.5.tar.gz]
 [2024-05-25 00:17:36] INFO root fetch - main [MainThread]: End processing [marimo]: success
 [2024-05-25 00:17:36] INFO root fetch - main [MainThread]: Store serial: [23368614]
+[2024-05-25 00:19:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368614]
+[2024-05-25 00:19:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opaqueprompts
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awsPrint
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: matrix42sdk
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: EasyOIDC
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replit-river
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: instagram-profile-downloader
+[2024-05-25 00:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scrapegraphai
+[2024-05-25 00:19:45] INFO root fetch - processPackages [opaqueprompts]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 00:19:45] INFO root fetch - processPackages [instagram-profile-downloader]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 00:19:45] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b1] Old Version: [1.4.0b2]
+[2024-05-25 00:19:45] INFO root fetch - processPackages [opaqueprompts]: Downloading https://files.pythonhosted.org/packages/c5/d3/e7987a7169c9ff2ee01c369b46e85864dc4e35b3bb891b644c695ea4334f/opaqueprompts-0.1.1.tar.gz
+[2024-05-25 00:19:45] WARNING root fetch - processPackages [awsPrint]: Skipping, unable to determine old version
+[2024-05-25 00:19:45] INFO root fetch - main [MainThread]: End processing [awsPrint] error
+[2024-05-25 00:19:45] INFO root fetch - processPackages [replit-river]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-25 00:19:45] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/ed/09/a3a6d495eac69ae179b59449f0128faa6256a935a69a463bf6a22f5220cb/instagram_profile_downloader-1.0.1.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [EasyOIDC]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 00:19:45] INFO root fetch - processPackages [matrix42sdk]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-05-25 00:19:45] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/8a/95/aed20f8b4afff9f9f2c2252fde6fda9d2082e19e47a17ed5feae469fcb31/scrapegraphai-1.4.0b2.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [replit-river]: Downloading https://files.pythonhosted.org/packages/63/d0/cf3e1765cd7b168b65aab1449b4829714a8999032e46f8c202867d284f77/replit_river-0.1.9.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [EasyOIDC]: Downloading https://files.pythonhosted.org/packages/4b/79/4f2ac86738de2e8159df953939af1b850d9d463f80e29b09848227988826/easyoidc-0.1.8.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [matrix42sdk]: Downloading https://files.pythonhosted.org/packages/ce/fd/29008c607bf77cf9c0649018844dcee97504056552472509264cc9e13768/matrix42sdk-3.0.2.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [opaqueprompts]: Downloading https://files.pythonhosted.org/packages/ab/f8/f62d6d56b1e472fd83c2fc73493d1c3120afab77708eeb3772f7667b0581/opaqueprompts-0.1.2.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/2c/f3/833edb17120ab9adca2ed26a50217011d378632ea3b63c12748c6aeb1110/instagram_profile_downloader-1.0.2.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/26/f9/b56d0a77b8b295640fdbc36e8e27eb0ae41e5235646b5490f7f1d0887023/scrapegraphai-1.5.0b1.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [opaqueprompts]: executing diffoscope
+[2024-05-25 00:19:45] INFO root fetch - processPackages [opaqueprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opaqueprompts-0.1.1.tar.gz tmp/opaqueprompts-0.1.2.tar.gz --markdown 20240525/o/opaqueprompts/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 00:19:45] INFO root fetch - processPackages [instagram-profile-downloader]: executing diffoscope
+[2024-05-25 00:19:45] INFO root fetch - processPackages [instagram-profile-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instagram_profile_downloader-1.0.1.tar.gz tmp/instagram_profile_downloader-1.0.2.tar.gz --markdown 20240525/i/instagram-profile-downloader/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 00:19:45] INFO root fetch - processPackages [replit-river]: Downloading https://files.pythonhosted.org/packages/68/27/b2959560fa6cbea9af440ce32f60ab8a72b39b9be10e30a71aa9a5114614/replit_river-0.2.0.tar.gz
+[2024-05-25 00:19:45] INFO root fetch - processPackages [EasyOIDC]: Downloading https://files.pythonhosted.org/packages/50/f2/b1d044897ca6a947ebc48cef8b5576249bb061227a14ae5f24cdffcaeb99/easyoidc-0.1.9.tar.gz
+[2024-05-25 00:19:46] INFO root fetch - processPackages [matrix42sdk]: Downloading https://files.pythonhosted.org/packages/ba/a6/218efb1e72ff3e8df69897c3d7e6ef906355a1b9dd298dea644dfc8c53bf/matrix42sdk-3.0.3.tar.gz
+[2024-05-25 00:19:46] INFO root fetch - processPackages [EasyOIDC]: executing diffoscope
+[2024-05-25 00:19:46] INFO root fetch - processPackages [EasyOIDC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyoidc-0.1.8.tar.gz tmp/easyoidc-0.1.9.tar.gz --markdown 20240525/E/EasyOIDC/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 00:19:46] INFO root fetch - processPackages [matrix42sdk]: executing diffoscope
+[2024-05-25 00:19:46] INFO root fetch - processPackages [matrix42sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix42sdk-3.0.2.tar.gz tmp/matrix42sdk-3.0.3.tar.gz --markdown 20240525/m/matrix42sdk/3.0.2-3.0.3/README.md --exclude *.pyd
+[2024-05-25 00:19:46] INFO root fetch - processPackages [replit-river]: executing diffoscope
+[2024-05-25 00:19:46] INFO root fetch - processPackages [replit-river]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit_river-0.1.9.tar.gz tmp/replit_river-0.2.0.tar.gz --markdown 20240525/r/replit-river/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-25 00:19:46] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-25 00:19:46] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.4.0b2.tar.gz tmp/scrapegraphai-1.5.0b1.tar.gz --markdown 20240525/s/scrapegraphai/1.4.0b2-1.5.0b1/README.md --exclude *.pyd
+[2024-05-25 00:19:46] INFO root fetch - processPackages [opaqueprompts]: Remove: archive file [/home/abi/fetcher/tmp/opaqueprompts-0.1.1.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - processPackages [opaqueprompts]: Remove: archive file [/home/abi/fetcher/tmp/opaqueprompts-0.1.2.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - main [MainThread]: End processing [opaqueprompts]: success
+[2024-05-25 00:19:46] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.0.1.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.0.2.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - main [MainThread]: End processing [instagram-profile-downloader]: success
+[2024-05-25 00:19:46] INFO root fetch - processPackages [EasyOIDC]: Remove: archive file [/home/abi/fetcher/tmp/easyoidc-0.1.8.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - processPackages [EasyOIDC]: Remove: archive file [/home/abi/fetcher/tmp/easyoidc-0.1.9.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - main [MainThread]: End processing [EasyOIDC]: success
+[2024-05-25 00:19:46] INFO root fetch - processPackages [matrix42sdk]: Remove: archive file [/home/abi/fetcher/tmp/matrix42sdk-3.0.2.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - processPackages [matrix42sdk]: Remove: archive file [/home/abi/fetcher/tmp/matrix42sdk-3.0.3.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - main [MainThread]: End processing [matrix42sdk]: success
+[2024-05-25 00:19:46] INFO root fetch - processPackages [replit-river]: Remove: archive file [/home/abi/fetcher/tmp/replit_river-0.1.9.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - processPackages [replit-river]: Remove: archive file [/home/abi/fetcher/tmp/replit_river-0.2.0.tar.gz]
+[2024-05-25 00:19:46] INFO root fetch - main [MainThread]: End processing [replit-river]: success
+[2024-05-25 00:19:47] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.4.0b2.tar.gz]
+[2024-05-25 00:19:47] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b1.tar.gz]
+[2024-05-25 00:19:47] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-25 00:19:47] INFO root fetch - main [MainThread]: Store serial: [23368635]
