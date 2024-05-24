@@ -1549,3 +1549,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:28:16] INFO root fetch - processPackages [airbyte-source-public-apis]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_public_apis-0.2.1.tar.gz]
 [2024-05-25 01:28:16] INFO root fetch - main [MainThread]: End processing [airbyte-source-public-apis]: success
 [2024-05-25 01:28:16] INFO root fetch - main [MainThread]: Store serial: [23369093]
+[2024-05-25 01:30:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369093]
+[2024-05-25 01:30:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 01:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: treelite
+[2024-05-25 01:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airbyte-source-sonar-cloud
+[2024-05-25 01:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alphafold3-pytorch
+[2024-05-25 01:30:24] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 01:30:24] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 01:30:24] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 01:30:24] INFO root fetch - processPackages [treelite]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-05-25 01:30:24] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: Downloading https://files.pythonhosted.org/packages/6a/51/ee0d09a98fa2ea57d46a6d8c0ae979770668cfd7d08945daffe04c6e965c/airbyte_source_sonar_cloud-0.1.5.tar.gz
+[2024-05-25 01:30:24] INFO root fetch - processPackages [treelite]: Downloading https://files.pythonhosted.org/packages/3d/fe/94c58b22fb673fb7a17034247f10e31a226816d659cbc2ef8f52dd379e3a/treelite-4.2.0.tar.gz
+[2024-05-25 01:30:24] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 01:30:24] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: Downloading https://files.pythonhosted.org/packages/80/bc/6e6a061f5b8ff4da771b692ef54890191960efd2c395a7513c1cd4f4483c/airbyte_source_sonar_cloud-0.1.6.tar.gz
+[2024-05-25 01:30:24] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 01:30:24] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 01:30:25] INFO root fetch - processPackages [treelite]: Downloading https://files.pythonhosted.org/packages/ea/e9/a8e706513a62accab48f95624f9a92df352924a717533a2ca85266d6e18b/treelite-4.2.1.tar.gz
+[2024-05-25 01:30:25] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: executing diffoscope
+[2024-05-25 01:30:25] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_sonar_cloud-0.1.5.tar.gz tmp/airbyte_source_sonar_cloud-0.1.6.tar.gz --markdown 20240525/a/airbyte-source-sonar-cloud/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 01:30:25] INFO root fetch - processPackages [treelite]: executing diffoscope
+[2024-05-25 01:30:25] INFO root fetch - processPackages [treelite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/treelite-4.2.0.tar.gz tmp/treelite-4.2.1.tar.gz --markdown 20240525/t/treelite/4.2.0-4.2.1/README.md --exclude *.pyd
+[2024-05-25 01:30:25] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_sonar_cloud-0.1.5.tar.gz]
+[2024-05-25 01:30:25] INFO root fetch - processPackages [airbyte-source-sonar-cloud]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_sonar_cloud-0.1.6.tar.gz]
+[2024-05-25 01:30:25] INFO root fetch - main [MainThread]: End processing [airbyte-source-sonar-cloud]: success
+[2024-05-25 01:30:25] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 01:30:25] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 01:30:25] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 01:30:25] INFO root fetch - processPackages [treelite]: Remove: archive file [/home/abi/fetcher/tmp/treelite-4.2.0.tar.gz]
+[2024-05-25 01:30:25] INFO root fetch - processPackages [treelite]: Remove: archive file [/home/abi/fetcher/tmp/treelite-4.2.1.tar.gz]
+[2024-05-25 01:30:25] INFO root fetch - main [MainThread]: End processing [treelite]: success
+[2024-05-25 01:30:25] INFO root fetch - main [MainThread]: Store serial: [23369108]
