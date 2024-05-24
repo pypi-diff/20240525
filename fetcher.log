@@ -463,3 +463,20 @@
 [2024-05-25 00:28:28] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
 [2024-05-25 00:28:28] INFO root fetch - main [MainThread]: End processing [openadapt]: success
 [2024-05-25 00:28:28] INFO root fetch - main [MainThread]: Store serial: [23368674]
+[2024-05-25 00:30:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368674]
+[2024-05-25 00:30:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amazon-sagemaker-sql-editor
+[2024-05-25 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-25 00:30:37] INFO root fetch - processPackages [balsamic]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-25 00:30:37] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/8e/10/89c1bdb441f78290243fc927c17b4cbcae29d2a5d8d796212f8f040a311b/balsamic-0.2.3.tar.gz
+[2024-05-25 00:30:37] INFO root fetch - processPackages [amazon-sagemaker-sql-editor]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 00:30:37] INFO root fetch - processPackages [amazon-sagemaker-sql-editor]: Downloading https://files.pythonhosted.org/packages/94/63/39ff1bcab7f33380e63a48c17057954f7833cd47baf713b220a3357adea6/amazon_sagemaker_sql_editor-0.1.7.tar.gz
+[2024-05-25 00:30:37] WARNING root fetch - processPackages [amazon-sagemaker-sql-editor]: Skipping package: exceeds size limit 20647266>=10485760
+[2024-05-25 00:30:37] INFO root fetch - main [MainThread]: End processing [amazon-sagemaker-sql-editor] error
+[2024-05-25 00:30:37] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/45/1d/def86f8049ae874f6488a80f179008709d257518893e059664e305c7d3bc/balsamic-0.2.4.tar.gz
+[2024-05-25 00:30:37] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:30:37] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.3.tar.gz tmp/balsamic-0.2.4.tar.gz --markdown 20240525/b/balsamic/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-25 00:30:38] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.3.tar.gz]
+[2024-05-25 00:30:38] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.4.tar.gz]
+[2024-05-25 00:30:38] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:30:38] INFO root fetch - main [MainThread]: Store serial: [23368679]
