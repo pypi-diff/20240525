@@ -1493,3 +1493,9 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:19:34] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707934510.tar.gz]
 [2024-05-25 01:19:34] INFO root fetch - main [MainThread]: End processing [pulumi-gcp]: success
 [2024-05-25 01:19:34] INFO root fetch - main [MainThread]: Store serial: [23369065]
+[2024-05-25 01:21:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369065]
+[2024-05-25 01:21:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CodonTransformer
+[2024-05-25 01:21:42] WARNING root fetch - processPackages [CodonTransformer]: Skipping, unable to determine old version
+[2024-05-25 01:21:42] INFO root fetch - main [MainThread]: End processing [CodonTransformer] error
+[2024-05-25 01:21:42] INFO root fetch - main [MainThread]: Store serial: [23369076]
