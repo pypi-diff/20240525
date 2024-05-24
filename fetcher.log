@@ -1511,3 +1511,29 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:23:55] INFO root fetch - processPackages [pyleniumio]: Remove: archive file [/home/abi/fetcher/tmp/pyleniumio-1.9.8.tar.gz]
 [2024-05-25 01:23:55] INFO root fetch - main [MainThread]: End processing [pyleniumio]: success
 [2024-05-25 01:23:55] INFO root fetch - main [MainThread]: Store serial: [23369081]
+[2024-05-25 01:25:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369081]
+[2024-05-25 01:26:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 01:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-xkcd
+[2024-05-25 01:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyjvc
+[2024-05-25 01:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbclassic
+[2024-05-25 01:26:03] INFO root fetch - processPackages [airbyte-source-xkcd]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 01:26:03] INFO root fetch - processPackages [pyjvc]: New version: [4.4.5] Old Version: [4.4.4]
+[2024-05-25 01:26:03] INFO root fetch - processPackages [nbclassic]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-25 01:26:04] INFO root fetch - processPackages [airbyte-source-xkcd]: Downloading https://files.pythonhosted.org/packages/71/95/a2e6d19c7e8f028e2dfb2815e4f3583cb58e8a09722d016d7df675206176/airbyte-source-xkcd-0.1.1.tar.gz
+[2024-05-25 01:26:04] INFO root fetch - processPackages [pyjvc]: Downloading https://files.pythonhosted.org/packages/ca/1b/5fb5081cf5ca652d40bd04576dd320d6db3f70bc4795086bf16fba495ee9/pyjvc-4.4.4.tar.gz
+[2024-05-25 01:26:04] INFO root fetch - processPackages [nbclassic]: Downloading https://files.pythonhosted.org/packages/8b/11/6e6084bad2b2f8faa787bd5f72fd1171c741801a03872b518965d7653ba5/nbclassic-1.0.0.tar.gz
+[2024-05-25 01:26:04] WARNING root fetch - processPackages [nbclassic]: Skipping package: exceeds size limit 20201455>=10485760
+[2024-05-25 01:26:04] INFO root fetch - main [MainThread]: End processing [nbclassic] error
+[2024-05-25 01:26:04] INFO root fetch - processPackages [airbyte-source-xkcd]: Downloading https://files.pythonhosted.org/packages/e3/9f/9e8b040ee18a7d0988bb32085899dd00bebea81ee714a07b50b943d25304/airbyte_source_xkcd-0.1.2.tar.gz
+[2024-05-25 01:26:04] INFO root fetch - processPackages [pyjvc]: Downloading https://files.pythonhosted.org/packages/5f/8e/7d82621d04fc302420b6ba0f82cee677bd40245ca7fe9cb330294158ec26/pyjvc-4.4.5.tar.gz
+[2024-05-25 01:26:04] INFO root fetch - processPackages [airbyte-source-xkcd]: executing diffoscope
+[2024-05-25 01:26:04] INFO root fetch - processPackages [airbyte-source-xkcd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-xkcd-0.1.1.tar.gz tmp/airbyte_source_xkcd-0.1.2.tar.gz --markdown 20240525/a/airbyte-source-xkcd/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 01:26:04] INFO root fetch - processPackages [pyjvc]: executing diffoscope
+[2024-05-25 01:26:04] INFO root fetch - processPackages [pyjvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjvc-4.4.4.tar.gz tmp/pyjvc-4.4.5.tar.gz --markdown 20240525/p/pyjvc/4.4.4-4.4.5/README.md --exclude *.pyd
+[2024-05-25 01:26:04] INFO root fetch - processPackages [airbyte-source-xkcd]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-xkcd-0.1.1.tar.gz]
+[2024-05-25 01:26:04] INFO root fetch - processPackages [airbyte-source-xkcd]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_xkcd-0.1.2.tar.gz]
+[2024-05-25 01:26:04] INFO root fetch - main [MainThread]: End processing [airbyte-source-xkcd]: success
+[2024-05-25 01:26:05] INFO root fetch - processPackages [pyjvc]: Remove: archive file [/home/abi/fetcher/tmp/pyjvc-4.4.4.tar.gz]
+[2024-05-25 01:26:05] INFO root fetch - processPackages [pyjvc]: Remove: archive file [/home/abi/fetcher/tmp/pyjvc-4.4.5.tar.gz]
+[2024-05-25 01:26:05] INFO root fetch - main [MainThread]: End processing [pyjvc]: success
+[2024-05-25 01:26:05] INFO root fetch - main [MainThread]: Store serial: [23369090]
