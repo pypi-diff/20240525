@@ -1720,3 +1720,17 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:43:30] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.1.post2.tar.gz]
 [2024-05-25 01:43:30] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
 [2024-05-25 01:43:30] INFO root fetch - main [MainThread]: Store serial: [23369237]
+[2024-05-25 01:45:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369237]
+[2024-05-25 01:45:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 01:47:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369237]
+[2024-05-25 01:47:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pazok
+[2024-05-25 01:47:43] INFO root fetch - processPackages [pazok]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 01:47:44] INFO root fetch - processPackages [pazok]: Downloading https://files.pythonhosted.org/packages/cc/27/e9d7ed5230b98b787930ae40e1ce4f3f4f7029a54927fcb8d20592d85b79/pazok-0.1.8.tar.gz
+[2024-05-25 01:47:44] INFO root fetch - processPackages [pazok]: Downloading https://files.pythonhosted.org/packages/57/d7/06757eaaa74a058c674093d3fd3db3507ef438aabcff0a212d8f0fecd75d/pazok-0.1.9-py3-none-any.whl
+[2024-05-25 01:47:44] INFO root fetch - processPackages [pazok]: executing diffoscope
+[2024-05-25 01:47:44] INFO root fetch - processPackages [pazok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pazok-0.1.8.tar.gz tmp/pazok-0.1.9-py3-none-any.whl.zip --markdown 20240525/p/pazok/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 01:47:45] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.8.tar.gz]
+[2024-05-25 01:47:45] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.9-py3-none-any.whl.zip]
+[2024-05-25 01:47:45] INFO root fetch - main [MainThread]: End processing [pazok]: success
+[2024-05-25 01:47:45] INFO root fetch - main [MainThread]: Store serial: [23369238]
