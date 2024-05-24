@@ -963,3 +963,56 @@
 [2024-05-25 00:53:05] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.9230735755-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-25 00:53:05] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2024-05-25 00:53:05] INFO root fetch - main [MainThread]: Store serial: [23368850]
+[2024-05-25 00:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368850]
+[2024-05-25 00:55:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 00:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-databricks
+[2024-05-25 00:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reasoner-validator
+[2024-05-25 00:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sevenapps-py-easy
+[2024-05-25 00:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OpenOA
+[2024-05-25 00:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-kubernetes
+[2024-05-25 00:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-aiven
+[2024-05-25 00:55:17] INFO root fetch - processPackages [sevenapps-py-easy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 00:55:17] INFO root fetch - processPackages [reasoner-validator]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-05-25 00:55:17] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2024-05-25 00:55:17] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.9.0a1704274395] Old Version: [6.9.0a1704258951]
+[2024-05-25 00:55:17] INFO root fetch - processPackages [pulumi-kubernetes]: New version: [4.9.1] Old Version: [4.9.0a1709600505]
+[2024-05-25 00:55:17] INFO root fetch - processPackages [OpenOA]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-05-25 00:55:17] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/75/23/ab9081eeee035a7200c8e52d144870d66c357ba9a5800ceca220a44c47c6/sevenapps_py_easy-0.0.4.tar.gz
+[2024-05-25 00:55:17] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/bb/7f/79ff1a27281ab95daf4b728cfa1d1fbd47b587e63043f41e16707847ef07/reasoner_validator-4.2.0.tar.gz
+[2024-05-25 00:55:17] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/1f/91/a029f2344eeb56c6dee818184e323ba7e2014013c42c08396688882d5dae/pulumi_databricks-1.8.0a1678127428.tar.gz
+[2024-05-25 00:55:17] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/89/fb/adacc179c277b4328f00f1483cac3f1c2227c33318802c8f88e0ee8e93c3/pulumi_aiven-6.9.0a1704258951.tar.gz
+[2024-05-25 00:55:17] INFO root fetch - processPackages [pulumi-kubernetes]: Downloading https://files.pythonhosted.org/packages/f5/70/02e4a8984b201b842988e123d98828a8b1023a0fe6f592c98fdebdca7506/pulumi_kubernetes-4.9.0a1709600505.tar.gz
+[2024-05-25 00:55:17] INFO root fetch - processPackages [OpenOA]: Downloading https://files.pythonhosted.org/packages/91/21/b2682e06657570fefe868b94cee40f269669c3021b5090cd8f6f0a0331d5/OpenOA-3.1.1.tar.gz
+[2024-05-25 00:55:18] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/7c/68/49c80496a9909ea766835d09a5a07752d6417f03699df2ad18b76b57fdd0/reasoner_validator-4.2.1.tar.gz
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/b1/ff/c67ee9a9d6e1f19f6530fdfef065568afe6ec72af786e3dba340b58ca4c4/pulumi_databricks-1.9.0a1678745257.tar.gz
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/58/4d/df63cee14469cb3bb5ff7e2a4af56d19adf0cd17ce9192b84188dc240736/pulumi_aiven-6.9.0a1704274395.tar.gz
+[2024-05-25 00:55:18] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/cc/30/059178e416d45cccb613c5e0722cea9582184c3720c3c24b1284de43f85d/sevenapps_py_easy-0.0.5.tar.gz
+[2024-05-25 00:55:18] WARNING root fetch - processPackages [OpenOA]: Skipping package: exceeds size limit 76388879>=10485760
+[2024-05-25 00:55:18] INFO root fetch - main [MainThread]: End processing [OpenOA] error
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-kubernetes]: Downloading https://files.pythonhosted.org/packages/ae/8c/e58bd57f74c8cbc29a99be666c50a014e5a311981c62ce715186a4c80d41/pulumi_kubernetes-4.9.1.tar.gz
+[2024-05-25 00:55:18] INFO root fetch - processPackages [reasoner-validator]: executing diffoscope
+[2024-05-25 00:55:18] INFO root fetch - processPackages [reasoner-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasoner_validator-4.2.0.tar.gz tmp/reasoner_validator-4.2.1.tar.gz --markdown 20240525/r/reasoner-validator/4.2.0-4.2.1/README.md --exclude *.pyd
+[2024-05-25 00:55:18] INFO root fetch - processPackages [sevenapps-py-easy]: executing diffoscope
+[2024-05-25 00:55:18] INFO root fetch - processPackages [sevenapps-py-easy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sevenapps_py_easy-0.0.4.tar.gz tmp/sevenapps_py_easy-0.0.5.tar.gz --markdown 20240525/s/sevenapps-py-easy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20240525/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/README.md --exclude *.pyd
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.9.0a1704258951.tar.gz tmp/pulumi_aiven-6.9.0a1704274395.tar.gz --markdown 20240525/p/pulumi-aiven/6.9.0a1704258951-6.9.0a1704274395/README.md --exclude *.pyd
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-kubernetes]: executing diffoscope
+[2024-05-25 00:55:18] INFO root fetch - processPackages [pulumi-kubernetes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes-4.9.0a1709600505.tar.gz tmp/pulumi_kubernetes-4.9.1.tar.gz --markdown 20240525/p/pulumi-kubernetes/4.9.0a1709600505-4.9.1/README.md --exclude *.pyd
+[2024-05-25 00:55:18] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.4.tar.gz]
+[2024-05-25 00:55:18] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.5.tar.gz]
+[2024-05-25 00:55:18] INFO root fetch - main [MainThread]: End processing [sevenapps-py-easy]: success
+[2024-05-25 00:55:19] INFO root fetch - processPackages [reasoner-validator]: Remove: archive file [/home/abi/fetcher/tmp/reasoner_validator-4.2.0.tar.gz]
+[2024-05-25 00:55:19] INFO root fetch - processPackages [reasoner-validator]: Remove: archive file [/home/abi/fetcher/tmp/reasoner_validator-4.2.1.tar.gz]
+[2024-05-25 00:55:19] INFO root fetch - main [MainThread]: End processing [reasoner-validator]: success
+[2024-05-25 00:55:19] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704258951.tar.gz]
+[2024-05-25 00:55:19] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
+[2024-05-25 00:55:19] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2024-05-25 00:55:19] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.8.0a1678127428.tar.gz]
+[2024-05-25 00:55:19] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
+[2024-05-25 00:55:19] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2024-05-25 00:55:21] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.0a1709600505.tar.gz]
+[2024-05-25 00:55:21] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.1.tar.gz]
+[2024-05-25 00:55:21] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
+[2024-05-25 00:55:21] INFO root fetch - main [MainThread]: Store serial: [23368867]
