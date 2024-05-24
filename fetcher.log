@@ -1040,3 +1040,20 @@
 [2024-05-25 00:59:41] INFO root fetch - processPackages [django-structlog]: Remove: archive file [/home/abi/fetcher/tmp/django_structlog-8.1.0.tar.gz]
 [2024-05-25 00:59:41] INFO root fetch - main [MainThread]: End processing [django-structlog]: success
 [2024-05-25 00:59:41] INFO root fetch - main [MainThread]: Store serial: [23368874]
+[2024-05-25 01:01:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368874]
+[2024-05-25 01:01:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 01:01:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi
+[2024-05-25 01:01:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airbyte-source-callrail
+[2024-05-25 01:01:50] INFO root fetch - processPackages [airbyte-source-callrail]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:01:50] INFO root fetch - processPackages [pulumi]: New version: [3.99.0] Old Version: [3.98.0]
+[2024-05-25 01:01:50] INFO root fetch - processPackages [airbyte-source-callrail]: Downloading https://files.pythonhosted.org/packages/31/c4/a59602ef14d47f2b02227ede9a35d367bfbb99bb478d9ad1b89492240650/airbyte-source-callrail-0.1.0.tar.gz
+[2024-05-25 01:01:50] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/c1/38/8ac5a8420c7a95ad63a48e5881ef08233e7ce3dbe95751bfcc7746f0c383/pulumi-3.98.0-py3-none-any.whl
+[2024-05-25 01:01:50] ERROR root fetch - processPackages [airbyte-source-callrail]: Unable to fetch info: No such project/version 'airbyte-source-callrail' 0.1.1
+[2024-05-25 01:01:50] INFO root fetch - main [MainThread]: End processing [airbyte-source-callrail] error
+[2024-05-25 01:01:50] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/17/49/ac369781e6bea40b4e15ca66620d1815ffa59727e6dab5e543a8971e8cd9/pulumi-3.99.0-py3-none-any.whl
+[2024-05-25 01:01:50] INFO root fetch - processPackages [pulumi]: executing diffoscope
+[2024-05-25 01:01:50] INFO root fetch - processPackages [pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi-3.98.0-py3-none-any.whl.zip tmp/pulumi-3.99.0-py3-none-any.whl.zip --markdown 20240525/p/pulumi/3.98.0-3.99.0/README.md --exclude *.pyd
+[2024-05-25 01:01:51] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.98.0-py3-none-any.whl.zip]
+[2024-05-25 01:01:51] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.99.0-py3-none-any.whl.zip]
+[2024-05-25 01:01:51] INFO root fetch - main [MainThread]: End processing [pulumi]: success
+[2024-05-25 01:01:51] INFO root fetch - main [MainThread]: Store serial: [23368880]
