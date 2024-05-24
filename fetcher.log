@@ -1,0 +1,72 @@
+[2024-05-25 00:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368495]
+[2024-05-25 00:01:53] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uk_bin_collection
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: give-up-the-func
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skill-bandcamp
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: skill-news
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-skill-somafm
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-skill-tunein
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: assessment-episode-matcher
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: doopass.libs
+[2024-05-25 00:01:53] INFO root fetch - processPackages [doopass.libs]: New version: [1.0.1] Old Version: [1.0]
+[2024-05-25 00:01:53] WARNING root fetch - processPackages [assessment-episode-matcher]: Skipping, unable to determine old version
+[2024-05-25 00:01:53] INFO root fetch - main [MainThread]: End processing [assessment-episode-matcher] error
+[2024-05-25 00:01:53] WARNING root fetch - processPackages [give-up-the-func]: Skipping, unable to determine old version
+[2024-05-25 00:01:53] INFO root fetch - main [MainThread]: End processing [give-up-the-func] error
+[2024-05-25 00:01:53] INFO root fetch - processPackages [uk_bin_collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 00:01:53] INFO root fetch - processPackages [pulumi]: New version: [3.99.0] Old Version: [3.98.0]
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ovos-skill-tunein]: New version: [0.0.1a4] Old Version: [0.0.1a3]
+[2024-05-25 00:01:53] INFO root fetch - processPackages [doopass.libs]: Downloading https://files.pythonhosted.org/packages/13/66/7ce88a8bbab563de4ee0c464008fb48d6c23ee0945f9cc96b6fd310c15d2/doopass_libs-1.0.tar.gz
+[2024-05-25 00:01:53] INFO root fetch - processPackages [skill-news]: New version: [0.0.4a8] Old Version: [0.0.4a7]
+[2024-05-25 00:01:53] INFO root fetch - processPackages [skill-bandcamp]: New version: [0.0.2a2] Old Version: [0.0.2a1]
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ovos-skill-somafm]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2024-05-25 00:01:53] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-05-25 00:01:53] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/c1/38/8ac5a8420c7a95ad63a48e5881ef08233e7ce3dbe95751bfcc7746f0c383/pulumi-3.98.0-py3-none-any.whl
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ovos-skill-tunein]: Downloading https://files.pythonhosted.org/packages/b1/d0/b82b1881ed83c8d5d21073c836e525a696b96520226f6351943af4a8a22a/ovos_skill_tunein-0.0.1a3-py3-none-any.whl
+[2024-05-25 00:01:53] INFO root fetch - processPackages [skill-bandcamp]: Downloading https://files.pythonhosted.org/packages/46/12/3a844dc9e79c8ceb08edd10bd82141e76f63d48db150b292266e3c79df05/skill_bandcamp-0.0.2a1-py3-none-any.whl
+[2024-05-25 00:01:53] INFO root fetch - processPackages [ovos-skill-somafm]: Downloading https://files.pythonhosted.org/packages/ca/46/b734a3463ccf0fc23f24db2dd03cc64ad14b83e93ce7e2333cccafa9812c/ovos_skill_somafm-0.0.2a2-py3-none-any.whl
+[2024-05-25 00:01:53] INFO root fetch - processPackages [skill-news]: Downloading https://files.pythonhosted.org/packages/c0/fc/44cdfde40e91f30f0474db32c55e8b4884579cab552031650078e57e6aa0/skill_news-0.0.4a7-py3-none-any.whl
+[2024-05-25 00:01:53] INFO root fetch - processPackages [doopass.libs]: Downloading https://files.pythonhosted.org/packages/76/02/2824a8151d295caad4ed5b26c388c2ef21dca5c43a7414282075a83d3da5/doopass_libs-1.0.1.tar.gz
+[2024-05-25 00:01:53] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-05-25 00:01:53] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/17/49/ac369781e6bea40b4e15ca66620d1815ffa59727e6dab5e543a8971e8cd9/pulumi-3.99.0-py3-none-any.whl
+[2024-05-25 00:01:53] INFO root fetch - processPackages [doopass.libs]: executing diffoscope
+[2024-05-25 00:01:53] INFO root fetch - processPackages [doopass.libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doopass_libs-1.0.tar.gz tmp/doopass_libs-1.0.1.tar.gz --markdown 20240525/d/doopass.libs/1.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 00:01:53] INFO root fetch - processPackages [uk_bin_collection]: executing diffoscope
+[2024-05-25 00:01:53] INFO root fetch - processPackages [uk_bin_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240525/u/uk_bin_collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 00:01:53] INFO root fetch - processPackages [pulumi]: executing diffoscope
+[2024-05-25 00:01:53] INFO root fetch - processPackages [pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi-3.98.0-py3-none-any.whl.zip tmp/pulumi-3.99.0-py3-none-any.whl.zip --markdown 20240525/p/pulumi/3.98.0-3.99.0/README.md --exclude *.pyd
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-tunein]: Downloading https://files.pythonhosted.org/packages/12/8d/be253e7fc6c877d113b38eac802a75ac1c441999c22147eb00aa8ce3bea7/ovos_skill_tunein-0.0.1a4-py3-none-any.whl
+[2024-05-25 00:01:54] INFO root fetch - processPackages [skill-bandcamp]: Downloading https://files.pythonhosted.org/packages/45/39/079fe9e42e88f8bfb3c36297d0d42b3f7ced59865f5876626fa5e99e2336/skill_bandcamp-0.0.2a2-py3-none-any.whl
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-somafm]: Downloading https://files.pythonhosted.org/packages/ca/9c/c624ce9a50bf6942c1999cf885667232670df9b584374425b83f3c27f608/ovos_skill_somafm-0.0.2a3-py3-none-any.whl
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-tunein]: executing diffoscope
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-tunein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_tunein-0.0.1a3-py3-none-any.whl.zip tmp/ovos_skill_tunein-0.0.1a4-py3-none-any.whl.zip --markdown 20240525/o/ovos-skill-tunein/0.0.1a3-0.0.1a4/README.md --exclude *.pyd
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-somafm]: executing diffoscope
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-somafm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_somafm-0.0.2a2-py3-none-any.whl.zip tmp/ovos_skill_somafm-0.0.2a3-py3-none-any.whl.zip --markdown 20240525/o/ovos-skill-somafm/0.0.2a2-0.0.2a3/README.md --exclude *.pyd
+[2024-05-25 00:01:54] INFO root fetch - processPackages [skill-bandcamp]: executing diffoscope
+[2024-05-25 00:01:54] INFO root fetch - processPackages [skill-bandcamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skill_bandcamp-0.0.2a1-py3-none-any.whl.zip tmp/skill_bandcamp-0.0.2a2-py3-none-any.whl.zip --markdown 20240525/s/skill-bandcamp/0.0.2a1-0.0.2a2/README.md --exclude *.pyd
+[2024-05-25 00:01:54] INFO root fetch - processPackages [skill-news]: Downloading https://files.pythonhosted.org/packages/73/00/2e8820b6365b5899827b312e45912a6dca7a8363d8105de9e3bc7b7867c8/skill_news-0.0.4a8-py3-none-any.whl
+[2024-05-25 00:01:54] INFO root fetch - processPackages [skill-news]: executing diffoscope
+[2024-05-25 00:01:54] INFO root fetch - processPackages [skill-news]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skill_news-0.0.4a7-py3-none-any.whl.zip tmp/skill_news-0.0.4a8-py3-none-any.whl.zip --markdown 20240525/s/skill-news/0.0.4a7-0.0.4a8/README.md --exclude *.pyd
+[2024-05-25 00:01:54] INFO root fetch - processPackages [doopass.libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.tar.gz]
+[2024-05-25 00:01:54] INFO root fetch - processPackages [doopass.libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.1.tar.gz]
+[2024-05-25 00:01:54] INFO root fetch - main [MainThread]: End processing [doopass.libs]: success
+[2024-05-25 00:01:54] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.98.0-py3-none-any.whl.zip]
+[2024-05-25 00:01:54] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.99.0-py3-none-any.whl.zip]
+[2024-05-25 00:01:54] INFO root fetch - main [MainThread]: End processing [pulumi]: success
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-somafm]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_somafm-0.0.2a2-py3-none-any.whl.zip]
+[2024-05-25 00:01:54] INFO root fetch - processPackages [ovos-skill-somafm]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_somafm-0.0.2a3-py3-none-any.whl.zip]
+[2024-05-25 00:01:54] INFO root fetch - main [MainThread]: End processing [ovos-skill-somafm]: success
+[2024-05-25 00:01:55] INFO root fetch - processPackages [skill-bandcamp]: Remove: archive file [/home/abi/fetcher/tmp/skill_bandcamp-0.0.2a1-py3-none-any.whl.zip]
+[2024-05-25 00:01:55] INFO root fetch - processPackages [skill-bandcamp]: Remove: archive file [/home/abi/fetcher/tmp/skill_bandcamp-0.0.2a2-py3-none-any.whl.zip]
+[2024-05-25 00:01:55] INFO root fetch - main [MainThread]: End processing [skill-bandcamp]: success
+[2024-05-25 00:01:55] INFO root fetch - processPackages [ovos-skill-tunein]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_tunein-0.0.1a3-py3-none-any.whl.zip]
+[2024-05-25 00:01:55] INFO root fetch - processPackages [ovos-skill-tunein]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_tunein-0.0.1a4-py3-none-any.whl.zip]
+[2024-05-25 00:01:55] INFO root fetch - main [MainThread]: End processing [ovos-skill-tunein]: success
+[2024-05-25 00:01:55] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-05-25 00:01:55] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-05-25 00:01:55] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
+[2024-05-25 00:01:55] INFO root fetch - processPackages [skill-news]: Remove: archive file [/home/abi/fetcher/tmp/skill_news-0.0.4a7-py3-none-any.whl.zip]
+[2024-05-25 00:01:55] INFO root fetch - processPackages [skill-news]: Remove: archive file [/home/abi/fetcher/tmp/skill_news-0.0.4a8-py3-none-any.whl.zip]
+[2024-05-25 00:01:55] INFO root fetch - main [MainThread]: End processing [skill-news]: success
+[2024-05-25 00:01:55] INFO root fetch - main [MainThread]: Store serial: [23368517]
