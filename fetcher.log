@@ -70,3 +70,15 @@
 [2024-05-25 00:01:55] INFO root fetch - processPackages [skill-news]: Remove: archive file [/home/abi/fetcher/tmp/skill_news-0.0.4a8-py3-none-any.whl.zip]
 [2024-05-25 00:01:55] INFO root fetch - main [MainThread]: End processing [skill-news]: success
 [2024-05-25 00:01:55] INFO root fetch - main [MainThread]: Store serial: [23368517]
+[2024-05-25 00:03:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368517]
+[2024-05-25 00:04:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 00:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: watr
+[2024-05-25 00:04:04] INFO root fetch - processPackages [watr]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 00:04:04] INFO root fetch - processPackages [watr]: Downloading https://files.pythonhosted.org/packages/7b/f2/3d144704ff99085e564b9becc5f8ba23d1bb03934d01100cbc49084a0c71/watr-0.0.2.tar.gz
+[2024-05-25 00:04:04] INFO root fetch - processPackages [watr]: Downloading https://files.pythonhosted.org/packages/a7/a9/b421e8e4230987054c1cd250b9cf5a34edfa285298010451fc151a980a7c/watr-0.0.3.tar.gz
+[2024-05-25 00:04:04] INFO root fetch - processPackages [watr]: executing diffoscope
+[2024-05-25 00:04:04] INFO root fetch - processPackages [watr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watr-0.0.2.tar.gz tmp/watr-0.0.3.tar.gz --markdown 20240525/w/watr/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 00:04:05] INFO root fetch - processPackages [watr]: Remove: archive file [/home/abi/fetcher/tmp/watr-0.0.2.tar.gz]
+[2024-05-25 00:04:05] INFO root fetch - processPackages [watr]: Remove: archive file [/home/abi/fetcher/tmp/watr-0.0.3.tar.gz]
+[2024-05-25 00:04:05] INFO root fetch - main [MainThread]: End processing [watr]: success
+[2024-05-25 00:04:05] INFO root fetch - main [MainThread]: Store serial: [23368520]
