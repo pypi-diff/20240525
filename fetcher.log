@@ -1344,3 +1344,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:10:44] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django_appointment-3.6.0.tar.gz]
 [2024-05-25 01:10:44] INFO root fetch - main [MainThread]: End processing [django-appointment]: success
 [2024-05-25 01:10:44] INFO root fetch - main [MainThread]: Store serial: [23369006]
+[2024-05-25 01:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369006]
+[2024-05-25 01:12:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: story-protocol-python-sdk
+[2024-05-25 01:12:52] INFO root fetch - processPackages [story-protocol-python-sdk]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-25 01:12:52] INFO root fetch - processPackages [story-protocol-python-sdk]: Downloading https://files.pythonhosted.org/packages/60/e0/8d1e9cfe84e777778a63db2f07ebe03490836bf282f2032d8e1df4dc11f6/story_protocol_python_sdk-0.2.7.tar.gz
+[2024-05-25 01:12:52] INFO root fetch - processPackages [story-protocol-python-sdk]: Downloading https://files.pythonhosted.org/packages/0a/c4/ac69fe33f9ed90361e6d4ae8a70eb212058d9f99fc38a66a780f6be06368/story_protocol_python_sdk-0.2.8.tar.gz
+[2024-05-25 01:12:53] INFO root fetch - processPackages [story-protocol-python-sdk]: executing diffoscope
+[2024-05-25 01:12:53] INFO root fetch - processPackages [story-protocol-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/story_protocol_python_sdk-0.2.7.tar.gz tmp/story_protocol_python_sdk-0.2.8.tar.gz --markdown 20240525/s/story-protocol-python-sdk/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-25 01:12:53] INFO root fetch - processPackages [story-protocol-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/story_protocol_python_sdk-0.2.7.tar.gz]
+[2024-05-25 01:12:53] INFO root fetch - processPackages [story-protocol-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/story_protocol_python_sdk-0.2.8.tar.gz]
+[2024-05-25 01:12:53] INFO root fetch - main [MainThread]: End processing [story-protocol-python-sdk]: success
+[2024-05-25 01:12:53] INFO root fetch - main [MainThread]: Store serial: [23369009]
