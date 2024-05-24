@@ -1427,3 +1427,69 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:17:14] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
 [2024-05-25 01:17:14] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
 [2024-05-25 01:17:14] INFO root fetch - main [MainThread]: Store serial: [23369038]
+[2024-05-25 01:19:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369038]
+[2024-05-25 01:19:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-gocardless
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wfl
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-zendesk-sell
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-gcp
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airbyte-source-ashby
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airbyte-source-fullstory
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: airbyte-source-hubplanner
+[2024-05-25 01:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-aiven
+[2024-05-25 01:19:22] INFO root fetch - processPackages [airbyte-source-gocardless]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.9.0a1704274395] Old Version: [6.9.0a1704258951]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [pulumi-gcp]: New version: [7.9.0a1707934510] Old Version: [7.9.0a1707891532]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [wfl]: New version: [0.3.0] Old Version: [0.2.7]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [airbyte-source-fullstory]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [airbyte-source-hubplanner]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [airbyte-source-ashby]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:19:22] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/89/fb/adacc179c277b4328f00f1483cac3f1c2227c33318802c8f88e0ee8e93c3/pulumi_aiven-6.9.0a1704258951.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [pulumi-gcp]: Downloading https://files.pythonhosted.org/packages/f0/b4/677e3618cc42a30dd41030c6dee1b6b9d52e956632b9a1eeb84c0c2d8e3c/pulumi_gcp-7.9.0a1707891532.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-gocardless]: Downloading https://files.pythonhosted.org/packages/6e/3d/eb59ff38e069bd112cfba64175e494a1c48a210f5ac7478248b7b3bcc656/airbyte_source_gocardless-0.1.1.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-hubplanner]: Downloading https://files.pythonhosted.org/packages/8b/3b/ed478533046b561ce12aae558588e977ce5afd2e031ba831a8c43dfc1d57/airbyte-source-hubplanner-0.2.0.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-fullstory]: Downloading https://files.pythonhosted.org/packages/a9/13/0df8e0b47b6ef49eeff13df4a869a2e68fb214149b1b37911a7968bdfa67/airbyte-source-fullstory-0.1.0.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [wfl]: Downloading https://files.pythonhosted.org/packages/9f/00/07ab73d2c37e9cab886c9a77f3e41993ecc1a32beb802ac1700c102db6af/wfl-0.2.7.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-ashby]: Downloading https://files.pythonhosted.org/packages/08/8b/83777d12867e586a9f4af458a7c620853c9c1acc5029937f49451774510a/airbyte-source-ashby-0.1.0.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: Downloading https://files.pythonhosted.org/packages/c7/ac/0b7637566563e88956efa0e6b24e91ba93f2b2d3c0459dfb2ab117ab7373/airbyte-source-zendesk-sell-0.2.0.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-gocardless]: executing diffoscope
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-gocardless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-gocardless-0.1.0.tar.gz tmp/airbyte_source_gocardless-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-gocardless/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:19:23] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/58/4d/df63cee14469cb3bb5ff7e2a4af56d19adf0cd17ce9192b84188dc240736/pulumi_aiven-6.9.0a1704274395.tar.gz
+[2024-05-25 01:19:23] ERROR root fetch - processPackages [airbyte-source-fullstory]: Unable to fetch info: No such project/version 'airbyte-source-fullstory' 0.1.1
+[2024-05-25 01:19:23] INFO root fetch - main [MainThread]: End processing [airbyte-source-fullstory] error
+[2024-05-25 01:19:23] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2024-05-25 01:19:23] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.9.0a1704258951.tar.gz tmp/pulumi_aiven-6.9.0a1704274395.tar.gz --markdown 20240525/p/pulumi-aiven/6.9.0a1704258951-6.9.0a1704274395/README.md --exclude *.pyd
+[2024-05-25 01:19:23] ERROR root fetch - processPackages [airbyte-source-hubplanner]: Unable to fetch info: No such project/version 'airbyte-source-hubplanner' 0.2.1
+[2024-05-25 01:19:23] INFO root fetch - main [MainThread]: End processing [airbyte-source-hubplanner] error
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: Downloading https://files.pythonhosted.org/packages/bf/11/0552a674eb5a0c29f1c96fa8d108f33e91b88a2fc8710687794539ff33f6/airbyte_source_zendesk_sell-0.2.1.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-ashby]: Downloading https://files.pythonhosted.org/packages/25/30/a46f33635b589eddc6762bb7670b0548c6df0aaf50e5e1bf8d25aca1e89b/airbyte_source_ashby-0.1.1.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [wfl]: Downloading https://files.pythonhosted.org/packages/6a/31/d1eb2eef42800caf9a5aa1f0160cc88f5e84995bca76394a115894b6b93a/wfl-0.3.0.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: executing diffoscope
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-zendesk-sell-0.2.0.tar.gz tmp/airbyte_source_zendesk_sell-0.2.1.tar.gz --markdown 20240525/a/airbyte-source-zendesk-sell/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-25 01:19:23] INFO root fetch - processPackages [pulumi-gcp]: Downloading https://files.pythonhosted.org/packages/e8/4f/d6c8ded38a6c81689a5fb00b6aea9daeef82f4686f3ad6c74eba94b37d8b/pulumi_gcp-7.9.0a1707934510.tar.gz
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-ashby]: executing diffoscope
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-ashby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-ashby-0.1.0.tar.gz tmp/airbyte_source_ashby-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-ashby/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:19:23] INFO root fetch - processPackages [wfl]: executing diffoscope
+[2024-05-25 01:19:23] INFO root fetch - processPackages [wfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wfl-0.2.7.tar.gz tmp/wfl-0.3.0.tar.gz --markdown 20240525/w/wfl/0.2.7-0.3.0/README.md --exclude *.pyd
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-gocardless]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-gocardless-0.1.0.tar.gz]
+[2024-05-25 01:19:23] INFO root fetch - processPackages [airbyte-source-gocardless]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_gocardless-0.1.1.tar.gz]
+[2024-05-25 01:19:23] INFO root fetch - main [MainThread]: End processing [airbyte-source-gocardless]: success
+[2024-05-25 01:19:24] INFO root fetch - processPackages [pulumi-gcp]: executing diffoscope
+[2024-05-25 01:19:24] INFO root fetch - processPackages [pulumi-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gcp-7.9.0a1707891532.tar.gz tmp/pulumi_gcp-7.9.0a1707934510.tar.gz --markdown 20240525/p/pulumi-gcp/7.9.0a1707891532-7.9.0a1707934510/README.md --exclude *.pyd
+[2024-05-25 01:19:24] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-zendesk-sell-0.2.0.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - processPackages [airbyte-source-zendesk-sell]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_zendesk_sell-0.2.1.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - main [MainThread]: End processing [airbyte-source-zendesk-sell]: success
+[2024-05-25 01:19:24] INFO root fetch - processPackages [airbyte-source-ashby]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-ashby-0.1.0.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - processPackages [airbyte-source-ashby]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_ashby-0.1.1.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - main [MainThread]: End processing [airbyte-source-ashby]: success
+[2024-05-25 01:19:24] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704258951.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2024-05-25 01:19:24] INFO root fetch - processPackages [wfl]: Remove: archive file [/home/abi/fetcher/tmp/wfl-0.2.7.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - processPackages [wfl]: Remove: archive file [/home/abi/fetcher/tmp/wfl-0.3.0.tar.gz]
+[2024-05-25 01:19:24] INFO root fetch - main [MainThread]: End processing [wfl]: success
+[2024-05-25 01:19:34] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707891532.tar.gz]
+[2024-05-25 01:19:34] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707934510.tar.gz]
+[2024-05-25 01:19:34] INFO root fetch - main [MainThread]: End processing [pulumi-gcp]: success
+[2024-05-25 01:19:34] INFO root fetch - main [MainThread]: Store serial: [23369065]
