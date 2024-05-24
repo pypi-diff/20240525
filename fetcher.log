@@ -1734,3 +1734,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:47:45] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.9-py3-none-any.whl.zip]
 [2024-05-25 01:47:45] INFO root fetch - main [MainThread]: End processing [pazok]: success
 [2024-05-25 01:47:45] INFO root fetch - main [MainThread]: Store serial: [23369238]
+[2024-05-25 01:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369238]
+[2024-05-25 01:49:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 01:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pazok
+[2024-05-25 01:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nemo-curator
+[2024-05-25 01:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: instagram-profile-downloader
+[2024-05-25 01:49:53] INFO root fetch - processPackages [pazok]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 01:49:53] INFO root fetch - processPackages [instagram-profile-downloader]: New version: [1.1.0] Old Version: [1.0.4]
+[2024-05-25 01:49:53] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/cd/6d/798700f2868e8787eb1c27f6a3c2ee390ea034852b0041b39ae4ebc9f2d5/instagram_profile_downloader-1.0.4.tar.gz
+[2024-05-25 01:49:53] WARNING root fetch - processPackages [nemo-curator]: Skipping, unable to determine old version
+[2024-05-25 01:49:53] INFO root fetch - main [MainThread]: End processing [nemo-curator] error
+[2024-05-25 01:49:53] INFO root fetch - processPackages [pazok]: Downloading https://files.pythonhosted.org/packages/cc/27/e9d7ed5230b98b787930ae40e1ce4f3f4f7029a54927fcb8d20592d85b79/pazok-0.1.8.tar.gz
+[2024-05-25 01:49:53] INFO root fetch - processPackages [pazok]: Downloading https://files.pythonhosted.org/packages/57/d7/06757eaaa74a058c674093d3fd3db3507ef438aabcff0a212d8f0fecd75d/pazok-0.1.9-py3-none-any.whl
+[2024-05-25 01:49:53] INFO root fetch - processPackages [instagram-profile-downloader]: Downloading https://files.pythonhosted.org/packages/e8/5b/388c128161757c160f1de9b6d7dfee11392871d60f0bca959a7cff0897a0/instagram_profile_downloader-1.1.0.tar.gz
+[2024-05-25 01:49:53] INFO root fetch - processPackages [instagram-profile-downloader]: executing diffoscope
+[2024-05-25 01:49:53] INFO root fetch - processPackages [instagram-profile-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instagram_profile_downloader-1.0.4.tar.gz tmp/instagram_profile_downloader-1.1.0.tar.gz --markdown 20240525/i/instagram-profile-downloader/1.0.4-1.1.0/README.md --exclude *.pyd
+[2024-05-25 01:49:53] INFO root fetch - processPackages [pazok]: executing diffoscope
+[2024-05-25 01:49:53] INFO root fetch - processPackages [pazok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pazok-0.1.8.tar.gz tmp/pazok-0.1.9-py3-none-any.whl.zip --markdown 20240525/p/pazok/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 01:49:54] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.0.4.tar.gz]
+[2024-05-25 01:49:54] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.1.0.tar.gz]
+[2024-05-25 01:49:54] INFO root fetch - main [MainThread]: End processing [instagram-profile-downloader]: success
+[2024-05-25 01:49:54] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.8.tar.gz]
+[2024-05-25 01:49:54] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.9-py3-none-any.whl.zip]
+[2024-05-25 01:49:54] INFO root fetch - main [MainThread]: End processing [pazok]: success
+[2024-05-25 01:49:54] INFO root fetch - main [MainThread]: Store serial: [23369250]
