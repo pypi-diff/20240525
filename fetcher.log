@@ -585,3 +585,33 @@
 [2024-05-25 00:37:21] INFO root fetch - processPackages [nntool]: Remove: archive file [/home/abi/fetcher/tmp/nntool-0.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-25 00:37:21] INFO root fetch - main [MainThread]: End processing [nntool]: success
 [2024-05-25 00:37:21] INFO root fetch - main [MainThread]: Store serial: [23368723]
+[2024-05-25 00:39:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368723]
+[2024-05-25 00:39:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 00:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: doopass-libs
+[2024-05-25 00:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypdf2htmlex
+[2024-05-25 00:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balsamic
+[2024-05-25 00:39:33] INFO root fetch - processPackages [doopass-libs]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-25 00:39:33] INFO root fetch - processPackages [balsamic]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-25 00:39:33] INFO root fetch - processPackages [doopass-libs]: Downloading https://files.pythonhosted.org/packages/31/9a/c8409d48ff074338a1caa6da96c97ac4cfe2acfc30a585898c780c60e015/doopass_libs-1.0.5.tar.gz
+[2024-05-25 00:39:33] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/45/1d/def86f8049ae874f6488a80f179008709d257518893e059664e305c7d3bc/balsamic-0.2.4.tar.gz
+[2024-05-25 00:39:33] INFO root fetch - processPackages [pypdf2htmlex]: New version: [1.1] Old Version: [1.0]
+[2024-05-25 00:39:33] INFO root fetch - processPackages [pypdf2htmlex]: Downloading https://files.pythonhosted.org/packages/f6/c2/6afb9d77f8ac66951b3b91ce80f974b26f8a739e458467f43414d3e6a384/pypdf2htmlex-1.0.tar.gz
+[2024-05-25 00:39:34] INFO root fetch - processPackages [doopass-libs]: Downloading https://files.pythonhosted.org/packages/1e/48/ad5e2e1b24c1ca2855768df737b6c3ec7ac4809778227639b34120e01fef/doopass_libs-1.0.6.tar.gz
+[2024-05-25 00:39:34] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/13/04/a57b606d98686702066b8ee6e5d98f7da21993c2d16c802cd12fd74e58c0/balsamic-0.2.5.tar.gz
+[2024-05-25 00:39:34] INFO root fetch - processPackages [doopass-libs]: executing diffoscope
+[2024-05-25 00:39:34] INFO root fetch - processPackages [doopass-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doopass_libs-1.0.5.tar.gz tmp/doopass_libs-1.0.6.tar.gz --markdown 20240525/d/doopass-libs/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-25 00:39:34] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:39:34] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.4.tar.gz tmp/balsamic-0.2.5.tar.gz --markdown 20240525/b/balsamic/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-25 00:39:34] INFO root fetch - processPackages [pypdf2htmlex]: Downloading https://files.pythonhosted.org/packages/f1/c3/f36802491d2290df7823aa99d701b1a17cf66dbab30641c609ffe8970555/pypdf2htmlex-1.1.tar.gz
+[2024-05-25 00:39:34] INFO root fetch - processPackages [pypdf2htmlex]: executing diffoscope
+[2024-05-25 00:39:34] INFO root fetch - processPackages [pypdf2htmlex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdf2htmlex-1.0.tar.gz tmp/pypdf2htmlex-1.1.tar.gz --markdown 20240525/p/pypdf2htmlex/1.0-1.1/README.md --exclude *.pyd
+[2024-05-25 00:39:34] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.4.tar.gz]
+[2024-05-25 00:39:34] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.5.tar.gz]
+[2024-05-25 00:39:34] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:39:34] INFO root fetch - processPackages [doopass-libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.5.tar.gz]
+[2024-05-25 00:39:34] INFO root fetch - processPackages [doopass-libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.6.tar.gz]
+[2024-05-25 00:39:34] INFO root fetch - main [MainThread]: End processing [doopass-libs]: success
+[2024-05-25 00:39:34] INFO root fetch - processPackages [pypdf2htmlex]: Remove: archive file [/home/abi/fetcher/tmp/pypdf2htmlex-1.0.tar.gz]
+[2024-05-25 00:39:34] INFO root fetch - processPackages [pypdf2htmlex]: Remove: archive file [/home/abi/fetcher/tmp/pypdf2htmlex-1.1.tar.gz]
+[2024-05-25 00:39:34] INFO root fetch - main [MainThread]: End processing [pypdf2htmlex]: success
+[2024-05-25 00:39:34] INFO root fetch - main [MainThread]: Store serial: [23368732]
