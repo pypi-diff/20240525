@@ -1800,3 +1800,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:54:12] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
 [2024-05-25 01:54:12] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
 [2024-05-25 01:54:12] INFO root fetch - main [MainThread]: Store serial: [23369262]
+[2024-05-25 01:56:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369262]
+[2024-05-25 01:56:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 01:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoto-api
+[2024-05-25 01:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chainladder
+[2024-05-25 01:56:21] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-25 01:56:21] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-25 01:56:21] INFO root fetch - processPackages [chainladder]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-25 01:56:21] INFO root fetch - processPackages [chainladder]: Downloading https://files.pythonhosted.org/packages/b3/70/000cf34c7973cd999ae2d6d12e15689b7b80d24f365da8227ef4139c6356/chainladder-0.8.8.tar.gz
+[2024-05-25 01:56:21] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-25 01:56:21] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-25 01:56:21] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240525/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-25 01:56:22] INFO root fetch - processPackages [chainladder]: Downloading https://files.pythonhosted.org/packages/48/91/2ad1f8e65c0f74d15ffd4179eb2febb9cd516da7c7efaa2adbbcf69eaefb/chainladder-0.8.9.tar.gz
+[2024-05-25 01:56:22] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-25 01:56:22] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-25 01:56:22] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-25 01:56:22] INFO root fetch - processPackages [chainladder]: executing diffoscope
+[2024-05-25 01:56:22] INFO root fetch - processPackages [chainladder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainladder-0.8.8.tar.gz tmp/chainladder-0.8.9.tar.gz --markdown 20240525/c/chainladder/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-25 01:56:23] INFO root fetch - processPackages [chainladder]: Remove: archive file [/home/abi/fetcher/tmp/chainladder-0.8.8.tar.gz]
+[2024-05-25 01:56:23] INFO root fetch - processPackages [chainladder]: Remove: archive file [/home/abi/fetcher/tmp/chainladder-0.8.9.tar.gz]
+[2024-05-25 01:56:23] INFO root fetch - main [MainThread]: End processing [chainladder]: success
+[2024-05-25 01:56:23] INFO root fetch - main [MainThread]: Store serial: [23369270]
