@@ -1579,3 +1579,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:30:25] INFO root fetch - processPackages [treelite]: Remove: archive file [/home/abi/fetcher/tmp/treelite-4.2.1.tar.gz]
 [2024-05-25 01:30:25] INFO root fetch - main [MainThread]: End processing [treelite]: success
 [2024-05-25 01:30:25] INFO root fetch - main [MainThread]: Store serial: [23369108]
+[2024-05-25 01:32:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369108]
+[2024-05-25 01:32:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-syzygy
+[2024-05-25 01:32:35] INFO root fetch - processPackages [django-syzygy]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-25 01:32:35] INFO root fetch - processPackages [django-syzygy]: Downloading https://files.pythonhosted.org/packages/10/10/84c20ac7b0a6670cb50e324cb517ca4c560fa3033dba214923f15249d310/django-syzygy-1.0.1.tar.gz
+[2024-05-25 01:32:36] INFO root fetch - processPackages [django-syzygy]: Downloading https://files.pythonhosted.org/packages/f1/d5/52d41950e85df1fa34b7a28e576beebe3d1cea8cab7cf739004ce5aede57/django_syzygy-1.1.0.tar.gz
+[2024-05-25 01:32:36] INFO root fetch - processPackages [django-syzygy]: executing diffoscope
+[2024-05-25 01:32:36] INFO root fetch - processPackages [django-syzygy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-syzygy-1.0.1.tar.gz tmp/django_syzygy-1.1.0.tar.gz --markdown 20240525/d/django-syzygy/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-25 01:32:37] INFO root fetch - processPackages [django-syzygy]: Remove: archive file [/home/abi/fetcher/tmp/django-syzygy-1.0.1.tar.gz]
+[2024-05-25 01:32:37] INFO root fetch - processPackages [django-syzygy]: Remove: archive file [/home/abi/fetcher/tmp/django_syzygy-1.1.0.tar.gz]
+[2024-05-25 01:32:37] INFO root fetch - main [MainThread]: End processing [django-syzygy]: success
+[2024-05-25 01:32:37] INFO root fetch - main [MainThread]: Store serial: [23369111]
