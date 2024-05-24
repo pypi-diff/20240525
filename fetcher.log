@@ -1112,3 +1112,193 @@
 [2024-05-25 01:04:01] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.1.post2.tar.gz]
 [2024-05-25 01:04:01] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
 [2024-05-25 01:04:01] INFO root fetch - main [MainThread]: Store serial: [23368904]
+[2024-05-25 01:06:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368904]
+[2024-05-25 01:06:11] INFO root fetch - main [MainThread]: Found 32 changed packages
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuralgcm
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyterlab-optumi
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-dremio
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: luxos
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airbyte-source-recruitee
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airbyte-source-genesys
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: airbyte-source-n8n
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: airbyte-source-plausible
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tmnt
+[2024-05-25 01:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cash-tecton
+[2024-05-25 01:06:11] INFO root fetch - processPackages [luxos]: New version: [0.0.8b29] Old Version: [0.0.8b28]
+[2024-05-25 01:06:11] WARNING root fetch - processPackages [neuralgcm]: Skipping, unable to determine old version
+[2024-05-25 01:06:11] INFO root fetch - processPackages [neuralgcm]: Start processing: airbyte-source-vitally
+[2024-05-25 01:06:11] INFO root fetch - main [MainThread]: End processing [neuralgcm] error
+[2024-05-25 01:06:11] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240523] Old Version: [0.7.52b20240522]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [luxos]: Downloading https://files.pythonhosted.org/packages/4b/58/e2ab3e7e5c11d64a6e088befc8771888a602bb2281eeda3f853e85b54b05/luxos-0.0.8b28.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-dremio]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-genesys]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-plausible]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-recruitee]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-n8n]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:06:11] WARNING root fetch - processPackages [cash-tecton]: Skipping, unable to determine old version
+[2024-05-25 01:06:11] INFO root fetch - processPackages [cash-tecton]: Start processing: luxos
+[2024-05-25 01:06:11] INFO root fetch - main [MainThread]: End processing [cash-tecton] error
+[2024-05-25 01:06:11] INFO root fetch - processPackages [jupyterlab-optumi]: New version: [3.9.9] Old Version: [3.9.8]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-vitally]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/3a/61/9d602a58886d8bc3eab4fde14531781728ef236cb5f0342536e3aa6eb070/tmnt-0.7.52b20240522.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [luxos]: New version: [0.0.8b30] Old Version: [0.0.8b29]
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-dremio]: Downloading https://files.pythonhosted.org/packages/ae/2a/0ede47b84d330da0d7343021bd6a524b4d933d1f56bf64555951d2a92c38/airbyte-source-dremio-0.1.0.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-genesys]: Downloading https://files.pythonhosted.org/packages/3b/aa/64e183298c983c5e5c2acd305e1a4c54690f3f4264b7b6018344dbe8c0d4/airbyte-source-genesys-0.1.0.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [luxos]: Downloading https://files.pythonhosted.org/packages/23/f4/a8935fd3e8d6c5f04e4891956381d75ba0bc090b1dbd627fd7e09a6fdaea/luxos-0.0.8b29.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-plausible]: Downloading https://files.pythonhosted.org/packages/a3/10/09817c4919ad254a6f95b795f3e910f6aebac9fb189879276487ef9ae4ba/airbyte-source-plausible-0.1.0.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-recruitee]: Downloading https://files.pythonhosted.org/packages/34/d9/0ff7ac1e810b47925f0ff7b4a67ac3748281adf1fc6b423f46b9f37cfd91/airbyte-source-recruitee-0.1.0.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-n8n]: Downloading https://files.pythonhosted.org/packages/c4/3c/14ba9e5ba8bef9528b8277855bfffbe08c420e91d45306b068b1de73a29d/airbyte-source-n8n-0.1.0.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [jupyterlab-optumi]: Downloading https://files.pythonhosted.org/packages/a7/8e/6085051d3edca1b7c81c1f3d4d29c79a216a8ea2dd87ead0913ef5c0cc68/jupyterlab-optumi-3.9.8.tar.gz
+[2024-05-25 01:06:11] INFO root fetch - processPackages [airbyte-source-vitally]: Downloading https://files.pythonhosted.org/packages/16/97/1bc0724a8141c06ad752b095dd5a5207011548b909813613f85f3c47255b/airbyte-source-vitally-0.1.0.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [luxos]: Downloading https://files.pythonhosted.org/packages/23/f4/a8935fd3e8d6c5f04e4891956381d75ba0bc090b1dbd627fd7e09a6fdaea/luxos-0.0.8b29.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/e0/65/7ea0bb049e89e7778c2abe518f0f13499b9e2ccb8f829738257edfd66c08/tmnt-0.7.52b20240523.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [luxos]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [luxos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luxos-0.0.8b28.tar.gz tmp/luxos-0.0.8b29.tar.gz --markdown 20240525/l/luxos/0.0.8b28-0.0.8b29/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-dremio]: Downloading https://files.pythonhosted.org/packages/21/4f/fa0f559d34effe1ab60111cead1766bb584e2513ecd640fd42c524f6d606/airbyte_source_dremio-0.1.1.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-genesys]: Downloading https://files.pythonhosted.org/packages/06/0c/16d6fd82f4bcebdaa085f562eb2d990fadc2014fba65eb44d4967d450dd9/airbyte_source_genesys-0.1.1.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [luxos]: Downloading https://files.pythonhosted.org/packages/65/e9/953e77781c7eee76f393473545a252b0ec566d7cdb93c1210039f7dd3601/luxos-0.0.8b30.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-plausible]: Downloading https://files.pythonhosted.org/packages/ea/b2/52bf941dd70f1c6e1f90c5f72a9e2eb71e5cb500136fb2648a694f6175f7/airbyte_source_plausible-0.1.1.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240522.tar.gz tmp/tmnt-0.7.52b20240523.tar.gz --markdown 20240525/t/tmnt/0.7.52b20240522-0.7.52b20240523/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-n8n]: Downloading https://files.pythonhosted.org/packages/1a/c6/1d0f8516702414f6dbf9d2f186949ac7654c47f711b9ba14973710b97e9c/airbyte_source_n8n-0.1.1.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-recruitee]: Downloading https://files.pythonhosted.org/packages/14/dd/a2accd387648cebaabee5adff5c425565ca0ef5802464e32599c1cc90c48/airbyte_source_recruitee-0.1.1.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-vitally]: Downloading https://files.pythonhosted.org/packages/14/38/f3b310e407a5229ca41d6ec979ae2317bb1c8385e4f354d4c96570b8625b/airbyte_source_vitally-0.1.1.tar.gz
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-genesys]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-genesys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-genesys-0.1.0.tar.gz tmp/airbyte_source_genesys-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-genesys/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-dremio]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-dremio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-dremio-0.1.0.tar.gz tmp/airbyte_source_dremio-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-dremio/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [luxos]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [luxos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luxos-0.0.8b29.tar.gz tmp/luxos-0.0.8b30.tar.gz --markdown 20240525/l/luxos/0.0.8b29-0.0.8b30/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-n8n]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-n8n]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-n8n-0.1.0.tar.gz tmp/airbyte_source_n8n-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-n8n/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-recruitee]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-recruitee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-recruitee-0.1.0.tar.gz tmp/airbyte_source_recruitee-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-recruitee/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-plausible]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-plausible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-plausible-0.1.0.tar.gz tmp/airbyte_source_plausible-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-plausible/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-vitally]: executing diffoscope
+[2024-05-25 01:06:12] INFO root fetch - processPackages [airbyte-source-vitally]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-vitally-0.1.0.tar.gz tmp/airbyte_source_vitally-0.1.1.tar.gz --markdown 20240525/a/airbyte-source-vitally/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 01:06:13] INFO root fetch - processPackages [luxos]: Remove: archive file [/home/abi/fetcher/tmp/luxos-0.0.8b28.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [luxos]: Remove: archive file [/home/abi/fetcher/tmp/luxos-0.0.8b29.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [luxos]: Start processing: cash-training-wheels-contrib-health-ai
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [luxos]: success
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [cash-training-wheels-contrib-health-ai]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [cash-training-wheels-contrib-health-ai]: Start processing: cash-training-wheels-contrib-health-ml
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [cash-training-wheels-contrib-health-ai] error
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-genesys]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-genesys-0.1.0.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-genesys]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_genesys-0.1.1.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-genesys]: Start processing: cash-training-wheels-core
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-genesys]: success
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-dremio]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-dremio-0.1.0.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-dremio]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_dremio-0.1.1.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-dremio]: Start processing: cash-training-wheels-pytorch-biggraph
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-dremio]: success
+[2024-05-25 01:06:13] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240522.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240523.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [tmnt]: Start processing: cash-ucml-uw-models
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [cash-training-wheels-contrib-health-ml]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [cash-training-wheels-contrib-health-ml]: Start processing: sq-auth
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [cash-training-wheels-contrib-health-ml] error
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [cash-training-wheels-core]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [cash-training-wheels-core]: Start processing: sq-autolabel
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [cash-training-wheels-core] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [luxos]: Diffoscope failed: time="2024-05-25T01:06:12+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
+
+[2024-05-25 01:06:13] INFO root fetch - processPackages [luxos]: Start processing: sq-aws
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [luxos] error
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-recruitee]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-recruitee-0.1.0.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-recruitee]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_recruitee-0.1.1.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-recruitee]: Start processing: sq-banister
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-recruitee]: success
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [cash-training-wheels-pytorch-biggraph]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [cash-training-wheels-pytorch-biggraph]: Start processing: sq-batch-prediction
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [cash-training-wheels-pytorch-biggraph] error
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-plausible]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-plausible-0.1.0.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-plausible]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_plausible-0.1.1.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-plausible]: Start processing: sq-cascade
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-plausible]: success
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-vitally]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-vitally-0.1.0.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-vitally]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_vitally-0.1.1.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-vitally]: Start processing: sq-cloudfoundry
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-vitally]: success
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [cash-ucml-uw-models]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [cash-ucml-uw-models]: Start processing: sq-conductor
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [cash-ucml-uw-models] error
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [sq-auth]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [sq-auth]: Start processing: flwr-nightly
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-auth] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-autolabel]: Unable to get metadata: No such project 'sq-autolabel'
+[2024-05-25 01:06:13] INFO root fetch - processPackages [sq-autolabel]: Start processing: sq-config
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-autolabel] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-aws]: Unable to get metadata: No such project 'sq-aws'
+[2024-05-25 01:06:13] INFO root fetch - processPackages [sq-aws]: Start processing: sq-container-image-builder
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-aws] error
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-n8n]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-n8n-0.1.0.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-n8n]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_n8n-0.1.1.tar.gz]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [airbyte-source-n8n]: Start processing: sq-cooper
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [airbyte-source-n8n]: success
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [sq-banister]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - processPackages [sq-banister]: Start processing: sq-counselor
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-banister] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-batch-prediction]: Unable to get metadata: No such project 'sq-batch-prediction'
+[2024-05-25 01:06:13] INFO root fetch - processPackages [sq-batch-prediction]: Start processing: sq-crane
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-batch-prediction] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-cascade]: Unable to get metadata: No such project 'sq-cascade'
+[2024-05-25 01:06:13] INFO root fetch - processPackages [sq-cascade]: Start processing: tonic-textual
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-cascade] error
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [sq-cloudfoundry]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-cloudfoundry] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-conductor]: Unable to get metadata: No such project 'sq-conductor'
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-conductor] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-config]: Unable to get metadata: No such project 'sq-config'
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-config] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-cooper]: Unable to get metadata: No such project 'sq-cooper'
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-cooper] error
+[2024-05-25 01:06:13] WARNING root fetch - processPackages [sq-container-image-builder]: Skipping, unable to determine old version
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-container-image-builder] error
+[2024-05-25 01:06:13] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240524] Old Version: [1.9.0.dev20240523]
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-counselor]: Unable to get metadata: No such project 'sq-counselor'
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-counselor] error
+[2024-05-25 01:06:13] ERROR root fetch - processPackages [sq-crane]: Unable to get metadata: No such project 'sq-crane'
+[2024-05-25 01:06:13] INFO root fetch - main [MainThread]: End processing [sq-crane] error
+[2024-05-25 01:06:13] INFO root fetch - processPackages [tonic-textual]: New version: [2.0.0] Old Version: [1.4.0]
+[2024-05-25 01:06:13] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/90/74/8893fa725d4b78d4462a3c41a610dc5dd285e473448069ef35b95d51d9a1/flwr_nightly-1.9.0.dev20240523.tar.gz
+[2024-05-25 01:06:14] INFO root fetch - processPackages [tonic-textual]: Downloading https://files.pythonhosted.org/packages/d4/fe/4c9d76c09d258689118b9186d95606f8854a9d200da8dfe23000fb7f7f81/tonic_textual-1.4.0.tar.gz
+[2024-05-25 01:06:14] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/77/0e/dbb2bcecb297a1cf0ebc8eb34e86a999ff3f524cba9cea56c2ed59d841c2/flwr_nightly-1.9.0.dev20240524.tar.gz
+[2024-05-25 01:06:14] INFO root fetch - processPackages [tonic-textual]: Downloading https://files.pythonhosted.org/packages/8b/40/fdc586e9d1afe383cf9183166bee3184313e0197220880a4e2254e4572b0/tonic_textual-2.0.0.tar.gz
+[2024-05-25 01:06:14] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-05-25 01:06:14] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240523.tar.gz tmp/flwr_nightly-1.9.0.dev20240524.tar.gz --markdown 20240525/f/flwr-nightly/1.9.0.dev20240523-1.9.0.dev20240524/README.md --exclude *.pyd
+[2024-05-25 01:06:14] INFO root fetch - processPackages [jupyterlab-optumi]: Downloading https://files.pythonhosted.org/packages/97/75/ce93a28e75bfb407dedc53ae5f247a368eb93179c14c16bca8a11218f211/jupyterlab-optumi-3.9.9.tar.gz
+[2024-05-25 01:06:14] INFO root fetch - processPackages [tonic-textual]: executing diffoscope
+[2024-05-25 01:06:14] INFO root fetch - processPackages [tonic-textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tonic_textual-1.4.0.tar.gz tmp/tonic_textual-2.0.0.tar.gz --markdown 20240525/t/tonic-textual/1.4.0-2.0.0/README.md --exclude *.pyd
+[2024-05-25 01:06:15] INFO root fetch - processPackages [tonic-textual]: Remove: archive file [/home/abi/fetcher/tmp/tonic_textual-1.4.0.tar.gz]
+[2024-05-25 01:06:15] INFO root fetch - processPackages [tonic-textual]: Remove: archive file [/home/abi/fetcher/tmp/tonic_textual-2.0.0.tar.gz]
+[2024-05-25 01:06:15] INFO root fetch - main [MainThread]: End processing [tonic-textual]: success
+[2024-05-25 01:06:15] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240523.tar.gz]
+[2024-05-25 01:06:15] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240524.tar.gz]
+[2024-05-25 01:06:15] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-05-25 01:06:16] INFO root fetch - processPackages [jupyterlab-optumi]: executing diffoscope
+[2024-05-25 01:06:16] INFO root fetch - processPackages [jupyterlab-optumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab-optumi-3.9.8.tar.gz tmp/jupyterlab-optumi-3.9.9.tar.gz --markdown 20240525/j/jupyterlab-optumi/3.9.8-3.9.9/README.md --exclude *.pyd
+[2024-05-25 01:06:23] INFO root fetch - processPackages [jupyterlab-optumi]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab-optumi-3.9.8.tar.gz]
+[2024-05-25 01:06:23] INFO root fetch - processPackages [jupyterlab-optumi]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab-optumi-3.9.9.tar.gz]
+[2024-05-25 01:06:23] INFO root fetch - main [MainThread]: End processing [jupyterlab-optumi]: success
+[2024-05-25 01:06:23] INFO root fetch - main [MainThread]: Store serial: [23368995]
