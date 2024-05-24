@@ -138,3 +138,79 @@
 [2024-05-25 00:11:28] ERROR root fetch - processPackages [LiteEFG]: Timeout during execution of pkgdiff
 [2024-05-25 00:11:28] INFO root fetch - main [MainThread]: End processing [LiteEFG] error
 [2024-05-25 00:11:28] INFO root fetch - main [MainThread]: Store serial: [23368560]
+[2024-05-25 00:13:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368560]
+[2024-05-25 00:13:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hybridkf
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pricecypher-sdk
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sec-form-d
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-grpcio
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dfvue
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hddm-s
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dnplab
+[2024-05-25 00:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dnplab
+[2024-05-25 00:13:37] INFO root fetch - processPackages [py-grpcio]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hybridkf]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [pricecypher-sdk]: New version: [2.1.1.dev9] Old Version: [2.1.1.dev8]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dfvue]: New version: [1.0] Old Version: [0.993]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [py-grpcio]: Downloading https://files.pythonhosted.org/packages/17/47/ec2df49ec42e4a10fbea230aa2cd0ef83221fd3fc47f0308092431d88474/py_grpcio-1.5.1.tar.gz
+[2024-05-25 00:13:37] WARNING root fetch - processPackages [sec-form-d]: Skipping, unable to determine old version
+[2024-05-25 00:13:37] INFO root fetch - main [MainThread]: End processing [sec-form-d] error
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dnplab]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dnplab]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [pricecypher-sdk]: Downloading https://files.pythonhosted.org/packages/38/49/b89d96ed3ff310fb5c9d6c14c89281602d3c2a6128611d6a53449c0d22b8/pricecypher_sdk-2.1.1.dev8.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/58/4c/a8226ea8177f3ac5c2cabfa5ee0fd2bc84a3030c88a28fd0693f06b4291e/hybridkf-1.0.2.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/c7/15/051d8248dd680cc83687b776c06944bb75f8bcddabc05f270b5c65549a26/hddm_s-1.0.7.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dfvue]: Downloading https://files.pythonhosted.org/packages/8e/36/4221955f2399762485996fad6f797d3a5493b16d4f5f4d47aa95458d2a3f/dfvue-0.993.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dnplab]: Downloading https://files.pythonhosted.org/packages/fc/76/ea6694f9f48673908a35287b3b605ff40d84bcab33d4b3fc0678539009ee/dnplab-2.1.8.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dnplab]: Downloading https://files.pythonhosted.org/packages/fc/76/ea6694f9f48673908a35287b3b605ff40d84bcab33d4b3fc0678539009ee/dnplab-2.1.8.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [pricecypher-sdk]: Downloading https://files.pythonhosted.org/packages/a9/09/845a1d8801385f82e900c7737902408e9994871830eb24e0bcee3e73a22a/pricecypher_sdk-2.1.1.dev9.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [py-grpcio]: Downloading https://files.pythonhosted.org/packages/72/2c/8e390d523b743480f704b907e504ae0d01d487c5c6c3d9e4236013cc61d9/py_grpcio-1.5.2.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/1a/51/ccfb2a21279a7bf1fe8580177cc8172e2414e98b32bc1c5c5c70cedd6546/hybridkf-1.0.3.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [pricecypher-sdk]: executing diffoscope
+[2024-05-25 00:13:37] INFO root fetch - processPackages [pricecypher-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pricecypher_sdk-2.1.1.dev8.tar.gz tmp/pricecypher_sdk-2.1.1.dev9.tar.gz --markdown 20240525/p/pricecypher-sdk/2.1.1.dev8-2.1.1.dev9/README.md --exclude *.pyd
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.7.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-25 00:13:37] INFO root fetch - processPackages [py-grpcio]: executing diffoscope
+[2024-05-25 00:13:37] INFO root fetch - processPackages [py-grpcio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_grpcio-1.5.1.tar.gz tmp/py_grpcio-1.5.2.tar.gz --markdown 20240525/p/py-grpcio/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hybridkf]: executing diffoscope
+[2024-05-25 00:13:37] INFO root fetch - processPackages [hybridkf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybridkf-1.0.2.tar.gz tmp/hybridkf-1.0.3.tar.gz --markdown 20240525/h/hybridkf/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dnplab]: Downloading https://files.pythonhosted.org/packages/ae/1e/32dfd13b3da0f9434311e36dc93eeaeef6b4c9b8140665c44eb5fb703531/dnplab-2.1.9.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dnplab]: Downloading https://files.pythonhosted.org/packages/ae/1e/32dfd13b3da0f9434311e36dc93eeaeef6b4c9b8140665c44eb5fb703531/dnplab-2.1.9.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-05-25 00:13:37] INFO root fetch - processPackages [dfvue]: Downloading https://files.pythonhosted.org/packages/65/d1/58aa020152479de804819f22a59676648971e557f68b04e068714ad36978/dfvue-1.0.tar.gz
+[2024-05-25 00:13:38] INFO root fetch - processPackages [dnplab]: executing diffoscope
+[2024-05-25 00:13:38] INFO root fetch - processPackages [dnplab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnplab-2.1.8.tar.gz tmp/dnplab-2.1.9.tar.gz --markdown 20240525/d/dnplab/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-25 00:13:38] INFO root fetch - processPackages [dnplab]: executing diffoscope
+[2024-05-25 00:13:38] INFO root fetch - processPackages [dnplab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnplab-2.1.8.tar.gz tmp/dnplab-2.1.9.tar.gz --markdown 20240525/d/dnplab/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-25 00:13:38] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-05-25 00:13:38] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240525/l/latch/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-05-25 00:13:38] INFO root fetch - processPackages [dfvue]: executing diffoscope
+[2024-05-25 00:13:38] INFO root fetch - processPackages [dfvue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfvue-0.993.tar.gz tmp/dfvue-1.0.tar.gz --markdown 20240525/d/dfvue/0.993-1.0/README.md --exclude *.pyd
+[2024-05-25 00:13:38] INFO root fetch - processPackages [py-grpcio]: Remove: archive file [/home/abi/fetcher/tmp/py_grpcio-1.5.1.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - processPackages [py-grpcio]: Remove: archive file [/home/abi/fetcher/tmp/py_grpcio-1.5.2.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - main [MainThread]: End processing [py-grpcio]: success
+[2024-05-25 00:13:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.7.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 00:13:38] INFO root fetch - processPackages [pricecypher-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pricecypher_sdk-2.1.1.dev8.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - processPackages [pricecypher-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pricecypher_sdk-2.1.1.dev9.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - main [MainThread]: End processing [pricecypher-sdk]: success
+[2024-05-25 00:13:38] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.2.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.3.tar.gz]
+[2024-05-25 00:13:38] INFO root fetch - main [MainThread]: End processing [hybridkf]: success
+[2024-05-25 00:13:39] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-05-25 00:13:39] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-05-25 00:13:39] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-05-25 00:13:39] INFO root fetch - processPackages [dnplab]: Remove: archive file [/home/abi/fetcher/tmp/dnplab-2.1.8.tar.gz]
+[2024-05-25 00:13:39] INFO root fetch - processPackages [dnplab]: Remove: archive file [/home/abi/fetcher/tmp/dnplab-2.1.9.tar.gz]
+[2024-05-25 00:13:39] INFO root fetch - main [MainThread]: End processing [dnplab]: success
+[2024-05-25 00:13:39] INFO root fetch - processPackages [dfvue]: Remove: archive file [/home/abi/fetcher/tmp/dfvue-0.993.tar.gz]
+[2024-05-25 00:13:39] INFO root fetch - processPackages [dfvue]: Remove: archive file [/home/abi/fetcher/tmp/dfvue-1.0.tar.gz]
+[2024-05-25 00:13:39] INFO root fetch - main [MainThread]: End processing [dfvue]: success
+[2024-05-25 00:13:39] INFO root fetch - main [MainThread]: End processing [dnplab]: success
+[2024-05-25 00:13:39] INFO root fetch - main [MainThread]: Store serial: [23368593]
