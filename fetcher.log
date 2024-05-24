@@ -1591,3 +1591,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:32:37] INFO root fetch - processPackages [django-syzygy]: Remove: archive file [/home/abi/fetcher/tmp/django_syzygy-1.1.0.tar.gz]
 [2024-05-25 01:32:37] INFO root fetch - main [MainThread]: End processing [django-syzygy]: success
 [2024-05-25 01:32:37] INFO root fetch - main [MainThread]: Store serial: [23369111]
+[2024-05-25 01:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369111]
+[2024-05-25 01:34:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promptgen
+[2024-05-25 01:34:45] INFO root fetch - processPackages [promptgen]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 01:34:46] INFO root fetch - processPackages [promptgen]: Downloading https://files.pythonhosted.org/packages/c8/1a/e58fd25c14caa7a7f338bdafa258d127723c75546744c97694fa8aedc670/promptgen-0.0.1.tar.gz
+[2024-05-25 01:34:46] INFO root fetch - processPackages [promptgen]: Downloading https://files.pythonhosted.org/packages/a2/8a/e1f7609473c84e74ea0001807dbd3c7484738a58ae9e28bc338a69eb6a12/promptgen-0.0.2.tar.gz
+[2024-05-25 01:34:46] INFO root fetch - processPackages [promptgen]: executing diffoscope
+[2024-05-25 01:34:46] INFO root fetch - processPackages [promptgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptgen-0.0.1.tar.gz tmp/promptgen-0.0.2.tar.gz --markdown 20240525/p/promptgen/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 01:34:47] INFO root fetch - processPackages [promptgen]: Remove: archive file [/home/abi/fetcher/tmp/promptgen-0.0.1.tar.gz]
+[2024-05-25 01:34:47] INFO root fetch - processPackages [promptgen]: Remove: archive file [/home/abi/fetcher/tmp/promptgen-0.0.2.tar.gz]
+[2024-05-25 01:34:47] INFO root fetch - main [MainThread]: End processing [promptgen]: success
+[2024-05-25 01:34:47] INFO root fetch - main [MainThread]: Store serial: [23369114]
