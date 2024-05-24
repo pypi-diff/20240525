@@ -681,3 +681,51 @@
 [2024-05-25 00:44:00] INFO root fetch - processPackages [spare-scores]: Remove: archive file [/home/abi/fetcher/tmp/spare_scores-1.2.2.tar.gz]
 [2024-05-25 00:44:00] INFO root fetch - main [MainThread]: End processing [spare-scores]: success
 [2024-05-25 00:44:00] INFO root fetch - main [MainThread]: Store serial: [23368757]
+[2024-05-25 00:46:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368757]
+[2024-05-25 00:46:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 00:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pricecypher-sdk
+[2024-05-25 00:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adadpython
+[2024-05-25 00:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balsamic
+[2024-05-25 00:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commit-message-validator
+[2024-05-25 00:46:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: agixtsdk
+[2024-05-25 00:46:08] INFO root fetch - processPackages [adadpython]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-25 00:46:08] INFO root fetch - processPackages [pricecypher-sdk]: New version: [2.1.1.dev9] Old Version: [2.1.1.dev8]
+[2024-05-25 00:46:08] INFO root fetch - processPackages [balsamic]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-25 00:46:08] INFO root fetch - processPackages [adadpython]: Downloading https://files.pythonhosted.org/packages/52/08/b5a0ae36c6c5c4e7d06759d34ed2922a38247c08ea4e44f7fbbf4d4fff21/adadpython-0.1.1.tar.gz
+[2024-05-25 00:46:08] INFO root fetch - processPackages [pricecypher-sdk]: Downloading https://files.pythonhosted.org/packages/38/49/b89d96ed3ff310fb5c9d6c14c89281602d3c2a6128611d6a53449c0d22b8/pricecypher_sdk-2.1.1.dev8.tar.gz
+[2024-05-25 00:46:08] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/53/ca/e10955105f4815c4696c940653455d44ce9d308313a7409f4f12d5332a66/balsamic-0.2.6.tar.gz
+[2024-05-25 00:46:08] INFO root fetch - processPackages [commit-message-validator]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-25 00:46:08] INFO root fetch - processPackages [agixtsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 00:46:09] INFO root fetch - processPackages [pricecypher-sdk]: Downloading https://files.pythonhosted.org/packages/a9/09/845a1d8801385f82e900c7737902408e9994871830eb24e0bcee3e73a22a/pricecypher_sdk-2.1.1.dev9.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [commit-message-validator]: Downloading https://files.pythonhosted.org/packages/8d/ff/c4c44521c83d2edce2492113e7ae9b6fdb993cadec628056f1b581f7b810/commit_message_validator-2.0.0.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/fc/f4/85d852d47773fa6751a3ed8d3ca02e654579a0a110cdc23896aebd954b2c/agixtsdk-0.0.8.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/39/88/7036a68e86aac14169908b1352acec1e92e3f2f5a512e868fc1f7c2da48c/balsamic-0.2.7.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [adadpython]: Downloading https://files.pythonhosted.org/packages/04/b7/52971cc95219e17780098ac264b30c73e1aa6dcfd31a9dc3209c0607fe07/adadpython-0.2.0.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [pricecypher-sdk]: executing diffoscope
+[2024-05-25 00:46:09] INFO root fetch - processPackages [pricecypher-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pricecypher_sdk-2.1.1.dev8.tar.gz tmp/pricecypher_sdk-2.1.1.dev9.tar.gz --markdown 20240525/p/pricecypher-sdk/2.1.1.dev8-2.1.1.dev9/README.md --exclude *.pyd
+[2024-05-25 00:46:09] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:46:09] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.6.tar.gz tmp/balsamic-0.2.7.tar.gz --markdown 20240525/b/balsamic/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-25 00:46:09] INFO root fetch - processPackages [adadpython]: executing diffoscope
+[2024-05-25 00:46:09] INFO root fetch - processPackages [adadpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adadpython-0.1.1.tar.gz tmp/adadpython-0.2.0.tar.gz --markdown 20240525/a/adadpython/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-25 00:46:09] INFO root fetch - processPackages [commit-message-validator]: Downloading https://files.pythonhosted.org/packages/34/bb/82d6fb165dca031537ffebf1797c6e38313c76e3f3f9dfa70ade580155a9/commit_message_validator-2.1.0.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [commit-message-validator]: executing diffoscope
+[2024-05-25 00:46:09] INFO root fetch - processPackages [commit-message-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commit_message_validator-2.0.0.tar.gz tmp/commit_message_validator-2.1.0.tar.gz --markdown 20240525/c/commit-message-validator/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-25 00:46:09] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/74/75/1048551801b0e2aa197b36b7a2d249437127d0d21a98a3aea7016e0929b9/agixtsdk-0.0.9.tar.gz
+[2024-05-25 00:46:09] INFO root fetch - processPackages [agixtsdk]: executing diffoscope
+[2024-05-25 00:46:09] INFO root fetch - processPackages [agixtsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixtsdk-0.0.8.tar.gz tmp/agixtsdk-0.0.9.tar.gz --markdown 20240525/a/agixtsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 00:46:10] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.6.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.7.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:46:10] INFO root fetch - processPackages [adadpython]: Remove: archive file [/home/abi/fetcher/tmp/adadpython-0.1.1.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - processPackages [adadpython]: Remove: archive file [/home/abi/fetcher/tmp/adadpython-0.2.0.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - main [MainThread]: End processing [adadpython]: success
+[2024-05-25 00:46:10] INFO root fetch - processPackages [pricecypher-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pricecypher_sdk-2.1.1.dev8.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - processPackages [pricecypher-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pricecypher_sdk-2.1.1.dev9.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - main [MainThread]: End processing [pricecypher-sdk]: success
+[2024-05-25 00:46:10] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.8.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
+[2024-05-25 00:46:10] INFO root fetch - processPackages [commit-message-validator]: Remove: archive file [/home/abi/fetcher/tmp/commit_message_validator-2.0.0.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - processPackages [commit-message-validator]: Remove: archive file [/home/abi/fetcher/tmp/commit_message_validator-2.1.0.tar.gz]
+[2024-05-25 00:46:10] INFO root fetch - main [MainThread]: End processing [commit-message-validator]: success
+[2024-05-25 00:46:10] INFO root fetch - main [MainThread]: Store serial: [23368772]
