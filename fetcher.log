@@ -1537,3 +1537,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:26:05] INFO root fetch - processPackages [pyjvc]: Remove: archive file [/home/abi/fetcher/tmp/pyjvc-4.4.5.tar.gz]
 [2024-05-25 01:26:05] INFO root fetch - main [MainThread]: End processing [pyjvc]: success
 [2024-05-25 01:26:05] INFO root fetch - main [MainThread]: Store serial: [23369090]
+[2024-05-25 01:28:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369090]
+[2024-05-25 01:28:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 01:28:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-public-apis
+[2024-05-25 01:28:14] INFO root fetch - processPackages [airbyte-source-public-apis]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 01:28:15] INFO root fetch - processPackages [airbyte-source-public-apis]: Downloading https://files.pythonhosted.org/packages/9e/23/b55b11ba561d3990eb97f41e8260a36fed9848eac17c5185f84dbd9306cb/airbyte-source-public-apis-0.2.0.tar.gz
+[2024-05-25 01:28:15] INFO root fetch - processPackages [airbyte-source-public-apis]: Downloading https://files.pythonhosted.org/packages/17/db/b09a84ce3959e1811d0526be499bee7cd9543bf6ec06f37df46ce0966591/airbyte_source_public_apis-0.2.1.tar.gz
+[2024-05-25 01:28:15] INFO root fetch - processPackages [airbyte-source-public-apis]: executing diffoscope
+[2024-05-25 01:28:15] INFO root fetch - processPackages [airbyte-source-public-apis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-public-apis-0.2.0.tar.gz tmp/airbyte_source_public_apis-0.2.1.tar.gz --markdown 20240525/a/airbyte-source-public-apis/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-25 01:28:16] INFO root fetch - processPackages [airbyte-source-public-apis]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-public-apis-0.2.0.tar.gz]
+[2024-05-25 01:28:16] INFO root fetch - processPackages [airbyte-source-public-apis]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_public_apis-0.2.1.tar.gz]
+[2024-05-25 01:28:16] INFO root fetch - main [MainThread]: End processing [airbyte-source-public-apis]: success
+[2024-05-25 01:28:16] INFO root fetch - main [MainThread]: Store serial: [23369093]
