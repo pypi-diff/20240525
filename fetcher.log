@@ -564,3 +564,24 @@
 [2024-05-25 00:34:58] INFO root fetch - processPackages [luxos]: Remove: archive file [/home/abi/fetcher/tmp/luxos-0.0.8b29.tar.gz]
 [2024-05-25 00:34:58] INFO root fetch - main [MainThread]: End processing [luxos]: success
 [2024-05-25 00:34:58] INFO root fetch - main [MainThread]: Store serial: [23368715]
+[2024-05-25 00:37:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368715]
+[2024-05-25 00:37:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 00:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nntool
+[2024-05-25 00:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agenta
+[2024-05-25 00:37:07] INFO root fetch - processPackages [nntool]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-05-25 00:37:07] INFO root fetch - processPackages [agenta]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-05-25 00:37:07] INFO root fetch - processPackages [nntool]: Downloading https://files.pythonhosted.org/packages/5e/3f/d350dfcefc656b0152afd5e96d6d970efcbfd40d42ed6956afda5e216273/nntool-0.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 00:37:07] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/e1/b3/694bb4fe67f0b63ef67836f5924bdc436dfb590d7e7da0824cbbc4b71853/agenta-0.8.4.tar.gz
+[2024-05-25 00:37:07] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/f7/a1/73689fd1faf7fbbd3985f8ed9673e4784bae27b1789d6fe5f7e4f001ed89/agenta-0.9.0.tar.gz
+[2024-05-25 00:37:07] INFO root fetch - processPackages [agenta]: executing diffoscope
+[2024-05-25 00:37:07] INFO root fetch - processPackages [agenta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenta-0.8.4.tar.gz tmp/agenta-0.9.0.tar.gz --markdown 20240525/a/agenta/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-05-25 00:37:07] INFO root fetch - processPackages [nntool]: Downloading https://files.pythonhosted.org/packages/cd/76/2b56e672f08f885ed14fafa9e6b02cccba8d2be271fa5e7f23e90780b598/nntool-0.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 00:37:07] INFO root fetch - processPackages [nntool]: executing diffoscope
+[2024-05-25 00:37:07] INFO root fetch - processPackages [nntool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nntool-0.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nntool-0.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240525/n/nntool/0.3.2-0.3.4/README.md --exclude *.pyd
+[2024-05-25 00:37:08] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.8.4.tar.gz]
+[2024-05-25 00:37:08] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
+[2024-05-25 00:37:08] INFO root fetch - main [MainThread]: End processing [agenta]: success
+[2024-05-25 00:37:21] INFO root fetch - processPackages [nntool]: Remove: archive file [/home/abi/fetcher/tmp/nntool-0.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 00:37:21] INFO root fetch - processPackages [nntool]: Remove: archive file [/home/abi/fetcher/tmp/nntool-0.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 00:37:21] INFO root fetch - main [MainThread]: End processing [nntool]: success
+[2024-05-25 00:37:21] INFO root fetch - main [MainThread]: Store serial: [23368723]
