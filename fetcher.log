@@ -768,3 +768,96 @@
 [2024-05-25 00:48:22] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b2.tar.gz]
 [2024-05-25 00:48:22] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-25 00:48:22] INFO root fetch - main [MainThread]: Store serial: [23368783]
+[2024-05-25 00:50:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368783]
+[2024-05-25 00:50:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lastmile-eval
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hddm-s
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: process-bigraph
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dyff-storage
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pricecypher-sdk
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blendsql
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cybrid-api-organization-python
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: howso-engine
+[2024-05-25 00:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cybrid-api-bank-python
+[2024-05-25 00:50:31] INFO root fetch - processPackages [lastmile-eval]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [pricecypher-sdk]: New version: [2.1.1.dev9] Old Version: [2.1.1.dev8]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.70]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [balsamic]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [dyff-storage]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [pricecypher-sdk]: Downloading https://files.pythonhosted.org/packages/38/49/b89d96ed3ff310fb5c9d6c14c89281602d3c2a6128611d6a53449c0d22b8/pricecypher_sdk-2.1.1.dev8.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [lastmile-eval]: Downloading https://files.pythonhosted.org/packages/46/5f/eaa8c53cc1857a1e835ad32892f28b3fa98a02c5409d7c53012941237304/lastmile_eval-0.0.7.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [process-bigraph]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [blendsql]: New version: [0.0.16] Old Version: [0.0.15]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [howso-engine]: New version: [9.2.0] Old Version: [9.1.7]
+[2024-05-25 00:50:31] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/39/88/7036a68e86aac14169908b1352acec1e92e3f2f5a512e868fc1f7c2da48c/balsamic-0.2.7.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/75/d9/17a583a2d5fccaef7210a11d9f7dc963aab51cd4a5ae5f7983c03291f4bc/cybrid-api-organization-python-0.98.2.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/da/dd/e8ea2fc7e8f671e18adae35333d00fdc692f7637860f9e361fba5fe3b85a/cybrid-api-bank-python-0.98.2.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/bd/9f/5230d7d8b5ecba42fa33d0f759585699e1f93975a85f73938fc75da578a6/hddm_s-1.0.70.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/70/40/54126656c4115f04b4d04165a198381fc3fe5c3650912a1da00a64ddab5e/dyff_storage-0.8.0.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [blendsql]: Downloading https://files.pythonhosted.org/packages/23/ea/cc5817bfce365fc7459776b313cc8bdc2d5417645bb93638050410966ce2/blendsql-0.0.15.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [process-bigraph]: Downloading https://files.pythonhosted.org/packages/b6/fa/4a4ba77d6dafbde5c3c84a0437ad2a50dfa5221d1a9b1e0afd2a9cac1bfe/process-bigraph-0.0.8.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [lastmile-eval]: Downloading https://files.pythonhosted.org/packages/82/d9/5b33fa58ced21ee69c2876303b4babbb7449325885a320341f99edabf464/lastmile_eval-0.0.8.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [pricecypher-sdk]: Downloading https://files.pythonhosted.org/packages/a9/09/845a1d8801385f82e900c7737902408e9994871830eb24e0bcee3e73a22a/pricecypher_sdk-2.1.1.dev9.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [howso-engine]: Downloading https://files.pythonhosted.org/packages/2d/17/a5c0e96f51b0f271e0601bb19a2fb74a9a9591319fd161bdbff6277e85c2/howso-engine-9.1.7.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/93/ab/a857018ac26aeaa884608066dbe6bd482e17a4edf88533d3335a3ed2a25c/cybrid-api-organization-python-0.99.0.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/a1/e6/1c6a95191a8826ea0636949d5bfdb7d34a65b1f81b3cb27e1863a88a1552/cybrid-api-bank-python-0.99.0.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/34/0b/5d4b6c4bc5d0e865df29231cdf80ea645592559fbc11b05b2e3b2d4ed993/balsamic-0.2.8.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [lastmile-eval]: executing diffoscope
+[2024-05-25 00:50:31] INFO root fetch - processPackages [lastmile-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lastmile_eval-0.0.7.tar.gz tmp/lastmile_eval-0.0.8.tar.gz --markdown 20240525/l/lastmile-eval/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 00:50:31] INFO root fetch - processPackages [pricecypher-sdk]: executing diffoscope
+[2024-05-25 00:50:31] INFO root fetch - processPackages [pricecypher-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pricecypher_sdk-2.1.1.dev8.tar.gz tmp/pricecypher_sdk-2.1.1.dev9.tar.gz --markdown 20240525/p/pricecypher-sdk/2.1.1.dev8-2.1.1.dev9/README.md --exclude *.pyd
+[2024-05-25 00:50:31] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/0d/ab/bdc4d5a75d0c30df54df3d46237eba77f44bb7d9c73c3bfba77a8102edf3/dyff_storage-0.9.0.tar.gz
+[2024-05-25 00:50:31] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 00:50:31] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.70.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.70-1.0.9/README.md --exclude *.pyd
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.98.2.tar.gz tmp/cybrid-api-organization-python-0.99.0.tar.gz --markdown 20240525/c/cybrid-api-organization-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-25 00:50:31] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:50:31] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.7.tar.gz tmp/balsamic-0.2.8.tar.gz --markdown 20240525/b/balsamic/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2024-05-25 00:50:31] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.98.2.tar.gz tmp/cybrid-api-bank-python-0.99.0.tar.gz --markdown 20240525/c/cybrid-api-bank-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-25 00:50:31] INFO root fetch - processPackages [process-bigraph]: Downloading https://files.pythonhosted.org/packages/2d/ce/f8a3f050337cbc44a3591b8d2ecf7fd678021f00b0d9758ee8823d7cfd9d/process-bigraph-0.0.9.tar.gz
+[2024-05-25 00:50:32] INFO root fetch - processPackages [blendsql]: Downloading https://files.pythonhosted.org/packages/29/8e/6501f47cdcb157b6173a7f88d70071dea7d98f781adbef965aef6a095019/blendsql-0.0.16.tar.gz
+[2024-05-25 00:50:32] INFO root fetch - processPackages [dyff-storage]: executing diffoscope
+[2024-05-25 00:50:32] INFO root fetch - processPackages [dyff-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_storage-0.8.0.tar.gz tmp/dyff_storage-0.9.0.tar.gz --markdown 20240525/d/dyff-storage/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 00:50:32] INFO root fetch - processPackages [process-bigraph]: executing diffoscope
+[2024-05-25 00:50:32] INFO root fetch - processPackages [process-bigraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/process-bigraph-0.0.8.tar.gz tmp/process-bigraph-0.0.9.tar.gz --markdown 20240525/p/process-bigraph/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 00:50:32] INFO root fetch - processPackages [blendsql]: executing diffoscope
+[2024-05-25 00:50:32] INFO root fetch - processPackages [blendsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blendsql-0.0.15.tar.gz tmp/blendsql-0.0.16.tar.gz --markdown 20240525/b/blendsql/0.0.15-0.0.16/README.md --exclude *.pyd
+[2024-05-25 00:50:32] INFO root fetch - processPackages [howso-engine]: Downloading https://files.pythonhosted.org/packages/e1/bd/f6bf5c787a554ce19b032018e844a5370ea3f9ac1d3ad3c330465c24ff00/howso-engine-9.2.0.tar.gz
+[2024-05-25 00:50:32] INFO root fetch - processPackages [howso-engine]: executing diffoscope
+[2024-05-25 00:50:32] INFO root fetch - processPackages [howso-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/howso-engine-9.1.7.tar.gz tmp/howso-engine-9.2.0.tar.gz --markdown 20240525/h/howso-engine/9.1.7-9.2.0/README.md --exclude *.pyd
+[2024-05-25 00:50:32] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.70.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 00:50:32] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.7.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.8.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:50:32] INFO root fetch - processPackages [lastmile-eval]: Remove: archive file [/home/abi/fetcher/tmp/lastmile_eval-0.0.7.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - processPackages [lastmile-eval]: Remove: archive file [/home/abi/fetcher/tmp/lastmile_eval-0.0.8.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - main [MainThread]: End processing [lastmile-eval]: success
+[2024-05-25 00:50:32] INFO root fetch - processPackages [pricecypher-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pricecypher_sdk-2.1.1.dev8.tar.gz]
+[2024-05-25 00:50:32] INFO root fetch - processPackages [pricecypher-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pricecypher_sdk-2.1.1.dev9.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - main [MainThread]: End processing [pricecypher-sdk]: success
+[2024-05-25 00:50:33] INFO root fetch - processPackages [process-bigraph]: Remove: archive file [/home/abi/fetcher/tmp/process-bigraph-0.0.8.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - processPackages [process-bigraph]: Remove: archive file [/home/abi/fetcher/tmp/process-bigraph-0.0.9.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - main [MainThread]: End processing [process-bigraph]: success
+[2024-05-25 00:50:33] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.8.0.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.98.2.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.9.0.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.99.0.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - main [MainThread]: End processing [dyff-storage]: success
+[2024-05-25 00:50:33] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2024-05-25 00:50:33] INFO root fetch - processPackages [blendsql]: Remove: archive file [/home/abi/fetcher/tmp/blendsql-0.0.15.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - processPackages [blendsql]: Remove: archive file [/home/abi/fetcher/tmp/blendsql-0.0.16.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - main [MainThread]: End processing [blendsql]: success
+[2024-05-25 00:50:33] INFO root fetch - processPackages [howso-engine]: Remove: archive file [/home/abi/fetcher/tmp/howso-engine-9.1.7.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - processPackages [howso-engine]: Remove: archive file [/home/abi/fetcher/tmp/howso-engine-9.2.0.tar.gz]
+[2024-05-25 00:50:33] INFO root fetch - main [MainThread]: End processing [howso-engine]: success
+[2024-05-25 00:50:34] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.98.2.tar.gz]
+[2024-05-25 00:50:34] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
+[2024-05-25 00:50:34] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2024-05-25 00:50:34] INFO root fetch - main [MainThread]: Store serial: [23368810]
