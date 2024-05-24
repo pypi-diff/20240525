@@ -415,3 +415,51 @@
 [2024-05-25 00:26:18] INFO root fetch - processPackages [direpack]: Remove: archive file [/home/abi/fetcher/tmp/direpack-1.1.3-py3-none-any.whl.zip]
 [2024-05-25 00:26:18] INFO root fetch - main [MainThread]: End processing [direpack]: success
 [2024-05-25 00:26:18] INFO root fetch - main [MainThread]: Store serial: [23368659]
+[2024-05-25 00:28:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368659]
+[2024-05-25 00:28:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 00:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openadapt
+[2024-05-25 00:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mns-common
+[2024-05-25 00:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extended-mypy-django-plugin
+[2024-05-25 00:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: balsamic
+[2024-05-25 00:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: doopass-libs
+[2024-05-25 00:28:26] INFO root fetch - processPackages [doopass-libs]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 00:28:26] INFO root fetch - processPackages [balsamic]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-25 00:28:26] INFO root fetch - processPackages [mns-common]: New version: [1.1.2.8] Old Version: [1.1.2.7]
+[2024-05-25 00:28:27] INFO root fetch - processPackages [extended-mypy-django-plugin]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-25 00:28:27] INFO root fetch - processPackages [openadapt]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-25 00:28:27] INFO root fetch - processPackages [doopass-libs]: Downloading https://files.pythonhosted.org/packages/59/9a/661b6c37b69241766b8b0642d68caa22005995cdf52f0b4d523636638c0b/doopass_libs-1.0.3.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/60/8c/093c9304e9a098629e62e889648ffc560103d541861324f65ece8b2e94a8/balsamic-0.2.2.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/67/6b/e43816671d4ad47542e4d5703480bb82610ef4a242b4fc6fea3396c2c932/mns_common-1.1.2.7.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [extended-mypy-django-plugin]: Downloading https://files.pythonhosted.org/packages/75/2e/51f25d40e2be9334e57949ebd550e699f535c9f7eb241bd393ca195d9952/extended_mypy_django_plugin-0.5.2.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/79/02/9909659ccbba301efcb1ca065eb1d9413e5e760d2cefd4a01ba5e723511b/openadapt-0.8.1.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/8e/10/89c1bdb441f78290243fc927c17b4cbcae29d2a5d8d796212f8f040a311b/balsamic-0.2.3.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/6a/88/5a033728b10a0f921264712a59c848970624d66f3e60ff09103dff10af8a/mns_common-1.1.2.8.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:28:27] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.2.tar.gz tmp/balsamic-0.2.3.tar.gz --markdown 20240525/b/balsamic/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-25 00:28:27] INFO root fetch - processPackages [doopass-libs]: Downloading https://files.pythonhosted.org/packages/a8/c5/0b539d5208cc3d278c2a5ce7d2457f0632c14501e9debcf4de0bd776ddfd/doopass_libs-1.0.4.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-05-25 00:28:27] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.1.2.7.tar.gz tmp/mns_common-1.1.2.8.tar.gz --markdown 20240525/m/mns-common/1.1.2.7-1.1.2.8/README.md --exclude *.pyd
+[2024-05-25 00:28:27] INFO root fetch - processPackages [extended-mypy-django-plugin]: Downloading https://files.pythonhosted.org/packages/fc/dd/89b6cb1d300cdb76da4250734bda17c10dc79c1b579cd6439f9e8d8fcef9/extended_mypy_django_plugin-0.5.3.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [doopass-libs]: executing diffoscope
+[2024-05-25 00:28:27] INFO root fetch - processPackages [doopass-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doopass_libs-1.0.3.tar.gz tmp/doopass_libs-1.0.4.tar.gz --markdown 20240525/d/doopass-libs/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 00:28:27] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/b7/9c/6198cbb491bbd32347e3741b41ee70e6ad1916e573ef76ae3aeb9e0fc8ef/openadapt-0.9.0.tar.gz
+[2024-05-25 00:28:27] INFO root fetch - processPackages [extended-mypy-django-plugin]: executing diffoscope
+[2024-05-25 00:28:27] INFO root fetch - processPackages [extended-mypy-django-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extended_mypy_django_plugin-0.5.2.tar.gz tmp/extended_mypy_django_plugin-0.5.3.tar.gz --markdown 20240525/e/extended-mypy-django-plugin/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-25 00:28:27] INFO root fetch - processPackages [openadapt]: executing diffoscope
+[2024-05-25 00:28:27] INFO root fetch - processPackages [openadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openadapt-0.8.1.tar.gz tmp/openadapt-0.9.0.tar.gz --markdown 20240525/o/openadapt/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-25 00:28:28] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.2.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.3.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:28:28] INFO root fetch - processPackages [doopass-libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.3.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - processPackages [doopass-libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.4.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - main [MainThread]: End processing [doopass-libs]: success
+[2024-05-25 00:28:28] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.2.7.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.2.8.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-05-25 00:28:28] INFO root fetch - processPackages [extended-mypy-django-plugin]: Remove: archive file [/home/abi/fetcher/tmp/extended_mypy_django_plugin-0.5.2.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - processPackages [extended-mypy-django-plugin]: Remove: archive file [/home/abi/fetcher/tmp/extended_mypy_django_plugin-0.5.3.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - main [MainThread]: End processing [extended-mypy-django-plugin]: success
+[2024-05-25 00:28:28] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.8.1.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
+[2024-05-25 00:28:28] INFO root fetch - main [MainThread]: End processing [openadapt]: success
+[2024-05-25 00:28:28] INFO root fetch - main [MainThread]: Store serial: [23368674]
