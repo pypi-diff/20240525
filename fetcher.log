@@ -480,3 +480,24 @@
 [2024-05-25 00:30:38] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.4.tar.gz]
 [2024-05-25 00:30:38] INFO root fetch - main [MainThread]: End processing [balsamic]: success
 [2024-05-25 00:30:38] INFO root fetch - main [MainThread]: Store serial: [23368679]
+[2024-05-25 00:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368679]
+[2024-05-25 00:32:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 00:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pazok
+[2024-05-25 00:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assessment-episode-matcher
+[2024-05-25 00:32:46] INFO root fetch - processPackages [assessment-episode-matcher]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-25 00:32:46] INFO root fetch - processPackages [pazok]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 00:32:47] INFO root fetch - processPackages [pazok]: Downloading https://files.pythonhosted.org/packages/85/1f/0d58d382630c0aa6de9eeb97ff12b6316098f0430acee626304db35589fc/pazok-0.1.6.tar.gz
+[2024-05-25 00:32:47] INFO root fetch - processPackages [assessment-episode-matcher]: Downloading https://files.pythonhosted.org/packages/16/ad/45d2c27a299c6f2c701e378a011b1e51efa788fa9f14337c8a58491db0ca/assessment_episode_matcher-0.2.0.tar.gz
+[2024-05-25 00:32:47] INFO root fetch - processPackages [pazok]: Downloading https://files.pythonhosted.org/packages/2e/c7/8a2b255860c4e4ce5f9c9aef55d9c4a28a67ae7754a525d4584a36960dd4/pazok-0.1.7.tar.gz
+[2024-05-25 00:32:47] INFO root fetch - processPackages [pazok]: executing diffoscope
+[2024-05-25 00:32:47] INFO root fetch - processPackages [pazok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pazok-0.1.6.tar.gz tmp/pazok-0.1.7.tar.gz --markdown 20240525/p/pazok/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 00:32:47] INFO root fetch - processPackages [assessment-episode-matcher]: Downloading https://files.pythonhosted.org/packages/01/00/9301b9407068be789be42dccfb2a8da75e0ee819117606f82c3206e7c8e4/assessment_episode_matcher-0.3.0.tar.gz
+[2024-05-25 00:32:47] INFO root fetch - processPackages [assessment-episode-matcher]: executing diffoscope
+[2024-05-25 00:32:47] INFO root fetch - processPackages [assessment-episode-matcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assessment_episode_matcher-0.2.0.tar.gz tmp/assessment_episode_matcher-0.3.0.tar.gz --markdown 20240525/a/assessment-episode-matcher/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-25 00:32:47] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.6.tar.gz]
+[2024-05-25 00:32:47] INFO root fetch - processPackages [pazok]: Remove: archive file [/home/abi/fetcher/tmp/pazok-0.1.7.tar.gz]
+[2024-05-25 00:32:47] INFO root fetch - main [MainThread]: End processing [pazok]: success
+[2024-05-25 00:32:48] INFO root fetch - processPackages [assessment-episode-matcher]: Remove: archive file [/home/abi/fetcher/tmp/assessment_episode_matcher-0.2.0.tar.gz]
+[2024-05-25 00:32:48] INFO root fetch - processPackages [assessment-episode-matcher]: Remove: archive file [/home/abi/fetcher/tmp/assessment_episode_matcher-0.3.0.tar.gz]
+[2024-05-25 00:32:48] INFO root fetch - main [MainThread]: End processing [assessment-episode-matcher]: success
+[2024-05-25 00:32:48] INFO root fetch - main [MainThread]: Store serial: [23368685]
