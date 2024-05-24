@@ -1639,3 +1639,72 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:39:08] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.6.tar.gz]
 [2024-05-25 01:39:08] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
 [2024-05-25 01:39:08] INFO root fetch - main [MainThread]: Store serial: [23369128]
+[2024-05-25 01:41:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369128]
+[2024-05-25 01:41:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgedb-pydantic-codegen
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oslab
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openlineage-airflow
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openlineage-dagster
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openlineage-dbt
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openlineage-integration-common
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openlineage-python
+[2024-05-25 01:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openlineage-sql
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-python]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 01:41:17] WARNING root fetch - processPackages [oslab]: Skipping, unable to determine old version
+[2024-05-25 01:41:17] INFO root fetch - main [MainThread]: End processing [oslab] error
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-dbt]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-integration-common]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 01:41:17] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.5.3] Old Version: [2024.5.2]
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-airflow]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-dagster]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-sql]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-dbt]: Downloading https://files.pythonhosted.org/packages/a2/fe/6c2fa3a9ed8edda2c46800731a5b8fa14df7f523c91a613e09f69658b6bc/openlineage-dbt-1.9.0.tar.gz
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-airflow]: Downloading https://files.pythonhosted.org/packages/ba/bf/b987f396e0030d26381b274cb563fa0a8e9f08eec133d655f63d60f59838/openlineage-airflow-1.9.0.tar.gz
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-python]: Downloading https://files.pythonhosted.org/packages/09/c5/dd9ceac67933ecdd5c0acc48a146bfe2e03fc7070af4f2f2c2904d14458a/openlineage_python-1.9.0.tar.gz
+[2024-05-25 01:41:17] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/e8/bc/22fa3a1211a6f11af588a06b0ecddc0bc613e4d089a2bdea15055c003479/edgedb_pydantic_codegen-2024.5.2.tar.gz
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-integration-common]: Downloading https://files.pythonhosted.org/packages/a7/0a/f88d91344b6cb71bca65d29211f80b978d9e02857c7cfce55d7a197ddb43/openlineage-integration-common-1.9.0.tar.gz
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-dagster]: Downloading https://files.pythonhosted.org/packages/de/44/54a8bc6472c867791dbc5f5dc94285edd81c8ea685640141fed0c0cb6385/openlineage-dagster-1.9.0.tar.gz
+[2024-05-25 01:41:17] INFO root fetch - processPackages [openlineage-sql]: Downloading https://files.pythonhosted.org/packages/8d/0d/bcb13783610d90c4ea7d1cf5184ae5e378458030126aa94084f6db08eedf/openlineage_sql-1.9.0.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-dbt]: Downloading https://files.pythonhosted.org/packages/3e/4e/80aae9754694e7ea98b5d8200b44cb394e7ea08c8f2eb1f65d5066bbba37/openlineage-dbt-1.9.1.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-dagster]: Downloading https://files.pythonhosted.org/packages/4a/59/332d57e6dc56dc962a7fab17917e415d4930dadbb83a98baf28ddf95cebe/openlineage-dagster-1.9.1.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/87/38/4e6d95d4916b595ab33846c85b213e6148ae34688e9c447c9d5b488e0f91/edgedb_pydantic_codegen-2024.5.3.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-python]: Downloading https://files.pythonhosted.org/packages/0d/50/2bc9ecb4a575359e59df3edf249fd9cd19c63e2091b659b385c1eff9694d/openlineage_python-1.9.1.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-airflow]: Downloading https://files.pythonhosted.org/packages/34/2f/6bbf7e764501f09dbb370481a2fd6e4bbf4406f3b39f3bb66f1c707cd899/openlineage-airflow-1.9.1.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-sql]: Downloading https://files.pythonhosted.org/packages/b9/98/e948df30955be5eea0c301fe222356def6949c684c4c4b81445c43542ea7/openlineage_sql-1.9.1.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-integration-common]: Downloading https://files.pythonhosted.org/packages/82/5e/4221d7b9a0df4176c88356825e0b4196d97a93b3ea2de9c7af54b4e7af70/openlineage-integration-common-1.9.1.tar.gz
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-dbt]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlineage-dbt-1.9.0.tar.gz tmp/openlineage-dbt-1.9.1.tar.gz --markdown 20240525/o/openlineage-dbt/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-dagster]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-dagster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlineage-dagster-1.9.0.tar.gz tmp/openlineage-dagster-1.9.1.tar.gz --markdown 20240525/o/openlineage-dagster/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 01:41:18] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.5.2.tar.gz tmp/edgedb_pydantic_codegen-2024.5.3.tar.gz --markdown 20240525/e/edgedb-pydantic-codegen/2024.5.2-2024.5.3/README.md --exclude *.pyd
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-python]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlineage_python-1.9.0.tar.gz tmp/openlineage_python-1.9.1.tar.gz --markdown 20240525/o/openlineage-python/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-airflow]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlineage-airflow-1.9.0.tar.gz tmp/openlineage-airflow-1.9.1.tar.gz --markdown 20240525/o/openlineage-airflow/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-sql]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlineage_sql-1.9.0.tar.gz tmp/openlineage_sql-1.9.1.tar.gz --markdown 20240525/o/openlineage-sql/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-integration-common]: executing diffoscope
+[2024-05-25 01:41:18] INFO root fetch - processPackages [openlineage-integration-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlineage-integration-common-1.9.0.tar.gz tmp/openlineage-integration-common-1.9.1.tar.gz --markdown 20240525/o/openlineage-integration-common/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-dbt]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-dbt-1.9.0.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-dbt]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-dbt-1.9.1.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-dbt]: success
+[2024-05-25 01:41:19] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.2.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.3.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-python]: Remove: archive file [/home/abi/fetcher/tmp/openlineage_python-1.9.0.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-python]: Remove: archive file [/home/abi/fetcher/tmp/openlineage_python-1.9.1.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-python]: success
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-dagster]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-dagster-1.9.0.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-dagster]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-dagster-1.9.1.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-dagster]: success
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-integration-common]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-integration-common-1.9.0.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-integration-common]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-integration-common-1.9.1.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-integration-common]: success
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-sql]: Remove: archive file [/home/abi/fetcher/tmp/openlineage_sql-1.9.0.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-sql]: Remove: archive file [/home/abi/fetcher/tmp/openlineage_sql-1.9.1.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-sql]: success
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-airflow]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-airflow-1.9.0.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - processPackages [openlineage-airflow]: Remove: archive file [/home/abi/fetcher/tmp/openlineage-airflow-1.9.1.tar.gz]
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: End processing [openlineage-airflow]: success
+[2024-05-25 01:41:19] INFO root fetch - main [MainThread]: Store serial: [23369233]
