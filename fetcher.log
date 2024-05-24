@@ -1618,3 +1618,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:36:57] INFO root fetch - processPackages [instagram-profile-downloader]: Remove: archive file [/home/abi/fetcher/tmp/instagram_profile_downloader-1.1.0.tar.gz]
 [2024-05-25 01:36:57] INFO root fetch - main [MainThread]: End processing [instagram-profile-downloader]: success
 [2024-05-25 01:36:57] INFO root fetch - main [MainThread]: Store serial: [23369120]
+[2024-05-25 01:39:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369120]
+[2024-05-25 01:39:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 01:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ambient-backend-api-client
+[2024-05-25 01:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piqp
+[2024-05-25 01:39:06] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-05-25 01:39:06] INFO root fetch - processPackages [piqp]: New version: [0.3.0] Old Version: [0.2.4]
+[2024-05-25 01:39:06] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/dc/4c/358c1c2c52a1910d2594646276199fd71631fea74f902a12290cf470227e/ambient_backend_api_client-0.1.4.tar.gz
+[2024-05-25 01:39:06] INFO root fetch - processPackages [piqp]: Downloading https://files.pythonhosted.org/packages/3e/b5/8084127cd89d56b40bf68f8bcbb7becb683b9923ddcfd86824e4c47201bd/piqp-0.2.4.tar.gz
+[2024-05-25 01:39:07] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/7e/40/ecffc9961e7a1a72fb48963888950eb8270cfd285df91c923a60737ad6c3/ambient_backend_api_client-0.1.6.tar.gz
+[2024-05-25 01:39:07] INFO root fetch - processPackages [piqp]: Downloading https://files.pythonhosted.org/packages/d4/06/2eb219ec2de8984830e38838940ffecb06221e8d897206375ebdbb833046/piqp-0.3.0.tar.gz
+[2024-05-25 01:39:07] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-25 01:39:07] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.4.tar.gz tmp/ambient_backend_api_client-0.1.6.tar.gz --markdown 20240525/a/ambient-backend-api-client/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-05-25 01:39:07] INFO root fetch - processPackages [piqp]: executing diffoscope
+[2024-05-25 01:39:07] INFO root fetch - processPackages [piqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piqp-0.2.4.tar.gz tmp/piqp-0.3.0.tar.gz --markdown 20240525/p/piqp/0.2.4-0.3.0/README.md --exclude *.pyd
+[2024-05-25 01:39:08] INFO root fetch - processPackages [piqp]: Remove: archive file [/home/abi/fetcher/tmp/piqp-0.2.4.tar.gz]
+[2024-05-25 01:39:08] INFO root fetch - processPackages [piqp]: Remove: archive file [/home/abi/fetcher/tmp/piqp-0.3.0.tar.gz]
+[2024-05-25 01:39:08] INFO root fetch - main [MainThread]: End processing [piqp]: success
+[2024-05-25 01:39:08] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.4.tar.gz]
+[2024-05-25 01:39:08] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.6.tar.gz]
+[2024-05-25 01:39:08] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-25 01:39:08] INFO root fetch - main [MainThread]: Store serial: [23369128]
