@@ -1016,3 +1016,15 @@
 [2024-05-25 00:55:21] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.1.tar.gz]
 [2024-05-25 00:55:21] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
 [2024-05-25 00:55:21] INFO root fetch - main [MainThread]: Store serial: [23368867]
+[2024-05-25 00:57:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368867]
+[2024-05-25 00:57:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 00:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyprland
+[2024-05-25 00:57:30] INFO root fetch - processPackages [pyprland]: New version: [2.3.3] Old Version: [2.3.2]
+[2024-05-25 00:57:30] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/b9/1f/9b19add123c6f6b20eed02e89031e2c0f64870fde2670aa331ac288fa23e/pyprland-2.3.2.tar.gz
+[2024-05-25 00:57:30] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/09/c3/a5c1ac7ef3f90b98d0a366f1500f370cce535dffb532b06ca547c9f52b98/pyprland-2.3.3.tar.gz
+[2024-05-25 00:57:30] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-05-25 00:57:30] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.3.2.tar.gz tmp/pyprland-2.3.3.tar.gz --markdown 20240525/p/pyprland/2.3.2-2.3.3/README.md --exclude *.pyd
+[2024-05-25 00:57:31] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.3.2.tar.gz]
+[2024-05-25 00:57:31] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.3.3.tar.gz]
+[2024-05-25 00:57:31] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-05-25 00:57:31] INFO root fetch - main [MainThread]: Store serial: [23368870]
