@@ -334,3 +334,33 @@
 [2024-05-25 00:19:47] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b1.tar.gz]
 [2024-05-25 00:19:47] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-25 00:19:47] INFO root fetch - main [MainThread]: Store serial: [23368635]
+[2024-05-25 00:21:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368635]
+[2024-05-25 00:21:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 00:21:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: doopass-libs
+[2024-05-25 00:21:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-25 00:21:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: martian-adapters
+[2024-05-25 00:21:56] INFO root fetch - processPackages [doopass-libs]: New version: [1.0.3] Old Version: [1.0.1]
+[2024-05-25 00:21:56] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 00:21:56] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-25 00:21:56] INFO root fetch - processPackages [doopass-libs]: Downloading https://files.pythonhosted.org/packages/76/02/2824a8151d295caad4ed5b26c388c2ef21dca5c43a7414282075a83d3da5/doopass_libs-1.0.1.tar.gz
+[2024-05-25 00:21:56] INFO root fetch - processPackages [martian-adapters]: New version: [5.6.0] Old Version: [5.5.0a1]
+[2024-05-25 00:21:56] INFO root fetch - processPackages [martian-adapters]: Downloading https://files.pythonhosted.org/packages/65/f5/9a9feda7eb497a8e465adb67c337fb0857f17b20eedcb16dc1ee85be473a/martian_adapters-5.5.0a1.tar.gz
+[2024-05-25 00:21:56] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-25 00:21:56] INFO root fetch - processPackages [doopass-libs]: Downloading https://files.pythonhosted.org/packages/59/9a/661b6c37b69241766b8b0642d68caa22005995cdf52f0b4d523636638c0b/doopass_libs-1.0.3.tar.gz
+[2024-05-25 00:21:56] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-25 00:21:56] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240525/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 00:21:56] INFO root fetch - processPackages [doopass-libs]: executing diffoscope
+[2024-05-25 00:21:56] INFO root fetch - processPackages [doopass-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doopass_libs-1.0.1.tar.gz tmp/doopass_libs-1.0.3.tar.gz --markdown 20240525/d/doopass-libs/1.0.1-1.0.3/README.md --exclude *.pyd
+[2024-05-25 00:21:57] INFO root fetch - processPackages [martian-adapters]: Downloading https://files.pythonhosted.org/packages/c0/65/09e6739d066d185f5d8fbb436a19532468aa7083bdc3e6bf06fce4fcd169/martian_adapters-5.6.0.tar.gz
+[2024-05-25 00:21:57] INFO root fetch - processPackages [martian-adapters]: executing diffoscope
+[2024-05-25 00:21:57] INFO root fetch - processPackages [martian-adapters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/martian_adapters-5.5.0a1.tar.gz tmp/martian_adapters-5.6.0.tar.gz --markdown 20240525/m/martian-adapters/5.5.0a1-5.6.0/README.md --exclude *.pyd
+[2024-05-25 00:21:57] INFO root fetch - processPackages [doopass-libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.1.tar.gz]
+[2024-05-25 00:21:57] INFO root fetch - processPackages [doopass-libs]: Remove: archive file [/home/abi/fetcher/tmp/doopass_libs-1.0.3.tar.gz]
+[2024-05-25 00:21:57] INFO root fetch - main [MainThread]: End processing [doopass-libs]: success
+[2024-05-25 00:21:57] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-25 00:21:57] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-25 00:21:57] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-25 00:21:57] INFO root fetch - processPackages [martian-adapters]: Remove: archive file [/home/abi/fetcher/tmp/martian_adapters-5.5.0a1.tar.gz]
+[2024-05-25 00:21:57] INFO root fetch - processPackages [martian-adapters]: Remove: archive file [/home/abi/fetcher/tmp/martian_adapters-5.6.0.tar.gz]
+[2024-05-25 00:21:57] INFO root fetch - main [MainThread]: End processing [martian-adapters]: success
+[2024-05-25 00:21:57] INFO root fetch - main [MainThread]: Store serial: [23368644]
