@@ -630,3 +630,54 @@
 [2024-05-25 00:41:48] INFO root fetch - processPackages [honeybee-grasshopper-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-grasshopper-energy-1.9.2.tar.gz]
 [2024-05-25 00:41:48] INFO root fetch - main [MainThread]: End processing [honeybee-grasshopper-energy]: success
 [2024-05-25 00:41:48] INFO root fetch - main [MainThread]: Store serial: [23368739]
+[2024-05-25 00:43:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368739]
+[2024-05-25 00:43:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 00:43:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starstream
+[2024-05-25 00:43:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spare-scores
+[2024-05-25 00:43:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikari-arc
+[2024-05-25 00:43:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-grasshopper
+[2024-05-25 00:43:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lastmile-eval
+[2024-05-25 00:43:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: balsamic
+[2024-05-25 00:43:58] INFO root fetch - processPackages [lastmile-eval]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 00:43:58] WARNING root fetch - processPackages [starstream]: Skipping, unable to determine old version
+[2024-05-25 00:43:58] INFO root fetch - main [MainThread]: End processing [starstream] error
+[2024-05-25 00:43:58] INFO root fetch - processPackages [balsamic]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-25 00:43:58] INFO root fetch - processPackages [lastmile-eval]: Downloading https://files.pythonhosted.org/packages/46/5f/eaa8c53cc1857a1e835ad32892f28b3fa98a02c5409d7c53012941237304/lastmile_eval-0.0.7.tar.gz
+[2024-05-25 00:43:58] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/13/04/a57b606d98686702066b8ee6e5d98f7da21993c2d16c802cd12fd74e58c0/balsamic-0.2.5.tar.gz
+[2024-05-25 00:43:58] INFO root fetch - processPackages [lbt-grasshopper]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-05-25 00:43:58] INFO root fetch - processPackages [hikari-arc]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-25 00:43:58] INFO root fetch - processPackages [spare-scores]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-25 00:43:58] INFO root fetch - processPackages [hikari-arc]: Downloading https://files.pythonhosted.org/packages/dc/74/76ab534b37ab82de30c662b6b25451a9f9b3e69646046434061924bf6976/hikari_arc-1.3.1.tar.gz
+[2024-05-25 00:43:58] INFO root fetch - processPackages [lastmile-eval]: Downloading https://files.pythonhosted.org/packages/82/d9/5b33fa58ced21ee69c2876303b4babbb7449325885a320341f99edabf464/lastmile_eval-0.0.8.tar.gz
+[2024-05-25 00:43:58] INFO root fetch - processPackages [spare-scores]: Downloading https://files.pythonhosted.org/packages/ca/87/0a89024ff71013139122e002cb21bf13feb8992904410e1ce965a094cdf9/spare_scores-1.2.1.tar.gz
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/85/4b/b7b2a31765980f121c7dca9cd1353afc8fd947ace9f87b8f902620819061/lbt-grasshopper-1.8.8.tar.gz
+[2024-05-25 00:43:59] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/53/ca/e10955105f4815c4696c940653455d44ce9d308313a7409f4f12d5332a66/balsamic-0.2.6.tar.gz
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lastmile-eval]: executing diffoscope
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lastmile-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lastmile_eval-0.0.7.tar.gz tmp/lastmile_eval-0.0.8.tar.gz --markdown 20240525/l/lastmile-eval/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 00:43:59] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-25 00:43:59] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.2.5.tar.gz tmp/balsamic-0.2.6.tar.gz --markdown 20240525/b/balsamic/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-25 00:43:59] INFO root fetch - processPackages [hikari-arc]: Downloading https://files.pythonhosted.org/packages/a7/32/4dfa4f27dd1834290ae3c3ce729e7e9cc75031e8169d27ecdbfd3123c3d3/hikari_arc-1.3.2.tar.gz
+[2024-05-25 00:43:59] INFO root fetch - processPackages [hikari-arc]: executing diffoscope
+[2024-05-25 00:43:59] INFO root fetch - processPackages [hikari-arc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari_arc-1.3.1.tar.gz tmp/hikari_arc-1.3.2.tar.gz --markdown 20240525/h/hikari-arc/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/8f/43/14eede1d5162f900e97c330a2f83ad3cef64b06f36216364f0012886cf75/lbt-grasshopper-1.8.9.tar.gz
+[2024-05-25 00:43:59] INFO root fetch - processPackages [spare-scores]: Downloading https://files.pythonhosted.org/packages/99/e7/c1c193afd17f5834d4c585e43781b3f5851c6a3492b5607b1d1ab682dff0/spare_scores-1.2.2.tar.gz
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lbt-grasshopper]: executing diffoscope
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lbt-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-grasshopper-1.8.8.tar.gz tmp/lbt-grasshopper-1.8.9.tar.gz --markdown 20240525/l/lbt-grasshopper/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-05-25 00:43:59] INFO root fetch - processPackages [spare-scores]: executing diffoscope
+[2024-05-25 00:43:59] INFO root fetch - processPackages [spare-scores]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spare_scores-1.2.1.tar.gz tmp/spare_scores-1.2.2.tar.gz --markdown 20240525/s/spare-scores/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lastmile-eval]: Remove: archive file [/home/abi/fetcher/tmp/lastmile_eval-0.0.7.tar.gz]
+[2024-05-25 00:43:59] INFO root fetch - processPackages [lastmile-eval]: Remove: archive file [/home/abi/fetcher/tmp/lastmile_eval-0.0.8.tar.gz]
+[2024-05-25 00:43:59] INFO root fetch - main [MainThread]: End processing [lastmile-eval]: success
+[2024-05-25 00:43:59] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.5.tar.gz]
+[2024-05-25 00:43:59] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.2.6.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-25 00:44:00] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.8.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.9.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - main [MainThread]: End processing [lbt-grasshopper]: success
+[2024-05-25 00:44:00] INFO root fetch - processPackages [hikari-arc]: Remove: archive file [/home/abi/fetcher/tmp/hikari_arc-1.3.1.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - processPackages [hikari-arc]: Remove: archive file [/home/abi/fetcher/tmp/hikari_arc-1.3.2.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - main [MainThread]: End processing [hikari-arc]: success
+[2024-05-25 00:44:00] INFO root fetch - processPackages [spare-scores]: Remove: archive file [/home/abi/fetcher/tmp/spare_scores-1.2.1.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - processPackages [spare-scores]: Remove: archive file [/home/abi/fetcher/tmp/spare_scores-1.2.2.tar.gz]
+[2024-05-25 00:44:00] INFO root fetch - main [MainThread]: End processing [spare-scores]: success
+[2024-05-25 00:44:00] INFO root fetch - main [MainThread]: Store serial: [23368757]
