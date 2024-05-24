@@ -82,3 +82,18 @@
 [2024-05-25 00:04:05] INFO root fetch - processPackages [watr]: Remove: archive file [/home/abi/fetcher/tmp/watr-0.0.3.tar.gz]
 [2024-05-25 00:04:05] INFO root fetch - main [MainThread]: End processing [watr]: success
 [2024-05-25 00:04:05] INFO root fetch - main [MainThread]: Store serial: [23368520]
+[2024-05-25 00:06:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23368520]
+[2024-05-25 00:06:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 00:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dinosaur-dycore
+[2024-05-25 00:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluidimage
+[2024-05-25 00:06:14] WARNING root fetch - processPackages [dinosaur-dycore]: Skipping, unable to determine old version
+[2024-05-25 00:06:14] INFO root fetch - main [MainThread]: End processing [dinosaur-dycore] error
+[2024-05-25 00:06:14] INFO root fetch - processPackages [fluidimage]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-25 00:06:14] INFO root fetch - processPackages [fluidimage]: Downloading https://files.pythonhosted.org/packages/7a/1f/9af44703a61027a337afdc2ac204075f489e2b00f2009395b24258512f78/fluidimage-0.5.1.tar.gz
+[2024-05-25 00:06:14] INFO root fetch - processPackages [fluidimage]: Downloading https://files.pythonhosted.org/packages/c9/0a/adf893558ce905e17946204d13056bf83f2680f467703a67fd921a9a3b74/fluidimage-0.5.2.tar.gz
+[2024-05-25 00:06:15] INFO root fetch - processPackages [fluidimage]: executing diffoscope
+[2024-05-25 00:06:15] INFO root fetch - processPackages [fluidimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluidimage-0.5.1.tar.gz tmp/fluidimage-0.5.2.tar.gz --markdown 20240525/f/fluidimage/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-25 00:06:16] INFO root fetch - processPackages [fluidimage]: Remove: archive file [/home/abi/fetcher/tmp/fluidimage-0.5.1.tar.gz]
+[2024-05-25 00:06:16] INFO root fetch - processPackages [fluidimage]: Remove: archive file [/home/abi/fetcher/tmp/fluidimage-0.5.2.tar.gz]
+[2024-05-25 00:06:16] INFO root fetch - main [MainThread]: End processing [fluidimage]: success
+[2024-05-25 00:06:16] INFO root fetch - main [MainThread]: Store serial: [23368547]
