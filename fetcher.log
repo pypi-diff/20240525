@@ -7283,3 +7283,17 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:13:53] INFO root fetch - processPackages [uploadgram]: Remove: archive file [/home/abi/fetcher/tmp/uploadgram-0.3.2.tar.gz]
 [2024-05-25 04:13:53] INFO root fetch - main [MainThread]: End processing [uploadgram]: success
 [2024-05-25 04:13:53] INFO root fetch - main [MainThread]: Store serial: [23371355]
+[2024-05-25 04:15:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371355]
+[2024-05-25 04:16:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 04:18:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371355]
+[2024-05-25 04:18:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 04:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webull-python-sdk-core
+[2024-05-25 04:18:07] INFO root fetch - processPackages [webull-python-sdk-core]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 04:18:07] INFO root fetch - processPackages [webull-python-sdk-core]: Downloading https://files.pythonhosted.org/packages/2f/9c/8839c05148a2608cfd3b512a212e3ac8b1913444291d8146d7c4f2bd6453/webull_python_sdk_core-0.1.6.tar.gz
+[2024-05-25 04:18:08] INFO root fetch - processPackages [webull-python-sdk-core]: Downloading https://files.pythonhosted.org/packages/d0/e9/84205fdbf8cf29bf913bfb55a4fabaad38c2bc34c9962f6cab67cf1c4a69/webull_python_sdk_core-0.1.7.tar.gz
+[2024-05-25 04:18:08] INFO root fetch - processPackages [webull-python-sdk-core]: executing diffoscope
+[2024-05-25 04:18:08] INFO root fetch - processPackages [webull-python-sdk-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_python_sdk_core-0.1.6.tar.gz tmp/webull_python_sdk_core-0.1.7.tar.gz --markdown 20240525/w/webull-python-sdk-core/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 04:18:09] INFO root fetch - processPackages [webull-python-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_core-0.1.6.tar.gz]
+[2024-05-25 04:18:09] INFO root fetch - processPackages [webull-python-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_core-0.1.7.tar.gz]
+[2024-05-25 04:18:09] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-core]: success
+[2024-05-25 04:18:09] INFO root fetch - main [MainThread]: Store serial: [23371358]
