@@ -16777,3 +16777,52 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:44:45] INFO root fetch - processPackages [lavague-drivers-selenium]: Remove: archive file [/home/abi/fetcher/tmp/lavague_drivers_selenium-0.1.4.tar.gz]
 [2024-05-25 15:44:45] INFO root fetch - main [MainThread]: End processing [lavague-drivers-selenium]: success
 [2024-05-25 15:44:45] INFO root fetch - main [MainThread]: Store serial: [23375415]
+[2024-05-25 15:46:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375415]
+[2024-05-25 15:46:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 15:46:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slthcore
+[2024-05-25 15:46:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cemirutils
+[2024-05-25 15:46:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyperclip-plus
+[2024-05-25 15:46:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-pppd
+[2024-05-25 15:46:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cemirutils
+[2024-05-25 15:46:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libdaw
+[2024-05-25 15:46:54] INFO root fetch - processPackages [pyperclip-plus]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 15:46:54] INFO root fetch - processPackages [pyperclip-plus]: Downloading https://files.pythonhosted.org/packages/33/d2/b7577f6b440f2157615cd7be82ef7a6c3dfb7afc20a685d12a607301fe93/pyperclip_plus-0.1.7.tar.gz
+[2024-05-25 15:46:54] WARNING root fetch - processPackages [slthcore]: Skipping, unable to determine old version
+[2024-05-25 15:46:54] INFO root fetch - main [MainThread]: End processing [slthcore] error
+[2024-05-25 15:46:54] INFO root fetch - processPackages [python-pppd]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-05-25 15:46:54] INFO root fetch - processPackages [cemirutils]: New version: [0.2.1] Old Version: [0.2]
+[2024-05-25 15:46:54] INFO root fetch - processPackages [cemirutils]: New version: [0.2.1] Old Version: [0.2]
+[2024-05-25 15:46:54] INFO root fetch - processPackages [libdaw]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-25 15:46:54] INFO root fetch - processPackages [pyperclip-plus]: Downloading https://files.pythonhosted.org/packages/19/5d/950d773e697990d8047f56673eeb07cfa01711b536ad9dd82e20ebd02df9/pyperclip_plus-0.1.8.tar.gz
+[2024-05-25 15:46:54] INFO root fetch - processPackages [python-pppd]: Downloading https://files.pythonhosted.org/packages/ab/99/4fe3b84ee0f35f9654b95569b1cc6901e3ec14f7b6d9c5ba12581048ea40/python_pppd-1.0.4-py3-none-any.whl
+[2024-05-25 15:46:54] INFO root fetch - processPackages [cemirutils]: Downloading https://files.pythonhosted.org/packages/b2/f6/b844ce18ab2a8f64e8763e0c811653f1c6848b952134f3588c4b120dc0d2/cemirutils-0.2.tar.gz
+[2024-05-25 15:46:54] INFO root fetch - processPackages [cemirutils]: Downloading https://files.pythonhosted.org/packages/b2/f6/b844ce18ab2a8f64e8763e0c811653f1c6848b952134f3588c4b120dc0d2/cemirutils-0.2.tar.gz
+[2024-05-25 15:46:54] INFO root fetch - processPackages [pyperclip-plus]: executing diffoscope
+[2024-05-25 15:46:54] INFO root fetch - processPackages [pyperclip-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyperclip_plus-0.1.7.tar.gz tmp/pyperclip_plus-0.1.8.tar.gz --markdown 20240525/p/pyperclip-plus/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 15:46:55] INFO root fetch - processPackages [libdaw]: Downloading https://files.pythonhosted.org/packages/56/fb/311ac91e77f02db6f9846fe29cb07b5f920f19fc760c91944c5046d1c1bc/libdaw-0.4.0.tar.gz
+[2024-05-25 15:46:55] INFO root fetch - processPackages [python-pppd]: Downloading https://files.pythonhosted.org/packages/29/20/4576e026b1298871dc033edb1aac318c8ecf6a18ebcb7fc7d3a13942b576/python_pppd-1.0.6.tar.gz
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: Downloading https://files.pythonhosted.org/packages/ce/76/6a4975e212645b3da448c2b5301c0724455624dcb51f7edaede0b87cbc80/cemirutils-0.2.1.tar.gz
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: Downloading https://files.pythonhosted.org/packages/ce/76/6a4975e212645b3da448c2b5301c0724455624dcb51f7edaede0b87cbc80/cemirutils-0.2.1.tar.gz
+[2024-05-25 15:46:55] INFO root fetch - processPackages [python-pppd]: executing diffoscope
+[2024-05-25 15:46:55] INFO root fetch - processPackages [python-pppd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_pppd-1.0.4-py3-none-any.whl.zip tmp/python_pppd-1.0.6.tar.gz --markdown 20240525/p/python-pppd/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-05-25 15:46:55] INFO root fetch - processPackages [pyperclip-plus]: Remove: archive file [/home/abi/fetcher/tmp/pyperclip_plus-0.1.7.tar.gz]
+[2024-05-25 15:46:55] INFO root fetch - processPackages [pyperclip-plus]: Remove: archive file [/home/abi/fetcher/tmp/pyperclip_plus-0.1.8.tar.gz]
+[2024-05-25 15:46:55] INFO root fetch - main [MainThread]: End processing [pyperclip-plus]: success
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: executing diffoscope
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cemirutils-0.2.tar.gz tmp/cemirutils-0.2.1.tar.gz --markdown 20240525/c/cemirutils/0.2-0.2.1/README.md --exclude *.pyd
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: executing diffoscope
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cemirutils-0.2.tar.gz tmp/cemirutils-0.2.1.tar.gz --markdown 20240525/c/cemirutils/0.2-0.2.1/README.md --exclude *.pyd
+[2024-05-25 15:46:55] INFO root fetch - processPackages [libdaw]: Downloading https://files.pythonhosted.org/packages/7c/e1/fd63ad840222df35ef850168fc5fb5d49c738bcf1343f6c5086e570bae5d/libdaw-0.5.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-05-25 15:46:55] INFO root fetch - processPackages [python-pppd]: Remove: archive file [/home/abi/fetcher/tmp/python_pppd-1.0.4-py3-none-any.whl.zip]
+[2024-05-25 15:46:55] INFO root fetch - processPackages [python-pppd]: Remove: archive file [/home/abi/fetcher/tmp/python_pppd-1.0.6.tar.gz]
+[2024-05-25 15:46:55] INFO root fetch - main [MainThread]: End processing [python-pppd]: success
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: Remove: archive file [/home/abi/fetcher/tmp/cemirutils-0.2.tar.gz]
+[2024-05-25 15:46:55] INFO root fetch - processPackages [cemirutils]: Remove: archive file [/home/abi/fetcher/tmp/cemirutils-0.2.1.tar.gz]
+[2024-05-25 15:46:55] INFO root fetch - main [MainThread]: End processing [cemirutils]: success
+[2024-05-25 15:46:55] INFO root fetch - main [MainThread]: End processing [cemirutils]: success
+[2024-05-25 15:46:57] INFO root fetch - processPackages [libdaw]: executing diffoscope
+[2024-05-25 15:46:57] INFO root fetch - processPackages [libdaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdaw-0.4.0.tar.gz tmp/libdaw-0.5.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240525/l/libdaw/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-25 15:46:57] INFO root fetch - processPackages [libdaw]: Remove: archive file [/home/abi/fetcher/tmp/libdaw-0.4.0.tar.gz]
+[2024-05-25 15:46:57] INFO root fetch - processPackages [libdaw]: Remove: archive file [/home/abi/fetcher/tmp/libdaw-0.5.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-05-25 15:46:57] INFO root fetch - main [MainThread]: End processing [libdaw]: success
+[2024-05-25 15:46:57] INFO root fetch - main [MainThread]: Store serial: [23375432]
