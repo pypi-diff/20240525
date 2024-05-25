@@ -19845,3 +19845,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:08:45] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.3.tar.gz]
 [2024-05-25 19:08:45] INFO root fetch - main [MainThread]: End processing [squice]: success
 [2024-05-25 19:08:45] INFO root fetch - main [MainThread]: Store serial: [23376663]
+[2024-05-25 19:10:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376663]
+[2024-05-25 19:10:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 19:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lyriks
+[2024-05-25 19:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yangsuite-gnmi
+[2024-05-25 19:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xrvoyage
+[2024-05-25 19:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imreg
+[2024-05-25 19:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oasgen
+[2024-05-25 19:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: amilib
+[2024-05-25 19:10:54] INFO root fetch - processPackages [lyriks]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-25 19:10:54] INFO root fetch - processPackages [oasgen]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-25 19:10:54] INFO root fetch - processPackages [xrvoyage]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 19:10:54] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/f8/fc/b93d80a3c3627ddcae5ce19a66f1d427a596015fa7ff06b5a0353897d3a8/lyriks-0.1.2.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [yangsuite-gnmi]: New version: [2.7.9.post0.dev1] Old Version: [2.7.9]
+[2024-05-25 19:10:54] INFO root fetch - processPackages [imreg]: New version: [2024.5.24] Old Version: [2024.1.2]
+[2024-05-25 19:10:54] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/1f/2c/bc003fb0c56efda02aa62143c34e36c529e5f0e320d5e448828d27383220/oasgen-0.5.0.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [xrvoyage]: Downloading https://files.pythonhosted.org/packages/d3/33/f7d07087f64536c533bbe5f3e48c504cdefdb008df9180f55baff1a51824/xrvoyage-1.0.8.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [amilib]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 19:10:54] INFO root fetch - processPackages [yangsuite-gnmi]: Downloading https://files.pythonhosted.org/packages/53/23/3dc66fa4ba6b42452dd073114a614eef0f5a1e8500ecc56db5a5d3fd3366/yangsuite_gnmi-2.7.9-py3-none-any.whl
+[2024-05-25 19:10:54] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/f6/75/31b71b6c352bf4e1e1f2cff7ea0e9cf2a6fb644e0deaacf56d080be04db8/lyriks-0.2.0.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [imreg]: Downloading https://files.pythonhosted.org/packages/8d/a4/230a8234e5cf73bfbfa496b5f0f5e5cc6f9c9d346cbc70502112c754c0c0/imreg-2024.1.2.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [xrvoyage]: Downloading https://files.pythonhosted.org/packages/ad/62/42e63b65f7f89ab31dd4936759df40532087961628b4740fd5d5812307f6/xrvoyage-1.0.9.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [amilib]: Downloading https://files.pythonhosted.org/packages/7a/11/b6510cc46547497b7eff0550eacfa3fd20b625fd7ec4d257fda4753c4423/amilib-0.1.4.tar.gz
+[2024-05-25 19:10:54] INFO root fetch - processPackages [lyriks]: executing diffoscope
+[2024-05-25 19:10:54] INFO root fetch - processPackages [lyriks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyriks-0.1.2.tar.gz tmp/lyriks-0.2.0.tar.gz --markdown 20240525/l/lyriks/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-25 19:10:54] INFO root fetch - processPackages [xrvoyage]: executing diffoscope
+[2024-05-25 19:10:54] INFO root fetch - processPackages [xrvoyage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrvoyage-1.0.8.tar.gz tmp/xrvoyage-1.0.9.tar.gz --markdown 20240525/x/xrvoyage/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-25 19:10:54] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/8d/af/d703a76905290140935c17648d42341304a5ca826f301f4b232a8157b83d/oasgen-0.5.1.tar.gz
+[2024-05-25 19:10:55] INFO root fetch - processPackages [oasgen]: executing diffoscope
+[2024-05-25 19:10:55] INFO root fetch - processPackages [oasgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasgen-0.5.0.tar.gz tmp/oasgen-0.5.1.tar.gz --markdown 20240525/o/oasgen/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-25 19:10:55] INFO root fetch - processPackages [imreg]: Downloading https://files.pythonhosted.org/packages/e0/8f/ca9b98344705ddcb0fa88506e06887774434c44a69b2bc0097c3a56998a4/imreg-2024.5.24.tar.gz
+[2024-05-25 19:10:55] INFO root fetch - processPackages [imreg]: executing diffoscope
+[2024-05-25 19:10:55] INFO root fetch - processPackages [imreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imreg-2024.1.2.tar.gz tmp/imreg-2024.5.24.tar.gz --markdown 20240525/i/imreg/2024.1.2-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 19:10:55] INFO root fetch - processPackages [amilib]: Downloading https://files.pythonhosted.org/packages/7b/06/9955b879283834f7feae3a8303f0674954386c657c3369b7626fe2fc4dce/amilib-0.1.5.tar.gz
+[2024-05-25 19:10:55] INFO root fetch - processPackages [xrvoyage]: Remove: archive file [/home/abi/fetcher/tmp/xrvoyage-1.0.8.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - processPackages [xrvoyage]: Remove: archive file [/home/abi/fetcher/tmp/xrvoyage-1.0.9.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - main [MainThread]: End processing [xrvoyage]: success
+[2024-05-25 19:10:55] INFO root fetch - processPackages [amilib]: executing diffoscope
+[2024-05-25 19:10:55] INFO root fetch - processPackages [amilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amilib-0.1.4.tar.gz tmp/amilib-0.1.5.tar.gz --markdown 20240525/a/amilib/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 19:10:55] INFO root fetch - processPackages [yangsuite-gnmi]: Downloading https://files.pythonhosted.org/packages/2a/a0/7f179038773c0d48d12d6c119ae18d058b67500e1c03167aa8f822f8d4ba/yangsuite_gnmi-2.7.9.post0.dev1-py3-none-any.whl
+[2024-05-25 19:10:55] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.1.2.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.0.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - main [MainThread]: End processing [lyriks]: success
+[2024-05-25 19:10:55] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.5.0.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.5.1.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - main [MainThread]: End processing [oasgen]: success
+[2024-05-25 19:10:55] INFO root fetch - processPackages [imreg]: Remove: archive file [/home/abi/fetcher/tmp/imreg-2024.1.2.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - processPackages [imreg]: Remove: archive file [/home/abi/fetcher/tmp/imreg-2024.5.24.tar.gz]
+[2024-05-25 19:10:55] INFO root fetch - main [MainThread]: End processing [imreg]: success
+[2024-05-25 19:10:56] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.1.4.tar.gz]
+[2024-05-25 19:10:56] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.1.5.tar.gz]
+[2024-05-25 19:10:56] INFO root fetch - main [MainThread]: End processing [amilib]: success
+[2024-05-25 19:10:56] INFO root fetch - processPackages [yangsuite-gnmi]: executing diffoscope
+[2024-05-25 19:10:56] INFO root fetch - processPackages [yangsuite-gnmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_gnmi-2.7.9-py3-none-any.whl.zip tmp/yangsuite_gnmi-2.7.9.post0.dev1-py3-none-any.whl.zip --markdown 20240525/y/yangsuite-gnmi/2.7.9-2.7.9.post0.dev1/README.md --exclude *.pyd
+[2024-05-25 19:10:59] INFO root fetch - processPackages [yangsuite-gnmi]: Remove: archive file [/home/abi/fetcher/tmp/yangsuite_gnmi-2.7.9-py3-none-any.whl.zip]
+[2024-05-25 19:10:59] INFO root fetch - processPackages [yangsuite-gnmi]: Remove: archive file [/home/abi/fetcher/tmp/yangsuite_gnmi-2.7.9.post0.dev1-py3-none-any.whl.zip]
+[2024-05-25 19:10:59] INFO root fetch - main [MainThread]: End processing [yangsuite-gnmi]: success
+[2024-05-25 19:11:00] INFO root fetch - main [MainThread]: Store serial: [23376679]
