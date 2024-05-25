@@ -7444,3 +7444,14 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:31:26] INFO root fetch - processPackages [xju]: Remove: archive file [/home/abi/fetcher/tmp/xju-3.2.1.tar.gz]
 [2024-05-25 04:31:26] INFO root fetch - main [MainThread]: End processing [xju]: success
 [2024-05-25 04:31:26] INFO root fetch - main [MainThread]: Store serial: [23371440]
+[2024-05-25 04:33:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371440]
+[2024-05-25 04:33:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 04:35:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371440]
+[2024-05-25 04:35:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoli
+[2024-05-25 04:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biochain
+[2024-05-25 04:35:40] WARNING root fetch - processPackages [biochain]: Skipping, unable to determine old version
+[2024-05-25 04:35:40] ERROR root fetch - processPackages [yoli]: Unable to get metadata: No such project 'yoli'
+[2024-05-25 04:35:40] INFO root fetch - main [MainThread]: End processing [biochain] error
+[2024-05-25 04:35:40] INFO root fetch - main [MainThread]: End processing [yoli] error
+[2024-05-25 04:35:40] INFO root fetch - main [MainThread]: Store serial: [23371452]
