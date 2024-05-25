@@ -22092,3 +22092,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:14:27] INFO root fetch - processPackages [piney-event]: Remove: archive file [/home/abi/fetcher/tmp/piney_event-0.0.4.tar.gz]
 [2024-05-25 22:14:27] INFO root fetch - main [MainThread]: End processing [piney-event]: success
 [2024-05-25 22:14:27] INFO root fetch - main [MainThread]: Store serial: [23377678]
+[2024-05-25 22:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377678]
+[2024-05-25 22:16:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 22:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-25 22:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textembed
+[2024-05-25 22:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnurl_nostr1
+[2024-05-25 22:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-05-25 22:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-25 22:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ascii-colors
+[2024-05-25 22:16:35] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:16:36] INFO root fetch - processPackages [textembed]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 22:16:36] INFO root fetch - processPackages [lnurl_nostr1]: New version: [0.5.1rc3] Old Version: [0.5.1rc2]
+[2024-05-25 22:16:36] INFO root fetch - processPackages [ascii-colors]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-25 22:16:36] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 22:16:36] INFO root fetch - processPackages [textembed]: Downloading https://files.pythonhosted.org/packages/71/13/43a87a147655b8ae4b57bb00b4c56b60415517f0b65e1d8644551974de50/textembed-0.0.1.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 22:16:36] INFO root fetch - processPackages [ascii-colors]: Downloading https://files.pythonhosted.org/packages/ce/b5/257d3092179fba13aafcd23a23eb33d5c9835480063ebe28a7fe84cfb2de/ascii_colors-0.2.2.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/66/96/b16b109cc02f0549c835784db4897665a10e7e482489d8477a1ae55181a7/lnurl_nostr1-0.5.1rc2.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [textembed]: Downloading https://files.pythonhosted.org/packages/10/6c/5cce0cd8b79fd88a434dafac977758c1452dad06334b3a5171113e675fe0/textembed-0.0.2.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [ascii-colors]: Downloading https://files.pythonhosted.org/packages/2b/94/1a289d876af1adf8560ac52f97cf54f11038ff08e9982088399cc3526607/ascii_colors-0.3.0.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:16:36] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:16:36] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/a1/70/d6710cba20326ed48c591b764059bc6269be8a7157a83feb8d3ccbba3e7a/lnurl_nostr1-0.5.1rc3-py3-none-any.whl
+[2024-05-25 22:16:36] INFO root fetch - processPackages [lnurl_nostr1]: executing diffoscope
+[2024-05-25 22:16:36] INFO root fetch - processPackages [lnurl_nostr1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnurl_nostr1-0.5.1rc2.tar.gz tmp/lnurl_nostr1-0.5.1rc3-py3-none-any.whl.zip --markdown 20240525/l/lnurl_nostr1/0.5.1rc2-0.5.1rc3/README.md --exclude *.pyd
+[2024-05-25 22:16:36] INFO root fetch - processPackages [textembed]: executing diffoscope
+[2024-05-25 22:16:36] INFO root fetch - processPackages [textembed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textembed-0.0.1.tar.gz tmp/textembed-0.0.2.tar.gz --markdown 20240525/t/textembed/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 22:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 22:16:36] INFO root fetch - processPackages [ascii-colors]: executing diffoscope
+[2024-05-25 22:16:36] INFO root fetch - processPackages [ascii-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascii_colors-0.2.2.tar.gz tmp/ascii_colors-0.3.0.tar.gz --markdown 20240525/a/ascii-colors/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-25 22:16:37] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 22:16:37] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 22:16:37] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 22:16:37] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 22:16:37] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.1rc2.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.1rc3-py3-none-any.whl.zip]
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1]: success
+[2024-05-25 22:16:37] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:16:37] INFO root fetch - processPackages [ascii-colors]: Remove: archive file [/home/abi/fetcher/tmp/ascii_colors-0.2.2.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - processPackages [ascii-colors]: Remove: archive file [/home/abi/fetcher/tmp/ascii_colors-0.3.0.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [ascii-colors]: success
+[2024-05-25 22:16:37] INFO root fetch - processPackages [textembed]: Remove: archive file [/home/abi/fetcher/tmp/textembed-0.0.1.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - processPackages [textembed]: Remove: archive file [/home/abi/fetcher/tmp/textembed-0.0.2.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [textembed]: success
+[2024-05-25 22:16:37] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 22:16:37] INFO root fetch - main [MainThread]: Store serial: [23377696]
