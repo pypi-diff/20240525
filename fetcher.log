@@ -20617,3 +20617,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:03:37] INFO root fetch - processPackages [tradeset]: Remove: archive file [/home/abi/fetcher/tmp/tradeset-0.0.5.tar.gz]
 [2024-05-25 20:03:37] INFO root fetch - main [MainThread]: End processing [tradeset]: success
 [2024-05-25 20:03:37] INFO root fetch - main [MainThread]: Store serial: [23377005]
+[2024-05-25 20:05:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377005]
+[2024-05-25 20:05:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 20:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tradeset
+[2024-05-25 20:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbom
+[2024-05-25 20:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-value-object
+[2024-05-25 20:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DeepMIMOv3
+[2024-05-25 20:05:46] INFO root fetch - processPackages [simple-value-object]: New version: [3.2] Old Version: [3.1.1]
+[2024-05-25 20:05:46] INFO root fetch - processPackages [netbom]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-25 20:05:46] INFO root fetch - processPackages [tradeset]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 20:05:46] INFO root fetch - processPackages [netbom]: Downloading https://files.pythonhosted.org/packages/6c/37/2211686460d4017f64d6548304a8dea8b9ac74d4897020fad43369c3adaf/netbom-0.0.13.tar.gz
+[2024-05-25 20:05:46] INFO root fetch - processPackages [tradeset]: Downloading https://files.pythonhosted.org/packages/17/b6/acf23b804996ca4ff887f86db735e039c716a3b0b137d186b52a77ccc3c0/tradeset-0.0.4.tar.gz
+[2024-05-25 20:05:46] INFO root fetch - processPackages [simple-value-object]: Downloading https://files.pythonhosted.org/packages/03/d8/1f480625e45a032649f3fc54d9c23768887e5465b333f32df58c38863c1e/simple_value_object-3.1.1.tar.gz
+[2024-05-25 20:05:46] INFO root fetch - processPackages [DeepMIMOv3]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-25 20:05:46] INFO root fetch - processPackages [tradeset]: Downloading https://files.pythonhosted.org/packages/a0/f5/0997631cc2277877a096547501f9d393b14bba589fd7750b77bfa6e25561/tradeset-0.0.5.tar.gz
+[2024-05-25 20:05:46] INFO root fetch - processPackages [DeepMIMOv3]: Downloading https://files.pythonhosted.org/packages/ed/18/8f5b77fc8b254566d268ccf614cae6ead3976e29776cacf2816601cef8d7/deepmimov3-0.2.4.tar.gz
+[2024-05-25 20:05:46] INFO root fetch - processPackages [netbom]: Downloading https://files.pythonhosted.org/packages/4e/12/5129d5f5125845d13a96f064ff668eeeab0ba5f0b8dd62e3b7a7d540a917/netbom-0.0.14.tar.gz
+[2024-05-25 20:05:47] INFO root fetch - processPackages [simple-value-object]: Downloading https://files.pythonhosted.org/packages/b1/b2/9d4a2f5a30ddd3eca4e73beb7b03f7333120f5ec16a6c00ab046be6fff90/simple-value-object-3.2.tar.gz
+[2024-05-25 20:05:47] INFO root fetch - processPackages [tradeset]: executing diffoscope
+[2024-05-25 20:05:47] INFO root fetch - processPackages [tradeset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradeset-0.0.4.tar.gz tmp/tradeset-0.0.5.tar.gz --markdown 20240525/t/tradeset/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 20:05:47] INFO root fetch - processPackages [netbom]: executing diffoscope
+[2024-05-25 20:05:47] INFO root fetch - processPackages [netbom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbom-0.0.13.tar.gz tmp/netbom-0.0.14.tar.gz --markdown 20240525/n/netbom/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-25 20:05:47] INFO root fetch - processPackages [simple-value-object]: executing diffoscope
+[2024-05-25 20:05:47] INFO root fetch - processPackages [simple-value-object]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_value_object-3.1.1.tar.gz tmp/simple-value-object-3.2.tar.gz --markdown 20240525/s/simple-value-object/3.1.1-3.2/README.md --exclude *.pyd
+[2024-05-25 20:05:47] INFO root fetch - processPackages [DeepMIMOv3]: Downloading https://files.pythonhosted.org/packages/96/e3/a826b18a7025769349c2bcee9b9e159e60682898db7b97485821ba388107/deepmimov3-0.2.5.tar.gz
+[2024-05-25 20:05:47] INFO root fetch - processPackages [DeepMIMOv3]: executing diffoscope
+[2024-05-25 20:05:47] INFO root fetch - processPackages [DeepMIMOv3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepmimov3-0.2.4.tar.gz tmp/deepmimov3-0.2.5.tar.gz --markdown 20240525/D/DeepMIMOv3/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-25 20:05:47] INFO root fetch - processPackages [tradeset]: Remove: archive file [/home/abi/fetcher/tmp/tradeset-0.0.4.tar.gz]
+[2024-05-25 20:05:47] INFO root fetch - processPackages [tradeset]: Remove: archive file [/home/abi/fetcher/tmp/tradeset-0.0.5.tar.gz]
+[2024-05-25 20:05:47] INFO root fetch - main [MainThread]: End processing [tradeset]: success
+[2024-05-25 20:05:47] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple_value_object-3.1.1.tar.gz]
+[2024-05-25 20:05:47] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple-value-object-3.2.tar.gz]
+[2024-05-25 20:05:47] INFO root fetch - main [MainThread]: End processing [simple-value-object]: success
+[2024-05-25 20:05:47] INFO root fetch - processPackages [netbom]: Remove: archive file [/home/abi/fetcher/tmp/netbom-0.0.13.tar.gz]
+[2024-05-25 20:05:47] INFO root fetch - processPackages [netbom]: Remove: archive file [/home/abi/fetcher/tmp/netbom-0.0.14.tar.gz]
+[2024-05-25 20:05:47] INFO root fetch - main [MainThread]: End processing [netbom]: success
+[2024-05-25 20:05:48] INFO root fetch - processPackages [DeepMIMOv3]: Remove: archive file [/home/abi/fetcher/tmp/deepmimov3-0.2.4.tar.gz]
+[2024-05-25 20:05:48] INFO root fetch - processPackages [DeepMIMOv3]: Remove: archive file [/home/abi/fetcher/tmp/deepmimov3-0.2.5.tar.gz]
+[2024-05-25 20:05:48] INFO root fetch - main [MainThread]: End processing [DeepMIMOv3]: success
+[2024-05-25 20:05:48] INFO root fetch - main [MainThread]: Store serial: [23377016]
