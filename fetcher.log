@@ -7476,3 +7476,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:37:51] INFO root fetch - processPackages [cachetoolz]: Remove: archive file [/home/abi/fetcher/tmp/cachetoolz-0.4.0a1.tar.gz]
 [2024-05-25 04:37:51] INFO root fetch - main [MainThread]: End processing [cachetoolz]: success
 [2024-05-25 04:37:51] INFO root fetch - main [MainThread]: Store serial: [23371458]
+[2024-05-25 04:39:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371458]
+[2024-05-25 04:39:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytilpack
+[2024-05-25 04:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfmanager
+[2024-05-25 04:39:59] INFO root fetch - processPackages [pytilpack]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-05-25 04:39:59] INFO root fetch - processPackages [sfmanager]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 04:40:00] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/03/6d/a47f8d7b5dbc7fb918b997bcdb6665a986d0562090c9f6accc3bc4022d40/pytilpack-0.5.1.tar.gz
+[2024-05-25 04:40:00] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/83/a3/507ab792ccfe59a5e838c2709b9a15be526169da2996e490286dd8852e83/sfmanager-0.1.8.tar.gz
+[2024-05-25 04:40:00] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/96/b0/6ffa77a42335a1c9f6961713d94474f9d61b62f7033dad8fa88d741a51b2/pytilpack-0.6.0.tar.gz
+[2024-05-25 04:40:00] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/07/af/7278505c8eb0d129873eab918ade23f1539e85eb1003a2c238e2360f824a/sfmanager-0.1.9.tar.gz
+[2024-05-25 04:40:00] INFO root fetch - processPackages [pytilpack]: executing diffoscope
+[2024-05-25 04:40:00] INFO root fetch - processPackages [pytilpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytilpack-0.5.1.tar.gz tmp/pytilpack-0.6.0.tar.gz --markdown 20240525/p/pytilpack/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-05-25 04:40:00] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-05-25 04:40:00] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.8.tar.gz tmp/sfmanager-0.1.9.tar.gz --markdown 20240525/s/sfmanager/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 04:40:01] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.5.1.tar.gz]
+[2024-05-25 04:40:01] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.6.0.tar.gz]
+[2024-05-25 04:40:01] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
+[2024-05-25 04:40:01] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.8.tar.gz]
+[2024-05-25 04:40:01] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.9.tar.gz]
+[2024-05-25 04:40:01] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-05-25 04:40:01] INFO root fetch - main [MainThread]: Store serial: [23371464]
