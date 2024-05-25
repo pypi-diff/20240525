@@ -21904,3 +21904,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:46:25] INFO root fetch - processPackages [d2cd]: Remove: archive file [/home/abi/fetcher/tmp/d2cd-0.0.3b0.tar.gz]
 [2024-05-25 21:46:25] INFO root fetch - main [MainThread]: End processing [d2cd]: success
 [2024-05-25 21:46:25] INFO root fetch - main [MainThread]: Store serial: [23377572]
+[2024-05-25 21:48:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377572]
+[2024-05-25 21:48:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 21:48:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdtransform
+[2024-05-25 21:48:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-25 21:48:34] INFO root fetch - processPackages [gdtransform]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 21:48:34] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 21:48:34] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/d3/89/81a694f5d53abfbd54f583911b87142fa440c16bf7624f5126c00c3c7340/gdtransform-0.0.7.tar.gz
+[2024-05-25 21:48:34] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 21:48:34] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/97/77/ad73e135fb73eb898164ad98cff2e33cf5251dcc47f5da0cf63b4ee4805d/gdtransform-0.0.8.tar.gz
+[2024-05-25 21:48:34] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 21:48:34] INFO root fetch - processPackages [gdtransform]: executing diffoscope
+[2024-05-25 21:48:34] INFO root fetch - processPackages [gdtransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdtransform-0.0.7.tar.gz tmp/gdtransform-0.0.8.tar.gz --markdown 20240525/g/gdtransform/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 21:48:34] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 21:48:34] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 21:48:35] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.7.tar.gz]
+[2024-05-25 21:48:35] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.8.tar.gz]
+[2024-05-25 21:48:35] INFO root fetch - main [MainThread]: End processing [gdtransform]: success
+[2024-05-25 21:48:35] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 21:48:35] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 21:48:35] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 21:48:35] INFO root fetch - main [MainThread]: Store serial: [23377578]
