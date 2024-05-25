@@ -23268,3 +23268,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:29:51] INFO root fetch - processPackages [citeman]: Remove: archive file [/home/abi/fetcher/tmp/citeman-0.2.tar.gz]
 [2024-05-25 23:29:51] INFO root fetch - main [MainThread]: End processing [citeman]: success
 [2024-05-25 23:29:51] INFO root fetch - main [MainThread]: Store serial: [23378107]
+[2024-05-25 23:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378107]
+[2024-05-25 23:32:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 23:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magyar
+[2024-05-25 23:32:00] INFO root fetch - processPackages [magyar]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-05-25 23:32:00] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/d8/47/c8c2febbadd0fd4ec73692c6cf1a0a11fb547eeff6f10d6e4cc9ca0afe14/magyar-4.0.0.tar.gz
+[2024-05-25 23:32:01] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/82/e5/f1c87274d0e89a9e9074bc2f6f6036a34b83720067622e7d8e45d5a50a44/magyar-4.0.1.tar.gz
+[2024-05-25 23:32:01] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2024-05-25 23:32:01] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-4.0.0.tar.gz tmp/magyar-4.0.1.tar.gz --markdown 20240525/m/magyar/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-05-25 23:32:01] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.0.tar.gz]
+[2024-05-25 23:32:01] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.1.tar.gz]
+[2024-05-25 23:32:01] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2024-05-25 23:32:01] INFO root fetch - main [MainThread]: Store serial: [23378110]
