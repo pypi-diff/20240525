@@ -23322,3 +23322,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:34:12] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.3.tar.gz]
 [2024-05-25 23:34:12] INFO root fetch - main [MainThread]: End processing [flask_postgres]: success
 [2024-05-25 23:34:12] INFO root fetch - main [MainThread]: Store serial: [23378127]
+[2024-05-25 23:36:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378127]
+[2024-05-25 23:36:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 23:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bibcite
+[2024-05-25 23:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-sops-secrets
+[2024-05-25 23:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: liveflask
+[2024-05-25 23:36:22] INFO root fetch - processPackages [bibcite]: New version: [0.2.3] Old Version: [0.2.1]
+[2024-05-25 23:36:22] INFO root fetch - processPackages [bibcite]: Downloading https://files.pythonhosted.org/packages/15/7c/c14bcf875ce91b3e315c1c18af9f0eff0ae60f431fffba5403e77de3ffc6/bibcite-0.2.1.tar.gz
+[2024-05-25 23:36:22] INFO root fetch - processPackages [liveflask]: New version: [1.0.9rc6] Old Version: [1.0.9rc5]
+[2024-05-25 23:36:22] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.8.8] Old Version: [1.8.7]
+[2024-05-25 23:36:22] INFO root fetch - processPackages [bibcite]: Downloading https://files.pythonhosted.org/packages/fa/20/a01aa9ba8e92c1ace4fb315be5196f3ddd22930792d2045e767a62120009/bibcite-0.2.3.tar.gz
+[2024-05-25 23:36:22] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/4f/f7/9fa1b550df92979d3653b69ad0f8af57358884c417fc600ac326b87f6266/liveflask-1.0.9rc5.tar.gz
+[2024-05-25 23:36:22] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/d6/6f/1be623e2dc1739b3b142c8058146eb1ff03aa745ae4cbec68b21867dc0e8/cdk-sops-secrets-1.8.7.tar.gz
+[2024-05-25 23:36:22] INFO root fetch - processPackages [bibcite]: executing diffoscope
+[2024-05-25 23:36:22] INFO root fetch - processPackages [bibcite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibcite-0.2.1.tar.gz tmp/bibcite-0.2.3.tar.gz --markdown 20240525/b/bibcite/0.2.1-0.2.3/README.md --exclude *.pyd
+[2024-05-25 23:36:23] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/c9/85/db794ba1759ab4e9865cd2537ac486073560649c795fb7212df21fe29eaf/liveflask-1.0.9rc6.tar.gz
+[2024-05-25 23:36:23] INFO root fetch - processPackages [liveflask]: executing diffoscope
+[2024-05-25 23:36:23] INFO root fetch - processPackages [liveflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveflask-1.0.9rc5.tar.gz tmp/liveflask-1.0.9rc6.tar.gz --markdown 20240525/l/liveflask/1.0.9rc5-1.0.9rc6/README.md --exclude *.pyd
+[2024-05-25 23:36:23] INFO root fetch - processPackages [bibcite]: Remove: archive file [/home/abi/fetcher/tmp/bibcite-0.2.1.tar.gz]
+[2024-05-25 23:36:23] INFO root fetch - processPackages [bibcite]: Remove: archive file [/home/abi/fetcher/tmp/bibcite-0.2.3.tar.gz]
+[2024-05-25 23:36:23] INFO root fetch - main [MainThread]: End processing [bibcite]: success
+[2024-05-25 23:36:23] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/22/57/f00405583429b6d40e2d710c7edd54c51939309d8bd46a9e487491fc479d/cdk-sops-secrets-1.8.8.tar.gz
+[2024-05-25 23:36:24] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc5.tar.gz]
+[2024-05-25 23:36:24] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.9rc6.tar.gz]
+[2024-05-25 23:36:24] INFO root fetch - main [MainThread]: End processing [liveflask]: success
+[2024-05-25 23:36:24] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2024-05-25 23:36:24] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.8.7.tar.gz tmp/cdk-sops-secrets-1.8.8.tar.gz --markdown 20240525/c/cdk-sops-secrets/1.8.7-1.8.8/README.md --exclude *.pyd
+[2024-05-25 23:36:26] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.8.7.tar.gz]
+[2024-05-25 23:36:26] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.8.8.tar.gz]
+[2024-05-25 23:36:26] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2024-05-25 23:36:26] INFO root fetch - main [MainThread]: Store serial: [23378136]
