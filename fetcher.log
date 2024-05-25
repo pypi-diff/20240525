@@ -11833,3 +11833,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:07:44] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240524.tar.gz]
 [2024-05-25 11:07:44] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
 [2024-05-25 11:07:44] INFO root fetch - main [MainThread]: Store serial: [23373520]
+[2024-05-25 11:09:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373520]
+[2024-05-25 11:09:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mns-scheduler
+[2024-05-25 11:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-05-25 11:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctsf
+[2024-05-25 11:09:52] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.6.1] Old Version: [1.0.5.9]
+[2024-05-25 11:09:52] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 11:09:53] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/81/80/b9aadc7a09c0f398a65fef4b36fad7cb1054ea0d4b1287f03621fc2cc5b4/mns-scheduler-1.0.5.9.tar.gz
+[2024-05-25 11:09:53] INFO root fetch - processPackages [ctsf]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-25 11:09:53] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 11:09:53] INFO root fetch - processPackages [ctsf]: Downloading https://files.pythonhosted.org/packages/b6/b6/a545b8afee9bb7299c7b36153b9baf0235132c6e36cf8c78c65c59c7afd5/ctsf-1.0.4.tar.gz
+[2024-05-25 11:09:53] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/54/b8/70a39847cd414b4e99f79d977386e48f782971357c5ce1e19222935905e7/mns-scheduler-1.0.6.1.tar.gz
+[2024-05-25 11:09:53] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-05-25 11:09:53] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.5.9.tar.gz tmp/mns-scheduler-1.0.6.1.tar.gz --markdown 20240525/m/mns-scheduler/1.0.5.9-1.0.6.1/README.md --exclude *.pyd
+[2024-05-25 11:09:53] INFO root fetch - processPackages [ctsf]: Downloading https://files.pythonhosted.org/packages/1d/98/8dcc25ecc06c10cd3d1966d4194ce857e616fdcfea78c7b78e3031d72208/ctsf-1.0.5.tar.gz
+[2024-05-25 11:09:53] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 11:09:53] INFO root fetch - processPackages [ctsf]: executing diffoscope
+[2024-05-25 11:09:53] INFO root fetch - processPackages [ctsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctsf-1.0.4.tar.gz tmp/ctsf-1.0.5.tar.gz --markdown 20240525/c/ctsf/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-25 11:09:53] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 11:09:53] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 11:09:54] INFO root fetch - processPackages [ctsf]: Remove: archive file [/home/abi/fetcher/tmp/ctsf-1.0.4.tar.gz]
+[2024-05-25 11:09:54] INFO root fetch - processPackages [ctsf]: Remove: archive file [/home/abi/fetcher/tmp/ctsf-1.0.5.tar.gz]
+[2024-05-25 11:09:54] INFO root fetch - main [MainThread]: End processing [ctsf]: success
+[2024-05-25 11:09:54] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.9.tar.gz]
+[2024-05-25 11:09:54] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.6.1.tar.gz]
+[2024-05-25 11:09:54] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-05-25 11:09:55] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 11:09:55] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 11:09:55] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 11:09:55] INFO root fetch - main [MainThread]: Store serial: [23373529]
