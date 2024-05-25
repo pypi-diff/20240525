@@ -9286,3 +9286,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:47:21] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.5-py3-none-any.whl.zip]
 [2024-05-25 07:47:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-maintenance-equipment-hierarchy]: success
 [2024-05-25 07:47:21] INFO root fetch - main [MainThread]: Store serial: [23372327]
+[2024-05-25 07:49:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372327]
+[2024-05-25 07:49:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 07:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: walletconstructor
+[2024-05-25 07:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wolensing
+[2024-05-25 07:49:30] WARNING root fetch - processPackages [walletconstructor]: Skipping, unable to determine old version
+[2024-05-25 07:49:30] INFO root fetch - main [MainThread]: End processing [walletconstructor] error
+[2024-05-25 07:49:30] INFO root fetch - processPackages [wolensing]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 07:49:30] INFO root fetch - processPackages [wolensing]: Downloading https://files.pythonhosted.org/packages/36/9b/4cf4b793ec730ec1f828ab1819b4e5394c6e4a41625e750d6d5bd9fa796a/wolensing-0.0.5.tar.gz
+[2024-05-25 07:49:30] INFO root fetch - processPackages [wolensing]: Downloading https://files.pythonhosted.org/packages/d8/78/6cd6a900d98e0b5c86c9a2702bc545067caa9e18eb362978f47475b34719/wolensing-0.0.6.tar.gz
+[2024-05-25 07:49:31] INFO root fetch - processPackages [wolensing]: executing diffoscope
+[2024-05-25 07:49:31] INFO root fetch - processPackages [wolensing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolensing-0.0.5.tar.gz tmp/wolensing-0.0.6.tar.gz --markdown 20240525/w/wolensing/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 07:49:32] INFO root fetch - processPackages [wolensing]: Remove: archive file [/home/abi/fetcher/tmp/wolensing-0.0.5.tar.gz]
+[2024-05-25 07:49:32] INFO root fetch - processPackages [wolensing]: Remove: archive file [/home/abi/fetcher/tmp/wolensing-0.0.6.tar.gz]
+[2024-05-25 07:49:32] INFO root fetch - main [MainThread]: End processing [wolensing]: success
+[2024-05-25 07:49:32] INFO root fetch - main [MainThread]: Store serial: [23372336]
