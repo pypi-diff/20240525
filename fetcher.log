@@ -14074,3 +14074,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:20:14] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-25 14:20:14] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-25 14:20:14] INFO root fetch - main [MainThread]: Store serial: [23374570]
+[2024-05-25 14:22:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374570]
+[2024-05-25 14:22:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scoringrules
+[2024-05-25 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paper-admin
+[2024-05-25 14:22:24] INFO root fetch - processPackages [scoringrules]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-25 14:22:25] INFO root fetch - processPackages [paper-admin]: New version: [7.7.0] Old Version: [7.6.4]
+[2024-05-25 14:22:25] INFO root fetch - processPackages [scoringrules]: Downloading https://files.pythonhosted.org/packages/5e/06/7f9d922cad2534ca5b7dd7c82e120200788a81a097a33bb6174d635438f4/scoringrules-0.5.0.tar.gz
+[2024-05-25 14:22:25] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/21/ae/c22d08c9c473b7a7baef843eee7f3b7f50c77c70b000cbe0f1f79f3f448c/paper-admin-7.6.4.tar.gz
+[2024-05-25 14:22:25] INFO root fetch - processPackages [scoringrules]: Downloading https://files.pythonhosted.org/packages/66/0f/63f45e2de04d29c4aa0ddc376d6d74a620ef40e0876a186e658e0303e36a/scoringrules-0.5.1.tar.gz
+[2024-05-25 14:22:25] INFO root fetch - processPackages [scoringrules]: executing diffoscope
+[2024-05-25 14:22:25] INFO root fetch - processPackages [scoringrules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scoringrules-0.5.0.tar.gz tmp/scoringrules-0.5.1.tar.gz --markdown 20240525/s/scoringrules/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-25 14:22:25] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/32/33/2fbb9463d8212aea8d85348172cbb273438c58e9a28fad22bed1d3e72ae1/paper_admin-7.7.0.tar.gz
+[2024-05-25 14:22:26] INFO root fetch - processPackages [paper-admin]: executing diffoscope
+[2024-05-25 14:22:26] INFO root fetch - processPackages [paper-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-admin-7.6.4.tar.gz tmp/paper_admin-7.7.0.tar.gz --markdown 20240525/p/paper-admin/7.6.4-7.7.0/README.md --exclude *.pyd
+[2024-05-25 14:22:26] INFO root fetch - processPackages [scoringrules]: Remove: archive file [/home/abi/fetcher/tmp/scoringrules-0.5.0.tar.gz]
+[2024-05-25 14:22:26] INFO root fetch - processPackages [scoringrules]: Remove: archive file [/home/abi/fetcher/tmp/scoringrules-0.5.1.tar.gz]
+[2024-05-25 14:22:26] INFO root fetch - main [MainThread]: End processing [scoringrules]: success
+[2024-05-25 14:22:32] INFO root fetch - processPackages [paper-admin]: Remove: archive file [/home/abi/fetcher/tmp/paper-admin-7.6.4.tar.gz]
+[2024-05-25 14:22:32] INFO root fetch - processPackages [paper-admin]: Remove: archive file [/home/abi/fetcher/tmp/paper_admin-7.7.0.tar.gz]
+[2024-05-25 14:22:32] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
+[2024-05-25 14:22:32] INFO root fetch - main [MainThread]: Store serial: [23374578]
