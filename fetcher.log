@@ -11195,3 +11195,48 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:28:07] INFO root fetch - processPackages [scikit-llm]: Remove: archive file [/home/abi/fetcher/tmp/scikit_llm-1.1.0.tar.gz]
 [2024-05-25 10:28:07] INFO root fetch - main [MainThread]: End processing [scikit-llm]: success
 [2024-05-25 10:28:07] INFO root fetch - main [MainThread]: Store serial: [23373187]
+[2024-05-25 10:30:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373187]
+[2024-05-25 10:30:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 10:30:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpanalyze
+[2024-05-25 10:30:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: readme-ation
+[2024-05-25 10:30:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: json-repair
+[2024-05-25 10:30:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tjax
+[2024-05-25 10:30:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chess-pairings
+[2024-05-25 10:30:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: click-extra
+[2024-05-25 10:30:16] INFO root fetch - processPackages [chess-pairings]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 10:30:16] INFO root fetch - processPackages [click-extra]: New version: [4.8.2] Old Version: [4.8.1]
+[2024-05-25 10:30:16] WARNING root fetch - processPackages [mpanalyze]: Skipping, unable to determine old version
+[2024-05-25 10:30:16] INFO root fetch - main [MainThread]: End processing [mpanalyze] error
+[2024-05-25 10:30:16] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-25 10:30:16] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/a3/47/27e8700675b2159e199a3105c97b46e23a7f357a5b93e61317f789a07817/chess_pairings-0.1.6.tar.gz
+[2024-05-25 10:30:16] INFO root fetch - processPackages [click-extra]: Downloading https://files.pythonhosted.org/packages/69/ff/6e97860dac64823a8c36c2e0c18781561f3f2f20e26207a969c220a0fc03/click_extra-4.8.1.tar.gz
+[2024-05-25 10:30:16] WARNING root fetch - processPackages [readme-ation]: Skipping, unable to determine old version
+[2024-05-25 10:30:16] INFO root fetch - main [MainThread]: End processing [readme-ation] error
+[2024-05-25 10:30:16] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-05-25 10:30:16] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-05-25 10:30:16] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/f4/34/4a577873927f48d6c41481e0c83bc2e95f7627bb9333df2c4afb2ba0f916/chess_pairings-0.1.7.tar.gz
+[2024-05-25 10:30:16] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/0a/6a/2363c88006dd7f98956bcd37716a18eff3b3138599af4e6dbde76d22d085/tjax-0.8.4.tar.gz
+[2024-05-25 10:30:16] INFO root fetch - processPackages [click-extra]: Downloading https://files.pythonhosted.org/packages/e6/f2/ed6fb454f63ef155a314acb124e053fa1a609b2543ae424f8a79a7402ada/click_extra-4.8.2.tar.gz
+[2024-05-25 10:30:16] INFO root fetch - processPackages [chess-pairings]: executing diffoscope
+[2024-05-25 10:30:16] INFO root fetch - processPackages [chess-pairings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_pairings-0.1.6.tar.gz tmp/chess_pairings-0.1.7.tar.gz --markdown 20240525/c/chess-pairings/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 10:30:16] INFO root fetch - processPackages [click-extra]: executing diffoscope
+[2024-05-25 10:30:16] INFO root fetch - processPackages [click-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/click_extra-4.8.1.tar.gz tmp/click_extra-4.8.2.tar.gz --markdown 20240525/c/click-extra/4.8.1-4.8.2/README.md --exclude *.pyd
+[2024-05-25 10:30:16] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-05-25 10:30:17] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-05-25 10:30:17] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240525/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-25 10:30:17] INFO root fetch - processPackages [click-extra]: Remove: archive file [/home/abi/fetcher/tmp/click_extra-4.8.1.tar.gz]
+[2024-05-25 10:30:17] INFO root fetch - processPackages [click-extra]: Remove: archive file [/home/abi/fetcher/tmp/click_extra-4.8.2.tar.gz]
+[2024-05-25 10:30:17] INFO root fetch - main [MainThread]: End processing [click-extra]: success
+[2024-05-25 10:30:17] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.6.tar.gz]
+[2024-05-25 10:30:17] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.7.tar.gz]
+[2024-05-25 10:30:17] INFO root fetch - main [MainThread]: End processing [chess-pairings]: success
+[2024-05-25 10:30:17] INFO root fetch - processPackages [tjax]: Downloading https://files.pythonhosted.org/packages/be/f1/ce1970f050f673ae52c304257120a380736f531fee4d81b57ab0f24b506f/tjax-0.9.0.tar.gz
+[2024-05-25 10:30:17] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-05-25 10:30:17] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-05-25 10:30:17] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-05-25 10:30:18] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2024-05-25 10:30:18] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20240525/t/tjax/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-05-25 10:30:19] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.8.4.tar.gz]
+[2024-05-25 10:30:19] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.9.0.tar.gz]
+[2024-05-25 10:30:19] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2024-05-25 10:30:19] INFO root fetch - main [MainThread]: Store serial: [23373209]
