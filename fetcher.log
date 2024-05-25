@@ -23450,3 +23450,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:51:34] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.26a1716659882.tar.gz]
 [2024-05-25 23:51:34] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-25 23:51:34] INFO root fetch - main [MainThread]: Store serial: [23378169]
+[2024-05-25 23:53:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378169]
+[2024-05-25 23:53:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BinaryAndSerializableMath
+[2024-05-25 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dansplotcore
+[2024-05-25 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: espy-contact
+[2024-05-25 23:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lyriks
+[2024-05-25 23:53:43] INFO root fetch - processPackages [lyriks]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 23:53:43] WARNING root fetch - processPackages [BinaryAndSerializableMath]: Skipping, unable to determine old version
+[2024-05-25 23:53:43] INFO root fetch - main [MainThread]: End processing [BinaryAndSerializableMath] error
+[2024-05-25 23:53:43] INFO root fetch - processPackages [espy-contact]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-25 23:53:43] INFO root fetch - processPackages [dansplotcore]: New version: [6.6.0] Old Version: [6.5.0]
+[2024-05-25 23:53:43] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/02/07/8547d7241f73bff39d48303072efaeddf8684497a430672e7c53463d43f3/lyriks-0.2.1.tar.gz
+[2024-05-25 23:53:43] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/2f/a8/597550072e93807f265376f6d6212aae00fb87930e23d691e20d499fa733/espy_contact-2.0.2.tar.gz
+[2024-05-25 23:53:44] INFO root fetch - processPackages [dansplotcore]: Downloading https://files.pythonhosted.org/packages/bd/2f/5b4ca48ecdc51a80a83f3ffe1d9b8818c02ffdd4f0ed97a4057cc5d5b1f3/dansplotcore-6.5.0.tar.gz
+[2024-05-25 23:53:44] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/73/3f/48d2720d6166cc176e8dc9d86f115dc35eb9a40e9fff8a170730bf80b476/espy_contact-2.0.3.tar.gz
+[2024-05-25 23:53:44] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/b8/1d/89e47d63e9b0ef801714b1e0872be3941515fbdf8733be4aad28b314b8d1/lyriks-0.2.2.tar.gz
+[2024-05-25 23:53:44] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-25 23:53:44] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.2.tar.gz tmp/espy_contact-2.0.3.tar.gz --markdown 20240525/e/espy-contact/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-25 23:53:44] INFO root fetch - processPackages [lyriks]: executing diffoscope
+[2024-05-25 23:53:44] INFO root fetch - processPackages [lyriks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyriks-0.2.1.tar.gz tmp/lyriks-0.2.2.tar.gz --markdown 20240525/l/lyriks/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 23:53:44] INFO root fetch - processPackages [dansplotcore]: Downloading https://files.pythonhosted.org/packages/5e/65/5f0230e4a96efdd89d5c1e8f75d93cae09a4a3bc53102ea2d3cb165ae86b/dansplotcore-6.6.0.tar.gz
+[2024-05-25 23:53:44] INFO root fetch - processPackages [dansplotcore]: executing diffoscope
+[2024-05-25 23:53:44] INFO root fetch - processPackages [dansplotcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dansplotcore-6.5.0.tar.gz tmp/dansplotcore-6.6.0.tar.gz --markdown 20240525/d/dansplotcore/6.5.0-6.6.0/README.md --exclude *.pyd
+[2024-05-25 23:53:44] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.1.tar.gz]
+[2024-05-25 23:53:44] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.2.tar.gz]
+[2024-05-25 23:53:44] INFO root fetch - main [MainThread]: End processing [lyriks]: success
+[2024-05-25 23:53:45] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.2.tar.gz]
+[2024-05-25 23:53:45] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.3.tar.gz]
+[2024-05-25 23:53:45] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-25 23:53:45] INFO root fetch - processPackages [dansplotcore]: Remove: archive file [/home/abi/fetcher/tmp/dansplotcore-6.5.0.tar.gz]
+[2024-05-25 23:53:45] INFO root fetch - processPackages [dansplotcore]: Remove: archive file [/home/abi/fetcher/tmp/dansplotcore-6.6.0.tar.gz]
+[2024-05-25 23:53:45] INFO root fetch - main [MainThread]: End processing [dansplotcore]: success
+[2024-05-25 23:53:45] INFO root fetch - main [MainThread]: Store serial: [23378181]
