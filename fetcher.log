@@ -19178,3 +19178,129 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:24:51] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.9.tar.gz]
 [2024-05-25 18:24:51] INFO root fetch - main [MainThread]: End processing [backend1]: success
 [2024-05-25 18:24:51] INFO root fetch - main [MainThread]: Store serial: [23376446]
+[2024-05-25 18:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376446]
+[2024-05-25 18:27:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 18:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siat
+[2024-05-25 18:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fango
+[2024-05-25 18:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: icas
+[2024-05-25 18:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openet-sims
+[2024-05-25 18:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zipreport-lib
+[2024-05-25 18:27:00] WARNING root fetch - processPackages [icas]: Skipping, unable to determine old version
+[2024-05-25 18:27:00] INFO root fetch - main [MainThread]: End processing [icas] error
+[2024-05-25 18:27:00] INFO root fetch - processPackages [openet-sims]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 18:27:00] INFO root fetch - processPackages [zipreport-lib]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-25 18:27:00] INFO root fetch - processPackages [fango]: New version: [0.0.25] Old Version: [0.0.24]
+[2024-05-25 18:27:00] INFO root fetch - processPackages [siat]: New version: [3.1.3] Old Version: [3.1.2]
+[2024-05-25 18:27:00] INFO root fetch - processPackages [openet-sims]: Downloading https://files.pythonhosted.org/packages/ef/4e/38cbaf3a7e7f57fb47772ecd05823e666ddb6d4370ba729d9983eac735f2/openet-sims-0.2.1.tar.gz
+[2024-05-25 18:27:00] INFO root fetch - processPackages [zipreport-lib]: Downloading https://files.pythonhosted.org/packages/2d/09/f239faa5ab273f29285ebf6e7f6a5f2d52f784ba7aefd342768b80c0bd27/zipreport-lib-2.0.0.tar.gz
+[2024-05-25 18:27:00] INFO root fetch - processPackages [fango]: Downloading https://files.pythonhosted.org/packages/99/06/0d0888b1fc33a84bd4a2f5b64cae78ae7823d7b8595dd1211f7dc98bfef0/fango-0.0.24.tar.gz
+[2024-05-25 18:27:00] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/41/b7/055bd16aa8ea45ca4c5c733fe9cd022a09b0b1da5d2bbe39fcfa036f2876/siat-3.1.3-py3-none-any.whl
+[2024-05-25 18:27:00] INFO root fetch - processPackages [openet-sims]: Downloading https://files.pythonhosted.org/packages/e6/21/7da67ce8688aa8bf682bc49fc8a0dc77061da09c5a6c3da1815e516a1d43/openet_sims-0.2.2.tar.gz
+[2024-05-25 18:27:00] INFO root fetch - processPackages [fango]: Downloading https://files.pythonhosted.org/packages/7d/28/4820c0b49c13fd104eb4e0b8e95e083c63ee9aca8fc247e9036480754414/fango-0.0.25.tar.gz
+[2024-05-25 18:27:01] INFO root fetch - processPackages [zipreport-lib]: Downloading https://files.pythonhosted.org/packages/5c/cd/c4c0f1ddee48ac0784fdae4e27350537984682e9f66f6a7f66501f66ecda/zipreport-lib-2.0.1.tar.gz
+[2024-05-25 18:27:01] INFO root fetch - processPackages [openet-sims]: executing diffoscope
+[2024-05-25 18:27:01] INFO root fetch - processPackages [openet-sims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openet-sims-0.2.1.tar.gz tmp/openet_sims-0.2.2.tar.gz --markdown 20240525/o/openet-sims/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 18:27:01] INFO root fetch - processPackages [fango]: executing diffoscope
+[2024-05-25 18:27:01] INFO root fetch - processPackages [fango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fango-0.0.24.tar.gz tmp/fango-0.0.25.tar.gz --markdown 20240525/f/fango/0.0.24-0.0.25/README.md --exclude *.pyd
+[2024-05-25 18:27:01] INFO root fetch - processPackages [siat]: executing diffoscope
+[2024-05-25 18:27:01] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-3.1.2-py3-none-any.whl.zip tmp/siat-3.1.3-py3-none-any.whl.zip --markdown 20240525/s/siat/3.1.2-3.1.3/README.md --exclude *.pyd
+[2024-05-25 18:27:01] INFO root fetch - processPackages [zipreport-lib]: executing diffoscope
+[2024-05-25 18:27:01] INFO root fetch - processPackages [zipreport-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipreport-lib-2.0.0.tar.gz tmp/zipreport-lib-2.0.1.tar.gz --markdown 20240525/z/zipreport-lib/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-25 18:27:01] ERROR root fetch - processPackages [siat]: Diffoscope failed: time="2024-05-25T18:27:01+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+[2024-05-25 18:27:01] INFO root fetch - main [MainThread]: End processing [siat] error
+[2024-05-25 18:27:01] INFO root fetch - processPackages [openet-sims]: Remove: archive file [/home/abi/fetcher/tmp/openet-sims-0.2.1.tar.gz]
+[2024-05-25 18:27:01] INFO root fetch - processPackages [openet-sims]: Remove: archive file [/home/abi/fetcher/tmp/openet_sims-0.2.2.tar.gz]
+[2024-05-25 18:27:01] INFO root fetch - main [MainThread]: End processing [openet-sims]: success
+[2024-05-25 18:27:01] INFO root fetch - processPackages [fango]: Remove: archive file [/home/abi/fetcher/tmp/fango-0.0.24.tar.gz]
+[2024-05-25 18:27:01] INFO root fetch - processPackages [fango]: Remove: archive file [/home/abi/fetcher/tmp/fango-0.0.25.tar.gz]
+[2024-05-25 18:27:01] INFO root fetch - main [MainThread]: End processing [fango]: success
+[2024-05-25 18:27:02] INFO root fetch - processPackages [zipreport-lib]: Remove: archive file [/home/abi/fetcher/tmp/zipreport-lib-2.0.0.tar.gz]
+[2024-05-25 18:27:02] INFO root fetch - processPackages [zipreport-lib]: Remove: archive file [/home/abi/fetcher/tmp/zipreport-lib-2.0.1.tar.gz]
+[2024-05-25 18:27:02] INFO root fetch - main [MainThread]: End processing [zipreport-lib]: success
+[2024-05-25 18:27:02] INFO root fetch - main [MainThread]: Store serial: [23376458]
