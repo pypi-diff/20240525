@@ -13734,3 +13734,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:36:47] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.9.tar.gz]
 [2024-05-25 13:36:47] INFO root fetch - main [MainThread]: End processing [drawlib]: success
 [2024-05-25 13:36:47] INFO root fetch - main [MainThread]: Store serial: [23374421]
+[2024-05-25 13:38:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374421]
+[2024-05-25 13:38:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 13:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cryno
+[2024-05-25 13:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiy-worker
+[2024-05-25 13:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aicli
+[2024-05-25 13:38:55] INFO root fetch - processPackages [aicli]: New version: [99.0.202405241338] Old Version: [99.0.202405240554]
+[2024-05-25 13:38:55] WARNING root fetch - processPackages [cryno]: Skipping, unable to determine old version
+[2024-05-25 13:38:55] INFO root fetch - main [MainThread]: End processing [cryno] error
+[2024-05-25 13:38:55] INFO root fetch - processPackages [aiy-worker]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 13:38:55] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/c5/66/a703cf547de4d669d4e3e434f42a2ff6c6104fc5b4ad016ee6f59b905865/aicli-99.0.202405240554-py3-none-any.whl
+[2024-05-25 13:38:55] INFO root fetch - processPackages [aiy-worker]: Downloading https://files.pythonhosted.org/packages/9b/2b/d1550666ab9f3b6cb21cb490d9a8107e7d6017302c820df8a9c0a2b69d8b/aiy_worker-0.0.5.tar.gz
+[2024-05-25 13:38:55] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/f1/c7/688ed78749cf83832a7c21c164c571f9ac4541a95191bceff6b58f090799/aicli-99.0.202405241338-py3-none-any.whl
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aicli]: executing diffoscope
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicli-99.0.202405240554-py3-none-any.whl.zip tmp/aicli-99.0.202405241338-py3-none-any.whl.zip --markdown 20240525/a/aicli/99.0.202405240554-99.0.202405241338/README.md --exclude *.pyd
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aiy-worker]: Downloading https://files.pythonhosted.org/packages/6a/47/ef2dbc6f9c39801e7091c57b398938202dbcdaaa7cd81fb7b517338651ad/aiy_worker-0.0.6.tar.gz
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aiy-worker]: executing diffoscope
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aiy-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiy_worker-0.0.5.tar.gz tmp/aiy_worker-0.0.6.tar.gz --markdown 20240525/a/aiy-worker/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202405240554-py3-none-any.whl.zip]
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202405241338-py3-none-any.whl.zip]
+[2024-05-25 13:38:56] INFO root fetch - main [MainThread]: End processing [aicli]: success
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aiy-worker]: Remove: archive file [/home/abi/fetcher/tmp/aiy_worker-0.0.5.tar.gz]
+[2024-05-25 13:38:56] INFO root fetch - processPackages [aiy-worker]: Remove: archive file [/home/abi/fetcher/tmp/aiy_worker-0.0.6.tar.gz]
+[2024-05-25 13:38:56] INFO root fetch - main [MainThread]: End processing [aiy-worker]: success
+[2024-05-25 13:38:56] INFO root fetch - main [MainThread]: Store serial: [23374431]
