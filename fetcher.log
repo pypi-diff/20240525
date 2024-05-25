@@ -12222,3 +12222,21 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:51:10] INFO root fetch - processPackages [scalexi]: Remove: archive file [/home/abi/fetcher/tmp/scalexi-0.4.6.1.tar.gz]
 [2024-05-25 11:51:10] INFO root fetch - main [MainThread]: End processing [scalexi]: success
 [2024-05-25 11:51:10] INFO root fetch - main [MainThread]: Store serial: [23373691]
+[2024-05-25 11:53:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373691]
+[2024-05-25 11:53:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-countrylookup
+[2024-05-25 11:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GenAIRR
+[2024-05-25 11:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beets-gdplaylists
+[2024-05-25 11:53:20] INFO root fetch - processPackages [beets-gdplaylists]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-25 11:53:20] INFO root fetch - processPackages [beets-gdplaylists]: Downloading https://files.pythonhosted.org/packages/0c/80/f1a3648687d15602ef0e73ba651aaf91f34e667d3bd77486a995e0c5683f/beets_gdplaylists-0.2.3.tar.gz
+[2024-05-25 11:53:20] WARNING root fetch - processPackages [GenAIRR]: Skipping, unable to determine old version
+[2024-05-25 11:53:20] INFO root fetch - main [MainThread]: End processing [GenAIRR] error
+[2024-05-25 11:53:20] WARNING root fetch - processPackages [apiverve-countrylookup]: Skipping, unable to determine old version
+[2024-05-25 11:53:20] INFO root fetch - main [MainThread]: End processing [apiverve-countrylookup] error
+[2024-05-25 11:53:21] INFO root fetch - processPackages [beets-gdplaylists]: Downloading https://files.pythonhosted.org/packages/10/0d/05c9b52604623591abba14fcec6b34238b028ef4e32666e7b0c9f3802988/beets_gdplaylists-0.2.4.tar.gz
+[2024-05-25 11:53:21] INFO root fetch - processPackages [beets-gdplaylists]: executing diffoscope
+[2024-05-25 11:53:21] INFO root fetch - processPackages [beets-gdplaylists]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_gdplaylists-0.2.3.tar.gz tmp/beets_gdplaylists-0.2.4.tar.gz --markdown 20240525/b/beets-gdplaylists/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-25 11:53:22] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.3.tar.gz]
+[2024-05-25 11:53:22] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.4.tar.gz]
+[2024-05-25 11:53:22] INFO root fetch - main [MainThread]: End processing [beets-gdplaylists]: success
+[2024-05-25 11:53:22] INFO root fetch - main [MainThread]: Store serial: [23373709]
