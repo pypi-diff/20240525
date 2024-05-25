@@ -7198,3 +7198,20 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:59:50] INFO root fetch - processPackages [numpydantic]: Remove: archive file [/home/abi/fetcher/tmp/numpydantic-1.1.0.tar.gz]
 [2024-05-25 03:59:50] INFO root fetch - main [MainThread]: End processing [numpydantic]: success
 [2024-05-25 03:59:50] INFO root fetch - main [MainThread]: Store serial: [23371324]
+[2024-05-25 04:01:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371324]
+[2024-05-25 04:01:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 04:03:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371325]
+[2024-05-25 04:04:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nnumericalmethodsalpha
+[2024-05-25 04:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mb-pytorch
+[2024-05-25 04:04:04] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.5] Old Version: [1.0.45]
+[2024-05-25 04:04:04] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/77/35/afde11d7edc5574ed341985c09b9d10e4f92669ced65e21a1c3d1e66e53a/mb_pytorch-1.0.45.tar.gz
+[2024-05-25 04:04:04] WARNING root fetch - processPackages [nnumericalmethodsalpha]: Skipping, unable to determine old version
+[2024-05-25 04:04:04] INFO root fetch - main [MainThread]: End processing [nnumericalmethodsalpha] error
+[2024-05-25 04:04:04] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/18/ae/b46b20b02b5f2c2a25fcae91a88f80ab1e1c18413f89f662d20e5475e824/mb_pytorch-1.0.5.tar.gz
+[2024-05-25 04:04:04] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2024-05-25 04:04:04] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.45.tar.gz tmp/mb_pytorch-1.0.5.tar.gz --markdown 20240525/m/mb-pytorch/1.0.45-1.0.5/README.md --exclude *.pyd
+[2024-05-25 04:04:05] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.45.tar.gz]
+[2024-05-25 04:04:05] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.5.tar.gz]
+[2024-05-25 04:04:05] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2024-05-25 04:04:05] INFO root fetch - main [MainThread]: Store serial: [23371335]
