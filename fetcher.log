@@ -22171,3 +22171,31 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:18:48] INFO root fetch - processPackages [saq]: Remove: archive file [/home/abi/fetcher/tmp/saq-0.9.4.tar.gz]
 [2024-05-25 22:18:48] INFO root fetch - main [MainThread]: End processing [saq]: success
 [2024-05-25 22:18:48] INFO root fetch - main [MainThread]: Store serial: [23377707]
+[2024-05-25 22:20:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377707]
+[2024-05-25 22:20:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 22:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kamangir
+[2024-05-25 22:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-25 22:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kamangir
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: New version: [3.60.1] Old Version: [3.59.1]
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: New version: [3.60.1] Old Version: [3.59.1]
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/bb/20/cabd286373697ea3b66902da04674ab5ef1bb14bbff1bd7e27d949468ff3/kamangir-3.59.1.tar.gz
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/bb/20/cabd286373697ea3b66902da04674ab5ef1bb14bbff1bd7e27d949468ff3/kamangir-3.59.1.tar.gz
+[2024-05-25 22:20:58] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:20:58] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/5f/ce/4639638fcd311a15109cb34b43f599930e417d6610adba7287731e424ff8/kamangir-3.60.1.tar.gz
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/5f/ce/4639638fcd311a15109cb34b43f599930e417d6610adba7287731e424ff8/kamangir-3.60.1.tar.gz
+[2024-05-25 22:20:58] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.59.1.tar.gz tmp/kamangir-3.60.1.tar.gz --markdown 20240525/k/kamangir/3.59.1-3.60.1/README.md --exclude *.pyd
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 22:20:58] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.59.1.tar.gz tmp/kamangir-3.60.1.tar.gz --markdown 20240525/k/kamangir/3.59.1-3.60.1/README.md --exclude *.pyd
+[2024-05-25 22:20:58] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:20:58] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:20:59] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.59.1.tar.gz]
+[2024-05-25 22:20:59] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.60.1.tar.gz]
+[2024-05-25 22:20:59] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 22:20:59] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 22:20:59] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:20:59] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:20:59] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:20:59] INFO root fetch - main [MainThread]: Store serial: [23377718]
