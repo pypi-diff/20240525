@@ -20242,3 +20242,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:32:52] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
 [2024-05-25 19:32:52] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2024-05-25 19:32:52] INFO root fetch - main [MainThread]: Store serial: [23376844]
+[2024-05-25 19:34:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376844]
+[2024-05-25 19:35:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stream-zip
+[2024-05-25 19:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: locust
+[2024-05-25 19:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-25 19:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abcli
+[2024-05-25 19:35:01] INFO root fetch - processPackages [abcli]: New version: [8.218.1] Old Version: [8.216.1]
+[2024-05-25 19:35:01] INFO root fetch - processPackages [abcli]: New version: [8.218.1] Old Version: [8.216.1]
+[2024-05-25 19:35:01] INFO root fetch - processPackages [stream-zip]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 19:35:01] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e5/1a/0ad7e66422921f2ca63588df5168840dfb221be87666429581a5d92d9026/abcli-8.216.1.tar.gz
+[2024-05-25 19:35:01] INFO root fetch - processPackages [stream-zip]: Downloading https://files.pythonhosted.org/packages/4b/65/27b6998732f631a7691a5157fb51c5d5328faa138986c06684c5ae4fe771/stream-zip-0.0.8.tar.gz
+[2024-05-25 19:35:01] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e5/1a/0ad7e66422921f2ca63588df5168840dfb221be87666429581a5d92d9026/abcli-8.216.1.tar.gz
+[2024-05-25 19:35:01] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-25 19:35:01] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-25 19:35:01] INFO root fetch - processPackages [stream-zip]: Downloading https://files.pythonhosted.org/packages/0e/94/162b767659b1b6afe9241c47773d921e2b8a0f97f124d374e76c7f1d2b53/stream-zip-0.0.9.tar.gz
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/db/9f/ac03bc34f8b5050ecd0d60d38d8d8ff87fee17c932a36e4d2e241b7a78de/abcli-8.218.1.tar.gz
+[2024-05-25 19:35:02] INFO root fetch - processPackages [stream-zip]: executing diffoscope
+[2024-05-25 19:35:02] INFO root fetch - processPackages [stream-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream-zip-0.0.8.tar.gz tmp/stream-zip-0.0.9.tar.gz --markdown 20240525/s/stream-zip/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/db/9f/ac03bc34f8b5050ecd0d60d38d8d8ff87fee17c932a36e4d2e241b7a78de/abcli-8.218.1.tar.gz
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.216.1.tar.gz tmp/abcli-8.218.1.tar.gz --markdown 20240525/a/abcli/8.216.1-8.218.1/README.md --exclude *.pyd
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.216.1.tar.gz tmp/abcli-8.218.1.tar.gz --markdown 20240525/a/abcli/8.216.1-8.218.1/README.md --exclude *.pyd
+[2024-05-25 19:35:02] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-25 19:35:02] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-25 19:35:02] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240525/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-25 19:35:02] INFO root fetch - processPackages [stream-zip]: Remove: archive file [/home/abi/fetcher/tmp/stream-zip-0.0.8.tar.gz]
+[2024-05-25 19:35:02] INFO root fetch - processPackages [stream-zip]: Remove: archive file [/home/abi/fetcher/tmp/stream-zip-0.0.9.tar.gz]
+[2024-05-25 19:35:02] INFO root fetch - main [MainThread]: End processing [stream-zip]: success
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.216.1.tar.gz]
+[2024-05-25 19:35:02] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.218.1.tar.gz]
+[2024-05-25 19:35:02] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-25 19:35:02] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-25 19:35:03] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-25 19:35:03] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-25 19:35:03] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-25 19:35:03] INFO root fetch - main [MainThread]: Store serial: [23376856]
