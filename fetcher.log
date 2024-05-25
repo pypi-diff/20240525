@@ -16970,3 +16970,21 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:57:48] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
 [2024-05-25 15:57:48] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
 [2024-05-25 15:57:48] INFO root fetch - main [MainThread]: Store serial: [23375543]
+[2024-05-25 15:59:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375543]
+[2024-05-25 15:59:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 15:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slthlib
+[2024-05-25 15:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-05-25 15:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nalibs-aws-eks
+[2024-05-25 15:59:57] WARNING root fetch - processPackages [nalibs-aws-eks]: Skipping, unable to determine old version
+[2024-05-25 15:59:57] INFO root fetch - main [MainThread]: End processing [nalibs-aws-eks] error
+[2024-05-25 15:59:57] WARNING root fetch - processPackages [slthlib]: Skipping, unable to determine old version
+[2024-05-25 15:59:57] INFO root fetch - main [MainThread]: End processing [slthlib] error
+[2024-05-25 15:59:57] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.407] Old Version: [0.45.20240525.406]
+[2024-05-25 15:59:57] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/33/22/babd15f41eaf7df6270a5ba9ed40b2e3814ddb2fbcf8d321625622a63466/pkscreener-0.45.20240525.406-cp311-cp311-win_amd64.whl
+[2024-05-25 15:59:58] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/1e/51/8d9731adefe71476ce9fe07fea7d602f6637c6bb588668827d3ebe9ea1a5/pkscreener-0.45.20240525.407-cp311-cp311-macosx_10_9_universal2.whl
+[2024-05-25 15:59:58] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 15:59:58] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.406-cp311-cp311-win_amd64.whl.zip tmp/pkscreener-0.45.20240525.407-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20240525/p/pkscreener/0.45.20240525.406-0.45.20240525.407/README.md --exclude *.pyd
+[2024-05-25 15:59:59] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.406-cp311-cp311-win_amd64.whl.zip]
+[2024-05-25 15:59:59] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.407-cp311-cp311-macosx_10_9_universal2.whl.zip]
+[2024-05-25 15:59:59] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 15:59:59] INFO root fetch - main [MainThread]: Store serial: [23375558]
