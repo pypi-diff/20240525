@@ -10565,3 +10565,47 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:37:58] INFO root fetch - processPackages [UnityPredict]: Remove: archive file [/home/abi/fetcher/tmp/UnityPredict-0.1.3.tar.gz]
 [2024-05-25 09:37:58] INFO root fetch - main [MainThread]: End processing [UnityPredict]: success
 [2024-05-25 09:37:58] INFO root fetch - main [MainThread]: Store serial: [23372852]
+[2024-05-25 09:40:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372852]
+[2024-05-25 09:40:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 09:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc
+[2024-05-25 09:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2024-05-25 09:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ragdaemon
+[2024-05-25 09:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tree-sitter-c
+[2024-05-25 09:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stefutils
+[2024-05-25 09:40:07] INFO root fetch - processPackages [xingpyc]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 09:40:07] INFO root fetch - processPackages [ragdaemon]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-25 09:40:07] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 09:40:07] INFO root fetch - processPackages [tree-sitter-c]: New version: [0.21.2] Old Version: [0.21.1]
+[2024-05-25 09:40:08] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-25 09:40:08] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/5c/c1/ac3473e2df4c4eeb938005426cd7a6a368ff6818aa114e07a351b4c5d69d/xingpyc-0.0.4.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [tree-sitter-c]: Downloading https://files.pythonhosted.org/packages/e5/ed/e9556735db7031206d8eaba8e7b1ef60ada114bd54963a103e41da61ef00/tree-sitter-c-0.21.1.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 09:40:08] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-25 09:40:08] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-25 09:40:08] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/75/a0/631920aea7d22bd214a5c5ff8b6ece1988670767524bcb78bdae7b097ff9/ragdaemon-0.6.0.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/27/5d/b475b5744d6466d066658dcbfd783e9f9806aaedb3616a4f695b5adc41e7/xingpyc-0.0.5.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [tree-sitter-c]: Downloading https://files.pythonhosted.org/packages/b0/58/aad1f58532a356c26f71257f799424f7e8baa69ead17e8a1f8ee82ded149/tree-sitter-c-0.21.2.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 09:40:08] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.4.tar.gz tmp/xingpyc-0.0.5.tar.gz --markdown 20240525/x/xingpyc/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 09:40:08] INFO root fetch - processPackages [tree-sitter-c]: executing diffoscope
+[2024-05-25 09:40:08] INFO root fetch - processPackages [tree-sitter-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-sitter-c-0.21.1.tar.gz tmp/tree-sitter-c-0.21.2.tar.gz --markdown 20240525/t/tree-sitter-c/0.21.1-0.21.2/README.md --exclude *.pyd
+[2024-05-25 09:40:08] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-25 09:40:08] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240525/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 09:40:08] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/34/aa/a9c5adc303f6c0b0053949860bfc4dab60986917e204816c47142bb64dd8/ragdaemon-0.6.1.tar.gz
+[2024-05-25 09:40:08] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-05-25 09:40:08] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.6.0.tar.gz tmp/ragdaemon-0.6.1.tar.gz --markdown 20240525/r/ragdaemon/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-25 09:40:09] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.4.tar.gz]
+[2024-05-25 09:40:09] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.5.tar.gz]
+[2024-05-25 09:40:09] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 09:40:09] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-25 09:40:09] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-25 09:40:09] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-25 09:40:09] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.6.0.tar.gz]
+[2024-05-25 09:40:09] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.6.1.tar.gz]
+[2024-05-25 09:40:09] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-05-25 09:40:10] INFO root fetch - processPackages [tree-sitter-c]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-c-0.21.1.tar.gz]
+[2024-05-25 09:40:10] INFO root fetch - processPackages [tree-sitter-c]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-c-0.21.2.tar.gz]
+[2024-05-25 09:40:10] INFO root fetch - main [MainThread]: End processing [tree-sitter-c]: success
+[2024-05-25 09:40:10] INFO root fetch - main [MainThread]: Store serial: [23372880]
