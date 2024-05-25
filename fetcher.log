@@ -23093,3 +23093,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:14:38] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-25 23:14:38] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 23:14:38] INFO root fetch - main [MainThread]: Store serial: [23378037]
+[2024-05-25 23:16:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378037]
+[2024-05-25 23:16:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 23:16:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monzo-utils
+[2024-05-25 23:16:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-25 23:16:47] INFO root fetch - processPackages [monzo-utils]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 23:16:47] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 23:16:47] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/7c/ec/1262871500af5611a003b5a0e2093eafaeb4406d00d6ed2e5d8bc77cea3b/monzo_utils-0.1.0-py3-none-any.whl
+[2024-05-25 23:16:47] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 23:16:47] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 23:16:47] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/a5/ff/06f8dcf05f0a2b7d36358226703a3c52ac7afd4f3253361a1fb88178693c/monzo_utils-0.1.1-py3-none-any.whl
+[2024-05-25 23:16:47] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-05-25 23:16:47] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.1.0-py3-none-any.whl.zip tmp/monzo_utils-0.1.1-py3-none-any.whl.zip --markdown 20240525/m/monzo-utils/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 23:16:47] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 23:16:47] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 23:16:48] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.1.0-py3-none-any.whl.zip]
+[2024-05-25 23:16:48] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.1.1-py3-none-any.whl.zip]
+[2024-05-25 23:16:48] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-05-25 23:16:48] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 23:16:48] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 23:16:48] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 23:16:48] INFO root fetch - main [MainThread]: Store serial: [23378042]
