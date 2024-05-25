@@ -15847,3 +15847,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:20:22] INFO root fetch - processPackages [FlowVisor]: Remove: archive file [/home/abi/fetcher/tmp/FlowVisor-0.2.3.tar.gz]
 [2024-05-25 15:20:22] INFO root fetch - main [MainThread]: End processing [FlowVisor]: success
 [2024-05-25 15:20:22] INFO root fetch - main [MainThread]: Store serial: [23375044]
+[2024-05-25 15:22:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375044]
+[2024-05-25 15:22:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 15:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comment-scanner
+[2024-05-25 15:22:30] INFO root fetch - processPackages [comment-scanner]: New version: [0.2] Old Version: [0.1]
+[2024-05-25 15:22:31] INFO root fetch - processPackages [comment-scanner]: Downloading https://files.pythonhosted.org/packages/a0/04/81b95422198914844c86eb459b02d648b25fa26131fa8f48e773017da945/comment_scanner-0.1.tar.gz
+[2024-05-25 15:22:31] INFO root fetch - processPackages [comment-scanner]: Downloading https://files.pythonhosted.org/packages/4a/de/076c4628c019df3e59485d00a1e22a805c183d3be6b5a6bf2e71d00db0f8/comment_scanner-0.2.tar.gz
+[2024-05-25 15:22:31] INFO root fetch - processPackages [comment-scanner]: executing diffoscope
+[2024-05-25 15:22:31] INFO root fetch - processPackages [comment-scanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comment_scanner-0.1.tar.gz tmp/comment_scanner-0.2.tar.gz --markdown 20240525/c/comment-scanner/0.1-0.2/README.md --exclude *.pyd
+[2024-05-25 15:22:32] INFO root fetch - processPackages [comment-scanner]: Remove: archive file [/home/abi/fetcher/tmp/comment_scanner-0.1.tar.gz]
+[2024-05-25 15:22:32] INFO root fetch - processPackages [comment-scanner]: Remove: archive file [/home/abi/fetcher/tmp/comment_scanner-0.2.tar.gz]
+[2024-05-25 15:22:32] INFO root fetch - main [MainThread]: End processing [comment-scanner]: success
+[2024-05-25 15:22:32] INFO root fetch - main [MainThread]: Store serial: [23375051]
