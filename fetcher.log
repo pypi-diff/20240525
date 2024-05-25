@@ -7009,3 +7009,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:47:22] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.2.tar.gz]
 [2024-05-25 03:47:22] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
 [2024-05-25 03:47:22] INFO root fetch - main [MainThread]: Store serial: [23371262]
+[2024-05-25 03:49:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371262]
+[2024-05-25 03:49:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 03:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tritonclient
+[2024-05-25 03:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipy-upload-test
+[2024-05-25 03:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvprocessor
+[2024-05-25 03:49:30] WARNING root fetch - processPackages [pipy-upload-test]: Skipping, unable to determine old version
+[2024-05-25 03:49:30] INFO root fetch - main [MainThread]: End processing [pipy-upload-test] error
+[2024-05-25 03:49:30] INFO root fetch - processPackages [tritonclient]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-05-25 03:49:30] INFO root fetch - processPackages [cvprocessor]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-25 03:49:31] INFO root fetch - processPackages [cvprocessor]: Downloading https://files.pythonhosted.org/packages/28/2f/cf73fe888f165712533f38194121eea006bd93c3eb73b11447111e44dcc5/cvprocessor-1.0.4.tar.gz
+[2024-05-25 03:49:31] INFO root fetch - processPackages [tritonclient]: Downloading https://files.pythonhosted.org/packages/d3/2b/39c37626d2e5c8c79d220dc21875f8137024b2235222a19ba0c582d24fba/tritonclient-2.8.0-py3-none-manylinux2014_aarch64.whl
+[2024-05-25 03:49:31] INFO root fetch - processPackages [cvprocessor]: Downloading https://files.pythonhosted.org/packages/74/a6/c3aec552768d02eeb81bcba08366c95959c669a4107968540bf8bf1fc132/cvprocessor-1.0.5.tar.gz
+[2024-05-25 03:49:31] INFO root fetch - processPackages [cvprocessor]: executing diffoscope
+[2024-05-25 03:49:31] INFO root fetch - processPackages [cvprocessor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvprocessor-1.0.4.tar.gz tmp/cvprocessor-1.0.5.tar.gz --markdown 20240525/c/cvprocessor/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-25 03:49:32] INFO root fetch - processPackages [cvprocessor]: Remove: archive file [/home/abi/fetcher/tmp/cvprocessor-1.0.4.tar.gz]
+[2024-05-25 03:49:32] INFO root fetch - processPackages [cvprocessor]: Remove: archive file [/home/abi/fetcher/tmp/cvprocessor-1.0.5.tar.gz]
+[2024-05-25 03:49:32] INFO root fetch - main [MainThread]: End processing [cvprocessor]: success
+[2024-05-25 03:49:34] INFO root fetch - processPackages [tritonclient]: Downloading https://files.pythonhosted.org/packages/b5/32/79fc08cc5ad2aaf6611d63e0226bd62257bb0dda65ba2f8b84d981e1b715/tritonclient-2.9.0-py3-none-manylinux2014_aarch64.whl
+[2024-05-25 03:49:36] INFO root fetch - processPackages [tritonclient]: executing diffoscope
+[2024-05-25 03:49:36] INFO root fetch - processPackages [tritonclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tritonclient-2.8.0-py3-none-manylinux2014_aarch64.whl.zip tmp/tritonclient-2.9.0-py3-none-manylinux2014_aarch64.whl.zip --markdown 20240525/t/tritonclient/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-05-25 03:51:45] INFO root fetch - processPackages [tritonclient]: Remove: archive file [/home/abi/fetcher/tmp/tritonclient-2.8.0-py3-none-manylinux2014_aarch64.whl.zip]
+[2024-05-25 03:51:45] INFO root fetch - processPackages [tritonclient]: Remove: archive file [/home/abi/fetcher/tmp/tritonclient-2.9.0-py3-none-manylinux2014_aarch64.whl.zip]
+[2024-05-25 03:51:45] INFO root fetch - main [MainThread]: End processing [tritonclient]: success
+[2024-05-25 03:51:45] INFO root fetch - main [MainThread]: Store serial: [23371270]
