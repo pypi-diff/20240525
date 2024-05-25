@@ -21403,3 +21403,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:15:58] INFO root fetch - processPackages [odfdo]: Remove: archive file [/home/abi/fetcher/tmp/odfdo-3.7.9.tar.gz]
 [2024-05-25 21:15:58] INFO root fetch - main [MainThread]: End processing [odfdo]: success
 [2024-05-25 21:15:58] INFO root fetch - main [MainThread]: Store serial: [23377386]
+[2024-05-25 21:18:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377386]
+[2024-05-25 21:18:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 21:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kv-fs
+[2024-05-25 21:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batch-prediction-pipeline-mm
+[2024-05-25 21:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xmonkey-curator
+[2024-05-25 21:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygentic
+[2024-05-25 21:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tabswitcher
+[2024-05-25 21:18:08] INFO root fetch - processPackages [pygentic]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 21:18:08] INFO root fetch - processPackages [xmonkey-curator]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-25 21:18:08] INFO root fetch - processPackages [pygentic]: Downloading https://files.pythonhosted.org/packages/fe/45/088721cf0ed5021707c6ab15a77148db9f8c29bafbf0ca58dc45c991496a/pygentic-0.1.1.tar.gz
+[2024-05-25 21:18:08] WARNING root fetch - processPackages [batch-prediction-pipeline-mm]: Skipping, unable to determine old version
+[2024-05-25 21:18:08] INFO root fetch - main [MainThread]: End processing [batch-prediction-pipeline-mm] error
+[2024-05-25 21:18:08] INFO root fetch - processPackages [xmonkey-curator]: Downloading https://files.pythonhosted.org/packages/83/dc/fe9f051ce536bc7a6658c4a23de86073c4f1217996dd29b0cd9139cfb58d/xmonkey-curator-0.1.7.tar.gz
+[2024-05-25 21:18:08] INFO root fetch - processPackages [tabswitcher]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 21:18:08] INFO root fetch - processPackages [kv-fs]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 21:18:09] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/d5/aa/263fc4e2d8bfac053a46672db7a0c1e19a8ff13da8610f20efc4bb5cdf89/tabswitcher-0.0.2.tar.gz
+[2024-05-25 21:18:09] INFO root fetch - processPackages [kv-fs]: Downloading https://files.pythonhosted.org/packages/ce/a2/f35ba564d8ebb6ee16acf46478427e0c7a3b53c0670615888e41f3a659f7/kv_fs-0.1.8.tar.gz
+[2024-05-25 21:18:09] INFO root fetch - processPackages [xmonkey-curator]: Downloading https://files.pythonhosted.org/packages/33/2b/6188a251a3a3043369345f1b09ae8664446fdea4a9b4f17e6d17fd80628d/xmonkey-curator-0.1.9.tar.gz
+[2024-05-25 21:18:09] INFO root fetch - processPackages [pygentic]: Downloading https://files.pythonhosted.org/packages/e0/14/2776f4b8cf7112f1572efccbdb36c9f4d42e9fec200246a2796d21dd7aa3/pygentic-0.1.2.tar.gz
+[2024-05-25 21:18:09] INFO root fetch - processPackages [pygentic]: executing diffoscope
+[2024-05-25 21:18:09] INFO root fetch - processPackages [pygentic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygentic-0.1.1.tar.gz tmp/pygentic-0.1.2.tar.gz --markdown 20240525/p/pygentic/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 21:18:09] INFO root fetch - processPackages [xmonkey-curator]: executing diffoscope
+[2024-05-25 21:18:09] INFO root fetch - processPackages [xmonkey-curator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmonkey-curator-0.1.7.tar.gz tmp/xmonkey-curator-0.1.9.tar.gz --markdown 20240525/x/xmonkey-curator/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-25 21:18:09] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/b1/f8/e9282ffe76d59ea4feb507cb96cda4c2575d56af45b0ad5982acab75d0fb/tabswitcher-0.0.3.tar.gz
+[2024-05-25 21:18:09] INFO root fetch - processPackages [tabswitcher]: executing diffoscope
+[2024-05-25 21:18:09] INFO root fetch - processPackages [tabswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabswitcher-0.0.2.tar.gz tmp/tabswitcher-0.0.3.tar.gz --markdown 20240525/t/tabswitcher/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 21:18:09] INFO root fetch - processPackages [kv-fs]: Downloading https://files.pythonhosted.org/packages/64/9f/f2643d0b67c1ae501ceb250103b8c184589ed066befb6ff10f19fae5a2ab/kv_fs-0.1.9.tar.gz
+[2024-05-25 21:18:09] INFO root fetch - processPackages [kv-fs]: executing diffoscope
+[2024-05-25 21:18:09] INFO root fetch - processPackages [kv-fs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_fs-0.1.8.tar.gz tmp/kv_fs-0.1.9.tar.gz --markdown 20240525/k/kv-fs/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 21:18:09] INFO root fetch - processPackages [pygentic]: Remove: archive file [/home/abi/fetcher/tmp/pygentic-0.1.1.tar.gz]
+[2024-05-25 21:18:09] INFO root fetch - processPackages [pygentic]: Remove: archive file [/home/abi/fetcher/tmp/pygentic-0.1.2.tar.gz]
+[2024-05-25 21:18:09] INFO root fetch - processPackages [xmonkey-curator]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey-curator-0.1.7.tar.gz]
+[2024-05-25 21:18:09] INFO root fetch - main [MainThread]: End processing [pygentic]: success
+[2024-05-25 21:18:09] INFO root fetch - processPackages [xmonkey-curator]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey-curator-0.1.9.tar.gz]
+[2024-05-25 21:18:09] INFO root fetch - main [MainThread]: End processing [xmonkey-curator]: success
+[2024-05-25 21:18:10] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.2.tar.gz]
+[2024-05-25 21:18:10] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.3.tar.gz]
+[2024-05-25 21:18:10] INFO root fetch - main [MainThread]: End processing [tabswitcher]: success
+[2024-05-25 21:18:10] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.8.tar.gz]
+[2024-05-25 21:18:10] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.9.tar.gz]
+[2024-05-25 21:18:10] INFO root fetch - main [MainThread]: End processing [kv-fs]: success
+[2024-05-25 21:18:10] INFO root fetch - main [MainThread]: Store serial: [23377403]
