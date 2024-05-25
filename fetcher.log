@@ -11656,3 +11656,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:58:56] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-25 10:58:56] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-25 10:58:56] INFO root fetch - main [MainThread]: Store serial: [23373464]
+[2024-05-25 11:01:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373464]
+[2024-05-25 11:01:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 11:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-05-25 11:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mns-scheduler
+[2024-05-25 11:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyAibote
+[2024-05-25 11:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-distill
+[2024-05-25 11:01:06] INFO root fetch - processPackages [PyAibote]: New version: [1.5.0] Old Version: [1.4.9]
+[2024-05-25 11:01:06] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.5.9] Old Version: [1.0.5.8]
+[2024-05-25 11:01:06] INFO root fetch - processPackages [django-distill]: New version: [3.2.0] Old Version: [3.1.3]
+[2024-05-25 11:01:06] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/d1/24/f2ae21a144b91eea0bf1083e267e819ca03c52cf1b477518f9775fd51787/django-distill-3.1.3.tar.gz
+[2024-05-25 11:01:06] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/47/a8/5555d71c749c702c47fe652b1b7a738c0fb6c4540a18ca82d08b2acd1445/mns-scheduler-1.0.5.8.tar.gz
+[2024-05-25 11:01:06] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/d4/f4/b2096165ecb4b4f178ad968755680523ba1c214e3a1f2711c346071c6de1/PyAibote-1.4.9.tar.gz
+[2024-05-25 11:01:06] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-05-25 11:01:06] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/b3/de/5343a60199252de0060e3c7ac29aa2e0f17ef46c02db4ce928cd1596635c/django_distill-3.2.0.tar.gz
+[2024-05-25 11:01:06] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-05-25 11:01:06] INFO root fetch - processPackages [django-distill]: executing diffoscope
+[2024-05-25 11:01:06] INFO root fetch - processPackages [django-distill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-distill-3.1.3.tar.gz tmp/django_distill-3.2.0.tar.gz --markdown 20240525/d/django-distill/3.1.3-3.2.0/README.md --exclude *.pyd
+[2024-05-25 11:01:06] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/52/a2/d0dbfb77c313e99319dc58fd438c97a5c27df94df35e1a111178f5c41d7a/PyAibote-1.5.0.tar.gz
+[2024-05-25 11:01:06] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/81/80/b9aadc7a09c0f398a65fef4b36fad7cb1054ea0d4b1287f03621fc2cc5b4/mns-scheduler-1.0.5.9.tar.gz
+[2024-05-25 11:01:06] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-05-25 11:01:06] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.9.tar.gz tmp/PyAibote-1.5.0.tar.gz --markdown 20240525/P/PyAibote/1.4.9-1.5.0/README.md --exclude *.pyd
+[2024-05-25 11:01:06] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-05-25 11:01:06] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.5.8.tar.gz tmp/mns-scheduler-1.0.5.9.tar.gz --markdown 20240525/m/mns-scheduler/1.0.5.8-1.0.5.9/README.md --exclude *.pyd
+[2024-05-25 11:01:07] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-05-25 11:01:07] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django-distill-3.1.3.tar.gz]
+[2024-05-25 11:01:07] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.0.tar.gz]
+[2024-05-25 11:01:07] INFO root fetch - main [MainThread]: End processing [django-distill]: success
+[2024-05-25 11:01:07] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.8.tar.gz]
+[2024-05-25 11:01:07] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.9.tar.gz]
+[2024-05-25 11:01:07] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-05-25 11:01:07] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-05-25 11:01:07] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240525/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-05-25 11:01:07] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.9.tar.gz]
+[2024-05-25 11:01:07] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.5.0.tar.gz]
+[2024-05-25 11:01:07] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-05-25 11:01:10] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-05-25 11:01:10] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-05-25 11:01:10] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-05-25 11:01:10] INFO root fetch - main [MainThread]: Store serial: [23373474]
