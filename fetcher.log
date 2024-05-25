@@ -8082,3 +8082,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.3.tar.gz]
 [2024-05-25 05:43:27] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-25 05:43:27] INFO root fetch - main [MainThread]: Store serial: [23371772]
+[2024-05-25 05:45:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371772]
+[2024-05-25 05:45:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 05:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-contract
+[2024-05-25 05:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: distributaur
+[2024-05-25 05:45:36] INFO root fetch - processPackages [odoo-addons-oca-contract]: New version: [16.0.20240419.0] Old Version: [16.0.20240220.0]
+[2024-05-25 05:45:36] WARNING root fetch - processPackages [distributaur]: Skipping, unable to determine old version
+[2024-05-25 05:45:36] INFO root fetch - main [MainThread]: End processing [distributaur] error
+[2024-05-25 05:45:36] INFO root fetch - processPackages [odoo-addons-oca-contract]: Downloading https://files.pythonhosted.org/packages/94/d2/37e954260eac8ad28347e79f89e66ea96bbdbdc7d2d9eb382f7491cae81c/odoo_addons_oca_contract-16.0.20240220.0-py3-none-any.whl
+[2024-05-25 05:45:37] INFO root fetch - processPackages [odoo-addons-oca-contract]: Downloading https://files.pythonhosted.org/packages/e6/fe/24ee42a23ba729a22a989a30b18bb727bed020dbee6ef7d7e6cdf7f03b42/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl
+[2024-05-25 05:45:37] INFO root fetch - processPackages [odoo-addons-oca-contract]: executing diffoscope
+[2024-05-25 05:45:37] INFO root fetch - processPackages [odoo-addons-oca-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_contract-16.0.20240220.0-py3-none-any.whl.zip tmp/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addons-oca-contract/16.0.20240220.0-16.0.20240419.0/README.md --exclude *.pyd
+[2024-05-25 05:45:37] INFO root fetch - processPackages [odoo-addons-oca-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_contract-16.0.20240220.0-py3-none-any.whl.zip]
+[2024-05-25 05:45:37] INFO root fetch - processPackages [odoo-addons-oca-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl.zip]
+[2024-05-25 05:45:37] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-contract]: success
+[2024-05-25 05:45:37] INFO root fetch - main [MainThread]: Store serial: [23371781]
