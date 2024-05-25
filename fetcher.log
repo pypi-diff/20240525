@@ -12297,3 +12297,60 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:57:43] INFO root fetch - processPackages [propar]: Remove: archive file [/home/abi/fetcher/tmp/propar-1.0.2.tar.gz]
 [2024-05-25 11:57:43] INFO root fetch - main [MainThread]: End processing [propar]: success
 [2024-05-25 11:57:43] INFO root fetch - main [MainThread]: Store serial: [23373743]
+[2024-05-25 11:59:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373743]
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-companynamegenerator
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-contactextractor
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-coordinatesaresea
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beets-gdplaylists
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nalibs-aws-eks
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apiverve-counter
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hddm-s
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apiverve-countrylookup
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tf-keras-nightly
+[2024-05-25 11:59:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: apiverve-countydatalookup
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-companynamegenerator]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - processPackages [apiverve-companynamegenerator]: Start processing: protonbites
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-companynamegenerator] error
+[2024-05-25 11:59:52] INFO root fetch - processPackages [beets-gdplaylists]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-contactextractor]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - processPackages [apiverve-contactextractor]: Start processing: apiverve-currencysymbols
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-contactextractor] error
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-countrylookup]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-countrylookup] error
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-coordinatesaresea]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-coordinatesaresea] error
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-counter]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-counter] error
+[2024-05-25 11:59:52] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.80]
+[2024-05-25 11:59:52] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024052409] Old Version: [2.17.0.dev2024052309]
+[2024-05-25 11:59:52] INFO root fetch - processPackages [beets-gdplaylists]: Downloading https://files.pythonhosted.org/packages/10/0d/05c9b52604623591abba14fcec6b34238b028ef4e32666e7b0c9f3802988/beets_gdplaylists-0.2.4.tar.gz
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [nalibs-aws-eks]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [nalibs-aws-eks] error
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-currencysymbols]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-currencysymbols] error
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [apiverve-countydatalookup]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [apiverve-countydatalookup] error
+[2024-05-25 11:59:52] WARNING root fetch - processPackages [protonbites]: Skipping, unable to determine old version
+[2024-05-25 11:59:52] INFO root fetch - main [MainThread]: End processing [protonbites] error
+[2024-05-25 11:59:52] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/c5/89/7d20a5445d8adf3daf4bbb9c8629acdcbb58812f89fdf5e92e7429b8880e/tf_keras_nightly-2.17.0.dev2024052309.tar.gz
+[2024-05-25 11:59:52] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/37/b6/e7c5800a81a21d5a06b40db427b0f6e607fdcaa81d73ae8bab3adcad15a9/hddm_s-1.0.80.tar.gz
+[2024-05-25 11:59:52] INFO root fetch - processPackages [beets-gdplaylists]: Downloading https://files.pythonhosted.org/packages/3d/9c/b84932cfb5c2a589d6bb39cf6167148b0777a8c0915e0736ed2f23d54577/beets_gdplaylists-0.2.5.tar.gz
+[2024-05-25 11:59:52] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 11:59:53] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 11:59:53] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.80.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.80-1.0.9/README.md --exclude *.pyd
+[2024-05-25 11:59:53] INFO root fetch - processPackages [beets-gdplaylists]: executing diffoscope
+[2024-05-25 11:59:53] INFO root fetch - processPackages [beets-gdplaylists]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_gdplaylists-0.2.4.tar.gz tmp/beets_gdplaylists-0.2.5.tar.gz --markdown 20240525/b/beets-gdplaylists/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-25 11:59:53] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/00/47/0c69686e21ebae503c771c4b97f0de4e227ceb0d8dac45d7ae864998b9ce/tf_keras_nightly-2.17.0.dev2024052409.tar.gz
+[2024-05-25 11:59:53] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-25 11:59:53] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024052309.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024052409.tar.gz --markdown 20240525/t/tf-keras-nightly/2.17.0.dev2024052309-2.17.0.dev2024052409/README.md --exclude *.pyd
+[2024-05-25 11:59:53] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.80.tar.gz]
+[2024-05-25 11:59:53] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 11:59:53] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 11:59:53] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.4.tar.gz]
+[2024-05-25 11:59:53] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.5.tar.gz]
+[2024-05-25 11:59:53] INFO root fetch - main [MainThread]: End processing [beets-gdplaylists]: success
+[2024-05-25 11:59:55] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024052309.tar.gz]
+[2024-05-25 11:59:55] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024052409.tar.gz]
+[2024-05-25 11:59:55] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-25 11:59:55] INFO root fetch - main [MainThread]: Store serial: [23373789]
