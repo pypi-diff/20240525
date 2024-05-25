@@ -13687,3 +13687,50 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:34:36] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mcqq-2.5.7.post1.tar.gz]
 [2024-05-25 13:34:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcqq]: success
 [2024-05-25 13:34:36] INFO root fetch - main [MainThread]: Store serial: [23374403]
+[2024-05-25 13:36:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374403]
+[2024-05-25 13:36:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 13:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drawlib
+[2024-05-25 13:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2024-05-25 13:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2024-05-25 13:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2024-05-25 13:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dir-wand
+[2024-05-25 13:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flameai
+[2024-05-25 13:36:45] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-25 13:36:45] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-25 13:36:45] INFO root fetch - processPackages [drawlib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 13:36:45] INFO root fetch - processPackages [flameai]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-25 13:36:45] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-25 13:36:45] WARNING root fetch - processPackages [dir-wand]: Skipping, unable to determine old version
+[2024-05-25 13:36:45] INFO root fetch - main [MainThread]: End processing [dir-wand] error
+[2024-05-25 13:36:45] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/60/e9/e832f5447986e057ab79ab1e5d7e016a362ea358b59663545cca63fbafe5/drawlib-0.1.8.tar.gz
+[2024-05-25 13:36:45] INFO root fetch - processPackages [flameai]: Downloading https://files.pythonhosted.org/packages/2e/a4/ee5bd0442768b19326cc9866dda7347bc34230e31e3b283b56a972b1736a/flameai-1.0.4.tar.gz
+[2024-05-25 13:36:45] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/8c/43/921f1201a16b139e5df27112c5f8b7328ee4289bfc10ce1f76883a5ba87d/torchserve_nightly-2024.5.8-py3-none-any.whl
+[2024-05-25 13:36:45] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/39/78/71d3bda9b58dfb022af392de084f78f15d848683db00d19d604fd076ecff/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-25 13:36:45] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/38/34/a73ff276b5dc5c3f2e6e02c0282c2f5aedce8951e022f3add74d284d17a6/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-25 13:36:45] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24333047>=10485760
+[2024-05-25 13:36:45] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/5c/3d/7e9f420b3d052022aab0ce6e49d396d1d147acccfc51748d2cfa54ae3390/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/55/73/d6cac6137d8889445aa6a2fbae4644d9528d66859fb2e8149098c685de95/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-25 13:36:46] INFO root fetch - processPackages [drawlib]: Downloading https://files.pythonhosted.org/packages/14/38/2b20ad6663407cd5099289880ae7cc2bc2817b52f1751da02396f59388dc/drawlib-0.1.9.tar.gz
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240525/t/torch-model-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240525/t/torch-workflow-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-25 13:36:46] INFO root fetch - processPackages [flameai]: Downloading https://files.pythonhosted.org/packages/d5/48/bd66bf1d4328427df3d59c04951af0419d8aa19f3d657fa4088065a2b4fe/flameai-1.0.5.tar.gz
+[2024-05-25 13:36:46] INFO root fetch - processPackages [drawlib]: executing diffoscope
+[2024-05-25 13:36:46] INFO root fetch - processPackages [drawlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawlib-0.1.8.tar.gz tmp/drawlib-0.1.9.tar.gz --markdown 20240525/d/drawlib/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 13:36:46] INFO root fetch - processPackages [flameai]: executing diffoscope
+[2024-05-25 13:36:46] INFO root fetch - processPackages [flameai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flameai-1.0.4.tar.gz tmp/flameai-1.0.5.tar.gz --markdown 20240525/f/flameai/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-25 13:36:46] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-25 13:36:46] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-25 13:36:46] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-05-25 13:36:46] INFO root fetch - processPackages [flameai]: Remove: archive file [/home/abi/fetcher/tmp/flameai-1.0.4.tar.gz]
+[2024-05-25 13:36:46] INFO root fetch - processPackages [flameai]: Remove: archive file [/home/abi/fetcher/tmp/flameai-1.0.5.tar.gz]
+[2024-05-25 13:36:46] INFO root fetch - main [MainThread]: End processing [flameai]: success
+[2024-05-25 13:36:47] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.8.tar.gz]
+[2024-05-25 13:36:47] INFO root fetch - processPackages [drawlib]: Remove: archive file [/home/abi/fetcher/tmp/drawlib-0.1.9.tar.gz]
+[2024-05-25 13:36:47] INFO root fetch - main [MainThread]: End processing [drawlib]: success
+[2024-05-25 13:36:47] INFO root fetch - main [MainThread]: Store serial: [23374421]
