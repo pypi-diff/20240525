@@ -7656,3 +7656,29 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:04:21] INFO root fetch - processPackages [ovos-plugin-common-play]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_common_play-0.0.7a4.tar.gz]
 [2024-05-25 05:04:21] INFO root fetch - main [MainThread]: End processing [ovos-plugin-common-play]: success
 [2024-05-25 05:04:21] INFO root fetch - main [MainThread]: Store serial: [23371524]
+[2024-05-25 05:06:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371524]
+[2024-05-25 05:06:30] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 05:08:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371525]
+[2024-05-25 05:08:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 05:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc-xing-official
+[2024-05-25 05:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coiled
+[2024-05-25 05:08:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-plugin-vlc
+[2024-05-25 05:08:35] INFO root fetch - processPackages [coiled]: New version: [1.9.1.dev9] Old Version: [1.9.1.dev8]
+[2024-05-25 05:08:35] WARNING root fetch - processPackages [xingpyc-xing-official]: Skipping, unable to determine old version
+[2024-05-25 05:08:35] INFO root fetch - main [MainThread]: End processing [xingpyc-xing-official] error
+[2024-05-25 05:08:35] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/8b/97/14337c08d9fc8bec2c9c7a5961519e141cf75d7dffa582bb987eecacefa4/coiled-1.9.1.dev8.tar.gz
+[2024-05-25 05:08:35] INFO root fetch - processPackages [ovos-plugin-vlc]: New version: [0.0.2a8] Old Version: [0.0.2a7]
+[2024-05-25 05:08:35] INFO root fetch - processPackages [ovos-plugin-vlc]: Downloading https://files.pythonhosted.org/packages/a6/ba/e605df8c10548b785e5bec2ad48a8c4b55bb3914b5eb34c3633f1ac0af34/ovos_plugin_vlc-0.0.2a7-py3-none-any.whl
+[2024-05-25 05:08:36] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/58/16/aec6b9100728dfee740792b7dd55fc6e56240fdadb5ef317a1d120e019d7/coiled-1.9.1.dev9.tar.gz
+[2024-05-25 05:08:36] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2024-05-25 05:08:36] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-1.9.1.dev8.tar.gz tmp/coiled-1.9.1.dev9.tar.gz --markdown 20240525/c/coiled/1.9.1.dev8-1.9.1.dev9/README.md --exclude *.pyd
+[2024-05-25 05:08:36] INFO root fetch - processPackages [ovos-plugin-vlc]: Downloading https://files.pythonhosted.org/packages/74/78/4cfda31a71c6aa87217fd33525b21c85ca0d0e5a624fa7770ce44e62b451/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl
+[2024-05-25 05:08:36] INFO root fetch - processPackages [ovos-plugin-vlc]: executing diffoscope
+[2024-05-25 05:08:36] INFO root fetch - processPackages [ovos-plugin-vlc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_vlc-0.0.2a7-py3-none-any.whl.zip tmp/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl.zip --markdown 20240525/o/ovos-plugin-vlc/0.0.2a7-0.0.2a8/README.md --exclude *.pyd
+[2024-05-25 05:08:36] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev8.tar.gz]
+[2024-05-25 05:08:36] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
+[2024-05-25 05:08:36] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2024-05-25 05:08:37] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a7-py3-none-any.whl.zip]
+[2024-05-25 05:08:37] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl.zip]
+[2024-05-25 05:08:37] INFO root fetch - main [MainThread]: End processing [ovos-plugin-vlc]: success
+[2024-05-25 05:08:37] INFO root fetch - main [MainThread]: Store serial: [23371536]
