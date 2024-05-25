@@ -8973,3 +8973,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:20:48] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa-16.0.1.1.0-py3-none-any.whl.zip]
 [2024-05-25 07:20:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa]: success
 [2024-05-25 07:20:48] INFO root fetch - main [MainThread]: Store serial: [23372192]
+[2024-05-25 07:22:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372192]
+[2024-05-25 07:22:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 07:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scorecard-ai
+[2024-05-25 07:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ConvKAN3D
+[2024-05-25 07:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-rpyc
+[2024-05-25 07:22:57] WARNING root fetch - processPackages [ConvKAN3D]: Skipping, unable to determine old version
+[2024-05-25 07:22:57] INFO root fetch - main [MainThread]: End processing [ConvKAN3D] error
+[2024-05-25 07:22:57] INFO root fetch - processPackages [django-rpyc]: New version: [0.1.11] Old Version: [0.1.1]
+[2024-05-25 07:22:57] INFO root fetch - processPackages [django-rpyc]: Downloading https://files.pythonhosted.org/packages/81/10/722494371f8ada7724d6df63f4f79c42f615ca0bea1f32e53a256beb5580/django_rpyc-0.1.1.tar.gz
+[2024-05-25 07:22:57] INFO root fetch - processPackages [scorecard-ai]: New version: [1.0.0b3] Old Version: [1.0.0b2]
+[2024-05-25 07:22:57] INFO root fetch - processPackages [scorecard-ai]: Downloading https://files.pythonhosted.org/packages/f6/67/e6ae1bd2a3bad25f72539c413620bdd1714332dc33731002ab8cd53837ca/scorecard_ai-1.0.0b2.tar.gz
+[2024-05-25 07:22:57] INFO root fetch - processPackages [django-rpyc]: Downloading https://files.pythonhosted.org/packages/9b/7c/891e54c4d581bb250c16c32d5b107dd490a379c9bf911cba495ae2bc4a5c/django_rpyc-0.1.11.tar.gz
+[2024-05-25 07:22:58] INFO root fetch - processPackages [django-rpyc]: executing diffoscope
+[2024-05-25 07:22:58] INFO root fetch - processPackages [django-rpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_rpyc-0.1.1.tar.gz tmp/django_rpyc-0.1.11.tar.gz --markdown 20240525/d/django-rpyc/0.1.1-0.1.11/README.md --exclude *.pyd
+[2024-05-25 07:22:58] INFO root fetch - processPackages [scorecard-ai]: Downloading https://files.pythonhosted.org/packages/99/d5/36e7386ade1a4243fb5c0cee77e9b471f3338b12ba857cff827a05d7d4bc/scorecard_ai-1.0.0b3.tar.gz
+[2024-05-25 07:22:58] INFO root fetch - processPackages [scorecard-ai]: executing diffoscope
+[2024-05-25 07:22:58] INFO root fetch - processPackages [scorecard-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorecard_ai-1.0.0b2.tar.gz tmp/scorecard_ai-1.0.0b3.tar.gz --markdown 20240525/s/scorecard-ai/1.0.0b2-1.0.0b3/README.md --exclude *.pyd
+[2024-05-25 07:22:58] INFO root fetch - processPackages [django-rpyc]: Remove: archive file [/home/abi/fetcher/tmp/django_rpyc-0.1.1.tar.gz]
+[2024-05-25 07:22:58] INFO root fetch - processPackages [django-rpyc]: Remove: archive file [/home/abi/fetcher/tmp/django_rpyc-0.1.11.tar.gz]
+[2024-05-25 07:22:58] INFO root fetch - main [MainThread]: End processing [django-rpyc]: success
+[2024-05-25 07:22:59] INFO root fetch - processPackages [scorecard-ai]: Remove: archive file [/home/abi/fetcher/tmp/scorecard_ai-1.0.0b2.tar.gz]
+[2024-05-25 07:22:59] INFO root fetch - processPackages [scorecard-ai]: Remove: archive file [/home/abi/fetcher/tmp/scorecard_ai-1.0.0b3.tar.gz]
+[2024-05-25 07:22:59] INFO root fetch - main [MainThread]: End processing [scorecard-ai]: success
+[2024-05-25 07:22:59] INFO root fetch - main [MainThread]: Store serial: [23372202]
