@@ -1884,3 +1884,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:05:04] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240524.446.tar.gz]
 [2024-05-25 02:05:04] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-05-25 02:05:04] INFO root fetch - main [MainThread]: Store serial: [23369332]
+[2024-05-25 02:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369332]
+[2024-05-25 02:07:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 02:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxkern-nightly
+[2024-05-25 02:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dyff-schema
+[2024-05-25 02:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: compressed-tensors-nightly
+[2024-05-25 02:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaxutils-nightly
+[2024-05-25 02:07:13] INFO root fetch - processPackages [compressed-tensors-nightly]: New version: [0.3.3.20240524] Old Version: [0.3.3.20240523]
+[2024-05-25 02:07:13] INFO root fetch - processPackages [dyff-schema]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240524] Old Version: [0.0.8.dev20240523]
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/c7/53/542af534bde0ffc569be7874fb676c154045151b0fff615a236f20039ba1/jaxutils-nightly-0.0.8.dev20240523.tar.gz
+[2024-05-25 02:07:13] INFO root fetch - processPackages [compressed-tensors-nightly]: Downloading https://files.pythonhosted.org/packages/33/3b/467639b05c0db3a6ed04c28fa8abe42a94033484f0f514fdfd19c62d7ade/compressed_tensors_nightly-0.3.3.20240523-py3-none-any.whl
+[2024-05-25 02:07:13] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/6f/04/aa853d92ee00224b97b4c3532dd3e476343a025441316004bdf8cdaa95b9/dyff_schema-0.8.0.tar.gz
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-05-25 02:07:13] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/76/0c/b7dbce5900ff56e8a38137492869834f1a6331b2ca54ae1413c267334815/dyff_schema-0.9.0.tar.gz
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/48/2b/6ce4e6534d51a816810128df08644046665753e26c5219c889daef444ae1/jaxutils-nightly-0.0.8.dev20240524.tar.gz
+[2024-05-25 02:07:13] INFO root fetch - processPackages [compressed-tensors-nightly]: Downloading https://files.pythonhosted.org/packages/f6/a9/159caf43068a2a317e56c7978d4c16308a85f4c674f71714f93ec87e3734/compressed_tensors_nightly-0.3.3.20240524-py3-none-any.whl
+[2024-05-25 02:07:13] INFO root fetch - processPackages [dyff-schema]: executing diffoscope
+[2024-05-25 02:07:13] INFO root fetch - processPackages [dyff-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_schema-0.8.0.tar.gz tmp/dyff_schema-0.9.0.tar.gz --markdown 20240525/d/dyff-schema/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-05-25 02:07:13] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240523.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240524.tar.gz --markdown 20240525/j/jaxutils-nightly/0.0.8.dev20240523-0.0.8.dev20240524/README.md --exclude *.pyd
+[2024-05-25 02:07:13] INFO root fetch - processPackages [compressed-tensors-nightly]: executing diffoscope
+[2024-05-25 02:07:13] INFO root fetch - processPackages [compressed-tensors-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compressed_tensors_nightly-0.3.3.20240523-py3-none-any.whl.zip tmp/compressed_tensors_nightly-0.3.3.20240524-py3-none-any.whl.zip --markdown 20240525/c/compressed-tensors-nightly/0.3.3.20240523-0.3.3.20240524/README.md --exclude *.pyd
+[2024-05-25 02:07:14] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240523.tar.gz]
+[2024-05-25 02:07:14] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240524.tar.gz]
+[2024-05-25 02:07:14] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-05-25 02:07:14] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.8.0.tar.gz]
+[2024-05-25 02:07:14] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.9.0.tar.gz]
+[2024-05-25 02:07:14] INFO root fetch - main [MainThread]: End processing [dyff-schema]: success
+[2024-05-25 02:07:14] INFO root fetch - processPackages [compressed-tensors-nightly]: Remove: archive file [/home/abi/fetcher/tmp/compressed_tensors_nightly-0.3.3.20240523-py3-none-any.whl.zip]
+[2024-05-25 02:07:14] INFO root fetch - processPackages [compressed-tensors-nightly]: Remove: archive file [/home/abi/fetcher/tmp/compressed_tensors_nightly-0.3.3.20240524-py3-none-any.whl.zip]
+[2024-05-25 02:07:14] INFO root fetch - main [MainThread]: End processing [compressed-tensors-nightly]: success
+[2024-05-25 02:07:14] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-05-25 02:07:14] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240525/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-05-25 02:07:15] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-05-25 02:07:15] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-05-25 02:07:15] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-05-25 02:07:15] INFO root fetch - main [MainThread]: Store serial: [23369343]
