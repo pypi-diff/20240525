@@ -12791,3 +12791,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:22:09] INFO root fetch - processPackages [edurpa-document]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_document-0.0.4-py3-none-any.whl.zip]
 [2024-05-25 12:22:09] INFO root fetch - main [MainThread]: End processing [edurpa-document]: success
 [2024-05-25 12:22:09] INFO root fetch - main [MainThread]: Store serial: [23374014]
+[2024-05-25 12:24:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374014]
+[2024-05-25 12:24:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 12:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ls-api-clients
+[2024-05-25 12:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mail-parser-reply
+[2024-05-25 12:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freegenius
+[2024-05-25 12:24:18] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 12:24:18] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 12:24:18] INFO root fetch - processPackages [ls-api-clients]: New version: [0.17.0] Old Version: [0.16.0]
+[2024-05-25 12:24:18] INFO root fetch - processPackages [mail-parser-reply]: New version: [1.26] Old Version: [1.25]
+[2024-05-25 12:24:19] INFO root fetch - processPackages [mail-parser-reply]: Downloading https://files.pythonhosted.org/packages/90/db/5e12d93ba4c75f92ea0efe004b6b226de2698244cca2ceb3d6da9f3c5fad/mail-parser-reply-1.25.tar.gz
+[2024-05-25 12:24:19] INFO root fetch - processPackages [ls-api-clients]: Downloading https://files.pythonhosted.org/packages/00/d4/b0fb3fb349836c0fffaf67424b924bb9f61ad3b889a62a6cba9b8b40ba5c/ls_api_clients-0.16.0.tar.gz
+[2024-05-25 12:24:19] INFO root fetch - processPackages [mail-parser-reply]: Downloading https://files.pythonhosted.org/packages/58/7e/b6057bea48bbba431376c287637364ab80c25c9495d8ecac03bb77c6485b/mail_parser_reply-1.26.tar.gz
+[2024-05-25 12:24:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 12:24:19] INFO root fetch - processPackages [ls-api-clients]: Downloading https://files.pythonhosted.org/packages/be/02/5da72cd1396491261105b79f41f59884c9f093eea0eb3f78ae05e742fa54/ls_api_clients-0.17.0.tar.gz
+[2024-05-25 12:24:19] INFO root fetch - processPackages [mail-parser-reply]: executing diffoscope
+[2024-05-25 12:24:19] INFO root fetch - processPackages [mail-parser-reply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mail-parser-reply-1.25.tar.gz tmp/mail_parser_reply-1.26.tar.gz --markdown 20240525/m/mail-parser-reply/1.25-1.26/README.md --exclude *.pyd
+[2024-05-25 12:24:19] INFO root fetch - processPackages [ls-api-clients]: executing diffoscope
+[2024-05-25 12:24:19] INFO root fetch - processPackages [ls-api-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ls_api_clients-0.16.0.tar.gz tmp/ls_api_clients-0.17.0.tar.gz --markdown 20240525/l/ls-api-clients/0.16.0-0.17.0/README.md --exclude *.pyd
+[2024-05-25 12:24:19] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 12:24:19] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 12:24:20] INFO root fetch - processPackages [ls-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/ls_api_clients-0.16.0.tar.gz]
+[2024-05-25 12:24:20] INFO root fetch - processPackages [ls-api-clients]: Remove: archive file [/home/abi/fetcher/tmp/ls_api_clients-0.17.0.tar.gz]
+[2024-05-25 12:24:20] INFO root fetch - main [MainThread]: End processing [ls-api-clients]: success
+[2024-05-25 12:24:20] INFO root fetch - processPackages [mail-parser-reply]: Remove: archive file [/home/abi/fetcher/tmp/mail-parser-reply-1.25.tar.gz]
+[2024-05-25 12:24:20] INFO root fetch - processPackages [mail-parser-reply]: Remove: archive file [/home/abi/fetcher/tmp/mail_parser_reply-1.26.tar.gz]
+[2024-05-25 12:24:20] INFO root fetch - main [MainThread]: End processing [mail-parser-reply]: success
+[2024-05-25 12:24:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 12:24:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 12:24:21] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 12:24:21] INFO root fetch - main [MainThread]: Store serial: [23374029]
