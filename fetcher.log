@@ -9509,3 +9509,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:09:01] WARNING root fetch - processPackages [intel-npu-acceleration-library]: Skipping package: exceeds size limit 39278090>=10485760
 [2024-05-25 08:09:01] INFO root fetch - main [MainThread]: End processing [intel-npu-acceleration-library] error
 [2024-05-25 08:09:01] INFO root fetch - main [MainThread]: Store serial: [23372436]
+[2024-05-25 08:11:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372436]
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stefutils
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: online-scheduler
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fyers-token-manager-3
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyg-nightly
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autosink-data-preparation
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autosink-data-validation
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autosink-model-evaluation
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autosink-model-training
+[2024-05-25 08:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autosink-model-validation
+[2024-05-25 08:11:10] WARNING root fetch - processPackages [fyers-token-manager-3]: Skipping, unable to determine old version
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: End processing [fyers-token-manager-3] error
+[2024-05-25 08:11:10] INFO root fetch - processPackages [online-scheduler]: New version: [0.4] Old Version: [0.3]
+[2024-05-25 08:11:10] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240524] Old Version: [2.6.0.dev20240523]
+[2024-05-25 08:11:10] WARNING root fetch - processPackages [autosink-data-preparation]: Skipping, unable to determine old version
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: End processing [autosink-data-preparation] error
+[2024-05-25 08:11:10] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/13/3c/e164adc5b022fe1b32eb449fbdcb08bed294e078405cb9d914bcd667df68/online_scheduler-0.3.tar.gz
+[2024-05-25 08:11:10] WARNING root fetch - processPackages [autosink-data-validation]: Skipping, unable to determine old version
+[2024-05-25 08:11:10] WARNING root fetch - processPackages [autosink-model-training]: Skipping, unable to determine old version
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: End processing [autosink-data-validation] error
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: End processing [autosink-model-training] error
+[2024-05-25 08:11:10] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 08:11:10] WARNING root fetch - processPackages [autosink-model-evaluation]: Skipping, unable to determine old version
+[2024-05-25 08:11:10] WARNING root fetch - processPackages [autosink-model-validation]: Skipping, unable to determine old version
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: End processing [autosink-model-evaluation] error
+[2024-05-25 08:11:10] INFO root fetch - main [MainThread]: End processing [autosink-model-validation] error
+[2024-05-25 08:11:10] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/08/35/29bc844de0dbb7b055e912c060694955be184384dc0626b71a294775708a/pyg_nightly-2.6.0.dev20240523.tar.gz
+[2024-05-25 08:11:10] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-25 08:11:10] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/bd/c0/d77300aafde97c5fcb55429637552af0487de7d34b882944ba342c6d42a4/online_scheduler-0.4.tar.gz
+[2024-05-25 08:11:10] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/99/6c/31feec1e23abb3383c9bbea855ccbc53ae5a74452f852f5ed2433b06b7d0/pyg_nightly-2.6.0.dev20240524.tar.gz
+[2024-05-25 08:11:10] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 08:11:10] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.3.tar.gz tmp/online_scheduler-0.4.tar.gz --markdown 20240525/o/online-scheduler/0.3-0.4/README.md --exclude *.pyd
+[2024-05-25 08:11:11] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-25 08:11:11] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-05-25 08:11:11] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240523.tar.gz tmp/pyg_nightly-2.6.0.dev20240524.tar.gz --markdown 20240525/p/pyg-nightly/2.6.0.dev20240523-2.6.0.dev20240524/README.md --exclude *.pyd
+[2024-05-25 08:11:11] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-25 08:11:11] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240525/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 08:11:11] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.3.tar.gz]
+[2024-05-25 08:11:11] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.4.tar.gz]
+[2024-05-25 08:11:11] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 08:11:11] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-25 08:11:11] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-25 08:11:11] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-25 08:11:13] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240523.tar.gz]
+[2024-05-25 08:11:13] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240524.tar.gz]
+[2024-05-25 08:11:13] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-05-25 08:11:13] INFO root fetch - main [MainThread]: Store serial: [23372482]
