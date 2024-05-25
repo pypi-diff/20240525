@@ -19761,3 +19761,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:04:24] WARNING root fetch - processPackages [darkutils]: Skipping, unable to determine old version
 [2024-05-25 19:04:24] INFO root fetch - main [MainThread]: End processing [darkutils] error
 [2024-05-25 19:04:24] INFO root fetch - main [MainThread]: Store serial: [23376629]
+[2024-05-25 19:06:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376629]
+[2024-05-25 19:06:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddnsu
+[2024-05-25 19:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abadpour
+[2024-05-25 19:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oasgen
+[2024-05-25 19:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: class4
+[2024-05-25 19:06:33] INFO root fetch - processPackages [class4]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 19:06:33] INFO root fetch - processPackages [oasgen]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-25 19:06:33] INFO root fetch - processPackages [abadpour]: New version: [6.14.1] Old Version: [6.13.1]
+[2024-05-25 19:06:33] INFO root fetch - processPackages [class4]: Downloading https://files.pythonhosted.org/packages/82/de/8a57c85f7b2b07643ec380726bff3eb18fbe5362e14c7ee671ab18a3a1d1/class4-0.0.4.tar.gz
+[2024-05-25 19:06:33] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/ad/eb/aebf831c29faa74d02a839ce041132e4306cca377b7e55760d001cf33a98/oasgen-0.4.0.tar.gz
+[2024-05-25 19:06:33] WARNING root fetch - processPackages [ddnsu]: Skipping, unable to determine old version
+[2024-05-25 19:06:33] INFO root fetch - main [MainThread]: End processing [ddnsu] error
+[2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/b2/f7/8749058980a64b7be1eed33d244c55561ca3b41b408bb3b1715d3e5c4893/abadpour-6.13.1.tar.gz
+[2024-05-25 19:06:34] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/1f/2c/bc003fb0c56efda02aa62143c34e36c529e5f0e320d5e448828d27383220/oasgen-0.5.0.tar.gz
+[2024-05-25 19:06:34] INFO root fetch - processPackages [oasgen]: executing diffoscope
+[2024-05-25 19:06:34] INFO root fetch - processPackages [oasgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasgen-0.4.0.tar.gz tmp/oasgen-0.5.0.tar.gz --markdown 20240525/o/oasgen/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-25 19:06:34] INFO root fetch - processPackages [class4]: Downloading https://files.pythonhosted.org/packages/dd/80/db9cc2c9b9eca5e293fe7c68e3c13be332f9973ab18154f3ef69539c39bf/class4-0.0.5.tar.gz
+[2024-05-25 19:06:34] INFO root fetch - processPackages [class4]: executing diffoscope
+[2024-05-25 19:06:34] INFO root fetch - processPackages [class4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class4-0.0.4.tar.gz tmp/class4-0.0.5.tar.gz --markdown 20240525/c/class4/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/d6/f1/21279363612f6a012042e9a9350132f78e1f7ca9b40f6a9bae229a90c388/abadpour-6.14.1.tar.gz
+[2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.13.1.tar.gz tmp/abadpour-6.14.1.tar.gz --markdown 20240525/a/abadpour/6.13.1-6.14.1/README.md --exclude *.pyd
+[2024-05-25 19:06:34] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.4.0.tar.gz]
+[2024-05-25 19:06:34] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.5.0.tar.gz]
+[2024-05-25 19:06:34] INFO root fetch - main [MainThread]: End processing [oasgen]: success
+[2024-05-25 19:06:34] INFO root fetch - processPackages [class4]: Remove: archive file [/home/abi/fetcher/tmp/class4-0.0.4.tar.gz]
+[2024-05-25 19:06:34] INFO root fetch - processPackages [class4]: Remove: archive file [/home/abi/fetcher/tmp/class4-0.0.5.tar.gz]
+[2024-05-25 19:06:34] INFO root fetch - main [MainThread]: End processing [class4]: success
+[2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.13.1.tar.gz]
+[2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.14.1.tar.gz]
+[2024-05-25 19:06:34] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-25 19:06:34] INFO root fetch - main [MainThread]: Store serial: [23376643]
