@@ -7497,3 +7497,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:40:01] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.9.tar.gz]
 [2024-05-25 04:40:01] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
 [2024-05-25 04:40:01] INFO root fetch - main [MainThread]: Store serial: [23371464]
+[2024-05-25 04:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371464]
+[2024-05-25 04:42:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 04:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-model-helper
+[2024-05-25 04:42:10] INFO root fetch - processPackages [django-model-helper]: New version: [0.1.9] Old Version: [0.1.5]
+[2024-05-25 04:42:10] INFO root fetch - processPackages [django-model-helper]: Downloading https://files.pythonhosted.org/packages/bb/7b/e0afd82811428431b2a114f556900d1c43245e2950e855103060544e4ffa/django-model-helper-0.1.5.tar.gz
+[2024-05-25 04:42:10] INFO root fetch - processPackages [django-model-helper]: Downloading https://files.pythonhosted.org/packages/5b/19/d9ee64b11db425ce606a3c13b9c463c8d1422441fe6cbf7a1fba0f8b9706/django-model-helper-0.1.9.tar.gz
+[2024-05-25 04:42:10] INFO root fetch - processPackages [django-model-helper]: executing diffoscope
+[2024-05-25 04:42:10] INFO root fetch - processPackages [django-model-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-model-helper-0.1.5.tar.gz tmp/django-model-helper-0.1.9.tar.gz --markdown 20240525/d/django-model-helper/0.1.5-0.1.9/README.md --exclude *.pyd
+[2024-05-25 04:42:11] INFO root fetch - processPackages [django-model-helper]: Remove: archive file [/home/abi/fetcher/tmp/django-model-helper-0.1.5.tar.gz]
+[2024-05-25 04:42:11] INFO root fetch - processPackages [django-model-helper]: Remove: archive file [/home/abi/fetcher/tmp/django-model-helper-0.1.9.tar.gz]
+[2024-05-25 04:42:11] INFO root fetch - main [MainThread]: End processing [django-model-helper]: success
+[2024-05-25 04:42:11] INFO root fetch - main [MainThread]: Store serial: [23371467]
