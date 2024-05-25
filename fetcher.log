@@ -11073,3 +11073,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:19:22] INFO root fetch - processPackages [rpze]: Remove: archive file [/home/abi/fetcher/tmp/rpze-0.2.1.tar.gz]
 [2024-05-25 10:19:22] INFO root fetch - main [MainThread]: End processing [rpze]: success
 [2024-05-25 10:19:22] INFO root fetch - main [MainThread]: Store serial: [23373138]
+[2024-05-25 10:21:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373138]
+[2024-05-25 10:21:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 10:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: broken-source
+[2024-05-25 10:21:31] INFO root fetch - processPackages [broken-source]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-25 10:21:31] INFO root fetch - processPackages [broken-source]: Downloading https://files.pythonhosted.org/packages/f5/90/f776c0a3b99425e547afc7fe2ddf33003450194e0b24922fe491ac596241/broken_source-0.2.1-py3-none-any.whl
+[2024-05-25 10:21:31] INFO root fetch - processPackages [broken-source]: Downloading https://files.pythonhosted.org/packages/c5/b7/cf71868c2795e55dc71477fa36436698a409426fe3ed4c776874edb7d228/broken_source-0.3.0-py3-none-any.whl
+[2024-05-25 10:21:32] INFO root fetch - processPackages [broken-source]: executing diffoscope
+[2024-05-25 10:21:32] INFO root fetch - processPackages [broken-source]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/broken_source-0.2.1-py3-none-any.whl.zip tmp/broken_source-0.3.0-py3-none-any.whl.zip --markdown 20240525/b/broken-source/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-25 10:21:33] INFO root fetch - processPackages [broken-source]: Remove: archive file [/home/abi/fetcher/tmp/broken_source-0.2.1-py3-none-any.whl.zip]
+[2024-05-25 10:21:33] INFO root fetch - processPackages [broken-source]: Remove: archive file [/home/abi/fetcher/tmp/broken_source-0.3.0-py3-none-any.whl.zip]
+[2024-05-25 10:21:33] INFO root fetch - main [MainThread]: End processing [broken-source]: success
+[2024-05-25 10:21:33] INFO root fetch - main [MainThread]: Store serial: [23373148]
