@@ -2483,3 +2483,13 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:33:44] INFO root fetch - processPackages [inference]: Remove: archive file [/home/abi/fetcher/tmp/inference-0.9.9rc23-py3-none-any.whl.zip]
 [2024-05-25 02:33:44] INFO root fetch - main [MainThread]: End processing [inference]: success
 [2024-05-25 02:33:44] INFO root fetch - main [MainThread]: Store serial: [23369626]
+[2024-05-25 02:35:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369626]
+[2024-05-25 02:35:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 02:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pazok
+[2024-05-25 02:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: supersetter
+[2024-05-25 02:35:53] INFO root fetch - processPackages [pazok]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 02:35:53] WARNING root fetch - processPackages [supersetter]: Skipping, unable to determine old version
+[2024-05-25 02:35:53] INFO root fetch - main [MainThread]: End processing [supersetter] error
+[2024-05-25 02:35:53] ERROR root fetch - processPackages [pazok]: Unable to fetch info: No such project/version 'pazok' 0.0.4
+[2024-05-25 02:35:53] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-25 02:35:53] INFO root fetch - main [MainThread]: Store serial: [23369660]
