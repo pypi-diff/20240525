@@ -19020,3 +19020,42 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:13:57] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.7.tar.gz]
 [2024-05-25 18:13:57] INFO root fetch - main [MainThread]: End processing [backend1]: success
 [2024-05-25 18:13:57] INFO root fetch - main [MainThread]: Store serial: [23376379]
+[2024-05-25 18:16:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376379]
+[2024-05-25 18:16:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 18:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-alpaca-api
+[2024-05-25 18:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uprock-sdk
+[2024-05-25 18:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lapidary
+[2024-05-25 18:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: symmetria
+[2024-05-25 18:16:06] INFO root fetch - processPackages [lapidary]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-25 18:16:06] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.5.8] Old Version: [0.5.6]
+[2024-05-25 18:16:06] INFO root fetch - processPackages [uprock-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 18:16:06] INFO root fetch - processPackages [symmetria]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 18:16:06] INFO root fetch - processPackages [lapidary]: Downloading https://files.pythonhosted.org/packages/70/c7/3ab81b125148f95d81a0fe792bc5f2629c7f219092dc187376602c1b3387/lapidary-0.9.0.tar.gz
+[2024-05-25 18:16:06] INFO root fetch - processPackages [uprock-sdk]: Downloading https://files.pythonhosted.org/packages/26/22/126fb32f31645995a5011f583fcbff3a5bd9d706b40186f5a97d77b1809b/uprock_sdk-0.1.8.tar.gz
+[2024-05-25 18:16:06] INFO root fetch - processPackages [symmetria]: Downloading https://files.pythonhosted.org/packages/2a/ae/93a69b319b81dc11f53fdb5ea3f254dcb4eb14b7d9ffd782044828fdd40f/symmetria-0.0.2.tar.gz
+[2024-05-25 18:16:06] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/64/51/16740684028f6d50dbe0f6a7e30fee24260c8a14b702a6167f193b8615dd/py_alpaca_api-0.5.6.tar.gz
+[2024-05-25 18:16:07] INFO root fetch - processPackages [lapidary]: Downloading https://files.pythonhosted.org/packages/7d/e3/61f054bc3551c4d037cab5cc0607751e1de180a3f24a44ee76f3d8fc0511/lapidary-0.9.1.tar.gz
+[2024-05-25 18:16:07] INFO root fetch - processPackages [symmetria]: Downloading https://files.pythonhosted.org/packages/71/c8/cd2861b87b072b786bb3dddb4f49b33859bc2b46b3703bf516a8b0a0645a/symmetria-0.0.3.tar.gz
+[2024-05-25 18:16:07] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/77/cb/b1e6b2da3e0660295b13e6c98dd45fb3d803f001087f7be5c9064eb5d43e/py_alpaca_api-0.5.8.tar.gz
+[2024-05-25 18:16:07] INFO root fetch - processPackages [uprock-sdk]: Downloading https://files.pythonhosted.org/packages/9f/c4/b3c22c4effa404516d26a91e86a36be6214f4ddddbf45903687c612dc45c/uprock_sdk-0.1.9.tar.gz
+[2024-05-25 18:16:07] INFO root fetch - processPackages [lapidary]: executing diffoscope
+[2024-05-25 18:16:07] INFO root fetch - processPackages [lapidary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapidary-0.9.0.tar.gz tmp/lapidary-0.9.1.tar.gz --markdown 20240525/l/lapidary/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-25 18:16:07] INFO root fetch - processPackages [symmetria]: executing diffoscope
+[2024-05-25 18:16:07] INFO root fetch - processPackages [symmetria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symmetria-0.0.2.tar.gz tmp/symmetria-0.0.3.tar.gz --markdown 20240525/s/symmetria/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 18:16:07] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-25 18:16:07] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.5.6.tar.gz tmp/py_alpaca_api-0.5.8.tar.gz --markdown 20240525/p/py-alpaca-api/0.5.6-0.5.8/README.md --exclude *.pyd
+[2024-05-25 18:16:07] INFO root fetch - processPackages [uprock-sdk]: executing diffoscope
+[2024-05-25 18:16:07] INFO root fetch - processPackages [uprock-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uprock_sdk-0.1.8.tar.gz tmp/uprock_sdk-0.1.9.tar.gz --markdown 20240525/u/uprock-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 18:16:07] INFO root fetch - processPackages [lapidary]: Remove: archive file [/home/abi/fetcher/tmp/lapidary-0.9.0.tar.gz]
+[2024-05-25 18:16:07] INFO root fetch - processPackages [lapidary]: Remove: archive file [/home/abi/fetcher/tmp/lapidary-0.9.1.tar.gz]
+[2024-05-25 18:16:07] INFO root fetch - main [MainThread]: End processing [lapidary]: success
+[2024-05-25 18:16:08] INFO root fetch - processPackages [uprock-sdk]: Remove: archive file [/home/abi/fetcher/tmp/uprock_sdk-0.1.8.tar.gz]
+[2024-05-25 18:16:08] INFO root fetch - processPackages [uprock-sdk]: Remove: archive file [/home/abi/fetcher/tmp/uprock_sdk-0.1.9.tar.gz]
+[2024-05-25 18:16:08] INFO root fetch - main [MainThread]: End processing [uprock-sdk]: success
+[2024-05-25 18:16:08] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.5.6.tar.gz]
+[2024-05-25 18:16:08] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.5.8.tar.gz]
+[2024-05-25 18:16:08] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-25 18:16:08] INFO root fetch - processPackages [symmetria]: Remove: archive file [/home/abi/fetcher/tmp/symmetria-0.0.2.tar.gz]
+[2024-05-25 18:16:08] INFO root fetch - processPackages [symmetria]: Remove: archive file [/home/abi/fetcher/tmp/symmetria-0.0.3.tar.gz]
+[2024-05-25 18:16:08] INFO root fetch - main [MainThread]: End processing [symmetria]: success
+[2024-05-25 18:16:08] INFO root fetch - main [MainThread]: Store serial: [23376394]
