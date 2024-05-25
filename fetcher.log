@@ -21445,3 +21445,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:18:10] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.9.tar.gz]
 [2024-05-25 21:18:10] INFO root fetch - main [MainThread]: End processing [kv-fs]: success
 [2024-05-25 21:18:10] INFO root fetch - main [MainThread]: Store serial: [23377403]
+[2024-05-25 21:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377403]
+[2024-05-25 21:20:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 21:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bencode-rs
+[2024-05-25 21:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlx-vlm
+[2024-05-25 21:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-fourier-shift
+[2024-05-25 21:20:18] INFO root fetch - processPackages [bencode-rs]: New version: [0.0.2a2] Old Version: [0.0.2a1]
+[2024-05-25 21:20:18] INFO root fetch - processPackages [bencode-rs]: Downloading https://files.pythonhosted.org/packages/36/d9/0ef6641b9f261efdcd285b878914f37d8724972760518d99783d9cf35c77/bencode_rs-0.0.2a1.tar.gz
+[2024-05-25 21:20:18] INFO root fetch - processPackages [mlx-vlm]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-25 21:20:18] WARNING root fetch - processPackages [torch-fourier-shift]: Skipping, unable to determine old version
+[2024-05-25 21:20:18] INFO root fetch - main [MainThread]: End processing [torch-fourier-shift] error
+[2024-05-25 21:20:19] INFO root fetch - processPackages [mlx-vlm]: Downloading https://files.pythonhosted.org/packages/ae/df/7a2eb6f2f616f095853fcd80513c04c4297e19f45d95743f35fe3fe51823/mlx_vlm-0.0.6.tar.gz
+[2024-05-25 21:20:19] INFO root fetch - processPackages [mlx-vlm]: Downloading https://files.pythonhosted.org/packages/e3/50/7b5e6fff5ded7a4c67f36f52faf50f1c0caffb481d768622af48730ac519/mlx_vlm-0.0.7.tar.gz
+[2024-05-25 21:20:19] INFO root fetch - processPackages [bencode-rs]: Downloading https://files.pythonhosted.org/packages/19/18/3dfe97288561b10152ad41d0a1225c3a99ec3a0c3b4d3649e541dd8ee5cb/bencode_rs-0.0.2a2.tar.gz
+[2024-05-25 21:20:19] INFO root fetch - processPackages [mlx-vlm]: executing diffoscope
+[2024-05-25 21:20:19] INFO root fetch - processPackages [mlx-vlm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlx_vlm-0.0.6.tar.gz tmp/mlx_vlm-0.0.7.tar.gz --markdown 20240525/m/mlx-vlm/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-25 21:20:19] INFO root fetch - processPackages [bencode-rs]: executing diffoscope
+[2024-05-25 21:20:19] INFO root fetch - processPackages [bencode-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode_rs-0.0.2a1.tar.gz tmp/bencode_rs-0.0.2a2.tar.gz --markdown 20240525/b/bencode-rs/0.0.2a1-0.0.2a2/README.md --exclude *.pyd
+[2024-05-25 21:20:20] INFO root fetch - processPackages [mlx-vlm]: Remove: archive file [/home/abi/fetcher/tmp/mlx_vlm-0.0.6.tar.gz]
+[2024-05-25 21:20:20] INFO root fetch - processPackages [mlx-vlm]: Remove: archive file [/home/abi/fetcher/tmp/mlx_vlm-0.0.7.tar.gz]
+[2024-05-25 21:20:20] INFO root fetch - main [MainThread]: End processing [mlx-vlm]: success
+[2024-05-25 21:20:20] INFO root fetch - processPackages [bencode-rs]: Remove: archive file [/home/abi/fetcher/tmp/bencode_rs-0.0.2a1.tar.gz]
+[2024-05-25 21:20:20] INFO root fetch - processPackages [bencode-rs]: Remove: archive file [/home/abi/fetcher/tmp/bencode_rs-0.0.2a2.tar.gz]
+[2024-05-25 21:20:20] INFO root fetch - main [MainThread]: End processing [bencode-rs]: success
+[2024-05-25 21:20:20] INFO root fetch - main [MainThread]: Store serial: [23377423]
