@@ -20815,3 +20815,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:20:58] INFO root fetch - processPackages [rics]: Remove: archive file [/home/abi/fetcher/tmp/rics-4.1.0.tar.gz]
 [2024-05-25 20:20:58] INFO root fetch - main [MainThread]: End processing [rics]: success
 [2024-05-25 20:20:58] INFO root fetch - main [MainThread]: Store serial: [23377071]
+[2024-05-25 20:23:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377071]
+[2024-05-25 20:23:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 20:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypreql
+[2024-05-25 20:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iris-udl-to-xml
+[2024-05-25 20:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeybee-idaice
+[2024-05-25 20:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyGeodesy
+[2024-05-25 20:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bd_to_avp
+[2024-05-25 20:23:07] WARNING root fetch - processPackages [iris-udl-to-xml]: Skipping, unable to determine old version
+[2024-05-25 20:23:07] INFO root fetch - main [MainThread]: End processing [iris-udl-to-xml] error
+[2024-05-25 20:23:07] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc81]
+[2024-05-25 20:23:07] INFO root fetch - processPackages [honeybee-idaice]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-25 20:23:07] INFO root fetch - processPackages [PyGeodesy]: New version: [24.5.8] Old Version: [24.5.6]
+[2024-05-25 20:23:07] INFO root fetch - processPackages [bd_to_avp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 20:23:07] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/f4/ab/dfe4981f20d38761d41496b84c2fb6aa67da5f1b74a7c89698bd40cdb2f0/pypreql-0.0.1rc81.tar.gz
+[2024-05-25 20:23:07] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/11/54/919431c21b706ee3341a26d1ed29304e4e1cdfd1d92daa2f359cd77aabcc/PyGeodesy-24.5.6.zip
+[2024-05-25 20:23:07] INFO root fetch - processPackages [honeybee-idaice]: Downloading https://files.pythonhosted.org/packages/6c/d4/c9f1b1a0df348da906dcee06b37b515e9c33eb9301407f04e04d6be4d696/honeybee-idaice-0.4.8.tar.gz
+[2024-05-25 20:23:07] INFO root fetch - processPackages [bd_to_avp]: Downloading https://files.pythonhosted.org/packages/00/db/7e18af63153f16cb6b9d0cd019ae969bcff7057bcdaa43a5b82e8224ed2d/bd_to_avp-0.1.8.tar.gz
+[2024-05-25 20:23:08] WARNING root fetch - processPackages [bd_to_avp]: Skipping package: exceeds size limit 16498870>=10485760
+[2024-05-25 20:23:08] INFO root fetch - main [MainThread]: End processing [bd_to_avp] error
+[2024-05-25 20:23:08] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2024-05-25 20:23:08] INFO root fetch - processPackages [honeybee-idaice]: Downloading https://files.pythonhosted.org/packages/4b/00/74399404983d344bb059522d1b13d1397ca816c2a588df3f8f6473f80348/honeybee-idaice-0.4.9.tar.gz
+[2024-05-25 20:23:08] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2024-05-25 20:23:08] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc81.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20240525/p/pypreql/0.0.1rc81-0.0.1rc9/README.md --exclude *.pyd
+[2024-05-25 20:23:08] INFO root fetch - processPackages [honeybee-idaice]: executing diffoscope
+[2024-05-25 20:23:08] INFO root fetch - processPackages [honeybee-idaice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-idaice-0.4.8.tar.gz tmp/honeybee-idaice-0.4.9.tar.gz --markdown 20240525/h/honeybee-idaice/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-25 20:23:08] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/b2/dc/07ee226e2c74d0aaf12033ad93d0fa078dfeec228ae5b05a705a07be7705/PyGeodesy-24.5.8.zip
+[2024-05-25 20:23:08] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc81.tar.gz]
+[2024-05-25 20:23:08] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc9.tar.gz]
+[2024-05-25 20:23:08] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2024-05-25 20:23:08] INFO root fetch - processPackages [honeybee-idaice]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-idaice-0.4.8.tar.gz]
+[2024-05-25 20:23:08] INFO root fetch - processPackages [honeybee-idaice]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-idaice-0.4.9.tar.gz]
+[2024-05-25 20:23:08] INFO root fetch - main [MainThread]: End processing [honeybee-idaice]: success
+[2024-05-25 20:23:09] INFO root fetch - processPackages [PyGeodesy]: executing diffoscope
+[2024-05-25 20:23:09] INFO root fetch - processPackages [PyGeodesy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGeodesy-24.5.6.zip tmp/PyGeodesy-24.5.8.zip --markdown 20240525/P/PyGeodesy/24.5.6-24.5.8/README.md --exclude *.pyd
+[2024-05-25 20:23:42] INFO root fetch - processPackages [PyGeodesy]: Remove: archive file [/home/abi/fetcher/tmp/PyGeodesy-24.5.6.zip]
+[2024-05-25 20:23:42] INFO root fetch - processPackages [PyGeodesy]: Remove: archive file [/home/abi/fetcher/tmp/PyGeodesy-24.5.8.zip]
+[2024-05-25 20:23:42] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
+[2024-05-25 20:23:42] INFO root fetch - main [MainThread]: Store serial: [23377089]
