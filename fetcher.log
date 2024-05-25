@@ -9674,3 +9674,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:19:56] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.3.1.tar.gz]
 [2024-05-25 08:19:56] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-05-25 08:19:56] INFO root fetch - main [MainThread]: Store serial: [23372523]
+[2024-05-25 08:21:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372523]
+[2024-05-25 08:22:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psynet
+[2024-05-25 08:22:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: etypes
+[2024-05-25 08:22:04] INFO root fetch - processPackages [etypes]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 08:22:04] INFO root fetch - processPackages [etypes]: Downloading https://files.pythonhosted.org/packages/ab/f9/fed7e564dff50fc8039ae7360d5dbc03c20e0bf9e8a439eb691b80995c3e/etypes-1.0.1.tar.gz
+[2024-05-25 08:22:04] INFO root fetch - processPackages [psynet]: New version: [9.4.6] Old Version: [9.4.5]
+[2024-05-25 08:22:04] INFO root fetch - processPackages [psynet]: Downloading https://files.pythonhosted.org/packages/c1/6f/61b816abab86b0509c098a6d0f8b682f36096e489aaa83ed15eec4773acd/psynet-9.4.5.tar.gz
+[2024-05-25 08:22:04] INFO root fetch - processPackages [etypes]: Downloading https://files.pythonhosted.org/packages/99/01/697be3e71b316687a13eec40522166ab1723c78aace9e2b90dc42b61e50b/etypes-1.0.2.tar.gz
+[2024-05-25 08:22:05] INFO root fetch - processPackages [etypes]: executing diffoscope
+[2024-05-25 08:22:05] INFO root fetch - processPackages [etypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etypes-1.0.1.tar.gz tmp/etypes-1.0.2.tar.gz --markdown 20240525/e/etypes/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 08:22:05] INFO root fetch - processPackages [psynet]: Downloading https://files.pythonhosted.org/packages/cf/ed/24875d4c65771edeb5c3dd73a4c45ba7007f98d144a9f983f0fca8d9e038/psynet-9.4.6.tar.gz
+[2024-05-25 08:22:05] INFO root fetch - processPackages [psynet]: executing diffoscope
+[2024-05-25 08:22:05] INFO root fetch - processPackages [psynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psynet-9.4.5.tar.gz tmp/psynet-9.4.6.tar.gz --markdown 20240525/p/psynet/9.4.5-9.4.6/README.md --exclude *.pyd
+[2024-05-25 08:22:05] INFO root fetch - processPackages [etypes]: Remove: archive file [/home/abi/fetcher/tmp/etypes-1.0.1.tar.gz]
+[2024-05-25 08:22:05] INFO root fetch - processPackages [etypes]: Remove: archive file [/home/abi/fetcher/tmp/etypes-1.0.2.tar.gz]
+[2024-05-25 08:22:05] INFO root fetch - main [MainThread]: End processing [etypes]: success
+[2024-05-25 08:22:06] INFO root fetch - processPackages [psynet]: Remove: archive file [/home/abi/fetcher/tmp/psynet-9.4.5.tar.gz]
+[2024-05-25 08:22:06] INFO root fetch - processPackages [psynet]: Remove: archive file [/home/abi/fetcher/tmp/psynet-9.4.6.tar.gz]
+[2024-05-25 08:22:06] INFO root fetch - main [MainThread]: End processing [psynet]: success
+[2024-05-25 08:22:06] INFO root fetch - main [MainThread]: Store serial: [23372529]
