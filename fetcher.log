@@ -8878,3 +8878,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:12:05] WARNING root fetch - processPackages [django-rpyc]: Skipping, unable to determine old version
 [2024-05-25 07:12:05] INFO root fetch - main [MainThread]: End processing [django-rpyc] error
 [2024-05-25 07:12:05] INFO root fetch - main [MainThread]: Store serial: [23372090]
+[2024-05-25 07:14:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372090]
+[2024-05-25 07:14:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 07:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akima
+[2024-05-25 07:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easy-llama
+[2024-05-25 07:14:14] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 07:14:14] INFO root fetch - processPackages [akima]: New version: [2024.5.24] Old Version: [2024.1.6]
+[2024-05-25 07:14:14] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-25 07:14:14] INFO root fetch - processPackages [akima]: Downloading https://files.pythonhosted.org/packages/b7/c8/21695231ff31ec210ab3a28887f16a127b4aec48fdc7f029de55a31ef07e/akima-2024.1.6.tar.gz
+[2024-05-25 07:14:14] INFO root fetch - processPackages [akima]: Downloading https://files.pythonhosted.org/packages/b1/95/93759508b2dfd82b5a69941f5d1f14e098b3e375e8531f3c6550ea529755/akima-2024.5.24.tar.gz
+[2024-05-25 07:14:14] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-25 07:14:14] INFO root fetch - processPackages [akima]: executing diffoscope
+[2024-05-25 07:14:14] INFO root fetch - processPackages [akima]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akima-2024.1.6.tar.gz tmp/akima-2024.5.24.tar.gz --markdown 20240525/a/akima/2024.1.6-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 07:14:14] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-25 07:14:14] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240525/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 07:14:15] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-25 07:14:15] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-25 07:14:15] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-25 07:14:15] INFO root fetch - processPackages [akima]: Remove: archive file [/home/abi/fetcher/tmp/akima-2024.1.6.tar.gz]
+[2024-05-25 07:14:15] INFO root fetch - processPackages [akima]: Remove: archive file [/home/abi/fetcher/tmp/akima-2024.5.24.tar.gz]
+[2024-05-25 07:14:15] INFO root fetch - main [MainThread]: End processing [akima]: success
+[2024-05-25 07:14:15] INFO root fetch - main [MainThread]: Store serial: [23372119]
