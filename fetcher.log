@@ -22199,3 +22199,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:20:59] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-25 22:20:59] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 22:20:59] INFO root fetch - main [MainThread]: Store serial: [23377718]
+[2024-05-25 22:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377718]
+[2024-05-25 22:23:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utillc
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kamangir
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: statebot
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RodTracker
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ParticleDetection
+[2024-05-25 22:23:08] INFO root fetch - processPackages [kamangir]: New version: [3.62.1] Old Version: [3.61.1]
+[2024-05-25 22:23:08] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ParticleDetection]: New version: [0.4.2.dev6] Old Version: [0.4.2.dev3]
+[2024-05-25 22:23:08] INFO root fetch - processPackages [RodTracker]: New version: [0.6.2.dev37] Old Version: [0.6.2.dev34]
+[2024-05-25 22:23:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:23:08] WARNING root fetch - processPackages [statebot]: Skipping, unable to determine old version
+[2024-05-25 22:23:08] INFO root fetch - main [MainThread]: End processing [statebot] error
+[2024-05-25 22:23:08] INFO root fetch - processPackages [utillc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 22:23:08] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/fe/bc/640ef4a32769379f3410344484a77f74f2530b57fc98b44a2a513876c3b3/kamangir-3.61.1.tar.gz
+[2024-05-25 22:23:08] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/cc/f6/8602a3365c5bdae211c3ac294519f44f09a48d78f82481686f04441605d1/utillc-0.9.8-py2.py3-none-any.whl
+[2024-05-25 22:23:08] INFO root fetch - processPackages [RodTracker]: Downloading https://files.pythonhosted.org/packages/ff/99/98aaa2be30586451aa6ef6151f8bd12a237b503f096a3623305f0dc5a95c/rodtracker-0.6.2.dev34.tar.gz
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ParticleDetection]: Downloading https://files.pythonhosted.org/packages/1d/76/1be171876f4c69278d68a3f3fe16d1e3718a9a1bb40e1080d7f6107ec784/particledetection-0.4.2.dev3.tar.gz
+[2024-05-25 22:23:08] WARNING root fetch - processPackages [RodTracker]: Skipping package: exceeds size limit 16672081>=10485760
+[2024-05-25 22:23:08] INFO root fetch - main [MainThread]: End processing [RodTracker] error
+[2024-05-25 22:23:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:23:08] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/fc/7e/de1585dd7efd2e21cb8957eb2983fcb8717de178e8e72f5cbf74d7617b6a/kamangir-3.62.1.tar.gz
+[2024-05-25 22:23:08] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 22:23:08] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.61.1.tar.gz tmp/kamangir-3.62.1.tar.gz --markdown 20240525/k/kamangir/3.61.1-3.62.1/README.md --exclude *.pyd
+[2024-05-25 22:23:08] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:23:08] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:23:08] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/d8/3c/db840ab098014cd53956ab58f90e832f7dc4cd45fba1ebcbb74463d04f94/utillc-0.9.9-py2.py3-none-any.whl
+[2024-05-25 22:23:08] INFO root fetch - processPackages [ParticleDetection]: Downloading https://files.pythonhosted.org/packages/36/d7/236542d481ec8aee7460c4b01fc92f0dd43d514fbca14ba505944b214bd9/particledetection-0.4.2.dev6-py3-none-any.whl
+[2024-05-25 22:23:08] INFO root fetch - processPackages [utillc]: executing diffoscope
+[2024-05-25 22:23:08] INFO root fetch - processPackages [utillc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utillc-0.9.8-py2.py3-none-any.whl.zip tmp/utillc-0.9.9-py2.py3-none-any.whl.zip --markdown 20240525/u/utillc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 22:23:09] INFO root fetch - processPackages [ParticleDetection]: executing diffoscope
+[2024-05-25 22:23:09] INFO root fetch - processPackages [ParticleDetection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/particledetection-0.4.2.dev3.tar.gz tmp/particledetection-0.4.2.dev6-py3-none-any.whl.zip --markdown 20240525/P/ParticleDetection/0.4.2.dev3-0.4.2.dev6/README.md --exclude *.pyd
+[2024-05-25 22:23:09] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.61.1.tar.gz]
+[2024-05-25 22:23:09] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.62.1.tar.gz]
+[2024-05-25 22:23:09] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 22:23:09] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.8-py2.py3-none-any.whl.zip]
+[2024-05-25 22:23:09] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.9-py2.py3-none-any.whl.zip]
+[2024-05-25 22:23:09] INFO root fetch - main [MainThread]: End processing [utillc]: success
+[2024-05-25 22:23:09] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:23:09] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:23:09] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:23:09] INFO root fetch - processPackages [ParticleDetection]: Remove: archive file [/home/abi/fetcher/tmp/particledetection-0.4.2.dev3.tar.gz]
+[2024-05-25 22:23:09] INFO root fetch - processPackages [ParticleDetection]: Remove: archive file [/home/abi/fetcher/tmp/particledetection-0.4.2.dev6-py3-none-any.whl.zip]
+[2024-05-25 22:23:09] INFO root fetch - main [MainThread]: End processing [ParticleDetection]: success
+[2024-05-25 22:23:09] INFO root fetch - main [MainThread]: Store serial: [23377736]
