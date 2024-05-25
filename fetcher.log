@@ -21988,3 +21988,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:03:30] WARNING root fetch - processPackages [discord-react]: Skipping, unable to determine old version
 [2024-05-25 22:03:30] INFO root fetch - main [MainThread]: End processing [discord-react] error
 [2024-05-25 22:03:30] INFO root fetch - main [MainThread]: Store serial: [23377608]
+[2024-05-25 22:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377608]
+[2024-05-25 22:05:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 22:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: articraft
+[2024-05-25 22:05:39] INFO root fetch - processPackages [articraft]: New version: [2.7.1] Old Version: [2.6.1]
+[2024-05-25 22:05:39] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/f6/33/3a5b8b92a77e47aa252cda96676e56450c48e4051bf6a228a3bb2561214f/articraft-2.6.1.tar.gz
+[2024-05-25 22:05:40] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/6a/3b/cbab94b8835457bd1786297e78e64fc690fbaeb4a418d88fba9a51ed9290/articraft-2.7.1.tar.gz
+[2024-05-25 22:05:40] INFO root fetch - processPackages [articraft]: executing diffoscope
+[2024-05-25 22:05:40] INFO root fetch - processPackages [articraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articraft-2.6.1.tar.gz tmp/articraft-2.7.1.tar.gz --markdown 20240525/a/articraft/2.6.1-2.7.1/README.md --exclude *.pyd
+[2024-05-25 22:05:40] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.6.1.tar.gz]
+[2024-05-25 22:05:40] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.7.1.tar.gz]
+[2024-05-25 22:05:40] INFO root fetch - main [MainThread]: End processing [articraft]: success
+[2024-05-25 22:05:40] INFO root fetch - main [MainThread]: Store serial: [23377611]
