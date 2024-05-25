@@ -18978,3 +18978,45 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:11:47] INFO root fetch - processPackages [pymoxel]: Remove: archive file [/home/abi/fetcher/tmp/pymoxel-0.1.2.tar.gz]
 [2024-05-25 18:11:47] INFO root fetch - main [MainThread]: End processing [pymoxel]: success
 [2024-05-25 18:11:47] INFO root fetch - main [MainThread]: Store serial: [23376364]
+[2024-05-25 18:13:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376364]
+[2024-05-25 18:13:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 18:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backend2
+[2024-05-25 18:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocstrings-shell
+[2024-05-25 18:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lavague-core
+[2024-05-25 18:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wixcf
+[2024-05-25 18:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: backend1
+[2024-05-25 18:13:56] INFO root fetch - processPackages [lavague-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 18:13:56] INFO root fetch - processPackages [wixcf]: New version: [5.2.0] Old Version: [5.1.2]
+[2024-05-25 18:13:56] INFO root fetch - processPackages [lavague-core]: Downloading https://files.pythonhosted.org/packages/e4/40/743a6abd535d3a25db893175a9cd0ebee75c115b3a2c4ef9f48a1e9d4d44/lavague_core-0.1.8.tar.gz
+[2024-05-25 18:13:56] INFO root fetch - processPackages [wixcf]: Downloading https://files.pythonhosted.org/packages/8f/c9/0c14efd91c9d4c7d5410475caaa3d6c75a6b5a6b6380f4432d148c413567/wixcf-5.1.2.tar.gz
+[2024-05-25 18:13:56] INFO root fetch - processPackages [mkdocstrings-shell]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-25 18:13:56] WARNING root fetch - processPackages [backend2]: Skipping, unable to determine old version
+[2024-05-25 18:13:56] INFO root fetch - main [MainThread]: End processing [backend2] error
+[2024-05-25 18:13:56] INFO root fetch - processPackages [backend1]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-25 18:13:56] INFO root fetch - processPackages [mkdocstrings-shell]: Downloading https://files.pythonhosted.org/packages/c8/21/3c745071961eee88bfb0f9dcebc7095dbd14d39813c822ee353c88f399e8/mkdocstrings_shell-0.0.0-py3-none-any.whl
+[2024-05-25 18:13:56] INFO root fetch - processPackages [lavague-core]: Downloading https://files.pythonhosted.org/packages/78/6c/0343c53ee821f987b0eb0d3977739465b8818124f5e82f0de318c60022a6/lavague_core-0.1.9.tar.gz
+[2024-05-25 18:13:56] INFO root fetch - processPackages [wixcf]: Downloading https://files.pythonhosted.org/packages/c9/c7/a2e3f4daff08ad78f41db6c2762ebf6a34f2713cf65c9c05a398463279d6/wixcf-5.2.0.tar.gz
+[2024-05-25 18:13:56] INFO root fetch - processPackages [backend1]: Downloading https://files.pythonhosted.org/packages/1b/09/b6fcfb8923e83e41d82baac49ff3da38600d9ea86623c7e596562a2560b6/backend1-1.0.6.tar.gz
+[2024-05-25 18:13:56] INFO root fetch - processPackages [lavague-core]: executing diffoscope
+[2024-05-25 18:13:56] INFO root fetch - processPackages [lavague-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lavague_core-0.1.8.tar.gz tmp/lavague_core-0.1.9.tar.gz --markdown 20240525/l/lavague-core/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 18:13:56] INFO root fetch - processPackages [wixcf]: executing diffoscope
+[2024-05-25 18:13:56] INFO root fetch - processPackages [wixcf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wixcf-5.1.2.tar.gz tmp/wixcf-5.2.0.tar.gz --markdown 20240525/w/wixcf/5.1.2-5.2.0/README.md --exclude *.pyd
+[2024-05-25 18:13:56] INFO root fetch - processPackages [mkdocstrings-shell]: Downloading https://files.pythonhosted.org/packages/dd/11/2e298f9d8456405c9c6dea689e6716d741e939c92011f95c3278ade04fd8/mkdocstrings_shell-0.0.1.tar.gz
+[2024-05-25 18:13:56] INFO root fetch - processPackages [mkdocstrings-shell]: executing diffoscope
+[2024-05-25 18:13:56] INFO root fetch - processPackages [mkdocstrings-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings_shell-0.0.0-py3-none-any.whl.zip tmp/mkdocstrings_shell-0.0.1.tar.gz --markdown 20240525/m/mkdocstrings-shell/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-25 18:13:57] INFO root fetch - processPackages [backend1]: Downloading https://files.pythonhosted.org/packages/a8/8f/627d0df3a99d1287ae3f83af38ea04f497ba0e258b00607dd5c1bf3050ca/backend1-1.0.7.tar.gz
+[2024-05-25 18:13:57] INFO root fetch - processPackages [lavague-core]: Remove: archive file [/home/abi/fetcher/tmp/lavague_core-0.1.8.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - processPackages [lavague-core]: Remove: archive file [/home/abi/fetcher/tmp/lavague_core-0.1.9.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - main [MainThread]: End processing [lavague-core]: success
+[2024-05-25 18:13:57] INFO root fetch - processPackages [wixcf]: Remove: archive file [/home/abi/fetcher/tmp/wixcf-5.1.2.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - processPackages [wixcf]: Remove: archive file [/home/abi/fetcher/tmp/wixcf-5.2.0.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - main [MainThread]: End processing [wixcf]: success
+[2024-05-25 18:13:57] INFO root fetch - processPackages [backend1]: executing diffoscope
+[2024-05-25 18:13:57] INFO root fetch - processPackages [backend1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend1-1.0.6.tar.gz tmp/backend1-1.0.7.tar.gz --markdown 20240525/b/backend1/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-25 18:13:57] INFO root fetch - processPackages [mkdocstrings-shell]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings_shell-0.0.0-py3-none-any.whl.zip]
+[2024-05-25 18:13:57] INFO root fetch - processPackages [mkdocstrings-shell]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings_shell-0.0.1.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - main [MainThread]: End processing [mkdocstrings-shell]: success
+[2024-05-25 18:13:57] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.6.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.7.tar.gz]
+[2024-05-25 18:13:57] INFO root fetch - main [MainThread]: End processing [backend1]: success
+[2024-05-25 18:13:57] INFO root fetch - main [MainThread]: Store serial: [23376379]
