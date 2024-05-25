@@ -21080,3 +21080,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:49:45] INFO root fetch - processPackages [web-retriever]: Remove: archive file [/home/abi/fetcher/tmp/web-retriever-0.3.0.tar.gz]
 [2024-05-25 20:49:45] INFO root fetch - main [MainThread]: End processing [web-retriever]: success
 [2024-05-25 20:49:45] INFO root fetch - main [MainThread]: Store serial: [23377183]
+[2024-05-25 20:51:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377183]
+[2024-05-25 20:51:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 20:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-25 20:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nova-framework
+[2024-05-25 20:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phlash
+[2024-05-25 20:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fusio-sdk
+[2024-05-25 20:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: diart
+[2024-05-25 20:51:54] INFO root fetch - processPackages [fusio-sdk]: New version: [5.0.8] Old Version: [5.0.7]
+[2024-05-25 20:51:54] INFO root fetch - processPackages [nova-framework]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-25 20:51:54] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/90/31/9532685e9ee2441e3eb02442911c44b03460c7fd9633d833db2af27bc25b/fusio_sdk-5.0.7.tar.gz
+[2024-05-25 20:51:54] INFO root fetch - processPackages [phlash]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 20:51:54] INFO root fetch - processPackages [diart]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-25 20:51:54] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.415] Old Version: [0.45.20240525.414]
+[2024-05-25 20:51:54] INFO root fetch - processPackages [nova-framework]: Downloading https://files.pythonhosted.org/packages/8f/ec/c7d7fcc82428864a608254e26bedd4ee6b5c50fbe797e092294d8bfb6b63/nova_framework-0.6.2.tar.gz
+[2024-05-25 20:51:54] INFO root fetch - processPackages [phlash]: Downloading https://files.pythonhosted.org/packages/bb/a4/905640016416c818546a9f680b1977d98a22790193e39318667089142558/phlash-1.0.2.tar.gz
+[2024-05-25 20:51:54] WARNING root fetch - processPackages [nova-framework]: Skipping package: exceeds size limit 31786604>=10485760
+[2024-05-25 20:51:54] INFO root fetch - main [MainThread]: End processing [nova-framework] error
+[2024-05-25 20:51:54] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/da/94/e158270345f6b99f95d2bd3e23cd64208600192b5080e16da9001b5a0341/fusio_sdk-5.0.8.tar.gz
+[2024-05-25 20:51:54] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/8e/bc/8ea59961dfb4c3a972a89ee5fc9743f1962344676c81d51b7651a5ae729e/pkscreener-0.45.20240525.414.tar.gz
+[2024-05-25 20:51:54] INFO root fetch - processPackages [diart]: Downloading https://files.pythonhosted.org/packages/c9/bd/bed7bd9d44d46e53538a6f9b31aa212b11075a25eeeb7b1b1a020000a2da/diart-0.9.0.tar.gz
+[2024-05-25 20:51:54] INFO root fetch - processPackages [fusio-sdk]: executing diffoscope
+[2024-05-25 20:51:54] INFO root fetch - processPackages [fusio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusio_sdk-5.0.7.tar.gz tmp/fusio_sdk-5.0.8.tar.gz --markdown 20240525/f/fusio-sdk/5.0.7-5.0.8/README.md --exclude *.pyd
+[2024-05-25 20:51:55] INFO root fetch - processPackages [phlash]: Downloading https://files.pythonhosted.org/packages/55/58/1bbd1300cd2b3f30111fb7065e91577b2c1e577045dd31c8ebf6b6119ea3/phlash-1.0.3.tar.gz
+[2024-05-25 20:51:55] INFO root fetch - processPackages [diart]: Downloading https://files.pythonhosted.org/packages/2e/04/28838c037571592dba593dd8036ab90998f353b15536201a29dbe624dbcb/diart-0.9.1.tar.gz
+[2024-05-25 20:51:55] INFO root fetch - processPackages [phlash]: executing diffoscope
+[2024-05-25 20:51:55] INFO root fetch - processPackages [phlash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phlash-1.0.2.tar.gz tmp/phlash-1.0.3.tar.gz --markdown 20240525/p/phlash/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 20:51:55] INFO root fetch - processPackages [diart]: executing diffoscope
+[2024-05-25 20:51:55] INFO root fetch - processPackages [diart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diart-0.9.0.tar.gz tmp/diart-0.9.1.tar.gz --markdown 20240525/d/diart/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-25 20:51:55] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/6e/24/bbcb23387a9df02df6e2cdedddf3d3cf0faa64bd00c4757e3079b087574b/pkscreener-0.45.20240525.415.tar.gz
+[2024-05-25 20:51:55] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 20:51:55] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.414.tar.gz tmp/pkscreener-0.45.20240525.415.tar.gz --markdown 20240525/p/pkscreener/0.45.20240525.414-0.45.20240525.415/README.md --exclude *.pyd
+[2024-05-25 20:51:55] INFO root fetch - processPackages [diart]: Remove: archive file [/home/abi/fetcher/tmp/diart-0.9.0.tar.gz]
+[2024-05-25 20:51:55] INFO root fetch - processPackages [diart]: Remove: archive file [/home/abi/fetcher/tmp/diart-0.9.1.tar.gz]
+[2024-05-25 20:51:55] INFO root fetch - main [MainThread]: End processing [diart]: success
+[2024-05-25 20:51:55] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio_sdk-5.0.7.tar.gz]
+[2024-05-25 20:51:55] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio_sdk-5.0.8.tar.gz]
+[2024-05-25 20:51:55] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
+[2024-05-25 20:51:56] INFO root fetch - processPackages [phlash]: Remove: archive file [/home/abi/fetcher/tmp/phlash-1.0.2.tar.gz]
+[2024-05-25 20:51:56] INFO root fetch - processPackages [phlash]: Remove: archive file [/home/abi/fetcher/tmp/phlash-1.0.3.tar.gz]
+[2024-05-25 20:51:56] INFO root fetch - main [MainThread]: End processing [phlash]: success
+[2024-05-25 20:51:56] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.414.tar.gz]
+[2024-05-25 20:51:56] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.415.tar.gz]
+[2024-05-25 20:51:56] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 20:51:56] INFO root fetch - main [MainThread]: Store serial: [23377200]
