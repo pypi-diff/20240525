@@ -9109,3 +9109,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:32:04] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-05-25 07:32:04] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-05-25 07:32:04] INFO root fetch - main [MainThread]: Store serial: [23372259]
+[2024-05-25 07:34:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372259]
+[2024-05-25 07:34:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 07:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-logging
+[2024-05-25 07:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pondpy
+[2024-05-25 07:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promising-stocks
+[2024-05-25 07:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Print-Tricks-And-More-Alpha
+[2024-05-25 07:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djpress
+[2024-05-25 07:34:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-edge-model-explorer
+[2024-05-25 07:34:17] INFO root fetch - processPackages [promising-stocks]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-25 07:34:17] INFO root fetch - processPackages [djpress]: New version: [0.1.2] Old Version: [0.1]
+[2024-05-25 07:34:17] WARNING root fetch - processPackages [pondpy]: Skipping, unable to determine old version
+[2024-05-25 07:34:17] INFO root fetch - main [MainThread]: End processing [pondpy] error
+[2024-05-25 07:34:17] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/e1/ed/a045ebba89e56d25b5513af9b99769aa018b52b99f1c4b4f479b2a9ec206/promising_stocks-0.1.9.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: New version: [0.3.93] Old Version: [0.3.86rc0]
+[2024-05-25 07:34:17] INFO root fetch - processPackages [pypomes-logging]: New version: [0.2.0] Old Version: [0.0.9]
+[2024-05-25 07:34:17] INFO root fetch - processPackages [ai-edge-model-explorer]: New version: [0.dev202405060029] Old Version: [0.1.2]
+[2024-05-25 07:34:17] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/15/8e/1f964ac129ce312d0ddbe2a08224f0921964e217a5055a6a12d59f283454/djpress-0.1.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Downloading https://files.pythonhosted.org/packages/8f/f9/da11bf3bad3b52c3a366e5fae56ac6dfb588a06b8ef2132c99128ce17ec6/Print_Tricks_And_More_Alpha-0.3.86rc0-py3-none-any.whl
+[2024-05-25 07:34:17] INFO root fetch - processPackages [pypomes-logging]: Downloading https://files.pythonhosted.org/packages/27/3d/b5dc55190871f2bef9c0989014e12a443d245068b38e4569d5f8432bad98/pypomes_logging-0.0.9.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [ai-edge-model-explorer]: Downloading https://files.pythonhosted.org/packages/78/ba/190e66a25aa1fac847c677e6db2c3ca589f6ae1daa52d269c49f90607e0f/ai_edge_model_explorer-0.1.2.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/4d/04/9470a9be14f6f05f730b19ad766165f8d2ee86aebf5024d1d2290a46e7c0/promising_stocks-0.2.0.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/26/17/845e5db769114abf70103bdcbb2be5fb5ffe3f2e78ceac2f0093f1fb7400/djpress-0.1.2.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [promising-stocks]: executing diffoscope
+[2024-05-25 07:34:17] INFO root fetch - processPackages [promising-stocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promising_stocks-0.1.9.tar.gz tmp/promising_stocks-0.2.0.tar.gz --markdown 20240525/p/promising-stocks/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-25 07:34:17] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Downloading https://files.pythonhosted.org/packages/77/f7/273d823a68ff6af798ba296987acee8ca3bf9a159bac3abf6675a93da6f7/Print_Tricks_And_More_Alpha-0.3.93-py3-none-any.whl
+[2024-05-25 07:34:17] INFO root fetch - processPackages [pypomes-logging]: Downloading https://files.pythonhosted.org/packages/25/98/5f674cec31372a91fecd935bd67ec4dbad75c771c14557f18e441815a2f7/pypomes_logging-0.2.0.tar.gz
+[2024-05-25 07:34:17] INFO root fetch - processPackages [djpress]: executing diffoscope
+[2024-05-25 07:34:17] INFO root fetch - processPackages [djpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djpress-0.1.tar.gz tmp/djpress-0.1.2.tar.gz --markdown 20240525/d/djpress/0.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 07:34:17] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: executing diffoscope
+[2024-05-25 07:34:17] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Print_Tricks_And_More_Alpha-0.3.86rc0-py3-none-any.whl.zip tmp/Print_Tricks_And_More_Alpha-0.3.93-py3-none-any.whl.zip --markdown 20240525/P/Print-Tricks-And-More-Alpha/0.3.86rc0-0.3.93/README.md --exclude *.pyd
+[2024-05-25 07:34:17] INFO root fetch - processPackages [pypomes-logging]: executing diffoscope
+[2024-05-25 07:34:17] INFO root fetch - processPackages [pypomes-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_logging-0.0.9.tar.gz tmp/pypomes_logging-0.2.0.tar.gz --markdown 20240525/p/pypomes-logging/0.0.9-0.2.0/README.md --exclude *.pyd
+[2024-05-25 07:34:18] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.9.tar.gz]
+[2024-05-25 07:34:18] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.2.0.tar.gz]
+[2024-05-25 07:34:18] INFO root fetch - main [MainThread]: End processing [promising-stocks]: success
+[2024-05-25 07:34:18] INFO root fetch - processPackages [pypomes-logging]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_logging-0.0.9.tar.gz]
+[2024-05-25 07:34:18] INFO root fetch - processPackages [pypomes-logging]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_logging-0.2.0.tar.gz]
+[2024-05-25 07:34:18] INFO root fetch - main [MainThread]: End processing [pypomes-logging]: success
+[2024-05-25 07:34:18] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.1.tar.gz]
+[2024-05-25 07:34:18] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.1.2.tar.gz]
+[2024-05-25 07:34:18] INFO root fetch - main [MainThread]: End processing [djpress]: success
+[2024-05-25 07:34:18] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Remove: archive file [/home/abi/fetcher/tmp/Print_Tricks_And_More_Alpha-0.3.86rc0-py3-none-any.whl.zip]
+[2024-05-25 07:34:18] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Remove: archive file [/home/abi/fetcher/tmp/Print_Tricks_And_More_Alpha-0.3.93-py3-none-any.whl.zip]
+[2024-05-25 07:34:18] INFO root fetch - main [MainThread]: End processing [Print-Tricks-And-More-Alpha]: success
+[2024-05-25 07:34:18] INFO root fetch - processPackages [ai-edge-model-explorer]: Downloading https://files.pythonhosted.org/packages/48/77/6d6cffc04ea18750fc81b4affe078ef994f60eb0577d37b85cc841cba348/ai_edge_model_explorer-0.dev202405060029-py3-none-any.whl
+[2024-05-25 07:34:18] INFO root fetch - processPackages [ai-edge-model-explorer]: executing diffoscope
+[2024-05-25 07:34:18] INFO root fetch - processPackages [ai-edge-model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_edge_model_explorer-0.1.2.tar.gz tmp/ai_edge_model_explorer-0.dev202405060029-py3-none-any.whl.zip --markdown 20240525/a/ai-edge-model-explorer/0.1.2-0.dev202405060029/README.md --exclude *.pyd
+[2024-05-25 07:34:19] INFO root fetch - processPackages [ai-edge-model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_model_explorer-0.1.2.tar.gz]
+[2024-05-25 07:34:19] INFO root fetch - processPackages [ai-edge-model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_model_explorer-0.dev202405060029-py3-none-any.whl.zip]
+[2024-05-25 07:34:19] INFO root fetch - main [MainThread]: End processing [ai-edge-model-explorer]: success
+[2024-05-25 07:34:19] INFO root fetch - main [MainThread]: Store serial: [23372279]
