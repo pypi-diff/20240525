@@ -20942,3 +20942,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:30:25] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.9.tar.gz]
 [2024-05-25 20:30:25] INFO root fetch - main [MainThread]: End processing [autonomous-app]: success
 [2024-05-25 20:30:25] INFO root fetch - main [MainThread]: Store serial: [23377120]
+[2024-05-25 20:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377120]
+[2024-05-25 20:32:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 20:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-viz-lib
+[2024-05-25 20:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alphafold3-pytorch
+[2024-05-25 20:32:34] WARNING root fetch - processPackages [custom-viz-lib]: Skipping, unable to determine old version
+[2024-05-25 20:32:34] INFO root fetch - main [MainThread]: End processing [custom-viz-lib] error
+[2024-05-25 20:32:34] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 20:32:34] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 20:32:35] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 20:32:35] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 20:32:35] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 20:32:35] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 20:32:35] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 20:32:35] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 20:32:35] INFO root fetch - main [MainThread]: Store serial: [23377126]
