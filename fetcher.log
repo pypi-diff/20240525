@@ -18138,3 +18138,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:12:38] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.1.tar.gz]
 [2024-05-25 17:12:38] INFO root fetch - main [MainThread]: End processing [structables]: success
 [2024-05-25 17:12:38] INFO root fetch - main [MainThread]: Store serial: [23375987]
+[2024-05-25 17:14:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375987]
+[2024-05-25 17:14:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 17:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anipy-api
+[2024-05-25 17:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xerparser
+[2024-05-25 17:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strawberry-graphql
+[2024-05-25 17:14:47] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-25 17:14:47] INFO root fetch - processPackages [anipy-api]: New version: [3.1.0] Old Version: [3.0.5]
+[2024-05-25 17:14:47] INFO root fetch - processPackages [xerparser]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 17:14:47] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-25 17:14:47] INFO root fetch - processPackages [anipy-api]: Downloading https://files.pythonhosted.org/packages/e9/c9/d52719d7d12968fc6061cde1ff70b883d2a9735d5c16a791aa2d01ad7c8a/anipy_api-3.0.5.tar.gz
+[2024-05-25 17:14:47] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/d9/b8/18f3046e2056eba25c985ca6032f27b0e998fc148dcae61ba8c1137c2fda/xerparser-0.9.8.tar.gz
+[2024-05-25 17:14:47] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-25 17:14:47] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-25 17:14:47] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240525/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-25 17:14:47] INFO root fetch - processPackages [anipy-api]: Downloading https://files.pythonhosted.org/packages/af/6f/b62f775a426f7c29625e1b296b535e00240bd930db5c58f4401e32161362/anipy_api-3.1.0.tar.gz
+[2024-05-25 17:14:47] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/22/42/f0e78f46e0368cb92bc480f0764ca6ef9fc9b783412c97ad2208002fd0ee/xerparser-0.9.9.tar.gz
+[2024-05-25 17:14:48] INFO root fetch - processPackages [anipy-api]: executing diffoscope
+[2024-05-25 17:14:48] INFO root fetch - processPackages [anipy-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_api-3.0.5.tar.gz tmp/anipy_api-3.1.0.tar.gz --markdown 20240525/a/anipy-api/3.0.5-3.1.0/README.md --exclude *.pyd
+[2024-05-25 17:14:48] INFO root fetch - processPackages [xerparser]: executing diffoscope
+[2024-05-25 17:14:48] INFO root fetch - processPackages [xerparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xerparser-0.9.8.tar.gz tmp/xerparser-0.9.9.tar.gz --markdown 20240525/x/xerparser/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 17:14:48] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-25 17:14:48] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-25 17:14:48] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-25 17:14:48] INFO root fetch - processPackages [xerparser]: Remove: archive file [/home/abi/fetcher/tmp/xerparser-0.9.8.tar.gz]
+[2024-05-25 17:14:48] INFO root fetch - processPackages [xerparser]: Remove: archive file [/home/abi/fetcher/tmp/xerparser-0.9.9.tar.gz]
+[2024-05-25 17:14:48] INFO root fetch - main [MainThread]: End processing [xerparser]: success
+[2024-05-25 17:14:48] INFO root fetch - processPackages [anipy-api]: Remove: archive file [/home/abi/fetcher/tmp/anipy_api-3.0.5.tar.gz]
+[2024-05-25 17:14:48] INFO root fetch - processPackages [anipy-api]: Remove: archive file [/home/abi/fetcher/tmp/anipy_api-3.1.0.tar.gz]
+[2024-05-25 17:14:48] INFO root fetch - main [MainThread]: End processing [anipy-api]: success
+[2024-05-25 17:14:48] INFO root fetch - main [MainThread]: Store serial: [23375996]
