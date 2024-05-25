@@ -15883,3 +15883,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:24:53] INFO root fetch - processPackages [django-fastoche]: Remove: archive file [/home/abi/fetcher/tmp/django_fastoche-0.1.3.tar.gz]
 [2024-05-25 15:24:53] INFO root fetch - main [MainThread]: End processing [django-fastoche]: success
 [2024-05-25 15:24:53] INFO root fetch - main [MainThread]: Store serial: [23375060]
+[2024-05-25 15:26:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375060]
+[2024-05-25 15:27:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 15:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adb-tool-py
+[2024-05-25 15:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LWTools
+[2024-05-25 15:27:02] INFO root fetch - processPackages [LWTools]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-25 15:27:02] INFO root fetch - processPackages [LWTools]: Downloading https://files.pythonhosted.org/packages/32/b2/ae480f27cad16b81d20c368d465bae36196888b7103f758752ac81ddeede/lwtools-1.1.2.tar.gz
+[2024-05-25 15:27:02] INFO root fetch - processPackages [adb-tool-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 15:27:03] INFO root fetch - processPackages [adb-tool-py]: Downloading https://files.pythonhosted.org/packages/78/61/e65ac49f85f7e91f295f020a52facc31d132b57b9b4cda5573a7945853c5/adb-tool-py-0.1.1.tar.gz
+[2024-05-25 15:27:03] INFO root fetch - processPackages [LWTools]: Downloading https://files.pythonhosted.org/packages/00/c1/d738c3d4ea6ad6ec53ac62811d98b8519590d777cc5dbe07e704ed2bde44/lwtools-1.1.3.tar.gz
+[2024-05-25 15:27:03] INFO root fetch - processPackages [LWTools]: executing diffoscope
+[2024-05-25 15:27:03] INFO root fetch - processPackages [LWTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lwtools-1.1.2.tar.gz tmp/lwtools-1.1.3.tar.gz --markdown 20240525/L/LWTools/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-25 15:27:03] INFO root fetch - processPackages [adb-tool-py]: Downloading https://files.pythonhosted.org/packages/c7/0f/4f6fd02a18b8532d2c2ca7233a7351d4d18543bbbf245da48711481354ec/adb-tool-py-0.1.2.tar.gz
+[2024-05-25 15:27:03] INFO root fetch - processPackages [adb-tool-py]: executing diffoscope
+[2024-05-25 15:27:03] INFO root fetch - processPackages [adb-tool-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adb-tool-py-0.1.1.tar.gz tmp/adb-tool-py-0.1.2.tar.gz --markdown 20240525/a/adb-tool-py/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 15:27:04] INFO root fetch - processPackages [LWTools]: Remove: archive file [/home/abi/fetcher/tmp/lwtools-1.1.2.tar.gz]
+[2024-05-25 15:27:04] INFO root fetch - processPackages [LWTools]: Remove: archive file [/home/abi/fetcher/tmp/lwtools-1.1.3.tar.gz]
+[2024-05-25 15:27:04] INFO root fetch - main [MainThread]: End processing [LWTools]: success
+[2024-05-25 15:27:04] INFO root fetch - processPackages [adb-tool-py]: Remove: archive file [/home/abi/fetcher/tmp/adb-tool-py-0.1.1.tar.gz]
+[2024-05-25 15:27:04] INFO root fetch - processPackages [adb-tool-py]: Remove: archive file [/home/abi/fetcher/tmp/adb-tool-py-0.1.2.tar.gz]
+[2024-05-25 15:27:04] INFO root fetch - main [MainThread]: End processing [adb-tool-py]: success
+[2024-05-25 15:27:04] INFO root fetch - main [MainThread]: Store serial: [23375066]
