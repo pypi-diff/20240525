@@ -13583,3 +13583,50 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:27:49] INFO root fetch - processPackages [ingestr]: Remove: archive file [/home/abi/fetcher/tmp/ingestr-0.5.0.tar.gz]
 [2024-05-25 13:27:49] INFO root fetch - main [MainThread]: End processing [ingestr]: success
 [2024-05-25 13:27:49] INFO root fetch - main [MainThread]: Store serial: [23374354]
+[2024-05-25 13:29:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374354]
+[2024-05-25 13:29:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calculate-savings
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: that-depends
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PQAnalysis
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ofxstatement-qif
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: test-wukunhuan
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tiled
+[2024-05-25 13:29:58] INFO root fetch - processPackages [that-depends]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-25 13:29:58] INFO root fetch - processPackages [calculate-savings]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 13:29:58] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/f1/68/0bc474df803839c0d8e3c33eb3097a4938c21b8b1b877f323d48780b2836/that_depends-1.8.0.tar.gz
+[2024-05-25 13:29:58] INFO root fetch - processPackages [calculate-savings]: Downloading https://files.pythonhosted.org/packages/a6/4c/aa37d0c6d77e314555ae46f1d82885549d738f382b93037a1fc290ac18e1/calculate_savings-0.1.0-py3-none-any.whl
+[2024-05-25 13:29:58] WARNING root fetch - processPackages [test-wukunhuan]: Skipping, unable to determine old version
+[2024-05-25 13:29:58] INFO root fetch - main [MainThread]: End processing [test-wukunhuan] error
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ofxstatement-qif]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-25 13:29:58] INFO root fetch - processPackages [PQAnalysis]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 13:29:58] INFO root fetch - processPackages [tiled]: New version: [0.1.0b1] Old Version: [0.1.0a99]
+[2024-05-25 13:29:58] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/72/a6/07710f73e1d92f685185c408aa76b0ecac1313df3225a264e63dee65af15/that_depends-1.9.0.tar.gz
+[2024-05-25 13:29:58] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/9e/30/cfa6d0c9a4376d22d1ba749287798b09c9d6c04a9d6ebc0e599d68251664/pqanalysis-1.0.3.tar.gz
+[2024-05-25 13:29:58] INFO root fetch - processPackages [calculate-savings]: Downloading https://files.pythonhosted.org/packages/c1/77/c3b892d09386acfb81a7e48347301a011703531611bfe147af3eee45f3ad/calculate_savings-0.1.1.tar.gz
+[2024-05-25 13:29:58] INFO root fetch - processPackages [ofxstatement-qif]: Downloading https://files.pythonhosted.org/packages/df/c2/dfb89facde9d7565ed737ce6586587e5059c01b8ebf489d4faf949ca98b4/ofxstatement_qif-0.3.0-py3-none-any.whl
+[2024-05-25 13:29:58] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-05-25 13:29:58] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.8.0.tar.gz tmp/that_depends-1.9.0.tar.gz --markdown 20240525/t/that-depends/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-25 13:29:58] INFO root fetch - processPackages [tiled]: Downloading https://files.pythonhosted.org/packages/fe/0f/666d04dd545fe8c2345eaf2c767b774e6a6fd6cbef23f86552792f2ec717/tiled-0.1.0a99.tar.gz
+[2024-05-25 13:29:58] WARNING root fetch - processPackages [tiled]: Skipping package: exceeds size limit 71910456>=10485760
+[2024-05-25 13:29:58] INFO root fetch - main [MainThread]: End processing [tiled] error
+[2024-05-25 13:29:59] INFO root fetch - processPackages [ofxstatement-qif]: Downloading https://files.pythonhosted.org/packages/72/d7/76ce8e171f8cbffda36b0a92b6dcfa6e8f2c4d12841741e6d7c38d42d918/ofxstatement_qif-0.4.0-py3-none-any.whl
+[2024-05-25 13:29:59] INFO root fetch - processPackages [ofxstatement-qif]: executing diffoscope
+[2024-05-25 13:29:59] INFO root fetch - processPackages [ofxstatement-qif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofxstatement_qif-0.3.0-py3-none-any.whl.zip tmp/ofxstatement_qif-0.4.0-py3-none-any.whl.zip --markdown 20240525/o/ofxstatement-qif/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-25 13:29:59] INFO root fetch - processPackages [calculate-savings]: executing diffoscope
+[2024-05-25 13:29:59] INFO root fetch - processPackages [calculate-savings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calculate_savings-0.1.0-py3-none-any.whl.zip tmp/calculate_savings-0.1.1.tar.gz --markdown 20240525/c/calculate-savings/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 13:29:59] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/4d/62/d287338c6dd74f39fa3bcc1be753a01b052c1a02e71c3864794ec99ea542/pqanalysis-1.0.4.tar.gz
+[2024-05-25 13:29:59] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.8.0.tar.gz]
+[2024-05-25 13:29:59] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.0.tar.gz]
+[2024-05-25 13:29:59] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-05-25 13:29:59] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-05-25 13:29:59] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqanalysis-1.0.3.tar.gz tmp/pqanalysis-1.0.4.tar.gz --markdown 20240525/P/PQAnalysis/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 13:29:59] INFO root fetch - processPackages [ofxstatement-qif]: Remove: archive file [/home/abi/fetcher/tmp/ofxstatement_qif-0.3.0-py3-none-any.whl.zip]
+[2024-05-25 13:29:59] INFO root fetch - processPackages [ofxstatement-qif]: Remove: archive file [/home/abi/fetcher/tmp/ofxstatement_qif-0.4.0-py3-none-any.whl.zip]
+[2024-05-25 13:29:59] INFO root fetch - main [MainThread]: End processing [ofxstatement-qif]: success
+[2024-05-25 13:30:01] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.3.tar.gz]
+[2024-05-25 13:30:01] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.4.tar.gz]
+[2024-05-25 13:30:01] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-05-25 13:30:04] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.0-py3-none-any.whl.zip]
+[2024-05-25 13:30:04] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.1.tar.gz]
+[2024-05-25 13:30:04] INFO root fetch - main [MainThread]: End processing [calculate-savings]: success
+[2024-05-25 13:30:04] INFO root fetch - main [MainThread]: Store serial: [23374377]
