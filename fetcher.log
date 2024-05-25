@@ -17432,3 +17432,36 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:28:20] INFO root fetch - processPackages [mcanvil]: Remove: archive file [/home/abi/fetcher/tmp/mcanvil-0.8.0.tar.gz]
 [2024-05-25 16:28:20] INFO root fetch - main [MainThread]: End processing [mcanvil]: success
 [2024-05-25 16:28:20] INFO root fetch - main [MainThread]: Store serial: [23375724]
+[2024-05-25 16:30:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375724]
+[2024-05-25 16:30:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 16:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: studiosr
+[2024-05-25 16:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geo-track-analyzer
+[2024-05-25 16:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imy
+[2024-05-25 16:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-collect
+[2024-05-25 16:30:29] INFO root fetch - processPackages [studiosr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 16:30:29] INFO root fetch - processPackages [studiosr]: Downloading https://files.pythonhosted.org/packages/5c/9e/493ac973beb7b4e07c948e59994f8505f5ab9735b16f820d257f8643b852/studiosr-0.1.8-py3-none-any.whl
+[2024-05-25 16:30:29] INFO root fetch - processPackages [geo-track-analyzer]: New version: [1.4.0] Old Version: [1.3.2]
+[2024-05-25 16:30:29] ERROR root fetch - processPackages [image-collect]: Unable to get metadata: No such project 'image-collect'
+[2024-05-25 16:30:29] INFO root fetch - main [MainThread]: End processing [image-collect] error
+[2024-05-25 16:30:29] INFO root fetch - processPackages [imy]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-25 16:30:29] INFO root fetch - processPackages [geo-track-analyzer]: Downloading https://files.pythonhosted.org/packages/b7/92/d40967767c823785ea7f56ddfa818ef4d3ec198547b1ea98c4cf17416584/geo_track_analyzer-1.3.2.tar.gz
+[2024-05-25 16:30:29] INFO root fetch - processPackages [imy]: Downloading https://files.pythonhosted.org/packages/2e/2c/2ff1821744adceff14986b56d6dfd4138f048283262cb995896da671b9b0/imy-0.3.4.tar.gz
+[2024-05-25 16:30:29] INFO root fetch - processPackages [studiosr]: Downloading https://files.pythonhosted.org/packages/a5/cc/ada28bd6628d5729235cdfc3ed383d6726a10ad3925be5a161bfc892f5a3/studiosr-0.1.9-py3-none-any.whl
+[2024-05-25 16:30:29] INFO root fetch - processPackages [studiosr]: executing diffoscope
+[2024-05-25 16:30:29] INFO root fetch - processPackages [studiosr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/studiosr-0.1.8-py3-none-any.whl.zip tmp/studiosr-0.1.9-py3-none-any.whl.zip --markdown 20240525/s/studiosr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 16:30:29] INFO root fetch - processPackages [geo-track-analyzer]: Downloading https://files.pythonhosted.org/packages/60/a3/9bfd0c16c0d2838a3e2fb6ed5e0ce773b5e3089e4dba406c55e30cf17d3a/geo_track_analyzer-1.4.0.tar.gz
+[2024-05-25 16:30:29] INFO root fetch - processPackages [imy]: Downloading https://files.pythonhosted.org/packages/3a/6c/5f6f80024a031b157ccf9d393394b780afba7791a3f0ac4ac5a887c1693d/imy-0.3.5.tar.gz
+[2024-05-25 16:30:29] INFO root fetch - processPackages [geo-track-analyzer]: executing diffoscope
+[2024-05-25 16:30:29] INFO root fetch - processPackages [geo-track-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geo_track_analyzer-1.3.2.tar.gz tmp/geo_track_analyzer-1.4.0.tar.gz --markdown 20240525/g/geo-track-analyzer/1.3.2-1.4.0/README.md --exclude *.pyd
+[2024-05-25 16:30:29] INFO root fetch - processPackages [imy]: executing diffoscope
+[2024-05-25 16:30:29] INFO root fetch - processPackages [imy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imy-0.3.4.tar.gz tmp/imy-0.3.5.tar.gz --markdown 20240525/i/imy/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-25 16:30:30] INFO root fetch - processPackages [studiosr]: Remove: archive file [/home/abi/fetcher/tmp/studiosr-0.1.8-py3-none-any.whl.zip]
+[2024-05-25 16:30:30] INFO root fetch - processPackages [studiosr]: Remove: archive file [/home/abi/fetcher/tmp/studiosr-0.1.9-py3-none-any.whl.zip]
+[2024-05-25 16:30:30] INFO root fetch - main [MainThread]: End processing [studiosr]: success
+[2024-05-25 16:30:30] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.3.4.tar.gz]
+[2024-05-25 16:30:30] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.3.5.tar.gz]
+[2024-05-25 16:30:30] INFO root fetch - main [MainThread]: End processing [imy]: success
+[2024-05-25 16:30:30] INFO root fetch - processPackages [geo-track-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/geo_track_analyzer-1.3.2.tar.gz]
+[2024-05-25 16:30:30] INFO root fetch - processPackages [geo-track-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/geo_track_analyzer-1.4.0.tar.gz]
+[2024-05-25 16:30:30] INFO root fetch - main [MainThread]: End processing [geo-track-analyzer]: success
+[2024-05-25 16:30:30] INFO root fetch - main [MainThread]: Store serial: [23375740]
