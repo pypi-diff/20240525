@@ -9271,3 +9271,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:45:11] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.3.1.tar.gz]
 [2024-05-25 07:45:11] INFO root fetch - main [MainThread]: End processing [athina]: success
 [2024-05-25 07:45:11] INFO root fetch - main [MainThread]: Store serial: [23372320]
+[2024-05-25 07:47:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372320]
+[2024-05-25 07:47:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 07:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-maintenance-equipment-hierarchy
+[2024-05-25 07:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simon-bot
+[2024-05-25 07:47:20] WARNING root fetch - processPackages [simon-bot]: Skipping, unable to determine old version
+[2024-05-25 07:47:20] INFO root fetch - main [MainThread]: End processing [simon-bot] error
+[2024-05-25 07:47:20] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-25 07:47:20] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: Downloading https://files.pythonhosted.org/packages/19/b0/6a1e76f573925135986cde94199c15e7427454abd95f6173a4613ba56586/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-25 07:47:20] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: Downloading https://files.pythonhosted.org/packages/9d/75/67c03b43068ac7ace484dbf7324f4c1596741bb7f5d6f2f267a5c401f853/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-25 07:47:21] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: executing diffoscope
+[2024-05-25 07:47:21] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-maintenance-equipment-hierarchy/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-25 07:47:21] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-25 07:47:21] INFO root fetch - processPackages [odoo-addon-maintenance-equipment-hierarchy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_maintenance_equipment_hierarchy-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-25 07:47:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-maintenance-equipment-hierarchy]: success
+[2024-05-25 07:47:21] INFO root fetch - main [MainThread]: Store serial: [23372327]
