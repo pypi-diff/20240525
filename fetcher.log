@@ -12533,3 +12533,39 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:10:59] INFO root fetch - processPackages [ingestr]: Remove: archive file [/home/abi/fetcher/tmp/ingestr-0.5.0.tar.gz]
 [2024-05-25 12:10:59] INFO root fetch - main [MainThread]: End processing [ingestr]: success
 [2024-05-25 12:10:59] INFO root fetch - main [MainThread]: Store serial: [23373906]
+[2024-05-25 12:13:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373906]
+[2024-05-25 12:13:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 12:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solcast-pvsolar
+[2024-05-25 12:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-summarizer
+[2024-05-25 12:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GenAIRR
+[2024-05-25 12:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: corderius-play
+[2024-05-25 12:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blender-plots
+[2024-05-25 12:13:08] INFO root fetch - processPackages [corderius-play]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 12:13:08] INFO root fetch - processPackages [GenAIRR]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 12:13:08] WARNING root fetch - processPackages [llama-summarizer]: Skipping, unable to determine old version
+[2024-05-25 12:13:08] WARNING root fetch - processPackages [solcast-pvsolar]: Skipping, unable to determine old version
+[2024-05-25 12:13:08] INFO root fetch - main [MainThread]: End processing [llama-summarizer] error
+[2024-05-25 12:13:08] INFO root fetch - main [MainThread]: End processing [solcast-pvsolar] error
+[2024-05-25 12:13:08] INFO root fetch - processPackages [blender-plots]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-25 12:13:08] INFO root fetch - processPackages [corderius-play]: Downloading https://files.pythonhosted.org/packages/73/35/a818a02e391d57e2882773c8a2097f436a54ff7f80a86545e29d549463e3/corderius_play-1.0.0.tar.gz
+[2024-05-25 12:13:08] INFO root fetch - processPackages [GenAIRR]: Downloading https://files.pythonhosted.org/packages/ed/bf/26905584f59d9b59a0e81a94e60f03d5e556a7f741393210ea81fa5f8c00/genairr-0.1.0.tar.gz
+[2024-05-25 12:13:08] INFO root fetch - processPackages [blender-plots]: Downloading https://files.pythonhosted.org/packages/f2/7e/a6be0485d4d057c71d59a0826c8f581934b4ec112964b9d8c371a8586b9c/blender-plots-1.0.7.tar.gz
+[2024-05-25 12:13:09] INFO root fetch - processPackages [corderius-play]: Downloading https://files.pythonhosted.org/packages/f4/39/393a64c02ac040ba07e8fd9aea2984080edfb4628203746c96f7a040456c/corderius_play-1.0.1.tar.gz
+[2024-05-25 12:13:09] INFO root fetch - processPackages [GenAIRR]: Downloading https://files.pythonhosted.org/packages/e1/2e/c363217396025ab99720298e7a9110d44cf01bf731214258030aa2983117/genairr-0.1.1.tar.gz
+[2024-05-25 12:13:09] INFO root fetch - processPackages [blender-plots]: Downloading https://files.pythonhosted.org/packages/16/40/8d2a5ddcbbbc7b08893578027210cfc21820f19ed9c2b62cd0943201449a/blender-plots-1.0.8.tar.gz
+[2024-05-25 12:13:09] INFO root fetch - processPackages [corderius-play]: executing diffoscope
+[2024-05-25 12:13:09] INFO root fetch - processPackages [corderius-play]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corderius_play-1.0.0.tar.gz tmp/corderius_play-1.0.1.tar.gz --markdown 20240525/c/corderius-play/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 12:13:09] INFO root fetch - processPackages [GenAIRR]: executing diffoscope
+[2024-05-25 12:13:09] INFO root fetch - processPackages [GenAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genairr-0.1.0.tar.gz tmp/genairr-0.1.1.tar.gz --markdown 20240525/G/GenAIRR/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 12:13:09] INFO root fetch - processPackages [blender-plots]: executing diffoscope
+[2024-05-25 12:13:09] INFO root fetch - processPackages [blender-plots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blender-plots-1.0.7.tar.gz tmp/blender-plots-1.0.8.tar.gz --markdown 20240525/b/blender-plots/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-25 12:13:09] INFO root fetch - processPackages [corderius-play]: Remove: archive file [/home/abi/fetcher/tmp/corderius_play-1.0.0.tar.gz]
+[2024-05-25 12:13:09] INFO root fetch - processPackages [corderius-play]: Remove: archive file [/home/abi/fetcher/tmp/corderius_play-1.0.1.tar.gz]
+[2024-05-25 12:13:09] INFO root fetch - main [MainThread]: End processing [corderius-play]: success
+[2024-05-25 12:13:09] INFO root fetch - processPackages [blender-plots]: Remove: archive file [/home/abi/fetcher/tmp/blender-plots-1.0.7.tar.gz]
+[2024-05-25 12:13:09] INFO root fetch - processPackages [blender-plots]: Remove: archive file [/home/abi/fetcher/tmp/blender-plots-1.0.8.tar.gz]
+[2024-05-25 12:13:09] INFO root fetch - main [MainThread]: End processing [blender-plots]: success
+[2024-05-25 12:13:10] INFO root fetch - processPackages [GenAIRR]: Remove: archive file [/home/abi/fetcher/tmp/genairr-0.1.0.tar.gz]
+[2024-05-25 12:13:10] INFO root fetch - processPackages [GenAIRR]: Remove: archive file [/home/abi/fetcher/tmp/genairr-0.1.1.tar.gz]
+[2024-05-25 12:13:10] INFO root fetch - main [MainThread]: End processing [GenAIRR]: success
+[2024-05-25 12:13:10] INFO root fetch - main [MainThread]: Store serial: [23373934]
