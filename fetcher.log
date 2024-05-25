@@ -10980,3 +10980,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:08:30] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.6.tar.gz]
 [2024-05-25 10:08:30] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
 [2024-05-25 10:08:30] INFO root fetch - main [MainThread]: Store serial: [23373045]
+[2024-05-25 10:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373045]
+[2024-05-25 10:10:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 10:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Jenkins-Transfers-Testing
+[2024-05-25 10:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yatta-py
+[2024-05-25 10:10:39] WARNING root fetch - processPackages [Jenkins-Transfers-Testing]: Skipping, unable to determine old version
+[2024-05-25 10:10:39] INFO root fetch - main [MainThread]: End processing [Jenkins-Transfers-Testing] error
+[2024-05-25 10:10:39] INFO root fetch - processPackages [yatta-py]: New version: [1.3.7] Old Version: [1.3.6]
+[2024-05-25 10:10:39] INFO root fetch - processPackages [yatta-py]: Downloading https://files.pythonhosted.org/packages/31/71/9fc650e047e29813107e2aa3929480003276f953641dd0de5a6d652d2593/yatta_py-1.3.6.tar.gz
+[2024-05-25 10:10:39] INFO root fetch - processPackages [yatta-py]: Downloading https://files.pythonhosted.org/packages/87/5a/badab28f78fd452d5275c08561acaba9659e95553476a2ea4d47e53f958f/yatta_py-1.3.7.tar.gz
+[2024-05-25 10:10:40] INFO root fetch - processPackages [yatta-py]: executing diffoscope
+[2024-05-25 10:10:40] INFO root fetch - processPackages [yatta-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatta_py-1.3.6.tar.gz tmp/yatta_py-1.3.7.tar.gz --markdown 20240525/y/yatta-py/1.3.6-1.3.7/README.md --exclude *.pyd
+[2024-05-25 10:10:40] INFO root fetch - processPackages [yatta-py]: Remove: archive file [/home/abi/fetcher/tmp/yatta_py-1.3.6.tar.gz]
+[2024-05-25 10:10:40] INFO root fetch - processPackages [yatta-py]: Remove: archive file [/home/abi/fetcher/tmp/yatta_py-1.3.7.tar.gz]
+[2024-05-25 10:10:40] INFO root fetch - main [MainThread]: End processing [yatta-py]: success
+[2024-05-25 10:10:40] INFO root fetch - main [MainThread]: Store serial: [23373055]
