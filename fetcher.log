@@ -11962,3 +11962,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:16:28] INFO root fetch - processPackages [pyorbit-package]: Remove: archive file [/home/abi/fetcher/tmp/pyorbit-package-9.1.9.tar.gz]
 [2024-05-25 11:16:28] INFO root fetch - main [MainThread]: End processing [pyorbit-package]: success
 [2024-05-25 11:16:28] INFO root fetch - main [MainThread]: Store serial: [23373559]
+[2024-05-25 11:18:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373559]
+[2024-05-25 11:18:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 11:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hddm-s
+[2024-05-25 11:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xrvoyage
+[2024-05-25 11:18:37] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.78]
+[2024-05-25 11:18:37] INFO root fetch - processPackages [xrvoyage]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 11:18:37] INFO root fetch - processPackages [xrvoyage]: Downloading https://files.pythonhosted.org/packages/d3/33/f7d07087f64536c533bbe5f3e48c504cdefdb008df9180f55baff1a51824/xrvoyage-1.0.8.tar.gz
+[2024-05-25 11:18:37] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/f4/44/46d9e7a3bd0eafbba39b245a4ad1f4b5bfaf263f511c8ef29c581fb9c818/hddm_s-1.0.78.tar.gz
+[2024-05-25 11:18:37] INFO root fetch - processPackages [xrvoyage]: Downloading https://files.pythonhosted.org/packages/ad/62/42e63b65f7f89ab31dd4936759df40532087961628b4740fd5d5812307f6/xrvoyage-1.0.9.tar.gz
+[2024-05-25 11:18:37] INFO root fetch - processPackages [xrvoyage]: executing diffoscope
+[2024-05-25 11:18:37] INFO root fetch - processPackages [xrvoyage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrvoyage-1.0.8.tar.gz tmp/xrvoyage-1.0.9.tar.gz --markdown 20240525/x/xrvoyage/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-25 11:18:37] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 11:18:37] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 11:18:37] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.78.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.78-1.0.9/README.md --exclude *.pyd
+[2024-05-25 11:18:38] INFO root fetch - processPackages [xrvoyage]: Remove: archive file [/home/abi/fetcher/tmp/xrvoyage-1.0.8.tar.gz]
+[2024-05-25 11:18:38] INFO root fetch - processPackages [xrvoyage]: Remove: archive file [/home/abi/fetcher/tmp/xrvoyage-1.0.9.tar.gz]
+[2024-05-25 11:18:38] INFO root fetch - main [MainThread]: End processing [xrvoyage]: success
+[2024-05-25 11:18:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.78.tar.gz]
+[2024-05-25 11:18:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 11:18:38] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 11:18:38] INFO root fetch - main [MainThread]: Store serial: [23373564]
