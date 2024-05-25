@@ -20521,3 +20521,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:54:56] INFO root fetch - processPackages [nonebot-plugin-calc24]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_calc24-1.3.8.tar.gz]
 [2024-05-25 19:54:56] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-calc24]: success
 [2024-05-25 19:54:56] INFO root fetch - main [MainThread]: Store serial: [23376978]
+[2024-05-25 19:57:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376978]
+[2024-05-25 19:57:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shogunfolio
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-analytic-base-department
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rc3
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ansar-connect
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cron-converter
+[2024-05-25 19:57:05] WARNING root fetch - processPackages [shogunfolio]: Skipping, unable to determine old version
+[2024-05-25 19:57:05] INFO root fetch - main [MainThread]: End processing [shogunfolio] error
+[2024-05-25 19:57:05] INFO root fetch - processPackages [rc3]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-25 19:57:05] INFO root fetch - processPackages [cron-converter]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-25 19:57:05] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: New version: [17.0.1.0.0.2] Old Version: [15.0.1.0.0.7]
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.264] Old Version: [0.1.263]
+[2024-05-25 19:57:05] INFO root fetch - processPackages [rc3]: Downloading https://files.pythonhosted.org/packages/59/d9/14c0ae95d90da9162076b92be6a944e4e0e247ba07572a99fe74e347f774/rc3-0.0.6.tar.gz
+[2024-05-25 19:57:05] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: Downloading https://files.pythonhosted.org/packages/a6/c3/d33e88890cce589a235a329ee8c4b9c77da95341258f8d9f42b78bbf7cd8/odoo_addon_analytic_base_department-15.0.1.0.0.7-py3-none-any.whl
+[2024-05-25 19:57:05] INFO root fetch - processPackages [cron-converter]: Downloading https://files.pythonhosted.org/packages/a8/36/fdb4a92994ab9ec607cde748ca15f7fce17589c4333b70bfb9277ffba93c/cron_converter-1.2.0.tar.gz
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/58/37/87e976cd0a5974e0869fc8327737667b3b658095109f3f7f1f6108df5258/ansar_connect-0.1.263.tar.gz
+[2024-05-25 19:57:05] INFO root fetch - processPackages [rc3]: Downloading https://files.pythonhosted.org/packages/d7/4f/733abef9f6f9ace4f726c86ce0fc9304024538742e58d335e1265ccde697/rc3-0.0.7.tar.gz
+[2024-05-25 19:57:05] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: Downloading https://files.pythonhosted.org/packages/de/d9/5b1d3d66347cc8dfa40e423fea54372c4f47e1e9ff011c54dd5a99d9d57b/odoo_addon_analytic_base_department-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-25 19:57:05] INFO root fetch - processPackages [cron-converter]: Downloading https://files.pythonhosted.org/packages/c1/45/549d071e7bde4d3bb6a566b1a116e3b79803df916c3499d27509b214a965/cron_converter-1.2.1.tar.gz
+[2024-05-25 19:57:05] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/72/94/3e31caa39f56bc3c3cdf0be4641e5bc7476ecbacdb8aea5c168a29592a96/ansar_connect-0.1.264.tar.gz
+[2024-05-25 19:57:06] INFO root fetch - processPackages [rc3]: executing diffoscope
+[2024-05-25 19:57:06] INFO root fetch - processPackages [rc3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rc3-0.0.6.tar.gz tmp/rc3-0.0.7.tar.gz --markdown 20240525/r/rc3/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-25 19:57:06] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-05-25 19:57:06] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.263.tar.gz tmp/ansar_connect-0.1.264.tar.gz --markdown 20240525/a/ansar-connect/0.1.263-0.1.264/README.md --exclude *.pyd
+[2024-05-25 19:57:06] INFO root fetch - processPackages [cron-converter]: executing diffoscope
+[2024-05-25 19:57:06] INFO root fetch - processPackages [cron-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cron_converter-1.2.0.tar.gz tmp/cron_converter-1.2.1.tar.gz --markdown 20240525/c/cron-converter/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-25 19:57:06] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: executing diffoscope
+[2024-05-25 19:57:06] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_analytic_base_department-15.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_analytic_base_department-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-analytic-base-department/15.0.1.0.0.7-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-25 19:57:06] INFO root fetch - processPackages [cron-converter]: Remove: archive file [/home/abi/fetcher/tmp/cron_converter-1.2.0.tar.gz]
+[2024-05-25 19:57:06] INFO root fetch - processPackages [cron-converter]: Remove: archive file [/home/abi/fetcher/tmp/cron_converter-1.2.1.tar.gz]
+[2024-05-25 19:57:06] INFO root fetch - main [MainThread]: End processing [cron-converter]: success
+[2024-05-25 19:57:06] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.263.tar.gz]
+[2024-05-25 19:57:06] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.264.tar.gz]
+[2024-05-25 19:57:06] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-05-25 19:57:06] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_analytic_base_department-15.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-25 19:57:06] INFO root fetch - processPackages [odoo-addon-analytic-base-department]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_analytic_base_department-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-25 19:57:06] INFO root fetch - main [MainThread]: End processing [odoo-addon-analytic-base-department]: success
+[2024-05-25 19:57:06] INFO root fetch - processPackages [rc3]: Remove: archive file [/home/abi/fetcher/tmp/rc3-0.0.6.tar.gz]
+[2024-05-25 19:57:06] INFO root fetch - processPackages [rc3]: Remove: archive file [/home/abi/fetcher/tmp/rc3-0.0.7.tar.gz]
+[2024-05-25 19:57:06] INFO root fetch - main [MainThread]: End processing [rc3]: success
+[2024-05-25 19:57:06] INFO root fetch - main [MainThread]: Store serial: [23376993]
