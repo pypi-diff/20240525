@@ -7965,3 +7965,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:30:24] INFO root fetch - processPackages [deeplake]: Remove: archive file [/home/abi/fetcher/tmp/deeplake-3.9.8.tar.gz]
 [2024-05-25 05:30:24] INFO root fetch - main [MainThread]: End processing [deeplake]: success
 [2024-05-25 05:30:24] INFO root fetch - main [MainThread]: Store serial: [23371741]
+[2024-05-25 05:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371741]
+[2024-05-25 05:32:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 05:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: konfuzio-sdk
+[2024-05-25 05:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nlp-nightly
+[2024-05-25 05:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schwab-api-wrapper
+[2024-05-25 05:32:34] INFO root fetch - processPackages [schwab-api-wrapper]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 05:32:34] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/cf/b9/66533a5b39003807b5f304a5c01d502d155c412cbf0285ce567679196b8e/schwab_api_wrapper-0.0.4.tar.gz
+[2024-05-25 05:32:34] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-05-25 05:32:34] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.3.7.dev20240524130943] Old Version: [0.3.7.dev20240521215914]
+[2024-05-25 05:32:34] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-05-25 05:32:34] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/9a/92/09c4645de0d4a3e3c33913ef9c80774d6b2a735a1d094d13ff6509c0c052/konfuzio_sdk-0.3.7.dev20240521215914.tar.gz
+[2024-05-25 05:32:34] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-05-25 05:32:34] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/99/ae/9e7ea4f51e9c98ced229cc7cc02baf74e13ffea6a1e9071209d7f6c57f54/schwab_api_wrapper-0.0.5.tar.gz
+[2024-05-25 05:32:35] INFO root fetch - processPackages [schwab-api-wrapper]: executing diffoscope
+[2024-05-25 05:32:35] INFO root fetch - processPackages [schwab-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab_api_wrapper-0.0.4.tar.gz tmp/schwab_api_wrapper-0.0.5.tar.gz --markdown 20240525/s/schwab-api-wrapper/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 05:32:35] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-05-25 05:32:35] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240525/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-05-25 05:32:35] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/48/4f/41e472dd9a725895358af2ed1a536228d6534df7ad40501e9e7918ba28de/konfuzio_sdk-0.3.7.dev20240524130943.tar.gz
+[2024-05-25 05:32:35] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2024-05-25 05:32:35] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.3.7.dev20240521215914.tar.gz tmp/konfuzio_sdk-0.3.7.dev20240524130943.tar.gz --markdown 20240525/k/konfuzio-sdk/0.3.7.dev20240521215914-0.3.7.dev20240524130943/README.md --exclude *.pyd
+[2024-05-25 05:32:35] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.0.4.tar.gz]
+[2024-05-25 05:32:35] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.0.5.tar.gz]
+[2024-05-25 05:32:35] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
+[2024-05-25 05:32:35] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.7.dev20240521215914.tar.gz]
+[2024-05-25 05:32:35] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.7.dev20240524130943.tar.gz]
+[2024-05-25 05:32:35] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2024-05-25 05:32:36] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-05-25 05:32:36] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-05-25 05:32:36] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-05-25 05:32:36] INFO root fetch - main [MainThread]: Store serial: [23371750]
