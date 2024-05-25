@@ -12821,3 +12821,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:24:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-25 12:24:21] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-25 12:24:21] INFO root fetch - main [MainThread]: Store serial: [23374029]
+[2024-05-25 12:26:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374029]
+[2024-05-25 12:26:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 12:26:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fcm-django
+[2024-05-25 12:26:31] INFO root fetch - processPackages [fcm-django]: New version: [2.2.0rc0] Old Version: [2.1.0]
+[2024-05-25 12:26:31] INFO root fetch - processPackages [fcm-django]: Downloading https://files.pythonhosted.org/packages/74/16/887c8935722da0d24559efe2206ebb7e404fd6d12dd831fca27c8f8cd221/fcm_django-2.1.0.tar.gz
+[2024-05-25 12:26:32] INFO root fetch - processPackages [fcm-django]: Downloading https://files.pythonhosted.org/packages/62/f0/d61bb23764a1ab553e53c8a162f2b61581cd20e1e2b35da30d083bf0c00d/fcm_django-2.2.0rc0.tar.gz
+[2024-05-25 12:26:32] INFO root fetch - processPackages [fcm-django]: executing diffoscope
+[2024-05-25 12:26:32] INFO root fetch - processPackages [fcm-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fcm_django-2.1.0.tar.gz tmp/fcm_django-2.2.0rc0.tar.gz --markdown 20240525/f/fcm-django/2.1.0-2.2.0rc0/README.md --exclude *.pyd
+[2024-05-25 12:26:32] INFO root fetch - processPackages [fcm-django]: Remove: archive file [/home/abi/fetcher/tmp/fcm_django-2.1.0.tar.gz]
+[2024-05-25 12:26:32] INFO root fetch - processPackages [fcm-django]: Remove: archive file [/home/abi/fetcher/tmp/fcm_django-2.2.0rc0.tar.gz]
+[2024-05-25 12:26:32] INFO root fetch - main [MainThread]: End processing [fcm-django]: success
+[2024-05-25 12:26:32] INFO root fetch - main [MainThread]: Store serial: [23374033]
