@@ -9048,3 +9048,40 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:27:20] INFO root fetch - processPackages [dnacurve]: Remove: archive file [/home/abi/fetcher/tmp/dnacurve-2024.5.24.tar.gz]
 [2024-05-25 07:27:20] INFO root fetch - main [MainThread]: End processing [dnacurve]: success
 [2024-05-25 07:27:20] INFO root fetch - main [MainThread]: Store serial: [23372227]
+[2024-05-25 07:29:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372227]
+[2024-05-25 07:29:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 07:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-ro-account-edi-ubl
+[2024-05-25 07:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ddx-python
+[2024-05-25 07:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: insta360
+[2024-05-25 07:29:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-l10n-ro-account-edi-ubl
+[2024-05-25 07:29:28] INFO root fetch - processPackages [insta360]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 07:29:28] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: New version: [16.0.1.50.0] Old Version: [16.0.1.49.0]
+[2024-05-25 07:29:28] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: New version: [16.0.1.50.0] Old Version: [16.0.1.49.0]
+[2024-05-25 07:29:28] INFO root fetch - processPackages [insta360]: Downloading https://files.pythonhosted.org/packages/f9/fd/dfe5b8d331fc381ba6a797bf9764f9e1ed27a14a0bfe3d7bd01c9ad217a0/insta360-0.1.0.tar.gz
+[2024-05-25 07:29:28] INFO root fetch - processPackages [ddx-python]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 07:29:28] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/7f/c7/bf32ccc49fffe7388738800e0d8fa59de5b9d3b1a48aa553d6ac828f953c/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.49.0-py3-none-any.whl
+[2024-05-25 07:29:28] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/7f/c7/bf32ccc49fffe7388738800e0d8fa59de5b9d3b1a48aa553d6ac828f953c/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.49.0-py3-none-any.whl
+[2024-05-25 07:29:29] INFO root fetch - processPackages [ddx-python]: Downloading https://files.pythonhosted.org/packages/03/8f/bb9af3ddf3ef291dc36ebf882cc65441276387b07debac57e23f68266edf/ddx_python-0.1.5-cp38-abi3-manylinux_2_24_x86_64.whl
+[2024-05-25 07:29:29] INFO root fetch - processPackages [insta360]: Downloading https://files.pythonhosted.org/packages/81/ad/a4b998f8e1cc3d4659af127f56e603b0708b0e15e4ec08b0b1184e371ce1/insta360-0.1.1.tar.gz
+[2024-05-25 07:29:29] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/ee/b9/19f6b1720b5d9b6e4cb216afbccfe7ee38ffe9dff0d779433e48f36924a0/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl
+[2024-05-25 07:29:29] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/ee/b9/19f6b1720b5d9b6e4cb216afbccfe7ee38ffe9dff0d779433e48f36924a0/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl
+[2024-05-25 07:29:29] INFO root fetch - processPackages [insta360]: executing diffoscope
+[2024-05-25 07:29:29] INFO root fetch - processPackages [insta360]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insta360-0.1.0.tar.gz tmp/insta360-0.1.1.tar.gz --markdown 20240525/i/insta360/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 07:29:29] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2024-05-25 07:29:29] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.49.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-l10n-ro-account-edi-ubl/16.0.1.49.0-16.0.1.50.0/README.md --exclude *.pyd
+[2024-05-25 07:29:29] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2024-05-25 07:29:29] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.49.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-l10n-ro-account-edi-ubl/16.0.1.49.0-16.0.1.50.0/README.md --exclude *.pyd
+[2024-05-25 07:29:29] INFO root fetch - processPackages [ddx-python]: Downloading https://files.pythonhosted.org/packages/8d/74/e3ce9b19286b8e3908caff2eee1c9834c09707bc7b996fa72ed0d9be055f/ddx_python-0.1.6-cp38-abi3-manylinux_2_24_x86_64.whl
+[2024-05-25 07:29:29] INFO root fetch - processPackages [ddx-python]: executing diffoscope
+[2024-05-25 07:29:29] INFO root fetch - processPackages [ddx-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddx_python-0.1.5-cp38-abi3-manylinux_2_24_x86_64.whl.zip tmp/ddx_python-0.1.6-cp38-abi3-manylinux_2_24_x86_64.whl.zip --markdown 20240525/d/ddx-python/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 07:29:30] INFO root fetch - processPackages [insta360]: Remove: archive file [/home/abi/fetcher/tmp/insta360-0.1.0.tar.gz]
+[2024-05-25 07:29:30] INFO root fetch - processPackages [insta360]: Remove: archive file [/home/abi/fetcher/tmp/insta360-0.1.1.tar.gz]
+[2024-05-25 07:29:30] INFO root fetch - main [MainThread]: End processing [insta360]: success
+[2024-05-25 07:29:30] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.49.0-py3-none-any.whl.zip]
+[2024-05-25 07:29:30] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0-py3-none-any.whl.zip]
+[2024-05-25 07:29:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-edi-ubl]: success
+[2024-05-25 07:29:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-edi-ubl]: success
+[2024-05-25 07:29:31] INFO root fetch - processPackages [ddx-python]: Remove: archive file [/home/abi/fetcher/tmp/ddx_python-0.1.5-cp38-abi3-manylinux_2_24_x86_64.whl.zip]
+[2024-05-25 07:29:31] INFO root fetch - processPackages [ddx-python]: Remove: archive file [/home/abi/fetcher/tmp/ddx_python-0.1.6-cp38-abi3-manylinux_2_24_x86_64.whl.zip]
+[2024-05-25 07:29:31] INFO root fetch - main [MainThread]: End processing [ddx-python]: success
+[2024-05-25 07:29:31] INFO root fetch - main [MainThread]: Store serial: [23372238]
