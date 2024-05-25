@@ -7366,3 +7366,39 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:24:43] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240524.tar.gz]
 [2024-05-25 04:24:43] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-05-25 04:24:43] INFO root fetch - main [MainThread]: Store serial: [23371409]
+[2024-05-25 04:26:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371409]
+[2024-05-25 04:26:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 04:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fabric-orchestrator-client
+[2024-05-25 04:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fabrictestbed
+[2024-05-25 04:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipy-upload-test
+[2024-05-25 04:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: naif-eop-high-prec
+[2024-05-25 04:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nnumericalmethodsalphaa
+[2024-05-25 04:26:52] INFO root fetch - processPackages [naif-eop-high-prec]: New version: [2024.5.24] Old Version: [2024.5.23]
+[2024-05-25 04:26:52] WARNING root fetch - processPackages [pipy-upload-test]: Skipping, unable to determine old version
+[2024-05-25 04:26:52] INFO root fetch - main [MainThread]: End processing [pipy-upload-test] error
+[2024-05-25 04:26:52] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/0d/1b/1c2617ee6874e0fc2fd4e51962ccffb5a6f3e5099cdd85bcaaef2a10099e/naif_eop_high_prec-2024.5.23.tar.gz
+[2024-05-25 04:26:52] INFO root fetch - processPackages [fabrictestbed]: New version: [1.7.0b6] Old Version: [1.7.0b5]
+[2024-05-25 04:26:52] WARNING root fetch - processPackages [nnumericalmethodsalphaa]: Skipping, unable to determine old version
+[2024-05-25 04:26:52] INFO root fetch - main [MainThread]: End processing [nnumericalmethodsalphaa] error
+[2024-05-25 04:26:52] INFO root fetch - processPackages [fabric-orchestrator-client]: New version: [1.7.0b6] Old Version: [1.7.0b5]
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabric-orchestrator-client]: Downloading https://files.pythonhosted.org/packages/6a/23/fc28b6ceb3e8c32600a63c8498e7b510aa24e449cc86d312ba1b69344fcd/fabric-orchestrator-client-1.7.0b5.tar.gz
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabrictestbed]: Downloading https://files.pythonhosted.org/packages/15/30/cb4b28affa0200ebd8b8c8db58e6ff45c07314d045c4842240730278f7ba/fabrictestbed-1.7.0b5.tar.gz
+[2024-05-25 04:26:53] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/81/9e/514d26d91f2b0dd13b8ff31fce79f9812730ad5abf24e0068223650b30f7/naif_eop_high_prec-2024.5.24.tar.gz
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabric-orchestrator-client]: Downloading https://files.pythonhosted.org/packages/65/94/cf340faf7edddceeed8e75d321d1b5730de0b389c2385d47e973ab138d78/fabric-orchestrator-client-1.7.0b6.tar.gz
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabrictestbed]: Downloading https://files.pythonhosted.org/packages/c2/10/b007020689363bb70028d877b916ce071b4494985d9667b0f7d22e386b26/fabrictestbed-1.7.0b6.tar.gz
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabric-orchestrator-client]: executing diffoscope
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabric-orchestrator-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabric-orchestrator-client-1.7.0b5.tar.gz tmp/fabric-orchestrator-client-1.7.0b6.tar.gz --markdown 20240525/f/fabric-orchestrator-client/1.7.0b5-1.7.0b6/README.md --exclude *.pyd
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabrictestbed]: executing diffoscope
+[2024-05-25 04:26:53] INFO root fetch - processPackages [fabrictestbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-1.7.0b5.tar.gz tmp/fabrictestbed-1.7.0b6.tar.gz --markdown 20240525/f/fabrictestbed/1.7.0b5-1.7.0b6/README.md --exclude *.pyd
+[2024-05-25 04:26:53] INFO root fetch - processPackages [naif-eop-high-prec]: executing diffoscope
+[2024-05-25 04:26:53] INFO root fetch - processPackages [naif-eop-high-prec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naif_eop_high_prec-2024.5.23.tar.gz tmp/naif_eop_high_prec-2024.5.24.tar.gz --markdown 20240525/n/naif-eop-high-prec/2024.5.23-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 04:26:54] INFO root fetch - processPackages [fabrictestbed]: Remove: archive file [/home/abi/fetcher/tmp/fabrictestbed-1.7.0b5.tar.gz]
+[2024-05-25 04:26:54] INFO root fetch - processPackages [fabrictestbed]: Remove: archive file [/home/abi/fetcher/tmp/fabrictestbed-1.7.0b6.tar.gz]
+[2024-05-25 04:26:54] INFO root fetch - main [MainThread]: End processing [fabrictestbed]: success
+[2024-05-25 04:26:54] INFO root fetch - processPackages [fabric-orchestrator-client]: Remove: archive file [/home/abi/fetcher/tmp/fabric-orchestrator-client-1.7.0b5.tar.gz]
+[2024-05-25 04:26:54] INFO root fetch - processPackages [fabric-orchestrator-client]: Remove: archive file [/home/abi/fetcher/tmp/fabric-orchestrator-client-1.7.0b6.tar.gz]
+[2024-05-25 04:26:54] INFO root fetch - main [MainThread]: End processing [fabric-orchestrator-client]: success
+[2024-05-25 04:26:57] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.23.tar.gz]
+[2024-05-25 04:26:57] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.24.tar.gz]
+[2024-05-25 04:26:57] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
+[2024-05-25 04:26:57] INFO root fetch - main [MainThread]: Store serial: [23371429]
