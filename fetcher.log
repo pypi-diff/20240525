@@ -13116,3 +13116,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:50:35] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-05-25 12:50:35] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-05-25 12:50:35] INFO root fetch - main [MainThread]: Store serial: [23374187]
+[2024-05-25 12:52:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374187]
+[2024-05-25 12:52:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 12:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-05-25 12:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastblocks
+[2024-05-25 12:52:45] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 12:52:45] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 12:52:45] INFO root fetch - processPackages [fastblocks]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-25 12:52:45] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/72/05/a176345c4b104fb3eb4730e183df458f4085a689d655ecd65188a01fecb7/fastblocks-0.4.4.tar.gz
+[2024-05-25 12:52:45] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 12:52:45] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/09/29/d5e8340bfad1f1bb069e92a958daa890b315ecd501df56d4602fd8d11d28/fastblocks-0.4.5.tar.gz
+[2024-05-25 12:52:46] INFO root fetch - processPackages [fastblocks]: executing diffoscope
+[2024-05-25 12:52:46] INFO root fetch - processPackages [fastblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastblocks-0.4.4.tar.gz tmp/fastblocks-0.4.5.tar.gz --markdown 20240525/f/fastblocks/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-25 12:52:46] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 12:52:46] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 12:52:46] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.4.4.tar.gz]
+[2024-05-25 12:52:46] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.4.5.tar.gz]
+[2024-05-25 12:52:46] INFO root fetch - main [MainThread]: End processing [fastblocks]: success
+[2024-05-25 12:52:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 12:52:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 12:52:47] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 12:52:47] INFO root fetch - main [MainThread]: Store serial: [23374193]
