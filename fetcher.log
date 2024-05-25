@@ -6940,3 +6940,48 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:40:48] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-1.0.1.tar.gz]
 [2024-05-25 03:40:48] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
 [2024-05-25 03:40:48] INFO root fetch - main [MainThread]: Store serial: [23371212]
+[2024-05-25 03:42:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371212]
+[2024-05-25 03:42:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 03:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web-ui-helper
+[2024-05-25 03:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leads
+[2024-05-25 03:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipy-upload-test
+[2024-05-25 03:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyAgrum-nightly
+[2024-05-25 03:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blue-plugin
+[2024-05-25 03:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cleanPyData
+[2024-05-25 03:42:57] INFO root fetch - processPackages [web-ui-helper]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 03:42:57] INFO root fetch - processPackages [blue-plugin]: New version: [3.44.1] Old Version: [3.43.1]
+[2024-05-25 03:42:57] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/3a/fa/61f9d61f47bec524735b01054299b50ca836d24928c1e8e6c014dde9e345/web-ui-helper-1.0.1.tar.gz
+[2024-05-25 03:42:57] WARNING root fetch - processPackages [pipy-upload-test]: Skipping, unable to determine old version
+[2024-05-25 03:42:57] INFO root fetch - main [MainThread]: End processing [pipy-upload-test] error
+[2024-05-25 03:42:57] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-25 03:42:57] WARNING root fetch - processPackages [cleanPyData]: Skipping, unable to determine old version
+[2024-05-25 03:42:57] INFO root fetch - main [MainThread]: End processing [cleanPyData] error
+[2024-05-25 03:42:57] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/b5/f1/49dcea5381bd44eb21a70aab607a406492fdf01f27588696ece0c5d3cc2c/blue_plugin-3.43.1.tar.gz
+[2024-05-25 03:42:57] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-05-25 03:42:57] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/70/26/195d21bc6888bd753d2ec483ef08d0491bc80ffe87ccb6cfb44f550950bc/web-ui-helper-1.0.2.tar.gz
+[2024-05-25 03:42:57] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-25 03:42:57] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-1.0.1.tar.gz tmp/web-ui-helper-1.0.2.tar.gz --markdown 20240525/w/web-ui-helper/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 03:42:58] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/f7/a1/b23ff4a54fa0460f543ad08ff75ed5e42dd9b6df7972122303411c0530e9/blue_plugin-3.44.1.tar.gz
+[2024-05-25 03:42:58] INFO root fetch - processPackages [blue-plugin]: executing diffoscope
+[2024-05-25 03:42:58] INFO root fetch - processPackages [blue-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_plugin-3.43.1.tar.gz tmp/blue_plugin-3.44.1.tar.gz --markdown 20240525/b/blue-plugin/3.43.1-3.44.1/README.md --exclude *.pyd
+[2024-05-25 03:42:58] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-05-25 03:42:58] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-05-25 03:42:58] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240525/l/leads/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-25 03:42:58] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-1.0.1.tar.gz]
+[2024-05-25 03:42:58] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-1.0.2.tar.gz]
+[2024-05-25 03:42:58] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-25 03:42:58] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.43.1.tar.gz]
+[2024-05-25 03:42:58] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.44.1.tar.gz]
+[2024-05-25 03:42:58] INFO root fetch - main [MainThread]: End processing [blue-plugin]: success
+[2024-05-25 03:42:59] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-05-25 03:42:59] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-05-25 03:42:59] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-05-25 03:42:59] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-05-25 03:43:00] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-05-25 03:43:00] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-05-25 03:43:00] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-05-25 03:43:00] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240525/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-05-25 03:43:01] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 03:43:01] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 03:43:01] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-05-25 03:43:01] INFO root fetch - main [MainThread]: Store serial: [23371252]
