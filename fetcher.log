@@ -11037,3 +11037,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:15:01] INFO root fetch - processPackages [pacspeddbase]: Remove: archive file [/home/abi/fetcher/tmp/pacspeddbase-0.2.tar.gz]
 [2024-05-25 10:15:01] INFO root fetch - main [MainThread]: End processing [pacspeddbase]: success
 [2024-05-25 10:15:01] INFO root fetch - main [MainThread]: Store serial: [23373075]
+[2024-05-25 10:17:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373075]
+[2024-05-25 10:17:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 10:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CTG-Utils
+[2024-05-25 10:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keyguardian
+[2024-05-25 10:17:09] INFO root fetch - processPackages [CTG-Utils]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-25 10:17:09] WARNING root fetch - processPackages [keyguardian]: Skipping, unable to determine old version
+[2024-05-25 10:17:09] INFO root fetch - main [MainThread]: End processing [keyguardian] error
+[2024-05-25 10:17:10] INFO root fetch - processPackages [CTG-Utils]: Downloading https://files.pythonhosted.org/packages/3d/e3/685b2bdefa71002deb75e1aafce465adb0c8c421d3bcfe47d52dfc5e29ac/CTG_Utils-1.2.0.tar.gz
+[2024-05-25 10:17:10] INFO root fetch - processPackages [CTG-Utils]: Downloading https://files.pythonhosted.org/packages/1d/4e/f14547feb8ce2b261065f0820fa36633c949a6f7f24ec903fe69f6494d9d/CTG_Utils-1.2.1.tar.gz
+[2024-05-25 10:17:10] INFO root fetch - processPackages [CTG-Utils]: executing diffoscope
+[2024-05-25 10:17:10] INFO root fetch - processPackages [CTG-Utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTG_Utils-1.2.0.tar.gz tmp/CTG_Utils-1.2.1.tar.gz --markdown 20240525/C/CTG-Utils/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-25 10:17:11] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.2.0.tar.gz]
+[2024-05-25 10:17:11] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.2.1.tar.gz]
+[2024-05-25 10:17:12] INFO root fetch - main [MainThread]: End processing [CTG-Utils]: success
+[2024-05-25 10:17:12] INFO root fetch - main [MainThread]: Store serial: [23373106]
