@@ -9957,3 +9957,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:58:48] INFO root fetch - processPackages [kal-middleware]: Remove: archive file [/home/abi/fetcher/tmp/kal_middleware-0.0.7.tar.gz]
 [2024-05-25 08:58:48] INFO root fetch - main [MainThread]: End processing [kal-middleware]: success
 [2024-05-25 08:58:48] INFO root fetch - main [MainThread]: Store serial: [23372650]
+[2024-05-25 09:00:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372650]
+[2024-05-25 09:00:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 09:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: online-scheduler
+[2024-05-25 09:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dotenvhub
+[2024-05-25 09:00:57] INFO root fetch - processPackages [online-scheduler]: New version: [0.6] Old Version: [0.5]
+[2024-05-25 09:00:57] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/3b/3b/49cf35cc410bfe8996f166a43182560c9b0834e78d67450a85c62f2327fb/online_scheduler-0.5.tar.gz
+[2024-05-25 09:00:57] INFO root fetch - processPackages [dotenvhub]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-25 09:00:57] INFO root fetch - processPackages [dotenvhub]: Downloading https://files.pythonhosted.org/packages/6b/6b/802994cc0b6514558ac3286d89342287d03d6ffaac91462dba8ff97b8a92/dotenvhub-0.1.3.tar.gz
+[2024-05-25 09:00:57] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/bb/38/b52522dad258c404b7db66000bad41fb48e439ff664893d14817e7d0e9a9/online_scheduler-0.6.tar.gz
+[2024-05-25 09:00:57] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 09:00:57] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.5.tar.gz tmp/online_scheduler-0.6.tar.gz --markdown 20240525/o/online-scheduler/0.5-0.6/README.md --exclude *.pyd
+[2024-05-25 09:00:57] INFO root fetch - processPackages [dotenvhub]: Downloading https://files.pythonhosted.org/packages/fc/f9/0612c08977a7589dacdcc89c3497fce07e70daaa017a097a2e34e7e34ece/dotenvhub-0.2.0.tar.gz
+[2024-05-25 09:00:57] INFO root fetch - processPackages [dotenvhub]: executing diffoscope
+[2024-05-25 09:00:57] INFO root fetch - processPackages [dotenvhub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotenvhub-0.1.3.tar.gz tmp/dotenvhub-0.2.0.tar.gz --markdown 20240525/d/dotenvhub/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-25 09:00:58] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.5.tar.gz]
+[2024-05-25 09:00:58] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.6.tar.gz]
+[2024-05-25 09:00:58] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 09:00:58] INFO root fetch - processPackages [dotenvhub]: Remove: archive file [/home/abi/fetcher/tmp/dotenvhub-0.1.3.tar.gz]
+[2024-05-25 09:00:58] INFO root fetch - processPackages [dotenvhub]: Remove: archive file [/home/abi/fetcher/tmp/dotenvhub-0.2.0.tar.gz]
+[2024-05-25 09:00:58] INFO root fetch - main [MainThread]: End processing [dotenvhub]: success
+[2024-05-25 09:00:58] INFO root fetch - main [MainThread]: Store serial: [23372656]
