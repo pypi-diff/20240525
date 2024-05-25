@@ -20980,3 +20980,17 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:36:52] INFO root fetch - processPackages [xmonkey-curator]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey-curator-0.1.9.tar.gz]
 [2024-05-25 20:36:52] INFO root fetch - main [MainThread]: End processing [xmonkey-curator]: success
 [2024-05-25 20:36:52] INFO root fetch - main [MainThread]: Store serial: [23377132]
+[2024-05-25 20:38:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377132]
+[2024-05-25 20:39:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 20:41:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377132]
+[2024-05-25 20:41:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 20:41:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiledbsoma
+[2024-05-25 20:41:07] INFO root fetch - processPackages [tiledbsoma]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-05-25 20:41:07] INFO root fetch - processPackages [tiledbsoma]: Downloading https://files.pythonhosted.org/packages/04/99/8a2d462c33cadcd101c03422705516b1aabd8f5b4f019339af484152fe53/tiledbsoma-1.9.4.tar.gz
+[2024-05-25 20:41:08] INFO root fetch - processPackages [tiledbsoma]: Downloading https://files.pythonhosted.org/packages/44/01/18bae328a1bd22c4d9c0d527701a186234e8691d557d57748b6a592bd4c3/tiledbsoma-1.9.5.tar.gz
+[2024-05-25 20:41:08] INFO root fetch - processPackages [tiledbsoma]: executing diffoscope
+[2024-05-25 20:41:08] INFO root fetch - processPackages [tiledbsoma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiledbsoma-1.9.4.tar.gz tmp/tiledbsoma-1.9.5.tar.gz --markdown 20240525/t/tiledbsoma/1.9.4-1.9.5/README.md --exclude *.pyd
+[2024-05-25 20:41:09] INFO root fetch - processPackages [tiledbsoma]: Remove: archive file [/home/abi/fetcher/tmp/tiledbsoma-1.9.4.tar.gz]
+[2024-05-25 20:41:09] INFO root fetch - processPackages [tiledbsoma]: Remove: archive file [/home/abi/fetcher/tmp/tiledbsoma-1.9.5.tar.gz]
+[2024-05-25 20:41:09] INFO root fetch - main [MainThread]: End processing [tiledbsoma]: success
+[2024-05-25 20:41:09] INFO root fetch - main [MainThread]: Store serial: [23377146]
