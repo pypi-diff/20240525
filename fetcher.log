@@ -2093,3 +2093,69 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:16:02] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.4.tar.gz]
 [2024-05-25 02:16:02] INFO root fetch - main [MainThread]: End processing [colossalai-nightly]: success
 [2024-05-25 02:16:02] INFO root fetch - main [MainThread]: Store serial: [23369431]
+[2024-05-25 02:18:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369431]
+[2024-05-25 02:18:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.appsync-utils
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: labtech
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swag
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-budibase
+[2024-05-25 02:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-gitlab-runner
+[2024-05-25 02:18:11] INFO root fetch - processPackages [swag]: New version: [2.0.0] Old Version: [1.7.3]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [swag]: Downloading https://files.pythonhosted.org/packages/0e/ad/c472033dbd90c77259f76bfd1d3007473c468f5d67a336127e08eab02207/swag-1.7.3.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [labtech]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/b6/9921880127918975163ef796466fd100a8f3a6246436ca4993eafae4915d/cdklabs.appsync-utils-0.0.98.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/4f/0a/01c6428b0ea2e78dd2dd9e10aba3ba8252b6cd0992b5a90ea9ba90983551/cdk-budibase-0.0.98.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [swag]: Downloading https://files.pythonhosted.org/packages/09/6f/799e063fdc3fea7a8abde96e8a5a69abb78bc34b1957c230bc6ebc95eb9e/swag-2.0.0.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [labtech]: Downloading https://files.pythonhosted.org/packages/75/c6/1fc7860bd0c1a215b89d277dc01396502258921621ba19344f01c26c0d70/labtech-0.5.1.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [swag]: executing diffoscope
+[2024-05-25 02:18:11] INFO root fetch - processPackages [swag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swag-1.7.3.tar.gz tmp/swag-2.0.0.tar.gz --markdown 20240525/s/swag/1.7.3-2.0.0/README.md --exclude *.pyd
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/fe/2c/3a8605fe934a0a120041c6190f384b00350c8036420ee8d53ac0b0906f74/cdklabs.appsync-utils-0.0.99.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/3d/b1/10d1c8f0601959fd0771f3dc7b94b15e702b81729d74397e80ca3dd66c88/cdk-budibase-0.0.99.tar.gz
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-25 02:18:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240525/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240525/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.98.tar.gz tmp/cdklabs.appsync-utils-0.0.99.tar.gz --markdown 20240525/c/cdklabs.appsync-utils/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 02:18:12] INFO root fetch - processPackages [labtech]: Downloading https://files.pythonhosted.org/packages/25/11/ac5ab35ce4170bb4be12ac8db73d6b5f09879290f5795dd48923ae35be79/labtech-0.6.0.tar.gz
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.98.tar.gz tmp/cdk-budibase-0.0.99.tar.gz --markdown 20240525/c/cdk-budibase/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-05-25 02:18:12] INFO root fetch - processPackages [labtech]: executing diffoscope
+[2024-05-25 02:18:12] INFO root fetch - processPackages [labtech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labtech-0.5.1.tar.gz tmp/labtech-0.6.0.tar.gz --markdown 20240525/l/labtech/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240525/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-25 02:18:12] INFO root fetch - processPackages [swag]: Remove: archive file [/home/abi/fetcher/tmp/swag-1.7.3.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - processPackages [swag]: Remove: archive file [/home/abi/fetcher/tmp/swag-2.0.0.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - main [MainThread]: End processing [swag]: success
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.98.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.99.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.98.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
+[2024-05-25 02:18:12] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2024-05-25 02:18:13] INFO root fetch - processPackages [labtech]: Remove: archive file [/home/abi/fetcher/tmp/labtech-0.5.1.tar.gz]
+[2024-05-25 02:18:13] INFO root fetch - processPackages [labtech]: Remove: archive file [/home/abi/fetcher/tmp/labtech-0.6.0.tar.gz]
+[2024-05-25 02:18:13] INFO root fetch - main [MainThread]: End processing [labtech]: success
+[2024-05-25 02:18:13] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-05-25 02:18:13] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-05-25 02:18:13] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-05-25 02:18:13] INFO root fetch - main [MainThread]: Store serial: [23369453]
