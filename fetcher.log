@@ -8411,3 +8411,20 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:41:29] INFO root fetch - processPackages [ossx]: Remove: archive file [/home/abi/fetcher/tmp/ossx-2.18.4.tar.gz]
 [2024-05-25 06:41:29] INFO root fetch - main [MainThread]: End processing [ossx]: success
 [2024-05-25 06:41:29] INFO root fetch - main [MainThread]: Store serial: [23371922]
+[2024-05-25 06:43:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371922]
+[2024-05-25 06:43:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 06:43:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-emoji-mart
+[2024-05-25 06:43:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ragdaemon
+[2024-05-25 06:43:38] INFO root fetch - processPackages [dash-emoji-mart]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 06:43:38] INFO root fetch - processPackages [ragdaemon]: New version: [0.6.0] Old Version: [0.5.6]
+[2024-05-25 06:43:38] INFO root fetch - processPackages [dash-emoji-mart]: Downloading https://files.pythonhosted.org/packages/4f/e3/324cce1038461eb2ddac5b5ffbec96506ad819773a6ef0c4c4011149ff41/dash_emoji_mart-0.0.2.tar.gz
+[2024-05-25 06:43:38] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/4c/84/e7dce981ac68155ff8f4f9560631ea52ef60213896cd9d046dcb91eb2ada/ragdaemon-0.5.6.tar.gz
+[2024-05-25 06:43:38] WARNING root fetch - processPackages [ragdaemon]: Skipping package: exceeds size limit 12402908>=10485760
+[2024-05-25 06:43:38] INFO root fetch - main [MainThread]: End processing [ragdaemon] error
+[2024-05-25 06:43:39] INFO root fetch - processPackages [dash-emoji-mart]: Downloading https://files.pythonhosted.org/packages/45/57/7915089a88e0ea372d51cf532f508ef8a2ef21f2f0cbd30b888655c48b39/dash_emoji_mart-0.0.3.tar.gz
+[2024-05-25 06:43:39] INFO root fetch - processPackages [dash-emoji-mart]: executing diffoscope
+[2024-05-25 06:43:39] INFO root fetch - processPackages [dash-emoji-mart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_emoji_mart-0.0.2.tar.gz tmp/dash_emoji_mart-0.0.3.tar.gz --markdown 20240525/d/dash-emoji-mart/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 06:43:41] INFO root fetch - processPackages [dash-emoji-mart]: Remove: archive file [/home/abi/fetcher/tmp/dash_emoji_mart-0.0.2.tar.gz]
+[2024-05-25 06:43:41] INFO root fetch - processPackages [dash-emoji-mart]: Remove: archive file [/home/abi/fetcher/tmp/dash_emoji_mart-0.0.3.tar.gz]
+[2024-05-25 06:43:41] INFO root fetch - main [MainThread]: End processing [dash-emoji-mart]: success
+[2024-05-25 06:43:41] INFO root fetch - main [MainThread]: Store serial: [23371928]
