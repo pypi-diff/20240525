@@ -9160,3 +9160,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:34:19] INFO root fetch - processPackages [ai-edge-model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_model_explorer-0.dev202405060029-py3-none-any.whl.zip]
 [2024-05-25 07:34:19] INFO root fetch - main [MainThread]: End processing [ai-edge-model-explorer]: success
 [2024-05-25 07:34:19] INFO root fetch - main [MainThread]: Store serial: [23372279]
+[2024-05-25 07:36:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372279]
+[2024-05-25 07:36:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 07:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-05-25 07:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simon-bot
+[2024-05-25 07:36:29] WARNING root fetch - processPackages [simon-bot]: Skipping, unable to determine old version
+[2024-05-25 07:36:29] INFO root fetch - main [MainThread]: End processing [simon-bot] error
+[2024-05-25 07:36:29] INFO root fetch - processPackages [python-115]: New version: [0.0.8.3.4] Old Version: [0.0.8.3.3]
+[2024-05-25 07:36:29] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/3b/6c/231f4cfbbe6da9a28aa4e1ba0aa64be10d96f96a7dd009b63f5892a5ab4d/python_115-0.0.8.3.3.tar.gz
+[2024-05-25 07:36:29] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/7a/24/49d11bd7b773fe5fc29ee6b485aea78df90b0aa9724ebb25c25a06cd35f8/python_115-0.0.8.3.4.tar.gz
+[2024-05-25 07:36:30] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-05-25 07:36:30] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.3.3.tar.gz tmp/python_115-0.0.8.3.4.tar.gz --markdown 20240525/p/python-115/0.0.8.3.3-0.0.8.3.4/README.md --exclude *.pyd
+[2024-05-25 07:36:30] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.3.tar.gz]
+[2024-05-25 07:36:30] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.4.tar.gz]
+[2024-05-25 07:36:30] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-05-25 07:36:30] INFO root fetch - main [MainThread]: Store serial: [23372285]
