@@ -21346,3 +21346,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:09:25] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.56-py3-none-any.whl.zip]
 [2024-05-25 21:09:25] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-05-25 21:09:25] INFO root fetch - main [MainThread]: Store serial: [23377365]
+[2024-05-25 21:11:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377365]
+[2024-05-25 21:11:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 21:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sunholo
+[2024-05-25 21:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xflow-net
+[2024-05-25 21:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: findblas
+[2024-05-25 21:11:34] INFO root fetch - processPackages [xflow-net]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 21:11:34] INFO root fetch - processPackages [sunholo]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-25 21:11:34] INFO root fetch - processPackages [xflow-net]: Downloading https://files.pythonhosted.org/packages/27/5a/80e59d03f828d99a04a88d7a32c5ddf4c37a83daa6baab74ab1c7f9773c2/xflow-net-0.1.2.tar.gz
+[2024-05-25 21:11:34] INFO root fetch - processPackages [findblas]: New version: [0.1.9] Old Version: [0.1.8.1]
+[2024-05-25 21:11:34] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/cc/35/0cc2a83f59b1ddd740a568e10894833a89bedfc91b8ebd172a427676694a/sunholo-0.8.8.tar.gz
+[2024-05-25 21:11:34] INFO root fetch - processPackages [xflow-net]: Downloading https://files.pythonhosted.org/packages/c6/45/a0d4bcaf987968040e2e096d75aaa423f2d029327b72831ba68dfbd29a75/xflow-net-0.1.3.tar.gz
+[2024-05-25 21:11:34] INFO root fetch - processPackages [findblas]: Downloading https://files.pythonhosted.org/packages/64/5e/57028b7be8732b098e9615f7e0a3ce45823ed735df12c3adcf38fe04b72d/findblas-0.1.8.1.tar.gz
+[2024-05-25 21:11:34] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/f4/84/78248df3236e593119b75003e77cf5b5bd0761e53dc91c6a148cb0571cf9/sunholo-0.8.9.tar.gz
+[2024-05-25 21:11:35] INFO root fetch - processPackages [xflow-net]: executing diffoscope
+[2024-05-25 21:11:35] INFO root fetch - processPackages [xflow-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xflow-net-0.1.2.tar.gz tmp/xflow-net-0.1.3.tar.gz --markdown 20240525/x/xflow-net/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 21:11:35] INFO root fetch - processPackages [sunholo]: executing diffoscope
+[2024-05-25 21:11:35] INFO root fetch - processPackages [sunholo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunholo-0.8.8.tar.gz tmp/sunholo-0.8.9.tar.gz --markdown 20240525/s/sunholo/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-25 21:11:35] INFO root fetch - processPackages [findblas]: Downloading https://files.pythonhosted.org/packages/a3/6b/9b76af2a6096b1fea8c77cdede7093536a39099fcab9a5348c41ba058413/findblas-0.1.9.tar.gz
+[2024-05-25 21:11:35] INFO root fetch - processPackages [findblas]: executing diffoscope
+[2024-05-25 21:11:35] INFO root fetch - processPackages [findblas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findblas-0.1.8.1.tar.gz tmp/findblas-0.1.9.tar.gz --markdown 20240525/f/findblas/0.1.8.1-0.1.9/README.md --exclude *.pyd
+[2024-05-25 21:11:35] INFO root fetch - processPackages [xflow-net]: Remove: archive file [/home/abi/fetcher/tmp/xflow-net-0.1.2.tar.gz]
+[2024-05-25 21:11:35] INFO root fetch - processPackages [xflow-net]: Remove: archive file [/home/abi/fetcher/tmp/xflow-net-0.1.3.tar.gz]
+[2024-05-25 21:11:35] INFO root fetch - main [MainThread]: End processing [xflow-net]: success
+[2024-05-25 21:11:35] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.8.tar.gz]
+[2024-05-25 21:11:35] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.9.tar.gz]
+[2024-05-25 21:11:35] INFO root fetch - main [MainThread]: End processing [sunholo]: success
+[2024-05-25 21:11:35] INFO root fetch - processPackages [findblas]: Remove: archive file [/home/abi/fetcher/tmp/findblas-0.1.8.1.tar.gz]
+[2024-05-25 21:11:35] INFO root fetch - processPackages [findblas]: Remove: archive file [/home/abi/fetcher/tmp/findblas-0.1.9.tar.gz]
+[2024-05-25 21:11:35] INFO root fetch - main [MainThread]: End processing [findblas]: success
+[2024-05-25 21:11:35] INFO root fetch - main [MainThread]: Store serial: [23377375]
