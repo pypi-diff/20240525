@@ -9223,3 +9223,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:43:00] INFO root fetch - processPackages [GMXvg]: Remove: archive file [/home/abi/fetcher/tmp/gmxvg-0.4.8.tar.gz]
 [2024-05-25 07:43:00] INFO root fetch - main [MainThread]: End processing [GMXvg]: success
 [2024-05-25 07:43:00] INFO root fetch - main [MainThread]: Store serial: [23372302]
+[2024-05-25 07:45:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372302]
+[2024-05-25 07:45:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: athina
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ossx
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Print-Tricks-And-More-Alpha
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kv-api
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quickstart-vdk
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ossx]: New version: [2.18.4] Old Version: [0.2.18a2]
+[2024-05-25 07:45:09] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: New version: [0.3.93] Old Version: [0.3.86rc0]
+[2024-05-25 07:45:09] INFO root fetch - processPackages [ossx]: Downloading https://files.pythonhosted.org/packages/89/16/2b5c529fff6c38644539e45b209e6c534f5e15465a5111150b3e6fc942ab/ossx-0.2.18a2.tar.gz
+[2024-05-25 07:45:09] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Downloading https://files.pythonhosted.org/packages/8f/f9/da11bf3bad3b52c3a366e5fae56ac6dfb588a06b8ef2132c99128ce17ec6/Print_Tricks_And_More_Alpha-0.3.86rc0-py3-none-any.whl
+[2024-05-25 07:45:09] INFO root fetch - processPackages [kv-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 07:45:09] INFO root fetch - processPackages [athina]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-25 07:45:09] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-25 07:45:10] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/61/c2/0cd9dfb6d55d90176e03da250e9cd3d7895a17404d1e263d27df26867816/kv_api-0.1.8.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [athina]: Downloading https://files.pythonhosted.org/packages/33/82/95df9cde9647e2f8222e7c6d81857a93e0218d0c141cfd1ea8a5539773de/athina-1.3.0.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [ossx]: Downloading https://files.pythonhosted.org/packages/fd/9c/4c63bd7857970006e4fe26cafead6d850bd3b30b0ff35234ebfb50b5d440/ossx-2.18.4.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Downloading https://files.pythonhosted.org/packages/77/f7/273d823a68ff6af798ba296987acee8ca3bf9a159bac3abf6675a93da6f7/Print_Tricks_And_More_Alpha-0.3.93-py3-none-any.whl
+[2024-05-25 07:45:10] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [ossx]: executing diffoscope
+[2024-05-25 07:45:10] INFO root fetch - processPackages [ossx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossx-0.2.18a2.tar.gz tmp/ossx-2.18.4.tar.gz --markdown 20240525/o/ossx/0.2.18a2-2.18.4/README.md --exclude *.pyd
+[2024-05-25 07:45:10] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: executing diffoscope
+[2024-05-25 07:45:10] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Print_Tricks_And_More_Alpha-0.3.86rc0-py3-none-any.whl.zip tmp/Print_Tricks_And_More_Alpha-0.3.93-py3-none-any.whl.zip --markdown 20240525/P/Print-Tricks-And-More-Alpha/0.3.86rc0-0.3.93/README.md --exclude *.pyd
+[2024-05-25 07:45:10] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-25 07:45:10] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240525/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-25 07:45:10] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/1e/b2/f25171e71a6d535fa7b27e3336d68243c754ab5b6beccbda42bd247b98e3/kv_api-0.1.9.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [athina]: Downloading https://files.pythonhosted.org/packages/4a/91/6bab04fcea5f2536e34daeadb7d64847fcd1c6a01d174230dda724a9226f/athina-1.3.1.tar.gz
+[2024-05-25 07:45:10] INFO root fetch - processPackages [kv-api]: executing diffoscope
+[2024-05-25 07:45:10] INFO root fetch - processPackages [kv-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_api-0.1.8.tar.gz tmp/kv_api-0.1.9.tar.gz --markdown 20240525/k/kv-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 07:45:10] INFO root fetch - processPackages [athina]: executing diffoscope
+[2024-05-25 07:45:10] INFO root fetch - processPackages [athina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athina-1.3.0.tar.gz tmp/athina-1.3.1.tar.gz --markdown 20240525/a/athina/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-25 07:45:10] INFO root fetch - processPackages [ossx]: Remove: archive file [/home/abi/fetcher/tmp/ossx-0.2.18a2.tar.gz]
+[2024-05-25 07:45:10] INFO root fetch - processPackages [ossx]: Remove: archive file [/home/abi/fetcher/tmp/ossx-2.18.4.tar.gz]
+[2024-05-25 07:45:10] INFO root fetch - main [MainThread]: End processing [ossx]: success
+[2024-05-25 07:45:10] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-25 07:45:10] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-25 07:45:10] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-25 07:45:11] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Remove: archive file [/home/abi/fetcher/tmp/Print_Tricks_And_More_Alpha-0.3.86rc0-py3-none-any.whl.zip]
+[2024-05-25 07:45:11] INFO root fetch - processPackages [Print-Tricks-And-More-Alpha]: Remove: archive file [/home/abi/fetcher/tmp/Print_Tricks_And_More_Alpha-0.3.93-py3-none-any.whl.zip]
+[2024-05-25 07:45:11] INFO root fetch - main [MainThread]: End processing [Print-Tricks-And-More-Alpha]: success
+[2024-05-25 07:45:11] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.8.tar.gz]
+[2024-05-25 07:45:11] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.9.tar.gz]
+[2024-05-25 07:45:11] INFO root fetch - main [MainThread]: End processing [kv-api]: success
+[2024-05-25 07:45:11] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.3.0.tar.gz]
+[2024-05-25 07:45:11] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.3.1.tar.gz]
+[2024-05-25 07:45:11] INFO root fetch - main [MainThread]: End processing [athina]: success
+[2024-05-25 07:45:11] INFO root fetch - main [MainThread]: Store serial: [23372320]
