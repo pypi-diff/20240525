@@ -9085,3 +9085,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:29:31] INFO root fetch - processPackages [ddx-python]: Remove: archive file [/home/abi/fetcher/tmp/ddx_python-0.1.6-cp38-abi3-manylinux_2_24_x86_64.whl.zip]
 [2024-05-25 07:29:31] INFO root fetch - main [MainThread]: End processing [ddx-python]: success
 [2024-05-25 07:29:31] INFO root fetch - main [MainThread]: Store serial: [23372238]
+[2024-05-25 07:31:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372238]
+[2024-05-25 07:31:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 07:31:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-05-25 07:31:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tflite-runtime-nightly
+[2024-05-25 07:31:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csv-identifier
+[2024-05-25 07:31:41] WARNING root fetch - processPackages [csv-identifier]: Skipping, unable to determine old version
+[2024-05-25 07:31:41] INFO root fetch - main [MainThread]: End processing [csv-identifier] error
+[2024-05-25 07:31:41] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240524] Old Version: [2.17.0.dev20240522]
+[2024-05-25 07:31:41] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-25 07:31:41] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/43/52/5c8adc0b7cb85236aaff3d1e9d3351970afa0c5b43a8aff98877cdd9f94e/tflite_runtime_nightly-2.17.0.dev20240522-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-25 07:31:41] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-25 07:31:41] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-25 07:31:41] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-25 07:31:41] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240525/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-25 07:31:41] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/49/6c/cfff1fc0aae90f30a6b7f6fdaf9de9c3b8dc12183519e1af6c48d0b6bd50/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-25 07:31:42] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-05-25 07:31:42] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240522-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240525/t/tflite-runtime-nightly/2.17.0.dev20240522-2.17.0.dev20240524/README.md --exclude *.pyd
+[2024-05-25 07:31:42] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-25 07:31:42] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-25 07:31:42] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-25 07:32:04] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240522-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-25 07:32:04] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-25 07:32:04] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-05-25 07:32:04] INFO root fetch - main [MainThread]: Store serial: [23372259]
