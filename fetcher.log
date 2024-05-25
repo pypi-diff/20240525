@@ -15859,3 +15859,27 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:22:32] INFO root fetch - processPackages [comment-scanner]: Remove: archive file [/home/abi/fetcher/tmp/comment_scanner-0.2.tar.gz]
 [2024-05-25 15:22:32] INFO root fetch - main [MainThread]: End processing [comment-scanner]: success
 [2024-05-25 15:22:32] INFO root fetch - main [MainThread]: Store serial: [23375051]
+[2024-05-25 15:24:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375051]
+[2024-05-25 15:24:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-fastoche
+[2024-05-25 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ChromaRepository
+[2024-05-25 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyperclip-plus
+[2024-05-25 15:24:40] WARNING root fetch - processPackages [ChromaRepository]: Skipping, unable to determine old version
+[2024-05-25 15:24:40] INFO root fetch - main [MainThread]: End processing [ChromaRepository] error
+[2024-05-25 15:24:40] INFO root fetch - processPackages [django-fastoche]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-05-25 15:24:40] INFO root fetch - processPackages [pyperclip-plus]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 15:24:41] INFO root fetch - processPackages [django-fastoche]: Downloading https://files.pythonhosted.org/packages/09/a5/b814ec5e1c16602f98448ae97dde4422d12c59b742651d4b75c350e4ba80/django_fastoche-0.1.1.tar.gz
+[2024-05-25 15:24:41] INFO root fetch - processPackages [pyperclip-plus]: Downloading https://files.pythonhosted.org/packages/33/d2/b7577f6b440f2157615cd7be82ef7a6c3dfb7afc20a685d12a607301fe93/pyperclip_plus-0.1.7.tar.gz
+[2024-05-25 15:24:41] INFO root fetch - processPackages [pyperclip-plus]: Downloading https://files.pythonhosted.org/packages/19/5d/950d773e697990d8047f56673eeb07cfa01711b536ad9dd82e20ebd02df9/pyperclip_plus-0.1.8.tar.gz
+[2024-05-25 15:24:41] INFO root fetch - processPackages [pyperclip-plus]: executing diffoscope
+[2024-05-25 15:24:41] INFO root fetch - processPackages [pyperclip-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyperclip_plus-0.1.7.tar.gz tmp/pyperclip_plus-0.1.8.tar.gz --markdown 20240525/p/pyperclip-plus/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 15:24:41] INFO root fetch - processPackages [django-fastoche]: Downloading https://files.pythonhosted.org/packages/23/99/0f673728d835e011e12130164eda21495e7cf86f11be43d775d7d3439723/django_fastoche-0.1.3.tar.gz
+[2024-05-25 15:24:42] INFO root fetch - processPackages [pyperclip-plus]: Remove: archive file [/home/abi/fetcher/tmp/pyperclip_plus-0.1.7.tar.gz]
+[2024-05-25 15:24:42] INFO root fetch - processPackages [pyperclip-plus]: Remove: archive file [/home/abi/fetcher/tmp/pyperclip_plus-0.1.8.tar.gz]
+[2024-05-25 15:24:42] INFO root fetch - main [MainThread]: End processing [pyperclip-plus]: success
+[2024-05-25 15:24:42] INFO root fetch - processPackages [django-fastoche]: executing diffoscope
+[2024-05-25 15:24:42] INFO root fetch - processPackages [django-fastoche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fastoche-0.1.1.tar.gz tmp/django_fastoche-0.1.3.tar.gz --markdown 20240525/d/django-fastoche/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-05-25 15:24:53] INFO root fetch - processPackages [django-fastoche]: Remove: archive file [/home/abi/fetcher/tmp/django_fastoche-0.1.1.tar.gz]
+[2024-05-25 15:24:53] INFO root fetch - processPackages [django-fastoche]: Remove: archive file [/home/abi/fetcher/tmp/django_fastoche-0.1.3.tar.gz]
+[2024-05-25 15:24:53] INFO root fetch - main [MainThread]: End processing [django-fastoche]: success
+[2024-05-25 15:24:53] INFO root fetch - main [MainThread]: Store serial: [23375060]
