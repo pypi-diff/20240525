@@ -16765,3 +16765,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:42:35] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.7.0.tar.gz]
 [2024-05-25 15:42:35] INFO root fetch - main [MainThread]: End processing [nokey]: success
 [2024-05-25 15:42:35] INFO root fetch - main [MainThread]: Store serial: [23375406]
+[2024-05-25 15:44:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375406]
+[2024-05-25 15:44:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 15:44:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lavague-drivers-selenium
+[2024-05-25 15:44:43] INFO root fetch - processPackages [lavague-drivers-selenium]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 15:44:44] INFO root fetch - processPackages [lavague-drivers-selenium]: Downloading https://files.pythonhosted.org/packages/d6/e2/336640ebb9db48de984463d969937874760c4f4b08ed763d3316c7f1dc74/lavague_drivers_selenium-0.1.3.tar.gz
+[2024-05-25 15:44:44] INFO root fetch - processPackages [lavague-drivers-selenium]: Downloading https://files.pythonhosted.org/packages/f9/d5/5562816afeed2b3c92b93af6a81d9f01044654bd1cbff3605866552f54a1/lavague_drivers_selenium-0.1.4.tar.gz
+[2024-05-25 15:44:44] INFO root fetch - processPackages [lavague-drivers-selenium]: executing diffoscope
+[2024-05-25 15:44:44] INFO root fetch - processPackages [lavague-drivers-selenium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lavague_drivers_selenium-0.1.3.tar.gz tmp/lavague_drivers_selenium-0.1.4.tar.gz --markdown 20240525/l/lavague-drivers-selenium/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 15:44:45] INFO root fetch - processPackages [lavague-drivers-selenium]: Remove: archive file [/home/abi/fetcher/tmp/lavague_drivers_selenium-0.1.3.tar.gz]
+[2024-05-25 15:44:45] INFO root fetch - processPackages [lavague-drivers-selenium]: Remove: archive file [/home/abi/fetcher/tmp/lavague_drivers_selenium-0.1.4.tar.gz]
+[2024-05-25 15:44:45] INFO root fetch - main [MainThread]: End processing [lavague-drivers-selenium]: success
+[2024-05-25 15:44:45] INFO root fetch - main [MainThread]: Store serial: [23375415]
