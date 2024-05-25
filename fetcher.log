@@ -11983,3 +11983,9 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:18:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
 [2024-05-25 11:18:38] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
 [2024-05-25 11:18:38] INFO root fetch - main [MainThread]: Store serial: [23373564]
+[2024-05-25 11:20:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373564]
+[2024-05-25 11:20:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 11:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psbbridge
+[2024-05-25 11:20:46] WARNING root fetch - processPackages [psbbridge]: Skipping, unable to determine old version
+[2024-05-25 11:20:46] INFO root fetch - main [MainThread]: End processing [psbbridge] error
+[2024-05-25 11:20:46] INFO root fetch - main [MainThread]: Store serial: [23373569]
