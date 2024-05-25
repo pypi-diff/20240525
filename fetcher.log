@@ -16708,3 +16708,27 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:38:13] INFO root fetch - processPackages [pypi-shell]: Remove: archive file [/home/abi/fetcher/tmp/pypi_shell-0.1.1.tar.gz]
 [2024-05-25 15:38:13] INFO root fetch - main [MainThread]: End processing [pypi-shell]: success
 [2024-05-25 15:38:13] INFO root fetch - main [MainThread]: Store serial: [23375369]
+[2024-05-25 15:40:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375369]
+[2024-05-25 15:40:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 15:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astro-extras
+[2024-05-25 15:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botrun-google-doc-reader
+[2024-05-25 15:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-25 15:40:22] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.327] Old Version: [0.0.326]
+[2024-05-25 15:40:22] WARNING root fetch - processPackages [botrun-google-doc-reader]: Skipping, unable to determine old version
+[2024-05-25 15:40:22] INFO root fetch - main [MainThread]: End processing [botrun-google-doc-reader] error
+[2024-05-25 15:40:22] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/98/36/ef7c2554f7e10f1a7016c67b878f5a6dca3298c665c937b185a8185f1d71/database_mysql_local-0.0.326.tar.gz
+[2024-05-25 15:40:22] INFO root fetch - processPackages [astro-extras]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 15:40:23] INFO root fetch - processPackages [astro-extras]: Downloading https://files.pythonhosted.org/packages/24/56/0d1fe304d4741117125aeb2ca8cfb889350429de2d6fab2fc1900862572b/astro_extras-0.1.4.tar.gz
+[2024-05-25 15:40:23] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/3f/b5/4df644817eedd15944811a3a77ac1e26ebea7d475b6c5b2f5bcda42d9342/database_mysql_local-0.0.327.tar.gz
+[2024-05-25 15:40:23] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-25 15:40:23] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.326.tar.gz tmp/database_mysql_local-0.0.327.tar.gz --markdown 20240525/d/database-mysql-local/0.0.326-0.0.327/README.md --exclude *.pyd
+[2024-05-25 15:40:23] INFO root fetch - processPackages [astro-extras]: Downloading https://files.pythonhosted.org/packages/56/b7/f7fc057752585dff221ddfecc79e0da2bf97f00f06f9d45e446e61862180/astro_extras-0.1.5.tar.gz
+[2024-05-25 15:40:23] INFO root fetch - processPackages [astro-extras]: executing diffoscope
+[2024-05-25 15:40:23] INFO root fetch - processPackages [astro-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro_extras-0.1.4.tar.gz tmp/astro_extras-0.1.5.tar.gz --markdown 20240525/a/astro-extras/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 15:40:23] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.326.tar.gz]
+[2024-05-25 15:40:23] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.327.tar.gz]
+[2024-05-25 15:40:23] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-25 15:40:24] INFO root fetch - processPackages [astro-extras]: Remove: archive file [/home/abi/fetcher/tmp/astro_extras-0.1.4.tar.gz]
+[2024-05-25 15:40:24] INFO root fetch - processPackages [astro-extras]: Remove: archive file [/home/abi/fetcher/tmp/astro_extras-0.1.5.tar.gz]
+[2024-05-25 15:40:24] INFO root fetch - main [MainThread]: End processing [astro-extras]: success
+[2024-05-25 15:40:24] INFO root fetch - main [MainThread]: Store serial: [23375383]
