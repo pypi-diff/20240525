@@ -21124,3 +21124,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:51:56] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.415.tar.gz]
 [2024-05-25 20:51:56] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 20:51:56] INFO root fetch - main [MainThread]: Store serial: [23377200]
+[2024-05-25 20:54:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377200]
+[2024-05-25 20:54:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 20:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: espy-contact
+[2024-05-25 20:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: custom-viz-lib
+[2024-05-25 20:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magyar
+[2024-05-25 20:54:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bencode-rs
+[2024-05-25 20:54:05] INFO root fetch - processPackages [custom-viz-lib]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 20:54:05] WARNING root fetch - processPackages [bencode-rs]: Skipping, unable to determine old version
+[2024-05-25 20:54:05] INFO root fetch - main [MainThread]: End processing [bencode-rs] error
+[2024-05-25 20:54:05] INFO root fetch - processPackages [magyar]: New version: [4.0.0] Old Version: [3.1.1]
+[2024-05-25 20:54:05] INFO root fetch - processPackages [espy-contact]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-25 20:54:05] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/4b/cc/4bdd38d7aded45eb8463634e2aa847a068a171726bae441ddb2a1cf33721/magyar-3.1.1.tar.gz
+[2024-05-25 20:54:05] INFO root fetch - processPackages [custom-viz-lib]: Downloading https://files.pythonhosted.org/packages/e0/49/765e29db2af452b0ef13bed9bd52bfcc38fb540592eacf101b24dc42efa6/custom_viz_lib-0.1.0.tar.gz
+[2024-05-25 20:54:05] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/2f/a8/597550072e93807f265376f6d6212aae00fb87930e23d691e20d499fa733/espy_contact-2.0.2.tar.gz
+[2024-05-25 20:54:05] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/d8/47/c8c2febbadd0fd4ec73692c6cf1a0a11fb547eeff6f10d6e4cc9ca0afe14/magyar-4.0.0.tar.gz
+[2024-05-25 20:54:06] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2024-05-25 20:54:06] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-3.1.1.tar.gz tmp/magyar-4.0.0.tar.gz --markdown 20240525/m/magyar/3.1.1-4.0.0/README.md --exclude *.pyd
+[2024-05-25 20:54:06] INFO root fetch - processPackages [custom-viz-lib]: Downloading https://files.pythonhosted.org/packages/dc/be/dd8a0cfb871111648068f1c896b2873d59b538e2be5ef5b8a698a1725b6a/custom_viz_lib-0.1.1.tar.gz
+[2024-05-25 20:54:06] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/73/3f/48d2720d6166cc176e8dc9d86f115dc35eb9a40e9fff8a170730bf80b476/espy_contact-2.0.3.tar.gz
+[2024-05-25 20:54:06] INFO root fetch - processPackages [custom-viz-lib]: executing diffoscope
+[2024-05-25 20:54:06] INFO root fetch - processPackages [custom-viz-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_viz_lib-0.1.0.tar.gz tmp/custom_viz_lib-0.1.1.tar.gz --markdown 20240525/c/custom-viz-lib/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 20:54:06] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-25 20:54:06] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.2.tar.gz tmp/espy_contact-2.0.3.tar.gz --markdown 20240525/e/espy-contact/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-25 20:54:06] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-3.1.1.tar.gz]
+[2024-05-25 20:54:06] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.0.tar.gz]
+[2024-05-25 20:54:06] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2024-05-25 20:54:06] INFO root fetch - processPackages [custom-viz-lib]: Remove: archive file [/home/abi/fetcher/tmp/custom_viz_lib-0.1.0.tar.gz]
+[2024-05-25 20:54:06] INFO root fetch - processPackages [custom-viz-lib]: Remove: archive file [/home/abi/fetcher/tmp/custom_viz_lib-0.1.1.tar.gz]
+[2024-05-25 20:54:06] INFO root fetch - main [MainThread]: End processing [custom-viz-lib]: success
+[2024-05-25 20:54:06] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.2.tar.gz]
+[2024-05-25 20:54:06] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.3.tar.gz]
+[2024-05-25 20:54:06] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-25 20:54:06] INFO root fetch - main [MainThread]: Store serial: [23377223]
