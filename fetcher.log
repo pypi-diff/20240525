@@ -9461,3 +9461,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:04:40] INFO root fetch - processPackages [repoqa]: Remove: archive file [/home/abi/fetcher/tmp/repoqa-0.1.2.tar.gz]
 [2024-05-25 08:04:40] INFO root fetch - main [MainThread]: End processing [repoqa]: success
 [2024-05-25 08:04:40] INFO root fetch - main [MainThread]: Store serial: [23372418]
+[2024-05-25 08:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372418]
+[2024-05-25 08:06:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 08:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-attribute-set
+[2024-05-25 08:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argrelay
+[2024-05-25 08:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpservice
+[2024-05-25 08:06:49] INFO root fetch - processPackages [argrelay]: New version: [0.7.1.dev8] Old Version: [0.7.1.dev7]
+[2024-05-25 08:06:49] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/7c/6f/8e5e6f83ed5d1a65c4436201b7367dd8d78553ec43df144b728c7f45ab81/argrelay-0.7.1.dev7.tar.gz
+[2024-05-25 08:06:49] INFO root fetch - processPackages [odoo-addon-attribute-set]: New version: [16.0.1.2.0.1] Old Version: [16.0.1.2.0]
+[2024-05-25 08:06:49] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2024-05-25 08:06:49] INFO root fetch - processPackages [odoo-addon-attribute-set]: Downloading https://files.pythonhosted.org/packages/12/95/26124fca6c2115c87c902b95fc657f5ee305f24554a6710108eeddf60fea/odoo_addon_attribute_set-16.0.1.2.0-py3-none-any.whl
+[2024-05-25 08:06:49] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2024-05-25 08:06:49] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/ae/11/58ad4c931594697f9ca8b4bc5b69eb03b279e68c5185f9e294ad624c9827/argrelay-0.7.1.dev8.tar.gz
+[2024-05-25 08:06:49] INFO root fetch - processPackages [odoo-addon-attribute-set]: Downloading https://files.pythonhosted.org/packages/21/82/550dad0bb7f7b42d86f7b3862b46682cfd6317167532474bcad1c8e3fce0/odoo_addon_attribute_set-16.0.1.2.0.1-py3-none-any.whl
+[2024-05-25 08:06:49] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-25 08:06:49] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.1.dev7.tar.gz tmp/argrelay-0.7.1.dev8.tar.gz --markdown 20240525/a/argrelay/0.7.1.dev7-0.7.1.dev8/README.md --exclude *.pyd
+[2024-05-25 08:06:49] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2024-05-25 08:06:49] INFO root fetch - processPackages [odoo-addon-attribute-set]: executing diffoscope
+[2024-05-25 08:06:49] INFO root fetch - processPackages [odoo-addon-attribute-set]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_attribute_set-16.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_attribute_set-16.0.1.2.0.1-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-attribute-set/16.0.1.2.0-16.0.1.2.0.1/README.md --exclude *.pyd
+[2024-05-25 08:06:50] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2024-05-25 08:06:50] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20240525/m/mpservice/0.9.9-0.9.9.post1/README.md --exclude *.pyd
+[2024-05-25 08:06:50] INFO root fetch - processPackages [odoo-addon-attribute-set]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_attribute_set-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-05-25 08:06:50] INFO root fetch - processPackages [odoo-addon-attribute-set]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_attribute_set-16.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-05-25 08:06:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-attribute-set]: success
+[2024-05-25 08:06:50] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.tar.gz]
+[2024-05-25 08:06:50] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.post1.tar.gz]
+[2024-05-25 08:06:50] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2024-05-25 08:06:51] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev7.tar.gz]
+[2024-05-25 08:06:51] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev8.tar.gz]
+[2024-05-25 08:06:51] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-25 08:06:51] INFO root fetch - main [MainThread]: Store serial: [23372425]
