@@ -18001,3 +18001,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:01:16] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-05-25 17:01:16] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-25 17:01:16] INFO root fetch - main [MainThread]: Store serial: [23375920]
+[2024-05-25 17:03:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375920]
+[2024-05-25 17:03:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 17:03:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: structables
+[2024-05-25 17:03:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyastroweatherio
+[2024-05-25 17:03:26] INFO root fetch - processPackages [structables]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-25 17:03:26] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/b5/58/57f1731e7ffe20f375499e0f2c95fa277521fa220beb721c1094e09bed33/structables-0.2.2.tar.gz
+[2024-05-25 17:03:26] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.50.0.dev9] Old Version: [0.50.0.dev8]
+[2024-05-25 17:03:26] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/0f/55/af97c5391d8344ed95963a4a3a22d24ebca9eed71b97caaa9624a20b19b7/pyastroweatherio-0.50.0.dev8.tar.gz
+[2024-05-25 17:03:26] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/c6/bc/7e0d69abd8277c07243753e634370314cae03e7dedbdb43db3db3e103757/structables-0.3.0.tar.gz
+[2024-05-25 17:03:26] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/b9/a5/6a468b364d1181771e8cad5f5c0a081da4451d5fe6c91549bd88c35ca972/pyastroweatherio-0.50.0.dev9.tar.gz
+[2024-05-25 17:03:26] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-25 17:03:26] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.2.2.tar.gz tmp/structables-0.3.0.tar.gz --markdown 20240525/s/structables/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-25 17:03:26] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-05-25 17:03:26] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.50.0.dev8.tar.gz tmp/pyastroweatherio-0.50.0.dev9.tar.gz --markdown 20240525/p/pyastroweatherio/0.50.0.dev8-0.50.0.dev9/README.md --exclude *.pyd
+[2024-05-25 17:03:27] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev8.tar.gz]
+[2024-05-25 17:03:27] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev9.tar.gz]
+[2024-05-25 17:03:27] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-05-25 17:03:27] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.2.2.tar.gz]
+[2024-05-25 17:03:27] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.0.tar.gz]
+[2024-05-25 17:03:27] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-25 17:03:27] INFO root fetch - main [MainThread]: Store serial: [23375925]
