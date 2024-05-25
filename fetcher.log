@@ -14158,3 +14158,9 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:29:03] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.9-py3-none-any.whl.zip]
 [2024-05-25 14:29:03] INFO root fetch - main [MainThread]: End processing [warskald]: success
 [2024-05-25 14:29:03] INFO root fetch - main [MainThread]: Store serial: [23374594]
+[2024-05-25 14:31:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374594]
+[2024-05-25 14:31:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 14:31:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Majhool-Bionomial
+[2024-05-25 14:31:13] WARNING root fetch - processPackages [Majhool-Bionomial]: Skipping, unable to determine old version
+[2024-05-25 14:31:13] INFO root fetch - main [MainThread]: End processing [Majhool-Bionomial] error
+[2024-05-25 14:31:13] INFO root fetch - main [MainThread]: Store serial: [23374601]
