@@ -10828,3 +10828,23 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:55:25] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
 [2024-05-25 09:55:25] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2024-05-25 09:55:25] INFO root fetch - main [MainThread]: Store serial: [23372970]
+[2024-05-25 09:57:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372970]
+[2024-05-25 09:57:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 09:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: walytis-api
+[2024-05-25 09:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tree-sitter-cpp
+[2024-05-25 09:57:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly
+[2024-05-25 09:57:35] WARNING root fetch - processPackages [walytis-api]: Skipping, unable to determine old version
+[2024-05-25 09:57:35] INFO root fetch - main [MainThread]: End processing [walytis-api] error
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tree-sitter-cpp]: New version: [0.22.1] Old Version: [0.22.0]
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tree-sitter-cpp]: Downloading https://files.pythonhosted.org/packages/36/5c/e3bf31b364bf2a06782c88c110a477506e53856bd520815d81deafa5b589/tree_sitter_cpp-0.22.0-cp38-abi3-win_amd64.whl
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240525] Old Version: [2.17.0.dev20240524]
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tree-sitter-cpp]: Downloading https://files.pythonhosted.org/packages/41/d4/83bb419826c0858c2aa57e2af60cdf4ee7582c86270075f280f43e2221cd/tree-sitter-cpp-0.22.1.tar.gz
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/cf/20/da4ef090741105a7155ff52a487922f8fcdb894e49892d1bd6fec20cb2ad/tf_nightly-2.17.0.dev20240524-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tree-sitter-cpp]: executing diffoscope
+[2024-05-25 09:57:35] INFO root fetch - processPackages [tree-sitter-cpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree_sitter_cpp-0.22.0-cp38-abi3-win_amd64.whl.zip tmp/tree-sitter-cpp-0.22.1.tar.gz --markdown 20240525/t/tree-sitter-cpp/0.22.0-0.22.1/README.md --exclude *.pyd
+[2024-05-25 09:57:36] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 590930861>=10485760
+[2024-05-25 09:57:36] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2024-05-25 09:57:37] INFO root fetch - processPackages [tree-sitter-cpp]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter_cpp-0.22.0-cp38-abi3-win_amd64.whl.zip]
+[2024-05-25 09:57:37] INFO root fetch - processPackages [tree-sitter-cpp]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-cpp-0.22.1.tar.gz]
+[2024-05-25 09:57:37] INFO root fetch - main [MainThread]: End processing [tree-sitter-cpp]: success
+[2024-05-25 09:57:37] INFO root fetch - main [MainThread]: Store serial: [23372988]
