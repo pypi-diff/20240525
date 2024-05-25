@@ -9847,3 +9847,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:45:47] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.5.4.tar.gz]
 [2024-05-25 08:45:47] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
 [2024-05-25 08:45:47] INFO root fetch - main [MainThread]: Store serial: [23372601]
+[2024-05-25 08:47:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372601]
+[2024-05-25 08:47:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 08:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Complex-Bidintha
+[2024-05-25 08:47:56] INFO root fetch - processPackages [Complex-Bidintha]: New version: [0.7] Old Version: [0.6]
+[2024-05-25 08:47:56] INFO root fetch - processPackages [Complex-Bidintha]: Downloading https://files.pythonhosted.org/packages/6c/10/e08ec24c6565387eb82386f22b4269712b69efeca820059bb63f0e1b6b88/Complex_Bidintha-0.6.tar.gz
+[2024-05-25 08:47:57] INFO root fetch - processPackages [Complex-Bidintha]: Downloading https://files.pythonhosted.org/packages/97/44/2adea7b95afd4cd8d31b84d7224c0cf97f70b3189b80c8a9ecd412b93e8d/Complex_Bidintha-0.7.tar.gz
+[2024-05-25 08:47:57] INFO root fetch - processPackages [Complex-Bidintha]: executing diffoscope
+[2024-05-25 08:47:57] INFO root fetch - processPackages [Complex-Bidintha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Complex_Bidintha-0.6.tar.gz tmp/Complex_Bidintha-0.7.tar.gz --markdown 20240525/C/Complex-Bidintha/0.6-0.7/README.md --exclude *.pyd
+[2024-05-25 08:47:57] INFO root fetch - processPackages [Complex-Bidintha]: Remove: archive file [/home/abi/fetcher/tmp/Complex_Bidintha-0.6.tar.gz]
+[2024-05-25 08:47:57] INFO root fetch - processPackages [Complex-Bidintha]: Remove: archive file [/home/abi/fetcher/tmp/Complex_Bidintha-0.7.tar.gz]
+[2024-05-25 08:47:57] INFO root fetch - main [MainThread]: End processing [Complex-Bidintha]: success
+[2024-05-25 08:47:57] INFO root fetch - main [MainThread]: Store serial: [23372604]
