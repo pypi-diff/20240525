@@ -17702,3 +17702,42 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:46:00] INFO root fetch - processPackages [censusdis]: Remove: archive file [/home/abi/fetcher/tmp/censusdis-1.1.8.tar.gz]
 [2024-05-25 16:46:00] INFO root fetch - main [MainThread]: End processing [censusdis]: success
 [2024-05-25 16:46:00] INFO root fetch - main [MainThread]: Store serial: [23375818]
+[2024-05-25 16:48:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375818]
+[2024-05-25 16:48:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 16:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-25 16:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-pipelines-input-validation
+[2024-05-25 16:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumiverse-cpln
+[2024-05-25 16:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reddit-tts-bot
+[2024-05-25 16:48:09] INFO root fetch - processPackages [moveread-pipelines-input-validation]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 16:48:09] INFO root fetch - processPackages [reddit-tts-bot]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-25 16:48:09] INFO root fetch - processPackages [moveread-pipelines-input-validation]: Downloading https://files.pythonhosted.org/packages/58/55/72c6eaa203a82ace9044f6364fbde92503b1abbe69e98a9e4eca46c966a8/moveread_pipelines_input_validation-0.1.6.tar.gz
+[2024-05-25 16:48:09] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/4d/dc/6592a5a23b2b53d8662b9760dbd8976604944f937c791ed60408be9c97fe/reddit_tts_bot-1.0.4.tar.gz
+[2024-05-25 16:48:09] INFO root fetch - processPackages [pulumiverse-cpln]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 16:48:09] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.408] Old Version: [0.45.20240525.407]
+[2024-05-25 16:48:09] INFO root fetch - processPackages [pulumiverse-cpln]: Downloading https://files.pythonhosted.org/packages/1b/fb/9af76754a5f5181f7b978484c9a0f433b0c9489c89d3f2c2d6709f5ca52d/pulumiverse_cpln-0.0.8.tar.gz
+[2024-05-25 16:48:09] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/32/b9/ae5f7277466ba2b431467902204942fcf850a0738831c2e2417560e0d75f/pkscreener-0.45.20240525.407-cp311-cp311-win_amd64.whl
+[2024-05-25 16:48:09] INFO root fetch - processPackages [moveread-pipelines-input-validation]: Downloading https://files.pythonhosted.org/packages/26/a7/9e227549d8de604312eb6b0629dabd7e9da19459e7c4961083e4bae77509/moveread_pipelines_input_validation-0.1.7.tar.gz
+[2024-05-25 16:48:09] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/a2/06/6cf9d0a991ca6f5570f10fec7550357ac4b7d878483a906a6e1f59c4118e/reddit_tts_bot-1.0.5.tar.gz
+[2024-05-25 16:48:10] INFO root fetch - processPackages [moveread-pipelines-input-validation]: executing diffoscope
+[2024-05-25 16:48:10] INFO root fetch - processPackages [moveread-pipelines-input-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_input_validation-0.1.6.tar.gz tmp/moveread_pipelines_input_validation-0.1.7.tar.gz --markdown 20240525/m/moveread-pipelines-input-validation/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 16:48:10] INFO root fetch - processPackages [reddit-tts-bot]: executing diffoscope
+[2024-05-25 16:48:10] INFO root fetch - processPackages [reddit-tts-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit_tts_bot-1.0.4.tar.gz tmp/reddit_tts_bot-1.0.5.tar.gz --markdown 20240525/r/reddit-tts-bot/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pulumiverse-cpln]: Downloading https://files.pythonhosted.org/packages/f1/53/f6afe62a96b0c8443f26009ee143128ed7bc0941b2b1a92c7debc39cb2b3/pulumiverse_cpln-0.0.9.tar.gz
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/ec/84/929c921ff20ec7ea294cdc092adabf6b32da356c6bc1696fc14c7ebea463/pkscreener-0.45.20240525.408-cp311-cp311-macosx_10_9_universal2.whl
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pulumiverse-cpln]: executing diffoscope
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pulumiverse-cpln]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumiverse_cpln-0.0.8.tar.gz tmp/pulumiverse_cpln-0.0.9.tar.gz --markdown 20240525/p/pulumiverse-cpln/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.407-cp311-cp311-win_amd64.whl.zip tmp/pkscreener-0.45.20240525.408-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20240525/p/pkscreener/0.45.20240525.407-0.45.20240525.408/README.md --exclude *.pyd
+[2024-05-25 16:48:10] INFO root fetch - processPackages [moveread-pipelines-input-validation]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_input_validation-0.1.6.tar.gz]
+[2024-05-25 16:48:10] INFO root fetch - processPackages [moveread-pipelines-input-validation]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_input_validation-0.1.7.tar.gz]
+[2024-05-25 16:48:10] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-input-validation]: success
+[2024-05-25 16:48:10] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.4.tar.gz]
+[2024-05-25 16:48:10] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.5.tar.gz]
+[2024-05-25 16:48:10] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pulumiverse-cpln]: Remove: archive file [/home/abi/fetcher/tmp/pulumiverse_cpln-0.0.8.tar.gz]
+[2024-05-25 16:48:10] INFO root fetch - processPackages [pulumiverse-cpln]: Remove: archive file [/home/abi/fetcher/tmp/pulumiverse_cpln-0.0.9.tar.gz]
+[2024-05-25 16:48:10] INFO root fetch - main [MainThread]: End processing [pulumiverse-cpln]: success
+[2024-05-25 16:48:11] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.407-cp311-cp311-win_amd64.whl.zip]
+[2024-05-25 16:48:11] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.408-cp311-cp311-macosx_10_9_universal2.whl.zip]
+[2024-05-25 16:48:11] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 16:48:11] INFO root fetch - main [MainThread]: Store serial: [23375829]
