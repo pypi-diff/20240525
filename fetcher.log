@@ -8325,3 +8325,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:28:31] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
 [2024-05-25 06:28:31] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
 [2024-05-25 06:28:31] INFO root fetch - main [MainThread]: Store serial: [23371886]
+[2024-05-25 06:30:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371886]
+[2024-05-25 06:30:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 06:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: online-scheduler
+[2024-05-25 06:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tree-sitter-starlark
+[2024-05-25 06:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fudstop
+[2024-05-25 06:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypomes-ldap
+[2024-05-25 06:30:40] INFO root fetch - processPackages [online-scheduler]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-25 06:30:40] INFO root fetch - processPackages [fudstop]: New version: [2.7.2] Old Version: [2.7.1]
+[2024-05-25 06:30:41] WARNING root fetch - processPackages [tree-sitter-starlark]: Skipping, unable to determine old version
+[2024-05-25 06:30:41] INFO root fetch - main [MainThread]: End processing [tree-sitter-starlark] error
+[2024-05-25 06:30:41] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/ef/73/e803481142c6a9c300cdd66452a199672a468e9e772dbd079a557244c8b7/fudstop-2.7.1.tar.gz
+[2024-05-25 06:30:41] INFO root fetch - processPackages [pypomes-ldap]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 06:30:41] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/ec/3b/cfa768cb38051eb6391b6419a7584c2b5b29423c00218d9f20fddfa593c5/online_scheduler-0.1.tar.gz
+[2024-05-25 06:30:41] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/99/a9/c311d2cb65dc87bb0418592386a6622999fe83d6a71a9093a4ac6845c7f4/fudstop-2.7.2.tar.gz
+[2024-05-25 06:30:41] INFO root fetch - processPackages [pypomes-ldap]: Downloading https://files.pythonhosted.org/packages/89/aa/584312452bcba269b0a9c16ee0b4b3d78dd63571402203efa87b2701b811/pypomes_ldap-0.1.4.tar.gz
+[2024-05-25 06:30:41] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/76/36/af59d02c5836ace6fad46b81227df3f203d6c4b4dc0556a1ca5d77241bdc/online_scheduler-0.1.1.tar.gz
+[2024-05-25 06:30:41] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 06:30:41] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.1.tar.gz tmp/online_scheduler-0.1.1.tar.gz --markdown 20240525/o/online-scheduler/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-25 06:30:41] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-05-25 06:30:41] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.7.1.tar.gz tmp/fudstop-2.7.2.tar.gz --markdown 20240525/f/fudstop/2.7.1-2.7.2/README.md --exclude *.pyd
+[2024-05-25 06:30:42] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.1.tar.gz]
+[2024-05-25 06:30:42] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.1.1.tar.gz]
+[2024-05-25 06:30:42] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 06:30:42] INFO root fetch - processPackages [pypomes-ldap]: Downloading https://files.pythonhosted.org/packages/75/90/38ae1bb23633af08f2d65d6837ac92b5781407e92105f98fde62971d48e7/pypomes_ldap-0.1.5.tar.gz
+[2024-05-25 06:30:42] INFO root fetch - processPackages [pypomes-ldap]: executing diffoscope
+[2024-05-25 06:30:42] INFO root fetch - processPackages [pypomes-ldap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_ldap-0.1.4.tar.gz tmp/pypomes_ldap-0.1.5.tar.gz --markdown 20240525/p/pypomes-ldap/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 06:30:43] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.7.1.tar.gz]
+[2024-05-25 06:30:43] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.7.2.tar.gz]
+[2024-05-25 06:30:43] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-05-25 06:30:43] INFO root fetch - processPackages [pypomes-ldap]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_ldap-0.1.4.tar.gz]
+[2024-05-25 06:30:43] INFO root fetch - processPackages [pypomes-ldap]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_ldap-0.1.5.tar.gz]
+[2024-05-25 06:30:43] INFO root fetch - main [MainThread]: End processing [pypomes-ldap]: success
+[2024-05-25 06:30:43] INFO root fetch - main [MainThread]: Store serial: [23371905]
