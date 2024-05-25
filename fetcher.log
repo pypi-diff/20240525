@@ -17117,3 +17117,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:10:51] INFO root fetch - processPackages [streamcapture]: Remove: archive file [/home/abi/fetcher/tmp/streamcapture-1.2.3.tar.gz]
 [2024-05-25 16:10:51] INFO root fetch - main [MainThread]: End processing [streamcapture]: success
 [2024-05-25 16:10:51] INFO root fetch - main [MainThread]: Store serial: [23375607]
+[2024-05-25 16:12:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375607]
+[2024-05-25 16:13:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 16:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyZohoAPI
+[2024-05-25 16:13:00] INFO root fetch - processPackages [pyZohoAPI]: New version: [1.0.0] Old Version: [0.9.1]
+[2024-05-25 16:13:00] INFO root fetch - processPackages [pyZohoAPI]: Downloading https://files.pythonhosted.org/packages/9b/98/014838ade2a43d943617d86de75112db24d7685ab17776515ceff91f2808/pyZohoAPI-0.9.1.tar.gz
+[2024-05-25 16:13:00] INFO root fetch - processPackages [pyZohoAPI]: Downloading https://files.pythonhosted.org/packages/f9/13/19869bec91867d32b59df079f5fea0c0952faf22fb6cb5a54b2f7e7f2d7e/pyzohoapi-1.0.0.tar.gz
+[2024-05-25 16:13:01] INFO root fetch - processPackages [pyZohoAPI]: executing diffoscope
+[2024-05-25 16:13:01] INFO root fetch - processPackages [pyZohoAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyZohoAPI-0.9.1.tar.gz tmp/pyzohoapi-1.0.0.tar.gz --markdown 20240525/p/pyZohoAPI/0.9.1-1.0.0/README.md --exclude *.pyd
+[2024-05-25 16:13:01] INFO root fetch - processPackages [pyZohoAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyZohoAPI-0.9.1.tar.gz]
+[2024-05-25 16:13:01] INFO root fetch - processPackages [pyZohoAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyzohoapi-1.0.0.tar.gz]
+[2024-05-25 16:13:01] INFO root fetch - main [MainThread]: End processing [pyZohoAPI]: success
+[2024-05-25 16:13:01] INFO root fetch - main [MainThread]: Store serial: [23375610]
