@@ -20330,3 +20330,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:39:26] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.9.1.tar.gz]
 [2024-05-25 19:39:26] INFO root fetch - main [MainThread]: End processing [blueness]: success
 [2024-05-25 19:39:26] INFO root fetch - main [MainThread]: Store serial: [23376882]
+[2024-05-25 19:41:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376882]
+[2024-05-25 19:41:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ferfereh
+[2024-05-25 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moblin-assistant
+[2024-05-25 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hubblescope
+[2024-05-25 19:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baseball
+[2024-05-25 19:41:35] INFO root fetch - processPackages [hubblescope]: New version: [4.5.1] Old Version: [4.4.1]
+[2024-05-25 19:41:35] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 19:41:35] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/cf/23/ff0d22e87ca189da3729d57e9e0d92c70d555626095ec9029fdd774950eb/hubblescope-4.4.1.tar.gz
+[2024-05-25 19:41:35] INFO root fetch - processPackages [moblin-assistant]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-25 19:41:35] INFO root fetch - processPackages [ferfereh]: New version: [1.127.1] Old Version: [1.126.1]
+[2024-05-25 19:41:35] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [moblin-assistant]: Downloading https://files.pythonhosted.org/packages/08/3a/e71926cea1e67ed604a4fbcb574c4706364e4c46f14ea24df0378eea1689/moblin_assistant-0.2.0.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [ferfereh]: Downloading https://files.pythonhosted.org/packages/a2/1b/c5dc70dc4c88e6748fc6e328885ef47beee82356adc2654747b393a588f0/ferfereh-1.126.1.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/0e/6f/dfd9e6a77bcc9a7afa06bc2512a44416b861fd887dd1ff6c071242154d59/hubblescope-4.5.1.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 19:41:36] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 19:41:36] INFO root fetch - processPackages [hubblescope]: executing diffoscope
+[2024-05-25 19:41:36] INFO root fetch - processPackages [hubblescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubblescope-4.4.1.tar.gz tmp/hubblescope-4.5.1.tar.gz --markdown 20240525/h/hubblescope/4.4.1-4.5.1/README.md --exclude *.pyd
+[2024-05-25 19:41:36] INFO root fetch - processPackages [ferfereh]: Downloading https://files.pythonhosted.org/packages/d6/d4/a1d7b4e8c181aacd4675401917af0f1d7b25d29d984e43e230f29cc4e805/ferfereh-1.127.1.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [moblin-assistant]: Downloading https://files.pythonhosted.org/packages/80/76/af925baf385dc331a6bde13d51aad3fe7c61f6a7345cc27c29e2be4ba797/moblin_assistant-0.3.0.tar.gz
+[2024-05-25 19:41:36] INFO root fetch - processPackages [ferfereh]: executing diffoscope
+[2024-05-25 19:41:36] INFO root fetch - processPackages [ferfereh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferfereh-1.126.1.tar.gz tmp/ferfereh-1.127.1.tar.gz --markdown 20240525/f/ferfereh/1.126.1-1.127.1/README.md --exclude *.pyd
+[2024-05-25 19:41:36] INFO root fetch - processPackages [moblin-assistant]: executing diffoscope
+[2024-05-25 19:41:36] INFO root fetch - processPackages [moblin-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moblin_assistant-0.2.0.tar.gz tmp/moblin_assistant-0.3.0.tar.gz --markdown 20240525/m/moblin-assistant/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-25 19:41:36] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.4.1.tar.gz]
+[2024-05-25 19:41:36] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.5.1.tar.gz]
+[2024-05-25 19:41:36] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
+[2024-05-25 19:41:36] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 19:41:36] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 19:41:36] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 19:41:37] INFO root fetch - processPackages [ferfereh]: Remove: archive file [/home/abi/fetcher/tmp/ferfereh-1.126.1.tar.gz]
+[2024-05-25 19:41:37] INFO root fetch - processPackages [ferfereh]: Remove: archive file [/home/abi/fetcher/tmp/ferfereh-1.127.1.tar.gz]
+[2024-05-25 19:41:37] INFO root fetch - main [MainThread]: End processing [ferfereh]: success
+[2024-05-25 19:41:37] INFO root fetch - processPackages [moblin-assistant]: Remove: archive file [/home/abi/fetcher/tmp/moblin_assistant-0.2.0.tar.gz]
+[2024-05-25 19:41:37] INFO root fetch - processPackages [moblin-assistant]: Remove: archive file [/home/abi/fetcher/tmp/moblin_assistant-0.3.0.tar.gz]
+[2024-05-25 19:41:37] INFO root fetch - main [MainThread]: End processing [moblin-assistant]: success
+[2024-05-25 19:41:37] INFO root fetch - main [MainThread]: Store serial: [23376903]
