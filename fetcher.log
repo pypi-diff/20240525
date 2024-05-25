@@ -11016,3 +11016,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:12:50] INFO root fetch - processPackages [ambr-py]: Remove: archive file [/home/abi/fetcher/tmp/ambr_py-1.7.5.tar.gz]
 [2024-05-25 10:12:50] INFO root fetch - main [MainThread]: End processing [ambr-py]: success
 [2024-05-25 10:12:50] INFO root fetch - main [MainThread]: Store serial: [23373061]
+[2024-05-25 10:14:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373061]
+[2024-05-25 10:14:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 10:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pacspeddbase
+[2024-05-25 10:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: faster-fifo
+[2024-05-25 10:14:59] INFO root fetch - processPackages [faster-fifo]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-05-25 10:14:59] INFO root fetch - processPackages [pacspeddbase]: New version: [0.2] Old Version: [0.1.0]
+[2024-05-25 10:14:59] INFO root fetch - processPackages [faster-fifo]: Downloading https://files.pythonhosted.org/packages/59/ec/18ec355ffd6e3ede5b15523df54f0e34615216c0f7cfe20560e0571e1e4e/faster-fifo-1.4.5.tar.gz
+[2024-05-25 10:14:59] INFO root fetch - processPackages [pacspeddbase]: Downloading https://files.pythonhosted.org/packages/19/57/1261da0390822852cf4ef60edf32dc1e1b762e82250ceba6f6eaa40286da/pacspeddbase-0.1.0.tar.gz
+[2024-05-25 10:15:00] INFO root fetch - processPackages [faster-fifo]: Downloading https://files.pythonhosted.org/packages/fa/f2/6f36b83383d0f2f20ffc5af696177e70c7aaa0b713d291e6817b4522371d/faster_fifo-1.4.6.tar.gz
+[2024-05-25 10:15:00] INFO root fetch - processPackages [faster-fifo]: executing diffoscope
+[2024-05-25 10:15:00] INFO root fetch - processPackages [faster-fifo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster-fifo-1.4.5.tar.gz tmp/faster_fifo-1.4.6.tar.gz --markdown 20240525/f/faster-fifo/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-05-25 10:15:00] INFO root fetch - processPackages [pacspeddbase]: Downloading https://files.pythonhosted.org/packages/71/c3/9bc6ac9bcd889055c3c16218aa7a05ccb3cbbe367175c09bca37157756cd/pacspeddbase-0.2.tar.gz
+[2024-05-25 10:15:00] INFO root fetch - processPackages [pacspeddbase]: executing diffoscope
+[2024-05-25 10:15:00] INFO root fetch - processPackages [pacspeddbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pacspeddbase-0.1.0.tar.gz tmp/pacspeddbase-0.2.tar.gz --markdown 20240525/p/pacspeddbase/0.1.0-0.2/README.md --exclude *.pyd
+[2024-05-25 10:15:00] INFO root fetch - processPackages [faster-fifo]: Remove: archive file [/home/abi/fetcher/tmp/faster-fifo-1.4.5.tar.gz]
+[2024-05-25 10:15:00] INFO root fetch - processPackages [faster-fifo]: Remove: archive file [/home/abi/fetcher/tmp/faster_fifo-1.4.6.tar.gz]
+[2024-05-25 10:15:00] INFO root fetch - main [MainThread]: End processing [faster-fifo]: success
+[2024-05-25 10:15:01] INFO root fetch - processPackages [pacspeddbase]: Remove: archive file [/home/abi/fetcher/tmp/pacspeddbase-0.1.0.tar.gz]
+[2024-05-25 10:15:01] INFO root fetch - processPackages [pacspeddbase]: Remove: archive file [/home/abi/fetcher/tmp/pacspeddbase-0.2.tar.gz]
+[2024-05-25 10:15:01] INFO root fetch - main [MainThread]: End processing [pacspeddbase]: success
+[2024-05-25 10:15:01] INFO root fetch - main [MainThread]: Store serial: [23373075]
