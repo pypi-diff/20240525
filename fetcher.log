@@ -9024,3 +9024,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:25:09] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.3.tar.gz]
 [2024-05-25 07:25:09] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
 [2024-05-25 07:25:09] INFO root fetch - main [MainThread]: Store serial: [23372218]
+[2024-05-25 07:27:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372218]
+[2024-05-25 07:27:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 07:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: knowledge-graph-maker
+[2024-05-25 07:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djpress
+[2024-05-25 07:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dnacurve
+[2024-05-25 07:27:19] WARNING root fetch - processPackages [djpress]: Skipping, unable to determine old version
+[2024-05-25 07:27:19] INFO root fetch - main [MainThread]: End processing [djpress] error
+[2024-05-25 07:27:19] INFO root fetch - processPackages [dnacurve]: New version: [2024.5.24] Old Version: [2024.5.10]
+[2024-05-25 07:27:19] INFO root fetch - processPackages [knowledge-graph-maker]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 07:27:19] INFO root fetch - processPackages [dnacurve]: Downloading https://files.pythonhosted.org/packages/8a/0b/d064ea9cca7ecbebc57e586bf66c89bb3485069919b7045a9a24a889465d/dnacurve-2024.5.10.tar.gz
+[2024-05-25 07:27:19] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/64/c7/55323fb99d17f7b0303e8c129b6fcd92870899e6767c71484e5ef4767bd3/knowledge_graph_maker-0.2.0.tar.gz
+[2024-05-25 07:27:19] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/22/28/8e6c6513b41859451e44c1c3efef2a641ccdd4044808c58cc2d3f9cf306b/knowledge_graph_maker-0.2.1.tar.gz
+[2024-05-25 07:27:19] INFO root fetch - processPackages [dnacurve]: Downloading https://files.pythonhosted.org/packages/c2/55/e8834d992d35fa1f15b95d75edef6f84a9ac3ba606822ab5469bd807b95e/dnacurve-2024.5.24.tar.gz
+[2024-05-25 07:27:19] INFO root fetch - processPackages [knowledge-graph-maker]: executing diffoscope
+[2024-05-25 07:27:19] INFO root fetch - processPackages [knowledge-graph-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge_graph_maker-0.2.0.tar.gz tmp/knowledge_graph_maker-0.2.1.tar.gz --markdown 20240525/k/knowledge-graph-maker/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-25 07:27:19] INFO root fetch - processPackages [dnacurve]: executing diffoscope
+[2024-05-25 07:27:19] INFO root fetch - processPackages [dnacurve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnacurve-2024.5.10.tar.gz tmp/dnacurve-2024.5.24.tar.gz --markdown 20240525/d/dnacurve/2024.5.10-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 07:27:20] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.2.0.tar.gz]
+[2024-05-25 07:27:20] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.2.1.tar.gz]
+[2024-05-25 07:27:20] INFO root fetch - main [MainThread]: End processing [knowledge-graph-maker]: success
+[2024-05-25 07:27:20] INFO root fetch - processPackages [dnacurve]: Remove: archive file [/home/abi/fetcher/tmp/dnacurve-2024.5.10.tar.gz]
+[2024-05-25 07:27:20] INFO root fetch - processPackages [dnacurve]: Remove: archive file [/home/abi/fetcher/tmp/dnacurve-2024.5.24.tar.gz]
+[2024-05-25 07:27:20] INFO root fetch - main [MainThread]: End processing [dnacurve]: success
+[2024-05-25 07:27:20] INFO root fetch - main [MainThread]: Store serial: [23372227]
