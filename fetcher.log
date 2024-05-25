@@ -18831,3 +18831,48 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:03:03] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.412-cp311-cp311-macosx_10_9_universal2.whl.zip]
 [2024-05-25 18:03:03] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 18:03:03] INFO root fetch - main [MainThread]: Store serial: [23376310]
+[2024-05-25 18:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376310]
+[2024-05-25 18:05:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: class4
+[2024-05-25 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zprp-ffmpeg
+[2024-05-25 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: peaqevcore
+[2024-05-25 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-ms
+[2024-05-25 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sunnyday-bg3737366
+[2024-05-25 18:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sapiopycommons
+[2024-05-25 18:05:13] WARNING root fetch - processPackages [class4]: Skipping, unable to determine old version
+[2024-05-25 18:05:13] INFO root fetch - main [MainThread]: End processing [class4] error
+[2024-05-25 18:05:13] INFO root fetch - processPackages [sapiopycommons]: New version: [32.0.1.24.5] Old Version: [32.0.0.24.5]
+[2024-05-25 18:05:13] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-25 18:05:13] INFO root fetch - processPackages [zprp-ffmpeg]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-25 18:05:13] INFO root fetch - processPackages [py-ms]: New version: [2.9.0rc1] Old Version: [2.8.0]
+[2024-05-25 18:05:13] ERROR root fetch - processPackages [sunnyday-bg3737366]: Unable to get metadata: No such project 'sunnyday-bg3737366'
+[2024-05-25 18:05:13] INFO root fetch - main [MainThread]: End processing [sunnyday-bg3737366] error
+[2024-05-25 18:05:13] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/0c/8b/0170bd70e4900ced2aa4175842870794a40878c22e225984082dc82568b7/sapiopycommons-32.0.0.24.5.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/0d/6f/54ff7b04788f9712a5e45a9dc56e798c08479d3d2e210d2852eee46d606f/zprp_ffmpeg-1.0.0.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [py-ms]: Downloading https://files.pythonhosted.org/packages/ba/d5/35399ac68b7da47e961fbd1e52ee3dfa889fb7ada16bf33fa8b27745f4d1/py-ms-2.8.0.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/b8/f4/afb1b2a15f4233c0a7fd8f2372800567dc946d09ecb8eff1f472df4d51bd/sapiopycommons-32.0.1.24.5.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-25 18:05:14] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-32.0.0.24.5.tar.gz tmp/sapiopycommons-32.0.1.24.5.tar.gz --markdown 20240525/s/sapiopycommons/32.0.0.24.5-32.0.1.24.5/README.md --exclude *.pyd
+[2024-05-25 18:05:14] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/d4/01/42d2bad8ebb66e7301ea11c7692a24b8573dc0368fb6163010d3427c6930/zprp_ffmpeg-1.1.0.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-25 18:05:14] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240525/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-25 18:05:14] INFO root fetch - processPackages [zprp-ffmpeg]: executing diffoscope
+[2024-05-25 18:05:14] INFO root fetch - processPackages [zprp-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zprp_ffmpeg-1.0.0.tar.gz tmp/zprp_ffmpeg-1.1.0.tar.gz --markdown 20240525/z/zprp-ffmpeg/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-25 18:05:14] INFO root fetch - processPackages [py-ms]: Downloading https://files.pythonhosted.org/packages/f8/2d/223cff70c7fb65371d7d25704f629ea04d042554bf2e5309161a2931f3a6/py_ms-2.9.0rc1.tar.gz
+[2024-05-25 18:05:14] INFO root fetch - processPackages [py-ms]: executing diffoscope
+[2024-05-25 18:05:14] INFO root fetch - processPackages [py-ms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-ms-2.8.0.tar.gz tmp/py_ms-2.9.0rc1.tar.gz --markdown 20240525/p/py-ms/2.8.0-2.9.0rc1/README.md --exclude *.pyd
+[2024-05-25 18:05:15] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-32.0.0.24.5.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-32.0.1.24.5.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-25 18:05:15] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-1.0.0.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-1.1.0.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
+[2024-05-25 18:05:15] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-25 18:05:15] INFO root fetch - processPackages [py-ms]: Remove: archive file [/home/abi/fetcher/tmp/py-ms-2.8.0.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - processPackages [py-ms]: Remove: archive file [/home/abi/fetcher/tmp/py_ms-2.9.0rc1.tar.gz]
+[2024-05-25 18:05:15] INFO root fetch - main [MainThread]: End processing [py-ms]: success
+[2024-05-25 18:05:15] INFO root fetch - main [MainThread]: Store serial: [23376330]
