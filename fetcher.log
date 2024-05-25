@@ -17896,3 +17896,9 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:52:34] INFO root fetch - processPackages [qis]: Remove: archive file [/home/abi/fetcher/tmp/qis-2.0.9.tar.gz]
 [2024-05-25 16:52:34] INFO root fetch - main [MainThread]: End processing [qis]: success
 [2024-05-25 16:52:34] INFO root fetch - main [MainThread]: Store serial: [23375887]
+[2024-05-25 16:54:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375887]
+[2024-05-25 16:54:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 16:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osbot-github
+[2024-05-25 16:54:43] WARNING root fetch - processPackages [osbot-github]: Skipping, unable to determine old version
+[2024-05-25 16:54:43] INFO root fetch - main [MainThread]: End processing [osbot-github] error
+[2024-05-25 16:54:43] INFO root fetch - main [MainThread]: Store serial: [23375890]
