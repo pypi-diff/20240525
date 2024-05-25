@@ -9187,3 +9187,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:38:40] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240525.115.tar.gz]
 [2024-05-25 07:38:40] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
 [2024-05-25 07:38:40] INFO root fetch - main [MainThread]: Store serial: [23372288]
+[2024-05-25 07:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372288]
+[2024-05-25 07:40:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 07:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autosink_data_extraction
+[2024-05-25 07:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-rpyc
+[2024-05-25 07:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyserde
+[2024-05-25 07:40:49] INFO root fetch - processPackages [django-rpyc]: New version: [0.1.12] Old Version: [0.1.11]
+[2024-05-25 07:40:49] INFO root fetch - processPackages [django-rpyc]: Downloading https://files.pythonhosted.org/packages/9b/7c/891e54c4d581bb250c16c32d5b107dd490a379c9bf911cba495ae2bc4a5c/django_rpyc-0.1.11.tar.gz
+[2024-05-25 07:40:49] WARNING root fetch - processPackages [autosink_data_extraction]: Skipping, unable to determine old version
+[2024-05-25 07:40:49] INFO root fetch - main [MainThread]: End processing [autosink_data_extraction] error
+[2024-05-25 07:40:49] INFO root fetch - processPackages [pyserde]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-25 07:40:49] INFO root fetch - processPackages [pyserde]: Downloading https://files.pythonhosted.org/packages/c6/fd/8a6d9967aa1ca3450ce7bf8b1556359e7801a809e354b85682ed16481fb5/pyserde-0.9.7.tar.gz
+[2024-05-25 07:40:49] INFO root fetch - processPackages [django-rpyc]: Downloading https://files.pythonhosted.org/packages/a3/39/1159bd7ea6ccfa522cfdee15b76c9050573a4006e864f7363e9f44a965b1/django_rpyc-0.1.12.tar.gz
+[2024-05-25 07:40:49] INFO root fetch - processPackages [django-rpyc]: executing diffoscope
+[2024-05-25 07:40:49] INFO root fetch - processPackages [django-rpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_rpyc-0.1.11.tar.gz tmp/django_rpyc-0.1.12.tar.gz --markdown 20240525/d/django-rpyc/0.1.11-0.1.12/README.md --exclude *.pyd
+[2024-05-25 07:40:50] INFO root fetch - processPackages [pyserde]: Downloading https://files.pythonhosted.org/packages/08/1d/65f8f49d7df9b9326fb7de9ae0bb1dae880de85e2ae08ee6d850014f4b7d/pyserde-0.9.8.tar.gz
+[2024-05-25 07:40:50] INFO root fetch - processPackages [pyserde]: executing diffoscope
+[2024-05-25 07:40:50] INFO root fetch - processPackages [pyserde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserde-0.9.7.tar.gz tmp/pyserde-0.9.8.tar.gz --markdown 20240525/p/pyserde/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-25 07:40:50] INFO root fetch - processPackages [django-rpyc]: Remove: archive file [/home/abi/fetcher/tmp/django_rpyc-0.1.11.tar.gz]
+[2024-05-25 07:40:50] INFO root fetch - processPackages [django-rpyc]: Remove: archive file [/home/abi/fetcher/tmp/django_rpyc-0.1.12.tar.gz]
+[2024-05-25 07:40:50] INFO root fetch - main [MainThread]: End processing [django-rpyc]: success
+[2024-05-25 07:40:50] INFO root fetch - processPackages [pyserde]: Remove: archive file [/home/abi/fetcher/tmp/pyserde-0.9.7.tar.gz]
+[2024-05-25 07:40:50] INFO root fetch - processPackages [pyserde]: Remove: archive file [/home/abi/fetcher/tmp/pyserde-0.9.8.tar.gz]
+[2024-05-25 07:40:50] INFO root fetch - main [MainThread]: End processing [pyserde]: success
+[2024-05-25 07:40:50] INFO root fetch - main [MainThread]: Store serial: [23372299]
