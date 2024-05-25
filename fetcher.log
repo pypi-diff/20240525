@@ -7099,3 +7099,69 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:55:25] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-05-25 03:55:25] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-05-25 03:55:25] INFO root fetch - main [MainThread]: Store serial: [23371291]
+[2024-05-25 03:57:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371291]
+[2024-05-25 03:57:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vancouver-watching
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: articraft
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hubblescope
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baseball
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gizai
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hddm-s
+[2024-05-25 03:57:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mb-pytorch
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.77]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [vancouver-watching]: New version: [3.347.1] Old Version: [3.346.1]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [articraft]: New version: [2.5.1] Old Version: [2.4.1]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hubblescope]: New version: [4.4.1] Old Version: [4.3.1]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [gizai]: New version: [5.9.1] Old Version: [5.6.1]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/0a/88/9cd5dfcb9b0d744b22d35ba07f1eff5fd29dd62c9d16934810dbe17748a0/articraft-2.4.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/76/af/382d5a0d8283d34b1feb52a3079403716d5509789484bcc5d1589cbe9b7c/vancouver_watching-3.346.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/3e/9f/b828999d02e78c68fac156e4cae07c021636cd8f4364891ad8b1a5ce373f/hubblescope-4.3.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.5] Old Version: [1.0.45]
+[2024-05-25 03:57:37] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/01/83/b0110f05b1480d30f378d727382dac2b2e091afab0e8b384fd19699747f7/gizai-5.6.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/45/8e/70e1703037067f166112e4dde1190d2a623c31972430ce8e591284fc27b1/hddm_s-1.0.77.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/77/35/afde11d7edc5574ed341985c09b9d10e4f92669ced65e21a1c3d1e66e53a/mb_pytorch-1.0.45.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/8b/65/f136e9a9a6975371a3241effba343c3f086c5680ee7b5164d79c143f53ae/vancouver_watching-3.347.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/05/d2/d363b6cb153905f0e77d67485410ee691c50181f60ad406a3ed82d2fd54e/articraft-2.5.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hubblescope]: Downloading https://files.pythonhosted.org/packages/cf/23/ff0d22e87ca189da3729d57e9e0d92c70d555626095ec9029fdd774950eb/hubblescope-4.4.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/bd/e0/e34a72b06da9054a2c2be6561feb68d8df248f033dea7576bd6df6bb25a9/gizai-5.9.1.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 03:57:37] INFO root fetch - processPackages [vancouver-watching]: executing diffoscope
+[2024-05-25 03:57:37] INFO root fetch - processPackages [vancouver-watching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vancouver_watching-3.346.1.tar.gz tmp/vancouver_watching-3.347.1.tar.gz --markdown 20240525/v/vancouver-watching/3.346.1-3.347.1/README.md --exclude *.pyd
+[2024-05-25 03:57:37] INFO root fetch - processPackages [articraft]: executing diffoscope
+[2024-05-25 03:57:37] INFO root fetch - processPackages [articraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articraft-2.4.1.tar.gz tmp/articraft-2.5.1.tar.gz --markdown 20240525/a/articraft/2.4.1-2.5.1/README.md --exclude *.pyd
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hubblescope]: executing diffoscope
+[2024-05-25 03:57:37] INFO root fetch - processPackages [hubblescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubblescope-4.3.1.tar.gz tmp/hubblescope-4.4.1.tar.gz --markdown 20240525/h/hubblescope/4.3.1-4.4.1/README.md --exclude *.pyd
+[2024-05-25 03:57:38] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 03:57:38] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 03:57:38] INFO root fetch - processPackages [gizai]: executing diffoscope
+[2024-05-25 03:57:38] INFO root fetch - processPackages [gizai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gizai-5.6.1.tar.gz tmp/gizai-5.9.1.tar.gz --markdown 20240525/g/gizai/5.6.1-5.9.1/README.md --exclude *.pyd
+[2024-05-25 03:57:38] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 03:57:38] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.77.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.77-1.0.9/README.md --exclude *.pyd
+[2024-05-25 03:57:38] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/18/ae/b46b20b02b5f2c2a25fcae91a88f80ab1e1c18413f89f662d20e5475e824/mb_pytorch-1.0.5.tar.gz
+[2024-05-25 03:57:38] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2024-05-25 03:57:38] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.45.tar.gz tmp/mb_pytorch-1.0.5.tar.gz --markdown 20240525/m/mb-pytorch/1.0.45-1.0.5/README.md --exclude *.pyd
+[2024-05-25 03:57:38] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.4.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.5.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - main [MainThread]: End processing [articraft]: success
+[2024-05-25 03:57:38] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.3.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - processPackages [hubblescope]: Remove: archive file [/home/abi/fetcher/tmp/hubblescope-4.4.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - main [MainThread]: End processing [hubblescope]: success
+[2024-05-25 03:57:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.77.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 03:57:38] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.346.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.347.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
+[2024-05-25 03:57:38] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.6.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.9.1.tar.gz]
+[2024-05-25 03:57:38] INFO root fetch - main [MainThread]: End processing [gizai]: success
+[2024-05-25 03:57:39] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 03:57:39] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 03:57:39] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 03:57:39] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.45.tar.gz]
+[2024-05-25 03:57:39] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.5.tar.gz]
+[2024-05-25 03:57:39] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2024-05-25 03:57:39] INFO root fetch - main [MainThread]: Store serial: [23371313]
