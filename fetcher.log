@@ -11085,3 +11085,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:21:33] INFO root fetch - processPackages [broken-source]: Remove: archive file [/home/abi/fetcher/tmp/broken_source-0.3.0-py3-none-any.whl.zip]
 [2024-05-25 10:21:33] INFO root fetch - main [MainThread]: End processing [broken-source]: success
 [2024-05-25 10:21:33] INFO root fetch - main [MainThread]: Store serial: [23373148]
+[2024-05-25 10:23:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373148]
+[2024-05-25 10:23:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 10:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elegantt
+[2024-05-25 10:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tgqSim
+[2024-05-25 10:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biochain
+[2024-05-25 10:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zern
+[2024-05-25 10:23:42] WARNING root fetch - processPackages [biochain]: Skipping, unable to determine old version
+[2024-05-25 10:23:42] INFO root fetch - main [MainThread]: End processing [biochain] error
+[2024-05-25 10:23:42] INFO root fetch - processPackages [elegantt]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 10:23:42] INFO root fetch - processPackages [zern]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 10:23:42] INFO root fetch - processPackages [tgqSim]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-25 10:23:42] INFO root fetch - processPackages [elegantt]: Downloading https://files.pythonhosted.org/packages/22/bf/ca4d45efe51b1667729d70093f570410296b114a8214ff7f6b158e98a158/elegantt-0.0.4.tar.gz
+[2024-05-25 10:23:42] INFO root fetch - processPackages [tgqSim]: Downloading https://files.pythonhosted.org/packages/6b/92/90ed549d6159389832530d6b6dba68ab6b92061ebeb464fb8605af230c9c/tgqSim-0.2.9.tar.gz
+[2024-05-25 10:23:42] INFO root fetch - processPackages [zern]: Downloading https://files.pythonhosted.org/packages/1f/da/00162e2371310a89c93444b828c4ef9046e808f78d46d6d744de51a78a29/zern-0.0.8.tar.gz
+[2024-05-25 10:23:43] INFO root fetch - processPackages [tgqSim]: Downloading https://files.pythonhosted.org/packages/5e/25/392683466bdb87ab8fec88151fae96e4038b5d7d01ff2dcd73481fa4bf54/tgqSim-0.3.0.tar.gz
+[2024-05-25 10:23:43] INFO root fetch - processPackages [zern]: Downloading https://files.pythonhosted.org/packages/da/2b/b995610e20e170f20bfa70249e2c9ccfa458bda26c1898ebe6ba0844b9e6/zern-0.0.9.tar.gz
+[2024-05-25 10:23:43] INFO root fetch - processPackages [tgqSim]: executing diffoscope
+[2024-05-25 10:23:43] INFO root fetch - processPackages [tgqSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgqSim-0.2.9.tar.gz tmp/tgqSim-0.3.0.tar.gz --markdown 20240525/t/tgqSim/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-25 10:23:43] INFO root fetch - processPackages [zern]: executing diffoscope
+[2024-05-25 10:23:43] INFO root fetch - processPackages [zern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zern-0.0.8.tar.gz tmp/zern-0.0.9.tar.gz --markdown 20240525/z/zern/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 10:23:43] INFO root fetch - processPackages [zern]: Remove: archive file [/home/abi/fetcher/tmp/zern-0.0.8.tar.gz]
+[2024-05-25 10:23:43] INFO root fetch - processPackages [zern]: Remove: archive file [/home/abi/fetcher/tmp/zern-0.0.9.tar.gz]
+[2024-05-25 10:23:43] INFO root fetch - main [MainThread]: End processing [zern]: success
+[2024-05-25 10:23:43] INFO root fetch - processPackages [elegantt]: Downloading https://files.pythonhosted.org/packages/a1/0e/0899db04c51d50dc500f64c86b8e0d407b4669438e49d25a8b0098da8bcf/elegantt-0.0.5.tar.gz
+[2024-05-25 10:23:43] INFO root fetch - processPackages [elegantt]: executing diffoscope
+[2024-05-25 10:23:43] INFO root fetch - processPackages [elegantt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elegantt-0.0.4.tar.gz tmp/elegantt-0.0.5.tar.gz --markdown 20240525/e/elegantt/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 10:23:44] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.2.9.tar.gz]
+[2024-05-25 10:23:44] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.3.0.tar.gz]
+[2024-05-25 10:23:44] INFO root fetch - main [MainThread]: End processing [tgqSim]: success
+[2024-05-25 10:23:44] INFO root fetch - processPackages [elegantt]: Remove: archive file [/home/abi/fetcher/tmp/elegantt-0.0.4.tar.gz]
+[2024-05-25 10:23:44] INFO root fetch - processPackages [elegantt]: Remove: archive file [/home/abi/fetcher/tmp/elegantt-0.0.5.tar.gz]
+[2024-05-25 10:23:44] INFO root fetch - main [MainThread]: End processing [elegantt]: success
+[2024-05-25 10:23:44] INFO root fetch - main [MainThread]: Store serial: [23373159]
