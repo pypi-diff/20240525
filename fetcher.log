@@ -10735,3 +10735,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:48:52] INFO root fetch - processPackages [foscat]: Remove: archive file [/home/abi/fetcher/tmp/foscat-3.0.9.tar.gz]
 [2024-05-25 09:48:52] INFO root fetch - main [MainThread]: End processing [foscat]: success
 [2024-05-25 09:48:52] INFO root fetch - main [MainThread]: Store serial: [23372935]
+[2024-05-25 09:50:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372935]
+[2024-05-25 09:51:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 09:51:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bsphud
+[2024-05-25 09:51:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ryry-cli
+[2024-05-25 09:51:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyontoenv
+[2024-05-25 09:51:01] INFO root fetch - processPackages [ryry-cli]: New version: [2.4] Old Version: [2.3]
+[2024-05-25 09:51:01] INFO root fetch - processPackages [ryry-cli]: Downloading https://files.pythonhosted.org/packages/bf/86/87cbeb9858f8dfce36652ed7266b31be1319537054f85af02102e251e52a/ryry_cli-2.3.tar.gz
+[2024-05-25 09:51:01] INFO root fetch - processPackages [bsphud]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 09:51:01] INFO root fetch - processPackages [pyontoenv]: New version: [0.1.7a4] Old Version: [0.1.7a3]
+[2024-05-25 09:51:01] INFO root fetch - processPackages [pyontoenv]: Downloading https://files.pythonhosted.org/packages/2f/24/0f9f04ed3e47b65d2123fd1842128a45f9d9d07a267893a73c3c1ee72789/pyontoenv-0.1.7a3.tar.gz
+[2024-05-25 09:51:01] INFO root fetch - processPackages [bsphud]: Downloading https://files.pythonhosted.org/packages/62/f5/759ad9738ff2ba7396b2e002599cddb006d34fed32d494a86df976eaf3f8/bsphud-1.0.3.tar.gz
+[2024-05-25 09:51:01] INFO root fetch - processPackages [ryry-cli]: Downloading https://files.pythonhosted.org/packages/c4/56/705d441df33743f2debcdf910e7b9e61d4bf7ea7bdb5210dca036aaa16bc/ryry_cli-2.4.tar.gz
+[2024-05-25 09:51:02] INFO root fetch - processPackages [ryry-cli]: executing diffoscope
+[2024-05-25 09:51:02] INFO root fetch - processPackages [ryry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryry_cli-2.3.tar.gz tmp/ryry_cli-2.4.tar.gz --markdown 20240525/r/ryry-cli/2.3-2.4/README.md --exclude *.pyd
+[2024-05-25 09:51:02] INFO root fetch - processPackages [bsphud]: Downloading https://files.pythonhosted.org/packages/54/6c/299bdc7edaccd6d3d9c62f0261d5710c033b71caebdee9a2686d3e54dd44/bsphud-1.0.4.tar.gz
+[2024-05-25 09:51:02] INFO root fetch - processPackages [pyontoenv]: Downloading https://files.pythonhosted.org/packages/10/f3/4d3783cc6261562ec904020356ca4880b8bfd05c03cb994c4170be3eac75/pyontoenv-0.1.7a4.tar.gz
+[2024-05-25 09:51:02] INFO root fetch - processPackages [bsphud]: executing diffoscope
+[2024-05-25 09:51:02] INFO root fetch - processPackages [bsphud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bsphud-1.0.3.tar.gz tmp/bsphud-1.0.4.tar.gz --markdown 20240525/b/bsphud/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 09:51:02] INFO root fetch - processPackages [pyontoenv]: executing diffoscope
+[2024-05-25 09:51:02] INFO root fetch - processPackages [pyontoenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyontoenv-0.1.7a3.tar.gz tmp/pyontoenv-0.1.7a4.tar.gz --markdown 20240525/p/pyontoenv/0.1.7a3-0.1.7a4/README.md --exclude *.pyd
+[2024-05-25 09:51:02] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.3.tar.gz]
+[2024-05-25 09:51:02] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.4.tar.gz]
+[2024-05-25 09:51:02] INFO root fetch - main [MainThread]: End processing [ryry-cli]: success
+[2024-05-25 09:51:02] INFO root fetch - processPackages [bsphud]: Remove: archive file [/home/abi/fetcher/tmp/bsphud-1.0.3.tar.gz]
+[2024-05-25 09:51:02] INFO root fetch - processPackages [bsphud]: Remove: archive file [/home/abi/fetcher/tmp/bsphud-1.0.4.tar.gz]
+[2024-05-25 09:51:02] INFO root fetch - main [MainThread]: End processing [bsphud]: success
+[2024-05-25 09:51:03] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.7a3.tar.gz]
+[2024-05-25 09:51:03] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.7a4.tar.gz]
+[2024-05-25 09:51:03] INFO root fetch - main [MainThread]: End processing [pyontoenv]: success
+[2024-05-25 09:51:03] INFO root fetch - main [MainThread]: Store serial: [23372947]
