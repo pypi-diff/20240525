@@ -2189,3 +2189,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:20:23] INFO root fetch - processPackages [dom-tokenizers]: Remove: archive file [/home/abi/fetcher/tmp/dom_tokenizers-0.0.9.tar.gz]
 [2024-05-25 02:20:23] INFO root fetch - main [MainThread]: End processing [dom-tokenizers]: success
 [2024-05-25 02:20:23] INFO root fetch - main [MainThread]: Store serial: [23369466]
+[2024-05-25 02:22:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369466]
+[2024-05-25 02:22:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 02:22:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xlcompose
+[2024-05-25 02:22:31] INFO root fetch - processPackages [xlcompose]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-25 02:22:32] INFO root fetch - processPackages [xlcompose]: Downloading https://files.pythonhosted.org/packages/89/db/22412a22a4ad4522e0be66620e7e982f85b13c886aafa59833bde0be4c96/xlcompose-0.3.1.tar.gz
+[2024-05-25 02:22:32] INFO root fetch - processPackages [xlcompose]: Downloading https://files.pythonhosted.org/packages/55/31/6f0dacab008332f51203163a3e9b132f36f94aa3682c061e32c1630d3a66/xlcompose-0.3.2.tar.gz
+[2024-05-25 02:22:32] INFO root fetch - processPackages [xlcompose]: executing diffoscope
+[2024-05-25 02:22:32] INFO root fetch - processPackages [xlcompose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xlcompose-0.3.1.tar.gz tmp/xlcompose-0.3.2.tar.gz --markdown 20240525/x/xlcompose/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-25 02:22:33] INFO root fetch - processPackages [xlcompose]: Remove: archive file [/home/abi/fetcher/tmp/xlcompose-0.3.1.tar.gz]
+[2024-05-25 02:22:33] INFO root fetch - processPackages [xlcompose]: Remove: archive file [/home/abi/fetcher/tmp/xlcompose-0.3.2.tar.gz]
+[2024-05-25 02:22:33] INFO root fetch - main [MainThread]: End processing [xlcompose]: success
+[2024-05-25 02:22:33] INFO root fetch - main [MainThread]: Store serial: [23369472]
