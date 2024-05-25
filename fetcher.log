@@ -2081,3 +2081,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:13:49] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch_ignite-0.6.0.dev20240524.tar.gz]
 [2024-05-25 02:13:49] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
 [2024-05-25 02:13:49] INFO root fetch - main [MainThread]: Store serial: [23369427]
+[2024-05-25 02:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369427]
+[2024-05-25 02:15:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 02:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colossalai-nightly
+[2024-05-25 02:15:57] INFO root fetch - processPackages [colossalai-nightly]: New version: [2024.5.4] Old Version: [2024.5.25]
+[2024-05-25 02:15:57] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/5a/1d/3137ed628218ee76a9c005a254c12f62b3af79256928bc2171043c5cc91e/colossalai-nightly-2024.5.25.tar.gz
+[2024-05-25 02:15:58] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/e6/44/486fd79264aea07659649b19981068e182adb8d2d334acb004f686b0dc55/colossalai-nightly-2024.5.4.tar.gz
+[2024-05-25 02:15:58] INFO root fetch - processPackages [colossalai-nightly]: executing diffoscope
+[2024-05-25 02:15:58] INFO root fetch - processPackages [colossalai-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colossalai-nightly-2024.5.25.tar.gz tmp/colossalai-nightly-2024.5.4.tar.gz --markdown 20240525/c/colossalai-nightly/2024.5.25-2024.5.4/README.md --exclude *.pyd
+[2024-05-25 02:16:02] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.25.tar.gz]
+[2024-05-25 02:16:02] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.4.tar.gz]
+[2024-05-25 02:16:02] INFO root fetch - main [MainThread]: End processing [colossalai-nightly]: success
+[2024-05-25 02:16:02] INFO root fetch - main [MainThread]: Store serial: [23369431]
