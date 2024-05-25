@@ -13020,3 +13020,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:44:02] INFO root fetch - processPackages [telegramify-markdown]: Remove: archive file [/home/abi/fetcher/tmp/telegramify_markdown-0.1.3.tar.gz]
 [2024-05-25 12:44:02] INFO root fetch - main [MainThread]: End processing [telegramify-markdown]: success
 [2024-05-25 12:44:02] INFO root fetch - main [MainThread]: Store serial: [23374156]
+[2024-05-25 12:46:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374156]
+[2024-05-25 12:46:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 12:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anywidget_test
+[2024-05-25 12:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haniwers
+[2024-05-25 12:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fredquery
+[2024-05-25 12:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hddm-s
+[2024-05-25 12:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xingpyc
+[2024-05-25 12:46:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: UnityPredict
+[2024-05-25 12:46:11] WARNING root fetch - processPackages [anywidget_test]: Skipping, unable to determine old version
+[2024-05-25 12:46:11] INFO root fetch - main [MainThread]: End processing [anywidget_test] error
+[2024-05-25 12:46:11] INFO root fetch - processPackages [UnityPredict]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 12:46:11] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.82]
+[2024-05-25 12:46:11] INFO root fetch - processPackages [haniwers]: New version: [0.14.4] Old Version: [0.14.3]
+[2024-05-25 12:46:11] INFO root fetch - processPackages [UnityPredict]: Downloading https://files.pythonhosted.org/packages/b5/bb/5989b565711d5fb1701a6644231128cc802b7ec2f9b89c88a2d0a89b0bd4/UnityPredict-0.1.2.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [fredquery]: New version: [0.0.54] Old Version: [0.0.52]
+[2024-05-25 12:46:11] INFO root fetch - processPackages [xingpyc]: New version: [0.1.0] Old Version: [0.0.8]
+[2024-05-25 12:46:11] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/b3/29/2f246b8bd98c796e324471fa6038477e299d44a380b71129d2d97a97f0dc/hddm_s-1.0.82.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [haniwers]: Downloading https://files.pythonhosted.org/packages/8a/f2/930e79c7968d37a153a850d258910d38499d9f944b26456f4dc00a649df2/haniwers-0.14.3.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [fredquery]: Downloading https://files.pythonhosted.org/packages/f4/e0/f923194f5fb8c201d3cba935d3bc2c75945a9116368ede7a09610187d923/fredquery-0.0.52.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [UnityPredict]: Downloading https://files.pythonhosted.org/packages/07/6b/48627ea56af1850045c7bbeaf054cf4a0b3542f0a143a59cc3797e35b654/UnityPredict-0.1.3.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/28/db/a9be3e80d84723af260778237c76435bbb0dbfeec5c6c6c1cf194658bda9/xingpyc-0.0.8.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [UnityPredict]: executing diffoscope
+[2024-05-25 12:46:11] INFO root fetch - processPackages [UnityPredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnityPredict-0.1.2.tar.gz tmp/UnityPredict-0.1.3.tar.gz --markdown 20240525/U/UnityPredict/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 12:46:11] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 12:46:11] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.82.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.82-1.0.9/README.md --exclude *.pyd
+[2024-05-25 12:46:11] INFO root fetch - processPackages [haniwers]: Downloading https://files.pythonhosted.org/packages/9a/29/01eddfd095a9d9cb22015535bba6f13838add0423e06cae881f081aefbc3/haniwers-0.14.4.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/95/e9/695de2632e91b63f7eca08092c204a1aa2c6ef452fa54277ae24a94f97e2/xingpyc-0.1.0.tar.gz
+[2024-05-25 12:46:11] INFO root fetch - processPackages [haniwers]: executing diffoscope
+[2024-05-25 12:46:11] INFO root fetch - processPackages [haniwers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haniwers-0.14.3.tar.gz tmp/haniwers-0.14.4.tar.gz --markdown 20240525/h/haniwers/0.14.3-0.14.4/README.md --exclude *.pyd
+[2024-05-25 12:46:12] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 12:46:12] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.8.tar.gz tmp/xingpyc-0.1.0.tar.gz --markdown 20240525/x/xingpyc/0.0.8-0.1.0/README.md --exclude *.pyd
+[2024-05-25 12:46:12] INFO root fetch - processPackages [fredquery]: Downloading https://files.pythonhosted.org/packages/cd/be/0d19dd59efd95f4ef0962fe2ab68bdb90917454306192349610ace87ba6c/fredquery-0.0.54.tar.gz
+[2024-05-25 12:46:12] INFO root fetch - processPackages [UnityPredict]: Remove: archive file [/home/abi/fetcher/tmp/UnityPredict-0.1.2.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - processPackages [UnityPredict]: Remove: archive file [/home/abi/fetcher/tmp/UnityPredict-0.1.3.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - main [MainThread]: End processing [UnityPredict]: success
+[2024-05-25 12:46:12] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.82.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 12:46:12] INFO root fetch - processPackages [fredquery]: executing diffoscope
+[2024-05-25 12:46:12] INFO root fetch - processPackages [fredquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fredquery-0.0.52.tar.gz tmp/fredquery-0.0.54.tar.gz --markdown 20240525/f/fredquery/0.0.52-0.0.54/README.md --exclude *.pyd
+[2024-05-25 12:46:12] INFO root fetch - processPackages [haniwers]: Remove: archive file [/home/abi/fetcher/tmp/haniwers-0.14.3.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - processPackages [haniwers]: Remove: archive file [/home/abi/fetcher/tmp/haniwers-0.14.4.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - main [MainThread]: End processing [haniwers]: success
+[2024-05-25 12:46:12] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.8.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.0.tar.gz]
+[2024-05-25 12:46:12] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 12:46:13] INFO root fetch - processPackages [fredquery]: Remove: archive file [/home/abi/fetcher/tmp/fredquery-0.0.52.tar.gz]
+[2024-05-25 12:46:13] INFO root fetch - processPackages [fredquery]: Remove: archive file [/home/abi/fetcher/tmp/fredquery-0.0.54.tar.gz]
+[2024-05-25 12:46:13] INFO root fetch - main [MainThread]: End processing [fredquery]: success
+[2024-05-25 12:46:13] INFO root fetch - main [MainThread]: Store serial: [23374170]
