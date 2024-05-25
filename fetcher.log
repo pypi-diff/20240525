@@ -8872,3 +8872,9 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:09:56] INFO root fetch - processPackages [kv-azure-blob]: Remove: archive file [/home/abi/fetcher/tmp/kv_azure_blob-0.1.6.tar.gz]
 [2024-05-25 07:09:56] INFO root fetch - main [MainThread]: End processing [kv-azure-blob]: success
 [2024-05-25 07:09:56] INFO root fetch - main [MainThread]: Store serial: [23372087]
+[2024-05-25 07:12:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372087]
+[2024-05-25 07:12:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 07:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-rpyc
+[2024-05-25 07:12:05] WARNING root fetch - processPackages [django-rpyc]: Skipping, unable to determine old version
+[2024-05-25 07:12:05] INFO root fetch - main [MainThread]: End processing [django-rpyc] error
+[2024-05-25 07:12:05] INFO root fetch - main [MainThread]: Store serial: [23372090]
