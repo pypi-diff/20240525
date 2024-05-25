@@ -19917,3 +19917,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
 [2024-05-25 19:13:12] INFO root fetch - main [MainThread]: End processing [baseball]: success
 [2024-05-25 19:13:12] INFO root fetch - main [MainThread]: Store serial: [23376686]
+[2024-05-25 19:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376686]
+[2024-05-25 19:15:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: class4
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lasagna-ai
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chainlite
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baseball
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: abcli
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tinyticker
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: iSmartDownloader
+[2024-05-25 19:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zprp-ffmpeg
+[2024-05-25 19:15:21] INFO root fetch - processPackages [iSmartDownloader]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 19:15:21] INFO root fetch - processPackages [class4]: New version: [0.1.0] Old Version: [0.0.5]
+[2024-05-25 19:15:21] INFO root fetch - processPackages [zprp-ffmpeg]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-25 19:15:21] INFO root fetch - processPackages [abcli]: New version: [8.216.1] Old Version: [8.214.1]
+[2024-05-25 19:15:21] WARNING root fetch - processPackages [lasagna-ai]: Skipping, unable to determine old version
+[2024-05-25 19:15:21] INFO root fetch - main [MainThread]: End processing [lasagna-ai] error
+[2024-05-25 19:15:21] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 19:15:21] INFO root fetch - processPackages [tinyticker]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-25 19:15:21] INFO root fetch - processPackages [chainlite]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 19:15:21] INFO root fetch - processPackages [class4]: Downloading https://files.pythonhosted.org/packages/dd/80/db9cc2c9b9eca5e293fe7c68e3c13be332f9973ab18154f3ef69539c39bf/class4-0.0.5.tar.gz
+[2024-05-25 19:15:21] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/0d/6f/54ff7b04788f9712a5e45a9dc56e798c08479d3d2e210d2852eee46d606f/zprp_ffmpeg-1.0.0.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/0e/eb/7cc7e9b99d18bcf661ef8f13421a946981b211d87b59341598ff25e719c6/abcli-8.214.1.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 19:15:22] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 19:15:22] INFO root fetch - processPackages [iSmartDownloader]: Downloading https://files.pythonhosted.org/packages/79/48/dc9f362d469680a24f8e18792676c5c88bb7dc7a60f9e39eab9778414bcd/ismartdownloader-0.1.0.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [chainlite]: Downloading https://files.pythonhosted.org/packages/fe/24/60011c0bc1dbadd7325d99dc7e8ae38082545ed2f1a8240d5a662c7781f9/chainlite-0.1.6.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/db/25/91271a49b3ef5c8c0db57f10cf4f48437fed3f9f3d717178a7b1fd480abb/tinyticker-0.7.3.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/d4/01/42d2bad8ebb66e7301ea11c7692a24b8573dc0368fb6163010d3427c6930/zprp_ffmpeg-1.1.0.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [class4]: Downloading https://files.pythonhosted.org/packages/e8/3b/8adff3c0ace1bd5bac9bbe9cb2c489b6b0c4c664bf4027710358bf91cf88/class4-0.1.0.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e5/1a/0ad7e66422921f2ca63588df5168840dfb221be87666429581a5d92d9026/abcli-8.216.1.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [zprp-ffmpeg]: executing diffoscope
+[2024-05-25 19:15:22] INFO root fetch - processPackages [zprp-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zprp_ffmpeg-1.0.0.tar.gz tmp/zprp_ffmpeg-1.1.0.tar.gz --markdown 20240525/z/zprp-ffmpeg/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-25 19:15:22] INFO root fetch - processPackages [iSmartDownloader]: Downloading https://files.pythonhosted.org/packages/5d/66/ebde3d5d9ff85e632ec7532e38a8d2a17db49fe54e764d0f23decd9a40d7/ismartdownloader-0.1.1.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [class4]: executing diffoscope
+[2024-05-25 19:15:22] INFO root fetch - processPackages [class4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class4-0.0.5.tar.gz tmp/class4-0.1.0.tar.gz --markdown 20240525/c/class4/0.0.5-0.1.0/README.md --exclude *.pyd
+[2024-05-25 19:15:22] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 19:15:22] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 19:15:22] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/bc/d9/8d62948e2f0610d70f759650fa5a2a2d6937b372f9b45a70b9a34cfda402/tinyticker-0.7.4.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-25 19:15:22] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.214.1.tar.gz tmp/abcli-8.216.1.tar.gz --markdown 20240525/a/abcli/8.214.1-8.216.1/README.md --exclude *.pyd
+[2024-05-25 19:15:22] INFO root fetch - processPackages [chainlite]: Downloading https://files.pythonhosted.org/packages/df/fb/ae44455c3d54c5f3258cde246c0466e64b6eb6585796886dde7781ee5d4d/chainlite-0.1.7.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [iSmartDownloader]: executing diffoscope
+[2024-05-25 19:15:22] INFO root fetch - processPackages [iSmartDownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ismartdownloader-0.1.0.tar.gz tmp/ismartdownloader-0.1.1.tar.gz --markdown 20240525/i/iSmartDownloader/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 19:15:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 19:15:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 19:15:23] INFO root fetch - processPackages [chainlite]: executing diffoscope
+[2024-05-25 19:15:23] INFO root fetch - processPackages [chainlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlite-0.1.6.tar.gz tmp/chainlite-0.1.7.tar.gz --markdown 20240525/c/chainlite/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 19:15:23] INFO root fetch - processPackages [tinyticker]: executing diffoscope
+[2024-05-25 19:15:23] INFO root fetch - processPackages [tinyticker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyticker-0.7.3.tar.gz tmp/tinyticker-0.7.4.tar.gz --markdown 20240525/t/tinyticker/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-25 19:15:23] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 19:15:23] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 19:15:23] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 19:15:23] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 19:15:23] INFO root fetch - processPackages [class4]: Remove: archive file [/home/abi/fetcher/tmp/class4-0.0.5.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [class4]: Remove: archive file [/home/abi/fetcher/tmp/class4-0.1.0.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [class4]: success
+[2024-05-25 19:15:23] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-1.0.0.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-1.1.0.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
+[2024-05-25 19:15:23] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 19:15:23] INFO root fetch - processPackages [iSmartDownloader]: Remove: archive file [/home/abi/fetcher/tmp/ismartdownloader-0.1.0.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [iSmartDownloader]: Remove: archive file [/home/abi/fetcher/tmp/ismartdownloader-0.1.1.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [iSmartDownloader]: success
+[2024-05-25 19:15:23] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.214.1.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.216.1.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-25 19:15:23] INFO root fetch - processPackages [chainlite]: Remove: archive file [/home/abi/fetcher/tmp/chainlite-0.1.6.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [chainlite]: Remove: archive file [/home/abi/fetcher/tmp/chainlite-0.1.7.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [chainlite]: success
+[2024-05-25 19:15:23] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-25 19:15:23] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 19:15:24] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 19:15:24] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.7.3.tar.gz]
+[2024-05-25 19:15:24] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.7.4.tar.gz]
+[2024-05-25 19:15:24] INFO root fetch - main [MainThread]: End processing [tinyticker]: success
+[2024-05-25 19:15:24] INFO root fetch - main [MainThread]: Store serial: [23376716]
