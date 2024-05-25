@@ -9301,3 +9301,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:49:32] INFO root fetch - processPackages [wolensing]: Remove: archive file [/home/abi/fetcher/tmp/wolensing-0.0.6.tar.gz]
 [2024-05-25 07:49:32] INFO root fetch - main [MainThread]: End processing [wolensing]: success
 [2024-05-25 07:49:32] INFO root fetch - main [MainThread]: Store serial: [23372336]
+[2024-05-25 07:51:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372336]
+[2024-05-25 07:51:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ps3-update-dl
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-05-25 07:51:41] INFO root fetch - processPackages [python-115]: New version: [0.0.8.3.4] Old Version: [0.0.8.3.3]
+[2024-05-25 07:51:41] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/3b/6c/231f4cfbbe6da9a28aa4e1ba0aa64be10d96f96a7dd009b63f5892a5ab4d/python_115-0.0.8.3.3.tar.gz
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ps3-update-dl]: New version: [0.3.0.post2] Old Version: [0.3.0.post1]
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ps3-update-dl]: Downloading https://files.pythonhosted.org/packages/2f/6f/c8cc8118a55bb97a60591a84bf532eec02ad60090bd46f6a07f55adcb281/ps3-update-dl-0.3.0.post1.tar.gz
+[2024-05-25 07:51:41] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/7a/24/49d11bd7b773fe5fc29ee6b485aea78df90b0aa9724ebb25c25a06cd35f8/python_115-0.0.8.3.4.tar.gz
+[2024-05-25 07:51:41] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-05-25 07:51:41] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.3.3.tar.gz tmp/python_115-0.0.8.3.4.tar.gz --markdown 20240525/p/python-115/0.0.8.3.3-0.0.8.3.4/README.md --exclude *.pyd
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ps3-update-dl]: Downloading https://files.pythonhosted.org/packages/55/e0/278ff643baf30f7160e32783323417fa29f1ae68e4d8578c27767a81772b/ps3_update_dl-0.3.0.post2.tar.gz
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ps3-update-dl]: executing diffoscope
+[2024-05-25 07:51:41] INFO root fetch - processPackages [ps3-update-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ps3-update-dl-0.3.0.post1.tar.gz tmp/ps3_update_dl-0.3.0.post2.tar.gz --markdown 20240525/p/ps3-update-dl/0.3.0.post1-0.3.0.post2/README.md --exclude *.pyd
+[2024-05-25 07:51:42] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.3.tar.gz]
+[2024-05-25 07:51:42] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.4.tar.gz]
+[2024-05-25 07:51:42] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-05-25 07:51:42] INFO root fetch - processPackages [ps3-update-dl]: Remove: archive file [/home/abi/fetcher/tmp/ps3-update-dl-0.3.0.post1.tar.gz]
+[2024-05-25 07:51:42] INFO root fetch - processPackages [ps3-update-dl]: Remove: archive file [/home/abi/fetcher/tmp/ps3_update_dl-0.3.0.post2.tar.gz]
+[2024-05-25 07:51:42] INFO root fetch - main [MainThread]: End processing [ps3-update-dl]: success
+[2024-05-25 07:51:42] INFO root fetch - main [MainThread]: Store serial: [23372347]
