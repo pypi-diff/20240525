@@ -9629,3 +9629,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:15:35] INFO root fetch - processPackages [velbus-aio]: Remove: archive file [/home/abi/fetcher/tmp/velbus_aio-2024.5.1.tar.gz]
 [2024-05-25 08:15:35] INFO root fetch - main [MainThread]: End processing [velbus-aio]: success
 [2024-05-25 08:15:35] INFO root fetch - main [MainThread]: Store serial: [23372507]
+[2024-05-25 08:17:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372507]
+[2024-05-25 08:17:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 08:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rxd
+[2024-05-25 08:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: online-scheduler
+[2024-05-25 08:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-common
+[2024-05-25 08:17:44] INFO root fetch - processPackages [online-scheduler]: New version: [0.5] Old Version: [0.4]
+[2024-05-25 08:17:44] INFO root fetch - processPackages [mns-common]: New version: [1.1.3.0] Old Version: [1.1.2.9]
+[2024-05-25 08:17:44] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/bd/c0/d77300aafde97c5fcb55429637552af0487de7d34b882944ba342c6d42a4/online_scheduler-0.4.tar.gz
+[2024-05-25 08:17:44] WARNING root fetch - processPackages [rxd]: Skipping, unable to determine old version
+[2024-05-25 08:17:44] INFO root fetch - main [MainThread]: End processing [rxd] error
+[2024-05-25 08:17:44] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/b5/8d/9f6dfe30a4c31763bfa887b76393fcaa1ed5b448e1116e654c012e539f05/mns_common-1.1.2.9.tar.gz
+[2024-05-25 08:17:45] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/3b/3b/49cf35cc410bfe8996f166a43182560c9b0834e78d67450a85c62f2327fb/online_scheduler-0.5.tar.gz
+[2024-05-25 08:17:45] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 08:17:45] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.4.tar.gz tmp/online_scheduler-0.5.tar.gz --markdown 20240525/o/online-scheduler/0.4-0.5/README.md --exclude *.pyd
+[2024-05-25 08:17:45] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/ec/56/27453818e9f10e1f28fe156e553f89f3b04a46e6f60b6fbc62554bfb9ffc/mns_common-1.1.3.0.tar.gz
+[2024-05-25 08:17:45] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-05-25 08:17:45] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.1.2.9.tar.gz tmp/mns_common-1.1.3.0.tar.gz --markdown 20240525/m/mns-common/1.1.2.9-1.1.3.0/README.md --exclude *.pyd
+[2024-05-25 08:17:45] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.4.tar.gz]
+[2024-05-25 08:17:45] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.5.tar.gz]
+[2024-05-25 08:17:45] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 08:17:46] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.2.9.tar.gz]
+[2024-05-25 08:17:46] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.3.0.tar.gz]
+[2024-05-25 08:17:46] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-05-25 08:17:46] INFO root fetch - main [MainThread]: Store serial: [23372517]
