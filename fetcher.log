@@ -17819,3 +17819,80 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_auto_extract-0.1.6.tar.gz]
 [2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-auto-extract]: success
 [2024-05-25 16:50:22] INFO root fetch - main [MainThread]: Store serial: [23375858]
+[2024-05-25 16:52:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375858]
+[2024-05-25 16:52:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-value-object
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-pipelines-game-correction
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qis
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moveread-pipelines-preprocess
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fortnitepy-edit
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moveread-pipelines-game-preprocess
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: templinktool
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moveread-pipelines-dfy
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: latexminted
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ovos-core
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-game-correction]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-dfy]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 16:52:31] WARNING root fetch - processPackages [templinktool]: Skipping, unable to determine old version
+[2024-05-25 16:52:31] INFO root fetch - main [MainThread]: End processing [templinktool] error
+[2024-05-25 16:52:31] INFO root fetch - processPackages [simple-value-object]: New version: [3.1.1] Old Version: [3.0.1]
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-preprocess]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 16:52:31] INFO root fetch - processPackages [qis]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-25 16:52:31] WARNING root fetch - processPackages [latexminted]: Skipping, unable to determine old version
+[2024-05-25 16:52:31] INFO root fetch - main [MainThread]: End processing [latexminted] error
+[2024-05-25 16:52:31] INFO root fetch - processPackages [fortnitepy-edit]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-game-correction]: Downloading https://files.pythonhosted.org/packages/68/b1/ca04eae024e334ec4419e525db60e55261af1675741f779190a99a4f3d0b/moveread_pipelines_game_correction-0.1.4.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: Downloading https://files.pythonhosted.org/packages/04/00/66dd6a499848f3734b9288a1e2d9ca53799a6e89c35425ede6c1340a5bc6/moveread_pipelines_game_preprocess-0.1.4.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/fa/ed/fcff94ae13912fb09f544975f4ae040597908aa6df72c12d7b810b34ccf8/moveread_pipelines_dfy-0.1.5.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a99] Old Version: [0.0.8a98]
+[2024-05-25 16:52:31] INFO root fetch - processPackages [simple-value-object]: Downloading https://files.pythonhosted.org/packages/e8/34/9e688608a362941f86c94e18ca7528f0a7c1c2e30a3d15caa2c08667910a/simple-value-object-3.0.1.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Downloading https://files.pythonhosted.org/packages/c7/ae/237934d68d9fb524a37936d08866470455bbc61738b32339cacedb8c9ef4/moveread_pipelines_preprocess-0.1.4.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [qis]: Downloading https://files.pythonhosted.org/packages/bd/2c/5c832b4cf644bd5e1a4fa48ceb8daae5e87bd13310f2010ddf6a36e1b12d/qis-2.0.8.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [fortnitepy-edit]: Downloading https://files.pythonhosted.org/packages/03/ff/3b777594dae8f6985af36fdf6f75cc3f5753e55fe533e10aa494107a9272/fortnitepy-edit-1.0.8.tar.gz
+[2024-05-25 16:52:31] INFO root fetch - processPackages [ovos-core]: Downloading https://files.pythonhosted.org/packages/43/09/2b998a2fbb4c473f88a1adb0b7d511b133aff775b19c15441b76d479f339/ovos_core-0.0.8a98-py3-none-any.whl
+[2024-05-25 16:52:31] INFO root fetch - processPackages [simple-value-object]: Downloading https://files.pythonhosted.org/packages/03/d8/1f480625e45a032649f3fc54d9c23768887e5465b333f32df58c38863c1e/simple_value_object-3.1.1.tar.gz
+[2024-05-25 16:52:31] WARNING root fetch - processPackages [ovos-core]: Skipping package: exceeds size limit 18555543>=10485760
+[2024-05-25 16:52:31] INFO root fetch - main [MainThread]: End processing [ovos-core] error
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: Downloading https://files.pythonhosted.org/packages/eb/b1/e609439c3cc396937a8e08af63b688f78fadeb095f3055e06dae2fff1605/moveread_pipelines_game_preprocess-0.1.5.tar.gz
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/72/91/1ddd83530104d3bef4d0ac246e5d5a8306013aefd38bb36f1d9514091b1b/moveread_pipelines_dfy-0.1.6.tar.gz
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-correction]: Downloading https://files.pythonhosted.org/packages/96/53/0965353471bc531829dc04f2449c49742728ac34be87f267ee9f61ae4f5b/moveread_pipelines_game_correction-0.1.5.tar.gz
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Downloading https://files.pythonhosted.org/packages/db/12/a138208e03f1c66cb748d3dcc8ca15082b3290c62149ce8c39d1dfe06c44/moveread_pipelines_preprocess-0.1.5.tar.gz
+[2024-05-25 16:52:32] INFO root fetch - processPackages [simple-value-object]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [simple-value-object]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-value-object-3.0.1.tar.gz tmp/simple_value_object-3.1.1.tar.gz --markdown 20240525/s/simple-value-object/3.0.1-3.1.1/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_game_preprocess-0.1.4.tar.gz tmp/moveread_pipelines_game_preprocess-0.1.5.tar.gz --markdown 20240525/m/moveread-pipelines-game-preprocess/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [fortnitepy-edit]: Downloading https://files.pythonhosted.org/packages/ef/48/ff293c6c2f7f981be5300c4bae28e7f5adf57db586f7be20c6396cff65ed/fortnitepy-edit-1.0.9.tar.gz
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-dfy]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_dfy-0.1.5.tar.gz tmp/moveread_pipelines_dfy-0.1.6.tar.gz --markdown 20240525/m/moveread-pipelines-dfy/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-correction]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-correction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_game_correction-0.1.4.tar.gz tmp/moveread_pipelines_game_correction-0.1.5.tar.gz --markdown 20240525/m/moveread-pipelines-game-correction/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-preprocess]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_preprocess-0.1.4.tar.gz tmp/moveread_pipelines_preprocess-0.1.5.tar.gz --markdown 20240525/m/moveread-pipelines-preprocess/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [fortnitepy-edit]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [fortnitepy-edit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fortnitepy-edit-1.0.8.tar.gz tmp/fortnitepy-edit-1.0.9.tar.gz --markdown 20240525/f/fortnitepy-edit/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [qis]: Downloading https://files.pythonhosted.org/packages/c0/b0/459b4f2dea31cb086b72572c0b334fc4c42992355e22b2bd289becc4d395/qis-2.0.9.tar.gz
+[2024-05-25 16:52:32] INFO root fetch - processPackages [qis]: executing diffoscope
+[2024-05-25 16:52:32] INFO root fetch - processPackages [qis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qis-2.0.8.tar.gz tmp/qis-2.0.9.tar.gz --markdown 20240525/q/qis/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-25 16:52:32] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple-value-object-3.0.1.tar.gz]
+[2024-05-25 16:52:32] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple_value_object-3.1.1.tar.gz]
+[2024-05-25 16:52:32] INFO root fetch - main [MainThread]: End processing [simple-value-object]: success
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.5.tar.gz]
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.6.tar.gz]
+[2024-05-25 16:52:32] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-dfy]: success
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_game_preprocess-0.1.4.tar.gz]
+[2024-05-25 16:52:32] INFO root fetch - processPackages [moveread-pipelines-game-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_game_preprocess-0.1.5.tar.gz]
+[2024-05-25 16:52:32] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-game-preprocess]: success
+[2024-05-25 16:52:33] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_preprocess-0.1.4.tar.gz]
+[2024-05-25 16:52:33] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_preprocess-0.1.5.tar.gz]
+[2024-05-25 16:52:33] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-preprocess]: success
+[2024-05-25 16:52:33] INFO root fetch - processPackages [moveread-pipelines-game-correction]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_game_correction-0.1.4.tar.gz]
+[2024-05-25 16:52:33] INFO root fetch - processPackages [moveread-pipelines-game-correction]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_game_correction-0.1.5.tar.gz]
+[2024-05-25 16:52:33] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-game-correction]: success
+[2024-05-25 16:52:33] INFO root fetch - processPackages [fortnitepy-edit]: Remove: archive file [/home/abi/fetcher/tmp/fortnitepy-edit-1.0.8.tar.gz]
+[2024-05-25 16:52:33] INFO root fetch - processPackages [fortnitepy-edit]: Remove: archive file [/home/abi/fetcher/tmp/fortnitepy-edit-1.0.9.tar.gz]
+[2024-05-25 16:52:33] INFO root fetch - main [MainThread]: End processing [fortnitepy-edit]: success
+[2024-05-25 16:52:34] INFO root fetch - processPackages [qis]: Remove: archive file [/home/abi/fetcher/tmp/qis-2.0.8.tar.gz]
+[2024-05-25 16:52:34] INFO root fetch - processPackages [qis]: Remove: archive file [/home/abi/fetcher/tmp/qis-2.0.9.tar.gz]
+[2024-05-25 16:52:34] INFO root fetch - main [MainThread]: End processing [qis]: success
+[2024-05-25 16:52:34] INFO root fetch - main [MainThread]: Store serial: [23375887]
