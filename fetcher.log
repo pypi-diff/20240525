@@ -13101,3 +13101,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:48:24] INFO root fetch - processPackages [lconrg]: Remove: archive file [/home/abi/fetcher/tmp/lconrg-2024.5.25.tar.gz]
 [2024-05-25 12:48:24] INFO root fetch - main [MainThread]: End processing [lconrg]: success
 [2024-05-25 12:48:24] INFO root fetch - main [MainThread]: Store serial: [23374179]
+[2024-05-25 12:50:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374179]
+[2024-05-25 12:50:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 12:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-05-25 12:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neginver
+[2024-05-25 12:50:33] WARNING root fetch - processPackages [neginver]: Skipping, unable to determine old version
+[2024-05-25 12:50:33] INFO root fetch - main [MainThread]: End processing [neginver] error
+[2024-05-25 12:50:33] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 12:50:33] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-05-25 12:50:33] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-05-25 12:50:34] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-05-25 12:50:34] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240525/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 12:50:35] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-05-25 12:50:35] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-05-25 12:50:35] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-05-25 12:50:35] INFO root fetch - main [MainThread]: Store serial: [23374187]
