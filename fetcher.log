@@ -13071,3 +13071,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:46:13] INFO root fetch - processPackages [fredquery]: Remove: archive file [/home/abi/fetcher/tmp/fredquery-0.0.54.tar.gz]
 [2024-05-25 12:46:13] INFO root fetch - main [MainThread]: End processing [fredquery]: success
 [2024-05-25 12:46:13] INFO root fetch - main [MainThread]: Store serial: [23374170]
+[2024-05-25 12:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374170]
+[2024-05-25 12:48:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 12:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UnityPredict
+[2024-05-25 12:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mcqq-tool
+[2024-05-25 12:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lconrg
+[2024-05-25 12:48:23] INFO root fetch - processPackages [UnityPredict]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 12:48:23] INFO root fetch - processPackages [mcqq-tool]: New version: [1.1.9] Old Version: [1.1.8.post1]
+[2024-05-25 12:48:23] INFO root fetch - processPackages [UnityPredict]: Downloading https://files.pythonhosted.org/packages/07/6b/48627ea56af1850045c7bbeaf054cf4a0b3542f0a143a59cc3797e35b654/UnityPredict-0.1.3.tar.gz
+[2024-05-25 12:48:23] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/f2/d4/4b52068c5cab62659f3bc452b449ba30d9f4e2877bfa101f27c37d9f8536/mcqq_tool-1.1.8.post1.tar.gz
+[2024-05-25 12:48:23] INFO root fetch - processPackages [lconrg]: New version: [2024.5.25] Old Version: [2023.12.11]
+[2024-05-25 12:48:23] INFO root fetch - processPackages [lconrg]: Downloading https://files.pythonhosted.org/packages/cd/b6/860427a492a3827c3303e31a294e75b26bb67d42358ed967fae472843ee5/lconrg-2023.12.11.tar.gz
+[2024-05-25 12:48:23] INFO root fetch - processPackages [UnityPredict]: Downloading https://files.pythonhosted.org/packages/5a/58/28d019706f61f8f5746524a896debdda5511f8e0034be9be0fb249f67263/UnityPredict-0.1.4.tar.gz
+[2024-05-25 12:48:23] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/59/07/1ebb32849902d158bc187a4ccf004be752a0534e8ae55eb29e27c778ac30/mcqq_tool-1.1.9.tar.gz
+[2024-05-25 12:48:23] INFO root fetch - processPackages [UnityPredict]: executing diffoscope
+[2024-05-25 12:48:23] INFO root fetch - processPackages [UnityPredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnityPredict-0.1.3.tar.gz tmp/UnityPredict-0.1.4.tar.gz --markdown 20240525/U/UnityPredict/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 12:48:23] INFO root fetch - processPackages [mcqq-tool]: executing diffoscope
+[2024-05-25 12:48:23] INFO root fetch - processPackages [mcqq-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcqq_tool-1.1.8.post1.tar.gz tmp/mcqq_tool-1.1.9.tar.gz --markdown 20240525/m/mcqq-tool/1.1.8.post1-1.1.9/README.md --exclude *.pyd
+[2024-05-25 12:48:23] INFO root fetch - processPackages [lconrg]: Downloading https://files.pythonhosted.org/packages/38/95/31352de5880281ca5639c3176f4504c684a7014131e5df489c8b0282f234/lconrg-2024.5.25.tar.gz
+[2024-05-25 12:48:24] INFO root fetch - processPackages [lconrg]: executing diffoscope
+[2024-05-25 12:48:24] INFO root fetch - processPackages [lconrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lconrg-2023.12.11.tar.gz tmp/lconrg-2024.5.25.tar.gz --markdown 20240525/l/lconrg/2023.12.11-2024.5.25/README.md --exclude *.pyd
+[2024-05-25 12:48:24] INFO root fetch - processPackages [UnityPredict]: Remove: archive file [/home/abi/fetcher/tmp/UnityPredict-0.1.3.tar.gz]
+[2024-05-25 12:48:24] INFO root fetch - processPackages [UnityPredict]: Remove: archive file [/home/abi/fetcher/tmp/UnityPredict-0.1.4.tar.gz]
+[2024-05-25 12:48:24] INFO root fetch - main [MainThread]: End processing [UnityPredict]: success
+[2024-05-25 12:48:24] INFO root fetch - processPackages [mcqq-tool]: Remove: archive file [/home/abi/fetcher/tmp/mcqq_tool-1.1.8.post1.tar.gz]
+[2024-05-25 12:48:24] INFO root fetch - processPackages [mcqq-tool]: Remove: archive file [/home/abi/fetcher/tmp/mcqq_tool-1.1.9.tar.gz]
+[2024-05-25 12:48:24] INFO root fetch - main [MainThread]: End processing [mcqq-tool]: success
+[2024-05-25 12:48:24] INFO root fetch - processPackages [lconrg]: Remove: archive file [/home/abi/fetcher/tmp/lconrg-2023.12.11.tar.gz]
+[2024-05-25 12:48:24] INFO root fetch - processPackages [lconrg]: Remove: archive file [/home/abi/fetcher/tmp/lconrg-2024.5.25.tar.gz]
+[2024-05-25 12:48:24] INFO root fetch - main [MainThread]: End processing [lconrg]: success
+[2024-05-25 12:48:24] INFO root fetch - main [MainThread]: Store serial: [23374179]
