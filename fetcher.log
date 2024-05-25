@@ -2159,3 +2159,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:18:13] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
 [2024-05-25 02:18:13] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
 [2024-05-25 02:18:13] INFO root fetch - main [MainThread]: Store serial: [23369453]
+[2024-05-25 02:20:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369453]
+[2024-05-25 02:20:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 02:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pazok
+[2024-05-25 02:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-ethereum-node
+[2024-05-25 02:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-cr-constructs
+[2024-05-25 02:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dom-tokenizers
+[2024-05-25 02:20:21] INFO root fetch - processPackages [pazok]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-25 02:20:21] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.465] Old Version: [2.1.464]
+[2024-05-25 02:20:21] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 02:20:21] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/14/2a/b23ff77fa97a2b5f31a040d38f248bc13dd0d07644012399321052509816/cdk-cr-constructs-2.1.464.tar.gz
+[2024-05-25 02:20:21] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15123832>=10485760
+[2024-05-25 02:20:21] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-05-25 02:20:21] INFO root fetch - processPackages [dom-tokenizers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 02:20:21] ERROR root fetch - processPackages [pazok]: Unable to fetch info: No such project/version 'pazok' 0.0.0
+[2024-05-25 02:20:21] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-25 02:20:22] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-05-25 02:20:22] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-05-25 02:20:22] INFO root fetch - processPackages [dom-tokenizers]: Downloading https://files.pythonhosted.org/packages/5e/26/cf8b917ea4efabda50aefc4d664249313924e4f43c1d3bfeb4c62b42636b/dom_tokenizers-0.0.8.tar.gz
+[2024-05-25 02:20:22] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-05-25 02:20:22] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240525/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 02:20:22] INFO root fetch - processPackages [dom-tokenizers]: Downloading https://files.pythonhosted.org/packages/ee/a4/26c147d3bda886bbf88d148b191872beab4e8a29d4067083dda60dd93b5f/dom_tokenizers-0.0.9.tar.gz
+[2024-05-25 02:20:22] INFO root fetch - processPackages [dom-tokenizers]: executing diffoscope
+[2024-05-25 02:20:22] INFO root fetch - processPackages [dom-tokenizers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dom_tokenizers-0.0.8.tar.gz tmp/dom_tokenizers-0.0.9.tar.gz --markdown 20240525/d/dom-tokenizers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 02:20:23] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-05-25 02:20:23] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-05-25 02:20:23] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-05-25 02:20:23] INFO root fetch - processPackages [dom-tokenizers]: Remove: archive file [/home/abi/fetcher/tmp/dom_tokenizers-0.0.8.tar.gz]
+[2024-05-25 02:20:23] INFO root fetch - processPackages [dom-tokenizers]: Remove: archive file [/home/abi/fetcher/tmp/dom_tokenizers-0.0.9.tar.gz]
+[2024-05-25 02:20:23] INFO root fetch - main [MainThread]: End processing [dom-tokenizers]: success
+[2024-05-25 02:20:23] INFO root fetch - main [MainThread]: Store serial: [23369466]
