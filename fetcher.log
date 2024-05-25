@@ -22672,3 +22672,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:46:13] INFO root fetch - processPackages [OpenAI-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/openai_python_client-0.2.0.tar.gz]
 [2024-05-25 22:46:13] INFO root fetch - main [MainThread]: End processing [OpenAI-Python-Client]: success
 [2024-05-25 22:46:13] INFO root fetch - main [MainThread]: Store serial: [23377895]
+[2024-05-25 22:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377895]
+[2024-05-25 22:48:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 22:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpf
+[2024-05-25 22:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipackager
+[2024-05-25 22:48:23] WARNING root fetch - processPackages [pipackager]: Skipping, unable to determine old version
+[2024-05-25 22:48:23] INFO root fetch - main [MainThread]: End processing [pipackager] error
+[2024-05-25 22:48:23] INFO root fetch - processPackages [mpf]: New version: [0.80.0.dev1] Old Version: [0.57.1.dev4]
+[2024-05-25 22:48:23] INFO root fetch - processPackages [mpf]: Downloading https://files.pythonhosted.org/packages/d2/b0/7eae94833a5f170a97fe2d07d2861c9403b8fcaba122956c8992b85bbf81/mpf-0.57.1.dev4.tar.gz
+[2024-05-25 22:48:25] INFO root fetch - processPackages [mpf]: Downloading https://files.pythonhosted.org/packages/f4/f6/bbd6c057549d83efcf20227b3a9272bc68a08b4226d7ccdc6d194d6befb9/mpf-0.80.0.dev1.tar.gz
+[2024-05-25 22:48:25] INFO root fetch - processPackages [mpf]: executing diffoscope
+[2024-05-25 22:48:25] INFO root fetch - processPackages [mpf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpf-0.57.1.dev4.tar.gz tmp/mpf-0.80.0.dev1.tar.gz --markdown 20240525/m/mpf/0.57.1.dev4-0.80.0.dev1/README.md --exclude *.pyd
+[2024-05-25 22:48:29] INFO root fetch - processPackages [mpf]: Remove: archive file [/home/abi/fetcher/tmp/mpf-0.57.1.dev4.tar.gz]
+[2024-05-25 22:48:29] INFO root fetch - processPackages [mpf]: Remove: archive file [/home/abi/fetcher/tmp/mpf-0.80.0.dev1.tar.gz]
+[2024-05-25 22:48:29] INFO root fetch - main [MainThread]: End processing [mpf]: success
+[2024-05-25 22:48:29] INFO root fetch - main [MainThread]: Store serial: [23377903]
