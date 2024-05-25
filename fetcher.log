@@ -11863,3 +11863,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:09:55] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-25 11:09:55] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-25 11:09:55] INFO root fetch - main [MainThread]: Store serial: [23373529]
+[2024-05-25 11:11:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373529]
+[2024-05-25 11:12:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 11:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smol_k8s_lab
+[2024-05-25 11:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql
+[2024-05-25 11:12:04] INFO root fetch - processPackages [smol_k8s_lab]: New version: [5.2.4] Old Version: [5.2.3]
+[2024-05-25 11:12:04] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/4c/72/d98c8c4e9f15527b7dc2b5bab9868f37cd46829a40fccccab0b22bfd7985/smol_k8s_lab-5.2.3.tar.gz
+[2024-05-25 11:12:04] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-25 11:12:05] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-25 11:12:05] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/e5/d9/723f00b10556e3e5f4f4289b89228a0bbecf1c74d69748a6ebf8dfe05a4c/smol_k8s_lab-5.2.4.tar.gz
+[2024-05-25 11:12:05] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-25 11:12:05] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-25 11:12:05] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240525/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-25 11:12:06] INFO root fetch - processPackages [smol_k8s_lab]: executing diffoscope
+[2024-05-25 11:12:06] INFO root fetch - processPackages [smol_k8s_lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smol_k8s_lab-5.2.3.tar.gz tmp/smol_k8s_lab-5.2.4.tar.gz --markdown 20240525/s/smol_k8s_lab/5.2.3-5.2.4/README.md --exclude *.pyd
+[2024-05-25 11:12:06] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-25 11:12:06] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-25 11:12:06] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-25 11:12:07] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.2.3.tar.gz]
+[2024-05-25 11:12:07] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.2.4.tar.gz]
+[2024-05-25 11:12:07] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
+[2024-05-25 11:12:07] INFO root fetch - main [MainThread]: Store serial: [23373535]
