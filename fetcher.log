@@ -12913,3 +12913,41 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:35:15] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
 [2024-05-25 12:35:15] INFO root fetch - main [MainThread]: End processing [ok-script]: success
 [2024-05-25 12:35:15] INFO root fetch - main [MainThread]: Store serial: [23374066]
+[2024-05-25 12:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374066]
+[2024-05-25 12:37:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 12:39:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374066]
+[2024-05-25 12:39:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TextToVector
+[2024-05-25 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dsi-bitstream
+[2024-05-25 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-datapack
+[2024-05-25 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aplr
+[2024-05-25 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: skypilot-nightly
+[2024-05-25 12:39:30] INFO root fetch - processPackages [python-datapack]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-05-25 12:39:31] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240524] Old Version: [1.0.0.dev20240523]
+[2024-05-25 12:39:31] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/ee/c2/284c65506117f021181963381b5eacb90370845b9486cda00fc595063c62/python_datapack-0.0.4.tar.gz
+[2024-05-25 12:39:31] WARNING root fetch - processPackages [dsi-bitstream]: Skipping, unable to determine old version
+[2024-05-25 12:39:31] INFO root fetch - main [MainThread]: End processing [dsi-bitstream] error
+[2024-05-25 12:39:31] WARNING root fetch - processPackages [TextToVector]: Skipping, unable to determine old version
+[2024-05-25 12:39:31] INFO root fetch - main [MainThread]: End processing [TextToVector] error
+[2024-05-25 12:39:31] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/a4/ce/ce849542f8340d0d4914c0acc1bca98e8ee1bbf1b59b92f711a103b35e22/skypilot_nightly-1.0.0.dev20240523.tar.gz
+[2024-05-25 12:39:31] INFO root fetch - processPackages [aplr]: New version: [9.9.0] Old Version: [9.8.0]
+[2024-05-25 12:39:31] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/bd/12/400517a75bc0d71e5b66efaecdac811966af925f820da4472b9145ef4127/aplr-9.8.0.tar.gz
+[2024-05-25 12:39:32] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/57/4d/d4e59d7af80b250c9d26937822e92b20aa364a2e8b091ab6cc136241179d/python_datapack-0.1.0.tar.gz
+[2024-05-25 12:39:32] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-05-25 12:39:32] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.0.4.tar.gz tmp/python_datapack-0.1.0.tar.gz --markdown 20240525/p/python-datapack/0.0.4-0.1.0/README.md --exclude *.pyd
+[2024-05-25 12:39:32] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/30/5b/1c09c953bc32c3b27a0a2a79b1e2239654e34923718be42426a6ba3e99c1/skypilot_nightly-1.0.0.dev20240524.tar.gz
+[2024-05-25 12:39:32] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/9d/7c/33597b328c136df1cecfe52f5b7446f6e24ef6da11ef10a8233103d791b6/aplr-9.9.0.tar.gz
+[2024-05-25 12:39:32] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-05-25 12:39:32] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240523.tar.gz tmp/skypilot_nightly-1.0.0.dev20240524.tar.gz --markdown 20240525/s/skypilot-nightly/1.0.0.dev20240523-1.0.0.dev20240524/README.md --exclude *.pyd
+[2024-05-25 12:39:33] INFO root fetch - processPackages [aplr]: executing diffoscope
+[2024-05-25 12:39:33] INFO root fetch - processPackages [aplr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aplr-9.8.0.tar.gz tmp/aplr-9.9.0.tar.gz --markdown 20240525/a/aplr/9.8.0-9.9.0/README.md --exclude *.pyd
+[2024-05-25 12:39:33] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.0.4.tar.gz]
+[2024-05-25 12:39:33] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.1.0.tar.gz]
+[2024-05-25 12:39:33] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-05-25 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240523.tar.gz]
+[2024-05-25 12:39:34] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240524.tar.gz]
+[2024-05-25 12:39:34] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-05-25 12:39:39] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.8.0.tar.gz]
+[2024-05-25 12:39:39] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.9.0.tar.gz]
+[2024-05-25 12:39:39] INFO root fetch - main [MainThread]: End processing [aplr]: success
+[2024-05-25 12:39:39] INFO root fetch - main [MainThread]: Store serial: [23374107]
