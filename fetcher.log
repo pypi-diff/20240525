@@ -20801,3 +20801,17 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:16:42] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-05-25 20:16:42] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-05-25 20:16:42] INFO root fetch - main [MainThread]: Store serial: [23377068]
+[2024-05-25 20:18:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377068]
+[2024-05-25 20:18:51] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 20:20:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377068]
+[2024-05-25 20:20:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 20:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rics
+[2024-05-25 20:20:57] INFO root fetch - processPackages [rics]: New version: [4.1.0] Old Version: [4.0.1]
+[2024-05-25 20:20:57] INFO root fetch - processPackages [rics]: Downloading https://files.pythonhosted.org/packages/b1/d8/30249b7402a075ef0831c68c961bf4554cd4412ddae8952c335f9b1a4518/rics-4.0.1.tar.gz
+[2024-05-25 20:20:58] INFO root fetch - processPackages [rics]: Downloading https://files.pythonhosted.org/packages/a6/ee/cfb7d273ac0e1942211d7c49303c23507e786521ea2f69ebbb6b856c763a/rics-4.1.0.tar.gz
+[2024-05-25 20:20:58] INFO root fetch - processPackages [rics]: executing diffoscope
+[2024-05-25 20:20:58] INFO root fetch - processPackages [rics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rics-4.0.1.tar.gz tmp/rics-4.1.0.tar.gz --markdown 20240525/r/rics/4.0.1-4.1.0/README.md --exclude *.pyd
+[2024-05-25 20:20:58] INFO root fetch - processPackages [rics]: Remove: archive file [/home/abi/fetcher/tmp/rics-4.0.1.tar.gz]
+[2024-05-25 20:20:58] INFO root fetch - processPackages [rics]: Remove: archive file [/home/abi/fetcher/tmp/rics-4.1.0.tar.gz]
+[2024-05-25 20:20:58] INFO root fetch - main [MainThread]: End processing [rics]: success
+[2024-05-25 20:20:58] INFO root fetch - main [MainThread]: Store serial: [23377071]
