@@ -13954,3 +13954,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:07:02] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.6.tar.gz]
 [2024-05-25 14:07:02] INFO root fetch - main [MainThread]: End processing [beets-gdplaylists]: success
 [2024-05-25 14:07:02] INFO root fetch - main [MainThread]: Store serial: [23374518]
+[2024-05-25 14:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374518]
+[2024-05-25 14:09:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 14:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transformapy
+[2024-05-25 14:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: weallcode-robot
+[2024-05-25 14:09:12] INFO root fetch - processPackages [transformapy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 14:09:12] INFO root fetch - processPackages [transformapy]: Downloading https://files.pythonhosted.org/packages/c8/c0/51edcbbd75eeb2425fc55038ae11bad58436ec98457d3531aa5dd729a28f/transformapy-0.0.4.zip
+[2024-05-25 14:09:12] INFO root fetch - processPackages [weallcode-robot]: New version: [3.1.0] Old Version: [3.0.3]
+[2024-05-25 14:09:12] INFO root fetch - processPackages [transformapy]: Downloading https://files.pythonhosted.org/packages/2a/ac/6e4ec2ae1ad2d49432c434231ff3b3685cf0c7650bf0ba40d104155241eb/transformapy-0.0.5.zip
+[2024-05-25 14:09:12] INFO root fetch - processPackages [weallcode-robot]: Downloading https://files.pythonhosted.org/packages/91/cd/c4672f0e0685a7d6cbb529775276d39a40b25376d61b300c72636b5a5b8b/weallcode_robot-3.0.3.tar.gz
+[2024-05-25 14:09:12] INFO root fetch - processPackages [transformapy]: executing diffoscope
+[2024-05-25 14:09:12] INFO root fetch - processPackages [transformapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformapy-0.0.4.zip tmp/transformapy-0.0.5.zip --markdown 20240525/t/transformapy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 14:09:12] INFO root fetch - processPackages [weallcode-robot]: Downloading https://files.pythonhosted.org/packages/7a/c6/cb095c9a0a321ce1bd26c1bd4384ec25747bbadf42d39c7d950e027bc9d4/weallcode_robot-3.1.0.tar.gz
+[2024-05-25 14:09:12] INFO root fetch - processPackages [weallcode-robot]: executing diffoscope
+[2024-05-25 14:09:12] INFO root fetch - processPackages [weallcode-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weallcode_robot-3.0.3.tar.gz tmp/weallcode_robot-3.1.0.tar.gz --markdown 20240525/w/weallcode-robot/3.0.3-3.1.0/README.md --exclude *.pyd
+[2024-05-25 14:09:13] INFO root fetch - processPackages [transformapy]: Remove: archive file [/home/abi/fetcher/tmp/transformapy-0.0.4.zip]
+[2024-05-25 14:09:13] INFO root fetch - processPackages [transformapy]: Remove: archive file [/home/abi/fetcher/tmp/transformapy-0.0.5.zip]
+[2024-05-25 14:09:13] INFO root fetch - main [MainThread]: End processing [transformapy]: success
+[2024-05-25 14:09:13] INFO root fetch - processPackages [weallcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/weallcode_robot-3.0.3.tar.gz]
+[2024-05-25 14:09:13] INFO root fetch - processPackages [weallcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/weallcode_robot-3.1.0.tar.gz]
+[2024-05-25 14:09:13] INFO root fetch - main [MainThread]: End processing [weallcode-robot]: success
+[2024-05-25 14:09:13] INFO root fetch - main [MainThread]: Store serial: [23374524]
