@@ -12833,3 +12833,32 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:26:32] INFO root fetch - processPackages [fcm-django]: Remove: archive file [/home/abi/fetcher/tmp/fcm_django-2.2.0rc0.tar.gz]
 [2024-05-25 12:26:32] INFO root fetch - main [MainThread]: End processing [fcm-django]: success
 [2024-05-25 12:26:32] INFO root fetch - main [MainThread]: Store serial: [23374033]
+[2024-05-25 12:28:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374033]
+[2024-05-25 12:28:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 12:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grooveshop-django-api
+[2024-05-25 12:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hddm-s
+[2024-05-25 12:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: icas
+[2024-05-25 12:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-authrespond
+[2024-05-25 12:28:42] INFO root fetch - processPackages [nonebot-plugin-authrespond]: New version: [1.6] Old Version: [1.5]
+[2024-05-25 12:28:42] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.81]
+[2024-05-25 12:28:42] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-05-25 12:28:42] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Downloading https://files.pythonhosted.org/packages/a1/1a/a17e0a6c9b8e26c2047cd123c24422ef9443cb6e32cc01d248d6ec09dcf4/nonebot_plugin_authrespond-1.5.tar.gz
+[2024-05-25 12:28:42] WARNING root fetch - processPackages [icas]: Skipping, unable to determine old version
+[2024-05-25 12:28:42] INFO root fetch - main [MainThread]: End processing [icas] error
+[2024-05-25 12:28:42] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-05-25 12:28:42] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/80/23/c6f1fbf135fc9a23c8b7fcb06f015df8a6d704a785e221ee26ca5ee8fd68/hddm_s-1.0.81.tar.gz
+[2024-05-25 12:28:42] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-05-25 12:28:42] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-05-25 12:28:43] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Downloading https://files.pythonhosted.org/packages/a3/8e/233a6b908609763b0e79ac21b039347f59ef695973fa416aac9daf337bb8/nonebot_plugin_authrespond-1.6.tar.gz
+[2024-05-25 12:28:43] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 12:28:43] INFO root fetch - processPackages [nonebot-plugin-authrespond]: executing diffoscope
+[2024-05-25 12:28:43] INFO root fetch - processPackages [nonebot-plugin-authrespond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_authrespond-1.5.tar.gz tmp/nonebot_plugin_authrespond-1.6.tar.gz --markdown 20240525/n/nonebot-plugin-authrespond/1.5-1.6/README.md --exclude *.pyd
+[2024-05-25 12:28:43] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 12:28:43] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.81.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.81-1.0.9/README.md --exclude *.pyd
+[2024-05-25 12:28:43] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_authrespond-1.5.tar.gz]
+[2024-05-25 12:28:43] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_authrespond-1.6.tar.gz]
+[2024-05-25 12:28:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-authrespond]: success
+[2024-05-25 12:28:43] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.81.tar.gz]
+[2024-05-25 12:28:43] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 12:28:43] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 12:28:43] INFO root fetch - main [MainThread]: Store serial: [23374050]
