@@ -10093,3 +10093,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:09:41] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
 [2024-05-25 09:09:41] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2024-05-25 09:09:41] INFO root fetch - main [MainThread]: Store serial: [23372695]
+[2024-05-25 09:11:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372695]
+[2024-05-25 09:11:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 09:11:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: armis
+[2024-05-25 09:11:50] INFO root fetch - processPackages [armis]: New version: [1.0.22] Old Version: [1.0.21]
+[2024-05-25 09:11:50] INFO root fetch - processPackages [armis]: Downloading https://files.pythonhosted.org/packages/17/c4/d0987eb70f1ddf33c9029def4784653812609819a0e844a332d8446d30c3/armis-1.0.21.tar.gz
+[2024-05-25 09:11:50] INFO root fetch - processPackages [armis]: Downloading https://files.pythonhosted.org/packages/d2/51/e06f028017ea974af4de64f7332916cb718d4b2d4dd3e549f75f830ec74a/armis-1.0.22.tar.gz
+[2024-05-25 09:11:50] INFO root fetch - processPackages [armis]: executing diffoscope
+[2024-05-25 09:11:50] INFO root fetch - processPackages [armis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armis-1.0.21.tar.gz tmp/armis-1.0.22.tar.gz --markdown 20240525/a/armis/1.0.21-1.0.22/README.md --exclude *.pyd
+[2024-05-25 09:11:51] INFO root fetch - processPackages [armis]: Remove: archive file [/home/abi/fetcher/tmp/armis-1.0.21.tar.gz]
+[2024-05-25 09:11:51] INFO root fetch - processPackages [armis]: Remove: archive file [/home/abi/fetcher/tmp/armis-1.0.22.tar.gz]
+[2024-05-25 09:11:51] INFO root fetch - main [MainThread]: End processing [armis]: success
+[2024-05-25 09:11:51] INFO root fetch - main [MainThread]: Store serial: [23372698]
