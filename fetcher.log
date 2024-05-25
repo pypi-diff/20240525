@@ -7033,3 +7033,69 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:51:45] INFO root fetch - processPackages [tritonclient]: Remove: archive file [/home/abi/fetcher/tmp/tritonclient-2.9.0-py3-none-manylinux2014_aarch64.whl.zip]
 [2024-05-25 03:51:45] INFO root fetch - main [MainThread]: End processing [tritonclient]: success
 [2024-05-25 03:51:45] INFO root fetch - main [MainThread]: Store serial: [23371270]
+[2024-05-25 03:54:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371270]
+[2024-05-25 03:54:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roofAI
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kilosort
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai-commands
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notebooks-and-scripts
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kamangir
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: steamleaderboards
+[2024-05-25 03:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bioregistry
+[2024-05-25 03:54:14] INFO root fetch - processPackages [openai-commands]: New version: [3.8.1] Old Version: [3.7.1]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kamangir]: New version: [3.56.1] Old Version: [3.55.1]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.454.1] Old Version: [4.453.1]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [openai-commands]: Downloading https://files.pythonhosted.org/packages/d8/02/ebd81825521ba9b90a11d01a0b231d0a02dac2391097910dae7148b7d985/openai_commands-3.7.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/d8/96/09b9f2d041ffdca67cb65adc07ece7826ce61cecc9ef603d05efb823b318/kamangir-3.55.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [roofAI]: New version: [4.23.1] Old Version: [4.22.1]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kilosort]: New version: [4.0.8] Old Version: [4.0.7]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/99/0c/72ddafb7d0f09b7760fb2f2d5ae84bcd601925631c6523c97975ec92c27c/notebooks_and_scripts-4.453.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [steamleaderboards]: New version: [1.0.0] Old Version: [0.0.3]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [bioregistry]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-05-25 03:54:14] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/2f/79/1711a2ace2b12763939c20a0a2d9e10e074b1c1aa769a99a15f2c7f06842/notebooks_and_scripts-4.454.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [steamleaderboards]: Downloading https://files.pythonhosted.org/packages/e7/75/55d990885346a55b383d9a5ceab86e608b59837e8f3e159ef8ffb215dafa/steamleaderboards-0.0.3.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/72/b0/021ea52b1fa3aee8576fca9bf55c7f85dc4533a1aec703c68ffa40a9c8e6/roofai-4.22.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kilosort]: Downloading https://files.pythonhosted.org/packages/22/76/1ebbcc7e5597a694ebd07230149ef4010b327de5bd9ae6215ccfadc6a9a7/kilosort-4.0.7.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/48/3a/7ab0975f6c89bea709b279c9e39ef3be5439cfec168dbf3a614dac397663/bioregistry-0.9.96.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/ed/4c/3497a5f09681d157ac0d76331a18434df452e6e4639e624044ccef857835/kamangir-3.56.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [openai-commands]: Downloading https://files.pythonhosted.org/packages/23/08/d8280760dc1ad37f5322e2d83e6969a1410e489cae94bf151812d743a021/openai_commands-3.8.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-05-25 03:54:14] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.453.1.tar.gz tmp/notebooks_and_scripts-4.454.1.tar.gz --markdown 20240525/n/notebooks-and-scripts/4.453.1-4.454.1/README.md --exclude *.pyd
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.55.1.tar.gz tmp/kamangir-3.56.1.tar.gz --markdown 20240525/k/kamangir/3.55.1-3.56.1/README.md --exclude *.pyd
+[2024-05-25 03:54:14] INFO root fetch - processPackages [openai-commands]: executing diffoscope
+[2024-05-25 03:54:14] INFO root fetch - processPackages [openai-commands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_commands-3.7.1.tar.gz tmp/openai_commands-3.8.1.tar.gz --markdown 20240525/o/openai-commands/3.7.1-3.8.1/README.md --exclude *.pyd
+[2024-05-25 03:54:14] INFO root fetch - processPackages [steamleaderboards]: Downloading https://files.pythonhosted.org/packages/68/b0/c73bd104fd50b32fc5d8d171ed7893d3f1070f9f5a7f37924b7b57c34901/steamleaderboards-1.0.0.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/89/4d/ba3d8e273afbb95ab10f6259f8cebce62f2118d02b756b9f1e7f49f1ee18/roofai-4.23.1.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kilosort]: Downloading https://files.pythonhosted.org/packages/0a/cd/6f8ada8cb115fd55143c37d24deae65b869ce12c857fa86b4377a56e3627/kilosort-4.0.8.tar.gz
+[2024-05-25 03:54:14] INFO root fetch - processPackages [steamleaderboards]: executing diffoscope
+[2024-05-25 03:54:14] INFO root fetch - processPackages [steamleaderboards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamleaderboards-0.0.3.tar.gz tmp/steamleaderboards-1.0.0.tar.gz --markdown 20240525/s/steamleaderboards/0.0.3-1.0.0/README.md --exclude *.pyd
+[2024-05-25 03:54:14] INFO root fetch - processPackages [roofAI]: executing diffoscope
+[2024-05-25 03:54:14] INFO root fetch - processPackages [roofAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roofai-4.22.1.tar.gz tmp/roofai-4.23.1.tar.gz --markdown 20240525/r/roofAI/4.22.1-4.23.1/README.md --exclude *.pyd
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kilosort]: executing diffoscope
+[2024-05-25 03:54:14] INFO root fetch - processPackages [kilosort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kilosort-4.0.7.tar.gz tmp/kilosort-4.0.8.tar.gz --markdown 20240525/k/kilosort/4.0.7-4.0.8/README.md --exclude *.pyd
+[2024-05-25 03:54:15] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.453.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.454.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-05-25 03:54:15] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.55.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.56.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 03:54:15] INFO root fetch - processPackages [openai-commands]: Remove: archive file [/home/abi/fetcher/tmp/openai_commands-3.7.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - processPackages [openai-commands]: Remove: archive file [/home/abi/fetcher/tmp/openai_commands-3.8.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - main [MainThread]: End processing [openai-commands]: success
+[2024-05-25 03:54:15] INFO root fetch - processPackages [steamleaderboards]: Remove: archive file [/home/abi/fetcher/tmp/steamleaderboards-0.0.3.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - processPackages [steamleaderboards]: Remove: archive file [/home/abi/fetcher/tmp/steamleaderboards-1.0.0.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - main [MainThread]: End processing [steamleaderboards]: success
+[2024-05-25 03:54:15] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.22.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.23.1.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - main [MainThread]: End processing [roofAI]: success
+[2024-05-25 03:54:15] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.7.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.8.tar.gz]
+[2024-05-25 03:54:15] INFO root fetch - main [MainThread]: End processing [kilosort]: success
+[2024-05-25 03:54:17] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/57/7b/30897578f436658ac1f334eb6e9f96ad0bacb0a54846670620df53a5a374/bioregistry-0.9.97.tar.gz
+[2024-05-25 03:54:19] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2024-05-25 03:54:19] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.96.tar.gz tmp/bioregistry-0.9.97.tar.gz --markdown 20240525/b/bioregistry/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-05-25 03:55:25] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.96.tar.gz]
+[2024-05-25 03:55:25] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
+[2024-05-25 03:55:25] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2024-05-25 03:55:25] INFO root fetch - main [MainThread]: Store serial: [23371291]
