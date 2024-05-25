@@ -12951,3 +12951,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:39:39] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.9.0.tar.gz]
 [2024-05-25 12:39:39] INFO root fetch - main [MainThread]: End processing [aplr]: success
 [2024-05-25 12:39:39] INFO root fetch - main [MainThread]: Store serial: [23374107]
+[2024-05-25 12:41:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374107]
+[2024-05-25 12:41:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 12:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymemgpt-nightly
+[2024-05-25 12:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-05-25 12:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TextToVector
+[2024-05-25 12:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paramarea
+[2024-05-25 12:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: IndicTrans2
+[2024-05-25 12:41:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TextToVector
+[2024-05-25 12:41:49] WARNING root fetch - processPackages [TextToVector]: Skipping, unable to determine old version
+[2024-05-25 12:41:49] INFO root fetch - main [MainThread]: End processing [TextToVector] error
+[2024-05-25 12:41:49] WARNING root fetch - processPackages [TextToVector]: Skipping, unable to determine old version
+[2024-05-25 12:41:49] INFO root fetch - main [MainThread]: End processing [TextToVector] error
+[2024-05-25 12:41:49] INFO root fetch - processPackages [xingpyc]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-25 12:41:49] INFO root fetch - processPackages [IndicTrans2]: New version: [0.1.2] Old Version: [0.0.1]
+[2024-05-25 12:41:49] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-25 12:41:49] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e7/fd/329edb9432f50f3a2bce4152e587fd319b415d2d73dae25e81e86fcb36ac/xingpyc-0.0.6.tar.gz
+[2024-05-25 12:41:49] WARNING root fetch - processPackages [paramarea]: Skipping, unable to determine old version
+[2024-05-25 12:41:49] INFO root fetch - main [MainThread]: End processing [paramarea] error
+[2024-05-25 12:41:49] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-25 12:41:49] INFO root fetch - processPackages [IndicTrans2]: Downloading https://files.pythonhosted.org/packages/67/75/c45319fecb4608beb279e0b7b8e7c32e293a6985e6c8a61279de061e084a/IndicTrans2-0.0.1-py3-none-any.whl
+[2024-05-25 12:41:50] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-25 12:41:50] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/5e/df/0ee105be07c7163fb6d438d25c4c9bb186fed5d2a62e439742fbd9eb356e/xingpyc-0.0.7.tar.gz
+[2024-05-25 12:41:50] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 12:41:50] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.6.tar.gz tmp/xingpyc-0.0.7.tar.gz --markdown 20240525/x/xingpyc/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-25 12:41:50] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-25 12:41:50] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240525/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-25 12:41:50] INFO root fetch - processPackages [IndicTrans2]: Downloading https://files.pythonhosted.org/packages/52/13/af9470c2c52682a6868676326420793186a02b3ec97c03101ce3e8486e94/IndicTrans2-0.1.2.tar.gz
+[2024-05-25 12:41:50] INFO root fetch - processPackages [IndicTrans2]: executing diffoscope
+[2024-05-25 12:41:50] INFO root fetch - processPackages [IndicTrans2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IndicTrans2-0.0.1-py3-none-any.whl.zip tmp/IndicTrans2-0.1.2.tar.gz --markdown 20240525/I/IndicTrans2/0.0.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 12:41:50] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.6.tar.gz]
+[2024-05-25 12:41:50] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.7.tar.gz]
+[2024-05-25 12:41:50] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 12:41:50] INFO root fetch - processPackages [IndicTrans2]: Remove: archive file [/home/abi/fetcher/tmp/IndicTrans2-0.0.1-py3-none-any.whl.zip]
+[2024-05-25 12:41:50] INFO root fetch - processPackages [IndicTrans2]: Remove: archive file [/home/abi/fetcher/tmp/IndicTrans2-0.1.2.tar.gz]
+[2024-05-25 12:41:50] INFO root fetch - main [MainThread]: End processing [IndicTrans2]: success
+[2024-05-25 12:41:51] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-25 12:41:51] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-25 12:41:51] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-25 12:41:51] INFO root fetch - main [MainThread]: Store serial: [23374137]
