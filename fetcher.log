@@ -13392,3 +13392,32 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:12:21] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.5.tar.gz]
 [2024-05-25 13:12:21] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-dfy]: success
 [2024-05-25 13:12:21] INFO root fetch - main [MainThread]: Store serial: [23374279]
+[2024-05-25 13:14:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374279]
+[2024-05-25 13:14:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 13:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manipulation
+[2024-05-25 13:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-cpp
+[2024-05-25 13:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tb-nightly
+[2024-05-25 13:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-admin-console
+[2024-05-25 13:14:30] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-05-25 13:14:30] WARNING root fetch - processPackages [django-admin-console]: Skipping, unable to determine old version
+[2024-05-25 13:14:30] INFO root fetch - main [MainThread]: End processing [django-admin-console] error
+[2024-05-25 13:14:30] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240525] Old Version: [2.5.0b20240524]
+[2024-05-25 13:14:30] INFO root fetch - processPackages [manipulation]: New version: [2024.5.25] Old Version: [2024.5.18]
+[2024-05-25 13:14:30] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-05-25 13:14:30] INFO root fetch - processPackages [manipulation]: Downloading https://files.pythonhosted.org/packages/b7/a7/df23818f91fd952aaa7e7efbdcea055819718ea49bdb1280920ea17c36c1/manipulation-2024.5.18.tar.gz
+[2024-05-25 13:14:30] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/e5/40/b94f63a2f370b2cddaffa57f32475739daf7e7d6d6f87ee646555cf70f64/bigdl_core_cpp-2.5.0b20240524-py3-none-win_amd64.whl
+[2024-05-25 13:14:30] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 33500883>=10485760
+[2024-05-25 13:14:30] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-05-25 13:14:30] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-05-25 13:14:30] INFO root fetch - processPackages [manipulation]: Downloading https://files.pythonhosted.org/packages/44/28/b9e9894455abc312b1f68f44de2e87d8c8663b35c83a672933d1ffedbbb9/manipulation-2024.5.25.tar.gz
+[2024-05-25 13:14:30] INFO root fetch - processPackages [manipulation]: executing diffoscope
+[2024-05-25 13:14:30] INFO root fetch - processPackages [manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manipulation-2024.5.18.tar.gz tmp/manipulation-2024.5.25.tar.gz --markdown 20240525/m/manipulation/2024.5.18-2024.5.25/README.md --exclude *.pyd
+[2024-05-25 13:14:31] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-05-25 13:14:31] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240525/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-05-25 13:14:32] INFO root fetch - processPackages [manipulation]: Remove: archive file [/home/abi/fetcher/tmp/manipulation-2024.5.18.tar.gz]
+[2024-05-25 13:14:32] INFO root fetch - processPackages [manipulation]: Remove: archive file [/home/abi/fetcher/tmp/manipulation-2024.5.25.tar.gz]
+[2024-05-25 13:14:32] INFO root fetch - main [MainThread]: End processing [manipulation]: success
+[2024-05-25 13:14:32] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-05-25 13:14:32] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-05-25 13:14:32] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-05-25 13:14:32] INFO root fetch - main [MainThread]: Store serial: [23374287]
