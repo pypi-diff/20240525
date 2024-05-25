@@ -21531,3 +21531,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:28:55] INFO root fetch - processPackages [xRedUtils]: Remove: archive file [/home/abi/fetcher/tmp/xredutils-1.0.0.tar.gz]
 [2024-05-25 21:28:55] INFO root fetch - main [MainThread]: End processing [xRedUtils]: success
 [2024-05-25 21:28:55] INFO root fetch - main [MainThread]: Store serial: [23377446]
+[2024-05-25 21:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377446]
+[2024-05-25 21:31:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 21:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: g910-gkeys
+[2024-05-25 21:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wolfsoftware.github-token-validator
+[2024-05-25 21:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: new-fave
+[2024-05-25 21:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: g910-gkeys
+[2024-05-25 21:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opnsense-confgen
+[2024-05-25 21:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: that-depends
+[2024-05-25 21:31:06] WARNING root fetch - processPackages [wolfsoftware.github-token-validator]: Skipping, unable to determine old version
+[2024-05-25 21:31:06] INFO root fetch - main [MainThread]: End processing [wolfsoftware.github-token-validator] error
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-25 21:31:06] INFO root fetch - processPackages [opnsense-confgen]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-25 21:31:06] INFO root fetch - processPackages [new-fave]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 21:31:06] INFO root fetch - processPackages [that-depends]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-25 21:31:06] INFO root fetch - processPackages [opnsense-confgen]: Downloading https://files.pythonhosted.org/packages/00/87/2c6f529d75cd2768ca861d6f3ad989cba865740e8cb1bd13a81a9f96ec85/opnsense-confgen-2.3.0.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: Downloading https://files.pythonhosted.org/packages/33/d7/81fba656d6f3e435fd818a9ed1f9c802c5e7930a5142507dbdf51644a2ec/g910_gkeys-0.4.1.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [new-fave]: Downloading https://files.pythonhosted.org/packages/d4/bd/0dd5a10dd6dcc6f16bc4845c9b3ac6f2d3eb0339b1f513c67b9f6955c8db/new_fave-0.1.2.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/3b/9b/e464ceeb38f8e03399625fde3e904c983ebd7f3d0fac48a0d3812ff971f8/that_depends-1.9.2.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: Downloading https://files.pythonhosted.org/packages/33/d7/81fba656d6f3e435fd818a9ed1f9c802c5e7930a5142507dbdf51644a2ec/g910_gkeys-0.4.1.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [opnsense-confgen]: Downloading https://files.pythonhosted.org/packages/e6/7f/e9541e9e5e80abcab4bd8d42f7de7903b9b191450d31bea259bd8aad95af/opnsense_confgen-2.3.1.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [new-fave]: Downloading https://files.pythonhosted.org/packages/20/ac/87107e5ce9d2c1ac95b40edf114c157b61434f70bf325bc2a2d04fd70361/new_fave-0.1.3.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: Downloading https://files.pythonhosted.org/packages/79/27/24b5337f4e215f29f201077d10ee1a4b8dfbf87bd2e2fdba5757123b8dc8/g910_gkeys-0.4.2.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: Downloading https://files.pythonhosted.org/packages/79/27/24b5337f4e215f29f201077d10ee1a4b8dfbf87bd2e2fdba5757123b8dc8/g910_gkeys-0.4.2.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/f9/50/d51759f6b00295af55f21c03fed2b8089aeaedf2f19b5f66ae3ebc545bac/that_depends-1.9.3.tar.gz
+[2024-05-25 21:31:06] INFO root fetch - processPackages [opnsense-confgen]: executing diffoscope
+[2024-05-25 21:31:06] INFO root fetch - processPackages [opnsense-confgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opnsense-confgen-2.3.0.tar.gz tmp/opnsense_confgen-2.3.1.tar.gz --markdown 20240525/o/opnsense-confgen/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-25 21:31:06] INFO root fetch - processPackages [new-fave]: executing diffoscope
+[2024-05-25 21:31:06] INFO root fetch - processPackages [new-fave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/new_fave-0.1.2.tar.gz tmp/new_fave-0.1.3.tar.gz --markdown 20240525/n/new-fave/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: executing diffoscope
+[2024-05-25 21:31:06] INFO root fetch - processPackages [g910-gkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g910_gkeys-0.4.1.tar.gz tmp/g910_gkeys-0.4.2.tar.gz --markdown 20240525/g/g910-gkeys/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-25 21:31:07] INFO root fetch - processPackages [g910-gkeys]: executing diffoscope
+[2024-05-25 21:31:07] INFO root fetch - processPackages [g910-gkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g910_gkeys-0.4.1.tar.gz tmp/g910_gkeys-0.4.2.tar.gz --markdown 20240525/g/g910-gkeys/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-25 21:31:07] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-05-25 21:31:07] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.9.2.tar.gz tmp/that_depends-1.9.3.tar.gz --markdown 20240525/t/that-depends/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-25 21:31:07] INFO root fetch - processPackages [opnsense-confgen]: Remove: archive file [/home/abi/fetcher/tmp/opnsense-confgen-2.3.0.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - processPackages [opnsense-confgen]: Remove: archive file [/home/abi/fetcher/tmp/opnsense_confgen-2.3.1.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [opnsense-confgen]: success
+[2024-05-25 21:31:07] INFO root fetch - processPackages [g910-gkeys]: Remove: archive file [/home/abi/fetcher/tmp/g910_gkeys-0.4.1.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - processPackages [g910-gkeys]: Remove: archive file [/home/abi/fetcher/tmp/g910_gkeys-0.4.2.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [g910-gkeys]: success
+[2024-05-25 21:31:07] INFO root fetch - processPackages [new-fave]: Remove: archive file [/home/abi/fetcher/tmp/new_fave-0.1.2.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - processPackages [new-fave]: Remove: archive file [/home/abi/fetcher/tmp/new_fave-0.1.3.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [new-fave]: success
+[2024-05-25 21:31:07] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.2.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.3.tar.gz]
+[2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [g910-gkeys]: success
+[2024-05-25 21:31:07] INFO root fetch - main [MainThread]: Store serial: [23377468]
