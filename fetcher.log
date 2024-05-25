@@ -17543,3 +17543,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:37:06] INFO root fetch - processPackages [calibrated-explanations]: Remove: archive file [/home/abi/fetcher/tmp/calibrated_explanations-0.3.3.tar.gz]
 [2024-05-25 16:37:06] INFO root fetch - main [MainThread]: End processing [calibrated-explanations]: success
 [2024-05-25 16:37:06] INFO root fetch - main [MainThread]: Store serial: [23375769]
+[2024-05-25 16:39:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375769]
+[2024-05-25 16:39:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 16:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moveread-dfy
+[2024-05-25 16:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reddit-tts-bot
+[2024-05-25 16:39:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hddm-s
+[2024-05-25 16:39:15] INFO root fetch - processPackages [moveread-dfy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 16:39:15] INFO root fetch - processPackages [reddit-tts-bot]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 16:39:15] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.85]
+[2024-05-25 16:39:15] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/ff/92/50e03a6b8317d0ce7ff4ceb6aa2af3fae5fc4901ec76d53efe02ff47ee64/moveread_dfy-0.1.8.tar.gz
+[2024-05-25 16:39:15] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/b3/8a/64327f6d15a16f67572a3caa5196a21f43dd4af1fb09338d5c1c8bd28d72/reddit_tts_bot-1.0.3.tar.gz
+[2024-05-25 16:39:15] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/57/67/325ab9efd44d929412730250854b0951c76e79040c2de29ee61693431cfa/hddm_s-1.0.85.tar.gz
+[2024-05-25 16:39:15] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/4d/dc/6592a5a23b2b53d8662b9760dbd8976604944f937c791ed60408be9c97fe/reddit_tts_bot-1.0.4.tar.gz
+[2024-05-25 16:39:16] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/3e/d8/0b3df8fbc36631c29ac81442cd25d197377a6f20593d6fdfb69d9e93d9a3/moveread_dfy-0.1.9.tar.gz
+[2024-05-25 16:39:16] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 16:39:16] INFO root fetch - processPackages [moveread-dfy]: executing diffoscope
+[2024-05-25 16:39:16] INFO root fetch - processPackages [moveread-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_dfy-0.1.8.tar.gz tmp/moveread_dfy-0.1.9.tar.gz --markdown 20240525/m/moveread-dfy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 16:39:16] INFO root fetch - processPackages [reddit-tts-bot]: executing diffoscope
+[2024-05-25 16:39:16] INFO root fetch - processPackages [reddit-tts-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit_tts_bot-1.0.3.tar.gz tmp/reddit_tts_bot-1.0.4.tar.gz --markdown 20240525/r/reddit-tts-bot/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 16:39:16] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 16:39:16] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.85.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.85-1.0.9/README.md --exclude *.pyd
+[2024-05-25 16:39:16] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.85.tar.gz]
+[2024-05-25 16:39:16] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 16:39:16] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 16:39:16] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.8.tar.gz]
+[2024-05-25 16:39:16] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.9.tar.gz]
+[2024-05-25 16:39:16] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
+[2024-05-25 16:39:16] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.3.tar.gz]
+[2024-05-25 16:39:16] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.4.tar.gz]
+[2024-05-25 16:39:16] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
+[2024-05-25 16:39:16] INFO root fetch - main [MainThread]: Store serial: [23375777]
