@@ -2706,3 +2706,32 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:51:31] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-05-25 02:51:31] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-05-25 02:51:31] INFO root fetch - main [MainThread]: Store serial: [23369768]
+[2024-05-25 02:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369768]
+[2024-05-25 02:53:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 02:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itk-cudacommon
+[2024-05-25 02:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promising-stocks
+[2024-05-25 02:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dyff-client
+[2024-05-25 02:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neurocaps
+[2024-05-25 02:53:39] INFO root fetch - processPackages [promising-stocks]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 02:53:39] INFO root fetch - processPackages [neurocaps]: New version: [0.9.1.post3] Old Version: [0.9.1.post2]
+[2024-05-25 02:53:39] WARNING root fetch - processPackages [itk-cudacommon]: Skipping, unable to determine old version
+[2024-05-25 02:53:39] INFO root fetch - main [MainThread]: End processing [itk-cudacommon] error
+[2024-05-25 02:53:39] INFO root fetch - processPackages [dyff-client]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-25 02:53:39] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/b2/1d/b7c2375863eabd7ba34e186861a2abdbc063cdd6e4c065f5feaed026ed43/promising_stocks-0.1.5.tar.gz
+[2024-05-25 02:53:39] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/fa/ab/4eebfa56d51c67ddebbfabf373bcab589761e3a4a8950e64c35ee41cdab6/neurocaps-0.9.1.post2.tar.gz
+[2024-05-25 02:53:40] INFO root fetch - processPackages [dyff-client]: Downloading https://files.pythonhosted.org/packages/a9/36/e58faf1c7d13c1e1bdc2bc338bcc7a6e20768a2176b4f0e8c39ead9f554e/dyff_client-0.7.0.tar.gz
+[2024-05-25 02:53:40] ERROR root fetch - processPackages [neurocaps]: Unable to fetch info: No such project/version 'neurocaps' 0.9.1.post3
+[2024-05-25 02:53:40] INFO root fetch - main [MainThread]: End processing [neurocaps] error
+[2024-05-25 02:53:40] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/c7/74/fb5129475b97470e4ab8c5f198c5a62d57bf131150039f8ae9f85365dfb3/promising_stocks-0.1.6.tar.gz
+[2024-05-25 02:53:40] INFO root fetch - processPackages [promising-stocks]: executing diffoscope
+[2024-05-25 02:53:40] INFO root fetch - processPackages [promising-stocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promising_stocks-0.1.5.tar.gz tmp/promising_stocks-0.1.6.tar.gz --markdown 20240525/p/promising-stocks/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 02:53:40] INFO root fetch - processPackages [dyff-client]: Downloading https://files.pythonhosted.org/packages/16/6c/918fe6de8d22f8c65ef59a83ef593a123b7b56e19a2beb842801253dd3a4/dyff_client-0.8.0.tar.gz
+[2024-05-25 02:53:40] INFO root fetch - processPackages [dyff-client]: executing diffoscope
+[2024-05-25 02:53:40] INFO root fetch - processPackages [dyff-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_client-0.7.0.tar.gz tmp/dyff_client-0.8.0.tar.gz --markdown 20240525/d/dyff-client/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-25 02:53:40] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.5.tar.gz]
+[2024-05-25 02:53:40] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.6.tar.gz]
+[2024-05-25 02:53:40] INFO root fetch - main [MainThread]: End processing [promising-stocks]: success
+[2024-05-25 02:53:41] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff_client-0.7.0.tar.gz]
+[2024-05-25 02:53:41] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff_client-0.8.0.tar.gz]
+[2024-05-25 02:53:41] INFO root fetch - main [MainThread]: End processing [dyff-client]: success
+[2024-05-25 02:53:41] INFO root fetch - main [MainThread]: Store serial: [23369811]
