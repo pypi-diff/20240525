@@ -18327,3 +18327,42 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:21:23] INFO root fetch - processPackages [tortoise-orm]: Remove: archive file [/home/abi/fetcher/tmp/tortoise-orm-0.9.4.tar.gz]
 [2024-05-25 17:21:23] INFO root fetch - main [MainThread]: End processing [tortoise-orm]: success
 [2024-05-25 17:21:23] INFO root fetch - main [MainThread]: Store serial: [23376054]
+[2024-05-25 17:23:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376054]
+[2024-05-25 17:23:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 17:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quad5
+[2024-05-25 17:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: structables
+[2024-05-25 17:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-resolver
+[2024-05-25 17:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-05-25 17:23:34] INFO root fetch - processPackages [model-resolver]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-25 17:23:34] INFO root fetch - processPackages [structables]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-25 17:23:34] INFO root fetch - processPackages [model-resolver]: Downloading https://files.pythonhosted.org/packages/23/93/7e03f9ba0ac4335190b86452284c27f52c593a58278b365c0a9d72a996d3/model_resolver-0.6.2.tar.gz
+[2024-05-25 17:23:34] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.410] Old Version: [0.45.20240525.409]
+[2024-05-25 17:23:34] INFO root fetch - processPackages [quad5]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 17:23:34] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/95/37/b3dd4bcd33decfd9987159a88a8ab19f7db3c335a25b520e2027820400f7/structables-0.3.1.tar.gz
+[2024-05-25 17:23:34] INFO root fetch - processPackages [quad5]: Downloading https://files.pythonhosted.org/packages/a6/57/4557f8bf711b743ba63e0f0ebbb7175d7e5b1096c24f7882aa149870257c/quad5-0.1.8.tar.gz
+[2024-05-25 17:23:34] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/91/31/54d92dfe370f1e90bd6b4d5972c037370e385a360011e72024c5782701ac/pkscreener-0.45.20240525.409-cp311-cp311-win_amd64.whl
+[2024-05-25 17:23:34] INFO root fetch - processPackages [model-resolver]: Downloading https://files.pythonhosted.org/packages/b7/9d/61a9fff172d371cb2071d7984511a623a91638a95ab13762463dc473dbe3/model_resolver-0.6.3.tar.gz
+[2024-05-25 17:23:34] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/95/fc/c2ee2f0629d140ae21ef47b20527f0f74bc32994d3c9e9b34ac5190625b4/structables-0.3.2.tar.gz
+[2024-05-25 17:23:34] INFO root fetch - processPackages [quad5]: Downloading https://files.pythonhosted.org/packages/8e/64/683286f8fb2837deaf410f8c435f6f76205acd9684aacc2c52c529acd2e0/quad5-0.1.9.tar.gz
+[2024-05-25 17:23:34] INFO root fetch - processPackages [model-resolver]: executing diffoscope
+[2024-05-25 17:23:34] INFO root fetch - processPackages [model-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_resolver-0.6.2.tar.gz tmp/model_resolver-0.6.3.tar.gz --markdown 20240525/m/model-resolver/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-25 17:23:34] INFO root fetch - processPackages [quad5]: executing diffoscope
+[2024-05-25 17:23:34] INFO root fetch - processPackages [quad5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quad5-0.1.8.tar.gz tmp/quad5-0.1.9.tar.gz --markdown 20240525/q/quad5/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 17:23:34] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-25 17:23:34] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.3.1.tar.gz tmp/structables-0.3.2.tar.gz --markdown 20240525/s/structables/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-25 17:23:34] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/10/0c/0a3312cc809c962cca3834046078c4b46d7da65772347a49c79c137dca3e/pkscreener-0.45.20240525.410-cp310-cp310-macosx_12_0_arm64.whl
+[2024-05-25 17:23:35] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 17:23:35] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.409-cp311-cp311-win_amd64.whl.zip tmp/pkscreener-0.45.20240525.410-cp310-cp310-macosx_12_0_arm64.whl.zip --markdown 20240525/p/pkscreener/0.45.20240525.409-0.45.20240525.410/README.md --exclude *.pyd
+[2024-05-25 17:23:35] INFO root fetch - processPackages [model-resolver]: Remove: archive file [/home/abi/fetcher/tmp/model_resolver-0.6.2.tar.gz]
+[2024-05-25 17:23:35] INFO root fetch - processPackages [model-resolver]: Remove: archive file [/home/abi/fetcher/tmp/model_resolver-0.6.3.tar.gz]
+[2024-05-25 17:23:35] INFO root fetch - main [MainThread]: End processing [model-resolver]: success
+[2024-05-25 17:23:35] INFO root fetch - processPackages [quad5]: Remove: archive file [/home/abi/fetcher/tmp/quad5-0.1.8.tar.gz]
+[2024-05-25 17:23:35] INFO root fetch - processPackages [quad5]: Remove: archive file [/home/abi/fetcher/tmp/quad5-0.1.9.tar.gz]
+[2024-05-25 17:23:35] INFO root fetch - main [MainThread]: End processing [quad5]: success
+[2024-05-25 17:23:35] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.1.tar.gz]
+[2024-05-25 17:23:35] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.2.tar.gz]
+[2024-05-25 17:23:35] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-25 17:23:36] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.409-cp311-cp311-win_amd64.whl.zip]
+[2024-05-25 17:23:36] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.410-cp310-cp310-macosx_12_0_arm64.whl.zip]
+[2024-05-25 17:23:36] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 17:23:36] INFO root fetch - main [MainThread]: Store serial: [23376065]
