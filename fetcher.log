@@ -20668,3 +20668,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:07:58] INFO root fetch - processPackages [synthetic-home]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_home-2.1.0.tar.gz]
 [2024-05-25 20:07:58] INFO root fetch - main [MainThread]: End processing [synthetic-home]: success
 [2024-05-25 20:07:58] INFO root fetch - main [MainThread]: Store serial: [23377019]
+[2024-05-25 20:10:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377019]
+[2024-05-25 20:10:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magyar
+[2024-05-25 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyside-app-core
+[2024-05-25 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kisters.network-store.model-library.water
+[2024-05-25 20:10:07] INFO root fetch - processPackages [magyar]: New version: [4.0.0] Old Version: [3.1.1]
+[2024-05-25 20:10:07] INFO root fetch - processPackages [kisters.network-store.model-library.water]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-25 20:10:07] INFO root fetch - processPackages [pyside-app-core]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-25 20:10:07] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/4b/cc/4bdd38d7aded45eb8463634e2aa847a068a171726bae441ddb2a1cf33721/magyar-3.1.1.tar.gz
+[2024-05-25 20:10:07] INFO root fetch - processPackages [pyside-app-core]: Downloading https://files.pythonhosted.org/packages/d0/61/d1d3199160f4e908b0d00c0ddd5cbeb90b6a2b9dbc461282dc45872f41b3/pyside_app_core-0.2.0.tar.gz
+[2024-05-25 20:10:07] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Downloading https://files.pythonhosted.org/packages/32/5c/c46fa03715d9d803156ff9aa298a775cb8eb2067f070a5359b845823b99e/kisters.network_store.model_library.water-0.2.9.tar.gz
+[2024-05-25 20:10:07] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/d8/47/c8c2febbadd0fd4ec73692c6cf1a0a11fb547eeff6f10d6e4cc9ca0afe14/magyar-4.0.0.tar.gz
+[2024-05-25 20:10:07] INFO root fetch - processPackages [pyside-app-core]: Downloading https://files.pythonhosted.org/packages/be/d3/9105153477d99aafae54aace691b11d440db5c6defe57bd03238801898bb/pyside_app_core-0.3.0.tar.gz
+[2024-05-25 20:10:07] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Downloading https://files.pythonhosted.org/packages/01/b2/93fac30b06ea3fcb16d3e2664556db7a140fc256bfead590e958f9771d5a/kisters.network_store.model_library.water-0.3.0.tar.gz
+[2024-05-25 20:10:07] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2024-05-25 20:10:07] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-3.1.1.tar.gz tmp/magyar-4.0.0.tar.gz --markdown 20240525/m/magyar/3.1.1-4.0.0/README.md --exclude *.pyd
+[2024-05-25 20:10:07] INFO root fetch - processPackages [pyside-app-core]: executing diffoscope
+[2024-05-25 20:10:07] INFO root fetch - processPackages [pyside-app-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyside_app_core-0.2.0.tar.gz tmp/pyside_app_core-0.3.0.tar.gz --markdown 20240525/p/pyside-app-core/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-25 20:10:07] INFO root fetch - processPackages [kisters.network-store.model-library.water]: executing diffoscope
+[2024-05-25 20:10:07] INFO root fetch - processPackages [kisters.network-store.model-library.water]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kisters.network_store.model_library.water-0.2.9.tar.gz tmp/kisters.network_store.model_library.water-0.3.0.tar.gz --markdown 20240525/k/kisters.network-store.model-library.water/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-25 20:10:08] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Remove: archive file [/home/abi/fetcher/tmp/kisters.network_store.model_library.water-0.2.9.tar.gz]
+[2024-05-25 20:10:08] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Remove: archive file [/home/abi/fetcher/tmp/kisters.network_store.model_library.water-0.3.0.tar.gz]
+[2024-05-25 20:10:08] INFO root fetch - main [MainThread]: End processing [kisters.network-store.model-library.water]: success
+[2024-05-25 20:10:08] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-3.1.1.tar.gz]
+[2024-05-25 20:10:08] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.0.tar.gz]
+[2024-05-25 20:10:08] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2024-05-25 20:10:08] INFO root fetch - processPackages [pyside-app-core]: Remove: archive file [/home/abi/fetcher/tmp/pyside_app_core-0.2.0.tar.gz]
+[2024-05-25 20:10:08] INFO root fetch - processPackages [pyside-app-core]: Remove: archive file [/home/abi/fetcher/tmp/pyside_app_core-0.3.0.tar.gz]
+[2024-05-25 20:10:08] INFO root fetch - main [MainThread]: End processing [pyside-app-core]: success
+[2024-05-25 20:10:08] INFO root fetch - main [MainThread]: Store serial: [23377028]
