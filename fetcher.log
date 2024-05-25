@@ -20563,3 +20563,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:57:06] INFO root fetch - processPackages [rc3]: Remove: archive file [/home/abi/fetcher/tmp/rc3-0.0.7.tar.gz]
 [2024-05-25 19:57:06] INFO root fetch - main [MainThread]: End processing [rc3]: success
 [2024-05-25 19:57:06] INFO root fetch - main [MainThread]: Store serial: [23376993]
+[2024-05-25 19:59:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376993]
+[2024-05-25 19:59:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 19:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdtransform
+[2024-05-25 19:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coltrane
+[2024-05-25 19:59:15] INFO root fetch - processPackages [coltrane]: New version: [0.35.1] Old Version: [0.35.0]
+[2024-05-25 19:59:16] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/04/e9/27bcd9177c835299cb71bab2104c4ff6a8efd15bfcb74c72ce2be155b313/coltrane-0.35.0.tar.gz
+[2024-05-25 19:59:16] INFO root fetch - processPackages [gdtransform]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 19:59:16] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/d3/89/81a694f5d53abfbd54f583911b87142fa440c16bf7624f5126c00c3c7340/gdtransform-0.0.7.tar.gz
+[2024-05-25 19:59:16] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/70/59/f8ee78af60852ffb055e898f1c83fd0b7730755c806d4b7f71d9a82f2e97/coltrane-0.35.1.tar.gz
+[2024-05-25 19:59:16] INFO root fetch - processPackages [coltrane]: executing diffoscope
+[2024-05-25 19:59:16] INFO root fetch - processPackages [coltrane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coltrane-0.35.0.tar.gz tmp/coltrane-0.35.1.tar.gz --markdown 20240525/c/coltrane/0.35.0-0.35.1/README.md --exclude *.pyd
+[2024-05-25 19:59:16] INFO root fetch - processPackages [gdtransform]: Downloading https://files.pythonhosted.org/packages/97/77/ad73e135fb73eb898164ad98cff2e33cf5251dcc47f5da0cf63b4ee4805d/gdtransform-0.0.8.tar.gz
+[2024-05-25 19:59:16] INFO root fetch - processPackages [gdtransform]: executing diffoscope
+[2024-05-25 19:59:16] INFO root fetch - processPackages [gdtransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdtransform-0.0.7.tar.gz tmp/gdtransform-0.0.8.tar.gz --markdown 20240525/g/gdtransform/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 19:59:16] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.0.tar.gz]
+[2024-05-25 19:59:16] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.1.tar.gz]
+[2024-05-25 19:59:16] INFO root fetch - main [MainThread]: End processing [coltrane]: success
+[2024-05-25 19:59:17] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.7.tar.gz]
+[2024-05-25 19:59:17] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.8.tar.gz]
+[2024-05-25 19:59:17] INFO root fetch - main [MainThread]: End processing [gdtransform]: success
+[2024-05-25 19:59:17] INFO root fetch - main [MainThread]: Store serial: [23376999]
