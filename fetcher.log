@@ -13161,3 +13161,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:54:58] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.54-py3-none-any.whl.zip]
 [2024-05-25 12:54:58] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-05-25 12:54:58] INFO root fetch - main [MainThread]: Store serial: [23374201]
+[2024-05-25 12:57:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374201]
+[2024-05-25 12:57:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TrueFloat
+[2024-05-25 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promptulate
+[2024-05-25 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: doopass
+[2024-05-25 12:57:07] INFO root fetch - processPackages [TrueFloat]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 12:57:07] INFO root fetch - processPackages [doopass]: New version: [2.5] Old Version: [2.3]
+[2024-05-25 12:57:07] INFO root fetch - processPackages [promptulate]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 12:57:07] INFO root fetch - processPackages [TrueFloat]: Downloading https://files.pythonhosted.org/packages/df/9d/d6bb1f744ea8a1b47c33e59f68938ce214cf65d1aa966c969e264cde8264/truefloat-1.0.0.tar.gz
+[2024-05-25 12:57:07] INFO root fetch - processPackages [doopass]: Downloading https://files.pythonhosted.org/packages/e5/ea/7397fd8079abb0f1b3b15c01a5b23576e4f8ea125a17fe627bc3db5de77f/doopass-2.3.tar.gz
+[2024-05-25 12:57:07] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/79/c8/f923c24d433b393cefb02de1adab5e235b34375a5246ccfea81321c71342/promptulate-1.9.0.tar.gz
+[2024-05-25 12:57:07] INFO root fetch - processPackages [TrueFloat]: Downloading https://files.pythonhosted.org/packages/82/97/7ca7a3e3e7be8e403a91441111b60ae09e8344857d30b74a439e2f260d90/truefloat-1.0.1.tar.gz
+[2024-05-25 12:57:07] INFO root fetch - processPackages [TrueFloat]: executing diffoscope
+[2024-05-25 12:57:07] INFO root fetch - processPackages [TrueFloat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/truefloat-1.0.0.tar.gz tmp/truefloat-1.0.1.tar.gz --markdown 20240525/T/TrueFloat/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 12:57:07] INFO root fetch - processPackages [doopass]: Downloading https://files.pythonhosted.org/packages/b0/fd/6d681d63ab34432f9bd7f9006a3c9b6fe157b307d17e72d114878eaa1f3b/doopass-2.5.tar.gz
+[2024-05-25 12:57:08] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/42/5e/24a2ff6654285a7e63449f1c4c60597a1c617a0bb121d4f95cde1b406f59/promptulate-1.9.1.tar.gz
+[2024-05-25 12:57:08] INFO root fetch - processPackages [promptulate]: executing diffoscope
+[2024-05-25 12:57:08] INFO root fetch - processPackages [promptulate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptulate-1.9.0.tar.gz tmp/promptulate-1.9.1.tar.gz --markdown 20240525/p/promptulate/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 12:57:08] INFO root fetch - processPackages [doopass]: executing diffoscope
+[2024-05-25 12:57:08] INFO root fetch - processPackages [doopass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doopass-2.3.tar.gz tmp/doopass-2.5.tar.gz --markdown 20240525/d/doopass/2.3-2.5/README.md --exclude *.pyd
+[2024-05-25 12:57:08] INFO root fetch - processPackages [TrueFloat]: Remove: archive file [/home/abi/fetcher/tmp/truefloat-1.0.0.tar.gz]
+[2024-05-25 12:57:08] INFO root fetch - processPackages [TrueFloat]: Remove: archive file [/home/abi/fetcher/tmp/truefloat-1.0.1.tar.gz]
+[2024-05-25 12:57:08] INFO root fetch - main [MainThread]: End processing [TrueFloat]: success
+[2024-05-25 12:57:08] INFO root fetch - processPackages [doopass]: Remove: archive file [/home/abi/fetcher/tmp/doopass-2.3.tar.gz]
+[2024-05-25 12:57:08] INFO root fetch - processPackages [doopass]: Remove: archive file [/home/abi/fetcher/tmp/doopass-2.5.tar.gz]
+[2024-05-25 12:57:08] INFO root fetch - main [MainThread]: End processing [doopass]: success
+[2024-05-25 12:57:08] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.0.tar.gz]
+[2024-05-25 12:57:08] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.1.tar.gz]
+[2024-05-25 12:57:08] INFO root fetch - main [MainThread]: End processing [promptulate]: success
+[2024-05-25 12:57:08] INFO root fetch - main [MainThread]: Store serial: [23374209]
