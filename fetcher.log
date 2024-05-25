@@ -14292,3 +14292,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:44:30] INFO root fetch - processPackages [cyclomonitor]: Remove: archive file [/home/abi/fetcher/tmp/cyclomonitor-2024.5.25.tar.gz]
 [2024-05-25 14:44:30] INFO root fetch - main [MainThread]: End processing [cyclomonitor]: success
 [2024-05-25 14:44:30] INFO root fetch - main [MainThread]: Store serial: [23374650]
+[2024-05-25 14:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374650]
+[2024-05-25 14:46:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 14:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beancount-multitool
+[2024-05-25 14:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars-cloud
+[2024-05-25 14:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pixelyai-core
+[2024-05-25 14:46:39] INFO root fetch - processPackages [beancount-multitool]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-25 14:46:39] WARNING root fetch - processPackages [polars-cloud]: Skipping, unable to determine old version
+[2024-05-25 14:46:39] INFO root fetch - main [MainThread]: End processing [polars-cloud] error
+[2024-05-25 14:46:39] INFO root fetch - processPackages [pixelyai-core]: New version: [0.0.5] Old Version: [0.0.41]
+[2024-05-25 14:46:39] INFO root fetch - processPackages [beancount-multitool]: Downloading https://files.pythonhosted.org/packages/b0/20/ec656a16dedeb9b5880ea70f3b707a76711fd5a8ec89ba419130b6872411/beancount_multitool-0.4.0.tar.gz
+[2024-05-25 14:46:39] INFO root fetch - processPackages [pixelyai-core]: Downloading https://files.pythonhosted.org/packages/2f/15/3239708e1cc5c84ca5306fd339d0b220b69c38e50bb382dbc6aae0fc3328/pixelyai_core-0.0.41-py3-none-any.whl
+[2024-05-25 14:46:39] INFO root fetch - processPackages [beancount-multitool]: Downloading https://files.pythonhosted.org/packages/36/ee/9962d8d011f92040b596efe15049272caf1ca814698293d3facdce67e577/beancount_multitool-0.4.1.tar.gz
+[2024-05-25 14:46:40] INFO root fetch - processPackages [beancount-multitool]: executing diffoscope
+[2024-05-25 14:46:40] INFO root fetch - processPackages [beancount-multitool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_multitool-0.4.0.tar.gz tmp/beancount_multitool-0.4.1.tar.gz --markdown 20240525/b/beancount-multitool/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-25 14:46:40] INFO root fetch - processPackages [pixelyai-core]: Downloading https://files.pythonhosted.org/packages/0d/1c/41f1e0fae55a8336787f31ad894d2c223ecc58acc49e50555d8d1f988a05/pixelyai_core-0.0.5.tar.gz
+[2024-05-25 14:46:40] INFO root fetch - processPackages [beancount-multitool]: Remove: archive file [/home/abi/fetcher/tmp/beancount_multitool-0.4.0.tar.gz]
+[2024-05-25 14:46:40] INFO root fetch - processPackages [beancount-multitool]: Remove: archive file [/home/abi/fetcher/tmp/beancount_multitool-0.4.1.tar.gz]
+[2024-05-25 14:46:40] INFO root fetch - main [MainThread]: End processing [beancount-multitool]: success
+[2024-05-25 14:46:40] INFO root fetch - processPackages [pixelyai-core]: executing diffoscope
+[2024-05-25 14:46:40] INFO root fetch - processPackages [pixelyai-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixelyai_core-0.0.41-py3-none-any.whl.zip tmp/pixelyai_core-0.0.5.tar.gz --markdown 20240525/p/pixelyai-core/0.0.41-0.0.5/README.md --exclude *.pyd
+[2024-05-25 14:46:41] INFO root fetch - processPackages [pixelyai-core]: Remove: archive file [/home/abi/fetcher/tmp/pixelyai_core-0.0.41-py3-none-any.whl.zip]
+[2024-05-25 14:46:41] INFO root fetch - processPackages [pixelyai-core]: Remove: archive file [/home/abi/fetcher/tmp/pixelyai_core-0.0.5.tar.gz]
+[2024-05-25 14:46:41] INFO root fetch - main [MainThread]: End processing [pixelyai-core]: success
+[2024-05-25 14:46:41] INFO root fetch - main [MainThread]: Store serial: [23374658]
