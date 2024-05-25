@@ -10789,3 +10789,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:53:13] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
 [2024-05-25 09:53:13] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
 [2024-05-25 09:53:13] INFO root fetch - main [MainThread]: Store serial: [23372958]
+[2024-05-25 09:55:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372958]
+[2024-05-25 09:55:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 09:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nz-seqtech
+[2024-05-25 09:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrathon-payments
+[2024-05-25 09:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smol_k8s_lab
+[2024-05-25 09:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: viser
+[2024-05-25 09:55:22] INFO root fetch - processPackages [scrathon-payments]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-25 09:55:22] INFO root fetch - processPackages [scrathon-payments]: Downloading https://files.pythonhosted.org/packages/98/1e/6b72d97ab01474d3497a9c784d263b74dcb3d505bb02ac9251dd75a41809/scrathon_payments-0.2.4.tar.gz
+[2024-05-25 09:55:22] INFO root fetch - processPackages [nz-seqtech]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 09:55:22] INFO root fetch - processPackages [viser]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 09:55:22] INFO root fetch - processPackages [smol_k8s_lab]: New version: [5.2.3] Old Version: [5.2.2]
+[2024-05-25 09:55:23] INFO root fetch - processPackages [nz-seqtech]: Downloading https://files.pythonhosted.org/packages/ed/9c/c21e7556d4066757db959dfdee685b1a6c45bb1f079b8ef5fb90478b7a5e/nz_seqtech-0.2.8.tar.gz
+[2024-05-25 09:55:23] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/2b/de/66d7b269548a625d298e5b024d0187e6a6a35ebc95c0ff023f4c1989a13b/smol_k8s_lab-5.2.2.tar.gz
+[2024-05-25 09:55:23] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/43/1c/d574f1040f257213ab3e861ee33711d900666dbbaf4a2be7b1e32213f27b/viser-0.1.8.tar.gz
+[2024-05-25 09:55:23] INFO root fetch - processPackages [scrathon-payments]: Downloading https://files.pythonhosted.org/packages/a7/59/25afba7a5e64ba2dfc143e5bc6e2b81e2440fc72b414be3ba259b7402d4b/scrathon_payments-0.2.5.tar.gz
+[2024-05-25 09:55:23] INFO root fetch - processPackages [scrathon-payments]: executing diffoscope
+[2024-05-25 09:55:23] INFO root fetch - processPackages [scrathon-payments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrathon_payments-0.2.4.tar.gz tmp/scrathon_payments-0.2.5.tar.gz --markdown 20240525/s/scrathon-payments/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-25 09:55:23] INFO root fetch - processPackages [nz-seqtech]: Downloading https://files.pythonhosted.org/packages/96/fb/5aea416a157c21c78e1d00677e360d0b3642e503b32fcdf2ef4de51b34ea/nz_seqtech-0.2.9.tar.gz
+[2024-05-25 09:55:23] INFO root fetch - processPackages [nz-seqtech]: executing diffoscope
+[2024-05-25 09:55:23] INFO root fetch - processPackages [nz-seqtech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nz_seqtech-0.2.8.tar.gz tmp/nz_seqtech-0.2.9.tar.gz --markdown 20240525/n/nz-seqtech/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 09:55:23] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/4c/72/d98c8c4e9f15527b7dc2b5bab9868f37cd46829a40fccccab0b22bfd7985/smol_k8s_lab-5.2.3.tar.gz
+[2024-05-25 09:55:23] INFO root fetch - processPackages [scrathon-payments]: Remove: archive file [/home/abi/fetcher/tmp/scrathon_payments-0.2.4.tar.gz]
+[2024-05-25 09:55:23] INFO root fetch - processPackages [scrathon-payments]: Remove: archive file [/home/abi/fetcher/tmp/scrathon_payments-0.2.5.tar.gz]
+[2024-05-25 09:55:23] INFO root fetch - main [MainThread]: End processing [scrathon-payments]: success
+[2024-05-25 09:55:24] INFO root fetch - processPackages [smol_k8s_lab]: executing diffoscope
+[2024-05-25 09:55:24] INFO root fetch - processPackages [smol_k8s_lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smol_k8s_lab-5.2.2.tar.gz tmp/smol_k8s_lab-5.2.3.tar.gz --markdown 20240525/s/smol_k8s_lab/5.2.2-5.2.3/README.md --exclude *.pyd
+[2024-05-25 09:55:24] INFO root fetch - processPackages [nz-seqtech]: Remove: archive file [/home/abi/fetcher/tmp/nz_seqtech-0.2.8.tar.gz]
+[2024-05-25 09:55:24] INFO root fetch - processPackages [nz-seqtech]: Remove: archive file [/home/abi/fetcher/tmp/nz_seqtech-0.2.9.tar.gz]
+[2024-05-25 09:55:24] INFO root fetch - main [MainThread]: End processing [nz-seqtech]: success
+[2024-05-25 09:55:24] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/c6/11/037d11188de9d326de379226a46229a7f59bdf1b4f74bf70f34d7d278638/viser-0.1.9.tar.gz
+[2024-05-25 09:55:24] INFO root fetch - processPackages [viser]: executing diffoscope
+[2024-05-25 09:55:24] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.1.8.tar.gz tmp/viser-0.1.9.tar.gz --markdown 20240525/v/viser/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 09:55:25] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.2.2.tar.gz]
+[2024-05-25 09:55:25] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.2.3.tar.gz]
+[2024-05-25 09:55:25] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
+[2024-05-25 09:55:25] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.8.tar.gz]
+[2024-05-25 09:55:25] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
+[2024-05-25 09:55:25] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2024-05-25 09:55:25] INFO root fetch - main [MainThread]: Store serial: [23372970]
