@@ -12186,3 +12186,39 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:49:00] INFO root fetch - processPackages [y-llm]: Remove: archive file [/home/abi/fetcher/tmp/y_llm-0.1.4.tar.gz]
 [2024-05-25 11:49:00] INFO root fetch - main [MainThread]: End processing [y-llm]: success
 [2024-05-25 11:49:00] INFO root fetch - main [MainThread]: Store serial: [23373650]
+[2024-05-25 11:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373650]
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-cocktail
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scalexi
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-colorconverter
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-colorpalettegenerator
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apiverve-companynamegenerator
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: systore
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apiverve-contactextractor
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apiverve-coordinatesaresea
+[2024-05-25 11:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: apiverve-counter
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [systore]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [systore] error
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-companynamegenerator]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-companynamegenerator] error
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-cocktail]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-cocktail] error
+[2024-05-25 11:51:09] INFO root fetch - processPackages [scalexi]: New version: [0.4.6.1] Old Version: [0.4.5.9]
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-counter]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-counter] error
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-coordinatesaresea]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-coordinatesaresea] error
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-contactextractor]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-contactextractor] error
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-colorconverter]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-colorconverter] error
+[2024-05-25 11:51:09] WARNING root fetch - processPackages [apiverve-colorpalettegenerator]: Skipping, unable to determine old version
+[2024-05-25 11:51:09] INFO root fetch - main [MainThread]: End processing [apiverve-colorpalettegenerator] error
+[2024-05-25 11:51:09] INFO root fetch - processPackages [scalexi]: Downloading https://files.pythonhosted.org/packages/84/f9/fbec42a2262c2ab6d6029cc0e28527b0f5d085d734da7da96bc88af9bfda/scalexi-0.4.5.9.tar.gz
+[2024-05-25 11:51:10] INFO root fetch - processPackages [scalexi]: Downloading https://files.pythonhosted.org/packages/a7/01/a8672a356761c97596c0e400c6f416f527928500f2ab0dd7d8fa1f0f0ae3/scalexi-0.4.6.1.tar.gz
+[2024-05-25 11:51:10] INFO root fetch - processPackages [scalexi]: executing diffoscope
+[2024-05-25 11:51:10] INFO root fetch - processPackages [scalexi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalexi-0.4.5.9.tar.gz tmp/scalexi-0.4.6.1.tar.gz --markdown 20240525/s/scalexi/0.4.5.9-0.4.6.1/README.md --exclude *.pyd
+[2024-05-25 11:51:10] INFO root fetch - processPackages [scalexi]: Remove: archive file [/home/abi/fetcher/tmp/scalexi-0.4.5.9.tar.gz]
+[2024-05-25 11:51:10] INFO root fetch - processPackages [scalexi]: Remove: archive file [/home/abi/fetcher/tmp/scalexi-0.4.6.1.tar.gz]
+[2024-05-25 11:51:10] INFO root fetch - main [MainThread]: End processing [scalexi]: success
+[2024-05-25 11:51:10] INFO root fetch - main [MainThread]: Store serial: [23373691]
