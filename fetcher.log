@@ -12485,3 +12485,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:08:46] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.9.tar.gz]
 [2024-05-25 12:08:46] INFO root fetch - main [MainThread]: End processing [gliner]: success
 [2024-05-25 12:08:46] INFO root fetch - main [MainThread]: Store serial: [23373892]
+[2024-05-25 12:10:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373892]
+[2024-05-25 12:10:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 12:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: loggram
+[2024-05-25 12:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ingestr
+[2024-05-25 12:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-ms-consulate
+[2024-05-25 12:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastqwiper
+[2024-05-25 12:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AoE2ScenarioParser
+[2024-05-25 12:10:54] INFO root fetch - processPackages [fastqwiper]: New version: [2024.1.90] Old Version: [2024.1.86]
+[2024-05-25 12:10:55] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/21/e7/0de7faeb58bbb0aba0acf81320b1500a4638de58d519a9f8903c2d9d10c4/fastqwiper-2024.1.86-py3-none-any.whl
+[2024-05-25 12:10:55] INFO root fetch - processPackages [py-ms-consulate]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-25 12:10:55] INFO root fetch - processPackages [ingestr]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-25 12:10:55] INFO root fetch - processPackages [loggram]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 12:10:55] INFO root fetch - processPackages [AoE2ScenarioParser]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 12:10:55] INFO root fetch - processPackages [ingestr]: Downloading https://files.pythonhosted.org/packages/f4/a1/bc0cae7bc3c202927c4c2915f32222b329053f9315a2450eca35120a228c/ingestr-0.4.0.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/f0/3b/3f680d53d84308d3f4ab859b26917f3416d8a69c99f6d506aa89ed84bbdf/fastqwiper-2024.1.90-py3-none-any.whl
+[2024-05-25 12:10:55] INFO root fetch - processPackages [py-ms-consulate]: Downloading https://files.pythonhosted.org/packages/80/bd/c4dee9e9f6efbabedc2aa9e023046e0ad0e85451f009cf62dc6dd248b1a4/py-ms-consulate-1.0.0.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [loggram]: Downloading https://files.pythonhosted.org/packages/2f/8a/a9095ddbbfb9d6dc2c87e05ccdaea949daabde454f7fbe75352bc33f6cbc/loggram-1.0.1.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [fastqwiper]: executing diffoscope
+[2024-05-25 12:10:55] INFO root fetch - processPackages [fastqwiper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastqwiper-2024.1.86-py3-none-any.whl.zip tmp/fastqwiper-2024.1.90-py3-none-any.whl.zip --markdown 20240525/f/fastqwiper/2024.1.86-2024.1.90/README.md --exclude *.pyd
+[2024-05-25 12:10:55] INFO root fetch - processPackages [AoE2ScenarioParser]: Downloading https://files.pythonhosted.org/packages/3d/93/ab5e073126c6476e74084784c65bcef50f12a4c67f560ce6e3a3abd7d795/AoE2ScenarioParser-0.1.8.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [loggram]: Downloading https://files.pythonhosted.org/packages/be/5d/025e1b7b41c9b13d9ea51838ff6bc5307013565e0be01cc5069705153c71/loggram-1.0.2.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [ingestr]: Downloading https://files.pythonhosted.org/packages/bc/50/6e0b0e9cf0c87c1041a850ef5288be97069035a20833e3c28cc797da814e/ingestr-0.5.0.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [py-ms-consulate]: Downloading https://files.pythonhosted.org/packages/7f/17/13acf09416d4a9b27c792cf5d96390c3e07c2924b0c302d63d96bdd86033/py_ms_consulate-1.1.0.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [ingestr]: executing diffoscope
+[2024-05-25 12:10:55] INFO root fetch - processPackages [ingestr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ingestr-0.4.0.tar.gz tmp/ingestr-0.5.0.tar.gz --markdown 20240525/i/ingestr/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-25 12:10:55] INFO root fetch - processPackages [loggram]: executing diffoscope
+[2024-05-25 12:10:55] INFO root fetch - processPackages [loggram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggram-1.0.1.tar.gz tmp/loggram-1.0.2.tar.gz --markdown 20240525/l/loggram/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 12:10:55] INFO root fetch - processPackages [AoE2ScenarioParser]: Downloading https://files.pythonhosted.org/packages/7c/15/d32e660078be22276875a9e5a8b166bb8e5f4765a2738153cc2415d24831/AoE2ScenarioParser-0.1.9.tar.gz
+[2024-05-25 12:10:55] INFO root fetch - processPackages [py-ms-consulate]: executing diffoscope
+[2024-05-25 12:10:55] INFO root fetch - processPackages [py-ms-consulate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-ms-consulate-1.0.0.tar.gz tmp/py_ms_consulate-1.1.0.tar.gz --markdown 20240525/p/py-ms-consulate/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-25 12:10:55] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.86-py3-none-any.whl.zip]
+[2024-05-25 12:10:55] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.90-py3-none-any.whl.zip]
+[2024-05-25 12:10:55] INFO root fetch - main [MainThread]: End processing [fastqwiper]: success
+[2024-05-25 12:10:55] INFO root fetch - processPackages [AoE2ScenarioParser]: executing diffoscope
+[2024-05-25 12:10:55] INFO root fetch - processPackages [AoE2ScenarioParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoE2ScenarioParser-0.1.8.tar.gz tmp/AoE2ScenarioParser-0.1.9.tar.gz --markdown 20240525/A/AoE2ScenarioParser/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 12:10:56] INFO root fetch - processPackages [loggram]: Remove: archive file [/home/abi/fetcher/tmp/loggram-1.0.1.tar.gz]
+[2024-05-25 12:10:56] INFO root fetch - processPackages [loggram]: Remove: archive file [/home/abi/fetcher/tmp/loggram-1.0.2.tar.gz]
+[2024-05-25 12:10:56] INFO root fetch - main [MainThread]: End processing [loggram]: success
+[2024-05-25 12:10:56] INFO root fetch - processPackages [py-ms-consulate]: Remove: archive file [/home/abi/fetcher/tmp/py-ms-consulate-1.0.0.tar.gz]
+[2024-05-25 12:10:56] INFO root fetch - processPackages [py-ms-consulate]: Remove: archive file [/home/abi/fetcher/tmp/py_ms_consulate-1.1.0.tar.gz]
+[2024-05-25 12:10:56] INFO root fetch - main [MainThread]: End processing [py-ms-consulate]: success
+[2024-05-25 12:10:57] INFO root fetch - processPackages [AoE2ScenarioParser]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioParser-0.1.8.tar.gz]
+[2024-05-25 12:10:57] INFO root fetch - processPackages [AoE2ScenarioParser]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioParser-0.1.9.tar.gz]
+[2024-05-25 12:10:57] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioParser]: success
+[2024-05-25 12:10:59] INFO root fetch - processPackages [ingestr]: Remove: archive file [/home/abi/fetcher/tmp/ingestr-0.4.0.tar.gz]
+[2024-05-25 12:10:59] INFO root fetch - processPackages [ingestr]: Remove: archive file [/home/abi/fetcher/tmp/ingestr-0.5.0.tar.gz]
+[2024-05-25 12:10:59] INFO root fetch - main [MainThread]: End processing [ingestr]: success
+[2024-05-25 12:10:59] INFO root fetch - main [MainThread]: Store serial: [23373906]
