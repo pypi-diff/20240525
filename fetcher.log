@@ -21304,3 +21304,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:05:03] INFO root fetch - processPackages [emailproxy]: Remove: archive file [/home/abi/fetcher/tmp/emailproxy-2024.5.25.tar.gz]
 [2024-05-25 21:05:03] INFO root fetch - main [MainThread]: End processing [emailproxy]: success
 [2024-05-25 21:05:03] INFO root fetch - main [MainThread]: Store serial: [23377348]
+[2024-05-25 21:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377348]
+[2024-05-25 21:07:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-jobspy
+[2024-05-25 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctube
+[2024-05-25 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: location-local
+[2024-05-25 21:07:12] INFO root fetch - processPackages [ctube]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-25 21:07:12] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 21:07:12] INFO root fetch - processPackages [ctube]: Downloading https://files.pythonhosted.org/packages/ec/1e/5ecaa53dfc71a22b3c55fc7b1461e08970009966591200cb32aecf67ea6c/ctube-0.0.3.tar.gz
+[2024-05-25 21:07:12] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-05-25 21:07:12] INFO root fetch - processPackages [python-jobspy]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-25 21:07:12] INFO root fetch - processPackages [python-jobspy]: Downloading https://files.pythonhosted.org/packages/42/33/08ef8e7a64d0894c1237311d2085c335c700e9a5a2406d23e511738b2ffa/python_jobspy-1.1.8.tar.gz
+[2024-05-25 21:07:13] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-05-25 21:07:13] INFO root fetch - processPackages [ctube]: Downloading https://files.pythonhosted.org/packages/c1/2d/469f415bfde5410d88b4e45d1561478ade1d54a4b89ba6b115f96aa6693b/ctube-0.0.4.tar.gz
+[2024-05-25 21:07:13] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-05-25 21:07:13] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240525/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 21:07:13] INFO root fetch - processPackages [ctube]: executing diffoscope
+[2024-05-25 21:07:13] INFO root fetch - processPackages [ctube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctube-0.0.3.tar.gz tmp/ctube-0.0.4.tar.gz --markdown 20240525/c/ctube/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-25 21:07:13] INFO root fetch - processPackages [python-jobspy]: Downloading https://files.pythonhosted.org/packages/9b/06/17911413082f9906dac737cb749303c9bbe15fd6843109ef016a1ca23686/python_jobspy-1.1.9.tar.gz
+[2024-05-25 21:07:13] INFO root fetch - processPackages [python-jobspy]: executing diffoscope
+[2024-05-25 21:07:13] INFO root fetch - processPackages [python-jobspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_jobspy-1.1.8.tar.gz tmp/python_jobspy-1.1.9.tar.gz --markdown 20240525/p/python-jobspy/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-25 21:07:13] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-05-25 21:07:13] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-05-25 21:07:13] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-05-25 21:07:13] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.3.tar.gz]
+[2024-05-25 21:07:13] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.4.tar.gz]
+[2024-05-25 21:07:13] INFO root fetch - main [MainThread]: End processing [ctube]: success
+[2024-05-25 21:07:14] INFO root fetch - processPackages [python-jobspy]: Remove: archive file [/home/abi/fetcher/tmp/python_jobspy-1.1.8.tar.gz]
+[2024-05-25 21:07:14] INFO root fetch - processPackages [python-jobspy]: Remove: archive file [/home/abi/fetcher/tmp/python_jobspy-1.1.9.tar.gz]
+[2024-05-25 21:07:14] INFO root fetch - main [MainThread]: End processing [python-jobspy]: success
+[2024-05-25 21:07:14] INFO root fetch - main [MainThread]: Store serial: [23377363]
