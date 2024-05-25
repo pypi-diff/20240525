@@ -6913,3 +6913,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:36:16] WARNING root fetch - processPackages [masquer]: Skipping, unable to determine old version
 [2024-05-25 03:36:16] INFO root fetch - main [MainThread]: End processing [masquer] error
 [2024-05-25 03:36:16] INFO root fetch - main [MainThread]: Store serial: [23371184]
+[2024-05-25 03:38:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371184]
+[2024-05-25 03:38:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 03:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homeassistant-stubs
+[2024-05-25 03:38:25] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2024.5.5] Old Version: [2024.5.4]
+[2024-05-25 03:38:25] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/9a/a1/dcd39800ce817cbd4feb40e1ae88159cdfa5ac788501fc22d3e79a9f2e9f/homeassistant_stubs-2024.5.4.tar.gz
+[2024-05-25 03:38:25] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/11/35/7489fc09875b10e9a88c84f686efa75a9c9e9b7bd4e9625b87cbf388c214/homeassistant_stubs-2024.5.5.tar.gz
+[2024-05-25 03:38:26] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2024-05-25 03:38:26] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2024.5.4.tar.gz tmp/homeassistant_stubs-2024.5.5.tar.gz --markdown 20240525/h/homeassistant-stubs/2024.5.4-2024.5.5/README.md --exclude *.pyd
+[2024-05-25 03:38:38] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.4.tar.gz]
+[2024-05-25 03:38:38] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.5.tar.gz]
+[2024-05-25 03:38:38] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2024-05-25 03:38:38] INFO root fetch - main [MainThread]: Store serial: [23371209]
