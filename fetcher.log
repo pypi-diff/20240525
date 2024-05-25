@@ -19794,3 +19794,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:06:34] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.14.1.tar.gz]
 [2024-05-25 19:06:34] INFO root fetch - main [MainThread]: End processing [abadpour]: success
 [2024-05-25 19:06:34] INFO root fetch - main [MainThread]: Store serial: [23376643]
+[2024-05-25 19:08:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376643]
+[2024-05-25 19:08:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 19:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abadpour
+[2024-05-25 19:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frid
+[2024-05-25 19:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-25 19:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: squice
+[2024-05-25 19:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mntfinder
+[2024-05-25 19:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: iSmartDownloader
+[2024-05-25 19:08:43] INFO root fetch - processPackages [abcli]: New version: [8.214.1] Old Version: [8.213.1]
+[2024-05-25 19:08:43] INFO root fetch - processPackages [abadpour]: New version: [6.14.1] Old Version: [6.13.1]
+[2024-05-25 19:08:43] INFO root fetch - processPackages [frid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 19:08:43] INFO root fetch - processPackages [mntfinder]: New version: [1.0.0] Old Version: [0.1.1]
+[2024-05-25 19:08:43] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/40/0a/45c1bf7bb26c7bed0bfa1e240a7ffd594f8799d0218b09b8a52f81bfb439/abcli-8.213.1.tar.gz
+[2024-05-25 19:08:43] WARNING root fetch - processPackages [iSmartDownloader]: Skipping, unable to determine old version
+[2024-05-25 19:08:43] INFO root fetch - main [MainThread]: End processing [iSmartDownloader] error
+[2024-05-25 19:08:43] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/b2/f7/8749058980a64b7be1eed33d244c55561ca3b41b408bb3b1715d3e5c4893/abadpour-6.13.1.tar.gz
+[2024-05-25 19:08:43] INFO root fetch - processPackages [squice]: New version: [0.3] Old Version: [0.2]
+[2024-05-25 19:08:44] INFO root fetch - processPackages [frid]: Downloading https://files.pythonhosted.org/packages/ab/c4/276f758efee3065c10b10aca27b5dcd336fd5f6766bedfb6203ed86b141b/frid-0.0.8.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [mntfinder]: Downloading https://files.pythonhosted.org/packages/5c/62/d178d010745500447c624521aa8035f3494fc976e1eefa76f60dfccf1b1e/mntfinder-0.1.1.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/d6/f1/21279363612f6a012042e9a9350132f78e1f7ca9b40f6a9bae229a90c388/abadpour-6.14.1.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [squice]: Downloading https://files.pythonhosted.org/packages/93/02/ca4ed06a6bebbee187e5e04b014a66b23e57a481a4218c3cd6e7a8dd4674/squice-0.2.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [frid]: Downloading https://files.pythonhosted.org/packages/bf/0e/c9daa6c9fa362976608c4807386bb44525900903ed383fdf307e9888116a/frid-0.0.9.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/0e/eb/7cc7e9b99d18bcf661ef8f13421a946981b211d87b59341598ff25e719c6/abcli-8.214.1.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.13.1.tar.gz tmp/abadpour-6.14.1.tar.gz --markdown 20240525/a/abadpour/6.13.1-6.14.1/README.md --exclude *.pyd
+[2024-05-25 19:08:44] INFO root fetch - processPackages [frid]: executing diffoscope
+[2024-05-25 19:08:44] INFO root fetch - processPackages [frid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frid-0.0.8.tar.gz tmp/frid-0.0.9.tar.gz --markdown 20240525/f/frid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.213.1.tar.gz tmp/abcli-8.214.1.tar.gz --markdown 20240525/a/abcli/8.213.1-8.214.1/README.md --exclude *.pyd
+[2024-05-25 19:08:44] INFO root fetch - processPackages [squice]: Downloading https://files.pythonhosted.org/packages/48/ad/21ce11c83ef9cb7e17283ee249f3c2593f6b00d9761b5d734a38ac17ea7b/squice-0.3.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [mntfinder]: Downloading https://files.pythonhosted.org/packages/b0/5c/242072e86d34c3037e6573f93d29ebde2b11a963327e00103e9956c54a4a/mntfinder-1.0.0.tar.gz
+[2024-05-25 19:08:44] INFO root fetch - processPackages [mntfinder]: executing diffoscope
+[2024-05-25 19:08:44] INFO root fetch - processPackages [mntfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mntfinder-0.1.1.tar.gz tmp/mntfinder-1.0.0.tar.gz --markdown 20240525/m/mntfinder/0.1.1-1.0.0/README.md --exclude *.pyd
+[2024-05-25 19:08:44] INFO root fetch - processPackages [squice]: executing diffoscope
+[2024-05-25 19:08:44] INFO root fetch - processPackages [squice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squice-0.2.tar.gz tmp/squice-0.3.tar.gz --markdown 20240525/s/squice/0.2-0.3/README.md --exclude *.pyd
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.13.1.tar.gz]
+[2024-05-25 19:08:44] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.14.1.tar.gz]
+[2024-05-25 19:08:44] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-25 19:08:45] INFO root fetch - processPackages [frid]: Remove: archive file [/home/abi/fetcher/tmp/frid-0.0.8.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - processPackages [frid]: Remove: archive file [/home/abi/fetcher/tmp/frid-0.0.9.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - main [MainThread]: End processing [frid]: success
+[2024-05-25 19:08:45] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.213.1.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.214.1.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-25 19:08:45] INFO root fetch - processPackages [mntfinder]: Remove: archive file [/home/abi/fetcher/tmp/mntfinder-0.1.1.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - processPackages [mntfinder]: Remove: archive file [/home/abi/fetcher/tmp/mntfinder-1.0.0.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - main [MainThread]: End processing [mntfinder]: success
+[2024-05-25 19:08:45] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.2.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - processPackages [squice]: Remove: archive file [/home/abi/fetcher/tmp/squice-0.3.tar.gz]
+[2024-05-25 19:08:45] INFO root fetch - main [MainThread]: End processing [squice]: success
+[2024-05-25 19:08:45] INFO root fetch - main [MainThread]: Store serial: [23376663]
