@@ -8281,3 +8281,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:24:11] INFO root fetch - processPackages [nebulousai]: Remove: archive file [/home/abi/fetcher/tmp/nebulousai-0.1.1.tar.gz]
 [2024-05-25 06:24:11] INFO root fetch - main [MainThread]: End processing [nebulousai]: success
 [2024-05-25 06:24:11] INFO root fetch - main [MainThread]: Store serial: [23371866]
+[2024-05-25 06:26:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371866]
+[2024-05-25 06:26:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 06:26:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc
+[2024-05-25 06:26:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-05-25 06:26:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-whisky-hunter
+[2024-05-25 06:26:20] INFO root fetch - processPackages [airbyte-source-whisky-hunter]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 06:26:20] INFO root fetch - processPackages [airbyte-source-whisky-hunter]: Downloading https://files.pythonhosted.org/packages/b1/4f/a9bfd2e6515e0fcae5e25d0a31d3fcfb679a99dbb20561a29eca9afc5bda/airbyte-source-whisky-hunter-0.1.0.tar.gz
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/5c/c1/ac3473e2df4c4eeb938005426cd7a6a368ff6818aa114e07a351b4c5d69d/xingpyc-0.0.4.tar.gz
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/5c/c1/ac3473e2df4c4eeb938005426cd7a6a368ff6818aa114e07a351b4c5d69d/xingpyc-0.0.4.tar.gz
+[2024-05-25 06:26:20] ERROR root fetch - processPackages [airbyte-source-whisky-hunter]: Unable to fetch info: No such project/version 'airbyte-source-whisky-hunter' 0.1.1
+[2024-05-25 06:26:20] INFO root fetch - main [MainThread]: End processing [airbyte-source-whisky-hunter] error
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/27/5d/b475b5744d6466d066658dcbfd783e9f9806aaedb3616a4f695b5adc41e7/xingpyc-0.0.5.tar.gz
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/27/5d/b475b5744d6466d066658dcbfd783e9f9806aaedb3616a4f695b5adc41e7/xingpyc-0.0.5.tar.gz
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.4.tar.gz tmp/xingpyc-0.0.5.tar.gz --markdown 20240525/x/xingpyc/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 06:26:20] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.4.tar.gz tmp/xingpyc-0.0.5.tar.gz --markdown 20240525/x/xingpyc/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 06:26:21] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.4.tar.gz]
+[2024-05-25 06:26:21] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.5.tar.gz]
+[2024-05-25 06:26:21] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 06:26:21] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 06:26:21] INFO root fetch - main [MainThread]: Store serial: [23371875]
