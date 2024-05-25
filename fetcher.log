@@ -15726,3 +15726,69 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:13:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.25-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-05-25 15:13:51] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-05-25 15:13:51] INFO root fetch - main [MainThread]: Store serial: [23374984]
+[2024-05-25 15:15:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374984]
+[2024-05-25 15:15:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ParliamentArch
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LWTools
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytorr-play
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alphafold3-pytorch
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: beambusters
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rendercv
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: structables
+[2024-05-25 15:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thread
+[2024-05-25 15:16:00] INFO root fetch - processPackages [LWTools]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [beambusters]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [pytorr-play]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [beambusters]: Downloading https://files.pythonhosted.org/packages/b2/fe/75944fe269d15c718809aa184c38e597d4cab95fbc2e6e47e47f1aa6dde8/beambusters-1.3.3.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [ParliamentArch]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [LWTools]: Downloading https://files.pythonhosted.org/packages/c6/28/10724b14295e129f00cfe16407a7f29035e8f35bde9ebec98a83f155c652/LWTools-1.1.1.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [thread]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [structables]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 15:16:00] INFO root fetch - processPackages [rendercv]: New version: [1.9] Old Version: [1.8]
+[2024-05-25 15:16:00] ERROR root fetch - processPackages [pytorr-play]: Unable to fetch info: No such project/version 'pytorr-play' 0.1.0
+[2024-05-25 15:16:00] INFO root fetch - main [MainThread]: End processing [pytorr-play] error
+[2024-05-25 15:16:00] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [ParliamentArch]: Downloading https://files.pythonhosted.org/packages/49/59/ec497650715a2dfb0b4c3847b2cb2b281a3ad76de3a6f773b8c3a4c4a3eb/parliamentarch-1.0.1.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [LWTools]: Downloading https://files.pythonhosted.org/packages/32/b2/ae480f27cad16b81d20c368d465bae36196888b7103f758752ac81ddeede/lwtools-1.1.2.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [thread]: Downloading https://files.pythonhosted.org/packages/e9/d5/c2d3fe94c3921ac1d7c0096155afceacd6675c3eb5be94075a8eada6c2ec/thread-2.0.1.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [rendercv]: Downloading https://files.pythonhosted.org/packages/dd/c7/05ec209c49b74cf0d2cabde820a4fb7fe8408d385810df0168b0c4ecaafb/rendercv-1.8.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/d6/31/e85d13620f5217633fccf9d657f15382082055f04c422423566d2ac98465/structables-0.2.1.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [beambusters]: Downloading https://files.pythonhosted.org/packages/8e/3c/5520fef62de7c9113ddb83b33163769e520ddbd12d7f4e9f3d65f477bf99/beambusters-1.3.4.tar.gz
+[2024-05-25 15:16:00] WARNING root fetch - processPackages [rendercv]: Skipping package: exceeds size limit 48044309>=10485760
+[2024-05-25 15:16:00] INFO root fetch - main [MainThread]: End processing [rendercv] error
+[2024-05-25 15:16:00] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [LWTools]: executing diffoscope
+[2024-05-25 15:16:00] INFO root fetch - processPackages [LWTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LWTools-1.1.1.tar.gz tmp/lwtools-1.1.2.tar.gz --markdown 20240525/L/LWTools/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 15:16:00] INFO root fetch - processPackages [beambusters]: executing diffoscope
+[2024-05-25 15:16:00] INFO root fetch - processPackages [beambusters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beambusters-1.3.3.tar.gz tmp/beambusters-1.3.4.tar.gz --markdown 20240525/b/beambusters/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-05-25 15:16:00] INFO root fetch - processPackages [ParliamentArch]: Downloading https://files.pythonhosted.org/packages/fb/1a/80cea86474ed0320ee270a619dcc9d5aa9bcc2b6d43dddf94ece4754179c/parliamentarch-1.0.2.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 15:16:00] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 15:16:00] INFO root fetch - processPackages [ParliamentArch]: executing diffoscope
+[2024-05-25 15:16:00] INFO root fetch - processPackages [ParliamentArch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parliamentarch-1.0.1.tar.gz tmp/parliamentarch-1.0.2.tar.gz --markdown 20240525/P/ParliamentArch/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 15:16:00] INFO root fetch - processPackages [thread]: Downloading https://files.pythonhosted.org/packages/69/04/423810d49ecf038148e209fe70ae184e5bb56d53c22c5aeb4a71151a702c/thread-2.0.2.tar.gz
+[2024-05-25 15:16:00] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/b5/58/57f1731e7ffe20f375499e0f2c95fa277521fa220beb721c1094e09bed33/structables-0.2.2.tar.gz
+[2024-05-25 15:16:01] INFO root fetch - processPackages [thread]: executing diffoscope
+[2024-05-25 15:16:01] INFO root fetch - processPackages [thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thread-2.0.1.tar.gz tmp/thread-2.0.2.tar.gz --markdown 20240525/t/thread/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-25 15:16:01] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-25 15:16:01] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.2.1.tar.gz tmp/structables-0.2.2.tar.gz --markdown 20240525/s/structables/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 15:16:01] INFO root fetch - processPackages [beambusters]: Remove: archive file [/home/abi/fetcher/tmp/beambusters-1.3.3.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [beambusters]: Remove: archive file [/home/abi/fetcher/tmp/beambusters-1.3.4.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: End processing [beambusters]: success
+[2024-05-25 15:16:01] INFO root fetch - processPackages [ParliamentArch]: Remove: archive file [/home/abi/fetcher/tmp/parliamentarch-1.0.1.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [ParliamentArch]: Remove: archive file [/home/abi/fetcher/tmp/parliamentarch-1.0.2.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: End processing [ParliamentArch]: success
+[2024-05-25 15:16:01] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [LWTools]: Remove: archive file [/home/abi/fetcher/tmp/LWTools-1.1.1.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [LWTools]: Remove: archive file [/home/abi/fetcher/tmp/lwtools-1.1.2.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: End processing [LWTools]: success
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 15:16:01] INFO root fetch - processPackages [thread]: Remove: archive file [/home/abi/fetcher/tmp/thread-2.0.1.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [thread]: Remove: archive file [/home/abi/fetcher/tmp/thread-2.0.2.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: End processing [thread]: success
+[2024-05-25 15:16:01] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.2.1.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.2.2.tar.gz]
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-25 15:16:01] INFO root fetch - main [MainThread]: Store serial: [23375017]
