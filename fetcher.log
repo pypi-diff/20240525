@@ -21925,3 +21925,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:48:35] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-25 21:48:35] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 21:48:35] INFO root fetch - main [MainThread]: Store serial: [23377578]
+[2024-05-25 21:50:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377578]
+[2024-05-25 21:50:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 21:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: req-compile
+[2024-05-25 21:50:43] INFO root fetch - processPackages [req-compile]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2024-05-25 21:50:44] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/96/9b/d5e46a5c84a6cf0477d84a18587a02cef26b51708a41c9dcc16b6f6ec748/req-compile-1.0.0rc8.tar.gz
+[2024-05-25 21:50:44] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/fc/cb/0a81d71ea9afc0f413877a3fa62c1fb73698e1166c5e241802b8739c7fcd/req-compile-1.0.0rc9.tar.gz
+[2024-05-25 21:50:44] INFO root fetch - processPackages [req-compile]: executing diffoscope
+[2024-05-25 21:50:44] INFO root fetch - processPackages [req-compile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/req-compile-1.0.0rc8.tar.gz tmp/req-compile-1.0.0rc9.tar.gz --markdown 20240525/r/req-compile/1.0.0rc8-1.0.0rc9/README.md --exclude *.pyd
+[2024-05-25 21:50:45] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc8.tar.gz]
+[2024-05-25 21:50:45] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc9.tar.gz]
+[2024-05-25 21:50:45] INFO root fetch - main [MainThread]: End processing [req-compile]: success
+[2024-05-25 21:50:45] INFO root fetch - main [MainThread]: Store serial: [23377581]
