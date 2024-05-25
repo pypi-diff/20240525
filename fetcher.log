@@ -23495,3 +23495,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:55:56] INFO root fetch - processPackages [htmlxword]: Remove: archive file [/home/abi/fetcher/tmp/htmlxword-0.0.6.tar.gz]
 [2024-05-25 23:55:56] INFO root fetch - main [MainThread]: End processing [htmlxword]: success
 [2024-05-25 23:55:56] INFO root fetch - main [MainThread]: Store serial: [23378186]
+[2024-05-25 23:58:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378186]
+[2024-05-25 23:58:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 23:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltaobfuscator
+[2024-05-25 23:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arraykit
+[2024-05-25 23:58:05] WARNING root fetch - processPackages [deltaobfuscator]: Skipping, unable to determine old version
+[2024-05-25 23:58:05] INFO root fetch - main [MainThread]: End processing [deltaobfuscator] error
+[2024-05-25 23:58:05] INFO root fetch - processPackages [arraykit]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-05-25 23:58:05] INFO root fetch - processPackages [arraykit]: Downloading https://files.pythonhosted.org/packages/b2/46/9a2283b9d58509f9aee49b66b28c7c66359c2d647ec18dc467936e407a1f/arraykit-0.5.1.tar.gz
+[2024-05-25 23:58:06] INFO root fetch - processPackages [arraykit]: Downloading https://files.pythonhosted.org/packages/60/90/90a0278efcc5e6a63b15ecd2a05c2df4afa9ffa80bfd7cf39946bd67fc61/arraykit-0.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 23:58:06] INFO root fetch - processPackages [arraykit]: executing diffoscope
+[2024-05-25 23:58:06] INFO root fetch - processPackages [arraykit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraykit-0.5.1.tar.gz tmp/arraykit-0.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240525/a/arraykit/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-05-25 23:58:07] INFO root fetch - processPackages [arraykit]: Remove: archive file [/home/abi/fetcher/tmp/arraykit-0.5.1.tar.gz]
+[2024-05-25 23:58:07] INFO root fetch - processPackages [arraykit]: Remove: archive file [/home/abi/fetcher/tmp/arraykit-0.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 23:58:07] INFO root fetch - main [MainThread]: End processing [arraykit]: success
+[2024-05-25 23:58:07] INFO root fetch - main [MainThread]: Store serial: [23378216]
