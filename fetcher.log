@@ -13260,3 +13260,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:03:39] INFO root fetch - processPackages [scikit-lego]: Remove: archive file [/home/abi/fetcher/tmp/scikit-lego-0.9.0.tar.gz]
 [2024-05-25 13:03:39] INFO root fetch - main [MainThread]: End processing [scikit-lego]: success
 [2024-05-25 13:03:39] INFO root fetch - main [MainThread]: Store serial: [23374237]
+[2024-05-25 13:05:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374237]
+[2024-05-25 13:05:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 13:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: facebook-page-scraper
+[2024-05-25 13:05:48] INFO root fetch - processPackages [facebook-page-scraper]: New version: [5.0.5] Old Version: [5.0.4]
+[2024-05-25 13:05:49] INFO root fetch - processPackages [facebook-page-scraper]: Downloading https://files.pythonhosted.org/packages/2b/16/80690a353f9d0cdc25f7fce9f68f111a52a2cd06ce6e3b9b465ca8e91bd0/facebook_page_scraper-5.0.4.tar.gz
+[2024-05-25 13:05:49] INFO root fetch - processPackages [facebook-page-scraper]: Downloading https://files.pythonhosted.org/packages/2e/4a/b914dc1b3821032edb1c1535103908a21376b2cf33fd081e1647adb6d887/facebook_page_scraper-5.0.5.tar.gz
+[2024-05-25 13:05:49] INFO root fetch - processPackages [facebook-page-scraper]: executing diffoscope
+[2024-05-25 13:05:49] INFO root fetch - processPackages [facebook-page-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facebook_page_scraper-5.0.4.tar.gz tmp/facebook_page_scraper-5.0.5.tar.gz --markdown 20240525/f/facebook-page-scraper/5.0.4-5.0.5/README.md --exclude *.pyd
+[2024-05-25 13:05:50] INFO root fetch - processPackages [facebook-page-scraper]: Remove: archive file [/home/abi/fetcher/tmp/facebook_page_scraper-5.0.4.tar.gz]
+[2024-05-25 13:05:50] INFO root fetch - processPackages [facebook-page-scraper]: Remove: archive file [/home/abi/fetcher/tmp/facebook_page_scraper-5.0.5.tar.gz]
+[2024-05-25 13:05:50] INFO root fetch - main [MainThread]: End processing [facebook-page-scraper]: success
+[2024-05-25 13:05:50] INFO root fetch - main [MainThread]: Store serial: [23374240]
