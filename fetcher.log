@@ -8815,3 +8815,48 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:05:34] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-05-25 07:05:34] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-05-25 07:05:34] INFO root fetch - main [MainThread]: Store serial: [23372061]
+[2024-05-25 07:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372061]
+[2024-05-25 07:07:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 07:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alpaca-py
+[2024-05-25 07:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arch-flow
+[2024-05-25 07:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wayz-rlsdk-python
+[2024-05-25 07:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rapid-pe
+[2024-05-25 07:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cae-cli
+[2024-05-25 07:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: elasticsearch7-dsl-p
+[2024-05-25 07:07:43] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240524] Old Version: [0.1.2.dev20240523]
+[2024-05-25 07:07:44] INFO root fetch - processPackages [cae-cli]: New version: [0.2.9.4] Old Version: [0.2.9.3]
+[2024-05-25 07:07:44] WARNING root fetch - processPackages [wayz-rlsdk-python]: Skipping, unable to determine old version
+[2024-05-25 07:07:44] INFO root fetch - main [MainThread]: End processing [wayz-rlsdk-python] error
+[2024-05-25 07:07:44] INFO root fetch - processPackages [arch-flow]: New version: [0.1.8.3] Old Version: [0.1.8.2]
+[2024-05-25 07:07:44] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/57/28/d375b831c65d2a8eb6b8885f1a3f525a853114cc831cb53db27ed9486c30/rapid_pe-0.1.2.dev20240523.tar.gz
+[2024-05-25 07:07:44] ERROR root fetch - processPackages [elasticsearch7-dsl-p]: Unable to get metadata: No such project 'elasticsearch7-dsl-p'
+[2024-05-25 07:07:44] INFO root fetch - main [MainThread]: End processing [elasticsearch7-dsl-p] error
+[2024-05-25 07:07:44] INFO root fetch - processPackages [alpaca-py]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 07:07:44] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/60/5e/8378557853c0f032a2a1ee2119b70329c8f27aa36ad97fa4129870fc1591/cae_cli-0.2.9.3.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/4b/ba/1964ffc36773fe19d8f97f92857936251502c9ca3189f21d5bbea8e664bf/arch_flow-0.1.8.2.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [alpaca-py]: Downloading https://files.pythonhosted.org/packages/95/9a/c866d3091981080489f14171b69712fa22c65dcb09c2888eca936fa89cd8/alpaca_py-0.8.2.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/5e/fa/2ca91490af83da1c16a3634c01950b825f9fe530a00507c021f9c2f2e380/rapid_pe-0.1.2.dev20240524.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/88/02/e929cb1aac6fedc31acb2f7d2abf4741c19c952a2b85f7a20c991d24aedf/cae_cli-0.2.9.4.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-25 07:07:44] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240523.tar.gz tmp/rapid_pe-0.1.2.dev20240524.tar.gz --markdown 20240525/r/rapid-pe/0.1.2.dev20240523-0.1.2.dev20240524/README.md --exclude *.pyd
+[2024-05-25 07:07:44] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/77/ca/73c53a06ee952740397e48186a4a5d46a1e0fbff009334755391ecbe997d/arch_flow-0.1.8.3.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [alpaca-py]: Downloading https://files.pythonhosted.org/packages/f0/0d/64596c95696d0c4774ba900e386ec14586cf4f85b8e395258caa1bb90e61/alpaca_py-0.9.0.tar.gz
+[2024-05-25 07:07:44] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-25 07:07:44] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.2.9.3.tar.gz tmp/cae_cli-0.2.9.4.tar.gz --markdown 20240525/c/cae-cli/0.2.9.3-0.2.9.4/README.md --exclude *.pyd
+[2024-05-25 07:07:44] INFO root fetch - processPackages [arch-flow]: executing diffoscope
+[2024-05-25 07:07:44] INFO root fetch - processPackages [arch-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch_flow-0.1.8.2.tar.gz tmp/arch_flow-0.1.8.3.tar.gz --markdown 20240525/a/arch-flow/0.1.8.2-0.1.8.3/README.md --exclude *.pyd
+[2024-05-25 07:07:44] INFO root fetch - processPackages [alpaca-py]: executing diffoscope
+[2024-05-25 07:07:44] INFO root fetch - processPackages [alpaca-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpaca_py-0.8.2.tar.gz tmp/alpaca_py-0.9.0.tar.gz --markdown 20240525/a/alpaca-py/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 07:07:45] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240523.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240524.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-25 07:07:45] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.8.2.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.8.3.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - main [MainThread]: End processing [arch-flow]: success
+[2024-05-25 07:07:45] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.2.9.3.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.2.9.4.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-25 07:07:45] INFO root fetch - processPackages [alpaca-py]: Remove: archive file [/home/abi/fetcher/tmp/alpaca_py-0.8.2.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - processPackages [alpaca-py]: Remove: archive file [/home/abi/fetcher/tmp/alpaca_py-0.9.0.tar.gz]
+[2024-05-25 07:07:45] INFO root fetch - main [MainThread]: End processing [alpaca-py]: success
+[2024-05-25 07:07:45] INFO root fetch - main [MainThread]: Store serial: [23372082]
