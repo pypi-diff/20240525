@@ -19656,3 +19656,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:55:38] INFO root fetch - processPackages [edgeimpulse-api]: Remove: archive file [/home/abi/fetcher/tmp/edgeimpulse_api-1.50.6.tar.gz]
 [2024-05-25 18:55:38] INFO root fetch - main [MainThread]: End processing [edgeimpulse-api]: success
 [2024-05-25 18:55:38] INFO root fetch - main [MainThread]: Store serial: [23376584]
+[2024-05-25 18:57:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376584]
+[2024-05-25 18:57:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 18:57:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rg3py
+[2024-05-25 18:57:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-pipelines-dfy
+[2024-05-25 18:57:49] INFO root fetch - processPackages [moveread-pipelines-dfy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 18:57:49] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/a0/4a/aee2cbf4e9407eef240abeb0e2bcde4d6e3ec27c7b880df7a98d77acf13f/moveread_pipelines_dfy-0.1.8.tar.gz
+[2024-05-25 18:57:49] INFO root fetch - processPackages [rg3py]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 18:57:49] INFO root fetch - processPackages [rg3py]: Downloading https://files.pythonhosted.org/packages/60/17/6f67a9f3c4f3e69b28210b2a6f446eb8702158bcd2d25c82544e8874fca5/rg3py-0.0.8-py3-none-win_amd64.whl
+[2024-05-25 18:57:49] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/ba/f7/aa96e4d48974bfb60bb12632490730bc47c0a369b8f522b43a61084b24f9/moveread_pipelines_dfy-0.1.9.tar.gz
+[2024-05-25 18:57:49] INFO root fetch - processPackages [moveread-pipelines-dfy]: executing diffoscope
+[2024-05-25 18:57:49] INFO root fetch - processPackages [moveread-pipelines-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_dfy-0.1.8.tar.gz tmp/moveread_pipelines_dfy-0.1.9.tar.gz --markdown 20240525/m/moveread-pipelines-dfy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 18:57:50] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.8.tar.gz]
+[2024-05-25 18:57:50] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.9.tar.gz]
+[2024-05-25 18:57:50] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-dfy]: success
+[2024-05-25 18:57:50] INFO root fetch - processPackages [rg3py]: Downloading https://files.pythonhosted.org/packages/d2/66/1be044b5bced6855b29c4523e819ee9add1283ccddad3e763a22e32d599a/rg3py-0.0.9-py3-none-win_amd64.whl
+[2024-05-25 18:57:52] INFO root fetch - processPackages [rg3py]: executing diffoscope
+[2024-05-25 18:57:52] INFO root fetch - processPackages [rg3py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rg3py-0.0.8-py3-none-win_amd64.whl.zip tmp/rg3py-0.0.9-py3-none-win_amd64.whl.zip --markdown 20240525/r/rg3py/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 18:57:52] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.8-py3-none-win_amd64.whl.zip]
+[2024-05-25 18:57:52] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.9-py3-none-win_amd64.whl.zip]
+[2024-05-25 18:57:52] INFO root fetch - main [MainThread]: End processing [rg3py]: success
+[2024-05-25 18:57:52] INFO root fetch - main [MainThread]: Store serial: [23376591]
