@@ -14095,3 +14095,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:22:32] INFO root fetch - processPackages [paper-admin]: Remove: archive file [/home/abi/fetcher/tmp/paper_admin-7.7.0.tar.gz]
 [2024-05-25 14:22:32] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
 [2024-05-25 14:22:32] INFO root fetch - main [MainThread]: Store serial: [23374578]
+[2024-05-25 14:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374578]
+[2024-05-25 14:24:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 14:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warskald
+[2024-05-25 14:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyNukiBT
+[2024-05-25 14:24:42] INFO root fetch - processPackages [pyNukiBT]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 14:24:42] INFO root fetch - processPackages [pyNukiBT]: Downloading https://files.pythonhosted.org/packages/6a/d3/db8331a97c450a0b088b1439983eda096c081039d9a298f36e6e7bc30e80/pyNukiBT-0.0.8.tar.gz
+[2024-05-25 14:24:42] INFO root fetch - processPackages [warskald]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 14:24:42] INFO root fetch - processPackages [pyNukiBT]: Downloading https://files.pythonhosted.org/packages/fd/ca/b0ed825b31b84dbe48728601a81a68edc532495b909130ee5bc9ec908950/pyNukiBT-0.0.9.tar.gz
+[2024-05-25 14:24:42] INFO root fetch - processPackages [warskald]: Downloading https://files.pythonhosted.org/packages/86/a7/fdf44f966fab4cbd9c675ff351f1f7baced1f13edd727ccf76bd7ed99d57/warskald-0.0.8-py3-none-any.whl
+[2024-05-25 14:24:42] INFO root fetch - processPackages [pyNukiBT]: executing diffoscope
+[2024-05-25 14:24:42] INFO root fetch - processPackages [pyNukiBT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyNukiBT-0.0.8.tar.gz tmp/pyNukiBT-0.0.9.tar.gz --markdown 20240525/p/pyNukiBT/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 14:24:42] INFO root fetch - processPackages [warskald]: Downloading https://files.pythonhosted.org/packages/d7/10/c13e2047f69a69094aea1d1d44f31f8401de9e536c7a3a530050194a958e/warskald-0.0.9-py3-none-any.whl
+[2024-05-25 14:24:42] INFO root fetch - processPackages [warskald]: executing diffoscope
+[2024-05-25 14:24:42] INFO root fetch - processPackages [warskald]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warskald-0.0.8-py3-none-any.whl.zip tmp/warskald-0.0.9-py3-none-any.whl.zip --markdown 20240525/w/warskald/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 14:24:43] INFO root fetch - processPackages [pyNukiBT]: Remove: archive file [/home/abi/fetcher/tmp/pyNukiBT-0.0.8.tar.gz]
+[2024-05-25 14:24:43] INFO root fetch - processPackages [pyNukiBT]: Remove: archive file [/home/abi/fetcher/tmp/pyNukiBT-0.0.9.tar.gz]
+[2024-05-25 14:24:43] INFO root fetch - main [MainThread]: End processing [pyNukiBT]: success
+[2024-05-25 14:24:43] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.8-py3-none-any.whl.zip]
+[2024-05-25 14:24:43] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.9-py3-none-any.whl.zip]
+[2024-05-25 14:24:43] INFO root fetch - main [MainThread]: End processing [warskald]: success
+[2024-05-25 14:24:43] INFO root fetch - main [MainThread]: Store serial: [23374583]
