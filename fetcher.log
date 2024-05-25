@@ -21789,3 +21789,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:42:02] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 21:42:03] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 21:42:03] INFO root fetch - main [MainThread]: Store serial: [23377530]
+[2024-05-25 21:44:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377530]
+[2024-05-25 21:44:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 21:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyiso20022
+[2024-05-25 21:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbom
+[2024-05-25 21:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EcoStock
+[2024-05-25 21:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: example-publish-pypi-medium-by-zhou-jinhuan
+[2024-05-25 21:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bencode-c
+[2024-05-25 21:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aioreactive
+[2024-05-25 21:44:11] INFO root fetch - processPackages [bencode-c]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 21:44:11] INFO root fetch - processPackages [netbom]: New version: [0.0.15] Old Version: [0.0.14]
+[2024-05-25 21:44:12] INFO root fetch - processPackages [EcoStock]: New version: [0.9] Old Version: [0.7]
+[2024-05-25 21:44:12] INFO root fetch - processPackages [pyiso20022]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 21:44:12] INFO root fetch - processPackages [bencode-c]: Downloading https://files.pythonhosted.org/packages/05/6a/9456cf8f95480e9b88c21ae29815d03d35588aa0bca46f4d4126cb085ece/bencode_c-0.0.8.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [netbom]: Downloading https://files.pythonhosted.org/packages/4e/12/5129d5f5125845d13a96f064ff668eeeab0ba5f0b8dd62e3b7a7d540a917/netbom-0.0.14.tar.gz
+[2024-05-25 21:44:12] WARNING root fetch - processPackages [example-publish-pypi-medium-by-zhou-jinhuan]: Skipping, unable to determine old version
+[2024-05-25 21:44:12] INFO root fetch - main [MainThread]: End processing [example-publish-pypi-medium-by-zhou-jinhuan] error
+[2024-05-25 21:44:12] INFO root fetch - processPackages [aioreactive]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 21:44:12] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/e7/82/315a74250230986a5d6102a316c8bc03b3543f4707ecd7f8234a908708c8/ecostock-0.7.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/7f/d9/2363e683d85cac76dc76ae035a7d47718d96bf0dc78d86c54e7f7a0993c6/pyiso20022-0.1.1.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [aioreactive]: Downloading https://files.pythonhosted.org/packages/d7/0c/97f7dbf495d9ce96b811773f66a578e2b3681d5f2376dce65c75e422015a/aioreactive-0.8.0.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [bencode-c]: Downloading https://files.pythonhosted.org/packages/13/e9/f648f5710d23d050e7ab3d22b48c68b1224994488bc8942ef7316a9808bb/bencode_c-0.0.9.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/5a/5e/7b17fca19270303e392a1474c071a0322c2d6d60f4ce03eacd7e40f23595/ecostock-0.9.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [netbom]: Downloading https://files.pythonhosted.org/packages/2c/ec/d236b9baabf2a4467f62077a9f944e2117687a6eabd507b6fd89fe9e2d29/netbom-0.0.15.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-25 21:44:12] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecostock-0.7.tar.gz tmp/ecostock-0.9.tar.gz --markdown 20240525/E/EcoStock/0.7-0.9/README.md --exclude *.pyd
+[2024-05-25 21:44:12] INFO root fetch - processPackages [bencode-c]: executing diffoscope
+[2024-05-25 21:44:12] INFO root fetch - processPackages [bencode-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode_c-0.0.8.tar.gz tmp/bencode_c-0.0.9.tar.gz --markdown 20240525/b/bencode-c/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 21:44:12] INFO root fetch - processPackages [netbom]: executing diffoscope
+[2024-05-25 21:44:12] INFO root fetch - processPackages [netbom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbom-0.0.14.tar.gz tmp/netbom-0.0.15.tar.gz --markdown 20240525/n/netbom/0.0.14-0.0.15/README.md --exclude *.pyd
+[2024-05-25 21:44:12] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/68/19/8ab00034fcf04d47e452ea7dd9e007c5566491f505c060f3a5fc44c8d71d/pyiso20022-0.1.2.tar.gz
+[2024-05-25 21:44:12] INFO root fetch - processPackages [pyiso20022]: executing diffoscope
+[2024-05-25 21:44:12] INFO root fetch - processPackages [pyiso20022]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiso20022-0.1.1.tar.gz tmp/pyiso20022-0.1.2.tar.gz --markdown 20240525/p/pyiso20022/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 21:44:12] INFO root fetch - processPackages [aioreactive]: Downloading https://files.pythonhosted.org/packages/bc/98/65a5a52950bbd028ba43992d7e95ee6670943e6068d703b3fc7090f245c2/aioreactive-0.9.0.tar.gz
+[2024-05-25 21:44:13] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-0.7.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-0.9.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-25 21:44:13] INFO root fetch - processPackages [bencode-c]: Remove: archive file [/home/abi/fetcher/tmp/bencode_c-0.0.8.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - processPackages [bencode-c]: Remove: archive file [/home/abi/fetcher/tmp/bencode_c-0.0.9.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - main [MainThread]: End processing [bencode-c]: success
+[2024-05-25 21:44:13] INFO root fetch - processPackages [netbom]: Remove: archive file [/home/abi/fetcher/tmp/netbom-0.0.14.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - processPackages [netbom]: Remove: archive file [/home/abi/fetcher/tmp/netbom-0.0.15.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - main [MainThread]: End processing [netbom]: success
+[2024-05-25 21:44:13] INFO root fetch - processPackages [aioreactive]: executing diffoscope
+[2024-05-25 21:44:13] INFO root fetch - processPackages [aioreactive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioreactive-0.8.0.tar.gz tmp/aioreactive-0.9.0.tar.gz --markdown 20240525/a/aioreactive/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 21:44:13] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.1.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.2.tar.gz]
+[2024-05-25 21:44:13] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
+[2024-05-25 21:44:14] INFO root fetch - processPackages [aioreactive]: Remove: archive file [/home/abi/fetcher/tmp/aioreactive-0.8.0.tar.gz]
+[2024-05-25 21:44:14] INFO root fetch - processPackages [aioreactive]: Remove: archive file [/home/abi/fetcher/tmp/aioreactive-0.9.0.tar.gz]
+[2024-05-25 21:44:14] INFO root fetch - main [MainThread]: End processing [aioreactive]: success
+[2024-05-25 21:44:14] INFO root fetch - main [MainThread]: Store serial: [23377554]
