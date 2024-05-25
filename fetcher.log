@@ -23126,3 +23126,11 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:18:58] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu-cli-1.0.7.tar.gz]
 [2024-05-25 23:18:58] INFO root fetch - main [MainThread]: End processing [pymenu-cli]: success
 [2024-05-25 23:18:58] INFO root fetch - main [MainThread]: Store serial: [23378045]
+[2024-05-25 23:21:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378045]
+[2024-05-25 23:21:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 23:23:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378045]
+[2024-05-25 23:23:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 23:23:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fetch-the-specs
+[2024-05-25 23:23:14] WARNING root fetch - processPackages [fetch-the-specs]: Skipping, unable to determine old version
+[2024-05-25 23:23:14] INFO root fetch - main [MainThread]: End processing [fetch-the-specs] error
+[2024-05-25 23:23:14] INFO root fetch - main [MainThread]: Store serial: [23378050]
