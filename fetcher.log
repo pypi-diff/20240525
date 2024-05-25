@@ -12602,3 +12602,65 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:15:27] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.6.tar.gz]
 [2024-05-25 12:15:27] INFO root fetch - main [MainThread]: End processing [Glances]: success
 [2024-05-25 12:15:27] INFO root fetch - main [MainThread]: Store serial: [23373949]
+[2024-05-25 12:17:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373949]
+[2024-05-25 12:17:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strawberry-graphql
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scripro
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-pictures
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sage-setup
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sage-sws2rst
+[2024-05-25 12:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sagemath-environment
+[2024-05-25 12:17:36] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-25 12:17:36] INFO root fetch - processPackages [scripro]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-25 12:17:36] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 12:17:37] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [scripro]: Downloading https://files.pythonhosted.org/packages/58/e4/5dc51c40ddc482d810ce85fa5386b832d6de3b76032f1949a8b9bb3bef9e/scripro-1.1.8.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sagemath-environment]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-05-25 12:17:37] INFO root fetch - processPackages [django-pictures]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-05-25 12:17:37] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 12:17:37] WARNING root fetch - processPackages [scripro]: Skipping package: exceeds size limit 21360012>=10485760
+[2024-05-25 12:17:37] INFO root fetch - main [MainThread]: End processing [scripro] error
+[2024-05-25 12:17:37] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/bb/16/bd3221dd969ef83cdb78698299f6e3cfa8be59d749daa81b4dc97f6d24ed/sage-setup-9.8b7.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/c7/9a/24d44916ef366f957e246ba99527efc0b4893673067aa991646a73886e88/sage-sws2rst-9.8b7.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/63/7d/1a322711621a03371daf041779f473d569145e98561ddd9039e79a30255e/sagemath-environment-9.8b7.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [django-pictures]: Downloading https://files.pythonhosted.org/packages/15/8c/d9de17bc52adb215e2d5d50b69bff0ae30294990d5fc76f0d0614b0fc5dd/django_pictures-1.2.2.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-25 12:17:37] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240525/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/aa/ea/ed314950f3374f03b1417e552a4f31d8618f2811e6eacf3fe3332268f07c/sage-setup-9.8rc0.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sagemath-environment]: Downloading https://files.pythonhosted.org/packages/25/81/ca7c2bcc4784c3075bcbf1849d48cee85027d56bdb107f8a0bf943b919ad/sagemath-environment-9.8rc0.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 12:17:37] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/e2/13/be8c4c1c6ddab4fd81239014b8596bd4a65576cb4ec8fd36b8295e719cd8/sage-sws2rst-9.8rc0.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [django-pictures]: Downloading https://files.pythonhosted.org/packages/4a/76/565926486cd7a80675c720e93264dc83dc25bb2c269cb686a61f0afdcf81/django_pictures-1.3.0.tar.gz
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20240525/s/sage-setup/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sagemath-environment]: executing diffoscope
+[2024-05-25 12:17:37] INFO root fetch - processPackages [sagemath-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-environment-9.8b7.tar.gz tmp/sagemath-environment-9.8rc0.tar.gz --markdown 20240525/s/sagemath-environment/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-05-25 12:17:37] INFO root fetch - processPackages [django-pictures]: executing diffoscope
+[2024-05-25 12:17:37] INFO root fetch - processPackages [django-pictures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pictures-1.2.2.tar.gz tmp/django_pictures-1.3.0.tar.gz --markdown 20240525/d/django-pictures/1.2.2-1.3.0/README.md --exclude *.pyd
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20240525/s/sage-sws2rst/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-05-25 12:17:38] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sage-setup]: Remove: archive file [/home/abi/fetcher/tmp/sage-setup-9.8b7.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sage-setup]: Remove: archive file [/home/abi/fetcher/tmp/sage-setup-9.8rc0.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2024-05-25 12:17:38] INFO root fetch - processPackages [django-pictures]: Remove: archive file [/home/abi/fetcher/tmp/django_pictures-1.2.2.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - processPackages [django-pictures]: Remove: archive file [/home/abi/fetcher/tmp/django_pictures-1.3.0.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - main [MainThread]: End processing [django-pictures]: success
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sage-sws2rst]: Remove: archive file [/home/abi/fetcher/tmp/sage-sws2rst-9.8b7.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sage-sws2rst]: Remove: archive file [/home/abi/fetcher/tmp/sage-sws2rst-9.8rc0.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sagemath-environment]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-environment-9.8b7.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - processPackages [sagemath-environment]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-environment-9.8rc0.tar.gz]
+[2024-05-25 12:17:38] INFO root fetch - main [MainThread]: End processing [sagemath-environment]: success
+[2024-05-25 12:17:39] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 12:17:39] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 12:17:39] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 12:17:39] INFO root fetch - main [MainThread]: Store serial: [23373970]
