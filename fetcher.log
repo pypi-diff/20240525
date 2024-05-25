@@ -23352,3 +23352,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:36:26] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.8.8.tar.gz]
 [2024-05-25 23:36:26] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2024-05-25 23:36:26] INFO root fetch - main [MainThread]: Store serial: [23378136]
+[2024-05-25 23:38:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378136]
+[2024-05-25 23:38:34] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 23:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378136]
+[2024-05-25 23:40:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 23:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-25 23:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tabswitcher
+[2024-05-25 23:40:40] INFO root fetch - processPackages [tabswitcher]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-25 23:40:40] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 23:40:40] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/5a/6f/e3d131888562e74fc9cd6a8509e82b337bf375ff12d595f1562169031730/tabswitcher-0.0.6.tar.gz
+[2024-05-25 23:40:40] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 23:40:40] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/f7/91/f433b8119ee445f43f71a22e6d27d74386016540e0f55315d7975b675e3e/tabswitcher-0.0.7.tar.gz
+[2024-05-25 23:40:40] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 23:40:40] INFO root fetch - processPackages [tabswitcher]: executing diffoscope
+[2024-05-25 23:40:40] INFO root fetch - processPackages [tabswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabswitcher-0.0.6.tar.gz tmp/tabswitcher-0.0.7.tar.gz --markdown 20240525/t/tabswitcher/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-25 23:40:40] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 23:40:40] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 23:40:41] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.6.tar.gz]
+[2024-05-25 23:40:41] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.7.tar.gz]
+[2024-05-25 23:40:41] INFO root fetch - main [MainThread]: End processing [tabswitcher]: success
+[2024-05-25 23:40:41] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 23:40:41] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 23:40:41] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 23:40:41] INFO root fetch - main [MainThread]: Store serial: [23378141]
