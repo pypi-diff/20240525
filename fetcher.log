@@ -11494,3 +11494,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:50:06] INFO root fetch - processPackages [tiltlib]: Remove: archive file [/home/abi/fetcher/tmp/tiltlib-0.1.tar.gz]
 [2024-05-25 10:50:06] INFO root fetch - main [MainThread]: End processing [tiltlib]: success
 [2024-05-25 10:50:06] INFO root fetch - main [MainThread]: Store serial: [23373404]
+[2024-05-25 10:52:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373404]
+[2024-05-25 10:52:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 10:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Orange3-WorldHappiness
+[2024-05-25 10:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: readme-ation
+[2024-05-25 10:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-adapter-minecraft
+[2024-05-25 10:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autosink-data-preparation
+[2024-05-25 10:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mns-scheduler
+[2024-05-25 10:52:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smol_k8s_lab
+[2024-05-25 10:52:14] INFO root fetch - processPackages [nonebot-adapter-minecraft]: New version: [1.2.0] Old Version: [1.1.2]
+[2024-05-25 10:52:14] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.5.8] Old Version: [1.0.5.6]
+[2024-05-25 10:52:14] INFO root fetch - processPackages [autosink-data-preparation]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-25 10:52:14] WARNING root fetch - processPackages [readme-ation]: Skipping, unable to determine old version
+[2024-05-25 10:52:14] INFO root fetch - main [MainThread]: End processing [readme-ation] error
+[2024-05-25 10:52:14] INFO root fetch - processPackages [smol_k8s_lab]: New version: [5.2.3] Old Version: [5.2.2]
+[2024-05-25 10:52:14] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/bc/64/4a8663e68f603933761f5975decab24fe5b105dd9d844443275863b05319/mns-scheduler-1.0.5.6.tar.gz
+[2024-05-25 10:52:14] INFO root fetch - processPackages [nonebot-adapter-minecraft]: Downloading https://files.pythonhosted.org/packages/1b/d4/833663f8babb99f24b62d2f204901c105e8c4442b8f10cfccb6694db019e/nonebot_adapter_minecraft-1.1.2.tar.gz
+[2024-05-25 10:52:14] INFO root fetch - processPackages [Orange3-WorldHappiness]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 10:52:14] INFO root fetch - processPackages [autosink-data-preparation]: Downloading https://files.pythonhosted.org/packages/45/18/e089d58a6819d3cd3a3a4637352c024e78169ee8d20bbf91f4109f6aeefc/autosink_data_preparation-0.2.0.tar.gz
+[2024-05-25 10:52:14] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/2b/de/66d7b269548a625d298e5b024d0187e6a6a35ebc95c0ff023f4c1989a13b/smol_k8s_lab-5.2.2.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [Orange3-WorldHappiness]: Downloading https://files.pythonhosted.org/packages/57/e6/06a0c4db584977ffa81ea8f815b6951ad5df0b68b23823ea11a7740c08db/Orange3-WorldHappiness-0.1.8.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [nonebot-adapter-minecraft]: Downloading https://files.pythonhosted.org/packages/1f/48/488454dbece64a3cd396612b608b86f47fccf9953e83c1ba154e3463d6d1/nonebot_adapter_minecraft-1.2.0.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/47/a8/5555d71c749c702c47fe652b1b7a738c0fb6c4540a18ca82d08b2acd1445/mns-scheduler-1.0.5.8.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [autosink-data-preparation]: Downloading https://files.pythonhosted.org/packages/72/d7/7bc97596f1b279b47c6eac3b8ac566e70716b73f76aebe3bff85a5ca09ac/autosink_data_preparation-0.3.0.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [nonebot-adapter-minecraft]: executing diffoscope
+[2024-05-25 10:52:15] INFO root fetch - processPackages [nonebot-adapter-minecraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_minecraft-1.1.2.tar.gz tmp/nonebot_adapter_minecraft-1.2.0.tar.gz --markdown 20240525/n/nonebot-adapter-minecraft/1.1.2-1.2.0/README.md --exclude *.pyd
+[2024-05-25 10:52:15] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-05-25 10:52:15] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.5.6.tar.gz tmp/mns-scheduler-1.0.5.8.tar.gz --markdown 20240525/m/mns-scheduler/1.0.5.6-1.0.5.8/README.md --exclude *.pyd
+[2024-05-25 10:52:15] INFO root fetch - processPackages [autosink-data-preparation]: executing diffoscope
+[2024-05-25 10:52:15] INFO root fetch - processPackages [autosink-data-preparation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosink_data_preparation-0.2.0.tar.gz tmp/autosink_data_preparation-0.3.0.tar.gz --markdown 20240525/a/autosink-data-preparation/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-25 10:52:15] INFO root fetch - processPackages [smol_k8s_lab]: Downloading https://files.pythonhosted.org/packages/4c/72/d98c8c4e9f15527b7dc2b5bab9868f37cd46829a40fccccab0b22bfd7985/smol_k8s_lab-5.2.3.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [Orange3-WorldHappiness]: Downloading https://files.pythonhosted.org/packages/7b/db/1119af868329a5d12a4bddce483999e542cf4492bf5080747bc12589359a/Orange3-WorldHappiness-0.1.9.tar.gz
+[2024-05-25 10:52:15] INFO root fetch - processPackages [nonebot-adapter-minecraft]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_minecraft-1.1.2.tar.gz]
+[2024-05-25 10:52:15] INFO root fetch - processPackages [nonebot-adapter-minecraft]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_minecraft-1.2.0.tar.gz]
+[2024-05-25 10:52:15] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-minecraft]: success
+[2024-05-25 10:52:15] INFO root fetch - processPackages [Orange3-WorldHappiness]: executing diffoscope
+[2024-05-25 10:52:15] INFO root fetch - processPackages [Orange3-WorldHappiness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Orange3-WorldHappiness-0.1.8.tar.gz tmp/Orange3-WorldHappiness-0.1.9.tar.gz --markdown 20240525/O/Orange3-WorldHappiness/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 10:52:15] INFO root fetch - processPackages [autosink-data-preparation]: Remove: archive file [/home/abi/fetcher/tmp/autosink_data_preparation-0.2.0.tar.gz]
+[2024-05-25 10:52:15] INFO root fetch - processPackages [autosink-data-preparation]: Remove: archive file [/home/abi/fetcher/tmp/autosink_data_preparation-0.3.0.tar.gz]
+[2024-05-25 10:52:15] INFO root fetch - main [MainThread]: End processing [autosink-data-preparation]: success
+[2024-05-25 10:52:15] INFO root fetch - processPackages [smol_k8s_lab]: executing diffoscope
+[2024-05-25 10:52:15] INFO root fetch - processPackages [smol_k8s_lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smol_k8s_lab-5.2.2.tar.gz tmp/smol_k8s_lab-5.2.3.tar.gz --markdown 20240525/s/smol_k8s_lab/5.2.2-5.2.3/README.md --exclude *.pyd
+[2024-05-25 10:52:16] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.6.tar.gz]
+[2024-05-25 10:52:16] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.8.tar.gz]
+[2024-05-25 10:52:16] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-05-25 10:52:17] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.2.2.tar.gz]
+[2024-05-25 10:52:17] INFO root fetch - processPackages [smol_k8s_lab]: Remove: archive file [/home/abi/fetcher/tmp/smol_k8s_lab-5.2.3.tar.gz]
+[2024-05-25 10:52:17] INFO root fetch - main [MainThread]: End processing [smol_k8s_lab]: success
+[2024-05-25 10:52:19] INFO root fetch - processPackages [Orange3-WorldHappiness]: Remove: archive file [/home/abi/fetcher/tmp/Orange3-WorldHappiness-0.1.8.tar.gz]
+[2024-05-25 10:52:19] INFO root fetch - processPackages [Orange3-WorldHappiness]: Remove: archive file [/home/abi/fetcher/tmp/Orange3-WorldHappiness-0.1.9.tar.gz]
+[2024-05-25 10:52:19] INFO root fetch - main [MainThread]: End processing [Orange3-WorldHappiness]: success
+[2024-05-25 10:52:19] INFO root fetch - main [MainThread]: Store serial: [23373430]
