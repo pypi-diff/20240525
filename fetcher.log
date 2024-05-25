@@ -22585,3 +22585,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:41:52] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.8.tar.gz]
 [2024-05-25 22:41:52] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
 [2024-05-25 22:41:52] INFO root fetch - main [MainThread]: Store serial: [23377859]
+[2024-05-25 22:43:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377859]
+[2024-05-25 22:44:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 22:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-25 22:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blackboxai
+[2024-05-25 22:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kamangir
+[2024-05-25 22:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monzo-utils
+[2024-05-25 22:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vishgraphs
+[2024-05-25 22:44:00] INFO root fetch - processPackages [blackboxai]: New version: [2.8] Old Version: [2.7]
+[2024-05-25 22:44:00] INFO root fetch - processPackages [monzo-utils]: New version: [0.1.0] Old Version: [0.0.99]
+[2024-05-25 22:44:00] INFO root fetch - processPackages [kamangir]: New version: [3.65.1] Old Version: [3.64.1]
+[2024-05-25 22:44:00] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:44:00] WARNING root fetch - processPackages [vishgraphs]: Skipping, unable to determine old version
+[2024-05-25 22:44:00] INFO root fetch - main [MainThread]: End processing [vishgraphs] error
+[2024-05-25 22:44:00] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/7c/6a/ebe75d6c4ba204c7dec2e52eef4fe9587f3f4c0b29e48cb92d74cb5e1351/monzo_utils-0.0.99-py3-none-any.whl
+[2024-05-25 22:44:00] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/dc/e3/9075fd86348bf6cb4e79a9fa77996c8c57f5423bcd0f8a1c958f915c6b70/kamangir-3.64.1.tar.gz
+[2024-05-25 22:44:00] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:44:01] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/ef/d2/829da1c64a8e3d554f466ab93536a177925d53761b3f4aab684091daafc9/blackboxai-2.7.tar.gz
+[2024-05-25 22:44:01] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:44:01] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/17/7e/4b6c304cc1ab1537dff144df9dcc8452784f05e41afba050207ba4ef736d/kamangir-3.65.1.tar.gz
+[2024-05-25 22:44:01] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/7c/ec/1262871500af5611a003b5a0e2093eafaeb4406d00d6ed2e5d8bc77cea3b/monzo_utils-0.1.0-py3-none-any.whl
+[2024-05-25 22:44:01] INFO root fetch - processPackages [blackboxai]: Downloading https://files.pythonhosted.org/packages/2b/da/79ef037610bd47204a5b90904196793d6490bd46ffa5edbb80d349b9a2ae/blackboxai-2.8.tar.gz
+[2024-05-25 22:44:01] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 22:44:01] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.64.1.tar.gz tmp/kamangir-3.65.1.tar.gz --markdown 20240525/k/kamangir/3.64.1-3.65.1/README.md --exclude *.pyd
+[2024-05-25 22:44:01] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-05-25 22:44:01] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.99-py3-none-any.whl.zip tmp/monzo_utils-0.1.0-py3-none-any.whl.zip --markdown 20240525/m/monzo-utils/0.0.99-0.1.0/README.md --exclude *.pyd
+[2024-05-25 22:44:01] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:44:01] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:44:01] INFO root fetch - processPackages [blackboxai]: executing diffoscope
+[2024-05-25 22:44:01] INFO root fetch - processPackages [blackboxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackboxai-2.7.tar.gz tmp/blackboxai-2.8.tar.gz --markdown 20240525/b/blackboxai/2.7-2.8/README.md --exclude *.pyd
+[2024-05-25 22:44:02] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.64.1.tar.gz]
+[2024-05-25 22:44:02] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.65.1.tar.gz]
+[2024-05-25 22:44:02] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 22:44:02] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.99-py3-none-any.whl.zip]
+[2024-05-25 22:44:02] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.1.0-py3-none-any.whl.zip]
+[2024-05-25 22:44:02] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-05-25 22:44:02] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:44:02] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:44:02] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:44:02] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.7.tar.gz]
+[2024-05-25 22:44:02] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.8.tar.gz]
+[2024-05-25 22:44:02] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
+[2024-05-25 22:44:02] INFO root fetch - main [MainThread]: Store serial: [23377874]
