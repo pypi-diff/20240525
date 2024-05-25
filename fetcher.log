@@ -12990,3 +12990,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:41:51] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
 [2024-05-25 12:41:51] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
 [2024-05-25 12:41:51] INFO root fetch - main [MainThread]: Store serial: [23374137]
+[2024-05-25 12:43:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374137]
+[2024-05-25 12:44:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 12:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IndicTrans2
+[2024-05-25 12:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lta-sg
+[2024-05-25 12:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TrueFloat
+[2024-05-25 12:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dynamic-py-loader
+[2024-05-25 12:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telegramify-markdown
+[2024-05-25 12:44:00] INFO root fetch - processPackages [IndicTrans2]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-05-25 12:44:01] WARNING root fetch - processPackages [dynamic-py-loader]: Skipping, unable to determine old version
+[2024-05-25 12:44:01] INFO root fetch - main [MainThread]: End processing [dynamic-py-loader] error
+[2024-05-25 12:44:01] WARNING root fetch - processPackages [TrueFloat]: Skipping, unable to determine old version
+[2024-05-25 12:44:01] INFO root fetch - main [MainThread]: End processing [TrueFloat] error
+[2024-05-25 12:44:01] WARNING root fetch - processPackages [lta-sg]: Skipping, unable to determine old version
+[2024-05-25 12:44:01] INFO root fetch - main [MainThread]: End processing [lta-sg] error
+[2024-05-25 12:44:01] INFO root fetch - processPackages [telegramify-markdown]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 12:44:01] INFO root fetch - processPackages [IndicTrans2]: Downloading https://files.pythonhosted.org/packages/2d/48/3fe9a9b56ae84325690ef96b800f132b1a120f025003a4c623fc1f71b0b4/IndicTrans2-0.1.0.tar.gz
+[2024-05-25 12:44:01] INFO root fetch - processPackages [telegramify-markdown]: Downloading https://files.pythonhosted.org/packages/0a/a0/9bf74ecc08ab13977610a7119c9f0e86fd3db44bab9d4de6e4052cccf7c9/telegramify_markdown-0.1.2.tar.gz
+[2024-05-25 12:44:01] INFO root fetch - processPackages [IndicTrans2]: Downloading https://files.pythonhosted.org/packages/52/13/af9470c2c52682a6868676326420793186a02b3ec97c03101ce3e8486e94/IndicTrans2-0.1.2.tar.gz
+[2024-05-25 12:44:01] INFO root fetch - processPackages [IndicTrans2]: executing diffoscope
+[2024-05-25 12:44:01] INFO root fetch - processPackages [IndicTrans2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IndicTrans2-0.1.0.tar.gz tmp/IndicTrans2-0.1.2.tar.gz --markdown 20240525/I/IndicTrans2/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-05-25 12:44:01] INFO root fetch - processPackages [telegramify-markdown]: Downloading https://files.pythonhosted.org/packages/d5/20/d13f2fe4509e1edb1f9f9c70524ec7cad908206188edc69379684e83bc7b/telegramify_markdown-0.1.3.tar.gz
+[2024-05-25 12:44:01] INFO root fetch - processPackages [telegramify-markdown]: executing diffoscope
+[2024-05-25 12:44:01] INFO root fetch - processPackages [telegramify-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegramify_markdown-0.1.2.tar.gz tmp/telegramify_markdown-0.1.3.tar.gz --markdown 20240525/t/telegramify-markdown/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 12:44:01] INFO root fetch - processPackages [IndicTrans2]: Remove: archive file [/home/abi/fetcher/tmp/IndicTrans2-0.1.0.tar.gz]
+[2024-05-25 12:44:01] INFO root fetch - processPackages [IndicTrans2]: Remove: archive file [/home/abi/fetcher/tmp/IndicTrans2-0.1.2.tar.gz]
+[2024-05-25 12:44:01] INFO root fetch - main [MainThread]: End processing [IndicTrans2]: success
+[2024-05-25 12:44:02] INFO root fetch - processPackages [telegramify-markdown]: Remove: archive file [/home/abi/fetcher/tmp/telegramify_markdown-0.1.2.tar.gz]
+[2024-05-25 12:44:02] INFO root fetch - processPackages [telegramify-markdown]: Remove: archive file [/home/abi/fetcher/tmp/telegramify_markdown-0.1.3.tar.gz]
+[2024-05-25 12:44:02] INFO root fetch - main [MainThread]: End processing [telegramify-markdown]: success
+[2024-05-25 12:44:02] INFO root fetch - main [MainThread]: Store serial: [23374156]
