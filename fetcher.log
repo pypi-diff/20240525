@@ -16696,3 +16696,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:36:03] INFO root fetch - processPackages [cloudstructs]: Remove: archive file [/home/abi/fetcher/tmp/cloudstructs-0.9.7.tar.gz]
 [2024-05-25 15:36:03] INFO root fetch - main [MainThread]: End processing [cloudstructs]: success
 [2024-05-25 15:36:03] INFO root fetch - main [MainThread]: Store serial: [23375364]
+[2024-05-25 15:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375364]
+[2024-05-25 15:38:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 15:38:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypi-shell
+[2024-05-25 15:38:12] INFO root fetch - processPackages [pypi-shell]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 15:38:12] INFO root fetch - processPackages [pypi-shell]: Downloading https://files.pythonhosted.org/packages/45/d9/e4c377282fcba06e4cb617c2db942f29e1d88da097fdc7353c1b3cd4182d/pypi_shell-0.1.0.tar.gz
+[2024-05-25 15:38:13] INFO root fetch - processPackages [pypi-shell]: Downloading https://files.pythonhosted.org/packages/29/b4/7c8a694ca7375ce9f8626e83ca38761e206d9abc4c7439ead85197a10b17/pypi_shell-0.1.1.tar.gz
+[2024-05-25 15:38:13] INFO root fetch - processPackages [pypi-shell]: executing diffoscope
+[2024-05-25 15:38:13] INFO root fetch - processPackages [pypi-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_shell-0.1.0.tar.gz tmp/pypi_shell-0.1.1.tar.gz --markdown 20240525/p/pypi-shell/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 15:38:13] INFO root fetch - processPackages [pypi-shell]: Remove: archive file [/home/abi/fetcher/tmp/pypi_shell-0.1.0.tar.gz]
+[2024-05-25 15:38:13] INFO root fetch - processPackages [pypi-shell]: Remove: archive file [/home/abi/fetcher/tmp/pypi_shell-0.1.1.tar.gz]
+[2024-05-25 15:38:13] INFO root fetch - main [MainThread]: End processing [pypi-shell]: success
+[2024-05-25 15:38:13] INFO root fetch - main [MainThread]: Store serial: [23375369]
