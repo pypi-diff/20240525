@@ -20206,3 +20206,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:28:30] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.9.tar.gz]
 [2024-05-25 19:28:30] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
 [2024-05-25 19:28:30] INFO root fetch - main [MainThread]: Store serial: [23376830]
+[2024-05-25 19:30:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376830]
+[2024-05-25 19:30:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 19:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uprock-sdk
+[2024-05-25 19:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: capslock
+[2024-05-25 19:30:41] INFO root fetch - processPackages [uprock-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 19:30:41] INFO root fetch - processPackages [uprock-sdk]: Downloading https://files.pythonhosted.org/packages/26/22/126fb32f31645995a5011f583fcbff3a5bd9d706b40186f5a97d77b1809b/uprock_sdk-0.1.8.tar.gz
+[2024-05-25 19:30:41] INFO root fetch - processPackages [capslock]: New version: [2.0.1] Old Version: [1.0.8]
+[2024-05-25 19:30:41] INFO root fetch - processPackages [uprock-sdk]: Downloading https://files.pythonhosted.org/packages/9f/c4/b3c22c4effa404516d26a91e86a36be6214f4ddddbf45903687c612dc45c/uprock_sdk-0.1.9.tar.gz
+[2024-05-25 19:30:41] INFO root fetch - processPackages [capslock]: Downloading https://files.pythonhosted.org/packages/df/a4/f521ad90f82f6d18b2e24ff9b2da5ffed7ee2b9942c520a593e001391f9d/capslock-1.0.8.tar.gz
+[2024-05-25 19:30:41] INFO root fetch - processPackages [uprock-sdk]: executing diffoscope
+[2024-05-25 19:30:41] INFO root fetch - processPackages [uprock-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uprock_sdk-0.1.8.tar.gz tmp/uprock_sdk-0.1.9.tar.gz --markdown 20240525/u/uprock-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 19:30:41] INFO root fetch - processPackages [capslock]: Downloading https://files.pythonhosted.org/packages/38/34/9caa65eab5c6ba84e046f8e4078e49797b32fd6b35c0f689bdf7644fcd7d/capslock-2.0.1.tar.gz
+[2024-05-25 19:30:42] INFO root fetch - processPackages [capslock]: executing diffoscope
+[2024-05-25 19:30:42] INFO root fetch - processPackages [capslock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capslock-1.0.8.tar.gz tmp/capslock-2.0.1.tar.gz --markdown 20240525/c/capslock/1.0.8-2.0.1/README.md --exclude *.pyd
+[2024-05-25 19:30:42] INFO root fetch - processPackages [uprock-sdk]: Remove: archive file [/home/abi/fetcher/tmp/uprock_sdk-0.1.8.tar.gz]
+[2024-05-25 19:30:42] INFO root fetch - processPackages [uprock-sdk]: Remove: archive file [/home/abi/fetcher/tmp/uprock_sdk-0.1.9.tar.gz]
+[2024-05-25 19:30:42] INFO root fetch - main [MainThread]: End processing [uprock-sdk]: success
+[2024-05-25 19:30:42] INFO root fetch - processPackages [capslock]: Remove: archive file [/home/abi/fetcher/tmp/capslock-1.0.8.tar.gz]
+[2024-05-25 19:30:42] INFO root fetch - processPackages [capslock]: Remove: archive file [/home/abi/fetcher/tmp/capslock-2.0.1.tar.gz]
+[2024-05-25 19:30:42] INFO root fetch - main [MainThread]: End processing [capslock]: success
+[2024-05-25 19:30:42] INFO root fetch - main [MainThread]: Store serial: [23376836]
