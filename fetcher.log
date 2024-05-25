@@ -18111,3 +18111,30 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:10:28] INFO root fetch - processPackages [stream-zip]: Remove: archive file [/home/abi/fetcher/tmp/stream-zip-0.0.9.tar.gz]
 [2024-05-25 17:10:28] INFO root fetch - main [MainThread]: End processing [stream-zip]: success
 [2024-05-25 17:10:28] INFO root fetch - main [MainThread]: Store serial: [23375971]
+[2024-05-25 17:12:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375971]
+[2024-05-25 17:12:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 17:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pproject
+[2024-05-25 17:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: structables
+[2024-05-25 17:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-25 17:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: somethingheredude
+[2024-05-25 17:12:36] INFO root fetch - processPackages [structables]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-25 17:12:36] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.328] Old Version: [0.0.327]
+[2024-05-25 17:12:36] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/c6/bc/7e0d69abd8277c07243753e634370314cae03e7dedbdb43db3db3e103757/structables-0.3.0.tar.gz
+[2024-05-25 17:12:36] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/3f/b5/4df644817eedd15944811a3a77ac1e26ebea7d475b6c5b2f5bcda42d9342/database_mysql_local-0.0.327.tar.gz
+[2024-05-25 17:12:36] WARNING root fetch - processPackages [somethingheredude]: Skipping, unable to determine old version
+[2024-05-25 17:12:36] INFO root fetch - main [MainThread]: End processing [somethingheredude] error
+[2024-05-25 17:12:36] WARNING root fetch - processPackages [pproject]: Skipping, unable to determine old version
+[2024-05-25 17:12:36] INFO root fetch - main [MainThread]: End processing [pproject] error
+[2024-05-25 17:12:37] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/08/88/2e9a56a6dcb08c7d759d4d32654efb0e12929b2638ea6cb54a09c9a9a21f/database_mysql_local-0.0.328.tar.gz
+[2024-05-25 17:12:37] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-25 17:12:37] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.327.tar.gz tmp/database_mysql_local-0.0.328.tar.gz --markdown 20240525/d/database-mysql-local/0.0.327-0.0.328/README.md --exclude *.pyd
+[2024-05-25 17:12:37] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/95/37/b3dd4bcd33decfd9987159a88a8ab19f7db3c335a25b520e2027820400f7/structables-0.3.1.tar.gz
+[2024-05-25 17:12:37] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-25 17:12:37] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.3.0.tar.gz tmp/structables-0.3.1.tar.gz --markdown 20240525/s/structables/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-25 17:12:38] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.327.tar.gz]
+[2024-05-25 17:12:38] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.328.tar.gz]
+[2024-05-25 17:12:38] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-25 17:12:38] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.0.tar.gz]
+[2024-05-25 17:12:38] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.3.1.tar.gz]
+[2024-05-25 17:12:38] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-25 17:12:38] INFO root fetch - main [MainThread]: Store serial: [23375987]
