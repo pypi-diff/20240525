@@ -2416,3 +2416,70 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:31:31] INFO root fetch - processPackages [sil-thot]: Remove: archive file [/home/abi/fetcher/tmp/sil_thot-3.4.4.tar.gz]
 [2024-05-25 02:31:31] INFO root fetch - main [MainThread]: End processing [sil-thot]: success
 [2024-05-25 02:31:31] INFO root fetch - main [MainThread]: Store serial: [23369593]
+[2024-05-25 02:33:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369593]
+[2024-05-25 02:33:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: node-ec2-instance
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beehive-ai
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inference
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inference-cli
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inference-core
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: inference-cpu
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inference-gpu
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: inference-sdk
+[2024-05-25 02:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pazok
+[2024-05-25 02:33:41] INFO root fetch - processPackages [pazok]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-25 02:33:41] WARNING root fetch - processPackages [node-ec2-instance]: Skipping, unable to determine old version
+[2024-05-25 02:33:41] INFO root fetch - main [MainThread]: End processing [node-ec2-instance] error
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-core]: New version: [0.9.9rc23] Old Version: [0.9.9]
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-cli]: New version: [0.9.9rc23] Old Version: [0.9.9]
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference]: New version: [0.9.9rc23] Old Version: [0.9.9]
+[2024-05-25 02:33:41] WARNING root fetch - processPackages [beehive-ai]: Skipping, unable to determine old version
+[2024-05-25 02:33:41] INFO root fetch - main [MainThread]: End processing [beehive-ai] error
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-cpu]: New version: [0.9.9rc23] Old Version: [0.9.9]
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-gpu]: New version: [0.9.9rc23] Old Version: [0.9.9]
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-sdk]: New version: [0.9.9rc23] Old Version: [0.9.9]
+[2024-05-25 02:33:41] ERROR root fetch - processPackages [pazok]: Unable to fetch info: No such project/version 'pazok' 0.0.3
+[2024-05-25 02:33:41] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference]: Downloading https://files.pythonhosted.org/packages/b2/44/8087d6d3367e7ceafbbd5c479e3d90b18ed857cec20916923127b16d96e3/inference-0.9.9-py3-none-any.whl
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-core]: Downloading https://files.pythonhosted.org/packages/96/6e/eff0c627f7611ac7201239bf17796a620b32ebb4a5391d64448a26f0c670/inference_core-0.9.9-py3-none-any.whl
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-cpu]: Downloading https://files.pythonhosted.org/packages/02/23/38f756e29e9d74b3ff0e376f544b0c329050cc57b5bfa8456efa6656920a/inference_cpu-0.9.9-py3-none-any.whl
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-cli]: Downloading https://files.pythonhosted.org/packages/5d/d3/767b2e0338006241b84ed5335e563226a745f567678ab1538067eccb2306/inference_cli-0.9.9-py3-none-any.whl
+[2024-05-25 02:33:41] INFO root fetch - processPackages [inference-sdk]: Downloading https://files.pythonhosted.org/packages/52/69/82520739fe7adb3fba8c81d9769cdcb891e822de3f53b430ce763ff5489b/inference_sdk-0.9.9-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-gpu]: Downloading https://files.pythonhosted.org/packages/e3/44/7e86ef531d9672b66a2ab461c0f39fe367c4c7522a885fc8f71bd40254bf/inference_gpu-0.9.9-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference]: Downloading https://files.pythonhosted.org/packages/8a/30/7138f45acce6f0be8ed5bf6674a2c37d08cc2e3f9bcd75e9594cffdf0ff3/inference-0.9.9rc23-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-cpu]: Downloading https://files.pythonhosted.org/packages/5c/80/41ad4963d5f9d68624238fb5e4b40ec5b4ddfa6b07abcaa2fb179eab2a88/inference_cpu-0.9.9rc23-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-core]: Downloading https://files.pythonhosted.org/packages/6b/66/a826c04238ffc07c7a58cc640b708f1a96b58865a6d3330b9fc993f36e04/inference_core-0.9.9rc23-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-sdk]: Downloading https://files.pythonhosted.org/packages/b1/7a/8d07a14a7cc4da4746edf0fc008e72ccaa949d903ced0b787c7eefd715b5/inference_sdk-0.9.9rc23-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-gpu]: Downloading https://files.pythonhosted.org/packages/9e/c0/0c238a7737cfdb7c9fbbc656916ead04e973b1bdf2b04e79cf923a2e75a8/inference_gpu-0.9.9rc23-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-cli]: Downloading https://files.pythonhosted.org/packages/6e/1b/99398d23f30d77ab3550db23fd820cac9608f5608cf5fe4f5784fd9f2556/inference_cli-0.9.9rc23-py3-none-any.whl
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-cpu]: executing diffoscope
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference_cpu-0.9.9-py3-none-any.whl.zip tmp/inference_cpu-0.9.9rc23-py3-none-any.whl.zip --markdown 20240525/i/inference-cpu/0.9.9-0.9.9rc23/README.md --exclude *.pyd
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference]: executing diffoscope
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference-0.9.9-py3-none-any.whl.zip tmp/inference-0.9.9rc23-py3-none-any.whl.zip --markdown 20240525/i/inference/0.9.9-0.9.9rc23/README.md --exclude *.pyd
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-core]: executing diffoscope
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference_core-0.9.9-py3-none-any.whl.zip tmp/inference_core-0.9.9rc23-py3-none-any.whl.zip --markdown 20240525/i/inference-core/0.9.9-0.9.9rc23/README.md --exclude *.pyd
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-gpu]: executing diffoscope
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-gpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference_gpu-0.9.9-py3-none-any.whl.zip tmp/inference_gpu-0.9.9rc23-py3-none-any.whl.zip --markdown 20240525/i/inference-gpu/0.9.9-0.9.9rc23/README.md --exclude *.pyd
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-sdk]: executing diffoscope
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference_sdk-0.9.9-py3-none-any.whl.zip tmp/inference_sdk-0.9.9rc23-py3-none-any.whl.zip --markdown 20240525/i/inference-sdk/0.9.9-0.9.9rc23/README.md --exclude *.pyd
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-cli]: executing diffoscope
+[2024-05-25 02:33:42] INFO root fetch - processPackages [inference-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference_cli-0.9.9-py3-none-any.whl.zip tmp/inference_cli-0.9.9rc23-py3-none-any.whl.zip --markdown 20240525/i/inference-cli/0.9.9-0.9.9rc23/README.md --exclude *.pyd
+[2024-05-25 02:33:43] INFO root fetch - processPackages [inference-core]: Remove: archive file [/home/abi/fetcher/tmp/inference_core-0.9.9-py3-none-any.whl.zip]
+[2024-05-25 02:33:43] INFO root fetch - processPackages [inference-core]: Remove: archive file [/home/abi/fetcher/tmp/inference_core-0.9.9rc23-py3-none-any.whl.zip]
+[2024-05-25 02:33:43] INFO root fetch - main [MainThread]: End processing [inference-core]: success
+[2024-05-25 02:33:43] INFO root fetch - processPackages [inference-sdk]: Remove: archive file [/home/abi/fetcher/tmp/inference_sdk-0.9.9-py3-none-any.whl.zip]
+[2024-05-25 02:33:43] INFO root fetch - processPackages [inference-sdk]: Remove: archive file [/home/abi/fetcher/tmp/inference_sdk-0.9.9rc23-py3-none-any.whl.zip]
+[2024-05-25 02:33:43] INFO root fetch - main [MainThread]: End processing [inference-sdk]: success
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference-gpu]: Remove: archive file [/home/abi/fetcher/tmp/inference_gpu-0.9.9-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference-gpu]: Remove: archive file [/home/abi/fetcher/tmp/inference_gpu-0.9.9rc23-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - main [MainThread]: End processing [inference-gpu]: success
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference-cli]: Remove: archive file [/home/abi/fetcher/tmp/inference_cli-0.9.9-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference-cli]: Remove: archive file [/home/abi/fetcher/tmp/inference_cli-0.9.9rc23-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - main [MainThread]: End processing [inference-cli]: success
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference-cpu]: Remove: archive file [/home/abi/fetcher/tmp/inference_cpu-0.9.9-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference-cpu]: Remove: archive file [/home/abi/fetcher/tmp/inference_cpu-0.9.9rc23-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - main [MainThread]: End processing [inference-cpu]: success
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference]: Remove: archive file [/home/abi/fetcher/tmp/inference-0.9.9-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - processPackages [inference]: Remove: archive file [/home/abi/fetcher/tmp/inference-0.9.9rc23-py3-none-any.whl.zip]
+[2024-05-25 02:33:44] INFO root fetch - main [MainThread]: End processing [inference]: success
+[2024-05-25 02:33:44] INFO root fetch - main [MainThread]: Store serial: [23369626]
