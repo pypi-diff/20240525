@@ -14451,3 +14451,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:55:31] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-25 14:55:31] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-25 14:55:31] INFO root fetch - main [MainThread]: Store serial: [23374752]
+[2024-05-25 14:57:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374752]
+[2024-05-25 14:57:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 14:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysie-accounting
+[2024-05-25 14:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: node-ec2-instance
+[2024-05-25 14:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapegraphai
+[2024-05-25 14:57:39] INFO root fetch - processPackages [scrapegraphai]: New version: [1.5.0b3] Old Version: [1.5.0b2]
+[2024-05-25 14:57:39] INFO root fetch - processPackages [node-ec2-instance]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 14:57:39] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/3d/9c/a428022cfffac859c8a5622c284157408dc0f6f2e9e1ee083dde27672a79/scrapegraphai-1.5.0b2.tar.gz
+[2024-05-25 14:57:39] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/31/ec/91864a8a10ed662906de3d75434045621fd02176a907b25db0317327d24e/node-ec2-instance-0.0.2.tar.gz
+[2024-05-25 14:57:39] WARNING root fetch - processPackages [pysie-accounting]: Skipping, unable to determine old version
+[2024-05-25 14:57:39] INFO root fetch - main [MainThread]: End processing [pysie-accounting] error
+[2024-05-25 14:57:40] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/2e/34/bfbf8269022eb1491f93fc46439bee7b9ee8371cba731279fdf7380d7f79/scrapegraphai-1.5.0b3.tar.gz
+[2024-05-25 14:57:40] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/b4/50/1ff0f36df19cdecddea74481f4bcb104aea054b915325a3054cf4a52e7db/node-ec2-instance-0.0.3.tar.gz
+[2024-05-25 14:57:40] INFO root fetch - processPackages [node-ec2-instance]: executing diffoscope
+[2024-05-25 14:57:40] INFO root fetch - processPackages [node-ec2-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node-ec2-instance-0.0.2.tar.gz tmp/node-ec2-instance-0.0.3.tar.gz --markdown 20240525/n/node-ec2-instance/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 14:57:40] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-25 14:57:40] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-1.5.0b2.tar.gz tmp/scrapegraphai-1.5.0b3.tar.gz --markdown 20240525/s/scrapegraphai/1.5.0b2-1.5.0b3/README.md --exclude *.pyd
+[2024-05-25 14:57:41] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.2.tar.gz]
+[2024-05-25 14:57:41] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.3.tar.gz]
+[2024-05-25 14:57:41] INFO root fetch - main [MainThread]: End processing [node-ec2-instance]: success
+[2024-05-25 14:57:42] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b2.tar.gz]
+[2024-05-25 14:57:42] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b3.tar.gz]
+[2024-05-25 14:57:42] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-25 14:57:42] INFO root fetch - main [MainThread]: Store serial: [23374763]
