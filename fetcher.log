@@ -22761,3 +22761,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:52:49] INFO root fetch - processPackages [gs-coordinator]: Remove: archive file [/home/abi/fetcher/tmp/gs_coordinator-0.28.0a20240525-py2.py3-none-any.whl.zip]
 [2024-05-25 22:52:49] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
 [2024-05-25 22:52:49] INFO root fetch - main [MainThread]: Store serial: [23377931]
+[2024-05-25 22:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377931]
+[2024-05-25 22:54:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 22:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: payroll-arg-reportes
+[2024-05-25 22:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolforge-envvars-cli
+[2024-05-25 22:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smithed
+[2024-05-25 22:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cachetoolz
+[2024-05-25 22:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: timelineomat
+[2024-05-25 22:54:58] INFO root fetch - processPackages [cachetoolz]: New version: [0.4.0a1] Old Version: [0.3.3]
+[2024-05-25 22:54:59] INFO root fetch - processPackages [smithed]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-25 22:54:59] INFO root fetch - processPackages [timelineomat]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-25 22:54:59] INFO root fetch - processPackages [cachetoolz]: Downloading https://files.pythonhosted.org/packages/c3/14/3f09464e4bf5491c0bd3e9bc57bd84f8a1232c31e2e19358e98b1a2c9a8b/cachetoolz-0.3.3.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [toolforge-envvars-cli]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 22:54:59] INFO root fetch - processPackages [payroll-arg-reportes]: New version: [0.0.23] Old Version: [0.0.21]
+[2024-05-25 22:54:59] INFO root fetch - processPackages [smithed]: Downloading https://files.pythonhosted.org/packages/e9/7d/1a5f54cab8468dba20c207ef284467d79177898cba00a36609728dc2f024/smithed-0.9.2.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [toolforge-envvars-cli]: Downloading https://files.pythonhosted.org/packages/15/ec/761b5d5ae81ae758d4b79a4d53189a8a584ce77a401cf7ed7f68af3b753a/toolforge_envvars_cli-0.0.5.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [payroll-arg-reportes]: Downloading https://files.pythonhosted.org/packages/7f/ed/c5b0ebc1898553eda9b031f09d5d583906b307e9d9e40b06b2bbc9b6078c/payroll_arg_reportes-0.0.21.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [timelineomat]: Downloading https://files.pythonhosted.org/packages/5f/82/ca2e62f41bb6cdec87c51562476047849d6d5ce5e396b437698eb0d09f47/timelineomat-0.6.0.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [cachetoolz]: Downloading https://files.pythonhosted.org/packages/02/9d/49681737fc95656cd012ec6315789a8c300e0e2930215a3b60114005057b/cachetoolz-0.4.0a1.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [cachetoolz]: executing diffoscope
+[2024-05-25 22:54:59] INFO root fetch - processPackages [cachetoolz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cachetoolz-0.3.3.tar.gz tmp/cachetoolz-0.4.0a1.tar.gz --markdown 20240525/c/cachetoolz/0.3.3-0.4.0a1/README.md --exclude *.pyd
+[2024-05-25 22:54:59] INFO root fetch - processPackages [smithed]: Downloading https://files.pythonhosted.org/packages/6f/e9/2700ac0fe0f36e9a17f9ab5f811bc42783bf3cd588037c2d032e49402455/smithed-0.9.3.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [toolforge-envvars-cli]: Downloading https://files.pythonhosted.org/packages/b2/ee/d85bdf11a0feced9aed9c35c3cab03c2483ea3d2c04b2da2d2ac58051e00/toolforge_envvars_cli-0.0.6.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [timelineomat]: Downloading https://files.pythonhosted.org/packages/b6/65/6007f51c129deba7c3d02c0d22e8154d82a6d221c7fde153ee264883de21/timelineomat-0.7.0.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [payroll-arg-reportes]: Downloading https://files.pythonhosted.org/packages/a7/e6/1a512491f45676a044009d8aa872ee11d9d97add424fd81d198c7dbd8fe4/payroll_arg_reportes-0.0.23.tar.gz
+[2024-05-25 22:54:59] INFO root fetch - processPackages [smithed]: executing diffoscope
+[2024-05-25 22:54:59] INFO root fetch - processPackages [smithed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smithed-0.9.2.tar.gz tmp/smithed-0.9.3.tar.gz --markdown 20240525/s/smithed/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-25 22:54:59] INFO root fetch - processPackages [toolforge-envvars-cli]: executing diffoscope
+[2024-05-25 22:54:59] INFO root fetch - processPackages [toolforge-envvars-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolforge_envvars_cli-0.0.5.tar.gz tmp/toolforge_envvars_cli-0.0.6.tar.gz --markdown 20240525/t/toolforge-envvars-cli/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 22:54:59] INFO root fetch - processPackages [timelineomat]: executing diffoscope
+[2024-05-25 22:54:59] INFO root fetch - processPackages [timelineomat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timelineomat-0.6.0.tar.gz tmp/timelineomat-0.7.0.tar.gz --markdown 20240525/t/timelineomat/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-25 22:54:59] INFO root fetch - processPackages [payroll-arg-reportes]: executing diffoscope
+[2024-05-25 22:54:59] INFO root fetch - processPackages [payroll-arg-reportes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/payroll_arg_reportes-0.0.21.tar.gz tmp/payroll_arg_reportes-0.0.23.tar.gz --markdown 20240525/p/payroll-arg-reportes/0.0.21-0.0.23/README.md --exclude *.pyd
+[2024-05-25 22:55:00] INFO root fetch - processPackages [cachetoolz]: Remove: archive file [/home/abi/fetcher/tmp/cachetoolz-0.3.3.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - processPackages [cachetoolz]: Remove: archive file [/home/abi/fetcher/tmp/cachetoolz-0.4.0a1.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - main [MainThread]: End processing [cachetoolz]: success
+[2024-05-25 22:55:00] INFO root fetch - processPackages [smithed]: Remove: archive file [/home/abi/fetcher/tmp/smithed-0.9.2.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - processPackages [smithed]: Remove: archive file [/home/abi/fetcher/tmp/smithed-0.9.3.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - main [MainThread]: End processing [smithed]: success
+[2024-05-25 22:55:00] INFO root fetch - processPackages [toolforge-envvars-cli]: Remove: archive file [/home/abi/fetcher/tmp/toolforge_envvars_cli-0.0.5.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - processPackages [toolforge-envvars-cli]: Remove: archive file [/home/abi/fetcher/tmp/toolforge_envvars_cli-0.0.6.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - main [MainThread]: End processing [toolforge-envvars-cli]: success
+[2024-05-25 22:55:00] INFO root fetch - processPackages [timelineomat]: Remove: archive file [/home/abi/fetcher/tmp/timelineomat-0.6.0.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - processPackages [timelineomat]: Remove: archive file [/home/abi/fetcher/tmp/timelineomat-0.7.0.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - main [MainThread]: End processing [timelineomat]: success
+[2024-05-25 22:55:00] INFO root fetch - processPackages [payroll-arg-reportes]: Remove: archive file [/home/abi/fetcher/tmp/payroll_arg_reportes-0.0.21.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - processPackages [payroll-arg-reportes]: Remove: archive file [/home/abi/fetcher/tmp/payroll_arg_reportes-0.0.23.tar.gz]
+[2024-05-25 22:55:00] INFO root fetch - main [MainThread]: End processing [payroll-arg-reportes]: success
+[2024-05-25 22:55:00] INFO root fetch - main [MainThread]: Store serial: [23377946]
