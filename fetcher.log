@@ -10941,3 +10941,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:06:19] INFO root fetch - processPackages [Cemotion]: Remove: archive file [/home/abi/fetcher/tmp/cemotion-2.2.2.tar.gz]
 [2024-05-25 10:06:19] INFO root fetch - main [MainThread]: End processing [Cemotion]: success
 [2024-05-25 10:06:19] INFO root fetch - main [MainThread]: Store serial: [23373028]
+[2024-05-25 10:08:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373028]
+[2024-05-25 10:08:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chess-pairings
+[2024-05-25 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-05-25 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-distill
+[2024-05-25 10:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deltachat-rpc-server
+[2024-05-25 10:08:28] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240524] Old Version: [0.4.5.dev20240523]
+[2024-05-25 10:08:28] INFO root fetch - processPackages [chess-pairings]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 10:08:28] INFO root fetch - processPackages [django-distill]: New version: [3.2.0] Old Version: [3.1.3]
+[2024-05-25 10:08:28] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/87/1b/00583b525fa6e2a6904bf4ac5f87955dffb1f18c42ed95f8097c719aefa3/pyglove-0.4.5.dev20240523.tar.gz
+[2024-05-25 10:08:28] INFO root fetch - processPackages [deltachat-rpc-server]: New version: [1.139.6] Old Version: [1.139.5]
+[2024-05-25 10:08:29] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/d1/24/f2ae21a144b91eea0bf1083e267e819ca03c52cf1b477518f9775fd51787/django-distill-3.1.3.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/a3/47/27e8700675b2159e199a3105c97b46e23a7f357a5b93e61317f789a07817/chess_pairings-0.1.6.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/c1/df/d8ca231b2b522466f8b8ff911044174bb4ec3b3205f3c9b24a234e1bb828/pyglove-0.4.5.dev20240524.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [deltachat-rpc-server]: Downloading https://files.pythonhosted.org/packages/ea/16/f20249cf28ec85dfae4b2457aa537cf5fa705879bc7529453bf0db2b4a41/deltachat-rpc-server-1.139.5.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/b3/de/5343a60199252de0060e3c7ac29aa2e0f17ef46c02db4ce928cd1596635c/django_distill-3.2.0.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [chess-pairings]: Downloading https://files.pythonhosted.org/packages/f4/34/4a577873927f48d6c41481e0c83bc2e95f7627bb9333df2c4afb2ba0f916/chess_pairings-0.1.7.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-25 10:08:29] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240523.tar.gz tmp/pyglove-0.4.5.dev20240524.tar.gz --markdown 20240525/p/pyglove/0.4.5.dev20240523-0.4.5.dev20240524/README.md --exclude *.pyd
+[2024-05-25 10:08:29] INFO root fetch - processPackages [django-distill]: executing diffoscope
+[2024-05-25 10:08:29] INFO root fetch - processPackages [django-distill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-distill-3.1.3.tar.gz tmp/django_distill-3.2.0.tar.gz --markdown 20240525/d/django-distill/3.1.3-3.2.0/README.md --exclude *.pyd
+[2024-05-25 10:08:29] INFO root fetch - processPackages [deltachat-rpc-server]: Downloading https://files.pythonhosted.org/packages/8e/8c/3a4872c8fb994b08b42882bc8907d8749ee449815bd46021e0bb57cbd34a/deltachat-rpc-server-1.139.6.tar.gz
+[2024-05-25 10:08:29] INFO root fetch - processPackages [chess-pairings]: executing diffoscope
+[2024-05-25 10:08:29] INFO root fetch - processPackages [chess-pairings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_pairings-0.1.6.tar.gz tmp/chess_pairings-0.1.7.tar.gz --markdown 20240525/c/chess-pairings/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 10:08:30] INFO root fetch - processPackages [deltachat-rpc-server]: executing diffoscope
+[2024-05-25 10:08:30] INFO root fetch - processPackages [deltachat-rpc-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat-rpc-server-1.139.5.tar.gz tmp/deltachat-rpc-server-1.139.6.tar.gz --markdown 20240525/d/deltachat-rpc-server/1.139.5-1.139.6/README.md --exclude *.pyd
+[2024-05-25 10:08:30] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django-distill-3.1.3.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.0.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - main [MainThread]: End processing [django-distill]: success
+[2024-05-25 10:08:30] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.6.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - processPackages [chess-pairings]: Remove: archive file [/home/abi/fetcher/tmp/chess_pairings-0.1.7.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - main [MainThread]: End processing [chess-pairings]: success
+[2024-05-25 10:08:30] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240523.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240524.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-25 10:08:30] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.5.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.6.tar.gz]
+[2024-05-25 10:08:30] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
+[2024-05-25 10:08:30] INFO root fetch - main [MainThread]: Store serial: [23373045]
