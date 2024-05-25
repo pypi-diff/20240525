@@ -8155,3 +8155,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:58:23] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.2.3.tar.gz]
 [2024-05-25 05:58:23] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
 [2024-05-25 05:58:23] INFO root fetch - main [MainThread]: Store serial: [23371824]
+[2024-05-25 06:00:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371824]
+[2024-05-25 06:00:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 06:00:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micodag
+[2024-05-25 06:00:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: online-scheduler
+[2024-05-25 06:00:33] WARNING root fetch - processPackages [online-scheduler]: Skipping, unable to determine old version
+[2024-05-25 06:00:33] INFO root fetch - main [MainThread]: End processing [online-scheduler] error
+[2024-05-25 06:00:33] INFO root fetch - processPackages [micodag]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 06:00:33] INFO root fetch - processPackages [micodag]: Downloading https://files.pythonhosted.org/packages/29/20/b5814bcc75baf82ea349bde3a9a8305a43a986da3d569a9c044718b34dc5/micodag-0.0.2.tar.gz
+[2024-05-25 06:00:33] INFO root fetch - processPackages [micodag]: Downloading https://files.pythonhosted.org/packages/69/68/a36bb2f4cab57e378030566ea3b18011731a5844ad4004e1917d86fce8d4/micodag-0.0.3.tar.gz
+[2024-05-25 06:00:33] INFO root fetch - processPackages [micodag]: executing diffoscope
+[2024-05-25 06:00:33] INFO root fetch - processPackages [micodag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micodag-0.0.2.tar.gz tmp/micodag-0.0.3.tar.gz --markdown 20240525/m/micodag/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 06:00:34] INFO root fetch - processPackages [micodag]: Remove: archive file [/home/abi/fetcher/tmp/micodag-0.0.2.tar.gz]
+[2024-05-25 06:00:34] INFO root fetch - processPackages [micodag]: Remove: archive file [/home/abi/fetcher/tmp/micodag-0.0.3.tar.gz]
+[2024-05-25 06:00:34] INFO root fetch - main [MainThread]: End processing [micodag]: success
+[2024-05-25 06:00:34] INFO root fetch - main [MainThread]: Store serial: [23371829]
