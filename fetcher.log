@@ -19531,3 +19531,20 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:44:36] INFO root fetch - processPackages [class4]: Remove: archive file [/home/abi/fetcher/tmp/class4-0.0.4.tar.gz]
 [2024-05-25 18:44:36] INFO root fetch - main [MainThread]: End processing [class4]: success
 [2024-05-25 18:44:36] INFO root fetch - main [MainThread]: Store serial: [23376539]
+[2024-05-25 18:46:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376539]
+[2024-05-25 18:46:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 18:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rllte-core
+[2024-05-25 18:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MaskaAI
+[2024-05-25 18:46:45] INFO root fetch - processPackages [rllte-core]: New version: [1.0.0] Old Version: [0.0.1b9]
+[2024-05-25 18:46:45] INFO root fetch - processPackages [MaskaAI]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 18:46:45] INFO root fetch - processPackages [rllte-core]: Downloading https://files.pythonhosted.org/packages/2a/93/20b3bdb3a92651eae2ac26471547bc52d97a6fda94b4452f266d1904d37a/rllte_core-1.0.0.tar.gz
+[2024-05-25 18:46:45] WARNING root fetch - processPackages [rllte-core]: Skipping package: exceeds size limit 13878237>=10485760
+[2024-05-25 18:46:45] INFO root fetch - main [MainThread]: End processing [rllte-core] error
+[2024-05-25 18:46:46] INFO root fetch - processPackages [MaskaAI]: Downloading https://files.pythonhosted.org/packages/62/9b/688aff22247068f23d4b1c95c740ba693facb77da40287882ef185730476/MaskaAI-0.0.2.tar.gz
+[2024-05-25 18:46:46] INFO root fetch - processPackages [MaskaAI]: Downloading https://files.pythonhosted.org/packages/6d/d8/0f33263bded475a25d5e34ceb7b9c9e1f5825bee9b467b8b23dca048a32f/MaskaAI-0.0.3.tar.gz
+[2024-05-25 18:46:46] INFO root fetch - processPackages [MaskaAI]: executing diffoscope
+[2024-05-25 18:46:46] INFO root fetch - processPackages [MaskaAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MaskaAI-0.0.2.tar.gz tmp/MaskaAI-0.0.3.tar.gz --markdown 20240525/M/MaskaAI/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 18:46:46] INFO root fetch - processPackages [MaskaAI]: Remove: archive file [/home/abi/fetcher/tmp/MaskaAI-0.0.2.tar.gz]
+[2024-05-25 18:46:46] INFO root fetch - processPackages [MaskaAI]: Remove: archive file [/home/abi/fetcher/tmp/MaskaAI-0.0.3.tar.gz]
+[2024-05-25 18:46:46] INFO root fetch - main [MainThread]: End processing [MaskaAI]: success
+[2024-05-25 18:46:46] INFO root fetch - main [MainThread]: Store serial: [23376545]
