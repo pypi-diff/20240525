@@ -7165,3 +7165,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:57:39] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.5.tar.gz]
 [2024-05-25 03:57:39] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
 [2024-05-25 03:57:39] INFO root fetch - main [MainThread]: Store serial: [23371313]
+[2024-05-25 03:59:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371313]
+[2024-05-25 03:59:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 03:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpydantic
+[2024-05-25 03:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blue-plugin
+[2024-05-25 03:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: loyalicos
+[2024-05-25 03:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blue-stability
+[2024-05-25 03:59:48] WARNING root fetch - processPackages [blue-stability]: Skipping, unable to determine old version
+[2024-05-25 03:59:48] INFO root fetch - main [MainThread]: End processing [blue-stability] error
+[2024-05-25 03:59:48] INFO root fetch - processPackages [blue-plugin]: New version: [3.45.1] Old Version: [3.44.1]
+[2024-05-25 03:59:49] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/f7/a1/b23ff4a54fa0460f543ad08ff75ed5e42dd9b6df7972122303411c0530e9/blue_plugin-3.44.1.tar.gz
+[2024-05-25 03:59:49] INFO root fetch - processPackages [loyalicos]: New version: [1.0.0a7.post9] Old Version: [1.0.0a7.post8]
+[2024-05-25 03:59:49] INFO root fetch - processPackages [numpydantic]: New version: [1.1.0] Old Version: [1.0.0rc1]
+[2024-05-25 03:59:49] INFO root fetch - processPackages [loyalicos]: Downloading https://files.pythonhosted.org/packages/71/61/8081116b4a4819bd95e573ad58482b03333641e0741795167c290a551372/loyalicos-1.0.0a7.post8.tar.gz
+[2024-05-25 03:59:49] INFO root fetch - processPackages [numpydantic]: Downloading https://files.pythonhosted.org/packages/c8/63/577ac909995ae8fee799b6e9371c456af0012db9881906727eabfc73fb28/numpydantic-1.0.0rc1.tar.gz
+[2024-05-25 03:59:49] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/25/32/2efdd9eb5f61e8ce1ef78e3651d68299bc7ec0a23863bd4704ab2aed5b6f/blue_plugin-3.45.1.tar.gz
+[2024-05-25 03:59:49] INFO root fetch - processPackages [blue-plugin]: executing diffoscope
+[2024-05-25 03:59:49] INFO root fetch - processPackages [blue-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_plugin-3.44.1.tar.gz tmp/blue_plugin-3.45.1.tar.gz --markdown 20240525/b/blue-plugin/3.44.1-3.45.1/README.md --exclude *.pyd
+[2024-05-25 03:59:49] INFO root fetch - processPackages [numpydantic]: Downloading https://files.pythonhosted.org/packages/ee/ce/99091386c832d473481bde5cc49103caca0ceeea404994dc135b37e1e8b3/numpydantic-1.1.0.tar.gz
+[2024-05-25 03:59:49] INFO root fetch - processPackages [loyalicos]: Downloading https://files.pythonhosted.org/packages/a1/b1/e4bb92afd2c968692596f7c252f0fa04d2aa5177a631e30cddf8ed3031b6/loyalicos-1.0.0a7.post9.tar.gz
+[2024-05-25 03:59:49] INFO root fetch - processPackages [numpydantic]: executing diffoscope
+[2024-05-25 03:59:49] INFO root fetch - processPackages [numpydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpydantic-1.0.0rc1.tar.gz tmp/numpydantic-1.1.0.tar.gz --markdown 20240525/n/numpydantic/1.0.0rc1-1.1.0/README.md --exclude *.pyd
+[2024-05-25 03:59:49] INFO root fetch - processPackages [loyalicos]: executing diffoscope
+[2024-05-25 03:59:49] INFO root fetch - processPackages [loyalicos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loyalicos-1.0.0a7.post8.tar.gz tmp/loyalicos-1.0.0a7.post9.tar.gz --markdown 20240525/l/loyalicos/1.0.0a7.post8-1.0.0a7.post9/README.md --exclude *.pyd
+[2024-05-25 03:59:50] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.44.1.tar.gz]
+[2024-05-25 03:59:50] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.45.1.tar.gz]
+[2024-05-25 03:59:50] INFO root fetch - main [MainThread]: End processing [blue-plugin]: success
+[2024-05-25 03:59:50] INFO root fetch - processPackages [loyalicos]: Remove: archive file [/home/abi/fetcher/tmp/loyalicos-1.0.0a7.post8.tar.gz]
+[2024-05-25 03:59:50] INFO root fetch - processPackages [loyalicos]: Remove: archive file [/home/abi/fetcher/tmp/loyalicos-1.0.0a7.post9.tar.gz]
+[2024-05-25 03:59:50] INFO root fetch - main [MainThread]: End processing [loyalicos]: success
+[2024-05-25 03:59:50] INFO root fetch - processPackages [numpydantic]: Remove: archive file [/home/abi/fetcher/tmp/numpydantic-1.0.0rc1.tar.gz]
+[2024-05-25 03:59:50] INFO root fetch - processPackages [numpydantic]: Remove: archive file [/home/abi/fetcher/tmp/numpydantic-1.1.0.tar.gz]
+[2024-05-25 03:59:50] INFO root fetch - main [MainThread]: End processing [numpydantic]: success
+[2024-05-25 03:59:50] INFO root fetch - main [MainThread]: Store serial: [23371324]
