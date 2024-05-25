@@ -17168,3 +17168,57 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:15:11] INFO root fetch - processPackages [alabamaEncoder]: Remove: archive file [/home/abi/fetcher/tmp/alabamaencoder-0.4.2.tar.gz]
 [2024-05-25 16:15:11] INFO root fetch - main [MainThread]: End processing [alabamaEncoder]: success
 [2024-05-25 16:15:11] INFO root fetch - main [MainThread]: Store serial: [23375625]
+[2024-05-25 16:17:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375625]
+[2024-05-25 16:17:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-samus-returns-rando
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inmanta-module-files
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infn-ophyd-hal
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-collect
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moveread-dfy
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: icpp-candid
+[2024-05-25 16:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: icpp-pro
+[2024-05-25 16:17:20] INFO root fetch - processPackages [moveread-dfy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 16:17:20] INFO root fetch - processPackages [inmanta-module-files]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-25 16:17:20] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/82/ef/165443b58d2cd7fd4626dc9cef486b87c23c0b36343de1eee84052e2cd4d/moveread_dfy-0.1.6.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [open-samus-returns-rando]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-05-25 16:17:20] WARNING root fetch - processPackages [image-collect]: Skipping, unable to determine old version
+[2024-05-25 16:17:20] INFO root fetch - main [MainThread]: End processing [image-collect] error
+[2024-05-25 16:17:20] WARNING root fetch - processPackages [infn-ophyd-hal]: Skipping, unable to determine old version
+[2024-05-25 16:17:20] INFO root fetch - main [MainThread]: End processing [infn-ophyd-hal] error
+[2024-05-25 16:17:20] INFO root fetch - processPackages [icpp-pro]: New version: [3.9.0] Old Version: [3.8.1]
+[2024-05-25 16:17:20] INFO root fetch - processPackages [icpp-candid]: New version: [3.9.0] Old Version: [3.8.1]
+[2024-05-25 16:17:20] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/bb/89/298add82d4389162ed131e195c1a27e36aae30188aa0ffeadc0519466821/inmanta_module_files-0.3.0-py3-none-any.whl
+[2024-05-25 16:17:20] INFO root fetch - processPackages [open-samus-returns-rando]: Downloading https://files.pythonhosted.org/packages/ba/01/28f211635b09c0fae9a795bc3b329a20c204a1aecd44faeda9d803de1377/open_samus_returns_rando-1.3.2.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [icpp-candid]: Downloading https://files.pythonhosted.org/packages/8e/f6/d47ad65f5ac37f56f139d72714fe97c2174bfa6d48a6c5fe6f3b4638864e/icpp-candid-3.8.1.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [icpp-pro]: Downloading https://files.pythonhosted.org/packages/dc/47/4541f22316ce826bc7229e26dcbf66680b25146d5ad9a5d2089e071798ec/icpp-pro-3.8.1.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/77/65/c68b5ff76f51fc8381508ec417c5fda6c7d3f7b1db08f2aee3dd2c276d63/moveread_dfy-0.1.7.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [moveread-dfy]: executing diffoscope
+[2024-05-25 16:17:20] INFO root fetch - processPackages [moveread-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_dfy-0.1.6.tar.gz tmp/moveread_dfy-0.1.7.tar.gz --markdown 20240525/m/moveread-dfy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 16:17:20] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/17/a9/9713dee00d43c0b932b7f442da6aa97fd59492551d08cd56b40e45c618e1/inmanta_module_files-0.4.0-py3-none-any.whl
+[2024-05-25 16:17:20] INFO root fetch - processPackages [icpp-candid]: Downloading https://files.pythonhosted.org/packages/0a/2b/3a727fa0fe5b7896267fbcc81250dd8dd35dd0e1fc72ec4e0d5d724e97ac/icpp-candid-3.9.0.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [open-samus-returns-rando]: Downloading https://files.pythonhosted.org/packages/b5/30/b0003ac1f28d353cd0cc2eef18e7e2b0e7dad2cbdbb7c9e968950c59d29d/open_samus_returns_rando-1.3.3.tar.gz
+[2024-05-25 16:17:20] INFO root fetch - processPackages [inmanta-module-files]: executing diffoscope
+[2024-05-25 16:17:20] INFO root fetch - processPackages [inmanta-module-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta_module_files-0.3.0-py3-none-any.whl.zip tmp/inmanta_module_files-0.4.0-py3-none-any.whl.zip --markdown 20240525/i/inmanta-module-files/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-25 16:17:20] INFO root fetch - processPackages [icpp-pro]: Downloading https://files.pythonhosted.org/packages/a1/6f/4cf007d1dd1884a73edb2cb9cac7f11ab7ce7c9aa57c7618eb3b480b3e3e/icpp-pro-3.9.0.tar.gz
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-candid]: executing diffoscope
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-candid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icpp-candid-3.8.1.tar.gz tmp/icpp-candid-3.9.0.tar.gz --markdown 20240525/i/icpp-candid/3.8.1-3.9.0/README.md --exclude *.pyd
+[2024-05-25 16:17:21] INFO root fetch - processPackages [open-samus-returns-rando]: executing diffoscope
+[2024-05-25 16:17:21] INFO root fetch - processPackages [open-samus-returns-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_samus_returns_rando-1.3.2.tar.gz tmp/open_samus_returns_rando-1.3.3.tar.gz --markdown 20240525/o/open-samus-returns-rando/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-pro]: executing diffoscope
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icpp-pro-3.8.1.tar.gz tmp/icpp-pro-3.9.0.tar.gz --markdown 20240525/i/icpp-pro/3.8.1-3.9.0/README.md --exclude *.pyd
+[2024-05-25 16:17:21] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.6.tar.gz]
+[2024-05-25 16:17:21] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.7.tar.gz]
+[2024-05-25 16:17:21] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
+[2024-05-25 16:17:21] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.3.0-py3-none-any.whl.zip]
+[2024-05-25 16:17:21] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.4.0-py3-none-any.whl.zip]
+[2024-05-25 16:17:21] INFO root fetch - main [MainThread]: End processing [inmanta-module-files]: success
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-pro]: Remove: archive file [/home/abi/fetcher/tmp/icpp-pro-3.8.1.tar.gz]
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-pro]: Remove: archive file [/home/abi/fetcher/tmp/icpp-pro-3.9.0.tar.gz]
+[2024-05-25 16:17:21] INFO root fetch - main [MainThread]: End processing [icpp-pro]: success
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-candid]: Remove: archive file [/home/abi/fetcher/tmp/icpp-candid-3.8.1.tar.gz]
+[2024-05-25 16:17:21] INFO root fetch - processPackages [icpp-candid]: Remove: archive file [/home/abi/fetcher/tmp/icpp-candid-3.9.0.tar.gz]
+[2024-05-25 16:17:21] INFO root fetch - main [MainThread]: End processing [icpp-candid]: success
+[2024-05-25 16:17:22] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.3.2.tar.gz]
+[2024-05-25 16:17:22] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.3.3.tar.gz]
+[2024-05-25 16:17:22] INFO root fetch - main [MainThread]: End processing [open-samus-returns-rando]: success
+[2024-05-25 16:17:22] INFO root fetch - main [MainThread]: Store serial: [23375650]
