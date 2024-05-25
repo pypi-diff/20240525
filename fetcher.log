@@ -8269,3 +8269,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:22:01] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.2.3.tar.gz]
 [2024-05-25 06:22:01] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
 [2024-05-25 06:22:01] INFO root fetch - main [MainThread]: Store serial: [23371862]
+[2024-05-25 06:24:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371862]
+[2024-05-25 06:24:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 06:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nebulousai
+[2024-05-25 06:24:10] INFO root fetch - processPackages [nebulousai]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-25 06:24:10] INFO root fetch - processPackages [nebulousai]: Downloading https://files.pythonhosted.org/packages/bc/70/eebf6dbc5c6fa5ddb768204ab50e15a384ce0ea390371094cd1a66ad9e16/nebulousai-0.1.tar.gz
+[2024-05-25 06:24:10] INFO root fetch - processPackages [nebulousai]: Downloading https://files.pythonhosted.org/packages/9d/1c/fd4b6726bde1b2a89890e7171da77be3566350beb4949a23b31a878e5649/nebulousai-0.1.1.tar.gz
+[2024-05-25 06:24:10] INFO root fetch - processPackages [nebulousai]: executing diffoscope
+[2024-05-25 06:24:10] INFO root fetch - processPackages [nebulousai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nebulousai-0.1.tar.gz tmp/nebulousai-0.1.1.tar.gz --markdown 20240525/n/nebulousai/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-25 06:24:11] INFO root fetch - processPackages [nebulousai]: Remove: archive file [/home/abi/fetcher/tmp/nebulousai-0.1.tar.gz]
+[2024-05-25 06:24:11] INFO root fetch - processPackages [nebulousai]: Remove: archive file [/home/abi/fetcher/tmp/nebulousai-0.1.1.tar.gz]
+[2024-05-25 06:24:11] INFO root fetch - main [MainThread]: End processing [nebulousai]: success
+[2024-05-25 06:24:11] INFO root fetch - main [MainThread]: Store serial: [23371866]
