@@ -14364,3 +14364,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:48:52] INFO root fetch - processPackages [wsppchem]: Remove: archive file [/home/abi/fetcher/tmp/wsppchem-0.93.tar.gz]
 [2024-05-25 14:48:52] INFO root fetch - main [MainThread]: End processing [wsppchem]: success
 [2024-05-25 14:48:52] INFO root fetch - main [MainThread]: Store serial: [23374699]
+[2024-05-25 14:50:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374699]
+[2024-05-25 14:51:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 14:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kodi-addon-checker
+[2024-05-25 14:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bblib
+[2024-05-25 14:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paper-admin
+[2024-05-25 14:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tox-docker
+[2024-05-25 14:51:02] INFO root fetch - processPackages [bblib]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-25 14:51:02] INFO root fetch - processPackages [paper-admin]: New version: [7.7.0] Old Version: [7.6.4]
+[2024-05-25 14:51:02] INFO root fetch - processPackages [bblib]: Downloading https://files.pythonhosted.org/packages/15/3a/39ce3fd26290a941f11b97ddae027937d51f7581f3636bf6989dbc211e8c/bblib-2.1.1.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/21/ae/c22d08c9c473b7a7baef843eee7f3b7f50c77c70b000cbe0f1f79f3f448c/paper-admin-7.6.4.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [kodi-addon-checker]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 14:51:02] INFO root fetch - processPackages [tox-docker]: New version: [5.0.0] Old Version: [4.1.0]
+[2024-05-25 14:51:02] INFO root fetch - processPackages [kodi-addon-checker]: Downloading https://files.pythonhosted.org/packages/55/26/cb072d9961d437bfdd6ca8913a64448215fca344a8b8c1b268e8cb3445c9/kodi-addon-checker-0.0.8.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [tox-docker]: Downloading https://files.pythonhosted.org/packages/ca/19/9342804487fe412af355d3c8fe138d4245af1e046d6341456bf50e236468/tox-docker-4.1.0.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [bblib]: Downloading https://files.pythonhosted.org/packages/1e/7a/e1968816730e768696b9acef2dbc80bfbc204304f98007a7170e55af4e2d/bblib-2.1.2.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [paper-admin]: Downloading https://files.pythonhosted.org/packages/32/33/2fbb9463d8212aea8d85348172cbb273438c58e9a28fad22bed1d3e72ae1/paper_admin-7.7.0.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [bblib]: executing diffoscope
+[2024-05-25 14:51:02] INFO root fetch - processPackages [bblib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bblib-2.1.1.tar.gz tmp/bblib-2.1.2.tar.gz --markdown 20240525/b/bblib/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-25 14:51:02] INFO root fetch - processPackages [kodi-addon-checker]: Downloading https://files.pythonhosted.org/packages/77/a9/dc30d985d7be3cd8307848196b0b027e8fb4fc5357560f8305a79512ba00/kodi-addon-checker-0.0.9.tar.gz
+[2024-05-25 14:51:02] INFO root fetch - processPackages [tox-docker]: Downloading https://files.pythonhosted.org/packages/de/3c/dcec11dadd48a8f2ba276cd499a4db46a0c70388e0505dae46730a185a35/tox_docker-5.0.0.tar.gz
+[2024-05-25 14:51:03] INFO root fetch - processPackages [paper-admin]: executing diffoscope
+[2024-05-25 14:51:03] INFO root fetch - processPackages [paper-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-admin-7.6.4.tar.gz tmp/paper_admin-7.7.0.tar.gz --markdown 20240525/p/paper-admin/7.6.4-7.7.0/README.md --exclude *.pyd
+[2024-05-25 14:51:03] INFO root fetch - processPackages [tox-docker]: executing diffoscope
+[2024-05-25 14:51:03] INFO root fetch - processPackages [tox-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tox-docker-4.1.0.tar.gz tmp/tox_docker-5.0.0.tar.gz --markdown 20240525/t/tox-docker/4.1.0-5.0.0/README.md --exclude *.pyd
+[2024-05-25 14:51:03] INFO root fetch - processPackages [bblib]: Remove: archive file [/home/abi/fetcher/tmp/bblib-2.1.1.tar.gz]
+[2024-05-25 14:51:03] INFO root fetch - processPackages [bblib]: Remove: archive file [/home/abi/fetcher/tmp/bblib-2.1.2.tar.gz]
+[2024-05-25 14:51:03] INFO root fetch - main [MainThread]: End processing [bblib]: success
+[2024-05-25 14:51:03] INFO root fetch - processPackages [tox-docker]: Remove: archive file [/home/abi/fetcher/tmp/tox-docker-4.1.0.tar.gz]
+[2024-05-25 14:51:03] INFO root fetch - processPackages [tox-docker]: Remove: archive file [/home/abi/fetcher/tmp/tox_docker-5.0.0.tar.gz]
+[2024-05-25 14:51:03] INFO root fetch - main [MainThread]: End processing [tox-docker]: success
+[2024-05-25 14:51:04] INFO root fetch - processPackages [kodi-addon-checker]: executing diffoscope
+[2024-05-25 14:51:04] INFO root fetch - processPackages [kodi-addon-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodi-addon-checker-0.0.8.tar.gz tmp/kodi-addon-checker-0.0.9.tar.gz --markdown 20240525/k/kodi-addon-checker/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 14:51:05] INFO root fetch - processPackages [kodi-addon-checker]: Remove: archive file [/home/abi/fetcher/tmp/kodi-addon-checker-0.0.8.tar.gz]
+[2024-05-25 14:51:05] INFO root fetch - processPackages [kodi-addon-checker]: Remove: archive file [/home/abi/fetcher/tmp/kodi-addon-checker-0.0.9.tar.gz]
+[2024-05-25 14:51:05] INFO root fetch - main [MainThread]: End processing [kodi-addon-checker]: success
+[2024-05-25 14:51:09] INFO root fetch - processPackages [paper-admin]: Remove: archive file [/home/abi/fetcher/tmp/paper-admin-7.6.4.tar.gz]
+[2024-05-25 14:51:09] INFO root fetch - processPackages [paper-admin]: Remove: archive file [/home/abi/fetcher/tmp/paper_admin-7.7.0.tar.gz]
+[2024-05-25 14:51:09] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
+[2024-05-25 14:51:09] INFO root fetch - main [MainThread]: Store serial: [23374732]
