@@ -12046,3 +12046,26 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:31:37] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.2.tar.gz]
 [2024-05-25 11:31:37] INFO root fetch - main [MainThread]: End processing [django-distill]: success
 [2024-05-25 11:31:37] INFO root fetch - main [MainThread]: Store serial: [23373588]
+[2024-05-25 11:33:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373588]
+[2024-05-25 11:33:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 11:35:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373588]
+[2024-05-25 11:35:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 11:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: librus-apix
+[2024-05-25 11:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: watch-run
+[2024-05-25 11:35:53] INFO root fetch - processPackages [watch-run]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 11:35:53] INFO root fetch - processPackages [librus-apix]: New version: [1.0.3] Old Version: [1.0.2.post1]
+[2024-05-25 11:35:53] INFO root fetch - processPackages [librus-apix]: Downloading https://files.pythonhosted.org/packages/b7/2f/b3193e995867a471ad6f9caf24b136d6223c3764b04dacee470213bfd30a/librus_apix-1.0.2.post1.tar.gz
+[2024-05-25 11:35:53] INFO root fetch - processPackages [watch-run]: Downloading https://files.pythonhosted.org/packages/92/65/4eb86bffd98bef7da07ef120903b9a7a00c3694ba37a3cfd6c558b1a7af2/watch_run-0.0.7-cp39-cp39-macosx_13_0_arm64.whl
+[2024-05-25 11:35:53] INFO root fetch - processPackages [librus-apix]: Downloading https://files.pythonhosted.org/packages/b2/f2/feba898c8af4188488744a5754063b012299d69a435e8c8d3afa0414487b/librus_apix-1.0.3.tar.gz
+[2024-05-25 11:35:54] INFO root fetch - processPackages [librus-apix]: executing diffoscope
+[2024-05-25 11:35:54] INFO root fetch - processPackages [librus-apix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librus_apix-1.0.2.post1.tar.gz tmp/librus_apix-1.0.3.tar.gz --markdown 20240525/l/librus-apix/1.0.2.post1-1.0.3/README.md --exclude *.pyd
+[2024-05-25 11:35:54] INFO root fetch - processPackages [watch-run]: Downloading https://files.pythonhosted.org/packages/74/c7/26fddd2405a01b4fb5f78979d2b43c354fab65813c0f9c97e9919328ad8e/watch_run-0.0.8-cp37-cp37m-macosx_13_0_arm64.whl
+[2024-05-25 11:35:54] INFO root fetch - processPackages [watch-run]: executing diffoscope
+[2024-05-25 11:35:54] INFO root fetch - processPackages [watch-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watch_run-0.0.7-cp39-cp39-macosx_13_0_arm64.whl.zip tmp/watch_run-0.0.8-cp37-cp37m-macosx_13_0_arm64.whl.zip --markdown 20240525/w/watch-run/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 11:35:54] INFO root fetch - processPackages [librus-apix]: Remove: archive file [/home/abi/fetcher/tmp/librus_apix-1.0.2.post1.tar.gz]
+[2024-05-25 11:35:54] INFO root fetch - processPackages [librus-apix]: Remove: archive file [/home/abi/fetcher/tmp/librus_apix-1.0.3.tar.gz]
+[2024-05-25 11:35:54] INFO root fetch - main [MainThread]: End processing [librus-apix]: success
+[2024-05-25 11:35:56] INFO root fetch - processPackages [watch-run]: Remove: archive file [/home/abi/fetcher/tmp/watch_run-0.0.7-cp39-cp39-macosx_13_0_arm64.whl.zip]
+[2024-05-25 11:35:56] INFO root fetch - processPackages [watch-run]: Remove: archive file [/home/abi/fetcher/tmp/watch_run-0.0.8-cp37-cp37m-macosx_13_0_arm64.whl.zip]
+[2024-05-25 11:35:56] INFO root fetch - main [MainThread]: End processing [watch-run]: success
+[2024-05-25 11:35:56] INFO root fetch - main [MainThread]: Store serial: [23373593]
