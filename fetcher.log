@@ -9367,3 +9367,61 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:56:02] INFO root fetch - processPackages [soundbook]: Remove: archive file [/home/abi/fetcher/tmp/soundbook-0.0.2.tar.gz]
 [2024-05-25 07:56:02] INFO root fetch - main [MainThread]: End processing [soundbook]: success
 [2024-05-25 07:56:02] INFO root fetch - main [MainThread]: Store serial: [23372376]
+[2024-05-25 07:58:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372376]
+[2024-05-25 07:58:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 08:00:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372376]
+[2024-05-25 08:00:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openrank-sdk
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nestipy
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-plugin-common-play
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyremotechrome
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monailabel
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fyers-token-manager-3
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: better-web3
+[2024-05-25 08:00:16] INFO root fetch - processPackages [pyremotechrome]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ovos-plugin-common-play]: New version: [0.0.7a4] Old Version: [0.0.7a2]
+[2024-05-25 08:00:16] INFO root fetch - processPackages [openrank-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 08:00:16] INFO root fetch - processPackages [nestipy]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-05-25 08:00:16] INFO root fetch - processPackages [monailabel]: New version: [0.8.3] Old Version: [0.8.2rc7]
+[2024-05-25 08:00:16] INFO root fetch - processPackages [ovos-plugin-common-play]: Downloading https://files.pythonhosted.org/packages/67/75/f1848c1eeca879d06a3394ffc7ab4e244ecea576604dfdf1dff045d04f54/ovos_plugin_common_play-0.0.7a2.tar.gz
+[2024-05-25 08:00:16] INFO root fetch - processPackages [pyremotechrome]: Downloading https://files.pythonhosted.org/packages/0f/f9/cf2be78eae15a38c42ffff283b16f771ecd9bc99f3b07acedbc09c959be9/pyremotechrome-0.0.9.tar.gz
+[2024-05-25 08:00:16] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b3] Old Version: [4.0.0b2]
+[2024-05-25 08:00:16] WARNING root fetch - processPackages [fyers-token-manager-3]: Skipping, unable to determine old version
+[2024-05-25 08:00:16] INFO root fetch - main [MainThread]: End processing [fyers-token-manager-3] error
+[2024-05-25 08:00:16] INFO root fetch - processPackages [nestipy]: Downloading https://files.pythonhosted.org/packages/a4/72/3f337f0757d556b195bc158b4656c2fabc5a0e6595441bf14f155daf30a4/nestipy-0.3.2.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [openrank-sdk]: Downloading https://files.pythonhosted.org/packages/48/5d/03a695c70e66207abf57b92f0b1fe4745e93cc44044e389dc58838aff4fe/openrank_sdk-0.0.2.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [monailabel]: Downloading https://files.pythonhosted.org/packages/a7/5e/9b61c24e0d4cfc3038b841a5d11376edfe1c55cb8bceb64da627d5bf7f47/monailabel-0.8.2rc7-202405220437-py3-none-any.whl
+[2024-05-25 08:00:17] INFO root fetch - processPackages [ovos-plugin-common-play]: Downloading https://files.pythonhosted.org/packages/f0/70/0462f3ba8e213f7446802b946732003847b2385a47277cc25baf257608e3/ovos_plugin_common_play-0.0.7a4.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/32/ba/775161f580f52b576b8de95dbbfb5db663b9662ba4c0ca3b28fad201a88d/better_web3-4.0.0b2.tar.gz
+[2024-05-25 08:00:17] WARNING root fetch - processPackages [monailabel]: Skipping package: exceeds size limit 11946265>=10485760
+[2024-05-25 08:00:17] INFO root fetch - main [MainThread]: End processing [monailabel] error
+[2024-05-25 08:00:17] INFO root fetch - processPackages [pyremotechrome]: Downloading https://files.pythonhosted.org/packages/88/a7/0b28233b66c8dfcdfacb982cb37794c24f7a22ed6262878ec4fb4bfc7ee9/pyremotechrome-0.1.0.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [nestipy]: Downloading https://files.pythonhosted.org/packages/57/bd/338ce87c172828c258bfb5f6de66425a9b8d217298f989a980a9cdc80cfc/nestipy-0.3.4.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [openrank-sdk]: Downloading https://files.pythonhosted.org/packages/b6/50/a1b9356ed80a19eb499eb10fdacdc7fafbe09d52f4600e3784c714ae0e61/openrank_sdk-0.0.3.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [ovos-plugin-common-play]: executing diffoscope
+[2024-05-25 08:00:17] INFO root fetch - processPackages [ovos-plugin-common-play]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_common_play-0.0.7a2.tar.gz tmp/ovos_plugin_common_play-0.0.7a4.tar.gz --markdown 20240525/o/ovos-plugin-common-play/0.0.7a2-0.0.7a4/README.md --exclude *.pyd
+[2024-05-25 08:00:17] INFO root fetch - processPackages [pyremotechrome]: executing diffoscope
+[2024-05-25 08:00:17] INFO root fetch - processPackages [pyremotechrome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyremotechrome-0.0.9.tar.gz tmp/pyremotechrome-0.1.0.tar.gz --markdown 20240525/p/pyremotechrome/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-25 08:00:17] INFO root fetch - processPackages [openrank-sdk]: executing diffoscope
+[2024-05-25 08:00:17] INFO root fetch - processPackages [openrank-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openrank_sdk-0.0.2.tar.gz tmp/openrank_sdk-0.0.3.tar.gz --markdown 20240525/o/openrank-sdk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 08:00:17] INFO root fetch - processPackages [nestipy]: executing diffoscope
+[2024-05-25 08:00:17] INFO root fetch - processPackages [nestipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestipy-0.3.2.tar.gz tmp/nestipy-0.3.4.tar.gz --markdown 20240525/n/nestipy/0.3.2-0.3.4/README.md --exclude *.pyd
+[2024-05-25 08:00:17] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/c5/d0/a04c0916bc177f8f836f9490b8ccaad66af635e67642c41ef3a4c8ae4241/better_web3-4.0.0b3.tar.gz
+[2024-05-25 08:00:17] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-25 08:00:17] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b2.tar.gz tmp/better_web3-4.0.0b3.tar.gz --markdown 20240525/b/better-web3/4.0.0b2-4.0.0b3/README.md --exclude *.pyd
+[2024-05-25 08:00:17] INFO root fetch - processPackages [openrank-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openrank_sdk-0.0.2.tar.gz]
+[2024-05-25 08:00:17] INFO root fetch - processPackages [openrank-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openrank_sdk-0.0.3.tar.gz]
+[2024-05-25 08:00:17] INFO root fetch - main [MainThread]: End processing [openrank-sdk]: success
+[2024-05-25 08:00:18] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b2.tar.gz]
+[2024-05-25 08:00:18] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b3.tar.gz]
+[2024-05-25 08:00:18] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-25 08:00:18] INFO root fetch - processPackages [nestipy]: Remove: archive file [/home/abi/fetcher/tmp/nestipy-0.3.2.tar.gz]
+[2024-05-25 08:00:18] INFO root fetch - processPackages [nestipy]: Remove: archive file [/home/abi/fetcher/tmp/nestipy-0.3.4.tar.gz]
+[2024-05-25 08:00:18] INFO root fetch - main [MainThread]: End processing [nestipy]: success
+[2024-05-25 08:00:18] INFO root fetch - processPackages [pyremotechrome]: Remove: archive file [/home/abi/fetcher/tmp/pyremotechrome-0.0.9.tar.gz]
+[2024-05-25 08:00:18] INFO root fetch - processPackages [pyremotechrome]: Remove: archive file [/home/abi/fetcher/tmp/pyremotechrome-0.1.0.tar.gz]
+[2024-05-25 08:00:18] INFO root fetch - main [MainThread]: End processing [pyremotechrome]: success
+[2024-05-25 08:00:19] INFO root fetch - processPackages [ovos-plugin-common-play]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_common_play-0.0.7a2.tar.gz]
+[2024-05-25 08:00:19] INFO root fetch - processPackages [ovos-plugin-common-play]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_common_play-0.0.7a4.tar.gz]
+[2024-05-25 08:00:19] INFO root fetch - main [MainThread]: End processing [ovos-plugin-common-play]: success
+[2024-05-25 08:00:19] INFO root fetch - main [MainThread]: Store serial: [23372406]
