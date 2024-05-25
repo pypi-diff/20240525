@@ -10881,3 +10881,21 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:59:49] INFO root fetch - processPackages [click-extra]: Remove: archive file [/home/abi/fetcher/tmp/click_extra-4.8.2.tar.gz]
 [2024-05-25 09:59:49] INFO root fetch - main [MainThread]: End processing [click-extra]: success
 [2024-05-25 09:59:49] INFO root fetch - main [MainThread]: Store serial: [23373002]
+[2024-05-25 10:01:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373002]
+[2024-05-25 10:01:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 10:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: green-target-shooting
+[2024-05-25 10:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrathon-payments
+[2024-05-25 10:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neginver
+[2024-05-25 10:01:58] INFO root fetch - processPackages [scrathon-payments]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-25 10:01:58] INFO root fetch - processPackages [scrathon-payments]: Downloading https://files.pythonhosted.org/packages/a7/59/25afba7a5e64ba2dfc143e5bc6e2b81e2440fc72b414be3ba259b7402d4b/scrathon_payments-0.2.5.tar.gz
+[2024-05-25 10:01:58] WARNING root fetch - processPackages [green-target-shooting]: Skipping, unable to determine old version
+[2024-05-25 10:01:58] INFO root fetch - main [MainThread]: End processing [green-target-shooting] error
+[2024-05-25 10:01:58] WARNING root fetch - processPackages [neginver]: Skipping, unable to determine old version
+[2024-05-25 10:01:58] INFO root fetch - main [MainThread]: End processing [neginver] error
+[2024-05-25 10:01:58] INFO root fetch - processPackages [scrathon-payments]: Downloading https://files.pythonhosted.org/packages/92/54/c25e7bcc5c75ec45898a79b1dc228d5c762e09222ef1a7e28170ebc9b3d0/scrathon_payments-0.2.6.tar.gz
+[2024-05-25 10:01:58] INFO root fetch - processPackages [scrathon-payments]: executing diffoscope
+[2024-05-25 10:01:58] INFO root fetch - processPackages [scrathon-payments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrathon_payments-0.2.5.tar.gz tmp/scrathon_payments-0.2.6.tar.gz --markdown 20240525/s/scrathon-payments/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-25 10:01:59] INFO root fetch - processPackages [scrathon-payments]: Remove: archive file [/home/abi/fetcher/tmp/scrathon_payments-0.2.5.tar.gz]
+[2024-05-25 10:01:59] INFO root fetch - processPackages [scrathon-payments]: Remove: archive file [/home/abi/fetcher/tmp/scrathon_payments-0.2.6.tar.gz]
+[2024-05-25 10:01:59] INFO root fetch - main [MainThread]: End processing [scrathon-payments]: success
+[2024-05-25 10:01:59] INFO root fetch - main [MainThread]: Store serial: [23373016]
