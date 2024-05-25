@@ -7546,3 +7546,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:50:45] INFO root fetch - processPackages [bencode-c]: Remove: archive file [/home/abi/fetcher/tmp/bencode_c-0.0.9.tar.gz]
 [2024-05-25 04:50:45] INFO root fetch - main [MainThread]: End processing [bencode-c]: success
 [2024-05-25 04:50:45] INFO root fetch - main [MainThread]: Store serial: [23371487]
+[2024-05-25 04:52:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371487]
+[2024-05-25 04:52:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 04:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nettoolkit
+[2024-05-25 04:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfmanager
+[2024-05-25 04:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netron
+[2024-05-25 04:52:53] INFO root fetch - processPackages [sfmanager]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 04:52:53] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/83/a3/507ab792ccfe59a5e838c2709b9a15be526169da2996e490286dd8852e83/sfmanager-0.1.8.tar.gz
+[2024-05-25 04:52:54] INFO root fetch - processPackages [netron]: New version: [7.6.9] Old Version: [7.6.8]
+[2024-05-25 04:52:54] INFO root fetch - processPackages [nettoolkit]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-05-25 04:52:54] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/07/af/7278505c8eb0d129873eab918ade23f1539e85eb1003a2c238e2360f824a/sfmanager-0.1.9.tar.gz
+[2024-05-25 04:52:54] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/90/7b/a73accc9b81a701909d87eb1c0d7af21277bac1bd983694b9920ea2df3b6/netron-7.6.8-py3-none-any.whl
+[2024-05-25 04:52:54] INFO root fetch - processPackages [nettoolkit]: Downloading https://files.pythonhosted.org/packages/00/a8/e3d100ae02eead8ee6749141df43019460b46e0d2e59f082ae2b440942d7/nettoolkit-1.6.1.tar.gz
+[2024-05-25 04:52:54] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-05-25 04:52:54] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.8.tar.gz tmp/sfmanager-0.1.9.tar.gz --markdown 20240525/s/sfmanager/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 04:52:54] INFO root fetch - processPackages [nettoolkit]: Downloading https://files.pythonhosted.org/packages/60/37/e35f76088d3aa0ccd57ec8095da00f3d0c8f1590b0df70c41baf047f14de/nettoolkit-1.6.2.tar.gz
+[2024-05-25 04:52:54] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/83/7b/44d1156c46534a49796e9eef10286c6f5cf20712767248ea5038eaafc18f/netron-7.6.9-py3-none-any.whl
+[2024-05-25 04:52:54] INFO root fetch - processPackages [nettoolkit]: executing diffoscope
+[2024-05-25 04:52:54] INFO root fetch - processPackages [nettoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nettoolkit-1.6.1.tar.gz tmp/nettoolkit-1.6.2.tar.gz --markdown 20240525/n/nettoolkit/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-05-25 04:52:54] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.8.tar.gz]
+[2024-05-25 04:52:54] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.9.tar.gz]
+[2024-05-25 04:52:54] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-05-25 04:52:54] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-05-25 04:52:54] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.8-py3-none-any.whl.zip tmp/netron-7.6.9-py3-none-any.whl.zip --markdown 20240525/n/netron/7.6.8-7.6.9/README.md --exclude *.pyd
+[2024-05-25 04:52:55] INFO root fetch - processPackages [nettoolkit]: Remove: archive file [/home/abi/fetcher/tmp/nettoolkit-1.6.1.tar.gz]
+[2024-05-25 04:52:55] INFO root fetch - processPackages [nettoolkit]: Remove: archive file [/home/abi/fetcher/tmp/nettoolkit-1.6.2.tar.gz]
+[2024-05-25 04:52:55] INFO root fetch - main [MainThread]: End processing [nettoolkit]: success
+[2024-05-25 04:55:45] INFO root fetch - processPackages [netron]: Remove: archive file [/home/abi/fetcher/tmp/netron-7.6.8-py3-none-any.whl.zip]
+[2024-05-25 04:55:45] INFO root fetch - processPackages [netron]: Remove: archive file [/home/abi/fetcher/tmp/netron-7.6.9-py3-none-any.whl.zip]
+[2024-05-25 04:55:45] INFO root fetch - main [MainThread]: End processing [netron]: success
+[2024-05-25 04:55:45] INFO root fetch - main [MainThread]: Store serial: [23371495]
