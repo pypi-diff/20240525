@@ -18432,3 +18432,27 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:28:02] INFO root fetch - processPackages [SparkleLogging-new]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-new-1.0.1.tar.gz]
 [2024-05-25 17:28:02] INFO root fetch - main [MainThread]: End processing [SparkleLogging-new]: success
 [2024-05-25 17:28:02] INFO root fetch - main [MainThread]: Store serial: [23376093]
+[2024-05-25 17:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376093]
+[2024-05-25 17:30:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 17:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blabpy
+[2024-05-25 17:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: class4
+[2024-05-25 17:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secretscraper
+[2024-05-25 17:30:11] INFO root fetch - processPackages [secretscraper]: New version: [1.4] Old Version: [1.3.9.7a2]
+[2024-05-25 17:30:11] WARNING root fetch - processPackages [class4]: Skipping, unable to determine old version
+[2024-05-25 17:30:11] INFO root fetch - main [MainThread]: End processing [class4] error
+[2024-05-25 17:30:11] INFO root fetch - processPackages [blabpy]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-25 17:30:11] INFO root fetch - processPackages [blabpy]: Downloading https://files.pythonhosted.org/packages/f4/cb/bf0564b2232272dd91ccac6ab2f165e6f4383224db8ac131f4cb04d849ec/blabpy-0.9.0.tar.gz
+[2024-05-25 17:30:11] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/50/cb/d6cd2109c4d540a0d0c65f916dec27daca7781b960e68844604534fb0588/secretscraper-1.3.9.7a2.tar.gz
+[2024-05-25 17:30:11] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/cc/e0/ae7149855b89e4e687366610ef1c5f554eef69a156683a03f5b1999943aa/secretscraper-1.4.tar.gz
+[2024-05-25 17:30:11] INFO root fetch - processPackages [blabpy]: Downloading https://files.pythonhosted.org/packages/ed/e8/8f13f41f5ea40614b6db2ee36c397319149d2006b89f822c78e5747a58ae/blabpy-0.9.1.tar.gz
+[2024-05-25 17:30:11] INFO root fetch - processPackages [secretscraper]: executing diffoscope
+[2024-05-25 17:30:11] INFO root fetch - processPackages [secretscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretscraper-1.3.9.7a2.tar.gz tmp/secretscraper-1.4.tar.gz --markdown 20240525/s/secretscraper/1.3.9.7a2-1.4/README.md --exclude *.pyd
+[2024-05-25 17:30:12] INFO root fetch - processPackages [blabpy]: executing diffoscope
+[2024-05-25 17:30:12] INFO root fetch - processPackages [blabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blabpy-0.9.0.tar.gz tmp/blabpy-0.9.1.tar.gz --markdown 20240525/b/blabpy/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-25 17:30:12] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.9.7a2.tar.gz]
+[2024-05-25 17:30:12] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.4.tar.gz]
+[2024-05-25 17:30:12] INFO root fetch - main [MainThread]: End processing [secretscraper]: success
+[2024-05-25 17:30:12] INFO root fetch - processPackages [blabpy]: Remove: archive file [/home/abi/fetcher/tmp/blabpy-0.9.0.tar.gz]
+[2024-05-25 17:30:12] INFO root fetch - processPackages [blabpy]: Remove: archive file [/home/abi/fetcher/tmp/blabpy-0.9.1.tar.gz]
+[2024-05-25 17:30:12] INFO root fetch - main [MainThread]: End processing [blabpy]: success
+[2024-05-25 17:30:12] INFO root fetch - main [MainThread]: Store serial: [23376104]
