@@ -11240,3 +11240,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:30:19] INFO root fetch - processPackages [tjax]: Remove: archive file [/home/abi/fetcher/tmp/tjax-0.9.0.tar.gz]
 [2024-05-25 10:30:19] INFO root fetch - main [MainThread]: End processing [tjax]: success
 [2024-05-25 10:30:19] INFO root fetch - main [MainThread]: Store serial: [23373209]
+[2024-05-25 10:32:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373209]
+[2024-05-25 10:32:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keyguardian
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biochain
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrasp
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-qualitator
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: burrow-cli
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lukasdata
+[2024-05-25 10:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: better-web3
+[2024-05-25 10:32:27] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b6] Old Version: [4.0.0b5]
+[2024-05-25 10:32:27] WARNING root fetch - processPackages [keyguardian]: Skipping, unable to determine old version
+[2024-05-25 10:32:27] INFO root fetch - main [MainThread]: End processing [keyguardian] error
+[2024-05-25 10:32:27] INFO root fetch - processPackages [burrow-cli]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 10:32:27] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/bc/54/2eaa7c777b816fc8b56e90ee15064bd21599cea09220091c459c7f90a1ac/better_web3-4.0.0b5.tar.gz
+[2024-05-25 10:32:28] WARNING root fetch - processPackages [data-qualitator]: Skipping, unable to determine old version
+[2024-05-25 10:32:28] INFO root fetch - main [MainThread]: End processing [data-qualitator] error
+[2024-05-25 10:32:28] WARNING root fetch - processPackages [biochain]: Skipping, unable to determine old version
+[2024-05-25 10:32:28] INFO root fetch - main [MainThread]: End processing [biochain] error
+[2024-05-25 10:32:28] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/c8/7d/55ba6512fb19623d38aa601a146c2e2f7ee29893771a5558d92344754b9c/burrow_cli-0.1.6.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [lukasdata]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-25 10:32:28] INFO root fetch - processPackages [pyrasp]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-05-25 10:32:28] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/29/eb/4da4d3b17e33aad4470fe8b06e150a9b6b7a7f79ed9e69430a32ab153731/lukasdata-1.3.8.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/ec/21/20a209a943cdd5ec574d18c9a85168ab8741c1fa20a70c34a0d29d92533c/pyrasp-0.6.2.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/b5/15/10b7be55b4686d8680a7109b570d1b90eccde57df290f44d7ba49e06ddd3/burrow_cli-0.1.7.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/ed/d9/df2294f081ca2296be069171a4f510fad68f306928a6cd2414cd7c04b94d/better_web3-4.0.0b6.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [burrow-cli]: executing diffoscope
+[2024-05-25 10:32:28] INFO root fetch - processPackages [burrow-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burrow_cli-0.1.6.tar.gz tmp/burrow_cli-0.1.7.tar.gz --markdown 20240525/b/burrow-cli/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 10:32:28] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-25 10:32:28] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b5.tar.gz tmp/better_web3-4.0.0b6.tar.gz --markdown 20240525/b/better-web3/4.0.0b5-4.0.0b6/README.md --exclude *.pyd
+[2024-05-25 10:32:28] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/b7/fd/03866628d2dfe74724de7a662d95a3927962b46638904ff6ee7b7c0f3ad4/lukasdata-1.3.9.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [lukasdata]: executing diffoscope
+[2024-05-25 10:32:28] INFO root fetch - processPackages [lukasdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lukasdata-1.3.8.tar.gz tmp/lukasdata-1.3.9.tar.gz --markdown 20240525/l/lukasdata/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-25 10:32:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/2e/73/cf6af0388f8a166543ef8e59bddf91cda0aa10468dfdea26d4947a040c2c/pyrasp-0.7.0.tar.gz
+[2024-05-25 10:32:28] INFO root fetch - processPackages [pyrasp]: executing diffoscope
+[2024-05-25 10:32:28] INFO root fetch - processPackages [pyrasp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasp-0.6.2.tar.gz tmp/pyrasp-0.7.0.tar.gz --markdown 20240525/p/pyrasp/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-05-25 10:32:29] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.6.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.7.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - main [MainThread]: End processing [burrow-cli]: success
+[2024-05-25 10:32:29] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.8.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.9.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
+[2024-05-25 10:32:29] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b5.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b6.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-25 10:32:29] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.2.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.7.0.tar.gz]
+[2024-05-25 10:32:29] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
+[2024-05-25 10:32:29] INFO root fetch - main [MainThread]: Store serial: [23373231]
