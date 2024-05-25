@@ -16859,3 +16859,42 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:51:16] WARNING root fetch - processPackages [mambular]: Skipping, unable to determine old version
 [2024-05-25 15:51:16] INFO root fetch - main [MainThread]: End processing [mambular] error
 [2024-05-25 15:51:16] INFO root fetch - main [MainThread]: Store serial: [23375494]
+[2024-05-25 15:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375494]
+[2024-05-25 15:53:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 15:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dycw-utilities
+[2024-05-25 15:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: online-scheduler
+[2024-05-25 15:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sforecast
+[2024-05-25 15:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-pppd
+[2024-05-25 15:53:26] INFO root fetch - processPackages [python-pppd]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-05-25 15:53:26] INFO root fetch - processPackages [online-scheduler]: New version: [1.4] Old Version: [1.3]
+[2024-05-25 15:53:26] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-05-25 15:53:26] INFO root fetch - processPackages [python-pppd]: Downloading https://files.pythonhosted.org/packages/ab/99/4fe3b84ee0f35f9654b95569b1cc6901e3ec14f7b6d9c5ba12581048ea40/python_pppd-1.0.4-py3-none-any.whl
+[2024-05-25 15:53:26] INFO root fetch - processPackages [sforecast]: New version: [0.5.8] Old Version: [0.4.4]
+[2024-05-25 15:53:26] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-05-25 15:53:26] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/8a/f0/cdaeefa2f57755397a1f2437db8a33d84e6230a757ebcfb356406a02d0c5/online_scheduler-1.3.tar.gz
+[2024-05-25 15:53:26] INFO root fetch - processPackages [sforecast]: Downloading https://files.pythonhosted.org/packages/2e/b3/6c7f820fe4387ffc738bc788bd5f5eea74d02e80206084d586748ffee6a0/sforecast-0.4.4.tar.gz
+[2024-05-25 15:53:26] INFO root fetch - processPackages [python-pppd]: Downloading https://files.pythonhosted.org/packages/29/20/4576e026b1298871dc033edb1aac318c8ecf6a18ebcb7fc7d3a13942b576/python_pppd-1.0.6.tar.gz
+[2024-05-25 15:53:26] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-05-25 15:53:26] INFO root fetch - processPackages [python-pppd]: executing diffoscope
+[2024-05-25 15:53:26] INFO root fetch - processPackages [python-pppd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_pppd-1.0.4-py3-none-any.whl.zip tmp/python_pppd-1.0.6.tar.gz --markdown 20240525/p/python-pppd/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-05-25 15:53:26] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-05-25 15:53:26] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240525/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-05-25 15:53:26] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/c6/2b/5f5aeae71bfaf9119b2857f0420a3fb52e69df4b87826588d88c20b5c0bb/online_scheduler-1.4.tar.gz
+[2024-05-25 15:53:26] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 15:53:26] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-1.3.tar.gz tmp/online_scheduler-1.4.tar.gz --markdown 20240525/o/online-scheduler/1.3-1.4/README.md --exclude *.pyd
+[2024-05-25 15:53:26] INFO root fetch - processPackages [sforecast]: Downloading https://files.pythonhosted.org/packages/42/a6/744ff655def8a6d1b22f4703f84931764dcf1a122ffbccf1525bfc7981f8/sforecast-0.5.8.tar.gz
+[2024-05-25 15:53:27] INFO root fetch - processPackages [sforecast]: executing diffoscope
+[2024-05-25 15:53:27] INFO root fetch - processPackages [sforecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sforecast-0.4.4.tar.gz tmp/sforecast-0.5.8.tar.gz --markdown 20240525/s/sforecast/0.4.4-0.5.8/README.md --exclude *.pyd
+[2024-05-25 15:53:27] INFO root fetch - processPackages [python-pppd]: Remove: archive file [/home/abi/fetcher/tmp/python_pppd-1.0.4-py3-none-any.whl.zip]
+[2024-05-25 15:53:27] INFO root fetch - processPackages [python-pppd]: Remove: archive file [/home/abi/fetcher/tmp/python_pppd-1.0.6.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - main [MainThread]: End processing [python-pppd]: success
+[2024-05-25 15:53:27] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.3.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.4.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 15:53:27] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-05-25 15:53:27] INFO root fetch - processPackages [sforecast]: Remove: archive file [/home/abi/fetcher/tmp/sforecast-0.4.4.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - processPackages [sforecast]: Remove: archive file [/home/abi/fetcher/tmp/sforecast-0.5.8.tar.gz]
+[2024-05-25 15:53:27] INFO root fetch - main [MainThread]: End processing [sforecast]: success
+[2024-05-25 15:53:27] INFO root fetch - main [MainThread]: Store serial: [23375512]
