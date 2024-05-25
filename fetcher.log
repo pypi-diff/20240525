@@ -13489,3 +13489,17 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:18:54] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.56.tar.gz]
 [2024-05-25 13:18:54] INFO root fetch - main [MainThread]: End processing [llama-index-core]: success
 [2024-05-25 13:18:54] INFO root fetch - main [MainThread]: Store serial: [23374318]
+[2024-05-25 13:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374318]
+[2024-05-25 13:21:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 13:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374318]
+[2024-05-25 13:23:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 13:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sopa
+[2024-05-25 13:23:08] INFO root fetch - processPackages [sopa]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 13:23:08] INFO root fetch - processPackages [sopa]: Downloading https://files.pythonhosted.org/packages/59/ab/3d8164486994242bffb1dfe2d7e2ae44983d309bc12f6768b61e2f8f9473/sopa-1.0.8.tar.gz
+[2024-05-25 13:23:08] INFO root fetch - processPackages [sopa]: Downloading https://files.pythonhosted.org/packages/45/8a/1436f2c984baf186ef702c8657ea3d377bdaadb5932bad4ffeae83a1ef53/sopa-1.0.9.tar.gz
+[2024-05-25 13:23:08] INFO root fetch - processPackages [sopa]: executing diffoscope
+[2024-05-25 13:23:08] INFO root fetch - processPackages [sopa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopa-1.0.8.tar.gz tmp/sopa-1.0.9.tar.gz --markdown 20240525/s/sopa/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-25 13:23:09] INFO root fetch - processPackages [sopa]: Remove: archive file [/home/abi/fetcher/tmp/sopa-1.0.8.tar.gz]
+[2024-05-25 13:23:09] INFO root fetch - processPackages [sopa]: Remove: archive file [/home/abi/fetcher/tmp/sopa-1.0.9.tar.gz]
+[2024-05-25 13:23:09] INFO root fetch - main [MainThread]: End processing [sopa]: success
+[2024-05-25 13:23:09] INFO root fetch - main [MainThread]: Store serial: [23374321]
