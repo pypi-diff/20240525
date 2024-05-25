@@ -18550,3 +18550,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:34:36] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
 [2024-05-25 17:34:36] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2024-05-25 17:34:36] INFO root fetch - main [MainThread]: Store serial: [23376133]
+[2024-05-25 17:36:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376133]
+[2024-05-25 17:36:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 17:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: squaredown
+[2024-05-25 17:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AzizKitten
+[2024-05-25 17:36:45] INFO root fetch - processPackages [AzizKitten]: New version: [11.1.4] Old Version: [11.1.3]
+[2024-05-25 17:36:45] INFO root fetch - processPackages [squaredown]: New version: [1.6.0] Old Version: [1.5.1]
+[2024-05-25 17:36:45] INFO root fetch - processPackages [AzizKitten]: Downloading https://files.pythonhosted.org/packages/6f/b1/1d5d4598ce4afed36176bbfd597ff305023016bb4debcbf20f3cc3274be5/azizkitten-11.1.3.tar.gz
+[2024-05-25 17:36:45] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/d7/e7/05d9433cea6534db33a0a24f5090f07d51acc159146a43891ced8ddabe02/squaredown-1.5.1.tar.gz
+[2024-05-25 17:36:45] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/3a/e1/7fb52fa502fd18c30ad98201003d30db108e52c175c8e3067d5daf08ccb2/squaredown-1.6.0.tar.gz
+[2024-05-25 17:36:45] INFO root fetch - processPackages [AzizKitten]: Downloading https://files.pythonhosted.org/packages/69/43/fdfdc28c657763d1c0ec0f16af19468bbb0d7e0627415a2a1ee031d547f1/azizkitten-11.1.4.tar.gz
+[2024-05-25 17:36:46] INFO root fetch - processPackages [squaredown]: executing diffoscope
+[2024-05-25 17:36:46] INFO root fetch - processPackages [squaredown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squaredown-1.5.1.tar.gz tmp/squaredown-1.6.0.tar.gz --markdown 20240525/s/squaredown/1.5.1-1.6.0/README.md --exclude *.pyd
+[2024-05-25 17:36:46] INFO root fetch - processPackages [AzizKitten]: executing diffoscope
+[2024-05-25 17:36:46] INFO root fetch - processPackages [AzizKitten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azizkitten-11.1.3.tar.gz tmp/azizkitten-11.1.4.tar.gz --markdown 20240525/A/AzizKitten/11.1.3-11.1.4/README.md --exclude *.pyd
+[2024-05-25 17:36:46] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.5.1.tar.gz]
+[2024-05-25 17:36:46] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.6.0.tar.gz]
+[2024-05-25 17:36:46] INFO root fetch - main [MainThread]: End processing [squaredown]: success
+[2024-05-25 17:36:46] INFO root fetch - processPackages [AzizKitten]: Remove: archive file [/home/abi/fetcher/tmp/azizkitten-11.1.3.tar.gz]
+[2024-05-25 17:36:46] INFO root fetch - processPackages [AzizKitten]: Remove: archive file [/home/abi/fetcher/tmp/azizkitten-11.1.4.tar.gz]
+[2024-05-25 17:36:46] INFO root fetch - main [MainThread]: End processing [AzizKitten]: success
+[2024-05-25 17:36:46] INFO root fetch - main [MainThread]: Store serial: [23376139]
