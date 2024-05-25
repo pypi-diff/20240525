@@ -13785,3 +13785,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:43:17] INFO root fetch - processPackages [llama-index]: Remove: archive file [/home/abi/fetcher/tmp/llama_index-0.9.9.tar.gz]
 [2024-05-25 13:43:17] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2024-05-25 13:43:17] INFO root fetch - main [MainThread]: Store serial: [23374446]
+[2024-05-25 13:45:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374446]
+[2024-05-25 13:45:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 13:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonCodeVault
+[2024-05-25 13:45:26] INFO root fetch - processPackages [PythonCodeVault]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 13:45:26] INFO root fetch - processPackages [PythonCodeVault]: Downloading https://files.pythonhosted.org/packages/9d/06/5ae86fac72c3648485d0f4fcad2617a27777f137eadd454766cf2c49a814/PythonCodeVault-0.0.8.tar.gz
+[2024-05-25 13:45:26] INFO root fetch - processPackages [PythonCodeVault]: Downloading https://files.pythonhosted.org/packages/9e/ee/e84cc3f561bdbf42655616ed568c7bc1ec9003fa3cdc80c7fcb6ffa732f2/PythonCodeVault-0.0.9.tar.gz
+[2024-05-25 13:45:27] INFO root fetch - processPackages [PythonCodeVault]: executing diffoscope
+[2024-05-25 13:45:27] INFO root fetch - processPackages [PythonCodeVault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonCodeVault-0.0.8.tar.gz tmp/PythonCodeVault-0.0.9.tar.gz --markdown 20240525/P/PythonCodeVault/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 13:45:27] INFO root fetch - processPackages [PythonCodeVault]: Remove: archive file [/home/abi/fetcher/tmp/PythonCodeVault-0.0.8.tar.gz]
+[2024-05-25 13:45:27] INFO root fetch - processPackages [PythonCodeVault]: Remove: archive file [/home/abi/fetcher/tmp/PythonCodeVault-0.0.9.tar.gz]
+[2024-05-25 13:45:27] INFO root fetch - main [MainThread]: End processing [PythonCodeVault]: success
+[2024-05-25 13:45:27] INFO root fetch - main [MainThread]: Store serial: [23374453]
