@@ -10217,3 +10217,17 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:20:33] INFO root fetch - processPackages [qis]: Remove: archive file [/home/abi/fetcher/tmp/qis-2.0.9.tar.gz]
 [2024-05-25 09:20:33] INFO root fetch - main [MainThread]: End processing [qis]: success
 [2024-05-25 09:20:33] INFO root fetch - main [MainThread]: Store serial: [23372737]
+[2024-05-25 09:22:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372737]
+[2024-05-25 09:22:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 09:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ChatTTS
+[2024-05-25 09:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fcs-core-model-engine
+[2024-05-25 09:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autosink-data-preparation
+[2024-05-25 09:22:42] WARNING root fetch - processPackages [autosink-data-preparation]: Skipping, unable to determine old version
+[2024-05-25 09:22:42] INFO root fetch - main [MainThread]: End processing [autosink-data-preparation] error
+[2024-05-25 09:22:42] WARNING root fetch - processPackages [ChatTTS]: Skipping, unable to determine old version
+[2024-05-25 09:22:42] INFO root fetch - main [MainThread]: End processing [ChatTTS] error
+[2024-05-25 09:22:42] INFO root fetch - processPackages [fcs-core-model-engine]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 09:22:43] INFO root fetch - processPackages [fcs-core-model-engine]: Downloading https://files.pythonhosted.org/packages/07/13/1bfd22b4856ececf0ac95b3ecf79b61e12c4b44ffbb7effbaae9b5c0e5c5/fcs_core_model_engine-0.9.8-py3-none-win_amd64.whl
+[2024-05-25 09:22:43] WARNING root fetch - processPackages [fcs-core-model-engine]: Skipping package: exceeds size limit 25252979>=10485760
+[2024-05-25 09:22:43] INFO root fetch - main [MainThread]: End processing [fcs-core-model-engine] error
+[2024-05-25 09:22:43] INFO root fetch - main [MainThread]: Store serial: [23372749]
