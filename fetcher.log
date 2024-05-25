@@ -22821,3 +22821,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:57:11] INFO root fetch - processPackages [BSTPP]: Remove: archive file [/home/abi/fetcher/tmp/BSTPP-0.1.3.tar.gz]
 [2024-05-25 22:57:11] INFO root fetch - main [MainThread]: End processing [BSTPP]: success
 [2024-05-25 22:57:11] INFO root fetch - main [MainThread]: Store serial: [23377949]
+[2024-05-25 22:59:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377949]
+[2024-05-25 22:59:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 22:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atomrdf
+[2024-05-25 22:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arch-flow
+[2024-05-25 22:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipackager
+[2024-05-25 22:59:20] INFO root fetch - processPackages [pipackager]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 22:59:20] INFO root fetch - processPackages [arch-flow]: New version: [0.1.8.3] Old Version: [0.1.8.2]
+[2024-05-25 22:59:20] INFO root fetch - processPackages [atomrdf]: New version: [0.8.1] Old Version: [0.6.4]
+[2024-05-25 22:59:20] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/4b/ba/1964ffc36773fe19d8f97f92857936251502c9ca3189f21d5bbea8e664bf/arch_flow-0.1.8.2.tar.gz
+[2024-05-25 22:59:20] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/cb/d7/0df09f8f8216e0cd00f74d373097ec58739c8c2cefa83a136ee23c76f9ca/pipackager-0.1.0.tar.gz
+[2024-05-25 22:59:20] INFO root fetch - processPackages [atomrdf]: Downloading https://files.pythonhosted.org/packages/ee/d3/a1ec2b8222942a159a665c72d012e41bb1d3372b234ffab67a6f88b11d9e/atomrdf-0.6.4.tar.gz
+[2024-05-25 22:59:20] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/77/ca/73c53a06ee952740397e48186a4a5d46a1e0fbff009334755391ecbe997d/arch_flow-0.1.8.3.tar.gz
+[2024-05-25 22:59:20] INFO root fetch - processPackages [arch-flow]: executing diffoscope
+[2024-05-25 22:59:20] INFO root fetch - processPackages [arch-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch_flow-0.1.8.2.tar.gz tmp/arch_flow-0.1.8.3.tar.gz --markdown 20240525/a/arch-flow/0.1.8.2-0.1.8.3/README.md --exclude *.pyd
+[2024-05-25 22:59:20] INFO root fetch - processPackages [pipackager]: Downloading https://files.pythonhosted.org/packages/09/ed/4bf606459a1311f64547eea73258807dae7f7b07d8d4df7a3983ba07ba85/pipackager-0.1.1.tar.gz
+[2024-05-25 22:59:20] INFO root fetch - processPackages [pipackager]: executing diffoscope
+[2024-05-25 22:59:20] INFO root fetch - processPackages [pipackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipackager-0.1.0.tar.gz tmp/pipackager-0.1.1.tar.gz --markdown 20240525/p/pipackager/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 22:59:20] INFO root fetch - processPackages [atomrdf]: Downloading https://files.pythonhosted.org/packages/bd/91/6c3c3d00715a5113b21f36b2ce85e90d7e5c844032c10a51473401de7da6/atomrdf-0.8.1.tar.gz
+[2024-05-25 22:59:20] INFO root fetch - processPackages [atomrdf]: executing diffoscope
+[2024-05-25 22:59:20] INFO root fetch - processPackages [atomrdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomrdf-0.6.4.tar.gz tmp/atomrdf-0.8.1.tar.gz --markdown 20240525/a/atomrdf/0.6.4-0.8.1/README.md --exclude *.pyd
+[2024-05-25 22:59:21] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.8.2.tar.gz]
+[2024-05-25 22:59:21] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.8.3.tar.gz]
+[2024-05-25 22:59:21] INFO root fetch - main [MainThread]: End processing [arch-flow]: success
+[2024-05-25 22:59:21] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.1.0.tar.gz]
+[2024-05-25 22:59:21] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.1.1.tar.gz]
+[2024-05-25 22:59:21] INFO root fetch - main [MainThread]: End processing [pipackager]: success
+[2024-05-25 22:59:21] INFO root fetch - processPackages [atomrdf]: Remove: archive file [/home/abi/fetcher/tmp/atomrdf-0.6.4.tar.gz]
+[2024-05-25 22:59:21] INFO root fetch - processPackages [atomrdf]: Remove: archive file [/home/abi/fetcher/tmp/atomrdf-0.8.1.tar.gz]
+[2024-05-25 22:59:21] INFO root fetch - main [MainThread]: End processing [atomrdf]: success
+[2024-05-25 22:59:21] INFO root fetch - main [MainThread]: Store serial: [23377957]
