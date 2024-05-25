@@ -8070,3 +8070,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:41:18] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.2.tar.gz]
 [2024-05-25 05:41:18] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-05-25 05:41:18] INFO root fetch - main [MainThread]: Store serial: [23371769]
+[2024-05-25 05:43:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371769]
+[2024-05-25 05:43:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 05:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc
+[2024-05-25 05:43:26] INFO root fetch - processPackages [xingpyc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/a3/8b/cb61ace4ced305ed9e864e3d8cb33ac86451eaef8a65351c2eb37e9ba56c/xingpyc-0.0.2.tar.gz
+[2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e5/d3/eb068ad54bca38bbc1179d73d1bb2d97f1dc3f4b008fec9dcf0fa646c0f5/xingpyc-0.0.3.tar.gz
+[2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.2.tar.gz tmp/xingpyc-0.0.3.tar.gz --markdown 20240525/x/xingpyc/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.2.tar.gz]
+[2024-05-25 05:43:27] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.3.tar.gz]
+[2024-05-25 05:43:27] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 05:43:27] INFO root fetch - main [MainThread]: Store serial: [23371772]
