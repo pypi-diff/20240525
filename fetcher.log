@@ -11905,3 +11905,60 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:14:17] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.1.3.tar.gz]
 [2024-05-25 11:14:17] INFO root fetch - main [MainThread]: End processing [tweeterpy]: success
 [2024-05-25 11:14:17] INFO root fetch - main [MainThread]: Store serial: [23373542]
+[2024-05-25 11:16:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373542]
+[2024-05-25 11:16:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: burrow-cli
+[2024-05-25 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-25 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvfuser-cu121
+[2024-05-25 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyorbit-package
+[2024-05-25 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: insanely-fast-whisper
+[2024-05-25 11:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nvfuser-cu118
+[2024-05-25 11:16:25] INFO root fetch - processPackages [burrow-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 11:16:25] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.5.dev20240524] Old Version: [0.2.5.dev20240522]
+[2024-05-25 11:16:25] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.5.dev20240524] Old Version: [0.2.5.dev20240522]
+[2024-05-25 11:16:26] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/62/e4/cd602494d9afe6efac77f078fec06e33adc63778704cdafa0ae3952f3ab8/burrow_cli-0.1.8.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/d4/b6/2080dc8b6bfaacc6c176894e7672b4e2d253eb06dc0bd0ec65f24ca0b080/nvfuser_cu121-0.2.5.dev20240522.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [insanely-fast-whisper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 11:16:26] INFO root fetch - processPackages [pyorbit-package]: New version: [9.1.9] Old Version: [9.1.8]
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/d8/32/c7eb241f64f94193af8aba235dd342c5129f68115da2daf241f85e381379/nvfuser_cu118-0.2.5.dev20240522.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/98/b5/6b6dc13134002f30cb9a373d60b20e30801e1aa3ba15d3e9b048e737fdbb/nvfuser_cu118-0.2.5.dev20240524.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/d8/51/46c6ef5265b5b7d2638d52696c7ad050ed55cbbefafb110db7abea7a2f7a/burrow_cli-0.1.9.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/1d/3b/0ce9be8b372fc3427317371d87bbef470941cb304147839f2dd1424cb4e2/nvfuser_cu121-0.2.5.dev20240524.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [insanely-fast-whisper]: Downloading https://files.pythonhosted.org/packages/ac/80/ddd26bef0ca1585b3b4d4bef6bd82dcc5b66b1e0b2b6197abf830a8d86e9/insanely_fast_whisper-0.0.8.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [pyorbit-package]: Downloading https://files.pythonhosted.org/packages/51/4d/f9b01f3ef884f30afd4af88289ecbde044aecd47f1f4544d2ce38cab815c/pyorbit-package-9.1.8.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [burrow-cli]: executing diffoscope
+[2024-05-25 11:16:26] INFO root fetch - processPackages [burrow-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burrow_cli-0.1.8.tar.gz tmp/burrow_cli-0.1.9.tar.gz --markdown 20240525/b/burrow-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.5.dev20240522.tar.gz tmp/nvfuser_cu121-0.2.5.dev20240524.tar.gz --markdown 20240525/n/nvfuser-cu121/0.2.5.dev20240522-0.2.5.dev20240524/README.md --exclude *.pyd
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-25 11:16:26] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.5.dev20240522.tar.gz tmp/nvfuser_cu118-0.2.5.dev20240524.tar.gz --markdown 20240525/n/nvfuser-cu118/0.2.5.dev20240522-0.2.5.dev20240524/README.md --exclude *.pyd
+[2024-05-25 11:16:26] INFO root fetch - processPackages [insanely-fast-whisper]: Downloading https://files.pythonhosted.org/packages/f2/43/4db4a313d0e242f91765b2c9a12d0834aa996141d05c36622a1bbd10a20c/insanely_fast_whisper-0.0.9.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 11:16:26] INFO root fetch - processPackages [insanely-fast-whisper]: executing diffoscope
+[2024-05-25 11:16:26] INFO root fetch - processPackages [insanely-fast-whisper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insanely_fast_whisper-0.0.8.tar.gz tmp/insanely_fast_whisper-0.0.9.tar.gz --markdown 20240525/i/insanely-fast-whisper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 11:16:26] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 11:16:26] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 11:16:27] INFO root fetch - processPackages [pyorbit-package]: Downloading https://files.pythonhosted.org/packages/2f/34/aed20c44ef64b52985421c610600bab8b122fccc2fdba3aceeb2676ece78/pyorbit-package-9.1.9.tar.gz
+[2024-05-25 11:16:27] INFO root fetch - processPackages [pyorbit-package]: executing diffoscope
+[2024-05-25 11:16:27] INFO root fetch - processPackages [pyorbit-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyorbit-package-9.1.8.tar.gz tmp/pyorbit-package-9.1.9.tar.gz --markdown 20240525/p/pyorbit-package/9.1.8-9.1.9/README.md --exclude *.pyd
+[2024-05-25 11:16:27] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.5.dev20240522.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.5.dev20240524.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-25 11:16:27] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.8.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.9.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - main [MainThread]: End processing [burrow-cli]: success
+[2024-05-25 11:16:27] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.5.dev20240522.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.5.dev20240524.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-25 11:16:27] INFO root fetch - processPackages [insanely-fast-whisper]: Remove: archive file [/home/abi/fetcher/tmp/insanely_fast_whisper-0.0.8.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - processPackages [insanely-fast-whisper]: Remove: archive file [/home/abi/fetcher/tmp/insanely_fast_whisper-0.0.9.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - main [MainThread]: End processing [insanely-fast-whisper]: success
+[2024-05-25 11:16:27] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-25 11:16:27] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 11:16:28] INFO root fetch - processPackages [pyorbit-package]: Remove: archive file [/home/abi/fetcher/tmp/pyorbit-package-9.1.8.tar.gz]
+[2024-05-25 11:16:28] INFO root fetch - processPackages [pyorbit-package]: Remove: archive file [/home/abi/fetcher/tmp/pyorbit-package-9.1.9.tar.gz]
+[2024-05-25 11:16:28] INFO root fetch - main [MainThread]: End processing [pyorbit-package]: success
+[2024-05-25 11:16:28] INFO root fetch - main [MainThread]: Store serial: [23373559]
