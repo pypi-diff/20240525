@@ -12135,3 +12135,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:42:29] INFO root fetch - processPackages [Chrfinder]: Remove: archive file [/home/abi/fetcher/tmp/chrfinder-0.0.2.tar.gz]
 [2024-05-25 11:42:29] INFO root fetch - main [MainThread]: End processing [Chrfinder]: success
 [2024-05-25 11:42:29] INFO root fetch - main [MainThread]: Store serial: [23373615]
+[2024-05-25 11:44:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373615]
+[2024-05-25 11:44:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-05-25 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YandexHome
+[2024-05-25 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: systore
+[2024-05-25 11:44:38] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 11:44:38] WARNING root fetch - processPackages [systore]: Skipping, unable to determine old version
+[2024-05-25 11:44:38] INFO root fetch - main [MainThread]: End processing [systore] error
+[2024-05-25 11:44:38] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 11:44:38] INFO root fetch - processPackages [YandexHome]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 11:44:38] INFO root fetch - processPackages [YandexHome]: Downloading https://files.pythonhosted.org/packages/7c/9e/3b6b3b319095ce2539e33ff6a89d30aaa164442333175a5d199cc62ae251/YandexHome-0.1.8.tar.gz
+[2024-05-25 11:44:38] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 11:44:38] INFO root fetch - processPackages [YandexHome]: Downloading https://files.pythonhosted.org/packages/db/0b/0bc70e6a1e1ea52ff09e1451de8ae94793bdef3908c39bc04c1a9db6056d/YandexHome-0.1.9.tar.gz
+[2024-05-25 11:44:38] INFO root fetch - processPackages [YandexHome]: executing diffoscope
+[2024-05-25 11:44:38] INFO root fetch - processPackages [YandexHome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YandexHome-0.1.8.tar.gz tmp/YandexHome-0.1.9.tar.gz --markdown 20240525/Y/YandexHome/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 11:44:39] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 11:44:39] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 11:44:39] INFO root fetch - processPackages [YandexHome]: Remove: archive file [/home/abi/fetcher/tmp/YandexHome-0.1.8.tar.gz]
+[2024-05-25 11:44:39] INFO root fetch - processPackages [YandexHome]: Remove: archive file [/home/abi/fetcher/tmp/YandexHome-0.1.9.tar.gz]
+[2024-05-25 11:44:39] INFO root fetch - main [MainThread]: End processing [YandexHome]: success
+[2024-05-25 11:44:40] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 11:44:40] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 11:44:40] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 11:44:40] INFO root fetch - main [MainThread]: Store serial: [23373626]
