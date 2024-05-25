@@ -20584,3 +20584,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:59:17] INFO root fetch - processPackages [gdtransform]: Remove: archive file [/home/abi/fetcher/tmp/gdtransform-0.0.8.tar.gz]
 [2024-05-25 19:59:17] INFO root fetch - main [MainThread]: End processing [gdtransform]: success
 [2024-05-25 19:59:17] INFO root fetch - main [MainThread]: Store serial: [23376999]
+[2024-05-25 20:01:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376999]
+[2024-05-25 20:01:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 20:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: athena-intelligence
+[2024-05-25 20:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mcc-api
+[2024-05-25 20:01:26] INFO root fetch - processPackages [athena-intelligence]: New version: [0.1.62] Old Version: [0.1.61]
+[2024-05-25 20:01:26] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/9c/88/e7af57ef3c6d755a7a2b2ea35dc0536f2e50ed9645db9ed742d32ecc4f8e/athena_intelligence-0.1.61.tar.gz
+[2024-05-25 20:01:26] INFO root fetch - processPackages [mcc-api]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-25 20:01:26] INFO root fetch - processPackages [mcc-api]: Downloading https://files.pythonhosted.org/packages/06/50/e8b2fd7db6cb9df20abf1039ab5beb486782aa833816fa4265b79cd2d8f5/mcc_api-1.1.2.tar.gz
+[2024-05-25 20:01:26] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/b5/0f/49f512bd88491ab8ee8f08e38af9bf8c413546e83ce0d62cd7023fddde63/athena_intelligence-0.1.62.tar.gz
+[2024-05-25 20:01:26] INFO root fetch - processPackages [athena-intelligence]: executing diffoscope
+[2024-05-25 20:01:26] INFO root fetch - processPackages [athena-intelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_intelligence-0.1.61.tar.gz tmp/athena_intelligence-0.1.62.tar.gz --markdown 20240525/a/athena-intelligence/0.1.61-0.1.62/README.md --exclude *.pyd
+[2024-05-25 20:01:26] INFO root fetch - processPackages [mcc-api]: Downloading https://files.pythonhosted.org/packages/30/31/0647ac5b11a0683e4205c02f297ff76a3260274353aedce081716f927726/mcc_api-1.1.3.tar.gz
+[2024-05-25 20:01:26] INFO root fetch - processPackages [mcc-api]: executing diffoscope
+[2024-05-25 20:01:26] INFO root fetch - processPackages [mcc-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcc_api-1.1.2.tar.gz tmp/mcc_api-1.1.3.tar.gz --markdown 20240525/m/mcc-api/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-25 20:01:27] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.61.tar.gz]
+[2024-05-25 20:01:27] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.62.tar.gz]
+[2024-05-25 20:01:27] INFO root fetch - main [MainThread]: End processing [athena-intelligence]: success
+[2024-05-25 20:01:27] INFO root fetch - processPackages [mcc-api]: Remove: archive file [/home/abi/fetcher/tmp/mcc_api-1.1.2.tar.gz]
+[2024-05-25 20:01:27] INFO root fetch - processPackages [mcc-api]: Remove: archive file [/home/abi/fetcher/tmp/mcc_api-1.1.3.tar.gz]
+[2024-05-25 20:01:27] INFO root fetch - main [MainThread]: End processing [mcc-api]: success
+[2024-05-25 20:01:27] INFO root fetch - main [MainThread]: Store serial: [23377005]
