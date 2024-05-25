@@ -18592,3 +18592,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:38:58] INFO root fetch - processPackages [pyresidfp]: Remove: archive file [/home/abi/fetcher/tmp/pyresidfp-0.9.0.tar.gz]
 [2024-05-25 17:38:58] INFO root fetch - main [MainThread]: End processing [pyresidfp]: success
 [2024-05-25 17:38:58] INFO root fetch - main [MainThread]: Store serial: [23376170]
+[2024-05-25 17:41:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376170]
+[2024-05-25 17:41:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 17:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daffodil
+[2024-05-25 17:41:08] INFO root fetch - processPackages [daffodil]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-25 17:41:09] INFO root fetch - processPackages [daffodil]: Downloading https://files.pythonhosted.org/packages/e4/e5/f61b33866b1faca04d15f14b1e7df1ef7b829aeafcf0ea390e8b6c1ae3c9/daffodil-0.5.0.tar.gz
+[2024-05-25 17:41:09] INFO root fetch - processPackages [daffodil]: Downloading https://files.pythonhosted.org/packages/37/30/7e510f7be57ae45093e7ba70c0c9b9d8fcde1e77961480b2300c45bfb676/daffodil-0.5.1.tar.gz
+[2024-05-25 17:41:09] INFO root fetch - processPackages [daffodil]: executing diffoscope
+[2024-05-25 17:41:09] INFO root fetch - processPackages [daffodil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daffodil-0.5.0.tar.gz tmp/daffodil-0.5.1.tar.gz --markdown 20240525/d/daffodil/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-25 17:41:10] INFO root fetch - processPackages [daffodil]: Remove: archive file [/home/abi/fetcher/tmp/daffodil-0.5.0.tar.gz]
+[2024-05-25 17:41:10] INFO root fetch - processPackages [daffodil]: Remove: archive file [/home/abi/fetcher/tmp/daffodil-0.5.1.tar.gz]
+[2024-05-25 17:41:10] INFO root fetch - main [MainThread]: End processing [daffodil]: success
+[2024-05-25 17:41:10] INFO root fetch - main [MainThread]: Store serial: [23376194]
