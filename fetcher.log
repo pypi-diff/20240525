@@ -20026,3 +20026,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:17:36] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
 [2024-05-25 19:17:36] INFO root fetch - main [MainThread]: End processing [opvious]: success
 [2024-05-25 19:17:36] INFO root fetch - main [MainThread]: Store serial: [23376729]
+[2024-05-25 19:19:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376729]
+[2024-05-25 19:19:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-sitter-earthfile
+[2024-05-25 19:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: infisical-python
+[2024-05-25 19:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oasgen
+[2024-05-25 19:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iSmartDownloader
+[2024-05-25 19:19:45] INFO root fetch - processPackages [iSmartDownloader]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 19:19:45] INFO root fetch - processPackages [tree-sitter-earthfile]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-05-25 19:19:45] INFO root fetch - processPackages [oasgen]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-05-25 19:19:45] INFO root fetch - processPackages [iSmartDownloader]: Downloading https://files.pythonhosted.org/packages/5d/66/ebde3d5d9ff85e632ec7532e38a8d2a17db49fe54e764d0f23decd9a40d7/ismartdownloader-0.1.1.tar.gz
+[2024-05-25 19:19:45] INFO root fetch - processPackages [tree-sitter-earthfile]: Downloading https://files.pythonhosted.org/packages/2a/46/06c69e3bbbded9fbab8951d9a3da898ce7981836c8cd8f42987ce42e3831/tree_sitter_earthfile-0.4.3-cp38-abi3-win_amd64.whl
+[2024-05-25 19:19:45] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/8d/af/d703a76905290140935c17648d42341304a5ca826f301f4b232a8157b83d/oasgen-0.5.1.tar.gz
+[2024-05-25 19:19:45] INFO root fetch - processPackages [infisical-python]: New version: [2.2.0] Old Version: [2.1.9]
+[2024-05-25 19:19:45] INFO root fetch - processPackages [infisical-python]: Downloading https://files.pythonhosted.org/packages/86/82/ddb69014f3c77c6b6c8b9ab017ab25917d9d542d98ae7e597093a036887b/infisical_python-2.1.9.tar.gz
+[2024-05-25 19:19:45] INFO root fetch - processPackages [tree-sitter-earthfile]: Downloading https://files.pythonhosted.org/packages/0a/81/1ac54e8f36cfbb306626048f6b8980f6180a4a6a816ffc692b706d868383/tree_sitter_earthfile-0.5.0-cp38-abi3-win_amd64.whl
+[2024-05-25 19:19:45] INFO root fetch - processPackages [iSmartDownloader]: Downloading https://files.pythonhosted.org/packages/ab/83/f0abff1492313285c7934fb89bfe95ed1990f3e2bb003611a93ac5e6a764/ismartdownloader-0.1.2.tar.gz
+[2024-05-25 19:19:45] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/c0/6c/ec64a033ff83f0f32fa277bfe419777c89c7d68a2dedac792c739528c958/oasgen-0.6.0.tar.gz
+[2024-05-25 19:19:45] INFO root fetch - processPackages [tree-sitter-earthfile]: executing diffoscope
+[2024-05-25 19:19:45] INFO root fetch - processPackages [tree-sitter-earthfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree_sitter_earthfile-0.4.3-cp38-abi3-win_amd64.whl.zip tmp/tree_sitter_earthfile-0.5.0-cp38-abi3-win_amd64.whl.zip --markdown 20240525/t/tree-sitter-earthfile/0.4.3-0.5.0/README.md --exclude *.pyd
+[2024-05-25 19:19:45] INFO root fetch - processPackages [iSmartDownloader]: executing diffoscope
+[2024-05-25 19:19:45] INFO root fetch - processPackages [iSmartDownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ismartdownloader-0.1.1.tar.gz tmp/ismartdownloader-0.1.2.tar.gz --markdown 20240525/i/iSmartDownloader/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 19:19:45] INFO root fetch - processPackages [oasgen]: executing diffoscope
+[2024-05-25 19:19:45] INFO root fetch - processPackages [oasgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasgen-0.5.1.tar.gz tmp/oasgen-0.6.0.tar.gz --markdown 20240525/o/oasgen/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-05-25 19:19:45] INFO root fetch - processPackages [infisical-python]: Downloading https://files.pythonhosted.org/packages/ba/27/11f6bf3946bce5826d8ec3e531561c34babcca21f29b526ee3ac9a14e466/infisical_python-2.2.0.tar.gz
+[2024-05-25 19:19:46] INFO root fetch - processPackages [infisical-python]: executing diffoscope
+[2024-05-25 19:19:46] INFO root fetch - processPackages [infisical-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infisical_python-2.1.9.tar.gz tmp/infisical_python-2.2.0.tar.gz --markdown 20240525/i/infisical-python/2.1.9-2.2.0/README.md --exclude *.pyd
+[2024-05-25 19:19:46] INFO root fetch - processPackages [tree-sitter-earthfile]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter_earthfile-0.4.3-cp38-abi3-win_amd64.whl.zip]
+[2024-05-25 19:19:46] INFO root fetch - processPackages [tree-sitter-earthfile]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter_earthfile-0.5.0-cp38-abi3-win_amd64.whl.zip]
+[2024-05-25 19:19:46] INFO root fetch - main [MainThread]: End processing [tree-sitter-earthfile]: success
+[2024-05-25 19:19:46] INFO root fetch - processPackages [iSmartDownloader]: Remove: archive file [/home/abi/fetcher/tmp/ismartdownloader-0.1.1.tar.gz]
+[2024-05-25 19:19:46] INFO root fetch - processPackages [iSmartDownloader]: Remove: archive file [/home/abi/fetcher/tmp/ismartdownloader-0.1.2.tar.gz]
+[2024-05-25 19:19:46] INFO root fetch - main [MainThread]: End processing [iSmartDownloader]: success
+[2024-05-25 19:19:46] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.5.1.tar.gz]
+[2024-05-25 19:19:46] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.6.0.tar.gz]
+[2024-05-25 19:19:46] INFO root fetch - main [MainThread]: End processing [oasgen]: success
+[2024-05-25 19:19:46] INFO root fetch - processPackages [infisical-python]: Remove: archive file [/home/abi/fetcher/tmp/infisical_python-2.1.9.tar.gz]
+[2024-05-25 19:19:46] INFO root fetch - processPackages [infisical-python]: Remove: archive file [/home/abi/fetcher/tmp/infisical_python-2.2.0.tar.gz]
+[2024-05-25 19:19:46] INFO root fetch - main [MainThread]: End processing [infisical-python]: success
+[2024-05-25 19:19:46] INFO root fetch - main [MainThread]: Store serial: [23376782]
