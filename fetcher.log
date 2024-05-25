@@ -21697,3 +21697,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:37:39] INFO root fetch - processPackages [testcontainers]: Remove: archive file [/home/abi/fetcher/tmp/testcontainers-4.5.0.tar.gz]
 [2024-05-25 21:37:39] INFO root fetch - main [MainThread]: End processing [testcontainers]: success
 [2024-05-25 21:37:39] INFO root fetch - main [MainThread]: Store serial: [23377502]
+[2024-05-25 21:39:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377502]
+[2024-05-25 21:39:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 21:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: articraft
+[2024-05-25 21:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smpclient
+[2024-05-25 21:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tabswitcher
+[2024-05-25 21:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulsefire-types
+[2024-05-25 21:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulsefire
+[2024-05-25 21:39:49] INFO root fetch - processPackages [tabswitcher]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-25 21:39:49] INFO root fetch - processPackages [articraft]: New version: [2.6.1] Old Version: [2.5.1]
+[2024-05-25 21:39:49] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/b1/f8/e9282ffe76d59ea4feb507cb96cda4c2575d56af45b0ad5982acab75d0fb/tabswitcher-0.0.3.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire-types]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-25 21:39:49] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/05/d2/d363b6cb153905f0e77d67485410ee691c50181f60ad406a3ed82d2fd54e/articraft-2.5.1.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [smpclient]: New version: [3.0.0] Old Version: [2.0.1]
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire]: Downloading https://files.pythonhosted.org/packages/20/b3/524516cf847d6eb6120fb2a8bb04ed9a1ec4a5ccd9a8f011f64597fc323c/pulsefire-2.0.8.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [smpclient]: Downloading https://files.pythonhosted.org/packages/31/78/58168ea48c54e03ca9e41e1376c828d39121108e13fa254f45f755fbfa0d/smpclient-2.0.1.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire-types]: Downloading https://files.pythonhosted.org/packages/3b/57/81d5b8b26eec4ab8ae9d9b223d24a4e7b4a9257277d055fb88cda61b1137/pulsefire-types-2.0.8.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [articraft]: Downloading https://files.pythonhosted.org/packages/f6/33/3a5b8b92a77e47aa252cda96676e56450c48e4051bf6a228a3bb2561214f/articraft-2.6.1.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/c4/b0/d2868117e2ee471102d8d76430718de7903664aade2ef2641c09e5df3fae/tabswitcher-0.0.4.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire]: Downloading https://files.pythonhosted.org/packages/5a/e9/374b162e00d11e6d10ff42512a1d043fcda2217e16d76bcc8179986e26e6/pulsefire-2.0.9.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [smpclient]: Downloading https://files.pythonhosted.org/packages/a0/61/acce6674e04735a00bb447ab5e210d5cbbe9dab9cb8f625c08ff557539ac/smpclient-3.0.0.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [articraft]: executing diffoscope
+[2024-05-25 21:39:49] INFO root fetch - processPackages [articraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articraft-2.5.1.tar.gz tmp/articraft-2.6.1.tar.gz --markdown 20240525/a/articraft/2.5.1-2.6.1/README.md --exclude *.pyd
+[2024-05-25 21:39:49] INFO root fetch - processPackages [tabswitcher]: executing diffoscope
+[2024-05-25 21:39:49] INFO root fetch - processPackages [tabswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabswitcher-0.0.3.tar.gz tmp/tabswitcher-0.0.4.tar.gz --markdown 20240525/t/tabswitcher/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire-types]: Downloading https://files.pythonhosted.org/packages/8f/87/bc3e0e7959ef9348157f4b25fb22bdbdfb2619659bceb13b1aa69209d2e5/pulsefire-types-2.0.9.tar.gz
+[2024-05-25 21:39:49] INFO root fetch - processPackages [smpclient]: executing diffoscope
+[2024-05-25 21:39:49] INFO root fetch - processPackages [smpclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smpclient-2.0.1.tar.gz tmp/smpclient-3.0.0.tar.gz --markdown 20240525/s/smpclient/2.0.1-3.0.0/README.md --exclude *.pyd
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire]: executing diffoscope
+[2024-05-25 21:39:49] INFO root fetch - processPackages [pulsefire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsefire-2.0.8.tar.gz tmp/pulsefire-2.0.9.tar.gz --markdown 20240525/p/pulsefire/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire-types]: executing diffoscope
+[2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsefire-types-2.0.8.tar.gz tmp/pulsefire-types-2.0.9.tar.gz --markdown 20240525/p/pulsefire-types/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-25 21:39:50] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.5.1.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - processPackages [articraft]: Remove: archive file [/home/abi/fetcher/tmp/articraft-2.6.1.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - main [MainThread]: End processing [articraft]: success
+[2024-05-25 21:39:50] INFO root fetch - processPackages [smpclient]: Remove: archive file [/home/abi/fetcher/tmp/smpclient-2.0.1.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - processPackages [smpclient]: Remove: archive file [/home/abi/fetcher/tmp/smpclient-3.0.0.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - main [MainThread]: End processing [smpclient]: success
+[2024-05-25 21:39:50] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.3.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.4.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - main [MainThread]: End processing [tabswitcher]: success
+[2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire]: Remove: archive file [/home/abi/fetcher/tmp/pulsefire-2.0.8.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire]: Remove: archive file [/home/abi/fetcher/tmp/pulsefire-2.0.9.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - main [MainThread]: End processing [pulsefire]: success
+[2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire-types]: Remove: archive file [/home/abi/fetcher/tmp/pulsefire-types-2.0.8.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire-types]: Remove: archive file [/home/abi/fetcher/tmp/pulsefire-types-2.0.9.tar.gz]
+[2024-05-25 21:39:50] INFO root fetch - main [MainThread]: End processing [pulsefire-types]: success
+[2024-05-25 21:39:50] INFO root fetch - main [MainThread]: Store serial: [23377517]
