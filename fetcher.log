@@ -17075,3 +17075,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:06:31] INFO root fetch - processPackages [jftools]: Remove: archive file [/home/abi/fetcher/tmp/jftools-0.4.2.tar.gz]
 [2024-05-25 16:06:31] INFO root fetch - main [MainThread]: End processing [jftools]: success
 [2024-05-25 16:06:31] INFO root fetch - main [MainThread]: Store serial: [23375593]
+[2024-05-25 16:08:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375593]
+[2024-05-25 16:08:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 16:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BigEDA
+[2024-05-25 16:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchcat
+[2024-05-25 16:08:40] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 16:08:40] INFO root fetch - processPackages [torchcat]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 16:08:40] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-25 16:08:40] INFO root fetch - processPackages [torchcat]: Downloading https://files.pythonhosted.org/packages/e7/65/c4769d0ce17afa979405f5484d8223929eb594f3927c2d7a8cdd5652dd37/torchcat-0.0.5.tar.gz
+[2024-05-25 16:08:40] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-25 16:08:41] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-25 16:08:41] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240525/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 16:08:41] INFO root fetch - processPackages [torchcat]: Downloading https://files.pythonhosted.org/packages/51/39/c8f4ada3ff1a0fe3c0af4dd276d7e3b0f4d68f078abfddb7745c00fac644/torchcat-0.0.6.tar.gz
+[2024-05-25 16:08:41] INFO root fetch - processPackages [torchcat]: executing diffoscope
+[2024-05-25 16:08:41] INFO root fetch - processPackages [torchcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchcat-0.0.5.tar.gz tmp/torchcat-0.0.6.tar.gz --markdown 20240525/t/torchcat/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 16:08:41] INFO root fetch - processPackages [torchcat]: Remove: archive file [/home/abi/fetcher/tmp/torchcat-0.0.5.tar.gz]
+[2024-05-25 16:08:41] INFO root fetch - processPackages [torchcat]: Remove: archive file [/home/abi/fetcher/tmp/torchcat-0.0.6.tar.gz]
+[2024-05-25 16:08:41] INFO root fetch - main [MainThread]: End processing [torchcat]: success
+[2024-05-25 16:08:41] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-25 16:08:41] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-25 16:08:41] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-25 16:08:41] INFO root fetch - main [MainThread]: Store serial: [23375599]
