@@ -2493,3 +2493,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:35:53] ERROR root fetch - processPackages [pazok]: Unable to fetch info: No such project/version 'pazok' 0.0.4
 [2024-05-25 02:35:53] INFO root fetch - main [MainThread]: End processing [pazok] error
 [2024-05-25 02:35:53] INFO root fetch - main [MainThread]: Store serial: [23369660]
+[2024-05-25 02:37:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369660]
+[2024-05-25 02:38:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 02:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rumchat-actor
+[2024-05-25 02:38:01] INFO root fetch - processPackages [rumchat-actor]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 02:38:01] INFO root fetch - processPackages [rumchat-actor]: Downloading https://files.pythonhosted.org/packages/7b/99/121276f95a640c569d3f94fd1af257acb2bdbc8e8bb2b2a0d1f326750d73/rumchat_actor-1.1.1.tar.gz
+[2024-05-25 02:38:02] INFO root fetch - processPackages [rumchat-actor]: Downloading https://files.pythonhosted.org/packages/10/9a/dacd9a0e4a7bd362827df188aabbf441ef1d195cf54af49f1fa5deb17895/rumchat_actor-1.1.2.tar.gz
+[2024-05-25 02:38:02] INFO root fetch - processPackages [rumchat-actor]: executing diffoscope
+[2024-05-25 02:38:02] INFO root fetch - processPackages [rumchat-actor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rumchat_actor-1.1.1.tar.gz tmp/rumchat_actor-1.1.2.tar.gz --markdown 20240525/r/rumchat-actor/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 02:38:02] INFO root fetch - processPackages [rumchat-actor]: Remove: archive file [/home/abi/fetcher/tmp/rumchat_actor-1.1.1.tar.gz]
+[2024-05-25 02:38:02] INFO root fetch - processPackages [rumchat-actor]: Remove: archive file [/home/abi/fetcher/tmp/rumchat_actor-1.1.2.tar.gz]
+[2024-05-25 02:38:02] INFO root fetch - main [MainThread]: End processing [rumchat-actor]: success
+[2024-05-25 02:38:02] INFO root fetch - main [MainThread]: Store serial: [23369663]
