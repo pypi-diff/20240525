@@ -7423,3 +7423,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:29:15] INFO root fetch - processPackages [angle-emb]: Remove: archive file [/home/abi/fetcher/tmp/angle_emb-0.4.2.tar.gz]
 [2024-05-25 04:29:15] INFO root fetch - main [MainThread]: End processing [angle-emb]: success
 [2024-05-25 04:29:15] INFO root fetch - main [MainThread]: Store serial: [23371434]
+[2024-05-25 04:31:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371434]
+[2024-05-25 04:31:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fuzzquery
+[2024-05-25 04:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xju
+[2024-05-25 04:31:25] INFO root fetch - processPackages [fuzzquery]: New version: [24.5.26] Old Version: [24.5.22]
+[2024-05-25 04:31:25] INFO root fetch - processPackages [xju]: New version: [3.2.1] Old Version: [3.2.0]
+[2024-05-25 04:31:25] INFO root fetch - processPackages [fuzzquery]: Downloading https://files.pythonhosted.org/packages/b5/5a/c6725462d10bb2a1afad1bd6c0c33640721e6202b890ce63e6ea13362bcb/fuzzquery-24.5.22.tar.gz
+[2024-05-25 04:31:25] INFO root fetch - processPackages [xju]: Downloading https://files.pythonhosted.org/packages/27/81/5a30ceba213fc21f0dd52beee7db16eae265a977aa4f6404ddaefa5ac0d1/xju-3.2.0.tar.gz
+[2024-05-25 04:31:25] INFO root fetch - processPackages [fuzzquery]: Downloading https://files.pythonhosted.org/packages/0a/09/b8c5e87e4bd62ca79f0e977a5362ad2e593d862ef945f4ea14101d673b62/fuzzquery-24.5.26.tar.gz
+[2024-05-25 04:31:25] INFO root fetch - processPackages [xju]: Downloading https://files.pythonhosted.org/packages/f8/5f/3b0d8d40a927dd8091c28f9bbacdb82e9e8a5a102fa6c764a73b8e740970/xju-3.2.1.tar.gz
+[2024-05-25 04:31:25] INFO root fetch - processPackages [fuzzquery]: executing diffoscope
+[2024-05-25 04:31:25] INFO root fetch - processPackages [fuzzquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuzzquery-24.5.22.tar.gz tmp/fuzzquery-24.5.26.tar.gz --markdown 20240525/f/fuzzquery/24.5.22-24.5.26/README.md --exclude *.pyd
+[2024-05-25 04:31:25] INFO root fetch - processPackages [xju]: executing diffoscope
+[2024-05-25 04:31:25] INFO root fetch - processPackages [xju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xju-3.2.0.tar.gz tmp/xju-3.2.1.tar.gz --markdown 20240525/x/xju/3.2.0-3.2.1/README.md --exclude *.pyd
+[2024-05-25 04:31:26] INFO root fetch - processPackages [fuzzquery]: Remove: archive file [/home/abi/fetcher/tmp/fuzzquery-24.5.22.tar.gz]
+[2024-05-25 04:31:26] INFO root fetch - processPackages [fuzzquery]: Remove: archive file [/home/abi/fetcher/tmp/fuzzquery-24.5.26.tar.gz]
+[2024-05-25 04:31:26] INFO root fetch - main [MainThread]: End processing [fuzzquery]: success
+[2024-05-25 04:31:26] INFO root fetch - processPackages [xju]: Remove: archive file [/home/abi/fetcher/tmp/xju-3.2.0.tar.gz]
+[2024-05-25 04:31:26] INFO root fetch - processPackages [xju]: Remove: archive file [/home/abi/fetcher/tmp/xju-3.2.1.tar.gz]
+[2024-05-25 04:31:26] INFO root fetch - main [MainThread]: End processing [xju]: success
+[2024-05-25 04:31:26] INFO root fetch - main [MainThread]: Store serial: [23371440]
