@@ -7517,3 +7517,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:44:19] WARNING root fetch - processPackages [sqlframe]: Skipping package: exceeds size limit 17079712>=10485760
 [2024-05-25 04:44:19] INFO root fetch - main [MainThread]: End processing [sqlframe] error
 [2024-05-25 04:44:19] INFO root fetch - main [MainThread]: Store serial: [23371471]
+[2024-05-25 04:46:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371471]
+[2024-05-25 04:46:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Audyn
+[2024-05-25 04:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marlonpy
+[2024-05-25 04:46:28] WARNING root fetch - processPackages [marlonpy]: Skipping, unable to determine old version
+[2024-05-25 04:46:28] INFO root fetch - main [MainThread]: End processing [marlonpy] error
+[2024-05-25 04:46:28] INFO root fetch - processPackages [Audyn]: New version: [0.0.1.dev6] Old Version: [0.0.0]
+[2024-05-25 04:46:29] INFO root fetch - processPackages [Audyn]: Downloading https://files.pythonhosted.org/packages/3c/50/0d422f95c8b52f128ad70c95d4c2a1ae85f65e8ad73955f2eca23476b323/Audyn-0.0.0.tar.gz
+[2024-05-25 04:46:29] INFO root fetch - processPackages [Audyn]: Downloading https://files.pythonhosted.org/packages/88/8c/4a8be83a90db9e673be68b956984061176ff100dc8c9666ad7f98c9fea02/audyn-0.0.1.dev6.tar.gz
+[2024-05-25 04:46:29] INFO root fetch - processPackages [Audyn]: executing diffoscope
+[2024-05-25 04:46:29] INFO root fetch - processPackages [Audyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Audyn-0.0.0.tar.gz tmp/audyn-0.0.1.dev6.tar.gz --markdown 20240525/A/Audyn/0.0.0-0.0.1.dev6/README.md --exclude *.pyd
+[2024-05-25 04:46:30] INFO root fetch - processPackages [Audyn]: Remove: archive file [/home/abi/fetcher/tmp/Audyn-0.0.0.tar.gz]
+[2024-05-25 04:46:30] INFO root fetch - processPackages [Audyn]: Remove: archive file [/home/abi/fetcher/tmp/audyn-0.0.1.dev6.tar.gz]
+[2024-05-25 04:46:30] INFO root fetch - main [MainThread]: End processing [Audyn]: success
+[2024-05-25 04:46:30] INFO root fetch - main [MainThread]: Store serial: [23371479]
