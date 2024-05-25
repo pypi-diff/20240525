@@ -13548,3 +13548,38 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:25:24] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.1.tar.gz]
 [2024-05-25 13:25:24] INFO root fetch - main [MainThread]: End processing [calculate-savings]: success
 [2024-05-25 13:25:24] INFO root fetch - main [MainThread]: Store serial: [23374343]
+[2024-05-25 13:27:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374343]
+[2024-05-25 13:27:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe-21
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ingestr
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchx-nightly
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchtnt-nightly
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ingestr]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-25 13:27:45] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-25 13:27:45] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2024.5.24] Old Version: [2024.5.23]
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ingestr]: Downloading https://files.pythonhosted.org/packages/f4/a1/bc0cae7bc3c202927c4c2915f32222b329053f9315a2450eca35120a228c/ingestr-0.4.0.tar.gz
+[2024-05-25 13:27:45] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240525] Old Version: [2.5.0b20240524]
+[2024-05-25 13:27:45] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4f/2c/1b1fd11c1eb29345cef72d90c551ee6ca39cb1ca91dcb13a62e39d09d3e9/torchx_nightly-2024.5.8-py3-none-any.whl
+[2024-05-25 13:27:45] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/67/a9/5fa8f88e6460da2c22d65fb410cc2bb95ce418d4680ed2141a7833dd4b94/torchtnt_nightly-2024.5.23.tar.gz
+[2024-05-25 13:27:45] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/cb/ac/5ec50b55e89838cbb790e8ec720c1cdb6cb9f9defd25931aa0d78cec588d/bigdl_core_xe_21-2.5.0b20240524-cp39-cp39-win_amd64.whl
+[2024-05-25 13:27:45] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-05-25 13:27:45] INFO root fetch - processPackages [ingestr]: Downloading https://files.pythonhosted.org/packages/bc/50/6e0b0e9cf0c87c1041a850ef5288be97069035a20833e3c28cc797da814e/ingestr-0.5.0.tar.gz
+[2024-05-25 13:27:45] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 33864953>=10485760
+[2024-05-25 13:27:45] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/95/a4/ea19eab2628506be242cb3aad58405135f4ce873a47b68def7c40702dab3/torchtnt_nightly-2024.5.24.tar.gz
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240525/t/torchx-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-25 13:27:46] INFO root fetch - processPackages [ingestr]: executing diffoscope
+[2024-05-25 13:27:46] INFO root fetch - processPackages [ingestr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ingestr-0.4.0.tar.gz tmp/ingestr-0.5.0.tar.gz --markdown 20240525/i/ingestr/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt_nightly-2024.5.23.tar.gz tmp/torchtnt_nightly-2024.5.24.tar.gz --markdown 20240525/t/torchtnt-nightly/2024.5.23-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.5.23.tar.gz]
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-25 13:27:46] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.5.24.tar.gz]
+[2024-05-25 13:27:46] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-25 13:27:46] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2024-05-25 13:27:49] INFO root fetch - processPackages [ingestr]: Remove: archive file [/home/abi/fetcher/tmp/ingestr-0.4.0.tar.gz]
+[2024-05-25 13:27:49] INFO root fetch - processPackages [ingestr]: Remove: archive file [/home/abi/fetcher/tmp/ingestr-0.5.0.tar.gz]
+[2024-05-25 13:27:49] INFO root fetch - main [MainThread]: End processing [ingestr]: success
+[2024-05-25 13:27:49] INFO root fetch - main [MainThread]: Store serial: [23374354]
