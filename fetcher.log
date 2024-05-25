@@ -13272,3 +13272,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:05:50] INFO root fetch - processPackages [facebook-page-scraper]: Remove: archive file [/home/abi/fetcher/tmp/facebook_page_scraper-5.0.5.tar.gz]
 [2024-05-25 13:05:50] INFO root fetch - main [MainThread]: End processing [facebook-page-scraper]: success
 [2024-05-25 13:05:50] INFO root fetch - main [MainThread]: Store serial: [23374240]
+[2024-05-25 13:07:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374240]
+[2024-05-25 13:07:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 13:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hddm-s
+[2024-05-25 13:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-resolver
+[2024-05-25 13:07:59] INFO root fetch - processPackages [model-resolver]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-25 13:07:59] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.83]
+[2024-05-25 13:07:59] INFO root fetch - processPackages [model-resolver]: Downloading https://files.pythonhosted.org/packages/9d/00/d5f8b1c6a92d02fe1aebc1014544dc941e92aa8994e992482ff617906c5b/model_resolver-0.6.1.tar.gz
+[2024-05-25 13:07:59] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/c1/b6/7f03d2e50d62b7694a58464f0847f6581cc8623cd3cf5bef51bf33b9e79d/hddm_s-1.0.83.tar.gz
+[2024-05-25 13:07:59] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 13:07:59] INFO root fetch - processPackages [model-resolver]: Downloading https://files.pythonhosted.org/packages/23/93/7e03f9ba0ac4335190b86452284c27f52c593a58278b365c0a9d72a996d3/model_resolver-0.6.2.tar.gz
+[2024-05-25 13:07:59] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 13:07:59] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.83.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.83-1.0.9/README.md --exclude *.pyd
+[2024-05-25 13:07:59] INFO root fetch - processPackages [model-resolver]: executing diffoscope
+[2024-05-25 13:07:59] INFO root fetch - processPackages [model-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_resolver-0.6.1.tar.gz tmp/model_resolver-0.6.2.tar.gz --markdown 20240525/m/model-resolver/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-25 13:08:00] INFO root fetch - processPackages [model-resolver]: Remove: archive file [/home/abi/fetcher/tmp/model_resolver-0.6.1.tar.gz]
+[2024-05-25 13:08:00] INFO root fetch - processPackages [model-resolver]: Remove: archive file [/home/abi/fetcher/tmp/model_resolver-0.6.2.tar.gz]
+[2024-05-25 13:08:00] INFO root fetch - main [MainThread]: End processing [model-resolver]: success
+[2024-05-25 13:08:00] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.83.tar.gz]
+[2024-05-25 13:08:00] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 13:08:00] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 13:08:00] INFO root fetch - main [MainThread]: Store serial: [23374245]
