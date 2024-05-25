@@ -6544,3 +6544,29 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:23:10] INFO root fetch - processPackages [botocore-a-la-carte]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-1.34.99.tar.gz]
 [2024-05-25 03:23:10] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte]: success
 [2024-05-25 03:23:10] INFO root fetch - main [MainThread]: Store serial: [23370724]
+[2024-05-25 03:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23370724]
+[2024-05-25 03:25:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 03:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlpx
+[2024-05-25 03:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arcade
+[2024-05-25 03:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hddm-s
+[2024-05-25 03:25:20] INFO root fetch - processPackages [nlpx]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 03:25:20] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.75]
+[2024-05-25 03:25:20] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/1d/97/8519fb1f57a438f60a34d7135fe5a870004f05683cb795ad1785503301ee/nlpx-1.1.1.tar.gz
+[2024-05-25 03:25:20] INFO root fetch - processPackages [arcade]: New version: [3.0.0.dev28] Old Version: [3.0.0.dev27]
+[2024-05-25 03:25:20] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/6f/91/d8a4dd51f2ae272df303f9f43a25aaceaeb2a46da371bc23926d6dce46d3/hddm_s-1.0.75.tar.gz
+[2024-05-25 03:25:20] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/ca/ae/e7692b2413a87e3f4c042f4cf7c0f8f66dee3cebf28cc1c1259685b64996/nlpx-1.1.2.tar.gz
+[2024-05-25 03:25:20] INFO root fetch - processPackages [arcade]: Downloading https://files.pythonhosted.org/packages/0f/b4/ca629e349ca84fecb3edce8f88fa65b428aa8936a036482bcbbd931fec50/arcade-3.0.0.dev27.tar.gz
+[2024-05-25 03:25:20] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 03:25:20] WARNING root fetch - processPackages [arcade]: Skipping package: exceeds size limit 39417184>=10485760
+[2024-05-25 03:25:20] INFO root fetch - main [MainThread]: End processing [arcade] error
+[2024-05-25 03:25:20] INFO root fetch - processPackages [nlpx]: executing diffoscope
+[2024-05-25 03:25:20] INFO root fetch - processPackages [nlpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpx-1.1.1.tar.gz tmp/nlpx-1.1.2.tar.gz --markdown 20240525/n/nlpx/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 03:25:20] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 03:25:20] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.75.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.75-1.0.9/README.md --exclude *.pyd
+[2024-05-25 03:25:21] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.1.tar.gz]
+[2024-05-25 03:25:21] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.2.tar.gz]
+[2024-05-25 03:25:21] INFO root fetch - main [MainThread]: End processing [nlpx]: success
+[2024-05-25 03:25:21] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.75.tar.gz]
+[2024-05-25 03:25:21] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 03:25:21] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 03:25:21] INFO root fetch - main [MainThread]: Store serial: [23370790]
