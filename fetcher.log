@@ -9895,3 +9895,35 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:52:18] INFO root fetch - processPackages [txdpy]: Remove: archive file [/home/abi/fetcher/tmp/txdpy-8.8.8.tar.gz]
 [2024-05-25 08:52:18] INFO root fetch - main [MainThread]: End processing [txdpy]: success
 [2024-05-25 08:52:18] INFO root fetch - main [MainThread]: Store serial: [23372624]
+[2024-05-25 08:54:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372624]
+[2024-05-25 08:54:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 08:56:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372625]
+[2024-05-25 08:56:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 08:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-nightly
+[2024-05-25 08:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: icloudpd
+[2024-05-25 08:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hydra-cache
+[2024-05-25 08:56:32] INFO root fetch - processPackages [hydra-cache]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 08:56:32] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.35.1.dev20240523] Old Version: [1.34.1.dev20240522]
+[2024-05-25 08:56:32] INFO root fetch - processPackages [icloudpd]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-25 08:56:32] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/f2/0f/fc49af8b244c75a0d651297bae60741cdbb9fbb59de1af7838e512dcd684/streamlit_nightly-1.34.1.dev20240522.tar.gz
+[2024-05-25 08:56:33] INFO root fetch - processPackages [hydra-cache]: Downloading https://files.pythonhosted.org/packages/a4/33/27e8db4516f23c441ab65f983c1536a2b021ec645b9e483acf8a8a4b9495/hydra_cache-0.1.0.tar.gz
+[2024-05-25 08:56:33] INFO root fetch - processPackages [icloudpd]: Downloading https://files.pythonhosted.org/packages/51/5d/1f1e447501b790f1082e506da57a315aeda5268be4c23f0027804937436a/icloudpd-1.8.1-py2.py3-none-any.whl
+[2024-05-25 08:56:33] INFO root fetch - processPackages [hydra-cache]: Downloading https://files.pythonhosted.org/packages/57/4c/3a81641c3c2bf394632a54894769e9e5e41e7a0778742a7e470d31162b85/hydra_cache-0.1.1.tar.gz
+[2024-05-25 08:56:33] INFO root fetch - processPackages [hydra-cache]: executing diffoscope
+[2024-05-25 08:56:33] INFO root fetch - processPackages [hydra-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydra_cache-0.1.0.tar.gz tmp/hydra_cache-0.1.1.tar.gz --markdown 20240525/h/hydra-cache/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 08:56:33] INFO root fetch - processPackages [icloudpd]: Downloading https://files.pythonhosted.org/packages/62/71/4d2c70cdcacbafa12d0d59f0a600a1d90223aeb131739c382716470d6320/icloudpd-1.9.0-py2.py3-none-any.whl
+[2024-05-25 08:56:33] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/e5/60/735d956611d5e3859ab71fc612f217cc25b9fb42d6e57e97c981291b8cc0/streamlit_nightly-1.35.1.dev20240523.tar.gz
+[2024-05-25 08:56:33] INFO root fetch - processPackages [icloudpd]: executing diffoscope
+[2024-05-25 08:56:33] INFO root fetch - processPackages [icloudpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icloudpd-1.8.1-py2.py3-none-any.whl.zip tmp/icloudpd-1.9.0-py2.py3-none-any.whl.zip --markdown 20240525/i/icloudpd/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-25 08:56:34] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-05-25 08:56:34] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.34.1.dev20240522.tar.gz tmp/streamlit_nightly-1.35.1.dev20240523.tar.gz --markdown 20240525/s/streamlit-nightly/1.34.1.dev20240522-1.35.1.dev20240523/README.md --exclude *.pyd
+[2024-05-25 08:56:34] INFO root fetch - processPackages [hydra-cache]: Remove: archive file [/home/abi/fetcher/tmp/hydra_cache-0.1.0.tar.gz]
+[2024-05-25 08:56:34] INFO root fetch - processPackages [hydra-cache]: Remove: archive file [/home/abi/fetcher/tmp/hydra_cache-0.1.1.tar.gz]
+[2024-05-25 08:56:34] INFO root fetch - main [MainThread]: End processing [hydra-cache]: success
+[2024-05-25 08:56:34] INFO root fetch - processPackages [icloudpd]: Remove: archive file [/home/abi/fetcher/tmp/icloudpd-1.8.1-py2.py3-none-any.whl.zip]
+[2024-05-25 08:56:34] INFO root fetch - processPackages [icloudpd]: Remove: archive file [/home/abi/fetcher/tmp/icloudpd-1.9.0-py2.py3-none-any.whl.zip]
+[2024-05-25 08:56:34] INFO root fetch - main [MainThread]: End processing [icloudpd]: success
+[2024-05-25 08:56:37] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240522.tar.gz]
+[2024-05-25 08:56:37] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240523.tar.gz]
+[2024-05-25 08:56:37] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-05-25 08:56:37] INFO root fetch - main [MainThread]: Store serial: [23372641]
