@@ -6859,3 +6859,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:31:56] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-05-25 03:31:56] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-05-25 03:31:56] INFO root fetch - main [MainThread]: Store serial: [23371052]
+[2024-05-25 03:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371052]
+[2024-05-25 03:34:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 03:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kamangir
+[2024-05-25 03:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: large-image-source-tifffile
+[2024-05-25 03:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: large-image-source-vips
+[2024-05-25 03:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: large-image-source-zarr
+[2024-05-25 03:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dash-spread-grid
+[2024-05-25 03:34:05] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 03:34:05] INFO root fetch - processPackages [large-image-source-zarr]: New version: [1.28.3.dev8] Old Version: [1.28.3.dev6]
+[2024-05-25 03:34:05] INFO root fetch - processPackages [kamangir]: New version: [3.55.1] Old Version: [3.52.1]
+[2024-05-25 03:34:05] INFO root fetch - processPackages [large-image-source-vips]: New version: [1.28.3.dev8] Old Version: [1.28.3.dev6]
+[2024-05-25 03:34:05] INFO root fetch - processPackages [large-image-source-tifffile]: New version: [1.28.3.dev8] Old Version: [1.28.3.dev6]
+[2024-05-25 03:34:05] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-25 03:34:05] INFO root fetch - processPackages [large-image-source-zarr]: Downloading https://files.pythonhosted.org/packages/63/6f/279e4e2d015025c0244d51b0196f09b6165b22d33586bfb159c3bfaa26df/large-image-source-zarr-1.28.3.dev6.tar.gz
+[2024-05-25 03:34:05] INFO root fetch - processPackages [large-image-source-vips]: Downloading https://files.pythonhosted.org/packages/a9/45/fc13789b55ddc7856736b65e5b4dabf6accf892c63004288c33ab32aba8c/large-image-source-vips-1.28.3.dev6.tar.gz
+[2024-05-25 03:34:05] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/bb/a1/43115d7d2b0c37d10cbfa010fe8b796702e1e1b575eeed5d29f2335ef8f5/kamangir-3.52.1.tar.gz
+[2024-05-25 03:34:05] INFO root fetch - processPackages [large-image-source-tifffile]: Downloading https://files.pythonhosted.org/packages/72/b7/014ae63963299a5acef94e7ae73f1b5af8f2d642ee05a4ec2ffbe3a1ab70/large-image-source-tifffile-1.28.3.dev6.tar.gz
+[2024-05-25 03:34:06] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-zarr]: Downloading https://files.pythonhosted.org/packages/09/49/64e4c8b781914eb4823182b4a64ef60c9f2955d66c9ee144128b58eaa51b/large-image-source-zarr-1.28.3.dev8.tar.gz
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-vips]: Downloading https://files.pythonhosted.org/packages/3e/47/a2f48ee6dcb14761abc2431cb98efdc951799cf57bb43fd66509b298a9be/large-image-source-vips-1.28.3.dev8.tar.gz
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-tifffile]: Downloading https://files.pythonhosted.org/packages/ca/ec/fa63e4b91bcfc924e8f57e2bfbf35f589e88decd9e92b5491dffc8a04a65/large-image-source-tifffile-1.28.3.dev8.tar.gz
+[2024-05-25 03:34:06] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/d8/96/09b9f2d041ffdca67cb65adc07ece7826ce61cecc9ef603d05efb823b318/kamangir-3.55.1.tar.gz
+[2024-05-25 03:34:06] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-25 03:34:06] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240525/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-zarr]: executing diffoscope
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-zarr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-zarr-1.28.3.dev6.tar.gz tmp/large-image-source-zarr-1.28.3.dev8.tar.gz --markdown 20240525/l/large-image-source-zarr/1.28.3.dev6-1.28.3.dev8/README.md --exclude *.pyd
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-vips]: executing diffoscope
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-vips]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-vips-1.28.3.dev6.tar.gz tmp/large-image-source-vips-1.28.3.dev8.tar.gz --markdown 20240525/l/large-image-source-vips/1.28.3.dev6-1.28.3.dev8/README.md --exclude *.pyd
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-tifffile]: executing diffoscope
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-tifffile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-tifffile-1.28.3.dev6.tar.gz tmp/large-image-source-tifffile-1.28.3.dev8.tar.gz --markdown 20240525/l/large-image-source-tifffile/1.28.3.dev6-1.28.3.dev8/README.md --exclude *.pyd
+[2024-05-25 03:34:06] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 03:34:06] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.52.1.tar.gz tmp/kamangir-3.55.1.tar.gz --markdown 20240525/k/kamangir/3.52.1-3.55.1/README.md --exclude *.pyd
+[2024-05-25 03:34:06] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.52.1.tar.gz]
+[2024-05-25 03:34:06] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.55.1.tar.gz]
+[2024-05-25 03:34:06] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-zarr]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-zarr-1.28.3.dev6.tar.gz]
+[2024-05-25 03:34:06] INFO root fetch - processPackages [large-image-source-zarr]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-zarr-1.28.3.dev8.tar.gz]
+[2024-05-25 03:34:06] INFO root fetch - main [MainThread]: End processing [large-image-source-zarr]: success
+[2024-05-25 03:34:07] INFO root fetch - processPackages [large-image-source-tifffile]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-tifffile-1.28.3.dev6.tar.gz]
+[2024-05-25 03:34:07] INFO root fetch - processPackages [large-image-source-tifffile]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-tifffile-1.28.3.dev8.tar.gz]
+[2024-05-25 03:34:07] INFO root fetch - main [MainThread]: End processing [large-image-source-tifffile]: success
+[2024-05-25 03:34:07] INFO root fetch - processPackages [large-image-source-vips]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-vips-1.28.3.dev6.tar.gz]
+[2024-05-25 03:34:07] INFO root fetch - processPackages [large-image-source-vips]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-vips-1.28.3.dev8.tar.gz]
+[2024-05-25 03:34:07] INFO root fetch - main [MainThread]: End processing [large-image-source-vips]: success
+[2024-05-25 03:34:07] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-25 03:34:07] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-25 03:34:07] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-25 03:34:07] INFO root fetch - main [MainThread]: Store serial: [23371123]
