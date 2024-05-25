@@ -20886,3 +20886,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:26:05] INFO root fetch - processPackages [mlable]: Remove: archive file [/home/abi/fetcher/tmp/mlable-0.1.4.tar.gz]
 [2024-05-25 20:26:05] INFO root fetch - main [MainThread]: End processing [mlable]: success
 [2024-05-25 20:26:05] INFO root fetch - main [MainThread]: Store serial: [23377103]
+[2024-05-25 20:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377103]
+[2024-05-25 20:28:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 20:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: location-local
+[2024-05-25 20:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nova-framework
+[2024-05-25 20:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kisters.network-store.model-library.water
+[2024-05-25 20:28:13] INFO root fetch - processPackages [nova-framework]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-25 20:28:13] INFO root fetch - processPackages [kisters.network-store.model-library.water]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-25 20:28:13] INFO root fetch - processPackages [nova-framework]: Downloading https://files.pythonhosted.org/packages/5f/40/2b02ea7ad264e2c2e08dc2a42f58378249fcdc0ab05aacf70e9064babf21/nova_framework-0.6.1.tar.gz
+[2024-05-25 20:28:13] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Downloading https://files.pythonhosted.org/packages/32/5c/c46fa03715d9d803156ff9aa298a775cb8eb2067f070a5359b845823b99e/kisters.network_store.model_library.water-0.2.9.tar.gz
+[2024-05-25 20:28:13] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 20:28:13] WARNING root fetch - processPackages [nova-framework]: Skipping package: exceeds size limit 31786566>=10485760
+[2024-05-25 20:28:13] INFO root fetch - main [MainThread]: End processing [nova-framework] error
+[2024-05-25 20:28:14] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-05-25 20:28:14] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Downloading https://files.pythonhosted.org/packages/01/b2/93fac30b06ea3fcb16d3e2664556db7a140fc256bfead590e958f9771d5a/kisters.network_store.model_library.water-0.3.0.tar.gz
+[2024-05-25 20:28:14] INFO root fetch - processPackages [kisters.network-store.model-library.water]: executing diffoscope
+[2024-05-25 20:28:14] INFO root fetch - processPackages [kisters.network-store.model-library.water]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kisters.network_store.model_library.water-0.2.9.tar.gz tmp/kisters.network_store.model_library.water-0.3.0.tar.gz --markdown 20240525/k/kisters.network-store.model-library.water/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-25 20:28:14] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-05-25 20:28:14] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-05-25 20:28:14] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240525/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 20:28:14] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Remove: archive file [/home/abi/fetcher/tmp/kisters.network_store.model_library.water-0.2.9.tar.gz]
+[2024-05-25 20:28:14] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Remove: archive file [/home/abi/fetcher/tmp/kisters.network_store.model_library.water-0.3.0.tar.gz]
+[2024-05-25 20:28:14] INFO root fetch - main [MainThread]: End processing [kisters.network-store.model-library.water]: success
+[2024-05-25 20:28:15] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-05-25 20:28:15] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-05-25 20:28:15] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-05-25 20:28:15] INFO root fetch - main [MainThread]: Store serial: [23377111]
