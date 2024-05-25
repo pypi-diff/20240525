@@ -12069,3 +12069,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:35:56] INFO root fetch - processPackages [watch-run]: Remove: archive file [/home/abi/fetcher/tmp/watch_run-0.0.8-cp37-cp37m-macosx_13_0_arm64.whl.zip]
 [2024-05-25 11:35:56] INFO root fetch - main [MainThread]: End processing [watch-run]: success
 [2024-05-25 11:35:56] INFO root fetch - main [MainThread]: Store serial: [23373593]
+[2024-05-25 11:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373593]
+[2024-05-25 11:38:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utk_streamer
+[2024-05-25 11:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solcast-pvsolar
+[2024-05-25 11:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-distill
+[2024-05-25 11:38:07] INFO root fetch - processPackages [utk_streamer]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-25 11:38:07] INFO root fetch - processPackages [django-distill]: New version: [3.2.3] Old Version: [3.2.2]
+[2024-05-25 11:38:07] INFO root fetch - processPackages [utk_streamer]: Downloading https://files.pythonhosted.org/packages/d8/55/9b25afd05d622a3e7c1f3ccd2630a4e4e8d11be116bdc9b51f647f5dc799/utk_streamer-0.1.0.tar.gz
+[2024-05-25 11:38:07] WARNING root fetch - processPackages [solcast-pvsolar]: Skipping, unable to determine old version
+[2024-05-25 11:38:07] INFO root fetch - main [MainThread]: End processing [solcast-pvsolar] error
+[2024-05-25 11:38:07] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/98/ef/ca33151518526c519b22d565b63c7573918f37f420f5a8806bbbd9645c40/django_distill-3.2.2.tar.gz
+[2024-05-25 11:38:08] INFO root fetch - processPackages [utk_streamer]: Downloading https://files.pythonhosted.org/packages/15/7d/c6753b328dd903b2707a70dcf96b79b00b0d49834293a957cc60fc172fc9/utk_streamer-0.2.0.tar.gz
+[2024-05-25 11:38:08] INFO root fetch - processPackages [utk_streamer]: executing diffoscope
+[2024-05-25 11:38:08] INFO root fetch - processPackages [utk_streamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utk_streamer-0.1.0.tar.gz tmp/utk_streamer-0.2.0.tar.gz --markdown 20240525/u/utk_streamer/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-25 11:38:08] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/b7/35/44452b25f43c69cd54b028f54d5564aa52369d1d7768d1423e0b66afaf70/django_distill-3.2.3.tar.gz
+[2024-05-25 11:38:08] INFO root fetch - processPackages [django-distill]: executing diffoscope
+[2024-05-25 11:38:08] INFO root fetch - processPackages [django-distill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_distill-3.2.2.tar.gz tmp/django_distill-3.2.3.tar.gz --markdown 20240525/d/django-distill/3.2.2-3.2.3/README.md --exclude *.pyd
+[2024-05-25 11:38:08] INFO root fetch - processPackages [utk_streamer]: Remove: archive file [/home/abi/fetcher/tmp/utk_streamer-0.1.0.tar.gz]
+[2024-05-25 11:38:08] INFO root fetch - processPackages [utk_streamer]: Remove: archive file [/home/abi/fetcher/tmp/utk_streamer-0.2.0.tar.gz]
+[2024-05-25 11:38:08] INFO root fetch - main [MainThread]: End processing [utk_streamer]: success
+[2024-05-25 11:38:08] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.2.tar.gz]
+[2024-05-25 11:38:08] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.3.tar.gz]
+[2024-05-25 11:38:09] INFO root fetch - main [MainThread]: End processing [django-distill]: success
+[2024-05-25 11:38:09] INFO root fetch - main [MainThread]: Store serial: [23373603]
