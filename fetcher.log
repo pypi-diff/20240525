@@ -7724,3 +7724,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:12:58] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
 [2024-05-25 05:12:58] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2024-05-25 05:12:58] INFO root fetch - main [MainThread]: Store serial: [23371562]
+[2024-05-25 05:15:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371562]
+[2024-05-25 05:15:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 05:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mojo-interop
+[2024-05-25 05:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Chrfinder
+[2024-05-25 05:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-payment-order
+[2024-05-25 05:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RobotRaconteur
+[2024-05-25 05:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xingpyc-xing-official
+[2024-05-25 05:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-model-helper
+[2024-05-25 05:15:07] WARNING root fetch - processPackages [xingpyc-xing-official]: Skipping, unable to determine old version
+[2024-05-25 05:15:07] INFO root fetch - main [MainThread]: End processing [xingpyc-xing-official] error
+[2024-05-25 05:15:07] INFO root fetch - processPackages [django-model-helper]: New version: [0.1.9] Old Version: [0.1.5]
+[2024-05-25 05:15:07] INFO root fetch - processPackages [mojo-interop]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-25 05:15:07] INFO root fetch - processPackages [django-model-helper]: Downloading https://files.pythonhosted.org/packages/bb/7b/e0afd82811428431b2a114f556900d1c43245e2950e855103060544e4ffa/django-model-helper-0.1.5.tar.gz
+[2024-05-25 05:15:07] INFO root fetch - processPackages [Chrfinder]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 05:15:07] INFO root fetch - processPackages [odoo-addon-account-payment-order]: New version: [17.0.1.1.0.4] Old Version: [17.0.1.1.0.3]
+[2024-05-25 05:15:07] INFO root fetch - processPackages [mojo-interop]: Downloading https://files.pythonhosted.org/packages/ab/a3/0b2448c3a7eaadce81ead97a0284b9eadde7fc11421c8a8ada144f88abe0/mojo_interop-1.3.8.tar.gz
+[2024-05-25 05:15:07] INFO root fetch - processPackages [RobotRaconteur]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-25 05:15:07] INFO root fetch - processPackages [django-model-helper]: Downloading https://files.pythonhosted.org/packages/5b/19/d9ee64b11db425ce606a3c13b9c463c8d1422441fe6cbf7a1fba0f8b9706/django-model-helper-0.1.9.tar.gz
+[2024-05-25 05:15:07] INFO root fetch - processPackages [Chrfinder]: Downloading https://files.pythonhosted.org/packages/f7/6f/d6083ede03520f4ab25b38edd2550309e73a37502cf17593bc98da6a88dd/chrfinder-0.0.1.tar.gz
+[2024-05-25 05:15:07] INFO root fetch - processPackages [mojo-interop]: Downloading https://files.pythonhosted.org/packages/87/86/ce6cbddd16154ffb5e383dbb481e623cb803fa9711c753daaa0ee1b22cef/mojo_interop-1.3.9.tar.gz
+[2024-05-25 05:15:07] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/9a/ab/d0fc63ca31b3e3ea9a6999fe5feb5f659cfe1088268198c8c2574c495979/odoo_addon_account_payment_order-17.0.1.1.0.3-py3-none-any.whl
+[2024-05-25 05:15:07] INFO root fetch - processPackages [django-model-helper]: executing diffoscope
+[2024-05-25 05:15:07] INFO root fetch - processPackages [django-model-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-model-helper-0.1.5.tar.gz tmp/django-model-helper-0.1.9.tar.gz --markdown 20240525/d/django-model-helper/0.1.5-0.1.9/README.md --exclude *.pyd
+[2024-05-25 05:15:07] INFO root fetch - processPackages [RobotRaconteur]: Downloading https://files.pythonhosted.org/packages/72/2a/92685d198d250369ec1dc48d50f54cf21b271080ecf9b3bdf3ab4f18701d/RobotRaconteur-1.2.0-cp39-cp39-win_amd64.whl
+[2024-05-25 05:15:07] INFO root fetch - processPackages [mojo-interop]: executing diffoscope
+[2024-05-25 05:15:07] INFO root fetch - processPackages [mojo-interop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_interop-1.3.8.tar.gz tmp/mojo_interop-1.3.9.tar.gz --markdown 20240525/m/mojo-interop/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-25 05:15:08] INFO root fetch - processPackages [Chrfinder]: Downloading https://files.pythonhosted.org/packages/50/d6/65544028e5f18eca248205fc238d37a9360a722153e7fdebb755300072e4/chrfinder-0.0.2.tar.gz
+[2024-05-25 05:15:08] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/45/d8/eb96c4f25b6e1364802605d676665aa399b91c794204144842ef4c27fb47/odoo_addon_account_payment_order-17.0.1.1.0.4-py3-none-any.whl
+[2024-05-25 05:15:08] INFO root fetch - processPackages [django-model-helper]: Remove: archive file [/home/abi/fetcher/tmp/django-model-helper-0.1.5.tar.gz]
+[2024-05-25 05:15:08] INFO root fetch - processPackages [django-model-helper]: Remove: archive file [/home/abi/fetcher/tmp/django-model-helper-0.1.9.tar.gz]
+[2024-05-25 05:15:08] INFO root fetch - main [MainThread]: End processing [django-model-helper]: success
+[2024-05-25 05:15:08] INFO root fetch - processPackages [odoo-addon-account-payment-order]: executing diffoscope
+[2024-05-25 05:15:08] INFO root fetch - processPackages [odoo-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_order-17.0.1.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_account_payment_order-17.0.1.1.0.4-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-account-payment-order/17.0.1.1.0.3-17.0.1.1.0.4/README.md --exclude *.pyd
+[2024-05-25 05:15:08] INFO root fetch - processPackages [Chrfinder]: executing diffoscope
+[2024-05-25 05:15:08] INFO root fetch - processPackages [Chrfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chrfinder-0.0.1.tar.gz tmp/chrfinder-0.0.2.tar.gz --markdown 20240525/C/Chrfinder/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 05:15:08] INFO root fetch - processPackages [RobotRaconteur]: Downloading https://files.pythonhosted.org/packages/d7/8b/55b595e0af4f90e2f09d71bdec67c876c0bf43fa7bd1dc38770c629ca3bd/RobotRaconteur-1.2.1-cp37-cp37m-win32.whl
+[2024-05-25 05:15:09] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_order-17.0.1.1.0.3-py3-none-any.whl.zip]
+[2024-05-25 05:15:09] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_order-17.0.1.1.0.4-py3-none-any.whl.zip]
+[2024-05-25 05:15:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-order]: success
+[2024-05-25 05:15:09] INFO root fetch - processPackages [Chrfinder]: Remove: archive file [/home/abi/fetcher/tmp/chrfinder-0.0.1.tar.gz]
+[2024-05-25 05:15:09] INFO root fetch - processPackages [Chrfinder]: Remove: archive file [/home/abi/fetcher/tmp/chrfinder-0.0.2.tar.gz]
+[2024-05-25 05:15:09] INFO root fetch - main [MainThread]: End processing [Chrfinder]: success
+[2024-05-25 05:15:09] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.8.tar.gz]
+[2024-05-25 05:15:09] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.9.tar.gz]
+[2024-05-25 05:15:09] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
+[2024-05-25 05:15:10] INFO root fetch - processPackages [RobotRaconteur]: executing diffoscope
+[2024-05-25 05:15:10] INFO root fetch - processPackages [RobotRaconteur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RobotRaconteur-1.2.0-cp39-cp39-win_amd64.whl.zip tmp/RobotRaconteur-1.2.1-cp37-cp37m-win32.whl.zip --markdown 20240525/R/RobotRaconteur/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-25 05:15:11] INFO root fetch - processPackages [RobotRaconteur]: Remove: archive file [/home/abi/fetcher/tmp/RobotRaconteur-1.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 05:15:11] INFO root fetch - processPackages [RobotRaconteur]: Remove: archive file [/home/abi/fetcher/tmp/RobotRaconteur-1.2.1-cp37-cp37m-win32.whl.zip]
+[2024-05-25 05:15:11] INFO root fetch - main [MainThread]: End processing [RobotRaconteur]: success
+[2024-05-25 05:15:11] INFO root fetch - main [MainThread]: Store serial: [23371598]
