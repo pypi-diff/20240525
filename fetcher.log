@@ -9927,3 +9927,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:56:37] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240523.tar.gz]
 [2024-05-25 08:56:37] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-05-25 08:56:37] INFO root fetch - main [MainThread]: Store serial: [23372641]
+[2024-05-25 08:58:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372641]
+[2024-05-25 08:58:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-report-substitute
+[2024-05-25 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iothpy
+[2024-05-25 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kal-middleware
+[2024-05-25 08:58:46] INFO root fetch - processPackages [odoo-addon-report-substitute]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-25 08:58:46] INFO root fetch - processPackages [iothpy]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-05-25 08:58:46] INFO root fetch - processPackages [odoo-addon-report-substitute]: Downloading https://files.pythonhosted.org/packages/6d/1d/0fcddf6218bc03cb5772784e2ff79411fdcfbdd70ec31c240d3a7b49e6da/odoo_addon_report_substitute-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-25 08:58:46] INFO root fetch - processPackages [kal-middleware]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-25 08:58:46] INFO root fetch - processPackages [iothpy]: Downloading https://files.pythonhosted.org/packages/93/51/1e27ef81f99e4dd1bfa04bd0a3db2d429aa304c0b63c3c89e7d8bbdf4c21/iothpy-1.3.3.tar.gz
+[2024-05-25 08:58:47] INFO root fetch - processPackages [kal-middleware]: Downloading https://files.pythonhosted.org/packages/83/00/f1d099d478d2180a802fb36711b49aaf72dbfea6956e4bf7792c61da31c1/kal_middleware-0.0.6.tar.gz
+[2024-05-25 08:58:47] INFO root fetch - processPackages [odoo-addon-report-substitute]: Downloading https://files.pythonhosted.org/packages/71/b3/36ff324a29c85b7502cbea5994c27d24c2bb7315ab667ebee19af7cf9379/odoo_addon_report_substitute-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-25 08:58:47] INFO root fetch - processPackages [odoo-addon-report-substitute]: executing diffoscope
+[2024-05-25 08:58:47] INFO root fetch - processPackages [odoo-addon-report-substitute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_report_substitute-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_report_substitute-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-report-substitute/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-25 08:58:47] INFO root fetch - processPackages [iothpy]: Downloading https://files.pythonhosted.org/packages/76/21/a76adb1212505fbd09f959007153b1bbffc5248c1dc00a2632231eb7e486/iothpy-1.3.4.tar.gz
+[2024-05-25 08:58:47] INFO root fetch - processPackages [iothpy]: executing diffoscope
+[2024-05-25 08:58:47] INFO root fetch - processPackages [iothpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iothpy-1.3.3.tar.gz tmp/iothpy-1.3.4.tar.gz --markdown 20240525/i/iothpy/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-05-25 08:58:47] INFO root fetch - processPackages [kal-middleware]: Downloading https://files.pythonhosted.org/packages/2b/ce/2aba40575deed19c2c419767c9801f30357c66f62b5c1419564460d9b76c/kal_middleware-0.0.7.tar.gz
+[2024-05-25 08:58:47] INFO root fetch - processPackages [kal-middleware]: executing diffoscope
+[2024-05-25 08:58:47] INFO root fetch - processPackages [kal-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kal_middleware-0.0.6.tar.gz tmp/kal_middleware-0.0.7.tar.gz --markdown 20240525/k/kal-middleware/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-25 08:58:47] INFO root fetch - processPackages [odoo-addon-report-substitute]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_report_substitute-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-25 08:58:47] INFO root fetch - processPackages [odoo-addon-report-substitute]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_report_substitute-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-25 08:58:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-report-substitute]: success
+[2024-05-25 08:58:48] INFO root fetch - processPackages [iothpy]: Remove: archive file [/home/abi/fetcher/tmp/iothpy-1.3.3.tar.gz]
+[2024-05-25 08:58:48] INFO root fetch - processPackages [iothpy]: Remove: archive file [/home/abi/fetcher/tmp/iothpy-1.3.4.tar.gz]
+[2024-05-25 08:58:48] INFO root fetch - main [MainThread]: End processing [iothpy]: success
+[2024-05-25 08:58:48] INFO root fetch - processPackages [kal-middleware]: Remove: archive file [/home/abi/fetcher/tmp/kal_middleware-0.0.6.tar.gz]
+[2024-05-25 08:58:48] INFO root fetch - processPackages [kal-middleware]: Remove: archive file [/home/abi/fetcher/tmp/kal_middleware-0.0.7.tar.gz]
+[2024-05-25 08:58:48] INFO root fetch - main [MainThread]: End processing [kal-middleware]: success
+[2024-05-25 08:58:48] INFO root fetch - main [MainThread]: Store serial: [23372650]
