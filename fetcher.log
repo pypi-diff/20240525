@@ -14475,3 +14475,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:57:42] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-1.5.0b3.tar.gz]
 [2024-05-25 14:57:42] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-25 14:57:42] INFO root fetch - main [MainThread]: Store serial: [23374763]
+[2024-05-25 14:59:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374763]
+[2024-05-25 14:59:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 14:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fucktop
+[2024-05-25 14:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upsonic-legacy
+[2024-05-25 14:59:51] WARNING root fetch - processPackages [fucktop]: Skipping, unable to determine old version
+[2024-05-25 14:59:51] INFO root fetch - main [MainThread]: End processing [fucktop] error
+[2024-05-25 14:59:51] INFO root fetch - processPackages [upsonic-legacy]: New version: [0.27.0] Old Version: [0.26.0]
+[2024-05-25 14:59:51] INFO root fetch - processPackages [upsonic-legacy]: Downloading https://files.pythonhosted.org/packages/f0/11/18f142731cdc16f1851d5c1907edadf5b9c9e2e6f877ce4fb8f5bbcc3780/upsonic_legacy-0.26.0.tar.gz
+[2024-05-25 14:59:51] INFO root fetch - processPackages [upsonic-legacy]: Downloading https://files.pythonhosted.org/packages/48/83/678b7ad52d4ccf98d30c80443849dfd545da228c5293bd900667c64f1a3e/upsonic_legacy-0.27.0.tar.gz
+[2024-05-25 14:59:52] INFO root fetch - processPackages [upsonic-legacy]: executing diffoscope
+[2024-05-25 14:59:52] INFO root fetch - processPackages [upsonic-legacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upsonic_legacy-0.26.0.tar.gz tmp/upsonic_legacy-0.27.0.tar.gz --markdown 20240525/u/upsonic-legacy/0.26.0-0.27.0/README.md --exclude *.pyd
+[2024-05-25 14:59:52] INFO root fetch - processPackages [upsonic-legacy]: Remove: archive file [/home/abi/fetcher/tmp/upsonic_legacy-0.26.0.tar.gz]
+[2024-05-25 14:59:52] INFO root fetch - processPackages [upsonic-legacy]: Remove: archive file [/home/abi/fetcher/tmp/upsonic_legacy-0.27.0.tar.gz]
+[2024-05-25 14:59:52] INFO root fetch - main [MainThread]: End processing [upsonic-legacy]: success
+[2024-05-25 14:59:52] INFO root fetch - main [MainThread]: Store serial: [23374768]
