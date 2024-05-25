@@ -22627,3 +22627,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:44:02] INFO root fetch - processPackages [blackboxai]: Remove: archive file [/home/abi/fetcher/tmp/blackboxai-2.8.tar.gz]
 [2024-05-25 22:44:02] INFO root fetch - main [MainThread]: End processing [blackboxai]: success
 [2024-05-25 22:44:02] INFO root fetch - main [MainThread]: Store serial: [23377874]
+[2024-05-25 22:46:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377874]
+[2024-05-25 22:46:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 22:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fetch-the-specs
+[2024-05-25 22:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxyfullscraper
+[2024-05-25 22:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OpenAI-Python-Client
+[2024-05-25 22:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dreams-core
+[2024-05-25 22:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-esios
+[2024-05-25 22:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-db-geventpool
+[2024-05-25 22:46:11] WARNING root fetch - processPackages [fetch-the-specs]: Skipping, unable to determine old version
+[2024-05-25 22:46:11] INFO root fetch - main [MainThread]: End processing [fetch-the-specs] error
+[2024-05-25 22:46:11] INFO root fetch - processPackages [python-esios]: New version: [0.2.1] Old Version: [0.1.7]
+[2024-05-25 22:46:11] INFO root fetch - processPackages [OpenAI-Python-Client]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-25 22:46:11] INFO root fetch - processPackages [dreams-core]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 22:46:11] WARNING root fetch - processPackages [proxyfullscraper]: Skipping, unable to determine old version
+[2024-05-25 22:46:11] INFO root fetch - main [MainThread]: End processing [proxyfullscraper] error
+[2024-05-25 22:46:11] INFO root fetch - processPackages [django-db-geventpool]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-25 22:46:11] INFO root fetch - processPackages [OpenAI-Python-Client]: Downloading https://files.pythonhosted.org/packages/a9/05/6162f67bc333b4e7196869bfcd36075fd83ea0ef5f4f37a905485e372b0f/openai_python_client-0.1.0.tar.gz
+[2024-05-25 22:46:11] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/d5/c2/586579601e743e396a7351436eab8cff06fa1b439cb1f578d8c67a4e661a/dreams_core-0.1.0.tar.gz
+[2024-05-25 22:46:11] INFO root fetch - processPackages [django-db-geventpool]: Downloading https://files.pythonhosted.org/packages/2d/de/1f0e2733d7fc7709aef4e43e18a9de8a76493bea3dcecfb85de4133cfc75/django-db-geventpool-4.0.2.tar.gz
+[2024-05-25 22:46:11] INFO root fetch - processPackages [python-esios]: Downloading https://files.pythonhosted.org/packages/39/ea/8dd24c397276da1796719a0492747a51d037e731f89d17bc3470ae22096d/python_esios-0.1.7.tar.gz
+[2024-05-25 22:46:11] INFO root fetch - processPackages [OpenAI-Python-Client]: Downloading https://files.pythonhosted.org/packages/35/a8/aa21fd8611b8ba7961bd9b294689bea63c86c99cc5eda4a189055f713f7e/openai_python_client-0.2.0.tar.gz
+[2024-05-25 22:46:12] INFO root fetch - processPackages [dreams-core]: Downloading https://files.pythonhosted.org/packages/45/15/afc6ce84e17d85e774dc633e1328cc366be5c38023794f119066b810617b/dreams_core-0.1.1.tar.gz
+[2024-05-25 22:46:12] INFO root fetch - processPackages [django-db-geventpool]: Downloading https://files.pythonhosted.org/packages/1d/1f/03001b3af9e7cdec8d8e63dfc716453864d92a6c52d62417a885ffd73b24/django_db_geventpool-4.0.3.tar.gz
+[2024-05-25 22:46:12] INFO root fetch - processPackages [python-esios]: Downloading https://files.pythonhosted.org/packages/4e/94/b027da0c02725edfdd608a7706722db02c4fb6fcbc3e16a967a8e877cdf9/python_esios-0.2.1.tar.gz
+[2024-05-25 22:46:12] INFO root fetch - processPackages [OpenAI-Python-Client]: executing diffoscope
+[2024-05-25 22:46:12] INFO root fetch - processPackages [OpenAI-Python-Client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_python_client-0.1.0.tar.gz tmp/openai_python_client-0.2.0.tar.gz --markdown 20240525/O/OpenAI-Python-Client/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-25 22:46:12] INFO root fetch - processPackages [dreams-core]: executing diffoscope
+[2024-05-25 22:46:12] INFO root fetch - processPackages [dreams-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreams_core-0.1.0.tar.gz tmp/dreams_core-0.1.1.tar.gz --markdown 20240525/d/dreams-core/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 22:46:12] INFO root fetch - processPackages [django-db-geventpool]: executing diffoscope
+[2024-05-25 22:46:12] INFO root fetch - processPackages [django-db-geventpool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-db-geventpool-4.0.2.tar.gz tmp/django_db_geventpool-4.0.3.tar.gz --markdown 20240525/d/django-db-geventpool/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-25 22:46:12] INFO root fetch - processPackages [python-esios]: executing diffoscope
+[2024-05-25 22:46:12] INFO root fetch - processPackages [python-esios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_esios-0.1.7.tar.gz tmp/python_esios-0.2.1.tar.gz --markdown 20240525/p/python-esios/0.1.7-0.2.1/README.md --exclude *.pyd
+[2024-05-25 22:46:12] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.1.0.tar.gz]
+[2024-05-25 22:46:12] INFO root fetch - processPackages [dreams-core]: Remove: archive file [/home/abi/fetcher/tmp/dreams_core-0.1.1.tar.gz]
+[2024-05-25 22:46:12] INFO root fetch - main [MainThread]: End processing [dreams-core]: success
+[2024-05-25 22:46:12] INFO root fetch - processPackages [django-db-geventpool]: Remove: archive file [/home/abi/fetcher/tmp/django-db-geventpool-4.0.2.tar.gz]
+[2024-05-25 22:46:12] INFO root fetch - processPackages [django-db-geventpool]: Remove: archive file [/home/abi/fetcher/tmp/django_db_geventpool-4.0.3.tar.gz]
+[2024-05-25 22:46:12] INFO root fetch - main [MainThread]: End processing [django-db-geventpool]: success
+[2024-05-25 22:46:12] INFO root fetch - processPackages [python-esios]: Remove: archive file [/home/abi/fetcher/tmp/python_esios-0.1.7.tar.gz]
+[2024-05-25 22:46:12] INFO root fetch - processPackages [python-esios]: Remove: archive file [/home/abi/fetcher/tmp/python_esios-0.2.1.tar.gz]
+[2024-05-25 22:46:12] INFO root fetch - main [MainThread]: End processing [python-esios]: success
+[2024-05-25 22:46:13] INFO root fetch - processPackages [OpenAI-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/openai_python_client-0.1.0.tar.gz]
+[2024-05-25 22:46:13] INFO root fetch - processPackages [OpenAI-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/openai_python_client-0.2.0.tar.gz]
+[2024-05-25 22:46:13] INFO root fetch - main [MainThread]: End processing [OpenAI-Python-Client]: success
+[2024-05-25 22:46:13] INFO root fetch - main [MainThread]: Store serial: [23377895]
