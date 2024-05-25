@@ -22898,3 +22898,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:03:41] INFO root fetch - processPackages [pipackager]: Remove: archive file [/home/abi/fetcher/tmp/pipackager-0.2.0.tar.gz]
 [2024-05-25 23:03:41] INFO root fetch - main [MainThread]: End processing [pipackager]: success
 [2024-05-25 23:03:41] INFO root fetch - main [MainThread]: Store serial: [23377971]
+[2024-05-25 23:05:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377971]
+[2024-05-25 23:05:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 23:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dtogen
+[2024-05-25 23:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dtogen
+[2024-05-25 23:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtogen
+[2024-05-25 23:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dtogen
+[2024-05-25 23:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dtogen
+[2024-05-25 23:05:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tinyticker
+[2024-05-25 23:05:50] INFO root fetch - processPackages [tinyticker]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-25 23:05:50] INFO root fetch - processPackages [dtogen]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 23:05:50] INFO root fetch - processPackages [dtogen]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 23:05:50] INFO root fetch - processPackages [dtogen]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 23:05:50] INFO root fetch - processPackages [dtogen]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 23:05:50] INFO root fetch - processPackages [dtogen]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 23:05:50] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/db/25/91271a49b3ef5c8c0db57f10cf4f48437fed3f9f3d717178a7b1fd480abb/tinyticker-0.7.3.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/7b/d0/2d5e13913727f276f7172df8c66c03ce2992c5d2df2d32bfd311587fb248/dtogen-0.0.8.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/7b/d0/2d5e13913727f276f7172df8c66c03ce2992c5d2df2d32bfd311587fb248/dtogen-0.0.8.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/7b/d0/2d5e13913727f276f7172df8c66c03ce2992c5d2df2d32bfd311587fb248/dtogen-0.0.8.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/7b/d0/2d5e13913727f276f7172df8c66c03ce2992c5d2df2d32bfd311587fb248/dtogen-0.0.8.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/7b/d0/2d5e13913727f276f7172df8c66c03ce2992c5d2df2d32bfd311587fb248/dtogen-0.0.8.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [tinyticker]: Downloading https://files.pythonhosted.org/packages/bc/d9/8d62948e2f0610d70f759650fa5a2a2d6937b372f9b45a70b9a34cfda402/tinyticker-0.7.4.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [tinyticker]: executing diffoscope
+[2024-05-25 23:05:51] INFO root fetch - processPackages [tinyticker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyticker-0.7.3.tar.gz tmp/tinyticker-0.7.4.tar.gz --markdown 20240525/t/tinyticker/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/23/28/31d5753e9801893d664709f9ca15838c2086e768f2b1eda54714ae6c44a5/dtogen-0.0.9.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/23/28/31d5753e9801893d664709f9ca15838c2086e768f2b1eda54714ae6c44a5/dtogen-0.0.9.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/23/28/31d5753e9801893d664709f9ca15838c2086e768f2b1eda54714ae6c44a5/dtogen-0.0.9.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/23/28/31d5753e9801893d664709f9ca15838c2086e768f2b1eda54714ae6c44a5/dtogen-0.0.9.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: Downloading https://files.pythonhosted.org/packages/23/28/31d5753e9801893d664709f9ca15838c2086e768f2b1eda54714ae6c44a5/dtogen-0.0.9.tar.gz
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: executing diffoscope
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtogen-0.0.8.tar.gz tmp/dtogen-0.0.9.tar.gz --markdown 20240525/d/dtogen/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: executing diffoscope
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtogen-0.0.8.tar.gz tmp/dtogen-0.0.9.tar.gz --markdown 20240525/d/dtogen/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: executing diffoscope
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtogen-0.0.8.tar.gz tmp/dtogen-0.0.9.tar.gz --markdown 20240525/d/dtogen/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: executing diffoscope
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtogen-0.0.8.tar.gz tmp/dtogen-0.0.9.tar.gz --markdown 20240525/d/dtogen/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: executing diffoscope
+[2024-05-25 23:05:51] INFO root fetch - processPackages [dtogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtogen-0.0.8.tar.gz tmp/dtogen-0.0.9.tar.gz --markdown 20240525/d/dtogen/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 23:05:52] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.7.3.tar.gz]
+[2024-05-25 23:05:52] INFO root fetch - processPackages [tinyticker]: Remove: archive file [/home/abi/fetcher/tmp/tinyticker-0.7.4.tar.gz]
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [tinyticker]: success
+[2024-05-25 23:05:52] INFO root fetch - processPackages [dtogen]: Remove: archive file [/home/abi/fetcher/tmp/dtogen-0.0.8.tar.gz]
+[2024-05-25 23:05:52] INFO root fetch - processPackages [dtogen]: Remove: archive file [/home/abi/fetcher/tmp/dtogen-0.0.9.tar.gz]
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
+[2024-05-25 23:05:52] INFO root fetch - main [MainThread]: Store serial: [23377988]
