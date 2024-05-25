@@ -6997,3 +6997,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:45:12] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
 [2024-05-25 03:45:12] INFO root fetch - main [MainThread]: End processing [baseball]: success
 [2024-05-25 03:45:12] INFO root fetch - main [MainThread]: Store serial: [23371259]
+[2024-05-25 03:47:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371259]
+[2024-05-25 03:47:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 03:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reddit-tts-bot
+[2024-05-25 03:47:21] INFO root fetch - processPackages [reddit-tts-bot]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-05-25 03:47:21] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/68/54/d36708005a8a035ced4fd0db1c7c1fe9807a8309b306fbe3d0e6986fd327/reddit_tts_bot-1.0.0.tar.gz
+[2024-05-25 03:47:21] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/6b/f1/65749aa68a710283a9f05711f359e2bc68a4aa59562df0be0d8d3ba79edf/reddit_tts_bot-1.0.2.tar.gz
+[2024-05-25 03:47:22] INFO root fetch - processPackages [reddit-tts-bot]: executing diffoscope
+[2024-05-25 03:47:22] INFO root fetch - processPackages [reddit-tts-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit_tts_bot-1.0.0.tar.gz tmp/reddit_tts_bot-1.0.2.tar.gz --markdown 20240525/r/reddit-tts-bot/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-05-25 03:47:22] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.0.tar.gz]
+[2024-05-25 03:47:22] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.2.tar.gz]
+[2024-05-25 03:47:22] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
+[2024-05-25 03:47:22] INFO root fetch - main [MainThread]: Store serial: [23371262]
