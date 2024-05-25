@@ -17902,3 +17902,51 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:54:43] WARNING root fetch - processPackages [osbot-github]: Skipping, unable to determine old version
 [2024-05-25 16:54:43] INFO root fetch - main [MainThread]: End processing [osbot-github] error
 [2024-05-25 16:54:43] INFO root fetch - main [MainThread]: Store serial: [23375890]
+[2024-05-25 16:56:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375890]
+[2024-05-25 16:56:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 16:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moveread-pipelines-preprocess
+[2024-05-25 16:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-pipelines-ocr-predict
+[2024-05-25 16:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quite6
+[2024-05-25 16:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freegenius
+[2024-05-25 16:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: muttfuzz
+[2024-05-25 16:56:51] INFO root fetch - processPackages [quite6]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 16:56:51] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 16:56:51] INFO root fetch - processPackages [muttfuzz]: New version: [0.6.8] Old Version: [0.6.7]
+[2024-05-25 16:56:51] INFO root fetch - processPackages [moveread-pipelines-preprocess]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 16:56:51] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 16:56:51] INFO root fetch - processPackages [quite6]: Downloading https://files.pythonhosted.org/packages/35/da/b3dcf7b08db08f839b3fac0f6d2049242ab1cf3d20adb06220395298e5ba/quite6-1.0.3.tar.gz
+[2024-05-25 16:56:51] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Downloading https://files.pythonhosted.org/packages/6a/e5/e2a1e58c46cebec675e4908f0e0362eb8f5badc7368907278b361a43085a/moveread_pipelines_ocr_predict-0.1.5.tar.gz
+[2024-05-25 16:56:51] INFO root fetch - processPackages [muttfuzz]: Downloading https://files.pythonhosted.org/packages/98/40/df05d051be0c71e8638a843dbfb294c5ff9618e96107452435c190d91c74/muttfuzz-0.6.7-py3-none-any.whl
+[2024-05-25 16:56:51] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Downloading https://files.pythonhosted.org/packages/db/12/a138208e03f1c66cb748d3dcc8ca15082b3290c62149ce8c39d1dfe06c44/moveread_pipelines_preprocess-0.1.5.tar.gz
+[2024-05-25 16:56:51] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 16:56:52] INFO root fetch - processPackages [quite6]: Downloading https://files.pythonhosted.org/packages/7b/b6/07e6c988fffaec0ecb4bdca9a0f08023dbc4b12c4c1b80db89013fe2f89e/quite6-1.0.4.tar.gz
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Downloading https://files.pythonhosted.org/packages/a8/4c/01c64ceb3ea15beef9da036cef773e85f341a9b90c025f5835b242b01065/moveread_pipelines_ocr_predict-0.1.6.tar.gz
+[2024-05-25 16:56:52] INFO root fetch - processPackages [quite6]: executing diffoscope
+[2024-05-25 16:56:52] INFO root fetch - processPackages [quite6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quite6-1.0.3.tar.gz tmp/quite6-1.0.4.tar.gz --markdown 20240525/q/quite6/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 16:56:52] INFO root fetch - processPackages [muttfuzz]: Downloading https://files.pythonhosted.org/packages/6d/02/bfb348d592b033251e12d63a780b3386cc8f5b2cccc4f3d43810df20be17/muttfuzz-0.6.8-py3-none-any.whl
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Downloading https://files.pythonhosted.org/packages/7e/78/e1eec20a193d02258b1d5527e542d1b6934db75f13ae80ab1f82ad4ac182/moveread_pipelines_preprocess-0.1.6.tar.gz
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: executing diffoscope
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_ocr_predict-0.1.5.tar.gz tmp/moveread_pipelines_ocr_predict-0.1.6.tar.gz --markdown 20240525/m/moveread-pipelines-ocr-predict/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-preprocess]: executing diffoscope
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_preprocess-0.1.5.tar.gz tmp/moveread_pipelines_preprocess-0.1.6.tar.gz --markdown 20240525/m/moveread-pipelines-preprocess/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 16:56:52] INFO root fetch - processPackages [muttfuzz]: executing diffoscope
+[2024-05-25 16:56:52] INFO root fetch - processPackages [muttfuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muttfuzz-0.6.7-py3-none-any.whl.zip tmp/muttfuzz-0.6.8-py3-none-any.whl.zip --markdown 20240525/m/muttfuzz/0.6.7-0.6.8/README.md --exclude *.pyd
+[2024-05-25 16:56:52] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 16:56:52] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 16:56:52] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_ocr_predict-0.1.5.tar.gz]
+[2024-05-25 16:56:52] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_ocr_predict-0.1.6.tar.gz]
+[2024-05-25 16:56:52] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-ocr-predict]: success
+[2024-05-25 16:56:53] INFO root fetch - processPackages [muttfuzz]: Remove: archive file [/home/abi/fetcher/tmp/muttfuzz-0.6.7-py3-none-any.whl.zip]
+[2024-05-25 16:56:53] INFO root fetch - processPackages [muttfuzz]: Remove: archive file [/home/abi/fetcher/tmp/muttfuzz-0.6.8-py3-none-any.whl.zip]
+[2024-05-25 16:56:53] INFO root fetch - main [MainThread]: End processing [muttfuzz]: success
+[2024-05-25 16:56:53] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_preprocess-0.1.5.tar.gz]
+[2024-05-25 16:56:53] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_preprocess-0.1.6.tar.gz]
+[2024-05-25 16:56:53] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-preprocess]: success
+[2024-05-25 16:56:53] INFO root fetch - processPackages [quite6]: Remove: archive file [/home/abi/fetcher/tmp/quite6-1.0.3.tar.gz]
+[2024-05-25 16:56:53] INFO root fetch - processPackages [quite6]: Remove: archive file [/home/abi/fetcher/tmp/quite6-1.0.4.tar.gz]
+[2024-05-25 16:56:53] INFO root fetch - main [MainThread]: End processing [quite6]: success
+[2024-05-25 16:56:54] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 16:56:54] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 16:56:54] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 16:56:54] INFO root fetch - main [MainThread]: Store serial: [23375905]
