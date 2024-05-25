@@ -19605,3 +19605,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:51:08] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.3.0.tar.gz]
 [2024-05-25 18:51:08] INFO root fetch - main [MainThread]: End processing [kgr]: success
 [2024-05-25 18:51:08] INFO root fetch - main [MainThread]: Store serial: [23376566]
+[2024-05-25 18:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376566]
+[2024-05-25 18:53:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 18:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biogeoloc
+[2024-05-25 18:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-05-25 18:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moveread-pipelines-dfy
+[2024-05-25 18:53:19] INFO root fetch - processPackages [moveread-pipelines-dfy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 18:53:19] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/a0/4a/aee2cbf4e9407eef240abeb0e2bcde4d6e3ec27c7b880df7a98d77acf13f/moveread_pipelines_dfy-0.1.8.tar.gz
+[2024-05-25 18:53:19] INFO root fetch - processPackages [biogeoloc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 18:53:19] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.414] Old Version: [0.45.20240525.413]
+[2024-05-25 18:53:19] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/ba/f7/aa96e4d48974bfb60bb12632490730bc47c0a369b8f522b43a61084b24f9/moveread_pipelines_dfy-0.1.9.tar.gz
+[2024-05-25 18:53:19] INFO root fetch - processPackages [biogeoloc]: Downloading https://files.pythonhosted.org/packages/a9/f5/e42b66b30c476bd7de872ef2204d84439425d6478ff5db38a584c071b420/biogeoloc-0.0.1.tar.gz
+[2024-05-25 18:53:19] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/8a/2a/5c1c26471fea3efff42590e3a96b1cffc4dea0707294afcdd723562115c2/pkscreener-0.45.20240525.413-cp311-cp311-win_amd64.whl
+[2024-05-25 18:53:19] INFO root fetch - processPackages [moveread-pipelines-dfy]: executing diffoscope
+[2024-05-25 18:53:19] INFO root fetch - processPackages [moveread-pipelines-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_dfy-0.1.8.tar.gz tmp/moveread_pipelines_dfy-0.1.9.tar.gz --markdown 20240525/m/moveread-pipelines-dfy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 18:53:19] INFO root fetch - processPackages [biogeoloc]: Downloading https://files.pythonhosted.org/packages/d3/24/417e3c99bcaa515031f7923ea8cb8ff9092297e556488c9f4da62080a024/biogeoloc-0.0.2.tar.gz
+[2024-05-25 18:53:19] INFO root fetch - processPackages [biogeoloc]: executing diffoscope
+[2024-05-25 18:53:19] INFO root fetch - processPackages [biogeoloc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biogeoloc-0.0.1.tar.gz tmp/biogeoloc-0.0.2.tar.gz --markdown 20240525/b/biogeoloc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 18:53:19] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/8e/bc/8ea59961dfb4c3a972a89ee5fc9743f1962344676c81d51b7651a5ae729e/pkscreener-0.45.20240525.414.tar.gz
+[2024-05-25 18:53:20] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 18:53:20] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.413-cp311-cp311-win_amd64.whl.zip tmp/pkscreener-0.45.20240525.414.tar.gz --markdown 20240525/p/pkscreener/0.45.20240525.413-0.45.20240525.414/README.md --exclude *.pyd
+[2024-05-25 18:53:20] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.8.tar.gz]
+[2024-05-25 18:53:20] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.9.tar.gz]
+[2024-05-25 18:53:20] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-dfy]: success
+[2024-05-25 18:53:20] INFO root fetch - processPackages [biogeoloc]: Remove: archive file [/home/abi/fetcher/tmp/biogeoloc-0.0.1.tar.gz]
+[2024-05-25 18:53:20] INFO root fetch - processPackages [biogeoloc]: Remove: archive file [/home/abi/fetcher/tmp/biogeoloc-0.0.2.tar.gz]
+[2024-05-25 18:53:20] INFO root fetch - main [MainThread]: End processing [biogeoloc]: success
+[2024-05-25 18:53:21] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.413-cp311-cp311-win_amd64.whl.zip]
+[2024-05-25 18:53:21] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.414.tar.gz]
+[2024-05-25 18:53:21] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 18:53:21] INFO root fetch - main [MainThread]: Store serial: [23376577]
