@@ -21580,3 +21580,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [that-depends]: success
 [2024-05-25 21:31:07] INFO root fetch - main [MainThread]: End processing [g910-gkeys]: success
 [2024-05-25 21:31:07] INFO root fetch - main [MainThread]: Store serial: [23377468]
+[2024-05-25 21:33:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377468]
+[2024-05-25 21:33:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EcoStock
+[2024-05-25 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litellm
+[2024-05-25 21:33:16] INFO root fetch - processPackages [EcoStock]: New version: [0.7] Old Version: [0.5.2]
+[2024-05-25 21:33:16] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-25 21:33:16] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/15/f1/a680c76752c7a8d3b37d91d1a68ff84fc98e8229397f42cb929e08695dfb/EcoStock-0.5.2.tar.gz
+[2024-05-25 21:33:16] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-25 21:33:17] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/e7/82/315a74250230986a5d6102a316c8bc03b3543f4707ecd7f8234a908708c8/ecostock-0.7.tar.gz
+[2024-05-25 21:33:17] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-25 21:33:17] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EcoStock-0.5.2.tar.gz tmp/ecostock-0.7.tar.gz --markdown 20240525/E/EcoStock/0.5.2-0.7/README.md --exclude *.pyd
+[2024-05-25 21:33:17] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-25 21:33:17] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-25 21:33:17] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240525/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-25 21:33:17] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.5.2.tar.gz]
+[2024-05-25 21:33:17] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-0.7.tar.gz]
+[2024-05-25 21:33:17] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-25 21:33:18] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-25 21:33:18] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-25 21:33:18] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-25 21:33:18] INFO root fetch - main [MainThread]: Store serial: [23377476]
