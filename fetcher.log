@@ -10899,3 +10899,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:01:59] INFO root fetch - processPackages [scrathon-payments]: Remove: archive file [/home/abi/fetcher/tmp/scrathon_payments-0.2.6.tar.gz]
 [2024-05-25 10:01:59] INFO root fetch - main [MainThread]: End processing [scrathon-payments]: success
 [2024-05-25 10:01:59] INFO root fetch - main [MainThread]: Store serial: [23373016]
+[2024-05-25 10:04:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373016]
+[2024-05-25 10:04:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 10:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langfun
+[2024-05-25 10:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usso
+[2024-05-25 10:04:08] INFO root fetch - processPackages [usso]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 10:04:08] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240524] Old Version: [0.0.2.dev20240523]
+[2024-05-25 10:04:08] INFO root fetch - processPackages [usso]: Downloading https://files.pythonhosted.org/packages/32/6b/affc9cd10fca733f24a31679e715e276c8462d5b2199f3d9a35123e9e7d2/usso-0.8.0.tar.gz
+[2024-05-25 10:04:08] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/fb/b3/305937079adf44dbed13d30a31c836ab241a4f4ab122314b40376f255936/langfun-0.0.2.dev20240523.tar.gz
+[2024-05-25 10:04:08] INFO root fetch - processPackages [usso]: Downloading https://files.pythonhosted.org/packages/70/21/51c7a85adbbfdaf9730493f23f5076201187ebeed4cf1923b633e2a66a14/usso-0.9.0.tar.gz
+[2024-05-25 10:04:08] INFO root fetch - processPackages [usso]: executing diffoscope
+[2024-05-25 10:04:08] INFO root fetch - processPackages [usso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usso-0.8.0.tar.gz tmp/usso-0.9.0.tar.gz --markdown 20240525/u/usso/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 10:04:08] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/15/7a/051227e446fa6d2db4152b2319238710ba7bcaabadbe69d276a2055de981/langfun-0.0.2.dev20240524.tar.gz
+[2024-05-25 10:04:08] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-25 10:04:08] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240523.tar.gz tmp/langfun-0.0.2.dev20240524.tar.gz --markdown 20240525/l/langfun/0.0.2.dev20240523-0.0.2.dev20240524/README.md --exclude *.pyd
+[2024-05-25 10:04:09] INFO root fetch - processPackages [usso]: Remove: archive file [/home/abi/fetcher/tmp/usso-0.8.0.tar.gz]
+[2024-05-25 10:04:09] INFO root fetch - processPackages [usso]: Remove: archive file [/home/abi/fetcher/tmp/usso-0.9.0.tar.gz]
+[2024-05-25 10:04:09] INFO root fetch - main [MainThread]: End processing [usso]: success
+[2024-05-25 10:04:09] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240523.tar.gz]
+[2024-05-25 10:04:09] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240524.tar.gz]
+[2024-05-25 10:04:09] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-25 10:04:09] INFO root fetch - main [MainThread]: Store serial: [23373022]
