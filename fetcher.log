@@ -20098,3 +20098,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:21:57] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
 [2024-05-25 19:21:57] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-25 19:21:57] INFO root fetch - main [MainThread]: Store serial: [23376795]
+[2024-05-25 19:24:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376795]
+[2024-05-25 19:24:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 19:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-postcodes
+[2024-05-25 19:24:06] INFO root fetch - processPackages [django-postcodes]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 19:24:07] INFO root fetch - processPackages [django-postcodes]: Downloading https://files.pythonhosted.org/packages/c8/ab/24620b5588f74c54acd444b1960f72d24981650b436e4b78c075ecaf50ff/django_postcodes-1.0.1.tar.gz
+[2024-05-25 19:24:07] INFO root fetch - processPackages [django-postcodes]: Downloading https://files.pythonhosted.org/packages/38/7c/8511468ef03597052db6a7fa77d5222fe2dae066e674b00be86cb94518a6/django_postcodes-1.0.2.tar.gz
+[2024-05-25 19:24:07] INFO root fetch - processPackages [django-postcodes]: executing diffoscope
+[2024-05-25 19:24:07] INFO root fetch - processPackages [django-postcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_postcodes-1.0.1.tar.gz tmp/django_postcodes-1.0.2.tar.gz --markdown 20240525/d/django-postcodes/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 19:24:08] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.1.tar.gz]
+[2024-05-25 19:24:08] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.2.tar.gz]
+[2024-05-25 19:24:08] INFO root fetch - main [MainThread]: End processing [django-postcodes]: success
+[2024-05-25 19:24:08] INFO root fetch - main [MainThread]: Store serial: [23376798]
