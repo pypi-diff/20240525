@@ -17129,3 +17129,42 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:13:01] INFO root fetch - processPackages [pyZohoAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyzohoapi-1.0.0.tar.gz]
 [2024-05-25 16:13:01] INFO root fetch - main [MainThread]: End processing [pyZohoAPI]: success
 [2024-05-25 16:13:01] INFO root fetch - main [MainThread]: Store serial: [23375610]
+[2024-05-25 16:15:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375610]
+[2024-05-25 16:15:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 16:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botrun-google-docs-reader
+[2024-05-25 16:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-25 16:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alabamaEncoder
+[2024-05-25 16:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pneumonia_model_package
+[2024-05-25 16:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slthcore
+[2024-05-25 16:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-05-25 16:15:10] WARNING root fetch - processPackages [botrun-google-docs-reader]: Skipping, unable to determine old version
+[2024-05-25 16:15:10] WARNING root fetch - processPackages [slthcore]: Skipping, unable to determine old version
+[2024-05-25 16:15:10] INFO root fetch - main [MainThread]: End processing [botrun-google-docs-reader] error
+[2024-05-25 16:15:10] INFO root fetch - main [MainThread]: End processing [slthcore] error
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 16:15:10] INFO root fetch - processPackages [alabamaEncoder]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-25 16:15:10] INFO root fetch - processPackages [pneumonia_model_package]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-25 16:15:10] INFO root fetch - processPackages [alabamaEncoder]: Downloading https://files.pythonhosted.org/packages/df/04/c314bd5cf82bcbf29c210314827a985b525e175ee091eea947f3f2b09e25/alabamaencoder-0.4.1.tar.gz
+[2024-05-25 16:15:10] INFO root fetch - processPackages [pneumonia_model_package]: Downloading https://files.pythonhosted.org/packages/54/d3/b805a62f15af73d231fbb3deea5cec590cc663c35a45a0750791b3670a60/pneumonia_model_package-0.1.0.tar.gz
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-25 16:15:10] WARNING root fetch - processPackages [pneumonia_model_package]: Skipping package: exceeds size limit 39671785>=10485760
+[2024-05-25 16:15:10] INFO root fetch - main [MainThread]: End processing [pneumonia_model_package] error
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-25 16:15:10] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240525/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-25 16:15:10] INFO root fetch - processPackages [alabamaEncoder]: Downloading https://files.pythonhosted.org/packages/c8/c8/34f1ecd34bc756a2cd8b5bf8c6c7c6b629a376e95f084c9dd685ac64fe55/alabamaencoder-0.4.2.tar.gz
+[2024-05-25 16:15:11] INFO root fetch - processPackages [alabamaEncoder]: executing diffoscope
+[2024-05-25 16:15:11] INFO root fetch - processPackages [alabamaEncoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alabamaencoder-0.4.1.tar.gz tmp/alabamaencoder-0.4.2.tar.gz --markdown 20240525/a/alabamaEncoder/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-25 16:15:11] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-25 16:15:11] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-25 16:15:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 16:15:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-25 16:15:11] INFO root fetch - processPackages [alabamaEncoder]: Remove: archive file [/home/abi/fetcher/tmp/alabamaencoder-0.4.1.tar.gz]
+[2024-05-25 16:15:11] INFO root fetch - processPackages [alabamaEncoder]: Remove: archive file [/home/abi/fetcher/tmp/alabamaencoder-0.4.2.tar.gz]
+[2024-05-25 16:15:11] INFO root fetch - main [MainThread]: End processing [alabamaEncoder]: success
+[2024-05-25 16:15:11] INFO root fetch - main [MainThread]: Store serial: [23375625]
