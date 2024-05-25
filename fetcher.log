@@ -22147,3 +22147,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-25 22:16:37] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-25 22:16:37] INFO root fetch - main [MainThread]: Store serial: [23377696]
+[2024-05-25 22:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377696]
+[2024-05-25 22:18:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 22:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: saq
+[2024-05-25 22:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EcoStock
+[2024-05-25 22:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vishgraphs
+[2024-05-25 22:18:46] INFO root fetch - processPackages [EcoStock]: New version: [1.0] Old Version: [0.9]
+[2024-05-25 22:18:46] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/5a/5e/7b17fca19270303e392a1474c071a0322c2d6d60f4ce03eacd7e40f23595/ecostock-0.9.tar.gz
+[2024-05-25 22:18:46] INFO root fetch - processPackages [saq]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-25 22:18:46] WARNING root fetch - processPackages [vishgraphs]: Skipping, unable to determine old version
+[2024-05-25 22:18:46] INFO root fetch - main [MainThread]: End processing [vishgraphs] error
+[2024-05-25 22:18:47] INFO root fetch - processPackages [saq]: Downloading https://files.pythonhosted.org/packages/46/5e/300657f7894f65e54efd047adb7004eb23dd6f2f678d014016a00350c504/saq-0.9.3.tar.gz
+[2024-05-25 22:18:47] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/42/ee/a08b9a074822dc07dbaf0a7760f0ef1d793e997056968ec5a0a3de391874/ecostock-1.0.tar.gz
+[2024-05-25 22:18:47] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-25 22:18:47] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecostock-0.9.tar.gz tmp/ecostock-1.0.tar.gz --markdown 20240525/E/EcoStock/0.9-1.0/README.md --exclude *.pyd
+[2024-05-25 22:18:47] INFO root fetch - processPackages [saq]: Downloading https://files.pythonhosted.org/packages/d7/68/6c0b0d0e519b86110e23d6a304520d05591afe5ccbdc05833a6ca2ba6b21/saq-0.9.4.tar.gz
+[2024-05-25 22:18:47] INFO root fetch - processPackages [saq]: executing diffoscope
+[2024-05-25 22:18:47] INFO root fetch - processPackages [saq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saq-0.9.3.tar.gz tmp/saq-0.9.4.tar.gz --markdown 20240525/s/saq/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-25 22:18:47] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-0.9.tar.gz]
+[2024-05-25 22:18:47] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.0.tar.gz]
+[2024-05-25 22:18:47] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-25 22:18:48] INFO root fetch - processPackages [saq]: Remove: archive file [/home/abi/fetcher/tmp/saq-0.9.3.tar.gz]
+[2024-05-25 22:18:48] INFO root fetch - processPackages [saq]: Remove: archive file [/home/abi/fetcher/tmp/saq-0.9.4.tar.gz]
+[2024-05-25 22:18:48] INFO root fetch - main [MainThread]: End processing [saq]: success
+[2024-05-25 22:18:48] INFO root fetch - main [MainThread]: Store serial: [23377707]
