@@ -15702,3 +15702,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:08:52] INFO root fetch - processPackages [xcompact3d-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/xcompact3d_toolbox-1.2.0rc1.tar.gz]
 [2024-05-25 15:08:52] INFO root fetch - main [MainThread]: End processing [xcompact3d-toolbox]: success
 [2024-05-25 15:08:52] INFO root fetch - main [MainThread]: Store serial: [23374976]
+[2024-05-25 15:10:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374976]
+[2024-05-25 15:11:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 15:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djpress
+[2024-05-25 15:11:02] INFO root fetch - processPackages [djpress]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 15:11:02] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/46/36/fadfd659f9adf2737e2fbd499408fdd92774fa6308942be4658b254e7c7e/djpress-0.2.1.tar.gz
+[2024-05-25 15:11:02] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/37/da/2cfde45421c4e328df9345882ba2377cdbdf06b8efccec349843ccb83768/djpress-0.2.2.tar.gz
+[2024-05-25 15:11:02] INFO root fetch - processPackages [djpress]: executing diffoscope
+[2024-05-25 15:11:02] INFO root fetch - processPackages [djpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djpress-0.2.1.tar.gz tmp/djpress-0.2.2.tar.gz --markdown 20240525/d/djpress/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 15:11:03] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.2.1.tar.gz]
+[2024-05-25 15:11:03] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.2.2.tar.gz]
+[2024-05-25 15:11:03] INFO root fetch - main [MainThread]: End processing [djpress]: success
+[2024-05-25 15:11:03] INFO root fetch - main [MainThread]: Store serial: [23374979]
