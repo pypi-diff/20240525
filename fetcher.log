@@ -21469,3 +21469,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:20:20] INFO root fetch - processPackages [bencode-rs]: Remove: archive file [/home/abi/fetcher/tmp/bencode_rs-0.0.2a2.tar.gz]
 [2024-05-25 21:20:20] INFO root fetch - main [MainThread]: End processing [bencode-rs]: success
 [2024-05-25 21:20:20] INFO root fetch - main [MainThread]: Store serial: [23377423]
+[2024-05-25 21:22:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377423]
+[2024-05-25 21:22:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 21:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-mongo-backend
+[2024-05-25 21:22:29] INFO root fetch - processPackages [django-mongo-backend]: New version: [0.27] Old Version: [0.26]
+[2024-05-25 21:22:29] INFO root fetch - processPackages [django-mongo-backend]: Downloading https://files.pythonhosted.org/packages/7e/de/4793f7ca63f328c0754c086e0f1a1d22f4816cb596d2c4dfefeaa33d6364/django_mongo_backend-0.26.tar.gz
+[2024-05-25 21:22:29] INFO root fetch - processPackages [django-mongo-backend]: Downloading https://files.pythonhosted.org/packages/3f/13/1c5ac8f3016b5e09ff35b2946bb8c07e4ed796d51f58c07faf8234e22985/django_mongo_backend-0.27.tar.gz
+[2024-05-25 21:22:29] INFO root fetch - processPackages [django-mongo-backend]: executing diffoscope
+[2024-05-25 21:22:29] INFO root fetch - processPackages [django-mongo-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_mongo_backend-0.26.tar.gz tmp/django_mongo_backend-0.27.tar.gz --markdown 20240525/d/django-mongo-backend/0.26-0.27/README.md --exclude *.pyd
+[2024-05-25 21:22:30] INFO root fetch - processPackages [django-mongo-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_mongo_backend-0.26.tar.gz]
+[2024-05-25 21:22:30] INFO root fetch - processPackages [django-mongo-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_mongo_backend-0.27.tar.gz]
+[2024-05-25 21:22:30] INFO root fetch - main [MainThread]: End processing [django-mongo-backend]: success
+[2024-05-25 21:22:30] INFO root fetch - main [MainThread]: Store serial: [23377426]
