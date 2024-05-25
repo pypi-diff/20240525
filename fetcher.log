@@ -18168,3 +18168,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:14:48] INFO root fetch - processPackages [anipy-api]: Remove: archive file [/home/abi/fetcher/tmp/anipy_api-3.1.0.tar.gz]
 [2024-05-25 17:14:48] INFO root fetch - main [MainThread]: End processing [anipy-api]: success
 [2024-05-25 17:14:48] INFO root fetch - main [MainThread]: Store serial: [23375996]
+[2024-05-25 17:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375996]
+[2024-05-25 17:16:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 17:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clickgen
+[2024-05-25 17:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VASP2KP
+[2024-05-25 17:16:57] INFO root fetch - processPackages [clickgen]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-05-25 17:16:57] INFO root fetch - processPackages [VASP2KP]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-25 17:16:57] INFO root fetch - processPackages [clickgen]: Downloading https://files.pythonhosted.org/packages/7a/f3/07311e3bfda76d7dc895dfdd6a3e33d7bfdd42256ec1408b191fbb01f6c9/clickgen-2.2.2.tar.gz
+[2024-05-25 17:16:57] INFO root fetch - processPackages [VASP2KP]: Downloading https://files.pythonhosted.org/packages/8c/e9/57a8a6b2adc39fa189397708381aec9d0d76bbac79f18989ab7046333ab5/VASP2KP-1.1.4.tar.gz
+[2024-05-25 17:16:58] INFO root fetch - processPackages [clickgen]: Downloading https://files.pythonhosted.org/packages/06/85/aed6e3121c68867c91b8322403a502dacd0e9057cef0dc200dedd59bd08f/clickgen-2.2.3.tar.gz
+[2024-05-25 17:16:58] INFO root fetch - processPackages [VASP2KP]: Downloading https://files.pythonhosted.org/packages/e6/02/b670e87c7636b9ead3ec090c147045e56fa11e3f639ed047e06dd4767409/VASP2KP-1.1.5.tar.gz
+[2024-05-25 17:16:58] INFO root fetch - processPackages [clickgen]: executing diffoscope
+[2024-05-25 17:16:58] INFO root fetch - processPackages [clickgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickgen-2.2.2.tar.gz tmp/clickgen-2.2.3.tar.gz --markdown 20240525/c/clickgen/2.2.2-2.2.3/README.md --exclude *.pyd
+[2024-05-25 17:16:58] INFO root fetch - processPackages [VASP2KP]: executing diffoscope
+[2024-05-25 17:16:58] INFO root fetch - processPackages [VASP2KP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VASP2KP-1.1.4.tar.gz tmp/VASP2KP-1.1.5.tar.gz --markdown 20240525/V/VASP2KP/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-25 17:16:58] INFO root fetch - processPackages [clickgen]: Remove: archive file [/home/abi/fetcher/tmp/clickgen-2.2.2.tar.gz]
+[2024-05-25 17:16:58] INFO root fetch - processPackages [clickgen]: Remove: archive file [/home/abi/fetcher/tmp/clickgen-2.2.3.tar.gz]
+[2024-05-25 17:16:58] INFO root fetch - main [MainThread]: End processing [clickgen]: success
+[2024-05-25 17:16:59] INFO root fetch - processPackages [VASP2KP]: Remove: archive file [/home/abi/fetcher/tmp/VASP2KP-1.1.4.tar.gz]
+[2024-05-25 17:16:59] INFO root fetch - processPackages [VASP2KP]: Remove: archive file [/home/abi/fetcher/tmp/VASP2KP-1.1.5.tar.gz]
+[2024-05-25 17:16:59] INFO root fetch - main [MainThread]: End processing [VASP2KP]: success
+[2024-05-25 17:16:59] INFO root fetch - main [MainThread]: Store serial: [23376002]
