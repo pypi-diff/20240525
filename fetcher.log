@@ -20065,3 +20065,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:19:46] INFO root fetch - processPackages [infisical-python]: Remove: archive file [/home/abi/fetcher/tmp/infisical_python-2.2.0.tar.gz]
 [2024-05-25 19:19:46] INFO root fetch - main [MainThread]: End processing [infisical-python]: success
 [2024-05-25 19:19:46] INFO root fetch - main [MainThread]: Store serial: [23376782]
+[2024-05-25 19:21:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376782]
+[2024-05-25 19:21:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dashai-test-tabular-classification-package
+[2024-05-25 19:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logbesselk
+[2024-05-25 19:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: approck-messaging
+[2024-05-25 19:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: locust
+[2024-05-25 19:21:55] INFO root fetch - processPackages [logbesselk]: New version: [3.3.0] Old Version: [3.2.1]
+[2024-05-25 19:21:55] INFO root fetch - processPackages [approck-messaging]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 19:21:55] WARNING root fetch - processPackages [dashai-test-tabular-classification-package]: Skipping, unable to determine old version
+[2024-05-25 19:21:55] INFO root fetch - main [MainThread]: End processing [dashai-test-tabular-classification-package] error
+[2024-05-25 19:21:55] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-25 19:21:55] INFO root fetch - processPackages [logbesselk]: Downloading https://files.pythonhosted.org/packages/59/f4/a544abbd2b7b61b80d4a5d302a5081093e6a5c67b06695b75a13eee58286/logbesselk-3.2.1.tar.gz
+[2024-05-25 19:21:55] INFO root fetch - processPackages [approck-messaging]: Downloading https://files.pythonhosted.org/packages/83/76/2f4171487badcf3b27f1e0f6a1b994fa13a3538e55a78b8106eeb9d9075b/approck_messaging-0.1.3.tar.gz
+[2024-05-25 19:21:55] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-25 19:21:56] INFO root fetch - processPackages [logbesselk]: Downloading https://files.pythonhosted.org/packages/48/05/34fa0ab3e859499df344986554e2554b0a42128e6a90bfca875cf9803c33/logbesselk-3.3.0.tar.gz
+[2024-05-25 19:21:56] INFO root fetch - processPackages [approck-messaging]: Downloading https://files.pythonhosted.org/packages/7d/f4/593742a095320db08668f5d88dcfce5ef734be4ea747fcb207cbf675570a/approck_messaging-0.1.4.tar.gz
+[2024-05-25 19:21:56] INFO root fetch - processPackages [logbesselk]: executing diffoscope
+[2024-05-25 19:21:56] INFO root fetch - processPackages [logbesselk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logbesselk-3.2.1.tar.gz tmp/logbesselk-3.3.0.tar.gz --markdown 20240525/l/logbesselk/3.2.1-3.3.0/README.md --exclude *.pyd
+[2024-05-25 19:21:56] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-25 19:21:56] INFO root fetch - processPackages [approck-messaging]: executing diffoscope
+[2024-05-25 19:21:56] INFO root fetch - processPackages [approck-messaging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approck_messaging-0.1.3.tar.gz tmp/approck_messaging-0.1.4.tar.gz --markdown 20240525/a/approck-messaging/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 19:21:56] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-25 19:21:56] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240525/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-25 19:21:56] INFO root fetch - processPackages [logbesselk]: Remove: archive file [/home/abi/fetcher/tmp/logbesselk-3.2.1.tar.gz]
+[2024-05-25 19:21:56] INFO root fetch - processPackages [logbesselk]: Remove: archive file [/home/abi/fetcher/tmp/logbesselk-3.3.0.tar.gz]
+[2024-05-25 19:21:56] INFO root fetch - main [MainThread]: End processing [logbesselk]: success
+[2024-05-25 19:21:57] INFO root fetch - processPackages [approck-messaging]: Remove: archive file [/home/abi/fetcher/tmp/approck_messaging-0.1.3.tar.gz]
+[2024-05-25 19:21:57] INFO root fetch - processPackages [approck-messaging]: Remove: archive file [/home/abi/fetcher/tmp/approck_messaging-0.1.4.tar.gz]
+[2024-05-25 19:21:57] INFO root fetch - main [MainThread]: End processing [approck-messaging]: success
+[2024-05-25 19:21:57] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-25 19:21:57] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-25 19:21:57] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-25 19:21:57] INFO root fetch - main [MainThread]: Store serial: [23376795]
