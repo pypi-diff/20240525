@@ -9557,3 +9557,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:11:13] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240524.tar.gz]
 [2024-05-25 08:11:13] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-05-25 08:11:13] INFO root fetch - main [MainThread]: Store serial: [23372482]
+[2024-05-25 08:13:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372482]
+[2024-05-25 08:13:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homematicip
+[2024-05-25 08:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-openupgrade-scripts
+[2024-05-25 08:13:21] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.3] Old Version: [17.0.1.0.1.2]
+[2024-05-25 08:13:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/2e/07/cd2a4ed7796c54648aaa9877e518fbf9fbf32efb82f079e0a29a9bc2c6a8/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl
+[2024-05-25 08:13:22] INFO root fetch - processPackages [homematicip]: New version: [1.1.1] Old Version: [1.1.0.post1.dev34]
+[2024-05-25 08:13:22] INFO root fetch - processPackages [homematicip]: Downloading https://files.pythonhosted.org/packages/b1/11/b41d5eed925f420d1e784de9d6e118b3e8b889a62292afb89a3ee50f0804/homematicip-1.1.0.post1.dev34.tar.gz
+[2024-05-25 08:13:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/f2/91/02310927fe11638961035a9674b0da49957cf5a36fe9d4f8296940bc73b9/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl
+[2024-05-25 08:13:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-05-25 08:13:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-openupgrade-scripts/17.0.1.0.1.2-17.0.1.0.1.3/README.md --exclude *.pyd
+[2024-05-25 08:13:22] INFO root fetch - processPackages [homematicip]: Downloading https://files.pythonhosted.org/packages/27/52/35f13729bcf397dec566908becf186d7f9078020ba54bfe0d38fc67e798c/homematicip-1.1.1.tar.gz
+[2024-05-25 08:13:22] INFO root fetch - processPackages [homematicip]: executing diffoscope
+[2024-05-25 08:13:22] INFO root fetch - processPackages [homematicip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homematicip-1.1.0.post1.dev34.tar.gz tmp/homematicip-1.1.1.tar.gz --markdown 20240525/h/homematicip/1.1.0.post1.dev34-1.1.1/README.md --exclude *.pyd
+[2024-05-25 08:13:23] INFO root fetch - processPackages [homematicip]: Remove: archive file [/home/abi/fetcher/tmp/homematicip-1.1.0.post1.dev34.tar.gz]
+[2024-05-25 08:13:23] INFO root fetch - processPackages [homematicip]: Remove: archive file [/home/abi/fetcher/tmp/homematicip-1.1.1.tar.gz]
+[2024-05-25 08:13:23] INFO root fetch - main [MainThread]: End processing [homematicip]: success
+[2024-05-25 08:13:25] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-25 08:13:25] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.3-py3-none-any.whl.zip]
+[2024-05-25 08:13:25] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-05-25 08:13:25] INFO root fetch - main [MainThread]: Store serial: [23372487]
