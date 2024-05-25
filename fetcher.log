@@ -9759,3 +9759,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:30:41] ERROR root fetch - processPackages [metav]: Unable to fetch info: No such project/version 'metav' 1.0.3
 [2024-05-25 08:30:41] INFO root fetch - main [MainThread]: End processing [metav] error
 [2024-05-25 08:30:41] INFO root fetch - main [MainThread]: Store serial: [23372551]
+[2024-05-25 08:32:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372551]
+[2024-05-25 08:32:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 08:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lfdfiles
+[2024-05-25 08:32:50] INFO root fetch - processPackages [lfdfiles]: New version: [2024.5.24] Old Version: [2024.4.24]
+[2024-05-25 08:32:50] INFO root fetch - processPackages [lfdfiles]: Downloading https://files.pythonhosted.org/packages/53/bd/b3a41ba81c19abffe243c06542ced7db4b90f851ecf7a809d1554177d804/lfdfiles-2024.4.24.tar.gz
+[2024-05-25 08:32:50] INFO root fetch - processPackages [lfdfiles]: Downloading https://files.pythonhosted.org/packages/d2/3a/7fbc58173a038b320e696183c89e92dd77ab527c866479749071a747e26c/lfdfiles-2024.5.24.tar.gz
+[2024-05-25 08:32:50] INFO root fetch - processPackages [lfdfiles]: executing diffoscope
+[2024-05-25 08:32:50] INFO root fetch - processPackages [lfdfiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lfdfiles-2024.4.24.tar.gz tmp/lfdfiles-2024.5.24.tar.gz --markdown 20240525/l/lfdfiles/2024.4.24-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 08:32:51] INFO root fetch - processPackages [lfdfiles]: Remove: archive file [/home/abi/fetcher/tmp/lfdfiles-2024.4.24.tar.gz]
+[2024-05-25 08:32:51] INFO root fetch - processPackages [lfdfiles]: Remove: archive file [/home/abi/fetcher/tmp/lfdfiles-2024.5.24.tar.gz]
+[2024-05-25 08:32:51] INFO root fetch - main [MainThread]: End processing [lfdfiles]: success
+[2024-05-25 08:32:51] INFO root fetch - main [MainThread]: Store serial: [23372575]
