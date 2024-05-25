@@ -23483,3 +23483,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:53:45] INFO root fetch - processPackages [dansplotcore]: Remove: archive file [/home/abi/fetcher/tmp/dansplotcore-6.6.0.tar.gz]
 [2024-05-25 23:53:45] INFO root fetch - main [MainThread]: End processing [dansplotcore]: success
 [2024-05-25 23:53:45] INFO root fetch - main [MainThread]: Store serial: [23378181]
+[2024-05-25 23:55:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378181]
+[2024-05-25 23:55:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 23:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htmlxword
+[2024-05-25 23:55:55] INFO root fetch - processPackages [htmlxword]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 23:55:55] INFO root fetch - processPackages [htmlxword]: Downloading https://files.pythonhosted.org/packages/61/5d/5c825a96c9d9a6a08b699fd4c05735d411bfcd4b287992bd8c11bc7328ea/htmlxword-0.0.5.tar.gz
+[2024-05-25 23:55:55] INFO root fetch - processPackages [htmlxword]: Downloading https://files.pythonhosted.org/packages/e4/ac/2c534773bbacd0bc9b8dd81392d1379a937c598bf77e2fa8347033228f48/htmlxword-0.0.6.tar.gz
+[2024-05-25 23:55:55] INFO root fetch - processPackages [htmlxword]: executing diffoscope
+[2024-05-25 23:55:55] INFO root fetch - processPackages [htmlxword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlxword-0.0.5.tar.gz tmp/htmlxword-0.0.6.tar.gz --markdown 20240525/h/htmlxword/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 23:55:56] INFO root fetch - processPackages [htmlxword]: Remove: archive file [/home/abi/fetcher/tmp/htmlxword-0.0.5.tar.gz]
+[2024-05-25 23:55:56] INFO root fetch - processPackages [htmlxword]: Remove: archive file [/home/abi/fetcher/tmp/htmlxword-0.0.6.tar.gz]
+[2024-05-25 23:55:56] INFO root fetch - main [MainThread]: End processing [htmlxword]: success
+[2024-05-25 23:55:56] INFO root fetch - main [MainThread]: Store serial: [23378186]
