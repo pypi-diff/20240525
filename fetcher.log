@@ -22416,3 +22416,67 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:30:59] WARNING root fetch - processPackages [archetypal]: Skipping package: exceeds size limit 12147208>=10485760
 [2024-05-25 22:30:59] INFO root fetch - main [MainThread]: End processing [archetypal] error
 [2024-05-25 22:30:59] INFO root fetch - main [MainThread]: Store serial: [23377808]
+[2024-05-25 22:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377808]
+[2024-05-25 22:33:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abadpour
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clean-business-chart
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BSTPP
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: locust
+[2024-05-25 22:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tabswitcher
+[2024-05-25 22:33:08] INFO root fetch - processPackages [tabswitcher]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [abadpour]: New version: [6.17.1] Old Version: [6.16.1]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [BSTPP]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [clean-business-chart]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 22:33:08] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/c4/b0/d2868117e2ee471102d8d76430718de7903664aade2ef2641c09e5df3fae/tabswitcher-0.0.4.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/c3/7e/46ea6e9f82f6d176caf8e07e55543826f498e20024a0bdbb306daf5f2507/abadpour-6.16.1.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [BSTPP]: Downloading https://files.pythonhosted.org/packages/18/bd/165ca42123acf1772b36fe964bb8bf749f5f5bb30275ea4c1c576223ef92/BSTPP-0.1.2.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [clean-business-chart]: Downloading https://files.pythonhosted.org/packages/3b/8b/03a35604262133945d3caaf62d1667fe094724755d78dd1bd027919a37e0/clean_business_chart-0.2.8.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/26/12/9fec98d91d2dc4b80f95a61dca4ef753e0ba629820153dd5373d00fa02bd/abadpour-6.17.1.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/22/de/1e706cba030d77e04309a6612755433251c6c125b67c3f0276e070adceaf/tabswitcher-0.0.5.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [clean-business-chart]: Downloading https://files.pythonhosted.org/packages/37/92/8dde23979d021b0c809e90b5649ff2559a0d8c27f9c461bd8ec4c9e62617/clean_business_chart-0.2.9.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:33:08] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-25 22:33:08] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.16.1.tar.gz tmp/abadpour-6.17.1.tar.gz --markdown 20240525/a/abadpour/6.16.1-6.17.1/README.md --exclude *.pyd
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:33:08] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:33:08] INFO root fetch - processPackages [tabswitcher]: executing diffoscope
+[2024-05-25 22:33:08] INFO root fetch - processPackages [tabswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabswitcher-0.0.4.tar.gz tmp/tabswitcher-0.0.5.tar.gz --markdown 20240525/t/tabswitcher/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 22:33:08] INFO root fetch - processPackages [clean-business-chart]: executing diffoscope
+[2024-05-25 22:33:08] INFO root fetch - processPackages [clean-business-chart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean_business_chart-0.2.8.tar.gz tmp/clean_business_chart-0.2.9.tar.gz --markdown 20240525/c/clean-business-chart/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 22:33:08] INFO root fetch - processPackages [BSTPP]: Downloading https://files.pythonhosted.org/packages/2f/fe/601799e9c3a08651e0a2c1a60c0fbc4f2fa0d377bbf295b2f65480fbd9df/BSTPP-0.1.3.tar.gz
+[2024-05-25 22:33:08] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-25 22:33:08] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240525/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-25 22:33:09] INFO root fetch - processPackages [BSTPP]: executing diffoscope
+[2024-05-25 22:33:09] INFO root fetch - processPackages [BSTPP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BSTPP-0.1.2.tar.gz tmp/BSTPP-0.1.3.tar.gz --markdown 20240525/B/BSTPP/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 22:33:09] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.16.1.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.17.1.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-25 22:33:09] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.4.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.5.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - main [MainThread]: End processing [tabswitcher]: success
+[2024-05-25 22:33:09] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:33:09] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:33:09] INFO root fetch - processPackages [clean-business-chart]: Remove: archive file [/home/abi/fetcher/tmp/clean_business_chart-0.2.8.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - processPackages [clean-business-chart]: Remove: archive file [/home/abi/fetcher/tmp/clean_business_chart-0.2.9.tar.gz]
+[2024-05-25 22:33:09] INFO root fetch - main [MainThread]: End processing [clean-business-chart]: success
+[2024-05-25 22:33:10] INFO root fetch - processPackages [BSTPP]: Remove: archive file [/home/abi/fetcher/tmp/BSTPP-0.1.2.tar.gz]
+[2024-05-25 22:33:10] INFO root fetch - processPackages [BSTPP]: Remove: archive file [/home/abi/fetcher/tmp/BSTPP-0.1.3.tar.gz]
+[2024-05-25 22:33:10] INFO root fetch - main [MainThread]: End processing [BSTPP]: success
+[2024-05-25 22:33:10] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-25 22:33:10] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-25 22:33:10] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-25 22:33:10] INFO root fetch - main [MainThread]: Store serial: [23377823]
