@@ -12569,3 +12569,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:13:10] INFO root fetch - processPackages [GenAIRR]: Remove: archive file [/home/abi/fetcher/tmp/genairr-0.1.1.tar.gz]
 [2024-05-25 12:13:10] INFO root fetch - main [MainThread]: End processing [GenAIRR]: success
 [2024-05-25 12:13:10] INFO root fetch - main [MainThread]: Store serial: [23373934]
+[2024-05-25 12:15:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373934]
+[2024-05-25 12:15:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 12:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blender-plots
+[2024-05-25 12:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dynamic-py-loader
+[2024-05-25 12:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Glances
+[2024-05-25 12:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-stages
+[2024-05-25 12:15:21] INFO root fetch - processPackages [blender-plots]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-25 12:15:21] INFO root fetch - processPackages [blender-plots]: Downloading https://files.pythonhosted.org/packages/f2/7e/a6be0485d4d057c71d59a0826c8f581934b4ec112964b9d8c371a8586b9c/blender-plots-1.0.7.tar.gz
+[2024-05-25 12:15:21] WARNING root fetch - processPackages [dynamic-py-loader]: Skipping, unable to determine old version
+[2024-05-25 12:15:21] INFO root fetch - main [MainThread]: End processing [dynamic-py-loader] error
+[2024-05-25 12:15:21] INFO root fetch - processPackages [test-stages]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 12:15:21] INFO root fetch - processPackages [blender-plots]: Downloading https://files.pythonhosted.org/packages/16/40/8d2a5ddcbbbc7b08893578027210cfc21820f19ed9c2b62cd0943201449a/blender-plots-1.0.8.tar.gz
+[2024-05-25 12:15:21] INFO root fetch - processPackages [Glances]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-05-25 12:15:21] INFO root fetch - processPackages [test-stages]: Downloading https://files.pythonhosted.org/packages/9f/cf/16fb3dcc1fb5218634c9d419692e6a31abd0cbfeabd7ea4c19baeba6d945/test_stages-0.1.7.tar.gz
+[2024-05-25 12:15:21] INFO root fetch - processPackages [blender-plots]: executing diffoscope
+[2024-05-25 12:15:21] INFO root fetch - processPackages [blender-plots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blender-plots-1.0.7.tar.gz tmp/blender-plots-1.0.8.tar.gz --markdown 20240525/b/blender-plots/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-25 12:15:21] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/92/7f/8129e9adf7e8c0e2d7eca497a7f0e3978282508ad7b3b6997abd8a4a6092/glances-4.0.5.tar.gz
+[2024-05-25 12:15:21] INFO root fetch - processPackages [test-stages]: Downloading https://files.pythonhosted.org/packages/fa/18/d12ac8f4b41a583ab2e3a484ae899f2de623090e0458d0cb8b21d480c9e8/test_stages-0.1.8.tar.gz
+[2024-05-25 12:15:21] INFO root fetch - processPackages [test-stages]: executing diffoscope
+[2024-05-25 12:15:21] INFO root fetch - processPackages [test-stages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_stages-0.1.7.tar.gz tmp/test_stages-0.1.8.tar.gz --markdown 20240525/t/test-stages/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 12:15:22] INFO root fetch - processPackages [blender-plots]: Remove: archive file [/home/abi/fetcher/tmp/blender-plots-1.0.7.tar.gz]
+[2024-05-25 12:15:22] INFO root fetch - processPackages [blender-plots]: Remove: archive file [/home/abi/fetcher/tmp/blender-plots-1.0.8.tar.gz]
+[2024-05-25 12:15:22] INFO root fetch - main [MainThread]: End processing [blender-plots]: success
+[2024-05-25 12:15:22] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/7b/7e/dd749c47ef5f2af4a274293dd2ec424985d3df8c442146f5d794d62d0a41/glances-4.0.6.tar.gz
+[2024-05-25 12:15:22] INFO root fetch - processPackages [test-stages]: Remove: archive file [/home/abi/fetcher/tmp/test_stages-0.1.7.tar.gz]
+[2024-05-25 12:15:22] INFO root fetch - processPackages [test-stages]: Remove: archive file [/home/abi/fetcher/tmp/test_stages-0.1.8.tar.gz]
+[2024-05-25 12:15:22] INFO root fetch - main [MainThread]: End processing [test-stages]: success
+[2024-05-25 12:15:22] INFO root fetch - processPackages [Glances]: executing diffoscope
+[2024-05-25 12:15:22] INFO root fetch - processPackages [Glances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glances-4.0.5.tar.gz tmp/glances-4.0.6.tar.gz --markdown 20240525/G/Glances/4.0.5-4.0.6/README.md --exclude *.pyd
+[2024-05-25 12:15:27] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.5.tar.gz]
+[2024-05-25 12:15:27] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.6.tar.gz]
+[2024-05-25 12:15:27] INFO root fetch - main [MainThread]: End processing [Glances]: success
+[2024-05-25 12:15:27] INFO root fetch - main [MainThread]: Store serial: [23373949]
