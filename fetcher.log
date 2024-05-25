@@ -20318,3 +20318,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:37:15] INFO root fetch - processPackages [blue-stability]: Remove: archive file [/home/abi/fetcher/tmp/blue_stability-4.30.1.tar.gz]
 [2024-05-25 19:37:15] INFO root fetch - main [MainThread]: End processing [blue-stability]: success
 [2024-05-25 19:37:15] INFO root fetch - main [MainThread]: Store serial: [23376868]
+[2024-05-25 19:39:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376868]
+[2024-05-25 19:39:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 19:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blueness
+[2024-05-25 19:39:25] INFO root fetch - processPackages [blueness]: New version: [3.9.1] Old Version: [3.7.1]
+[2024-05-25 19:39:25] INFO root fetch - processPackages [blueness]: Downloading https://files.pythonhosted.org/packages/86/d4/e8b769417baf31b335408a29a80b371b6421e59db03087a6e1c943bb5d84/blueness-3.7.1.tar.gz
+[2024-05-25 19:39:26] INFO root fetch - processPackages [blueness]: Downloading https://files.pythonhosted.org/packages/bb/6c/4f8063f6de43bbfcce0c161a49b6afe38d15dfecb071f23bc7663a1b1714/blueness-3.9.1.tar.gz
+[2024-05-25 19:39:26] INFO root fetch - processPackages [blueness]: executing diffoscope
+[2024-05-25 19:39:26] INFO root fetch - processPackages [blueness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blueness-3.7.1.tar.gz tmp/blueness-3.9.1.tar.gz --markdown 20240525/b/blueness/3.7.1-3.9.1/README.md --exclude *.pyd
+[2024-05-25 19:39:26] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.7.1.tar.gz]
+[2024-05-25 19:39:26] INFO root fetch - processPackages [blueness]: Remove: archive file [/home/abi/fetcher/tmp/blueness-3.9.1.tar.gz]
+[2024-05-25 19:39:26] INFO root fetch - main [MainThread]: End processing [blueness]: success
+[2024-05-25 19:39:26] INFO root fetch - main [MainThread]: Store serial: [23376882]
