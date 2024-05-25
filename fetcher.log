@@ -20994,3 +20994,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:41:09] INFO root fetch - processPackages [tiledbsoma]: Remove: archive file [/home/abi/fetcher/tmp/tiledbsoma-1.9.5.tar.gz]
 [2024-05-25 20:41:09] INFO root fetch - main [MainThread]: End processing [tiledbsoma]: success
 [2024-05-25 20:41:09] INFO root fetch - main [MainThread]: Store serial: [23377146]
+[2024-05-25 20:43:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377146]
+[2024-05-25 20:43:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 20:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getblocks
+[2024-05-25 20:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autonomous-app
+[2024-05-25 20:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SportScience
+[2024-05-25 20:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: schedule
+[2024-05-25 20:43:18] INFO root fetch - processPackages [autonomous-app]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 20:43:18] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/d0/14/f69a96e9632ab04613d624b241c41d89e240b957f6cb90becb7ce163fcbe/autonomous_app-0.2.8.tar.gz
+[2024-05-25 20:43:18] INFO root fetch - processPackages [getblocks]: New version: [2024.5.25] Old Version: [2024.4.14]
+[2024-05-25 20:43:18] INFO root fetch - processPackages [schedule]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-25 20:43:18] WARNING root fetch - processPackages [SportScience]: Skipping, unable to determine old version
+[2024-05-25 20:43:18] INFO root fetch - main [MainThread]: End processing [SportScience] error
+[2024-05-25 20:43:18] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/12/38/addfc60441d7cdd75a587c80f112be3a9d759521690f6ba77b5be6adadee/getblocks-2024.4.14.tar.gz
+[2024-05-25 20:43:18] INFO root fetch - processPackages [schedule]: Downloading https://files.pythonhosted.org/packages/29/22/9dd374cbf76a42ece1f1f41cc8f4957f0ad512577372527cd3dd52758241/schedule-1.2.1.tar.gz
+[2024-05-25 20:43:18] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/87/68/a4e9b4dc303589bac13c8f9fab4ec2b60ddc3a35c7c0406fadd3000820cb/autonomous_app-0.2.9.tar.gz
+[2024-05-25 20:43:18] INFO root fetch - processPackages [autonomous-app]: executing diffoscope
+[2024-05-25 20:43:18] INFO root fetch - processPackages [autonomous-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomous_app-0.2.8.tar.gz tmp/autonomous_app-0.2.9.tar.gz --markdown 20240525/a/autonomous-app/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 20:43:18] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/d0/91/bab75584280108852f11dbfa177b5f988a968ab35c32746526ee8ae2c34d/getblocks-2024.5.25.tar.gz
+[2024-05-25 20:43:18] INFO root fetch - processPackages [schedule]: Downloading https://files.pythonhosted.org/packages/20/a7/84c96b61fd13205f2cafbe263cdb2745965974bdf3e0078f121dfeca5f02/schedule-1.2.2-py3-none-any.whl
+[2024-05-25 20:43:18] INFO root fetch - processPackages [getblocks]: executing diffoscope
+[2024-05-25 20:43:18] INFO root fetch - processPackages [getblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getblocks-2024.4.14.tar.gz tmp/getblocks-2024.5.25.tar.gz --markdown 20240525/g/getblocks/2024.4.14-2024.5.25/README.md --exclude *.pyd
+[2024-05-25 20:43:18] INFO root fetch - processPackages [schedule]: executing diffoscope
+[2024-05-25 20:43:18] INFO root fetch - processPackages [schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schedule-1.2.1.tar.gz tmp/schedule-1.2.2-py3-none-any.whl.zip --markdown 20240525/s/schedule/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-25 20:43:19] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.8.tar.gz]
+[2024-05-25 20:43:19] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.9.tar.gz]
+[2024-05-25 20:43:19] INFO root fetch - main [MainThread]: End processing [autonomous-app]: success
+[2024-05-25 20:43:19] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.4.14.tar.gz]
+[2024-05-25 20:43:19] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.5.25.tar.gz]
+[2024-05-25 20:43:19] INFO root fetch - main [MainThread]: End processing [getblocks]: success
+[2024-05-25 20:43:19] INFO root fetch - processPackages [schedule]: Remove: archive file [/home/abi/fetcher/tmp/schedule-1.2.1.tar.gz]
+[2024-05-25 20:43:19] INFO root fetch - processPackages [schedule]: Remove: archive file [/home/abi/fetcher/tmp/schedule-1.2.2-py3-none-any.whl.zip]
+[2024-05-25 20:43:19] INFO root fetch - main [MainThread]: End processing [schedule]: success
+[2024-05-25 20:43:19] INFO root fetch - main [MainThread]: Store serial: [23377159]
