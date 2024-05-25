@@ -13852,3 +13852,30 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:58:21] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.5.tar.gz]
 [2024-05-25 13:58:21] INFO root fetch - main [MainThread]: End processing [ryry-cli]: success
 [2024-05-25 13:58:21] INFO root fetch - main [MainThread]: Store serial: [23374470]
+[2024-05-25 14:00:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374470]
+[2024-05-25 14:00:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 14:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proxies-tg-wrapper
+[2024-05-25 14:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topic-modeling-tool
+[2024-05-25 14:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plover-vipe
+[2024-05-25 14:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grassnechik
+[2024-05-25 14:00:30] WARNING root fetch - processPackages [topic-modeling-tool]: Skipping, unable to determine old version
+[2024-05-25 14:00:30] INFO root fetch - processPackages [proxies-tg-wrapper]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 14:00:30] INFO root fetch - main [MainThread]: End processing [topic-modeling-tool] error
+[2024-05-25 14:00:30] INFO root fetch - processPackages [plover-vipe]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 14:00:30] WARNING root fetch - processPackages [grassnechik]: Skipping, unable to determine old version
+[2024-05-25 14:00:30] INFO root fetch - main [MainThread]: End processing [grassnechik] error
+[2024-05-25 14:00:30] INFO root fetch - processPackages [proxies-tg-wrapper]: Downloading https://files.pythonhosted.org/packages/73/c2/890c90952de41ba8f1672600fb126d8925c97128230e69d002af39527897/proxies-tg-wrapper-1.0.1.tar.gz
+[2024-05-25 14:00:31] INFO root fetch - processPackages [plover-vipe]: Downloading https://files.pythonhosted.org/packages/08/91/6fe6d6520835004a1eb8f196ab99c42e5a247ae8577205ae595c1c757abd/plover_vipe-1.0.1.tar.gz
+[2024-05-25 14:00:31] INFO root fetch - processPackages [proxies-tg-wrapper]: Downloading https://files.pythonhosted.org/packages/21/c9/478b78f4cc9b83fb60d670eba3ee4cbc3a60944f95e4a0f5223ab47bb8b2/proxies-tg-wrapper-1.0.2.tar.gz
+[2024-05-25 14:00:31] INFO root fetch - processPackages [proxies-tg-wrapper]: executing diffoscope
+[2024-05-25 14:00:31] INFO root fetch - processPackages [proxies-tg-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxies-tg-wrapper-1.0.1.tar.gz tmp/proxies-tg-wrapper-1.0.2.tar.gz --markdown 20240525/p/proxies-tg-wrapper/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 14:00:31] INFO root fetch - processPackages [plover-vipe]: Downloading https://files.pythonhosted.org/packages/3f/b3/a65effe34df3213e88bde92b0e4dd1dff5718122df28c471f4ba97d9de3e/plover_vipe-1.0.2.tar.gz
+[2024-05-25 14:00:31] INFO root fetch - processPackages [plover-vipe]: executing diffoscope
+[2024-05-25 14:00:31] INFO root fetch - processPackages [plover-vipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover_vipe-1.0.1.tar.gz tmp/plover_vipe-1.0.2.tar.gz --markdown 20240525/p/plover-vipe/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 14:00:31] INFO root fetch - processPackages [proxies-tg-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/proxies-tg-wrapper-1.0.1.tar.gz]
+[2024-05-25 14:00:31] INFO root fetch - processPackages [proxies-tg-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/proxies-tg-wrapper-1.0.2.tar.gz]
+[2024-05-25 14:00:31] INFO root fetch - main [MainThread]: End processing [proxies-tg-wrapper]: success
+[2024-05-25 14:00:32] INFO root fetch - processPackages [plover-vipe]: Remove: archive file [/home/abi/fetcher/tmp/plover_vipe-1.0.1.tar.gz]
+[2024-05-25 14:00:32] INFO root fetch - processPackages [plover-vipe]: Remove: archive file [/home/abi/fetcher/tmp/plover_vipe-1.0.2.tar.gz]
+[2024-05-25 14:00:32] INFO root fetch - main [MainThread]: End processing [plover-vipe]: success
+[2024-05-25 14:00:32] INFO root fetch - main [MainThread]: Store serial: [23374484]
