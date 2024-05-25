@@ -17950,3 +17950,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:56:54] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-25 16:56:54] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-25 16:56:54] INFO root fetch - main [MainThread]: Store serial: [23375905]
+[2024-05-25 16:58:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375905]
+[2024-05-25 16:59:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 16:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trulens-eval
+[2024-05-25 16:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: muttfuzz
+[2024-05-25 16:59:03] INFO root fetch - processPackages [muttfuzz]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-25 16:59:03] INFO root fetch - processPackages [muttfuzz]: Downloading https://files.pythonhosted.org/packages/6d/02/bfb348d592b033251e12d63a780b3386cc8f5b2cccc4f3d43810df20be17/muttfuzz-0.6.8-py3-none-any.whl
+[2024-05-25 16:59:03] INFO root fetch - processPackages [trulens-eval]: New version: [0.9.0a0] Old Version: [0.9.0]
+[2024-05-25 16:59:03] INFO root fetch - processPackages [trulens-eval]: Downloading https://files.pythonhosted.org/packages/6e/d8/00eb7c4751596e2673464e891416e900ec381133fbc7ddb44450a74fe1ae/trulens_eval-0.9.0-py3-none-any.whl
+[2024-05-25 16:59:03] INFO root fetch - processPackages [muttfuzz]: Downloading https://files.pythonhosted.org/packages/c7/1b/4180654abc46dd74d0a4b7357856d932903587ae8dc76007d959670ec390/muttfuzz-0.6.9-py3-none-any.whl
+[2024-05-25 16:59:03] INFO root fetch - processPackages [muttfuzz]: executing diffoscope
+[2024-05-25 16:59:03] INFO root fetch - processPackages [muttfuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muttfuzz-0.6.8-py3-none-any.whl.zip tmp/muttfuzz-0.6.9-py3-none-any.whl.zip --markdown 20240525/m/muttfuzz/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-25 16:59:03] INFO root fetch - processPackages [trulens-eval]: Downloading https://files.pythonhosted.org/packages/34/9e/54351cb2f09d6382b7f8c34fd89268bd601c767cc92ed6165e8cc4563812/trulens_eval-0.9.0a0-py3-none-any.whl
+[2024-05-25 16:59:03] INFO root fetch - processPackages [trulens-eval]: executing diffoscope
+[2024-05-25 16:59:03] INFO root fetch - processPackages [trulens-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trulens_eval-0.9.0-py3-none-any.whl.zip tmp/trulens_eval-0.9.0a0-py3-none-any.whl.zip --markdown 20240525/t/trulens-eval/0.9.0-0.9.0a0/README.md --exclude *.pyd
+[2024-05-25 16:59:04] INFO root fetch - processPackages [muttfuzz]: Remove: archive file [/home/abi/fetcher/tmp/muttfuzz-0.6.8-py3-none-any.whl.zip]
+[2024-05-25 16:59:04] INFO root fetch - processPackages [muttfuzz]: Remove: archive file [/home/abi/fetcher/tmp/muttfuzz-0.6.9-py3-none-any.whl.zip]
+[2024-05-25 16:59:04] INFO root fetch - main [MainThread]: End processing [muttfuzz]: success
+[2024-05-25 16:59:04] INFO root fetch - processPackages [trulens-eval]: Remove: archive file [/home/abi/fetcher/tmp/trulens_eval-0.9.0-py3-none-any.whl.zip]
+[2024-05-25 16:59:04] INFO root fetch - processPackages [trulens-eval]: Remove: archive file [/home/abi/fetcher/tmp/trulens_eval-0.9.0a0-py3-none-any.whl.zip]
+[2024-05-25 16:59:04] INFO root fetch - main [MainThread]: End processing [trulens-eval]: success
+[2024-05-25 16:59:04] INFO root fetch - main [MainThread]: Store serial: [23375911]
