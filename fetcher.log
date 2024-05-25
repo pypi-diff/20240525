@@ -9175,3 +9175,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:36:30] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.4.tar.gz]
 [2024-05-25 07:36:30] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-05-25 07:36:30] INFO root fetch - main [MainThread]: Store serial: [23372285]
+[2024-05-25 07:38:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372285]
+[2024-05-25 07:38:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 07:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKNSETools
+[2024-05-25 07:38:39] INFO root fetch - processPackages [PKNSETools]: New version: [0.1.20240525.115] Old Version: [0.1.20240522.113]
+[2024-05-25 07:38:39] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/3b/1c/c0a1a8a945985f20a428e53b222475a1955dec23dea6e706fa663b2f134c/PKNSETools-0.1.20240522.113.tar.gz
+[2024-05-25 07:38:39] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/36/b6/0f9570b3a50e4d06e2e6f355adc560e2d9159fe1ff791ff4dd71655e7425/PKNSETools-0.1.20240525.115.tar.gz
+[2024-05-25 07:38:39] INFO root fetch - processPackages [PKNSETools]: executing diffoscope
+[2024-05-25 07:38:39] INFO root fetch - processPackages [PKNSETools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKNSETools-0.1.20240522.113.tar.gz tmp/PKNSETools-0.1.20240525.115.tar.gz --markdown 20240525/P/PKNSETools/0.1.20240522.113-0.1.20240525.115/README.md --exclude *.pyd
+[2024-05-25 07:38:40] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240522.113.tar.gz]
+[2024-05-25 07:38:40] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240525.115.tar.gz]
+[2024-05-25 07:38:40] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
+[2024-05-25 07:38:40] INFO root fetch - main [MainThread]: Store serial: [23372288]
