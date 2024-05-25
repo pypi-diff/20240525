@@ -9491,3 +9491,21 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:06:51] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev8.tar.gz]
 [2024-05-25 08:06:51] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-25 08:06:51] INFO root fetch - main [MainThread]: Store serial: [23372425]
+[2024-05-25 08:08:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372425]
+[2024-05-25 08:08:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: supplies
+[2024-05-25 08:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intel-npu-acceleration-library
+[2024-05-25 08:08:59] INFO root fetch - processPackages [supplies]: New version: [0.9.1] Old Version: [0.8.9]
+[2024-05-25 08:08:59] INFO root fetch - processPackages [supplies]: Downloading https://files.pythonhosted.org/packages/77/0e/515506013ff5822d89aed3d381128f636bb13054bf07ca7904def4cfe136/supplies-0.8.9.tar.gz
+[2024-05-25 08:09:00] INFO root fetch - processPackages [intel-npu-acceleration-library]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-25 08:09:00] INFO root fetch - processPackages [supplies]: Downloading https://files.pythonhosted.org/packages/32/1d/56ac4ad30ae33c6b5e80374d7a5f22c75833e4eb3a7174d62f9738c91aaf/supplies-0.9.1.tar.gz
+[2024-05-25 08:09:00] INFO root fetch - processPackages [supplies]: executing diffoscope
+[2024-05-25 08:09:00] INFO root fetch - processPackages [supplies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supplies-0.8.9.tar.gz tmp/supplies-0.9.1.tar.gz --markdown 20240525/s/supplies/0.8.9-0.9.1/README.md --exclude *.pyd
+[2024-05-25 08:09:00] INFO root fetch - processPackages [intel-npu-acceleration-library]: Downloading https://files.pythonhosted.org/packages/9c/77/f400412e2e53a2824cb9b0edfc9f6afcca86af6780552ded0b8528943f5e/intel_npu_acceleration_library-1.0.0.tar.gz
+[2024-05-25 08:09:00] INFO root fetch - processPackages [intel-npu-acceleration-library]: Downloading https://files.pythonhosted.org/packages/69/05/37b8aa60ca7d2033d1ca5882ef044095ef1a9c401d13153ad04b6d76381b/intel_npu_acceleration_library-1.1.0-cp38-cp38-win_amd64.whl
+[2024-05-25 08:09:00] INFO root fetch - processPackages [supplies]: Remove: archive file [/home/abi/fetcher/tmp/supplies-0.8.9.tar.gz]
+[2024-05-25 08:09:00] INFO root fetch - processPackages [supplies]: Remove: archive file [/home/abi/fetcher/tmp/supplies-0.9.1.tar.gz]
+[2024-05-25 08:09:00] INFO root fetch - main [MainThread]: End processing [supplies]: success
+[2024-05-25 08:09:01] WARNING root fetch - processPackages [intel-npu-acceleration-library]: Skipping package: exceeds size limit 39278090>=10485760
+[2024-05-25 08:09:01] INFO root fetch - main [MainThread]: End processing [intel-npu-acceleration-library] error
+[2024-05-25 08:09:01] INFO root fetch - main [MainThread]: Store serial: [23372436]
