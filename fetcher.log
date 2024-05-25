@@ -8428,3 +8428,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:43:41] INFO root fetch - processPackages [dash-emoji-mart]: Remove: archive file [/home/abi/fetcher/tmp/dash_emoji_mart-0.0.3.tar.gz]
 [2024-05-25 06:43:41] INFO root fetch - main [MainThread]: End processing [dash-emoji-mart]: success
 [2024-05-25 06:43:41] INFO root fetch - main [MainThread]: Store serial: [23371928]
+[2024-05-25 06:45:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371928]
+[2024-05-25 06:45:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micodag
+[2024-05-25 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TestMonitoringSystem
+[2024-05-25 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rottentomatoes-reviews-scraper
+[2024-05-25 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-index-core
+[2024-05-25 06:45:50] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 06:45:50] INFO root fetch - processPackages [micodag]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 06:45:50] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Downloading https://files.pythonhosted.org/packages/3b/3a/1b0bee61be77dfa13f468d7d3fc078f8f743392229563ab1a5bed6ccde7d/rottentomatoes-reviews-scraper-0.0.2.tar.gz
+[2024-05-25 06:45:50] INFO root fetch - processPackages [micodag]: Downloading https://files.pythonhosted.org/packages/29/20/b5814bcc75baf82ea349bde3a9a8305a43a986da3d569a9c044718b34dc5/micodag-0.0.2.tar.gz
+[2024-05-25 06:45:50] WARNING root fetch - processPackages [TestMonitoringSystem]: Skipping, unable to determine old version
+[2024-05-25 06:45:50] INFO root fetch - main [MainThread]: End processing [TestMonitoringSystem] error
+[2024-05-25 06:45:50] INFO root fetch - processPackages [llama-index-core]: New version: [0.9.56] Old Version: [0.9.55]
+[2024-05-25 06:45:50] INFO root fetch - processPackages [micodag]: Downloading https://files.pythonhosted.org/packages/69/68/a36bb2f4cab57e378030566ea3b18011731a5844ad4004e1917d86fce8d4/micodag-0.0.3.tar.gz
+[2024-05-25 06:45:50] INFO root fetch - processPackages [llama-index-core]: Downloading https://files.pythonhosted.org/packages/cb/c2/9d70e1ea21c2760f049ed87f06333bc85bc3afb95daa8f1cc6f9bce744ed/llama_index_core-0.9.55.tar.gz
+[2024-05-25 06:45:50] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Downloading https://files.pythonhosted.org/packages/8e/ec/be647ad670bf41aab2537748a423c7a253b9eef02068700b58c69d587b59/rottentomatoes-reviews-scraper-0.0.3.tar.gz
+[2024-05-25 06:45:50] INFO root fetch - processPackages [micodag]: executing diffoscope
+[2024-05-25 06:45:50] INFO root fetch - processPackages [micodag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micodag-0.0.2.tar.gz tmp/micodag-0.0.3.tar.gz --markdown 20240525/m/micodag/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 06:45:50] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: executing diffoscope
+[2024-05-25 06:45:50] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rottentomatoes-reviews-scraper-0.0.2.tar.gz tmp/rottentomatoes-reviews-scraper-0.0.3.tar.gz --markdown 20240525/r/rottentomatoes-reviews-scraper/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 06:45:51] INFO root fetch - processPackages [llama-index-core]: Downloading https://files.pythonhosted.org/packages/91/1b/bae52b894555c97848977c73e4a3a778ca388b07a2435d3a33c1133bd678/llama_index_core-0.9.56.tar.gz
+[2024-05-25 06:45:51] INFO root fetch - processPackages [llama-index-core]: executing diffoscope
+[2024-05-25 06:45:51] INFO root fetch - processPackages [llama-index-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_core-0.9.55.tar.gz tmp/llama_index_core-0.9.56.tar.gz --markdown 20240525/l/llama-index-core/0.9.55-0.9.56/README.md --exclude *.pyd
+[2024-05-25 06:45:51] INFO root fetch - processPackages [micodag]: Remove: archive file [/home/abi/fetcher/tmp/micodag-0.0.2.tar.gz]
+[2024-05-25 06:45:51] INFO root fetch - processPackages [micodag]: Remove: archive file [/home/abi/fetcher/tmp/micodag-0.0.3.tar.gz]
+[2024-05-25 06:45:51] INFO root fetch - main [MainThread]: End processing [micodag]: success
+[2024-05-25 06:45:51] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Remove: archive file [/home/abi/fetcher/tmp/rottentomatoes-reviews-scraper-0.0.2.tar.gz]
+[2024-05-25 06:45:51] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Remove: archive file [/home/abi/fetcher/tmp/rottentomatoes-reviews-scraper-0.0.3.tar.gz]
+[2024-05-25 06:45:51] INFO root fetch - main [MainThread]: End processing [rottentomatoes-reviews-scraper]: success
+[2024-05-25 06:45:52] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.55.tar.gz]
+[2024-05-25 06:45:52] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.56.tar.gz]
+[2024-05-25 06:45:52] INFO root fetch - main [MainThread]: End processing [llama-index-core]: success
+[2024-05-25 06:45:52] INFO root fetch - main [MainThread]: Store serial: [23371940]
