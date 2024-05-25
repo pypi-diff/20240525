@@ -10140,3 +10140,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:14:01] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.139.6.tar.gz]
 [2024-05-25 09:14:01] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-client]: success
 [2024-05-25 09:14:01] INFO root fetch - main [MainThread]: Store serial: [23372713]
+[2024-05-25 09:16:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372713]
+[2024-05-25 09:16:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 09:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iitkgp-erp-login
+[2024-05-25 09:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: retr0reg-pip-carepackage
+[2024-05-25 09:16:10] INFO root fetch - processPackages [retr0reg-pip-carepackage]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 09:16:10] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Downloading https://files.pythonhosted.org/packages/ae/25/49fb9c34d89937a547098b8a91fbe33127d33630bccf68a4b1adaf36330a/retr0reg_pip_carepackage-1.1.1.tar.gz
+[2024-05-25 09:16:10] INFO root fetch - processPackages [iitkgp-erp-login]: New version: [2.3.7] Old Version: [2.3.6]
+[2024-05-25 09:16:10] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Downloading https://files.pythonhosted.org/packages/f7/2d/2acc1e44ed08db605d73ff9ba84c555c2dc0715dc3ccaee2ce57a427fd63/retr0reg_pip_carepackage-1.1.2.tar.gz
+[2024-05-25 09:16:10] INFO root fetch - processPackages [iitkgp-erp-login]: Downloading https://files.pythonhosted.org/packages/b5/32/beb91b166bcf33ece5ac6fb328210cc07ade1e75db58d91130ed7bfbdb6e/iitkgp_erp_login-2.3.6.tar.gz
+[2024-05-25 09:16:10] INFO root fetch - processPackages [retr0reg-pip-carepackage]: executing diffoscope
+[2024-05-25 09:16:10] INFO root fetch - processPackages [retr0reg-pip-carepackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retr0reg_pip_carepackage-1.1.1.tar.gz tmp/retr0reg_pip_carepackage-1.1.2.tar.gz --markdown 20240525/r/retr0reg-pip-carepackage/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 09:16:10] INFO root fetch - processPackages [iitkgp-erp-login]: Downloading https://files.pythonhosted.org/packages/5d/c1/fcd9c95e271f1d08bd8d8aeff043239d29da8697f189a1a29a0176258fb2/iitkgp_erp_login-2.3.7.tar.gz
+[2024-05-25 09:16:11] INFO root fetch - processPackages [iitkgp-erp-login]: executing diffoscope
+[2024-05-25 09:16:11] INFO root fetch - processPackages [iitkgp-erp-login]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iitkgp_erp_login-2.3.6.tar.gz tmp/iitkgp_erp_login-2.3.7.tar.gz --markdown 20240525/i/iitkgp-erp-login/2.3.6-2.3.7/README.md --exclude *.pyd
+[2024-05-25 09:16:11] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Remove: archive file [/home/abi/fetcher/tmp/retr0reg_pip_carepackage-1.1.1.tar.gz]
+[2024-05-25 09:16:11] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Remove: archive file [/home/abi/fetcher/tmp/retr0reg_pip_carepackage-1.1.2.tar.gz]
+[2024-05-25 09:16:11] INFO root fetch - main [MainThread]: End processing [retr0reg-pip-carepackage]: success
+[2024-05-25 09:16:11] INFO root fetch - processPackages [iitkgp-erp-login]: Remove: archive file [/home/abi/fetcher/tmp/iitkgp_erp_login-2.3.6.tar.gz]
+[2024-05-25 09:16:11] INFO root fetch - processPackages [iitkgp-erp-login]: Remove: archive file [/home/abi/fetcher/tmp/iitkgp_erp_login-2.3.7.tar.gz]
+[2024-05-25 09:16:11] INFO root fetch - main [MainThread]: End processing [iitkgp-erp-login]: success
+[2024-05-25 09:16:11] INFO root fetch - main [MainThread]: Store serial: [23372716]
