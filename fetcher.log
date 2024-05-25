@@ -17516,3 +17516,30 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:34:56] INFO root fetch - processPackages [quite6]: Remove: archive file [/home/abi/fetcher/tmp/quite6-1.0.4.tar.gz]
 [2024-05-25 16:34:56] INFO root fetch - main [MainThread]: End processing [quite6]: success
 [2024-05-25 16:34:56] INFO root fetch - main [MainThread]: Store serial: [23375756]
+[2024-05-25 16:37:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375756]
+[2024-05-25 16:37:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calibrated-explanations
+[2024-05-25 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: templinktool
+[2024-05-25 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xingpyc
+[2024-05-25 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slthcore
+[2024-05-25 16:37:05] WARNING root fetch - processPackages [slthcore]: Skipping, unable to determine old version
+[2024-05-25 16:37:05] INFO root fetch - main [MainThread]: End processing [slthcore] error
+[2024-05-25 16:37:05] INFO root fetch - processPackages [xingpyc]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 16:37:05] WARNING root fetch - processPackages [templinktool]: Skipping, unable to determine old version
+[2024-05-25 16:37:05] INFO root fetch - main [MainThread]: End processing [templinktool] error
+[2024-05-25 16:37:05] INFO root fetch - processPackages [calibrated-explanations]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-25 16:37:05] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/f1/e4/2e31a3764cc07299cf16cade0d77e94b666aef555293015c6b2bd04a2d49/xingpyc-0.1.2.tar.gz
+[2024-05-25 16:37:05] INFO root fetch - processPackages [calibrated-explanations]: Downloading https://files.pythonhosted.org/packages/96/02/be45109bf9fcbe7b2494de504a7a041e284de5f902003c6a0250df472802/calibrated_explanations-0.3.2.tar.gz
+[2024-05-25 16:37:05] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/26/f0/20d3104d267c65f5e923802b7490be286c7b95e6cf5717111bcba920b12e/xingpyc-0.1.3.tar.gz
+[2024-05-25 16:37:05] INFO root fetch - processPackages [calibrated-explanations]: Downloading https://files.pythonhosted.org/packages/2d/a1/fb03354d463180b3cd256534dfbd2abda7ef338bbc7b1ec0301d25c33d5e/calibrated_explanations-0.3.3.tar.gz
+[2024-05-25 16:37:05] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 16:37:05] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.2.tar.gz tmp/xingpyc-0.1.3.tar.gz --markdown 20240525/x/xingpyc/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 16:37:06] INFO root fetch - processPackages [calibrated-explanations]: executing diffoscope
+[2024-05-25 16:37:06] INFO root fetch - processPackages [calibrated-explanations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calibrated_explanations-0.3.2.tar.gz tmp/calibrated_explanations-0.3.3.tar.gz --markdown 20240525/c/calibrated-explanations/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-25 16:37:06] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.2.tar.gz]
+[2024-05-25 16:37:06] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.3.tar.gz]
+[2024-05-25 16:37:06] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 16:37:06] INFO root fetch - processPackages [calibrated-explanations]: Remove: archive file [/home/abi/fetcher/tmp/calibrated_explanations-0.3.2.tar.gz]
+[2024-05-25 16:37:06] INFO root fetch - processPackages [calibrated-explanations]: Remove: archive file [/home/abi/fetcher/tmp/calibrated_explanations-0.3.3.tar.gz]
+[2024-05-25 16:37:06] INFO root fetch - main [MainThread]: End processing [calibrated-explanations]: success
+[2024-05-25 16:37:06] INFO root fetch - main [MainThread]: Store serial: [23375769]
