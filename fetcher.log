@@ -19161,3 +19161,20 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:22:41] INFO root fetch - processPackages [colfi]: Remove: archive file [/home/abi/fetcher/tmp/colfi-0.6.1-py3-none-any.whl.zip]
 [2024-05-25 18:22:41] INFO root fetch - main [MainThread]: End processing [colfi]: success
 [2024-05-25 18:22:41] INFO root fetch - main [MainThread]: Store serial: [23376440]
+[2024-05-25 18:24:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376440]
+[2024-05-25 18:24:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 18:24:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backend1
+[2024-05-25 18:24:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rnavirhost
+[2024-05-25 18:24:50] INFO root fetch - processPackages [backend1]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-25 18:24:50] INFO root fetch - processPackages [backend1]: Downloading https://files.pythonhosted.org/packages/a8/8f/627d0df3a99d1287ae3f83af38ea04f497ba0e258b00607dd5c1bf3050ca/backend1-1.0.7.tar.gz
+[2024-05-25 18:24:50] INFO root fetch - processPackages [rnavirhost]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 18:24:50] INFO root fetch - processPackages [backend1]: Downloading https://files.pythonhosted.org/packages/9a/d0/adea5a7dc21cc10287863f98b369d2d2638f113270d9199d58adeba1b579/backend1-1.0.9.tar.gz
+[2024-05-25 18:24:50] INFO root fetch - processPackages [rnavirhost]: Downloading https://files.pythonhosted.org/packages/3d/76/6aff7772c725ca7a21bf87a721cb71f1ce71d6b8ea414e289554242f1858/rnavirhost-1.0.3.tar.gz
+[2024-05-25 18:24:50] WARNING root fetch - processPackages [rnavirhost]: Skipping package: exceeds size limit 63285044>=10485760
+[2024-05-25 18:24:50] INFO root fetch - main [MainThread]: End processing [rnavirhost] error
+[2024-05-25 18:24:50] INFO root fetch - processPackages [backend1]: executing diffoscope
+[2024-05-25 18:24:50] INFO root fetch - processPackages [backend1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend1-1.0.7.tar.gz tmp/backend1-1.0.9.tar.gz --markdown 20240525/b/backend1/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-25 18:24:51] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.7.tar.gz]
+[2024-05-25 18:24:51] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.9.tar.gz]
+[2024-05-25 18:24:51] INFO root fetch - main [MainThread]: End processing [backend1]: success
+[2024-05-25 18:24:51] INFO root fetch - main [MainThread]: Store serial: [23376446]
