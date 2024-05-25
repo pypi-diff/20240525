@@ -11989,3 +11989,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:20:46] WARNING root fetch - processPackages [psbbridge]: Skipping, unable to determine old version
 [2024-05-25 11:20:46] INFO root fetch - main [MainThread]: End processing [psbbridge] error
 [2024-05-25 11:20:46] INFO root fetch - main [MainThread]: Store serial: [23373569]
+[2024-05-25 11:22:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373569]
+[2024-05-25 11:22:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 11:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unprint
+[2024-05-25 11:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-distill
+[2024-05-25 11:22:55] INFO root fetch - processPackages [unprint]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 11:22:55] INFO root fetch - processPackages [django-distill]: New version: [3.2.1] Old Version: [3.2.0]
+[2024-05-25 11:22:55] INFO root fetch - processPackages [unprint]: Downloading https://files.pythonhosted.org/packages/31/f0/f8406a29d9385460adb9dfab2328f8e619898eb3fd3f98c0b56da40c6201/unprint-0.0.8.tar.gz
+[2024-05-25 11:22:55] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/b3/de/5343a60199252de0060e3c7ac29aa2e0f17ef46c02db4ce928cd1596635c/django_distill-3.2.0.tar.gz
+[2024-05-25 11:22:56] INFO root fetch - processPackages [unprint]: Downloading https://files.pythonhosted.org/packages/9e/bf/753f285fdc18a94a6c0d366530b3c637c0d376ef2d217846acd6340bbc55/unprint-0.0.9.tar.gz
+[2024-05-25 11:22:56] INFO root fetch - processPackages [django-distill]: Downloading https://files.pythonhosted.org/packages/0a/bd/f923dbf13b946a9947c5be64fee017cdcb4bab222bedc4abbd961a8d45f0/django_distill-3.2.1.tar.gz
+[2024-05-25 11:22:56] INFO root fetch - processPackages [unprint]: executing diffoscope
+[2024-05-25 11:22:56] INFO root fetch - processPackages [unprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unprint-0.0.8.tar.gz tmp/unprint-0.0.9.tar.gz --markdown 20240525/u/unprint/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 11:22:56] INFO root fetch - processPackages [django-distill]: executing diffoscope
+[2024-05-25 11:22:56] INFO root fetch - processPackages [django-distill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_distill-3.2.0.tar.gz tmp/django_distill-3.2.1.tar.gz --markdown 20240525/d/django-distill/3.2.0-3.2.1/README.md --exclude *.pyd
+[2024-05-25 11:22:56] INFO root fetch - processPackages [unprint]: Remove: archive file [/home/abi/fetcher/tmp/unprint-0.0.8.tar.gz]
+[2024-05-25 11:22:56] INFO root fetch - processPackages [unprint]: Remove: archive file [/home/abi/fetcher/tmp/unprint-0.0.9.tar.gz]
+[2024-05-25 11:22:56] INFO root fetch - main [MainThread]: End processing [unprint]: success
+[2024-05-25 11:22:56] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.0.tar.gz]
+[2024-05-25 11:22:56] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.1.tar.gz]
+[2024-05-25 11:22:56] INFO root fetch - main [MainThread]: End processing [django-distill]: success
+[2024-05-25 11:22:56] INFO root fetch - main [MainThread]: Store serial: [23373574]
