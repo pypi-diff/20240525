@@ -21190,3 +21190,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:56:18] INFO root fetch - processPackages [turandot]: Remove: archive file [/home/abi/fetcher/tmp/turandot-3.1.5.tar.gz]
 [2024-05-25 20:56:18] INFO root fetch - main [MainThread]: End processing [turandot]: success
 [2024-05-25 20:56:18] INFO root fetch - main [MainThread]: Store serial: [23377237]
+[2024-05-25 20:58:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377237]
+[2024-05-25 20:58:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 20:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: palinuro-lib
+[2024-05-25 20:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: techtribe-addressbook
+[2024-05-25 20:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mambular
+[2024-05-25 20:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soar-sml
+[2024-05-25 20:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansiscraper
+[2024-05-25 20:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: baseball
+[2024-05-25 20:58:27] WARNING root fetch - processPackages [techtribe-addressbook]: Skipping, unable to determine old version
+[2024-05-25 20:58:27] INFO root fetch - main [MainThread]: End processing [techtribe-addressbook] error
+[2024-05-25 20:58:27] WARNING root fetch - processPackages [mambular]: Skipping, unable to determine old version
+[2024-05-25 20:58:27] INFO root fetch - main [MainThread]: End processing [mambular] error
+[2024-05-25 20:58:27] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 20:58:27] WARNING root fetch - processPackages [ansiscraper]: Skipping, unable to determine old version
+[2024-05-25 20:58:27] INFO root fetch - main [MainThread]: End processing [ansiscraper] error
+[2024-05-25 20:58:27] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 20:58:27] WARNING root fetch - processPackages [palinuro-lib]: Skipping, unable to determine old version
+[2024-05-25 20:58:27] INFO root fetch - main [MainThread]: End processing [palinuro-lib] error
+[2024-05-25 20:58:27] INFO root fetch - processPackages [soar-sml]: New version: [9.6.3.202405172339.dev122] Old Version: [9.6.2a42]
+[2024-05-25 20:58:27] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 20:58:27] INFO root fetch - processPackages [soar-sml]: Downloading https://files.pythonhosted.org/packages/b5/f6/28b4f6885c66c069fe829a3adf8b81a03ead44e9ca6f2e9bf508dd9cadf9/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl
+[2024-05-25 20:58:27] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 20:58:27] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 20:58:28] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 20:58:28] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 20:58:28] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 20:58:28] INFO root fetch - processPackages [soar-sml]: Downloading https://files.pythonhosted.org/packages/3e/7b/93fcd3e0d9937fd833900ec93b96e2d4247f45b07054b7ef5d8480151a62/soar_sml-9.6.3.202405172339.dev122-cp35-abi3-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-05-25 20:58:29] INFO root fetch - processPackages [soar-sml]: executing diffoscope
+[2024-05-25 20:58:29] INFO root fetch - processPackages [soar-sml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl.zip tmp/soar_sml-9.6.3.202405172339.dev122-cp35-abi3-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240525/s/soar-sml/9.6.2a42-9.6.3.202405172339.dev122/README.md --exclude *.pyd
+[2024-05-25 20:58:30] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.2a42-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 20:58:30] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.3.202405172339.dev122-cp35-abi3-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-05-25 20:58:30] INFO root fetch - main [MainThread]: End processing [soar-sml]: success
+[2024-05-25 20:58:30] INFO root fetch - main [MainThread]: Store serial: [23377262]
