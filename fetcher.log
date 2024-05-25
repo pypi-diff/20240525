@@ -7682,3 +7682,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:08:37] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl.zip]
 [2024-05-25 05:08:37] INFO root fetch - main [MainThread]: End processing [ovos-plugin-vlc]: success
 [2024-05-25 05:08:37] INFO root fetch - main [MainThread]: Store serial: [23371536]
+[2024-05-25 05:10:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371536]
+[2024-05-25 05:10:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 05:10:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-plugin-vlc
+[2024-05-25 05:10:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: supplies
+[2024-05-25 05:10:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vnstock3
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: New version: [0.0.2a8] Old Version: [0.0.2a7]
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: Downloading https://files.pythonhosted.org/packages/a6/ba/e605df8c10548b785e5bec2ad48a8c4b55bb3914b5eb34c3633f1ac0af34/ovos_plugin_vlc-0.0.2a7-py3-none-any.whl
+[2024-05-25 05:10:47] INFO root fetch - processPackages [vnstock3]: New version: [0.3.0.2] Old Version: [0.3.0.1]
+[2024-05-25 05:10:47] INFO root fetch - processPackages [supplies]: New version: [0.9.1] Old Version: [0.8.9]
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: Downloading https://files.pythonhosted.org/packages/74/78/4cfda31a71c6aa87217fd33525b21c85ca0d0e5a624fa7770ce44e62b451/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl
+[2024-05-25 05:10:47] INFO root fetch - processPackages [vnstock3]: Downloading https://files.pythonhosted.org/packages/69/9e/d70a864aae77ccfdf82a747ff6ade885d7f5a08edc341abe8bff62a8d86b/vnstock3-0.3.0.1.tar.gz
+[2024-05-25 05:10:47] INFO root fetch - processPackages [supplies]: Downloading https://files.pythonhosted.org/packages/77/0e/515506013ff5822d89aed3d381128f636bb13054bf07ca7904def4cfe136/supplies-0.8.9.tar.gz
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: executing diffoscope
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_vlc-0.0.2a7-py3-none-any.whl.zip tmp/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl.zip --markdown 20240525/o/ovos-plugin-vlc/0.0.2a7-0.0.2a8/README.md --exclude *.pyd
+[2024-05-25 05:10:47] INFO root fetch - processPackages [vnstock3]: Downloading https://files.pythonhosted.org/packages/15/fc/a0ad90d72c34d360956ac37017f8a7ddb7e67010943f4676ff98b6290736/vnstock3-0.3.0.2.tar.gz
+[2024-05-25 05:10:47] INFO root fetch - processPackages [supplies]: Downloading https://files.pythonhosted.org/packages/32/1d/56ac4ad30ae33c6b5e80374d7a5f22c75833e4eb3a7174d62f9738c91aaf/supplies-0.9.1.tar.gz
+[2024-05-25 05:10:47] INFO root fetch - processPackages [vnstock3]: executing diffoscope
+[2024-05-25 05:10:47] INFO root fetch - processPackages [vnstock3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnstock3-0.3.0.1.tar.gz tmp/vnstock3-0.3.0.2.tar.gz --markdown 20240525/v/vnstock3/0.3.0.1-0.3.0.2/README.md --exclude *.pyd
+[2024-05-25 05:10:47] INFO root fetch - processPackages [supplies]: executing diffoscope
+[2024-05-25 05:10:47] INFO root fetch - processPackages [supplies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supplies-0.8.9.tar.gz tmp/supplies-0.9.1.tar.gz --markdown 20240525/s/supplies/0.8.9-0.9.1/README.md --exclude *.pyd
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a7-py3-none-any.whl.zip]
+[2024-05-25 05:10:47] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a8-py3-none-any.whl.zip]
+[2024-05-25 05:10:47] INFO root fetch - main [MainThread]: End processing [ovos-plugin-vlc]: success
+[2024-05-25 05:10:48] INFO root fetch - processPackages [supplies]: Remove: archive file [/home/abi/fetcher/tmp/supplies-0.8.9.tar.gz]
+[2024-05-25 05:10:48] INFO root fetch - processPackages [supplies]: Remove: archive file [/home/abi/fetcher/tmp/supplies-0.9.1.tar.gz]
+[2024-05-25 05:10:48] INFO root fetch - main [MainThread]: End processing [supplies]: success
+[2024-05-25 05:10:48] INFO root fetch - processPackages [vnstock3]: Remove: archive file [/home/abi/fetcher/tmp/vnstock3-0.3.0.1.tar.gz]
+[2024-05-25 05:10:48] INFO root fetch - processPackages [vnstock3]: Remove: archive file [/home/abi/fetcher/tmp/vnstock3-0.3.0.2.tar.gz]
+[2024-05-25 05:10:48] INFO root fetch - main [MainThread]: End processing [vnstock3]: success
+[2024-05-25 05:10:48] INFO root fetch - main [MainThread]: Store serial: [23371553]
