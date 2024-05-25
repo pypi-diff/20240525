@@ -6985,3 +6985,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:43:01] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-05-25 03:43:01] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-05-25 03:43:01] INFO root fetch - main [MainThread]: Store serial: [23371252]
+[2024-05-25 03:45:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371252]
+[2024-05-25 03:45:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 03:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baseball
+[2024-05-25 03:45:11] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 03:45:11] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 03:45:12] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 03:45:12] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 03:45:12] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 03:45:12] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 03:45:12] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 03:45:12] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 03:45:12] INFO root fetch - main [MainThread]: Store serial: [23371259]
