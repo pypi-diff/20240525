@@ -12240,3 +12240,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:53:22] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.4.tar.gz]
 [2024-05-25 11:53:22] INFO root fetch - main [MainThread]: End processing [beets-gdplaylists]: success
 [2024-05-25 11:53:22] INFO root fetch - main [MainThread]: Store serial: [23373709]
+[2024-05-25 11:55:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373709]
+[2024-05-25 11:55:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 11:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-cardgenerator
+[2024-05-25 11:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hddm-s
+[2024-05-25 11:55:30] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.79]
+[2024-05-25 11:55:30] WARNING root fetch - processPackages [apiverve-cardgenerator]: Skipping, unable to determine old version
+[2024-05-25 11:55:30] INFO root fetch - main [MainThread]: End processing [apiverve-cardgenerator] error
+[2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/4a/45/79748d3583825c5f2f081487777a68f5bf16c65de7c96b352ce544983197/hddm_s-1.0.79.tar.gz
+[2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.79.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.79-1.0.9/README.md --exclude *.pyd
+[2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.79.tar.gz]
+[2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 11:55:31] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 11:55:31] INFO root fetch - main [MainThread]: Store serial: [23373714]
