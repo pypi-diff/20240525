@@ -11410,3 +11410,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:43:27] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.6.tar.gz]
 [2024-05-25 10:43:27] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
 [2024-05-25 10:43:27] INFO root fetch - main [MainThread]: Store serial: [23373306]
+[2024-05-25 10:45:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373306]
+[2024-05-25 10:45:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 10:45:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: curies-rs
+[2024-05-25 10:45:38] INFO root fetch - processPackages [curies-rs]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 10:45:38] INFO root fetch - processPackages [curies-rs]: Downloading https://files.pythonhosted.org/packages/46/d1/dc370e24e6ca61174b6b8c563cd20f8f79121ae5baa10ad99b41c4cc65ef/curies_rs-0.1.1-cp39-cp39-musllinux_1_1_x86_64.whl
+[2024-05-25 10:45:39] INFO root fetch - processPackages [curies-rs]: Downloading https://files.pythonhosted.org/packages/2d/63/4dfd815b8133b5719ec6d411b8d681f777d7b332b4d7c084a454228aa8a2/curies_rs-0.1.2-pp39-pypy39_pp73-macosx_10_12_x86_64.whl
+[2024-05-25 10:45:40] INFO root fetch - processPackages [curies-rs]: executing diffoscope
+[2024-05-25 10:45:40] INFO root fetch - processPackages [curies-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curies_rs-0.1.1-cp39-cp39-musllinux_1_1_x86_64.whl.zip tmp/curies_rs-0.1.2-pp39-pypy39_pp73-macosx_10_12_x86_64.whl.zip --markdown 20240525/c/curies-rs/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 10:45:41] INFO root fetch - processPackages [curies-rs]: Remove: archive file [/home/abi/fetcher/tmp/curies_rs-0.1.1-cp39-cp39-musllinux_1_1_x86_64.whl.zip]
+[2024-05-25 10:45:41] INFO root fetch - processPackages [curies-rs]: Remove: archive file [/home/abi/fetcher/tmp/curies_rs-0.1.2-pp39-pypy39_pp73-macosx_10_12_x86_64.whl.zip]
+[2024-05-25 10:45:41] INFO root fetch - main [MainThread]: End processing [curies-rs]: success
+[2024-05-25 10:45:41] INFO root fetch - main [MainThread]: Store serial: [23373326]
