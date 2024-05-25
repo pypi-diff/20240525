@@ -20777,3 +20777,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:14:31] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.3.tar.gz]
 [2024-05-25 20:14:31] INFO root fetch - main [MainThread]: End processing [terminaltexteffects]: success
 [2024-05-25 20:14:31] INFO root fetch - main [MainThread]: Store serial: [23377057]
+[2024-05-25 20:16:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377057]
+[2024-05-25 20:16:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 20:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mobfot
+[2024-05-25 20:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wolfsoftware.baseline-package-cli
+[2024-05-25 20:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-05-25 20:16:40] INFO root fetch - processPackages [mobfot]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-25 20:16:40] WARNING root fetch - processPackages [wolfsoftware.baseline-package-cli]: Skipping, unable to determine old version
+[2024-05-25 20:16:40] INFO root fetch - main [MainThread]: End processing [wolfsoftware.baseline-package-cli] error
+[2024-05-25 20:16:40] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 20:16:40] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-05-25 20:16:40] INFO root fetch - processPackages [mobfot]: Downloading https://files.pythonhosted.org/packages/b8/9a/7b798950966eb35b8d4558d47c9bb328ab126099743cf8fd6fec117b003e/mobfot-1.3.0.tar.gz
+[2024-05-25 20:16:40] INFO root fetch - processPackages [mobfot]: Downloading https://files.pythonhosted.org/packages/94/fa/361e5c11d4ee70c8f745a0f49cd1501d9753f43fdf122cd75e2872323de4/mobfot-1.4.0.tar.gz
+[2024-05-25 20:16:41] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-05-25 20:16:41] INFO root fetch - processPackages [mobfot]: executing diffoscope
+[2024-05-25 20:16:41] INFO root fetch - processPackages [mobfot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobfot-1.3.0.tar.gz tmp/mobfot-1.4.0.tar.gz --markdown 20240525/m/mobfot/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-25 20:16:41] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-05-25 20:16:41] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240525/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 20:16:41] INFO root fetch - processPackages [mobfot]: Remove: archive file [/home/abi/fetcher/tmp/mobfot-1.3.0.tar.gz]
+[2024-05-25 20:16:41] INFO root fetch - processPackages [mobfot]: Remove: archive file [/home/abi/fetcher/tmp/mobfot-1.4.0.tar.gz]
+[2024-05-25 20:16:41] INFO root fetch - main [MainThread]: End processing [mobfot]: success
+[2024-05-25 20:16:42] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-05-25 20:16:42] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-05-25 20:16:42] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-05-25 20:16:42] INFO root fetch - main [MainThread]: Store serial: [23377068]
