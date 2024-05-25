@@ -8940,3 +8940,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:18:36] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.1.0-py3-none-any.whl.zip]
 [2024-05-25 07:18:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-in]: success
 [2024-05-25 07:18:36] INFO root fetch - main [MainThread]: Store serial: [23372180]
+[2024-05-25 07:20:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372180]
+[2024-05-25 07:20:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 07:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-it-fatturapa
+[2024-05-25 07:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wayz-rlsdk-python
+[2024-05-25 07:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-l10n-italy
+[2024-05-25 07:20:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: online-scheduler
+[2024-05-25 07:20:46] INFO root fetch - processPackages [online-scheduler]: New version: [0.2] Old Version: [0.1.3]
+[2024-05-25 07:20:46] WARNING root fetch - processPackages [wayz-rlsdk-python]: Skipping, unable to determine old version
+[2024-05-25 07:20:46] INFO root fetch - main [MainThread]: End processing [wayz-rlsdk-python] error
+[2024-05-25 07:20:46] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.6.3]
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: New version: [16.0.20240524.0] Old Version: [16.0.20240520.0]
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Downloading https://files.pythonhosted.org/packages/09/ab/f53a9e4404578dc6b3fb0f807f4a9449a79fa29ba7e6211775b4c7ac5354/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl
+[2024-05-25 07:20:47] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/d1/a6/a9fe75d67170a97fb1452af3c9990a483033587008a962ee1f7a04f0f415/online_scheduler-0.1.3.tar.gz
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Downloading https://files.pythonhosted.org/packages/f1/e8/87e3d08eb925e38a3bd4eaa1e31f74ca5768dee41a3dd719f4553a168fe8/odoo_addons_oca_l10n_italy-16.0.20240520.0-py3-none-any.whl
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Downloading https://files.pythonhosted.org/packages/da/4c/20592fc087274f9461d84fb3a93d8a9a32bcb3191fcbe5ab7817b38546f5/odoo_addon_l10n_it_fatturapa-16.0.1.1.0-py3-none-any.whl
+[2024-05-25 07:20:47] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/a3/e0/a5f5ee1ae4e393462e073653d539aae22212cf4a318dac77cf35418a35be/online_scheduler-0.2.tar.gz
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Downloading https://files.pythonhosted.org/packages/87/57/633bf882e0934276f83d424475718c7618819f5dc39d8d1f60510d902794/odoo_addons_oca_l10n_italy-16.0.20240524.0-py3-none-any.whl
+[2024-05-25 07:20:47] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 07:20:47] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.1.3.tar.gz tmp/online_scheduler-0.2.tar.gz --markdown 20240525/o/online-scheduler/0.1.3-0.2/README.md --exclude *.pyd
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: executing diffoscope
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-l10n-it-fatturapa/16.0.1.0.6.3-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: executing diffoscope
+[2024-05-25 07:20:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_l10n_italy-16.0.20240520.0-py3-none-any.whl.zip tmp/odoo_addons_oca_l10n_italy-16.0.20240524.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addons-oca-l10n-italy/16.0.20240520.0-16.0.20240524.0/README.md --exclude *.pyd
+[2024-05-25 07:20:48] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.1.3.tar.gz]
+[2024-05-25 07:20:48] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.2.tar.gz]
+[2024-05-25 07:20:48] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 07:20:48] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_l10n_italy-16.0.20240520.0-py3-none-any.whl.zip]
+[2024-05-25 07:20:48] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_l10n_italy-16.0.20240524.0-py3-none-any.whl.zip]
+[2024-05-25 07:20:48] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-l10n-italy]: success
+[2024-05-25 07:20:48] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl.zip]
+[2024-05-25 07:20:48] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-25 07:20:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa]: success
+[2024-05-25 07:20:48] INFO root fetch - main [MainThread]: Store serial: [23372192]
