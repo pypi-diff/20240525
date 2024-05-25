@@ -8997,3 +8997,30 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:22:59] INFO root fetch - processPackages [scorecard-ai]: Remove: archive file [/home/abi/fetcher/tmp/scorecard_ai-1.0.0b3.tar.gz]
 [2024-05-25 07:22:59] INFO root fetch - main [MainThread]: End processing [scorecard-ai]: success
 [2024-05-25 07:22:59] INFO root fetch - main [MainThread]: Store serial: [23372202]
+[2024-05-25 07:25:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372202]
+[2024-05-25 07:25:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 07:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: report-pdf-wrapper
+[2024-05-25 07:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: online-scheduler
+[2024-05-25 07:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simon-bot
+[2024-05-25 07:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: team-project-contacts-personal-asisstant
+[2024-05-25 07:25:08] INFO root fetch - processPackages [online-scheduler]: New version: [0.3] Old Version: [0.2]
+[2024-05-25 07:25:08] INFO root fetch - processPackages [report-pdf-wrapper]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-25 07:25:08] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/a3/e0/a5f5ee1ae4e393462e073653d539aae22212cf4a318dac77cf35418a35be/online_scheduler-0.2.tar.gz
+[2024-05-25 07:25:08] WARNING root fetch - processPackages [team-project-contacts-personal-asisstant]: Skipping, unable to determine old version
+[2024-05-25 07:25:08] INFO root fetch - main [MainThread]: End processing [team-project-contacts-personal-asisstant] error
+[2024-05-25 07:25:08] INFO root fetch - processPackages [report-pdf-wrapper]: Downloading https://files.pythonhosted.org/packages/5b/11/f587ab6c016006c80224aca1c362144b32e79072aca68deb6de78cbe87ea/report_pdf_wrapper-0.3.0-py3-none-any.whl
+[2024-05-25 07:25:08] WARNING root fetch - processPackages [simon-bot]: Skipping, unable to determine old version
+[2024-05-25 07:25:08] INFO root fetch - main [MainThread]: End processing [simon-bot] error
+[2024-05-25 07:25:08] INFO root fetch - processPackages [report-pdf-wrapper]: Downloading https://files.pythonhosted.org/packages/56/21/19475925bdb25f33a796b21a542abaec94fd6398f599c80065bbbd9eea45/report_pdf_wrapper-0.4.0-py3-none-any.whl
+[2024-05-25 07:25:08] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/13/3c/e164adc5b022fe1b32eb449fbdcb08bed294e078405cb9d914bcd667df68/online_scheduler-0.3.tar.gz
+[2024-05-25 07:25:08] INFO root fetch - processPackages [report-pdf-wrapper]: executing diffoscope
+[2024-05-25 07:25:08] INFO root fetch - processPackages [report-pdf-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/report_pdf_wrapper-0.3.0-py3-none-any.whl.zip tmp/report_pdf_wrapper-0.4.0-py3-none-any.whl.zip --markdown 20240525/r/report-pdf-wrapper/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-25 07:25:08] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 07:25:08] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.2.tar.gz tmp/online_scheduler-0.3.tar.gz --markdown 20240525/o/online-scheduler/0.2-0.3/README.md --exclude *.pyd
+[2024-05-25 07:25:09] INFO root fetch - processPackages [report-pdf-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/report_pdf_wrapper-0.3.0-py3-none-any.whl.zip]
+[2024-05-25 07:25:09] INFO root fetch - processPackages [report-pdf-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/report_pdf_wrapper-0.4.0-py3-none-any.whl.zip]
+[2024-05-25 07:25:09] INFO root fetch - main [MainThread]: End processing [report-pdf-wrapper]: success
+[2024-05-25 07:25:09] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.2.tar.gz]
+[2024-05-25 07:25:09] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.3.tar.gz]
+[2024-05-25 07:25:09] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 07:25:09] INFO root fetch - main [MainThread]: Store serial: [23372218]
