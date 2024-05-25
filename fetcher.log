@@ -18285,3 +18285,45 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:19:13] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-05-25 17:19:13] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-25 17:19:13] INFO root fetch - main [MainThread]: Store serial: [23376036]
+[2024-05-25 17:21:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376036]
+[2024-05-25 17:21:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 17:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moveread-sdk
+[2024-05-25 17:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-datasets
+[2024-05-25 17:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ltasg
+[2024-05-25 17:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tortoise-orm
+[2024-05-25 17:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytom3d
+[2024-05-25 17:21:22] INFO root fetch - processPackages [tortoise-orm]: New version: [0.9.4] Old Version: [0.9.2]
+[2024-05-25 17:21:22] INFO root fetch - processPackages [tortoise-orm]: Downloading https://files.pythonhosted.org/packages/39/9f/ffdf1109a315712cb2789ec9ac282a403e6a76725952ac8d91fe32ae2918/tortoise-orm-0.9.2.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [pytom3d]: New version: [0.0.0rc5] Old Version: [0.0.0rc4]
+[2024-05-25 17:21:22] WARNING root fetch - processPackages [ltasg]: Skipping, unable to determine old version
+[2024-05-25 17:21:22] INFO root fetch - main [MainThread]: End processing [ltasg] error
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-datasets]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-sdk]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-sdk]: Downloading https://files.pythonhosted.org/packages/d4/22/c055c2ce5bd7388762b9da96bac00476c7ab1eded46df9ab08353d639574/moveread_sdk-0.1.2.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-datasets]: Downloading https://files.pythonhosted.org/packages/af/95/0f8a414288bb6f0dc4661b41754dc1461084b51d295e2e626bf0d9ab4feb/moveread_datasets-0.1.5.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [pytom3d]: Downloading https://files.pythonhosted.org/packages/9c/ec/d06eda959e5e2e17441823bf192a48b5e73a8a3c25f005889c39ccc3dde6/pytom3d-0.0.0rc4.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [tortoise-orm]: Downloading https://files.pythonhosted.org/packages/b8/f3/f3dea97fd4265ef0a33714eaef79fd8e25334636fad1e4c470eb64224a62/tortoise-orm-0.9.4.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [tortoise-orm]: executing diffoscope
+[2024-05-25 17:21:22] INFO root fetch - processPackages [tortoise-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tortoise-orm-0.9.2.tar.gz tmp/tortoise-orm-0.9.4.tar.gz --markdown 20240525/t/tortoise-orm/0.9.2-0.9.4/README.md --exclude *.pyd
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-sdk]: Downloading https://files.pythonhosted.org/packages/49/59/2657688bf54cb58b1aaec2494b4d824fbdcf4c23b6c7d0777606719a0145/moveread_sdk-0.1.3.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-datasets]: Downloading https://files.pythonhosted.org/packages/82/c5/124aaecf39b3749c23fd1d612432d6a4e98b0df2bce8b89fee9686219a01/moveread_datasets-0.1.6.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-sdk]: executing diffoscope
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_sdk-0.1.2.tar.gz tmp/moveread_sdk-0.1.3.tar.gz --markdown 20240525/m/moveread-sdk/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-datasets]: executing diffoscope
+[2024-05-25 17:21:22] INFO root fetch - processPackages [moveread-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_datasets-0.1.5.tar.gz tmp/moveread_datasets-0.1.6.tar.gz --markdown 20240525/m/moveread-datasets/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 17:21:22] INFO root fetch - processPackages [pytom3d]: Downloading https://files.pythonhosted.org/packages/d4/e7/3e5f2dcfd2fecc8290ab6daf749fbd12263858697fd0e61f90f358940a0c/pytom3d-0.0.0rc5.tar.gz
+[2024-05-25 17:21:22] INFO root fetch - processPackages [pytom3d]: executing diffoscope
+[2024-05-25 17:21:22] INFO root fetch - processPackages [pytom3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytom3d-0.0.0rc4.tar.gz tmp/pytom3d-0.0.0rc5.tar.gz --markdown 20240525/p/pytom3d/0.0.0rc4-0.0.0rc5/README.md --exclude *.pyd
+[2024-05-25 17:21:23] INFO root fetch - processPackages [moveread-datasets]: Remove: archive file [/home/abi/fetcher/tmp/moveread_datasets-0.1.5.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - processPackages [moveread-datasets]: Remove: archive file [/home/abi/fetcher/tmp/moveread_datasets-0.1.6.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - main [MainThread]: End processing [moveread-datasets]: success
+[2024-05-25 17:21:23] INFO root fetch - processPackages [moveread-sdk]: Remove: archive file [/home/abi/fetcher/tmp/moveread_sdk-0.1.2.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - processPackages [moveread-sdk]: Remove: archive file [/home/abi/fetcher/tmp/moveread_sdk-0.1.3.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - main [MainThread]: End processing [moveread-sdk]: success
+[2024-05-25 17:21:23] INFO root fetch - processPackages [pytom3d]: Remove: archive file [/home/abi/fetcher/tmp/pytom3d-0.0.0rc4.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - processPackages [pytom3d]: Remove: archive file [/home/abi/fetcher/tmp/pytom3d-0.0.0rc5.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - main [MainThread]: End processing [pytom3d]: success
+[2024-05-25 17:21:23] INFO root fetch - processPackages [tortoise-orm]: Remove: archive file [/home/abi/fetcher/tmp/tortoise-orm-0.9.2.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - processPackages [tortoise-orm]: Remove: archive file [/home/abi/fetcher/tmp/tortoise-orm-0.9.4.tar.gz]
+[2024-05-25 17:21:23] INFO root fetch - main [MainThread]: End processing [tortoise-orm]: success
+[2024-05-25 17:21:23] INFO root fetch - main [MainThread]: Store serial: [23376054]
