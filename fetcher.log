@@ -10105,3 +10105,38 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:11:51] INFO root fetch - processPackages [armis]: Remove: archive file [/home/abi/fetcher/tmp/armis-1.0.22.tar.gz]
 [2024-05-25 09:11:51] INFO root fetch - main [MainThread]: End processing [armis]: success
 [2024-05-25 09:11:51] INFO root fetch - main [MainThread]: Store serial: [23372698]
+[2024-05-25 09:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372698]
+[2024-05-25 09:13:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 09:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: techgram
+[2024-05-25 09:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-planner-calendar
+[2024-05-25 09:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: retr0reg-pip-carepackage
+[2024-05-25 09:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deltachat-rpc-client
+[2024-05-25 09:14:00] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: New version: [15.0.2.0.0.1] Old Version: [15.0.2.0.0]
+[2024-05-25 09:14:00] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: Downloading https://files.pythonhosted.org/packages/f3/4f/4dea0dfe7eb15c87c0c8d297cbb8d6499f880cb3b17eeada1e1a67ad9d44/odoo_addon_sale_planner_calendar-15.0.2.0.0-py3-none-any.whl
+[2024-05-25 09:14:00] INFO root fetch - processPackages [retr0reg-pip-carepackage]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 09:14:00] INFO root fetch - processPackages [deltachat-rpc-client]: New version: [1.139.6] Old Version: [1.139.5]
+[2024-05-25 09:14:00] INFO root fetch - processPackages [techgram]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 09:14:00] INFO root fetch - processPackages [techgram]: Downloading https://files.pythonhosted.org/packages/bb/6a/8f42ce2261917180e04383db934b3337df0e0e91cb53fa81e5c1a25f8e52/techgram-1.0.8-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-25 09:14:00] WARNING root fetch - processPackages [techgram]: Skipping package: exceeds size limit 11235555>=10485760
+[2024-05-25 09:14:00] INFO root fetch - main [MainThread]: End processing [techgram] error
+[2024-05-25 09:14:00] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Downloading https://files.pythonhosted.org/packages/ae/25/49fb9c34d89937a547098b8a91fbe33127d33630bccf68a4b1adaf36330a/retr0reg_pip_carepackage-1.1.1.tar.gz
+[2024-05-25 09:14:00] INFO root fetch - processPackages [deltachat-rpc-client]: Downloading https://files.pythonhosted.org/packages/47/bd/cb3e020b2b295366fca06b2918c73c46d1309a8b8f695c0d413f9fd07480/deltachat_rpc_client-1.139.5.tar.gz
+[2024-05-25 09:14:00] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: Downloading https://files.pythonhosted.org/packages/45/ae/7d0c18a85f9779321e6725d09ae28a0faaeda303247a905a89a8ca44b6ca/odoo_addon_sale_planner_calendar-15.0.2.0.0.1-py3-none-any.whl
+[2024-05-25 09:14:00] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Downloading https://files.pythonhosted.org/packages/f7/2d/2acc1e44ed08db605d73ff9ba84c555c2dc0715dc3ccaee2ce57a427fd63/retr0reg_pip_carepackage-1.1.2.tar.gz
+[2024-05-25 09:14:00] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: executing diffoscope
+[2024-05-25 09:14:00] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_planner_calendar-15.0.2.0.0-py3-none-any.whl.zip tmp/odoo_addon_sale_planner_calendar-15.0.2.0.0.1-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-sale-planner-calendar/15.0.2.0.0-15.0.2.0.0.1/README.md --exclude *.pyd
+[2024-05-25 09:14:00] INFO root fetch - processPackages [retr0reg-pip-carepackage]: executing diffoscope
+[2024-05-25 09:14:00] INFO root fetch - processPackages [retr0reg-pip-carepackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retr0reg_pip_carepackage-1.1.1.tar.gz tmp/retr0reg_pip_carepackage-1.1.2.tar.gz --markdown 20240525/r/retr0reg-pip-carepackage/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 09:14:00] INFO root fetch - processPackages [deltachat-rpc-client]: Downloading https://files.pythonhosted.org/packages/4b/03/e936972ae6363e5b3f3e6eeabb619beb6799356ad4da1642c9b8d06341fd/deltachat_rpc_client-1.139.6.tar.gz
+[2024-05-25 09:14:00] INFO root fetch - processPackages [deltachat-rpc-client]: executing diffoscope
+[2024-05-25 09:14:00] INFO root fetch - processPackages [deltachat-rpc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat_rpc_client-1.139.5.tar.gz tmp/deltachat_rpc_client-1.139.6.tar.gz --markdown 20240525/d/deltachat-rpc-client/1.139.5-1.139.6/README.md --exclude *.pyd
+[2024-05-25 09:14:01] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Remove: archive file [/home/abi/fetcher/tmp/retr0reg_pip_carepackage-1.1.1.tar.gz]
+[2024-05-25 09:14:01] INFO root fetch - processPackages [retr0reg-pip-carepackage]: Remove: archive file [/home/abi/fetcher/tmp/retr0reg_pip_carepackage-1.1.2.tar.gz]
+[2024-05-25 09:14:01] INFO root fetch - main [MainThread]: End processing [retr0reg-pip-carepackage]: success
+[2024-05-25 09:14:01] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_planner_calendar-15.0.2.0.0-py3-none-any.whl.zip]
+[2024-05-25 09:14:01] INFO root fetch - processPackages [odoo-addon-sale-planner-calendar]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_planner_calendar-15.0.2.0.0.1-py3-none-any.whl.zip]
+[2024-05-25 09:14:01] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-planner-calendar]: success
+[2024-05-25 09:14:01] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.139.5.tar.gz]
+[2024-05-25 09:14:01] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.139.6.tar.gz]
+[2024-05-25 09:14:01] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-client]: success
+[2024-05-25 09:14:01] INFO root fetch - main [MainThread]: Store serial: [23372713]
