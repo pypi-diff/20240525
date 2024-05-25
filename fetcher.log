@@ -11288,3 +11288,21 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:32:29] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.7.0.tar.gz]
 [2024-05-25 10:32:29] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
 [2024-05-25 10:32:29] INFO root fetch - main [MainThread]: Store serial: [23373231]
+[2024-05-25 10:34:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373231]
+[2024-05-25 10:34:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: online-scheduler
+[2024-05-25 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FishShrimpCrab
+[2024-05-25 10:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-qualitator
+[2024-05-25 10:34:38] WARNING root fetch - processPackages [data-qualitator]: Skipping, unable to determine old version
+[2024-05-25 10:34:38] INFO root fetch - main [MainThread]: End processing [data-qualitator] error
+[2024-05-25 10:34:38] INFO root fetch - processPackages [online-scheduler]: New version: [1.3] Old Version: [1.2]
+[2024-05-25 10:34:38] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/18/33/84ab55b6f71cd2d731591153fea0beaa4a6be4a57f317004dbb9995213b6/online_scheduler-1.2.tar.gz
+[2024-05-25 10:34:38] WARNING root fetch - processPackages [FishShrimpCrab]: Skipping, unable to determine old version
+[2024-05-25 10:34:38] INFO root fetch - main [MainThread]: End processing [FishShrimpCrab] error
+[2024-05-25 10:34:38] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/8a/f0/cdaeefa2f57755397a1f2437db8a33d84e6230a757ebcfb356406a02d0c5/online_scheduler-1.3.tar.gz
+[2024-05-25 10:34:39] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 10:34:39] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-1.2.tar.gz tmp/online_scheduler-1.3.tar.gz --markdown 20240525/o/online-scheduler/1.2-1.3/README.md --exclude *.pyd
+[2024-05-25 10:34:39] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.2.tar.gz]
+[2024-05-25 10:34:39] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.3.tar.gz]
+[2024-05-25 10:34:39] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 10:34:39] INFO root fetch - main [MainThread]: Store serial: [23373240]
