@@ -14268,3 +14268,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:42:20] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl.zip]
 [2024-05-25 14:42:20] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-05-25 14:42:20] INFO root fetch - main [MainThread]: Store serial: [23374637]
+[2024-05-25 14:44:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374637]
+[2024-05-25 14:44:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 14:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytorr-play
+[2024-05-25 14:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cyclomonitor
+[2024-05-25 14:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alphafold3-pytorch
+[2024-05-25 14:44:29] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 14:44:29] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 14:44:29] WARNING root fetch - processPackages [pytorr-play]: Skipping, unable to determine old version
+[2024-05-25 14:44:29] INFO root fetch - main [MainThread]: End processing [pytorr-play] error
+[2024-05-25 14:44:29] INFO root fetch - processPackages [cyclomonitor]: New version: [2024.5.25] Old Version: [2024.5.15]
+[2024-05-25 14:44:29] INFO root fetch - processPackages [cyclomonitor]: Downloading https://files.pythonhosted.org/packages/4b/e1/9c01bb2536b8e6b4e26a3a9a94313be788eece846b41633985b1b8267eff/cyclomonitor-2024.5.15.tar.gz
+[2024-05-25 14:44:29] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 14:44:29] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 14:44:29] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 14:44:29] INFO root fetch - processPackages [cyclomonitor]: Downloading https://files.pythonhosted.org/packages/14/46/c5cdb3f96bc7d026b0c800c584e7aa85cd8247e4e89ab987217fab893208/cyclomonitor-2024.5.25.tar.gz
+[2024-05-25 14:44:29] INFO root fetch - processPackages [cyclomonitor]: executing diffoscope
+[2024-05-25 14:44:29] INFO root fetch - processPackages [cyclomonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclomonitor-2024.5.15.tar.gz tmp/cyclomonitor-2024.5.25.tar.gz --markdown 20240525/c/cyclomonitor/2024.5.15-2024.5.25/README.md --exclude *.pyd
+[2024-05-25 14:44:30] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 14:44:30] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 14:44:30] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 14:44:30] INFO root fetch - processPackages [cyclomonitor]: Remove: archive file [/home/abi/fetcher/tmp/cyclomonitor-2024.5.15.tar.gz]
+[2024-05-25 14:44:30] INFO root fetch - processPackages [cyclomonitor]: Remove: archive file [/home/abi/fetcher/tmp/cyclomonitor-2024.5.25.tar.gz]
+[2024-05-25 14:44:30] INFO root fetch - main [MainThread]: End processing [cyclomonitor]: success
+[2024-05-25 14:44:30] INFO root fetch - main [MainThread]: Store serial: [23374650]
