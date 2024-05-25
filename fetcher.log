@@ -12093,3 +12093,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:38:08] INFO root fetch - processPackages [django-distill]: Remove: archive file [/home/abi/fetcher/tmp/django_distill-3.2.3.tar.gz]
 [2024-05-25 11:38:09] INFO root fetch - main [MainThread]: End processing [django-distill]: success
 [2024-05-25 11:38:09] INFO root fetch - main [MainThread]: Store serial: [23373603]
+[2024-05-25 11:40:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373603]
+[2024-05-25 11:40:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beets-gdplaylists
+[2024-05-25 11:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jeddinformatics
+[2024-05-25 11:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mcqq-tool
+[2024-05-25 11:40:17] INFO root fetch - processPackages [beets-gdplaylists]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-25 11:40:17] INFO root fetch - processPackages [mcqq-tool]: New version: [1.1.8.post1] Old Version: [1.1.8]
+[2024-05-25 11:40:17] INFO root fetch - processPackages [beets-gdplaylists]: Downloading https://files.pythonhosted.org/packages/22/97/e881670fdd7b1390d1025d536c536b9aab118807f3ffde7dff995a6ca839/beets_gdplaylists-0.2.2.tar.gz
+[2024-05-25 11:40:17] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/f3/22/8505a7e443e97736c695a79ff9d12f021d2a17047e9927ded6dd7d50cef5/mcqq_tool-1.1.8.tar.gz
+[2024-05-25 11:40:17] INFO root fetch - processPackages [jeddinformatics]: New version: [0.6.1] Old Version: [0.5.1]
+[2024-05-25 11:40:17] INFO root fetch - processPackages [jeddinformatics]: Downloading https://files.pythonhosted.org/packages/73/89/dd6dcf4adeedbac2cf396fa13b8c668f9e573541b52cfb31d6ef6813e4a5/jeddinformatics-0.5.1.tar.gz
+[2024-05-25 11:40:18] INFO root fetch - processPackages [beets-gdplaylists]: Downloading https://files.pythonhosted.org/packages/0c/80/f1a3648687d15602ef0e73ba651aaf91f34e667d3bd77486a995e0c5683f/beets_gdplaylists-0.2.3.tar.gz
+[2024-05-25 11:40:18] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/f2/d4/4b52068c5cab62659f3bc452b449ba30d9f4e2877bfa101f27c37d9f8536/mcqq_tool-1.1.8.post1.tar.gz
+[2024-05-25 11:40:18] INFO root fetch - processPackages [mcqq-tool]: executing diffoscope
+[2024-05-25 11:40:18] INFO root fetch - processPackages [mcqq-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcqq_tool-1.1.8.tar.gz tmp/mcqq_tool-1.1.8.post1.tar.gz --markdown 20240525/m/mcqq-tool/1.1.8-1.1.8.post1/README.md --exclude *.pyd
+[2024-05-25 11:40:18] INFO root fetch - processPackages [beets-gdplaylists]: executing diffoscope
+[2024-05-25 11:40:18] INFO root fetch - processPackages [beets-gdplaylists]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_gdplaylists-0.2.2.tar.gz tmp/beets_gdplaylists-0.2.3.tar.gz --markdown 20240525/b/beets-gdplaylists/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-25 11:40:18] INFO root fetch - processPackages [jeddinformatics]: Downloading https://files.pythonhosted.org/packages/1c/39/0b972fde73bdaeb1ecf9412b7c6c744b270205504e3e65a57f7a48fbbb12/jeddinformatics-0.6.1.tar.gz
+[2024-05-25 11:40:18] INFO root fetch - processPackages [jeddinformatics]: executing diffoscope
+[2024-05-25 11:40:18] INFO root fetch - processPackages [jeddinformatics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeddinformatics-0.5.1.tar.gz tmp/jeddinformatics-0.6.1.tar.gz --markdown 20240525/j/jeddinformatics/0.5.1-0.6.1/README.md --exclude *.pyd
+[2024-05-25 11:40:18] INFO root fetch - processPackages [mcqq-tool]: Remove: archive file [/home/abi/fetcher/tmp/mcqq_tool-1.1.8.tar.gz]
+[2024-05-25 11:40:18] INFO root fetch - processPackages [mcqq-tool]: Remove: archive file [/home/abi/fetcher/tmp/mcqq_tool-1.1.8.post1.tar.gz]
+[2024-05-25 11:40:18] INFO root fetch - main [MainThread]: End processing [mcqq-tool]: success
+[2024-05-25 11:40:18] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.2.tar.gz]
+[2024-05-25 11:40:18] INFO root fetch - processPackages [beets-gdplaylists]: Remove: archive file [/home/abi/fetcher/tmp/beets_gdplaylists-0.2.3.tar.gz]
+[2024-05-25 11:40:18] INFO root fetch - main [MainThread]: End processing [beets-gdplaylists]: success
+[2024-05-25 11:40:19] INFO root fetch - processPackages [jeddinformatics]: Remove: archive file [/home/abi/fetcher/tmp/jeddinformatics-0.5.1.tar.gz]
+[2024-05-25 11:40:19] INFO root fetch - processPackages [jeddinformatics]: Remove: archive file [/home/abi/fetcher/tmp/jeddinformatics-0.6.1.tar.gz]
+[2024-05-25 11:40:19] INFO root fetch - main [MainThread]: End processing [jeddinformatics]: success
+[2024-05-25 11:40:19] INFO root fetch - main [MainThread]: Store serial: [23373612]
