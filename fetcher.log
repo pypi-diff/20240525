@@ -7937,3 +7937,31 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:26:07] INFO root fetch - processPackages [mtdata]: Remove: archive file [/home/abi/fetcher/tmp/mtdata-0.4.2.tar.gz]
 [2024-05-25 05:26:07] INFO root fetch - main [MainThread]: End processing [mtdata]: success
 [2024-05-25 05:26:07] INFO root fetch - main [MainThread]: Store serial: [23371733]
+[2024-05-25 05:28:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371733]
+[2024-05-25 05:28:16] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 05:30:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371733]
+[2024-05-25 05:30:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 05:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codex
+[2024-05-25 05:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deeplake
+[2024-05-25 05:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lycoris-lora
+[2024-05-25 05:30:21] INFO root fetch - processPackages [lycoris-lora]: New version: [3.0.0.dev3] Old Version: [3.0.0.dev2]
+[2024-05-25 05:30:21] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/f0/0f/83e97581a78bb14532a8f9000e069da5226dd19710349e1c6ec74f842cfa/lycoris_lora-3.0.0.dev2.tar.gz
+[2024-05-25 05:30:21] INFO root fetch - processPackages [codex]: New version: [1.6.0a5] Old Version: [1.6.0a4]
+[2024-05-25 05:30:21] INFO root fetch - processPackages [deeplake]: New version: [3.9.8] Old Version: [3.9.7]
+[2024-05-25 05:30:22] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/b9/82/98d6cff96bcb450382cc0356375ed504e23b098a49e9e9c2e3733e2dc99f/lycoris_lora-3.0.0.dev3.tar.gz
+[2024-05-25 05:30:22] INFO root fetch - processPackages [codex]: Downloading https://files.pythonhosted.org/packages/59/6b/4c4558bc3340e8186fd256ecca440511717cc2412f7e9f70c28813587079/codex-1.6.0a4.tar.gz
+[2024-05-25 05:30:22] INFO root fetch - processPackages [deeplake]: Downloading https://files.pythonhosted.org/packages/c8/27/a43dc00cb87c980d808a69081e3ce79b36305237425830a8b13e8b25a3e6/deeplake-3.9.7.tar.gz
+[2024-05-25 05:30:22] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2024-05-25 05:30:22] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-3.0.0.dev2.tar.gz tmp/lycoris_lora-3.0.0.dev3.tar.gz --markdown 20240525/l/lycoris-lora/3.0.0.dev2-3.0.0.dev3/README.md --exclude *.pyd
+[2024-05-25 05:30:22] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 18350679>=10485760
+[2024-05-25 05:30:22] INFO root fetch - main [MainThread]: End processing [codex] error
+[2024-05-25 05:30:22] INFO root fetch - processPackages [deeplake]: Downloading https://files.pythonhosted.org/packages/6d/d2/ff925bedc8a515d6ce8c50d96fb900661ce00c58b8c7335af7e7b8b7da1e/deeplake-3.9.8.tar.gz
+[2024-05-25 05:30:22] INFO root fetch - processPackages [deeplake]: executing diffoscope
+[2024-05-25 05:30:22] INFO root fetch - processPackages [deeplake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deeplake-3.9.7.tar.gz tmp/deeplake-3.9.8.tar.gz --markdown 20240525/d/deeplake/3.9.7-3.9.8/README.md --exclude *.pyd
+[2024-05-25 05:30:22] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-3.0.0.dev2.tar.gz]
+[2024-05-25 05:30:22] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-3.0.0.dev3.tar.gz]
+[2024-05-25 05:30:22] INFO root fetch - main [MainThread]: End processing [lycoris-lora]: success
+[2024-05-25 05:30:24] INFO root fetch - processPackages [deeplake]: Remove: archive file [/home/abi/fetcher/tmp/deeplake-3.9.7.tar.gz]
+[2024-05-25 05:30:24] INFO root fetch - processPackages [deeplake]: Remove: archive file [/home/abi/fetcher/tmp/deeplake-3.9.8.tar.gz]
+[2024-05-25 05:30:24] INFO root fetch - main [MainThread]: End processing [deeplake]: success
+[2024-05-25 05:30:24] INFO root fetch - main [MainThread]: Store serial: [23371741]
