@@ -8494,3 +8494,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:48:03] INFO root fetch - processPackages [utk_streamer]: Remove: archive file [/home/abi/fetcher/tmp/utk_streamer-0.2.0.tar.gz]
 [2024-05-25 06:48:03] INFO root fetch - main [MainThread]: End processing [utk_streamer]: success
 [2024-05-25 06:48:03] INFO root fetch - main [MainThread]: Store serial: [23371956]
+[2024-05-25 06:50:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371956]
+[2024-05-25 06:50:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qdd
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctrip-app-ui
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pondpy
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: talipp
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-05-25 06:50:13] WARNING root fetch - processPackages [pondpy]: Skipping, unable to determine old version
+[2024-05-25 06:50:13] INFO root fetch - main [MainThread]: End processing [pondpy] error
+[2024-05-25 06:50:13] INFO root fetch - processPackages [qdd]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/c3/da/4e099d4f8b275b4ed0bee62c4fd5b0af81614f09515a8fd89de7fe8befbc/ctrip-app-ui-0.7.5.tar.gz
+[2024-05-25 06:50:13] INFO root fetch - processPackages [talipp]: New version: [2.3.0] Old Version: [2.2.1]
+[2024-05-25 06:50:13] INFO root fetch - processPackages [qdd]: Downloading https://files.pythonhosted.org/packages/51/67/84488e9b450d5378c4ce988a47a8da7267e35eaff73ee2e2364cbffcab7f/qdd-0.2.1-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+[2024-05-25 06:50:13] INFO root fetch - processPackages [talipp]: Downloading https://files.pythonhosted.org/packages/31/8a/3f10b642c047702a49ba544a8caade6e9fb753f2d4d8bdc5d6ef7b08402d/talipp-2.2.1.tar.gz
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/e8/bb/23d83470365fa4e18921b2d9a72570bd9577d1e236bbb2c2c00a180219c0/ctrip-app-ui-0.7.6.tar.gz
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-25 06:50:13] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.7.5.tar.gz tmp/ctrip-app-ui-0.7.6.tar.gz --markdown 20240525/c/ctrip-app-ui/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-05-25 06:50:13] INFO root fetch - processPackages [qdd]: Downloading https://files.pythonhosted.org/packages/a0/69/5298fafd6f5cc0fb40a1047ee604df2d6f744ab9c6def28e78cc294db74a/qdd-0.2.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+[2024-05-25 06:50:13] INFO root fetch - processPackages [talipp]: Downloading https://files.pythonhosted.org/packages/c8/0c/5e2d8f3f3ad13e43487669130d7c651b46098374457f3b00a53062bdd928/talipp-2.3.0.tar.gz
+[2024-05-25 06:50:13] INFO root fetch - processPackages [qdd]: executing diffoscope
+[2024-05-25 06:50:13] INFO root fetch - processPackages [qdd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdd-0.2.1-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip tmp/qdd-0.2.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20240525/q/qdd/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 06:50:14] INFO root fetch - processPackages [talipp]: executing diffoscope
+[2024-05-25 06:50:14] INFO root fetch - processPackages [talipp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talipp-2.2.1.tar.gz tmp/talipp-2.3.0.tar.gz --markdown 20240525/t/talipp/2.2.1-2.3.0/README.md --exclude *.pyd
+[2024-05-25 06:50:14] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.7.5.tar.gz]
+[2024-05-25 06:50:14] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.7.6.tar.gz]
+[2024-05-25 06:50:14] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-25 06:50:14] INFO root fetch - processPackages [talipp]: Remove: archive file [/home/abi/fetcher/tmp/talipp-2.2.1.tar.gz]
+[2024-05-25 06:50:14] INFO root fetch - processPackages [talipp]: Remove: archive file [/home/abi/fetcher/tmp/talipp-2.3.0.tar.gz]
+[2024-05-25 06:50:14] INFO root fetch - main [MainThread]: End processing [talipp]: success
+[2024-05-25 06:50:15] INFO root fetch - processPackages [qdd]: Remove: archive file [/home/abi/fetcher/tmp/qdd-0.2.1-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip]
+[2024-05-25 06:50:15] INFO root fetch - processPackages [qdd]: Remove: archive file [/home/abi/fetcher/tmp/qdd-0.2.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip]
+[2024-05-25 06:50:15] INFO root fetch - main [MainThread]: End processing [qdd]: success
+[2024-05-25 06:50:15] INFO root fetch - main [MainThread]: Store serial: [23371970]
