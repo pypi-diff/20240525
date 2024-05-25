@@ -2778,3 +2778,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:58:02] INFO root fetch - processPackages [mcemtools]: Remove: archive file [/home/abi/fetcher/tmp/mcemtools-0.9.4.tar.gz]
 [2024-05-25 02:58:02] INFO root fetch - main [MainThread]: End processing [mcemtools]: success
 [2024-05-25 02:58:02] INFO root fetch - main [MainThread]: Store serial: [23369825]
+[2024-05-25 03:00:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369825]
+[2024-05-25 03:00:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 03:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opendapi
+[2024-05-25 03:00:12] INFO root fetch - processPackages [opendapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 03:00:12] INFO root fetch - processPackages [opendapi]: Downloading https://files.pythonhosted.org/packages/37/5c/1daefc1bce500d4c846a1c9ee6030c5bf84f34df99d382584a461a457f50/opendapi-0.0.8.tar.gz
+[2024-05-25 03:00:13] INFO root fetch - processPackages [opendapi]: Downloading https://files.pythonhosted.org/packages/54/fa/961500c1ba0cf70172b79141ad960643e863d48ab5a257dfa30f8f2afe01/opendapi-0.0.9.tar.gz
+[2024-05-25 03:00:13] INFO root fetch - processPackages [opendapi]: executing diffoscope
+[2024-05-25 03:00:13] INFO root fetch - processPackages [opendapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendapi-0.0.8.tar.gz tmp/opendapi-0.0.9.tar.gz --markdown 20240525/o/opendapi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 03:00:13] INFO root fetch - processPackages [opendapi]: Remove: archive file [/home/abi/fetcher/tmp/opendapi-0.0.8.tar.gz]
+[2024-05-25 03:00:13] INFO root fetch - processPackages [opendapi]: Remove: archive file [/home/abi/fetcher/tmp/opendapi-0.0.9.tar.gz]
+[2024-05-25 03:00:13] INFO root fetch - main [MainThread]: End processing [opendapi]: success
+[2024-05-25 03:00:13] INFO root fetch - main [MainThread]: Store serial: [23369828]
