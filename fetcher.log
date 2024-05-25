@@ -17573,3 +17573,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:39:16] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.4.tar.gz]
 [2024-05-25 16:39:16] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
 [2024-05-25 16:39:16] INFO root fetch - main [MainThread]: Store serial: [23375777]
+[2024-05-25 16:41:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375777]
+[2024-05-25 16:41:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 16:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: formant
+[2024-05-25 16:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioswitcher
+[2024-05-25 16:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coltrane
+[2024-05-25 16:41:25] INFO root fetch - processPackages [coltrane]: New version: [0.35.1] Old Version: [0.35.0]
+[2024-05-25 16:41:25] INFO root fetch - processPackages [aioswitcher]: New version: [3.4.3] Old Version: [3.4.2]
+[2024-05-25 16:41:25] INFO root fetch - processPackages [formant]: New version: [1.99.25] Old Version: [1.99.10]
+[2024-05-25 16:41:26] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/04/e9/27bcd9177c835299cb71bab2104c4ff6a8efd15bfcb74c72ce2be155b313/coltrane-0.35.0.tar.gz
+[2024-05-25 16:41:26] INFO root fetch - processPackages [formant]: Downloading https://files.pythonhosted.org/packages/b4/ae/48e0e0cc421f59b739a0933ff541c564d705ba0f03ab53b6ad242e88d6dd/formant-1.99.10.tar.gz
+[2024-05-25 16:41:26] INFO root fetch - processPackages [aioswitcher]: Downloading https://files.pythonhosted.org/packages/de/f6/f5a974334b2ae0583c31e2e2e9d1ad91157b991557a18962745a2a5f5a8c/aioswitcher-3.4.2.tar.gz
+[2024-05-25 16:41:26] INFO root fetch - processPackages [coltrane]: Downloading https://files.pythonhosted.org/packages/70/59/f8ee78af60852ffb055e898f1c83fd0b7730755c806d4b7f71d9a82f2e97/coltrane-0.35.1.tar.gz
+[2024-05-25 16:41:26] INFO root fetch - processPackages [aioswitcher]: Downloading https://files.pythonhosted.org/packages/8b/70/ba6dfcd9da85c98735b1cdcb91a1e7c62e96668bd0b4fafc6af52b2d754b/aioswitcher-3.4.3.tar.gz
+[2024-05-25 16:41:26] INFO root fetch - processPackages [formant]: Downloading https://files.pythonhosted.org/packages/0f/87/d41a560174ff1aede53afa1480b906376d1d5d3f7263147c18f90dda6c0f/formant-1.99.25.tar.gz
+[2024-05-25 16:41:26] INFO root fetch - processPackages [coltrane]: executing diffoscope
+[2024-05-25 16:41:26] INFO root fetch - processPackages [coltrane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coltrane-0.35.0.tar.gz tmp/coltrane-0.35.1.tar.gz --markdown 20240525/c/coltrane/0.35.0-0.35.1/README.md --exclude *.pyd
+[2024-05-25 16:41:26] INFO root fetch - processPackages [formant]: executing diffoscope
+[2024-05-25 16:41:26] INFO root fetch - processPackages [formant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formant-1.99.10.tar.gz tmp/formant-1.99.25.tar.gz --markdown 20240525/f/formant/1.99.10-1.99.25/README.md --exclude *.pyd
+[2024-05-25 16:41:26] INFO root fetch - processPackages [aioswitcher]: executing diffoscope
+[2024-05-25 16:41:26] INFO root fetch - processPackages [aioswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioswitcher-3.4.2.tar.gz tmp/aioswitcher-3.4.3.tar.gz --markdown 20240525/a/aioswitcher/3.4.2-3.4.3/README.md --exclude *.pyd
+[2024-05-25 16:41:27] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.0.tar.gz]
+[2024-05-25 16:41:27] INFO root fetch - processPackages [coltrane]: Remove: archive file [/home/abi/fetcher/tmp/coltrane-0.35.1.tar.gz]
+[2024-05-25 16:41:27] INFO root fetch - main [MainThread]: End processing [coltrane]: success
+[2024-05-25 16:41:27] INFO root fetch - processPackages [formant]: Remove: archive file [/home/abi/fetcher/tmp/formant-1.99.10.tar.gz]
+[2024-05-25 16:41:27] INFO root fetch - processPackages [formant]: Remove: archive file [/home/abi/fetcher/tmp/formant-1.99.25.tar.gz]
+[2024-05-25 16:41:27] INFO root fetch - main [MainThread]: End processing [formant]: success
+[2024-05-25 16:41:27] INFO root fetch - processPackages [aioswitcher]: Remove: archive file [/home/abi/fetcher/tmp/aioswitcher-3.4.2.tar.gz]
+[2024-05-25 16:41:27] INFO root fetch - processPackages [aioswitcher]: Remove: archive file [/home/abi/fetcher/tmp/aioswitcher-3.4.3.tar.gz]
+[2024-05-25 16:41:27] INFO root fetch - main [MainThread]: End processing [aioswitcher]: success
+[2024-05-25 16:41:27] INFO root fetch - main [MainThread]: Store serial: [23375786]
