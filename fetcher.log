@@ -22947,3 +22947,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
 [2024-05-25 23:05:52] INFO root fetch - main [MainThread]: End processing [dtogen]: success
 [2024-05-25 23:05:52] INFO root fetch - main [MainThread]: Store serial: [23377988]
+[2024-05-25 23:07:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377988]
+[2024-05-25 23:08:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 23:08:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mail-devel
+[2024-05-25 23:08:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: locust
+[2024-05-25 23:08:01] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-25 23:08:01] INFO root fetch - processPackages [mail-devel]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 23:08:01] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-25 23:08:01] INFO root fetch - processPackages [mail-devel]: Downloading https://files.pythonhosted.org/packages/35/7b/cda1427810406e9c0de9e4c673e1df409c2867115b3f4fabb4d67a58df57/mail_devel-0.8.2-py3-none-any.whl
+[2024-05-25 23:08:01] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-25 23:08:01] INFO root fetch - processPackages [mail-devel]: Downloading https://files.pythonhosted.org/packages/41/15/6a556623ffe0755bb6d0417b6c9b7f66536af65ace4e7ceb09ba0cf348ec/mail_devel-0.9.0-py3-none-any.whl
+[2024-05-25 23:08:01] INFO root fetch - processPackages [mail-devel]: executing diffoscope
+[2024-05-25 23:08:01] INFO root fetch - processPackages [mail-devel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mail_devel-0.8.2-py3-none-any.whl.zip tmp/mail_devel-0.9.0-py3-none-any.whl.zip --markdown 20240525/m/mail-devel/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 23:08:01] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-25 23:08:01] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240525/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-25 23:08:02] INFO root fetch - processPackages [mail-devel]: Remove: archive file [/home/abi/fetcher/tmp/mail_devel-0.8.2-py3-none-any.whl.zip]
+[2024-05-25 23:08:02] INFO root fetch - processPackages [mail-devel]: Remove: archive file [/home/abi/fetcher/tmp/mail_devel-0.9.0-py3-none-any.whl.zip]
+[2024-05-25 23:08:02] INFO root fetch - main [MainThread]: End processing [mail-devel]: success
+[2024-05-25 23:08:03] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-25 23:08:03] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-25 23:08:03] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-25 23:08:03] INFO root fetch - main [MainThread]: Store serial: [23377995]
