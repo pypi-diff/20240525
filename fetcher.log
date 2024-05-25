@@ -16850,3 +16850,12 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:49:07] INFO root fetch - processPackages [multigit]: Remove: archive file [/home/abi/fetcher/tmp/multigit-0.9.1.tar.gz]
 [2024-05-25 15:49:07] INFO root fetch - main [MainThread]: End processing [multigit]: success
 [2024-05-25 15:49:07] INFO root fetch - main [MainThread]: Store serial: [23375481]
+[2024-05-25 15:51:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375481]
+[2024-05-25 15:51:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 15:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mambular
+[2024-05-25 15:51:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vialin
+[2024-05-25 15:51:16] WARNING root fetch - processPackages [vialin]: Skipping, unable to determine old version
+[2024-05-25 15:51:16] INFO root fetch - main [MainThread]: End processing [vialin] error
+[2024-05-25 15:51:16] WARNING root fetch - processPackages [mambular]: Skipping, unable to determine old version
+[2024-05-25 15:51:16] INFO root fetch - main [MainThread]: End processing [mambular] error
+[2024-05-25 15:51:16] INFO root fetch - main [MainThread]: Store serial: [23375494]
