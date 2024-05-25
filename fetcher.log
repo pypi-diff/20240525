@@ -10657,3 +10657,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:42:21] INFO root fetch - processPackages [watch-run]: Remove: archive file [/home/abi/fetcher/tmp/watch_run-0.0.7-cp39-cp39-macosx_13_0_arm64.whl.zip]
 [2024-05-25 09:42:21] INFO root fetch - main [MainThread]: End processing [watch-run]: success
 [2024-05-25 09:42:21] INFO root fetch - main [MainThread]: Store serial: [23372902]
+[2024-05-25 09:44:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372902]
+[2024-05-25 09:44:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 09:44:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-request
+[2024-05-25 09:44:29] INFO root fetch - processPackages [odoo-addon-stock-request]: New version: [17.0.1.1.0.1] Old Version: [17.0.1.1.0]
+[2024-05-25 09:44:29] INFO root fetch - processPackages [odoo-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/5b/00/855e5415b49c3c95507363d6ea0a07bd7f6ff2197e5b30b60d6ae5856fc1/odoo_addon_stock_request-17.0.1.1.0-py3-none-any.whl
+[2024-05-25 09:44:30] INFO root fetch - processPackages [odoo-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/73/8e/9ed3c2bc2f231bdf31be9d6b5c34f869ec27170df02a23301069c998862f/odoo_addon_stock_request-17.0.1.1.0.1-py3-none-any.whl
+[2024-05-25 09:44:30] INFO root fetch - processPackages [odoo-addon-stock-request]: executing diffoscope
+[2024-05-25 09:44:30] INFO root fetch - processPackages [odoo-addon-stock-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_request-17.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_stock_request-17.0.1.1.0.1-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-stock-request/17.0.1.1.0-17.0.1.1.0.1/README.md --exclude *.pyd
+[2024-05-25 09:44:31] INFO root fetch - processPackages [odoo-addon-stock-request]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_request-17.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-25 09:44:31] INFO root fetch - processPackages [odoo-addon-stock-request]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_request-17.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-05-25 09:44:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-request]: success
+[2024-05-25 09:44:31] INFO root fetch - main [MainThread]: Store serial: [23372907]
