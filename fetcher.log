@@ -11336,3 +11336,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:36:49] INFO root fetch - processPackages [jdmtool]: Remove: archive file [/home/abi/fetcher/tmp/jdmtool-0.1.tar.gz]
 [2024-05-25 10:36:49] INFO root fetch - main [MainThread]: End processing [jdmtool]: success
 [2024-05-25 10:36:49] INFO root fetch - main [MainThread]: Store serial: [23373249]
+[2024-05-25 10:38:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373249]
+[2024-05-25 10:38:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 10:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plover-uinput
+[2024-05-25 10:38:58] INFO root fetch - processPackages [plover-uinput]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 10:38:58] INFO root fetch - processPackages [plover-uinput]: Downloading https://files.pythonhosted.org/packages/ea/d3/59b40efe0b31b83869ab40ce325dccef3e111a9b998171fd67c01b7f1d41/plover_uinput-0.0.8.tar.gz
+[2024-05-25 10:38:59] INFO root fetch - processPackages [plover-uinput]: Downloading https://files.pythonhosted.org/packages/b9/37/8ea25acfb8ac228a3874a362a6b8363c5da403257fed95de56568590e625/plover_uinput-0.0.9.tar.gz
+[2024-05-25 10:38:59] INFO root fetch - processPackages [plover-uinput]: executing diffoscope
+[2024-05-25 10:38:59] INFO root fetch - processPackages [plover-uinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover_uinput-0.0.8.tar.gz tmp/plover_uinput-0.0.9.tar.gz --markdown 20240525/p/plover-uinput/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 10:38:59] INFO root fetch - processPackages [plover-uinput]: Remove: archive file [/home/abi/fetcher/tmp/plover_uinput-0.0.8.tar.gz]
+[2024-05-25 10:38:59] INFO root fetch - processPackages [plover-uinput]: Remove: archive file [/home/abi/fetcher/tmp/plover_uinput-0.0.9.tar.gz]
+[2024-05-25 10:38:59] INFO root fetch - main [MainThread]: End processing [plover-uinput]: success
+[2024-05-25 10:38:59] INFO root fetch - main [MainThread]: Store serial: [23373252]
