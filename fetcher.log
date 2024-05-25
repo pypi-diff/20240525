@@ -18189,3 +18189,99 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:16:59] INFO root fetch - processPackages [VASP2KP]: Remove: archive file [/home/abi/fetcher/tmp/VASP2KP-1.1.5.tar.gz]
 [2024-05-25 17:16:59] INFO root fetch - main [MainThread]: End processing [VASP2KP]: success
 [2024-05-25 17:16:59] INFO root fetch - main [MainThread]: Store serial: [23376002]
+[2024-05-25 17:19:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376002]
+[2024-05-25 17:19:09] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alphafold3-pytorch
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fcs-core-model-engine
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anipy-cli
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moveread-boxes
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moveread-annotations
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moveread-labels
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moveread-annotations
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: moveread-core
+[2024-05-25 17:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: moveread-errors
+[2024-05-25 17:19:09] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-core]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [fcs-core-model-engine]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-boxes]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-labels]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-annotations]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-annotations]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-errors]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [anipy-cli]: New version: [3.1.0] Old Version: [3.0.5]
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-labels]: Downloading https://files.pythonhosted.org/packages/5e/3c/59d575ed9b5729e10492d33fc97ab3e9ee7ddd4a2282f2252c5643c1862d/moveread_labels-0.1.2.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-annotations]: Downloading https://files.pythonhosted.org/packages/8f/5c/8c3c17cc7e76c27c6f58ccda1215af98d1422c8a821f7c7faed77351c0da/moveread_annotations-0.1.7.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-core]: Downloading https://files.pythonhosted.org/packages/d3/26/52e23adf0f70d0aec6ed6d43203f2b7872da5162c633315f39c47f07a73d/moveread_core-0.1.4.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-boxes]: Downloading https://files.pythonhosted.org/packages/78/5f/77a916d30143ae61a19e1fff74a29c29c5678a10a82ca12634acaa8686b3/moveread_boxes-0.1.4.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [anipy-cli]: Downloading https://files.pythonhosted.org/packages/01/f2/be8be09edaed9570500c43502bb7eeb5a7a66ee71a9b219a55b0cc20d1c4/anipy_cli-3.0.5.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-annotations]: Downloading https://files.pythonhosted.org/packages/8f/5c/8c3c17cc7e76c27c6f58ccda1215af98d1422c8a821f7c7faed77351c0da/moveread_annotations-0.1.7.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [fcs-core-model-engine]: Downloading https://files.pythonhosted.org/packages/07/13/1bfd22b4856ececf0ac95b3ecf79b61e12c4b44ffbb7effbaae9b5c0e5c5/fcs_core_model_engine-0.9.8-py3-none-win_amd64.whl
+[2024-05-25 17:19:09] INFO root fetch - processPackages [moveread-errors]: Downloading https://files.pythonhosted.org/packages/95/99/bb7d5b98f30fd2edf281f28a69641c285b6db6467f696d8189622f3fd9cf/moveread_errors-0.1.2.tar.gz
+[2024-05-25 17:19:09] WARNING root fetch - processPackages [fcs-core-model-engine]: Skipping package: exceeds size limit 25252979>=10485760
+[2024-05-25 17:19:09] INFO root fetch - processPackages [fcs-core-model-engine]: Start processing: moveread-export
+[2024-05-25 17:19:09] INFO root fetch - main [MainThread]: End processing [fcs-core-model-engine] error
+[2024-05-25 17:19:09] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 17:19:09] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-export]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-annotations]: Downloading https://files.pythonhosted.org/packages/b2/1d/90370a650a3b2b212b381765673467e2cc42ccaf042ae71359e3a157496f/moveread_annotations-0.1.8.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-annotations]: Downloading https://files.pythonhosted.org/packages/b2/1d/90370a650a3b2b212b381765673467e2cc42ccaf042ae71359e3a157496f/moveread_annotations-0.1.8.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240525/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [anipy-cli]: Downloading https://files.pythonhosted.org/packages/67/ee/a87214a62276013074d1173fd6dc86a89e408b09089fcc1f00a6c6742e47/anipy_cli-3.1.0.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-errors]: Downloading https://files.pythonhosted.org/packages/8f/d3/39b5e3bcce2dd38c193f20edb8d752cfdf9a72f01ce8abeca9fafeb9820c/moveread_errors-0.1.3.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-labels]: Downloading https://files.pythonhosted.org/packages/43/de/b34c27e54fe9ff1c264bfe9e383efe69fb3ce5259f0439d27ffbdcd79c37/moveread_labels-0.1.3.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-boxes]: Downloading https://files.pythonhosted.org/packages/11/fb/2d65994728438cd141ec7517aadc32e4ffbc043116e21f852cb81c6db8f8/moveread_boxes-0.1.5.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-core]: Downloading https://files.pythonhosted.org/packages/1d/05/477e6afc5f23c1fea4c296122bb25c4db8a441ee005533c4aa89529b965c/moveread_core-0.1.5.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-annotations]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-annotations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_annotations-0.1.7.tar.gz tmp/moveread_annotations-0.1.8.tar.gz --markdown 20240525/m/moveread-annotations/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-annotations]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-annotations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_annotations-0.1.7.tar.gz tmp/moveread_annotations-0.1.8.tar.gz --markdown 20240525/m/moveread-annotations/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-export]: Downloading https://files.pythonhosted.org/packages/ee/73/573187e770960b9a66408dcf63ade95b616b2f6290743bf2875c6d8563aa/moveread_export-0.1.2.tar.gz
+[2024-05-25 17:19:10] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-3.0.5.tar.gz tmp/anipy_cli-3.1.0.tar.gz --markdown 20240525/a/anipy-cli/3.0.5-3.1.0/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-labels]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-labels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_labels-0.1.2.tar.gz tmp/moveread_labels-0.1.3.tar.gz --markdown 20240525/m/moveread-labels/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-boxes]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-boxes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_boxes-0.1.4.tar.gz tmp/moveread_boxes-0.1.5.tar.gz --markdown 20240525/m/moveread-boxes/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-errors]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_errors-0.1.2.tar.gz tmp/moveread_errors-0.1.3.tar.gz --markdown 20240525/m/moveread-errors/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-core]: executing diffoscope
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_core-0.1.4.tar.gz tmp/moveread_core-0.1.5.tar.gz --markdown 20240525/m/moveread-core/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 17:19:10] INFO root fetch - processPackages [moveread-export]: Downloading https://files.pythonhosted.org/packages/a1/a8/bc37e41d3caf72f023f7a2dc2a913e1d70657ea01e5c87453c76793218da/moveread_export-0.1.3.tar.gz
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-export]: executing diffoscope
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_export-0.1.2.tar.gz tmp/moveread_export-0.1.3.tar.gz --markdown 20240525/m/moveread-export/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 17:19:11] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-annotations]: Remove: archive file [/home/abi/fetcher/tmp/moveread_annotations-0.1.7.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-annotations]: Remove: archive file [/home/abi/fetcher/tmp/moveread_annotations-0.1.8.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [moveread-annotations]: success
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [moveread-annotations]: success
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-boxes]: Remove: archive file [/home/abi/fetcher/tmp/moveread_boxes-0.1.4.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-boxes]: Remove: archive file [/home/abi/fetcher/tmp/moveread_boxes-0.1.5.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-labels]: Remove: archive file [/home/abi/fetcher/tmp/moveread_labels-0.1.2.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-labels]: Remove: archive file [/home/abi/fetcher/tmp/moveread_labels-0.1.3.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [moveread-boxes]: success
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [moveread-labels]: success
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-errors]: Remove: archive file [/home/abi/fetcher/tmp/moveread_errors-0.1.2.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-errors]: Remove: archive file [/home/abi/fetcher/tmp/moveread_errors-0.1.3.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [moveread-errors]: success
+[2024-05-25 17:19:11] INFO root fetch - processPackages [anipy-cli]: Remove: archive file [/home/abi/fetcher/tmp/anipy_cli-3.0.5.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [anipy-cli]: Remove: archive file [/home/abi/fetcher/tmp/anipy_cli-3.1.0.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-core]: Remove: archive file [/home/abi/fetcher/tmp/moveread_core-0.1.4.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - processPackages [moveread-core]: Remove: archive file [/home/abi/fetcher/tmp/moveread_core-0.1.5.tar.gz]
+[2024-05-25 17:19:11] INFO root fetch - main [MainThread]: End processing [moveread-core]: success
+[2024-05-25 17:19:12] INFO root fetch - processPackages [moveread-export]: Remove: archive file [/home/abi/fetcher/tmp/moveread_export-0.1.2.tar.gz]
+[2024-05-25 17:19:12] INFO root fetch - processPackages [moveread-export]: Remove: archive file [/home/abi/fetcher/tmp/moveread_export-0.1.3.tar.gz]
+[2024-05-25 17:19:12] INFO root fetch - main [MainThread]: End processing [moveread-export]: success
+[2024-05-25 17:19:13] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-05-25 17:19:13] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-05-25 17:19:13] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-25 17:19:13] INFO root fetch - main [MainThread]: Store serial: [23376036]
