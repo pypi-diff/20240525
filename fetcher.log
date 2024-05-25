@@ -14226,3 +14226,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:37:56] INFO root fetch - processPackages [django-fastoche]: Remove: archive file [/home/abi/fetcher/tmp/django_fastoche-0.1.2.tar.gz]
 [2024-05-25 14:37:56] INFO root fetch - main [MainThread]: End processing [django-fastoche]: success
 [2024-05-25 14:37:56] INFO root fetch - main [MainThread]: Store serial: [23374627]
+[2024-05-25 14:40:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374627]
+[2024-05-25 14:40:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 14:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-25 14:40:06] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.406] Old Version: [0.45.20240523.401]
+[2024-05-25 14:40:06] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/85/8a/4eaa9eb863347d7cb55227d0643e2639eb9eec5795305a88daf5030f8a3b/pkscreener-0.45.20240523.401.tar.gz
+[2024-05-25 14:40:07] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/8a/51/71e46bc76136037985d3e76b42c3ae01b6982bb4eacac34e0224baeca19c/pkscreener-0.45.20240525.406-cp311-cp311-macosx_10_9_universal2.whl
+[2024-05-25 14:40:07] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 14:40:07] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240523.401.tar.gz tmp/pkscreener-0.45.20240525.406-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20240525/p/pkscreener/0.45.20240523.401-0.45.20240525.406/README.md --exclude *.pyd
+[2024-05-25 14:40:08] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240523.401.tar.gz]
+[2024-05-25 14:40:08] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.406-cp311-cp311-macosx_10_9_universal2.whl.zip]
+[2024-05-25 14:40:08] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 14:40:08] INFO root fetch - main [MainThread]: Store serial: [23374630]
