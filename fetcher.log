@@ -19677,3 +19677,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:57:52] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.9-py3-none-win_amd64.whl.zip]
 [2024-05-25 18:57:52] INFO root fetch - main [MainThread]: End processing [rg3py]: success
 [2024-05-25 18:57:52] INFO root fetch - main [MainThread]: Store serial: [23376591]
+[2024-05-25 18:59:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376591]
+[2024-05-25 19:00:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ourskyai_sda_api
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ourskyai_platform_api
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ourskyai_astro_api
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: randel
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SmartDownloader
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oasgen
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ourskyai_astro_api]: New version: [1.3.3671] Old Version: [1.3.3668]
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ourskyai_sda_api]: New version: [1.3.3671] Old Version: [1.3.3668]
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ourskyai_platform_api]: New version: [1.3.3671] Old Version: [1.3.3668]
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ourskyai_astro_api]: Downloading https://files.pythonhosted.org/packages/d1/ff/63fa80fa915451a47aa7b013ae9684b2e7d5bdd403d7033bacab6ab34306/ourskyai_astro_api-1.3.3668.tar.gz
+[2024-05-25 19:00:01] WARNING root fetch - processPackages [randel]: Skipping, unable to determine old version
+[2024-05-25 19:00:01] INFO root fetch - main [MainThread]: End processing [randel] error
+[2024-05-25 19:00:01] INFO root fetch - processPackages [oasgen]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-25 19:00:01] WARNING root fetch - processPackages [SmartDownloader]: Skipping, unable to determine old version
+[2024-05-25 19:00:01] INFO root fetch - main [MainThread]: End processing [SmartDownloader] error
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ourskyai_sda_api]: Downloading https://files.pythonhosted.org/packages/7e/c3/462aef6485f87314e75682ebe695c94db7ffc6d835a1f316881f8d510c48/ourskyai_sda_api-1.3.3668.tar.gz
+[2024-05-25 19:00:01] INFO root fetch - processPackages [ourskyai_platform_api]: Downloading https://files.pythonhosted.org/packages/00/84/06f28046f051ee26720c72980ef614f4477b10bb6c0845755745b8325465/ourskyai_platform_api-1.3.3668.tar.gz
+[2024-05-25 19:00:02] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/ad/eb/aebf831c29faa74d02a839ce041132e4306cca377b7e55760d001cf33a98/oasgen-0.4.0.tar.gz
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_sda_api]: Downloading https://files.pythonhosted.org/packages/61/6e/8eec920553a2e9a1c759ede11d7ff905eac8117fa350dd3bd06cb21a38a1/ourskyai_sda_api-1.3.3671.tar.gz
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_platform_api]: Downloading https://files.pythonhosted.org/packages/0a/6b/84fa62e2ba755a00e99ce2ef91ca78e8091e767c9c320059caa60c412480/ourskyai_platform_api-1.3.3671.tar.gz
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_astro_api]: Downloading https://files.pythonhosted.org/packages/4e/3d/0a029cb990736de84f1c4e9b2b0d7b3d7446b9c4fe3b02d833e0923ddc6e/ourskyai_astro_api-1.3.3671.tar.gz
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_sda_api]: executing diffoscope
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_sda_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_sda_api-1.3.3668.tar.gz tmp/ourskyai_sda_api-1.3.3671.tar.gz --markdown 20240525/o/ourskyai_sda_api/1.3.3668-1.3.3671/README.md --exclude *.pyd
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_platform_api]: executing diffoscope
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_platform_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_platform_api-1.3.3668.tar.gz tmp/ourskyai_platform_api-1.3.3671.tar.gz --markdown 20240525/o/ourskyai_platform_api/1.3.3668-1.3.3671/README.md --exclude *.pyd
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_astro_api]: executing diffoscope
+[2024-05-25 19:00:02] INFO root fetch - processPackages [ourskyai_astro_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_astro_api-1.3.3668.tar.gz tmp/ourskyai_astro_api-1.3.3671.tar.gz --markdown 20240525/o/ourskyai_astro_api/1.3.3668-1.3.3671/README.md --exclude *.pyd
+[2024-05-25 19:00:02] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/1f/2c/bc003fb0c56efda02aa62143c34e36c529e5f0e320d5e448828d27383220/oasgen-0.5.0.tar.gz
+[2024-05-25 19:00:02] INFO root fetch - processPackages [oasgen]: executing diffoscope
+[2024-05-25 19:00:02] INFO root fetch - processPackages [oasgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasgen-0.4.0.tar.gz tmp/oasgen-0.5.0.tar.gz --markdown 20240525/o/oasgen/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-25 19:00:03] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.4.0.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.5.0.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - main [MainThread]: End processing [oasgen]: success
+[2024-05-25 19:00:03] INFO root fetch - processPackages [ourskyai_sda_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_sda_api-1.3.3668.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - processPackages [ourskyai_sda_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_sda_api-1.3.3671.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - main [MainThread]: End processing [ourskyai_sda_api]: success
+[2024-05-25 19:00:03] INFO root fetch - processPackages [ourskyai_platform_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_platform_api-1.3.3668.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - processPackages [ourskyai_platform_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_platform_api-1.3.3671.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - main [MainThread]: End processing [ourskyai_platform_api]: success
+[2024-05-25 19:00:03] INFO root fetch - processPackages [ourskyai_astro_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_astro_api-1.3.3668.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - processPackages [ourskyai_astro_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_astro_api-1.3.3671.tar.gz]
+[2024-05-25 19:00:03] INFO root fetch - main [MainThread]: End processing [ourskyai_astro_api]: success
+[2024-05-25 19:00:03] INFO root fetch - main [MainThread]: Store serial: [23376612]
