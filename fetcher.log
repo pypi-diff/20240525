@@ -10669,3 +10669,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:44:31] INFO root fetch - processPackages [odoo-addon-stock-request]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_request-17.0.1.1.0.1-py3-none-any.whl.zip]
 [2024-05-25 09:44:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-request]: success
 [2024-05-25 09:44:31] INFO root fetch - main [MainThread]: Store serial: [23372907]
+[2024-05-25 09:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372907]
+[2024-05-25 09:46:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 09:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: online-scheduler
+[2024-05-25 09:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: a-trash
+[2024-05-25 09:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysma-plus
+[2024-05-25 09:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: elmat
+[2024-05-25 09:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sdkfabric-starwars
+[2024-05-25 09:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cift
+[2024-05-25 09:46:40] INFO root fetch - processPackages [online-scheduler]: New version: [1.1] Old Version: [1.0]
+[2024-05-25 09:46:40] INFO root fetch - processPackages [sdkfabric-starwars]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 09:46:40] ERROR root fetch - processPackages [a-trash]: Unable to get metadata: No such project 'a-trash'
+[2024-05-25 09:46:40] INFO root fetch - main [MainThread]: End processing [a-trash] error
+[2024-05-25 09:46:40] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/6e/96/9285f2d3ccc01b883fe4a330efe969e53fe483efa5406d521fc8be8cc005/online_scheduler-1.0.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [pysma-plus]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 09:46:40] INFO root fetch - processPackages [cift]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 09:46:40] INFO root fetch - processPackages [elmat]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 09:46:40] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/e9/5e/2817a08023a46713bca2ff5d68ccb33c24a1c84f9637fee4c61b02fbd389/pysma_plus-0.2.8.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [elmat]: Downloading https://files.pythonhosted.org/packages/af/d4/e0e85af6d81f9aafccafb31ffe0cd7485a83fa47e73b766648b391fb2fca/elmat-0.1.8.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [sdkfabric-starwars]: Downloading https://files.pythonhosted.org/packages/3b/58/adbecec742de10741b1fa563a74483ca991d37b847d31c22101744a21165/sdkfabric_starwars-0.1.4.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [cift]: Downloading https://files.pythonhosted.org/packages/d4/e5/06005ba73d60187bd415ac604d6cb653daac0f0be9f1517eae4095ebf94b/cift-0.0.5.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/4d/e9/a8eb6fada58689d4e1c7d59f5defff96e2a3ae9ae202928d70b2121095bd/online_scheduler-1.1.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 09:46:40] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-1.0.tar.gz tmp/online_scheduler-1.1.tar.gz --markdown 20240525/o/online-scheduler/1.0-1.1/README.md --exclude *.pyd
+[2024-05-25 09:46:40] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/d5/1a/d2eea5d3f217574c0620481f8af180f89837e1a64d3aed99e24e642217c0/pysma_plus-0.2.9.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [sdkfabric-starwars]: Downloading https://files.pythonhosted.org/packages/9d/49/e3faed9ea9e4e5d28b10b9a4a07d75df5e923f344466585581651c369e62/sdkfabric_starwars-0.1.5.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [cift]: Downloading https://files.pythonhosted.org/packages/87/b3/a2b84338686efc5d7c0f8c0a3b929e84a1d4af5cd512054aab0a34f51994/cift-0.0.6.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [elmat]: Downloading https://files.pythonhosted.org/packages/06/30/a465f60f19b23dca3230b87fec4e5b54f76d2aec7298f9e33e7d476ef78c/elmat-0.1.9.tar.gz
+[2024-05-25 09:46:40] INFO root fetch - processPackages [sdkfabric-starwars]: executing diffoscope
+[2024-05-25 09:46:40] INFO root fetch - processPackages [sdkfabric-starwars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkfabric_starwars-0.1.4.tar.gz tmp/sdkfabric_starwars-0.1.5.tar.gz --markdown 20240525/s/sdkfabric-starwars/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 09:46:40] INFO root fetch - processPackages [cift]: executing diffoscope
+[2024-05-25 09:46:40] INFO root fetch - processPackages [cift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cift-0.0.5.tar.gz tmp/cift-0.0.6.tar.gz --markdown 20240525/c/cift/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 09:46:40] INFO root fetch - processPackages [pysma-plus]: executing diffoscope
+[2024-05-25 09:46:40] INFO root fetch - processPackages [pysma-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysma_plus-0.2.8.tar.gz tmp/pysma_plus-0.2.9.tar.gz --markdown 20240525/p/pysma-plus/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 09:46:40] INFO root fetch - processPackages [elmat]: executing diffoscope
+[2024-05-25 09:46:40] INFO root fetch - processPackages [elmat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elmat-0.1.8.tar.gz tmp/elmat-0.1.9.tar.gz --markdown 20240525/e/elmat/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 09:46:41] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.0.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.1.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 09:46:41] INFO root fetch - processPackages [cift]: Remove: archive file [/home/abi/fetcher/tmp/cift-0.0.5.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - processPackages [cift]: Remove: archive file [/home/abi/fetcher/tmp/cift-0.0.6.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - main [MainThread]: End processing [cift]: success
+[2024-05-25 09:46:41] INFO root fetch - processPackages [sdkfabric-starwars]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_starwars-0.1.4.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - processPackages [sdkfabric-starwars]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_starwars-0.1.5.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - main [MainThread]: End processing [sdkfabric-starwars]: success
+[2024-05-25 09:46:41] INFO root fetch - processPackages [elmat]: Remove: archive file [/home/abi/fetcher/tmp/elmat-0.1.8.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - processPackages [elmat]: Remove: archive file [/home/abi/fetcher/tmp/elmat-0.1.9.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - main [MainThread]: End processing [elmat]: success
+[2024-05-25 09:46:41] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.8.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.9.tar.gz]
+[2024-05-25 09:46:41] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
+[2024-05-25 09:46:41] INFO root fetch - main [MainThread]: Store serial: [23372928]
