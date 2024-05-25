@@ -18396,3 +18396,39 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:25:51] INFO root fetch - processPackages [Mopidy-Pibox]: Remove: archive file [/home/abi/fetcher/tmp/mopidy_pibox-1.0.1.tar.gz]
 [2024-05-25 17:25:51] INFO root fetch - main [MainThread]: End processing [Mopidy-Pibox]: success
 [2024-05-25 17:25:51] INFO root fetch - main [MainThread]: Store serial: [23376076]
+[2024-05-25 17:27:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376076]
+[2024-05-25 17:28:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revpref
+[2024-05-25 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fraction-package
+[2024-05-25 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: database-mysql-local
+[2024-05-25 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bencodingpy
+[2024-05-25 17:28:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SparkleLogging-new
+[2024-05-25 17:28:01] WARNING root fetch - processPackages [bencodingpy]: Skipping, unable to determine old version
+[2024-05-25 17:28:01] INFO root fetch - main [MainThread]: End processing [bencodingpy] error
+[2024-05-25 17:28:01] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.329] Old Version: [0.0.328]
+[2024-05-25 17:28:01] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/08/88/2e9a56a6dcb08c7d759d4d32654efb0e12929b2638ea6cb54a09c9a9a21f/database_mysql_local-0.0.328.tar.gz
+[2024-05-25 17:28:01] INFO root fetch - processPackages [revpref]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 17:28:01] INFO root fetch - processPackages [SparkleLogging-new]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 17:28:01] WARNING root fetch - processPackages [fraction-package]: Skipping, unable to determine old version
+[2024-05-25 17:28:01] INFO root fetch - main [MainThread]: End processing [fraction-package] error
+[2024-05-25 17:28:01] INFO root fetch - processPackages [revpref]: Downloading https://files.pythonhosted.org/packages/9f/98/8fccd55e264b87dd99bc858fdf2806639065e7bd76a7beb13d8e5534a98e/revpref-1.0.2.tar.gz
+[2024-05-25 17:28:01] INFO root fetch - processPackages [SparkleLogging-new]: Downloading https://files.pythonhosted.org/packages/69/6f/557776d52780e0a9d2efaa581d68f8cf805b04970431dd1fd7a7e6e90ac4/SparkleLogging-new-1.0.0.tar.gz
+[2024-05-25 17:28:01] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/3f/5b/adace7d443fd3f4fe02a238db3b8895fc5ec1d193e588e445af6fb4cec3a/database_mysql_local-0.0.329.tar.gz
+[2024-05-25 17:28:01] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-05-25 17:28:01] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_mysql_local-0.0.328.tar.gz tmp/database_mysql_local-0.0.329.tar.gz --markdown 20240525/d/database-mysql-local/0.0.328-0.0.329/README.md --exclude *.pyd
+[2024-05-25 17:28:01] INFO root fetch - processPackages [revpref]: Downloading https://files.pythonhosted.org/packages/76/d2/4b8c40af8acc7915be7d28d169a1d38cba7d0c679e663337c025bcae0fa5/revpref-1.0.3.tar.gz
+[2024-05-25 17:28:01] INFO root fetch - processPackages [SparkleLogging-new]: Downloading https://files.pythonhosted.org/packages/f9/ba/33066d25bcb1722a843b8ab3325823fae2aa4e90935f29823ca44a256c61/SparkleLogging-new-1.0.1.tar.gz
+[2024-05-25 17:28:01] INFO root fetch - processPackages [revpref]: executing diffoscope
+[2024-05-25 17:28:01] INFO root fetch - processPackages [revpref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revpref-1.0.2.tar.gz tmp/revpref-1.0.3.tar.gz --markdown 20240525/r/revpref/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 17:28:01] INFO root fetch - processPackages [SparkleLogging-new]: executing diffoscope
+[2024-05-25 17:28:01] INFO root fetch - processPackages [SparkleLogging-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SparkleLogging-new-1.0.0.tar.gz tmp/SparkleLogging-new-1.0.1.tar.gz --markdown 20240525/S/SparkleLogging-new/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 17:28:02] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.328.tar.gz]
+[2024-05-25 17:28:02] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database_mysql_local-0.0.329.tar.gz]
+[2024-05-25 17:28:02] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-05-25 17:28:02] INFO root fetch - processPackages [revpref]: Remove: archive file [/home/abi/fetcher/tmp/revpref-1.0.2.tar.gz]
+[2024-05-25 17:28:02] INFO root fetch - processPackages [revpref]: Remove: archive file [/home/abi/fetcher/tmp/revpref-1.0.3.tar.gz]
+[2024-05-25 17:28:02] INFO root fetch - main [MainThread]: End processing [revpref]: success
+[2024-05-25 17:28:02] INFO root fetch - processPackages [SparkleLogging-new]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-new-1.0.0.tar.gz]
+[2024-05-25 17:28:02] INFO root fetch - processPackages [SparkleLogging-new]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-new-1.0.1.tar.gz]
+[2024-05-25 17:28:02] INFO root fetch - main [MainThread]: End processing [SparkleLogging-new]: success
+[2024-05-25 17:28:02] INFO root fetch - main [MainThread]: Store serial: [23376093]
