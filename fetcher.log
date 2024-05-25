@@ -18366,3 +18366,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:23:36] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.410-cp310-cp310-macosx_12_0_arm64.whl.zip]
 [2024-05-25 17:23:36] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 17:23:36] INFO root fetch - main [MainThread]: Store serial: [23376065]
+[2024-05-25 17:25:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376065]
+[2024-05-25 17:25:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 17:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deloreanby
+[2024-05-25 17:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Mopidy-Pibox
+[2024-05-25 17:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: not1mm
+[2024-05-25 17:25:45] INFO root fetch - processPackages [deloreanby]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-25 17:25:45] INFO root fetch - processPackages [Mopidy-Pibox]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 17:25:45] INFO root fetch - processPackages [not1mm]: New version: [24.5.9] Old Version: [24.5.25]
+[2024-05-25 17:25:45] INFO root fetch - processPackages [deloreanby]: Downloading https://files.pythonhosted.org/packages/00/b3/6bf4c5deee50ca1ba5664cd896ace34fe8a73a7780504b16d57a57fb0bb8/deloreanby-0.2.3.tar.gz
+[2024-05-25 17:25:45] INFO root fetch - processPackages [Mopidy-Pibox]: Downloading https://files.pythonhosted.org/packages/a6/cd/d2e66cd01c38dded13273511b36898edf7e7602a6f0dc6eaac4665705702/mopidy_pibox-1.0.0.tar.gz
+[2024-05-25 17:25:45] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/5b/2b/6fd32d6bf60b26118f2f4b0f990671d688c35e2867be9e4b455aea14c718/not1mm-24.5.25.tar.gz
+[2024-05-25 17:25:46] INFO root fetch - processPackages [deloreanby]: Downloading https://files.pythonhosted.org/packages/15/86/697aa246701a7c273421911d207cf8a2e6ac372b7c78184fb874a905fd97/deloreanby-0.2.4.tar.gz
+[2024-05-25 17:25:46] INFO root fetch - processPackages [Mopidy-Pibox]: Downloading https://files.pythonhosted.org/packages/e0/35/ed733ef548a0205ca22a3b4f174c42939a3e86a751b46f9cdc76e1dbcce5/mopidy_pibox-1.0.1.tar.gz
+[2024-05-25 17:25:46] INFO root fetch - processPackages [deloreanby]: executing diffoscope
+[2024-05-25 17:25:46] INFO root fetch - processPackages [deloreanby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deloreanby-0.2.3.tar.gz tmp/deloreanby-0.2.4.tar.gz --markdown 20240525/d/deloreanby/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-25 17:25:46] INFO root fetch - processPackages [Mopidy-Pibox]: executing diffoscope
+[2024-05-25 17:25:46] INFO root fetch - processPackages [Mopidy-Pibox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mopidy_pibox-1.0.0.tar.gz tmp/mopidy_pibox-1.0.1.tar.gz --markdown 20240525/M/Mopidy-Pibox/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 17:25:46] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/37/b2/33b1f03f668a23e65c50c7fbd144613c5d6da4b25a40e4309666dd8f91e8/not1mm-24.5.9.tar.gz
+[2024-05-25 17:25:46] INFO root fetch - processPackages [deloreanby]: Remove: archive file [/home/abi/fetcher/tmp/deloreanby-0.2.3.tar.gz]
+[2024-05-25 17:25:46] INFO root fetch - processPackages [deloreanby]: Remove: archive file [/home/abi/fetcher/tmp/deloreanby-0.2.4.tar.gz]
+[2024-05-25 17:25:46] INFO root fetch - main [MainThread]: End processing [deloreanby]: success
+[2024-05-25 17:25:47] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2024-05-25 17:25:47] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-24.5.25.tar.gz tmp/not1mm-24.5.9.tar.gz --markdown 20240525/n/not1mm/24.5.25-24.5.9/README.md --exclude *.pyd
+[2024-05-25 17:25:50] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.5.25.tar.gz]
+[2024-05-25 17:25:50] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.5.9.tar.gz]
+[2024-05-25 17:25:50] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2024-05-25 17:25:51] INFO root fetch - processPackages [Mopidy-Pibox]: Remove: archive file [/home/abi/fetcher/tmp/mopidy_pibox-1.0.0.tar.gz]
+[2024-05-25 17:25:51] INFO root fetch - processPackages [Mopidy-Pibox]: Remove: archive file [/home/abi/fetcher/tmp/mopidy_pibox-1.0.1.tar.gz]
+[2024-05-25 17:25:51] INFO root fetch - main [MainThread]: End processing [Mopidy-Pibox]: success
+[2024-05-25 17:25:51] INFO root fetch - main [MainThread]: Store serial: [23376076]
