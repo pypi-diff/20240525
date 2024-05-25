@@ -8388,3 +8388,26 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:37:13] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.1.3.tar.gz]
 [2024-05-25 06:37:13] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
 [2024-05-25 06:37:13] INFO root fetch - main [MainThread]: Store serial: [23371917]
+[2024-05-25 06:39:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371917]
+[2024-05-25 06:39:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 06:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371917]
+[2024-05-25 06:41:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ossx
+[2024-05-25 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-hr
+[2024-05-25 06:41:28] INFO root fetch - processPackages [ossx]: New version: [2.18.4] Old Version: [0.2.18a2]
+[2024-05-25 06:41:28] INFO root fetch - processPackages [odoo-addons-oca-hr]: New version: [16.0.20240510.0] Old Version: [16.0.20240305.0]
+[2024-05-25 06:41:28] INFO root fetch - processPackages [ossx]: Downloading https://files.pythonhosted.org/packages/89/16/2b5c529fff6c38644539e45b209e6c534f5e15465a5111150b3e6fc942ab/ossx-0.2.18a2.tar.gz
+[2024-05-25 06:41:28] INFO root fetch - processPackages [odoo-addons-oca-hr]: Downloading https://files.pythonhosted.org/packages/87/b8/4f3711ab47377d4f989fd5e1dff184e68b85c6fbc06b525f78678da0cacf/odoo_addons_oca_hr-16.0.20240305.0-py3-none-any.whl
+[2024-05-25 06:41:29] INFO root fetch - processPackages [ossx]: Downloading https://files.pythonhosted.org/packages/fd/9c/4c63bd7857970006e4fe26cafead6d850bd3b30b0ff35234ebfb50b5d440/ossx-2.18.4.tar.gz
+[2024-05-25 06:41:29] INFO root fetch - processPackages [odoo-addons-oca-hr]: Downloading https://files.pythonhosted.org/packages/56/f3/0ea465e8a5e389a3aeb1eb8c478537005da7a22146904b3767997dd86627/odoo_addons_oca_hr-16.0.20240510.0-py3-none-any.whl
+[2024-05-25 06:41:29] INFO root fetch - processPackages [ossx]: executing diffoscope
+[2024-05-25 06:41:29] INFO root fetch - processPackages [ossx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossx-0.2.18a2.tar.gz tmp/ossx-2.18.4.tar.gz --markdown 20240525/o/ossx/0.2.18a2-2.18.4/README.md --exclude *.pyd
+[2024-05-25 06:41:29] INFO root fetch - processPackages [odoo-addons-oca-hr]: executing diffoscope
+[2024-05-25 06:41:29] INFO root fetch - processPackages [odoo-addons-oca-hr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_hr-16.0.20240305.0-py3-none-any.whl.zip tmp/odoo_addons_oca_hr-16.0.20240510.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addons-oca-hr/16.0.20240305.0-16.0.20240510.0/README.md --exclude *.pyd
+[2024-05-25 06:41:29] INFO root fetch - processPackages [odoo-addons-oca-hr]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_hr-16.0.20240305.0-py3-none-any.whl.zip]
+[2024-05-25 06:41:29] INFO root fetch - processPackages [odoo-addons-oca-hr]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_hr-16.0.20240510.0-py3-none-any.whl.zip]
+[2024-05-25 06:41:29] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-hr]: success
+[2024-05-25 06:41:29] INFO root fetch - processPackages [ossx]: Remove: archive file [/home/abi/fetcher/tmp/ossx-0.2.18a2.tar.gz]
+[2024-05-25 06:41:29] INFO root fetch - processPackages [ossx]: Remove: archive file [/home/abi/fetcher/tmp/ossx-2.18.4.tar.gz]
+[2024-05-25 06:41:29] INFO root fetch - main [MainThread]: End processing [ossx]: success
+[2024-05-25 06:41:29] INFO root fetch - main [MainThread]: Store serial: [23371922]
