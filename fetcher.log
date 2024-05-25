@@ -8305,3 +8305,23 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:26:21] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-25 06:26:21] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
 [2024-05-25 06:26:21] INFO root fetch - main [MainThread]: Store serial: [23371875]
+[2024-05-25 06:28:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371875]
+[2024-05-25 06:28:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 06:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ExamIntegritySystem
+[2024-05-25 06:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: karaoke-prep
+[2024-05-25 06:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-cdktf-provider-azurerm
+[2024-05-25 06:28:30] WARNING root fetch - processPackages [ExamIntegritySystem]: Skipping, unable to determine old version
+[2024-05-25 06:28:30] INFO root fetch - main [MainThread]: End processing [ExamIntegritySystem] error
+[2024-05-25 06:28:30] INFO root fetch - processPackages [karaoke-prep]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-25 06:28:30] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [9.0.8] Old Version: [9.0.7]
+[2024-05-25 06:28:30] INFO root fetch - processPackages [karaoke-prep]: Downloading https://files.pythonhosted.org/packages/72/74/31aa5bddbef22cd2a724315011133fc5f897034b78666de67b16e1994679/karaoke_prep-0.9.1.tar.gz
+[2024-05-25 06:28:30] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/bf/17/c9386b4842b68525aae4b3da38fa0030881fa08061804f556c93dd424cda/cdktf-cdktf-provider-azurerm-9.0.7.tar.gz
+[2024-05-25 06:28:30] INFO root fetch - processPackages [karaoke-prep]: Downloading https://files.pythonhosted.org/packages/02/21/44976d771d5bf0dd54797a5686ae74c8ce75c405d10196f4c62e513d1cb1/karaoke_prep-0.9.2.tar.gz
+[2024-05-25 06:28:30] INFO root fetch - processPackages [karaoke-prep]: executing diffoscope
+[2024-05-25 06:28:30] INFO root fetch - processPackages [karaoke-prep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karaoke_prep-0.9.1.tar.gz tmp/karaoke_prep-0.9.2.tar.gz --markdown 20240525/k/karaoke-prep/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-25 06:28:31] INFO root fetch - processPackages [karaoke-prep]: Remove: archive file [/home/abi/fetcher/tmp/karaoke_prep-0.9.1.tar.gz]
+[2024-05-25 06:28:31] INFO root fetch - processPackages [karaoke-prep]: Remove: archive file [/home/abi/fetcher/tmp/karaoke_prep-0.9.2.tar.gz]
+[2024-05-25 06:28:31] INFO root fetch - main [MainThread]: End processing [karaoke-prep]: success
+[2024-05-25 06:28:31] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
+[2024-05-25 06:28:31] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2024-05-25 06:28:31] INFO root fetch - main [MainThread]: Store serial: [23371886]
