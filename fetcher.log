@@ -17096,3 +17096,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:08:41] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
 [2024-05-25 16:08:41] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
 [2024-05-25 16:08:41] INFO root fetch - main [MainThread]: Store serial: [23375599]
+[2024-05-25 16:10:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375599]
+[2024-05-25 16:10:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 16:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alphafold3-pytorch
+[2024-05-25 16:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamcapture
+[2024-05-25 16:10:50] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 16:10:50] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 16:10:50] INFO root fetch - processPackages [streamcapture]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-25 16:10:50] INFO root fetch - processPackages [streamcapture]: Downloading https://files.pythonhosted.org/packages/38/de/1c58f3573a0e687d4d1008244a371fe4e49908f9bf3098de1d947cfbb6b8/streamcapture-1.2.2.tar.gz
+[2024-05-25 16:10:50] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 16:10:50] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 16:10:50] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 16:10:50] INFO root fetch - processPackages [streamcapture]: Downloading https://files.pythonhosted.org/packages/94/65/b9d1a4ce7c9165d99a6a69f5b24deb6c27c5ff1ff3cfa5a57fa8f174a9cb/streamcapture-1.2.3.tar.gz
+[2024-05-25 16:10:51] INFO root fetch - processPackages [streamcapture]: executing diffoscope
+[2024-05-25 16:10:51] INFO root fetch - processPackages [streamcapture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamcapture-1.2.2.tar.gz tmp/streamcapture-1.2.3.tar.gz --markdown 20240525/s/streamcapture/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-25 16:10:51] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 16:10:51] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 16:10:51] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 16:10:51] INFO root fetch - processPackages [streamcapture]: Remove: archive file [/home/abi/fetcher/tmp/streamcapture-1.2.2.tar.gz]
+[2024-05-25 16:10:51] INFO root fetch - processPackages [streamcapture]: Remove: archive file [/home/abi/fetcher/tmp/streamcapture-1.2.3.tar.gz]
+[2024-05-25 16:10:51] INFO root fetch - main [MainThread]: End processing [streamcapture]: success
+[2024-05-25 16:10:51] INFO root fetch - main [MainThread]: Store serial: [23375607]
