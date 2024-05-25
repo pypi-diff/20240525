@@ -21601,3 +21601,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:33:18] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-05-25 21:33:18] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-05-25 21:33:18] INFO root fetch - main [MainThread]: Store serial: [23377476]
+[2024-05-25 21:35:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377476]
+[2024-05-25 21:35:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roofAI
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ptetools
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: palinuro-lib
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: location-local
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blue-plugin
+[2024-05-25 21:35:27] INFO root fetch - processPackages [palinuro-lib]: New version: [0.3] Old Version: [0.1]
+[2024-05-25 21:35:27] INFO root fetch - processPackages [roofAI]: New version: [4.23.1] Old Version: [4.22.1]
+[2024-05-25 21:35:27] INFO root fetch - processPackages [blue-plugin]: New version: [3.46.1] Old Version: [3.45.1]
+[2024-05-25 21:35:27] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ptetools]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-05-25 21:35:27] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/72/b0/021ea52b1fa3aee8576fca9bf55c7f85dc4533a1aec703c68ffa40a9c8e6/roofai-4.22.1.tar.gz
+[2024-05-25 21:35:27] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/25/32/2efdd9eb5f61e8ce1ef78e3651d68299bc7ec0a23863bd4704ab2aed5b6f/blue_plugin-3.45.1.tar.gz
+[2024-05-25 21:35:27] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-05-25 21:35:27] INFO root fetch - processPackages [palinuro-lib]: Downloading https://files.pythonhosted.org/packages/18/3d/e17c1557ecec5407500446574253538b404e669e8a7dd5e85eb5dc0bd9af/palinuro_lib-0.1.tar.gz
+[2024-05-25 21:35:27] INFO root fetch - processPackages [ptetools]: Downloading https://files.pythonhosted.org/packages/59/9b/843f63299f64987418e23abc0ce3f6a1d5caf5b0c94d10d959a87d3008ef/ptetools-0.1.3.tar.gz
+[2024-05-25 21:35:28] INFO root fetch - processPackages [roofAI]: Downloading https://files.pythonhosted.org/packages/89/4d/ba3d8e273afbb95ab10f6259f8cebce62f2118d02b756b9f1e7f49f1ee18/roofai-4.23.1.tar.gz
+[2024-05-25 21:35:28] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-05-25 21:35:28] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-05-25 21:35:28] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240525/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 21:35:28] INFO root fetch - processPackages [blue-plugin]: Downloading https://files.pythonhosted.org/packages/5c/32/91cd34c6c69c3353ea18857ddfb8548efd4a622f4707562030b3698ef924/blue_plugin-3.46.1.tar.gz
+[2024-05-25 21:35:28] INFO root fetch - processPackages [palinuro-lib]: Downloading https://files.pythonhosted.org/packages/28/a1/d5f374df51cc590ab959edea01caf29bf43bcb7eb204fcb0de89d4d8e2c3/palinuro_lib-0.3.tar.gz
+[2024-05-25 21:35:28] INFO root fetch - processPackages [roofAI]: executing diffoscope
+[2024-05-25 21:35:28] INFO root fetch - processPackages [roofAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roofai-4.22.1.tar.gz tmp/roofai-4.23.1.tar.gz --markdown 20240525/r/roofAI/4.22.1-4.23.1/README.md --exclude *.pyd
+[2024-05-25 21:35:28] INFO root fetch - processPackages [ptetools]: Downloading https://files.pythonhosted.org/packages/16/43/d5a9498470c1b06baf71942f398f4aee00763ae785bb74f490e8f336190a/ptetools-0.1.5.tar.gz
+[2024-05-25 21:35:28] INFO root fetch - processPackages [blue-plugin]: executing diffoscope
+[2024-05-25 21:35:28] INFO root fetch - processPackages [blue-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_plugin-3.45.1.tar.gz tmp/blue_plugin-3.46.1.tar.gz --markdown 20240525/b/blue-plugin/3.45.1-3.46.1/README.md --exclude *.pyd
+[2024-05-25 21:35:28] INFO root fetch - processPackages [palinuro-lib]: executing diffoscope
+[2024-05-25 21:35:28] INFO root fetch - processPackages [palinuro-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palinuro_lib-0.1.tar.gz tmp/palinuro_lib-0.3.tar.gz --markdown 20240525/p/palinuro-lib/0.1-0.3/README.md --exclude *.pyd
+[2024-05-25 21:35:28] INFO root fetch - processPackages [ptetools]: executing diffoscope
+[2024-05-25 21:35:28] INFO root fetch - processPackages [ptetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptetools-0.1.3.tar.gz tmp/ptetools-0.1.5.tar.gz --markdown 20240525/p/ptetools/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-05-25 21:35:28] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.45.1.tar.gz]
+[2024-05-25 21:35:28] INFO root fetch - processPackages [blue-plugin]: Remove: archive file [/home/abi/fetcher/tmp/blue_plugin-3.46.1.tar.gz]
+[2024-05-25 21:35:28] INFO root fetch - main [MainThread]: End processing [blue-plugin]: success
+[2024-05-25 21:35:28] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.22.1.tar.gz]
+[2024-05-25 21:35:28] INFO root fetch - processPackages [roofAI]: Remove: archive file [/home/abi/fetcher/tmp/roofai-4.23.1.tar.gz]
+[2024-05-25 21:35:28] INFO root fetch - main [MainThread]: End processing [roofAI]: success
+[2024-05-25 21:35:28] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-05-25 21:35:28] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-05-25 21:35:28] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-05-25 21:35:29] INFO root fetch - processPackages [ptetools]: Remove: archive file [/home/abi/fetcher/tmp/ptetools-0.1.3.tar.gz]
+[2024-05-25 21:35:29] INFO root fetch - processPackages [ptetools]: Remove: archive file [/home/abi/fetcher/tmp/ptetools-0.1.5.tar.gz]
+[2024-05-25 21:35:29] INFO root fetch - main [MainThread]: End processing [ptetools]: success
+[2024-05-25 21:35:29] INFO root fetch - processPackages [palinuro-lib]: Remove: archive file [/home/abi/fetcher/tmp/palinuro_lib-0.1.tar.gz]
+[2024-05-25 21:35:29] INFO root fetch - processPackages [palinuro-lib]: Remove: archive file [/home/abi/fetcher/tmp/palinuro_lib-0.3.tar.gz]
+[2024-05-25 21:35:29] INFO root fetch - main [MainThread]: End processing [palinuro-lib]: success
+[2024-05-25 21:35:29] INFO root fetch - main [MainThread]: Store serial: [23377487]
