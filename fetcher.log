@@ -2646,3 +2646,63 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:49:02] INFO root fetch - processPackages [cpg-workflows]: Remove: archive file [/home/abi/fetcher/tmp/cpg-workflows-1.9.1.tar.gz]
 [2024-05-25 02:49:02] INFO root fetch - main [MainThread]: End processing [cpg-workflows]: success
 [2024-05-25 02:49:02] INFO root fetch - main [MainThread]: Store serial: [23369721]
+[2024-05-25 02:51:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369721]
+[2024-05-25 02:51:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promising-stocks
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: athena-intelligence
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sns-notify
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bioversions
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gruel
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-emrserverless-with-delta-lake
+[2024-05-25 02:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchinterp1d
+[2024-05-25 02:51:11] INFO root fetch - processPackages [promising-stocks]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 02:51:11] INFO root fetch - processPackages [gruel]: New version: [4.2.0] Old Version: [4.1.2]
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 02:51:11] INFO root fetch - processPackages [athena-intelligence]: New version: [0.1.61] Old Version: [0.1.60]
+[2024-05-25 02:51:11] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-25 02:51:11] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/4a/be/e0adc75b4c841f4fb64daefff8a5d5f29bb0e731221238df050f68aa142a/promising_stocks-0.1.4.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [gruel]: Downloading https://files.pythonhosted.org/packages/9c/f9/a2c38344a718208899160b5b3be9c432a963cbdace4ce6d7503811b3a1ee/gruel-4.1.2.tar.gz
+[2024-05-25 02:51:11] WARNING root fetch - processPackages [torchinterp1d]: Skipping, unable to determine old version
+[2024-05-25 02:51:11] INFO root fetch - main [MainThread]: End processing [torchinterp1d] error
+[2024-05-25 02:51:11] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/74/93/c0de4c1808337bf26451ca593008fcb71b494f9d852520464494765c6f80/athena_intelligence-0.1.60.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Downloading https://files.pythonhosted.org/packages/ca/c8/c8aec8668c8ae715e0e15ea3ea2e2e326fea6b5d0258b79e2b876aefa521/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [gruel]: Downloading https://files.pythonhosted.org/packages/f8/c6/3f957d527c089ee6faa8b93894145a919bb7ffe97862d1b3e6fbbef70f02/gruel-4.2.0.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/9c/88/e7af57ef3c6d755a7a2b2ea35dc0536f2e50ed9645db9ed742d32ecc4f8e/athena_intelligence-0.1.61.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240525/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 02:51:11] INFO root fetch - processPackages [athena-intelligence]: executing diffoscope
+[2024-05-25 02:51:11] INFO root fetch - processPackages [athena-intelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_intelligence-0.1.60.tar.gz tmp/athena_intelligence-0.1.61.tar.gz --markdown 20240525/a/athena-intelligence/0.1.60-0.1.61/README.md --exclude *.pyd
+[2024-05-25 02:51:11] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/b2/1d/b7c2375863eabd7ba34e186861a2abdbc063cdd6e4c065f5feaed026ed43/promising_stocks-0.1.5.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [gruel]: executing diffoscope
+[2024-05-25 02:51:11] INFO root fetch - processPackages [gruel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gruel-4.1.2.tar.gz tmp/gruel-4.2.0.tar.gz --markdown 20240525/g/gruel/4.1.2-4.2.0/README.md --exclude *.pyd
+[2024-05-25 02:51:11] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Downloading https://files.pythonhosted.org/packages/7f/24/30b3ba3f3be3fa0cda5f66dcfce20bb782a7327b2635d12d6f66d6acf91f/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz
+[2024-05-25 02:51:11] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-05-25 02:51:11] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240525/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-05-25 02:51:11] INFO root fetch - processPackages [promising-stocks]: executing diffoscope
+[2024-05-25 02:51:11] INFO root fetch - processPackages [promising-stocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promising_stocks-0.1.4.tar.gz tmp/promising_stocks-0.1.5.tar.gz --markdown 20240525/p/promising-stocks/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 02:51:12] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-05-25 02:51:12] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.1.2.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - processPackages [gruel]: Remove: archive file [/home/abi/fetcher/tmp/gruel-4.2.0.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - main [MainThread]: End processing [gruel]: success
+[2024-05-25 02:51:12] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2024-05-25 02:51:12] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20240525/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-25 02:51:12] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.4.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.5.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - main [MainThread]: End processing [promising-stocks]: success
+[2024-05-25 02:51:12] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.60.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.61.tar.gz]
+[2024-05-25 02:51:12] INFO root fetch - main [MainThread]: End processing [athena-intelligence]: success
+[2024-05-25 02:51:13] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Remove: archive file [/home/abi/fetcher/tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz]
+[2024-05-25 02:51:13] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Remove: archive file [/home/abi/fetcher/tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz]
+[2024-05-25 02:51:13] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2024-05-25 02:51:31] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-05-25 02:51:31] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-05-25 02:51:31] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-05-25 02:51:31] INFO root fetch - main [MainThread]: Store serial: [23369768]
