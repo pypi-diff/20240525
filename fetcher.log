@@ -21745,3 +21745,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:39:50] INFO root fetch - processPackages [pulsefire-types]: Remove: archive file [/home/abi/fetcher/tmp/pulsefire-types-2.0.9.tar.gz]
 [2024-05-25 21:39:50] INFO root fetch - main [MainThread]: End processing [pulsefire-types]: success
 [2024-05-25 21:39:50] INFO root fetch - main [MainThread]: Store serial: [23377517]
+[2024-05-25 21:41:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377517]
+[2024-05-25 21:42:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-25 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: techtribe-addressbook
+[2024-05-25 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abadpour
+[2024-05-25 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-05-25 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abadpour
+[2024-05-25 21:42:01] INFO root fetch - processPackages [techtribe-addressbook]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: New version: [6.15.1] Old Version: [6.14.1]
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: New version: [6.15.1] Old Version: [6.14.1]
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/d6/f1/21279363612f6a012042e9a9350132f78e1f7ca9b40f6a9bae229a90c388/abadpour-6.14.1.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/d6/f1/21279363612f6a012042e9a9350132f78e1f7ca9b40f6a9bae229a90c388/abadpour-6.14.1.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 21:42:01] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 21:42:01] INFO root fetch - processPackages [techtribe-addressbook]: Downloading https://files.pythonhosted.org/packages/19/27/7e87b6c3193fe46aa9ae01f10989690e7530a9a1a7d1d80c87959ea174af/techtribe_addressbook-1.0.0.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/fc/27/ae0f485138ac6e2974ff9871972931e7e1c97b64d1097d2425d9b2ee8f73/abadpour-6.15.1.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: Downloading https://files.pythonhosted.org/packages/fc/27/ae0f485138ac6e2974ff9871972931e7e1c97b64d1097d2425d9b2ee8f73/abadpour-6.15.1.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [techtribe-addressbook]: Downloading https://files.pythonhosted.org/packages/cb/be/72ee94c8e8b0c51291d928e811979ed128c96ac48193073dfa39f631c461/techtribe_addressbook-1.0.1.tar.gz
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.14.1.tar.gz tmp/abadpour-6.15.1.tar.gz --markdown 20240525/a/abadpour/6.14.1-6.15.1/README.md --exclude *.pyd
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: executing diffoscope
+[2024-05-25 21:42:01] INFO root fetch - processPackages [abadpour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abadpour-6.14.1.tar.gz tmp/abadpour-6.15.1.tar.gz --markdown 20240525/a/abadpour/6.14.1-6.15.1/README.md --exclude *.pyd
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 21:42:02] INFO root fetch - processPackages [techtribe-addressbook]: executing diffoscope
+[2024-05-25 21:42:02] INFO root fetch - processPackages [techtribe-addressbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/techtribe_addressbook-1.0.0.tar.gz tmp/techtribe_addressbook-1.0.1.tar.gz --markdown 20240525/t/techtribe-addressbook/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 21:42:02] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.14.1.tar.gz]
+[2024-05-25 21:42:02] INFO root fetch - processPackages [abadpour]: Remove: archive file [/home/abi/fetcher/tmp/abadpour-6.15.1.tar.gz]
+[2024-05-25 21:42:02] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-25 21:42:02] INFO root fetch - main [MainThread]: End processing [abadpour]: success
+[2024-05-25 21:42:02] INFO root fetch - processPackages [techtribe-addressbook]: Remove: archive file [/home/abi/fetcher/tmp/techtribe_addressbook-1.0.0.tar.gz]
+[2024-05-25 21:42:02] INFO root fetch - processPackages [techtribe-addressbook]: Remove: archive file [/home/abi/fetcher/tmp/techtribe_addressbook-1.0.1.tar.gz]
+[2024-05-25 21:42:02] INFO root fetch - main [MainThread]: End processing [techtribe-addressbook]: success
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 21:42:02] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 21:42:02] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 21:42:03] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 21:42:03] INFO root fetch - main [MainThread]: Store serial: [23377530]
