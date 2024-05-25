@@ -7775,3 +7775,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:15:11] INFO root fetch - processPackages [RobotRaconteur]: Remove: archive file [/home/abi/fetcher/tmp/RobotRaconteur-1.2.1-cp37-cp37m-win32.whl.zip]
 [2024-05-25 05:15:11] INFO root fetch - main [MainThread]: End processing [RobotRaconteur]: success
 [2024-05-25 05:15:11] INFO root fetch - main [MainThread]: Store serial: [23371598]
+[2024-05-25 05:17:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371598]
+[2024-05-25 05:17:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 05:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-cv-nightly
+[2024-05-25 05:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-05-25 05:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oasysdb
+[2024-05-25 05:17:20] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-25 05:17:20] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-25 05:17:20] WARNING root fetch - processPackages [xingpyc]: Skipping, unable to determine old version
+[2024-05-25 05:17:20] INFO root fetch - main [MainThread]: End processing [xingpyc] error
+[2024-05-25 05:17:20] INFO root fetch - processPackages [oasysdb]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-25 05:17:20] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-25 05:17:20] INFO root fetch - processPackages [oasysdb]: Downloading https://files.pythonhosted.org/packages/55/83/5947ad91598d9090d7fb291801849d6b527e21821533b7baa7a903f42b9f/oasysdb-0.5.0.tar.gz
+[2024-05-25 05:17:20] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-25 05:17:20] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240525/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-25 05:17:20] INFO root fetch - processPackages [oasysdb]: Downloading https://files.pythonhosted.org/packages/1e/e0/e1a00ee91188d7b665f5c9fd54ae2f6e24be57dcfb2027b473f841f67091/oasysdb-0.5.1-cp310-cp310-macosx_10_12_x86_64.whl
+[2024-05-25 05:17:21] INFO root fetch - processPackages [oasysdb]: executing diffoscope
+[2024-05-25 05:17:21] INFO root fetch - processPackages [oasysdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasysdb-0.5.0.tar.gz tmp/oasysdb-0.5.1-cp310-cp310-macosx_10_12_x86_64.whl.zip --markdown 20240525/o/oasysdb/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-25 05:17:21] INFO root fetch - processPackages [oasysdb]: Remove: archive file [/home/abi/fetcher/tmp/oasysdb-0.5.0.tar.gz]
+[2024-05-25 05:17:21] INFO root fetch - processPackages [oasysdb]: Remove: archive file [/home/abi/fetcher/tmp/oasysdb-0.5.1-cp310-cp310-macosx_10_12_x86_64.whl.zip]
+[2024-05-25 05:17:21] INFO root fetch - main [MainThread]: End processing [oasysdb]: success
+[2024-05-25 05:17:22] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-25 05:17:22] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-25 05:17:22] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-25 05:17:22] INFO root fetch - main [MainThread]: Store serial: [23371619]
