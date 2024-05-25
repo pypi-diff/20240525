@@ -22564,3 +22564,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:39:42] INFO root fetch - processPackages [mcdm-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mcdm_scheduler-1.5.3.tar.gz]
 [2024-05-25 22:39:42] INFO root fetch - main [MainThread]: End processing [mcdm-scheduler]: success
 [2024-05-25 22:39:42] INFO root fetch - main [MainThread]: Store serial: [23377854]
+[2024-05-25 22:41:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377854]
+[2024-05-25 22:41:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 22:41:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monzo-utils
+[2024-05-25 22:41:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mptradelib
+[2024-05-25 22:41:51] INFO root fetch - processPackages [mptradelib]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-05-25 22:41:51] INFO root fetch - processPackages [monzo-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-25 22:41:51] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/d2/bc/8d1114b5c418532778b823f3b30a596dc6c594662c33b5578929c4872c88/monzo_utils-0.0.98-py3-none-any.whl
+[2024-05-25 22:41:51] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/2a/7c/e10bb51888237758a820c0ec8dd6a1d30d66e74dc4dc034f200fb6ea76d7/mptradelib-0.5.7.tar.gz
+[2024-05-25 22:41:51] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/f9/ee/36a4b31802d28157c362cf1662a5e7aa2ae4bd05c50e3ac220d08849ac56/mptradelib-0.5.8.tar.gz
+[2024-05-25 22:41:51] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/7c/6a/ebe75d6c4ba204c7dec2e52eef4fe9587f3f4c0b29e48cb92d74cb5e1351/monzo_utils-0.0.99-py3-none-any.whl
+[2024-05-25 22:41:51] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-25 22:41:51] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.5.7.tar.gz tmp/mptradelib-0.5.8.tar.gz --markdown 20240525/m/mptradelib/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-05-25 22:41:51] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-05-25 22:41:51] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.98-py3-none-any.whl.zip tmp/monzo_utils-0.0.99-py3-none-any.whl.zip --markdown 20240525/m/monzo-utils/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-25 22:41:52] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.98-py3-none-any.whl.zip]
+[2024-05-25 22:41:52] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.99-py3-none-any.whl.zip]
+[2024-05-25 22:41:52] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-05-25 22:41:52] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.7.tar.gz]
+[2024-05-25 22:41:52] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.8.tar.gz]
+[2024-05-25 22:41:52] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-25 22:41:52] INFO root fetch - main [MainThread]: Store serial: [23377859]
