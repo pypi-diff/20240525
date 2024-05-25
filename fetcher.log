@@ -21388,3 +21388,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:13:48] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.1.tar.gz]
 [2024-05-25 21:13:48] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
 [2024-05-25 21:13:48] INFO root fetch - main [MainThread]: Store serial: [23377378]
+[2024-05-25 21:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377378]
+[2024-05-25 21:15:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 21:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odfdo
+[2024-05-25 21:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: training-pipeline-mm
+[2024-05-25 21:15:56] WARNING root fetch - processPackages [training-pipeline-mm]: Skipping, unable to determine old version
+[2024-05-25 21:15:56] INFO root fetch - main [MainThread]: End processing [training-pipeline-mm] error
+[2024-05-25 21:15:56] INFO root fetch - processPackages [odfdo]: New version: [3.7.9] Old Version: [3.7.8]
+[2024-05-25 21:15:57] INFO root fetch - processPackages [odfdo]: Downloading https://files.pythonhosted.org/packages/e4/b6/adb5e66f7c070a68270cf1002346e723faef384426dffeb941b166932ee7/odfdo-3.7.8.tar.gz
+[2024-05-25 21:15:57] INFO root fetch - processPackages [odfdo]: Downloading https://files.pythonhosted.org/packages/2f/46/f1c5dbab8a56e805e11ec1b364d0269f82a8f051c111fb37b21eb7f6f5e6/odfdo-3.7.9.tar.gz
+[2024-05-25 21:15:57] INFO root fetch - processPackages [odfdo]: executing diffoscope
+[2024-05-25 21:15:57] INFO root fetch - processPackages [odfdo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odfdo-3.7.8.tar.gz tmp/odfdo-3.7.9.tar.gz --markdown 20240525/o/odfdo/3.7.8-3.7.9/README.md --exclude *.pyd
+[2024-05-25 21:15:58] INFO root fetch - processPackages [odfdo]: Remove: archive file [/home/abi/fetcher/tmp/odfdo-3.7.8.tar.gz]
+[2024-05-25 21:15:58] INFO root fetch - processPackages [odfdo]: Remove: archive file [/home/abi/fetcher/tmp/odfdo-3.7.9.tar.gz]
+[2024-05-25 21:15:58] INFO root fetch - main [MainThread]: End processing [odfdo]: success
+[2024-05-25 21:15:58] INFO root fetch - main [MainThread]: Store serial: [23377386]
