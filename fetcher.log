@@ -6925,3 +6925,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:38:38] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.5.tar.gz]
 [2024-05-25 03:38:38] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2024-05-25 03:38:38] INFO root fetch - main [MainThread]: Store serial: [23371209]
+[2024-05-25 03:40:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371209]
+[2024-05-25 03:40:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 03:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdextension-cli
+[2024-05-25 03:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: web-ui-helper
+[2024-05-25 03:40:47] INFO root fetch - processPackages [web-ui-helper]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 03:40:47] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/d2/a9/1ef853965684d9520db0c6eb67daf90eda5fa7b444d99ab35bc79bee82d9/web-ui-helper-1.0.0.tar.gz
+[2024-05-25 03:40:47] WARNING root fetch - processPackages [gdextension-cli]: Skipping, unable to determine old version
+[2024-05-25 03:40:47] INFO root fetch - main [MainThread]: End processing [gdextension-cli] error
+[2024-05-25 03:40:47] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/3a/fa/61f9d61f47bec524735b01054299b50ca836d24928c1e8e6c014dde9e345/web-ui-helper-1.0.1.tar.gz
+[2024-05-25 03:40:48] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-25 03:40:48] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-1.0.0.tar.gz tmp/web-ui-helper-1.0.1.tar.gz --markdown 20240525/w/web-ui-helper/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 03:40:48] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-1.0.0.tar.gz]
+[2024-05-25 03:40:48] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-1.0.1.tar.gz]
+[2024-05-25 03:40:48] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-25 03:40:48] INFO root fetch - main [MainThread]: Store serial: [23371212]
