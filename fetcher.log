@@ -12165,3 +12165,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:46:49] WARNING root fetch - processPackages [apiverve-cardgenerator]: Skipping, unable to determine old version
 [2024-05-25 11:46:49] INFO root fetch - main [MainThread]: End processing [apiverve-cardgenerator] error
 [2024-05-25 11:46:49] INFO root fetch - main [MainThread]: Store serial: [23373631]
+[2024-05-25 11:48:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373631]
+[2024-05-25 11:48:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 11:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-cardvalidator
+[2024-05-25 11:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apiverve-chucknorrisjokes
+[2024-05-25 11:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: y-llm
+[2024-05-25 11:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-citieslookup
+[2024-05-25 11:48:59] INFO root fetch - processPackages [y-llm]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-05-25 11:48:59] INFO root fetch - processPackages [y-llm]: Downloading https://files.pythonhosted.org/packages/88/3d/7cf87a990807ba5df9583258fd155ec6b1df440d6352ee6cff1342606738/y_llm-0.1.2.tar.gz
+[2024-05-25 11:48:59] WARNING root fetch - processPackages [apiverve-citieslookup]: Skipping, unable to determine old version
+[2024-05-25 11:48:59] INFO root fetch - main [MainThread]: End processing [apiverve-citieslookup] error
+[2024-05-25 11:48:59] WARNING root fetch - processPackages [apiverve-cardvalidator]: Skipping, unable to determine old version
+[2024-05-25 11:48:59] INFO root fetch - main [MainThread]: End processing [apiverve-cardvalidator] error
+[2024-05-25 11:48:59] WARNING root fetch - processPackages [apiverve-chucknorrisjokes]: Skipping, unable to determine old version
+[2024-05-25 11:48:59] INFO root fetch - main [MainThread]: End processing [apiverve-chucknorrisjokes] error
+[2024-05-25 11:49:00] INFO root fetch - processPackages [y-llm]: Downloading https://files.pythonhosted.org/packages/3a/b0/1a4006901904313aff3295d0230b85176f3c4f321a3c9865d71f5e8b3421/y_llm-0.1.4.tar.gz
+[2024-05-25 11:49:00] INFO root fetch - processPackages [y-llm]: executing diffoscope
+[2024-05-25 11:49:00] INFO root fetch - processPackages [y-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/y_llm-0.1.2.tar.gz tmp/y_llm-0.1.4.tar.gz --markdown 20240525/y/y-llm/0.1.2-0.1.4/README.md --exclude *.pyd
+[2024-05-25 11:49:00] INFO root fetch - processPackages [y-llm]: Remove: archive file [/home/abi/fetcher/tmp/y_llm-0.1.2.tar.gz]
+[2024-05-25 11:49:00] INFO root fetch - processPackages [y-llm]: Remove: archive file [/home/abi/fetcher/tmp/y_llm-0.1.4.tar.gz]
+[2024-05-25 11:49:00] INFO root fetch - main [MainThread]: End processing [y-llm]: success
+[2024-05-25 11:49:00] INFO root fetch - main [MainThread]: Store serial: [23373650]
