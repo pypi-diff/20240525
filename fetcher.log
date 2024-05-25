@@ -14116,3 +14116,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:24:43] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.9-py3-none-any.whl.zip]
 [2024-05-25 14:24:43] INFO root fetch - main [MainThread]: End processing [warskald]: success
 [2024-05-25 14:24:43] INFO root fetch - main [MainThread]: Store serial: [23374583]
+[2024-05-25 14:26:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374583]
+[2024-05-25 14:26:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 14:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-25 14:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: node-ec2-instance
+[2024-05-25 14:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schwab-py
+[2024-05-25 14:26:52] INFO root fetch - processPackages [node-ec2-instance]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-25 14:26:52] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 14:26:52] INFO root fetch - processPackages [schwab-py]: New version: [1.0.0] Old Version: [0.0.0a9]
+[2024-05-25 14:26:52] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-25 14:26:52] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/4c/70/2141d33887f743ccdb526ee292ad64202d1d604b11ec84677af578ec160f/node-ec2-instance-0.0.0.tar.gz
+[2024-05-25 14:26:52] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/f3/f1/efd2cf1baeff4d7f78477ad6df2d7f97c864c877ffd1d2e6a1425706ef14/schwab-py-0.0.0a9.tar.gz
+[2024-05-25 14:26:52] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-25 14:26:52] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/6a/7c/eb56c6fdbd7c47d67f1268af24d607933965eaf66af9b6da500253278652/node-ec2-instance-0.0.1.tar.gz
+[2024-05-25 14:26:52] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-25 14:26:52] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240525/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 14:26:52] INFO root fetch - processPackages [node-ec2-instance]: executing diffoscope
+[2024-05-25 14:26:52] INFO root fetch - processPackages [node-ec2-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node-ec2-instance-0.0.0.tar.gz tmp/node-ec2-instance-0.0.1.tar.gz --markdown 20240525/n/node-ec2-instance/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-25 14:26:52] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/a0/d1/f9489161bbdd76382b17e129c4296c6acaa34b2763eb1da4ce8409b51db3/schwab_py-1.0.0.tar.gz
+[2024-05-25 14:26:52] INFO root fetch - processPackages [schwab-py]: executing diffoscope
+[2024-05-25 14:26:52] INFO root fetch - processPackages [schwab-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab-py-0.0.0a9.tar.gz tmp/schwab_py-1.0.0.tar.gz --markdown 20240525/s/schwab-py/0.0.0a9-1.0.0/README.md --exclude *.pyd
+[2024-05-25 14:26:53] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.0.tar.gz]
+[2024-05-25 14:26:53] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.1.tar.gz]
+[2024-05-25 14:26:53] INFO root fetch - main [MainThread]: End processing [node-ec2-instance]: success
+[2024-05-25 14:26:53] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-25 14:26:53] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-25 14:26:53] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-25 14:26:53] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a9.tar.gz]
+[2024-05-25 14:26:53] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab_py-1.0.0.tar.gz]
+[2024-05-25 14:26:53] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
+[2024-05-25 14:26:53] INFO root fetch - main [MainThread]: Store serial: [23374592]
