@@ -11473,3 +11473,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:47:54] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202405250837.tar.gz]
 [2024-05-25 10:47:54] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
 [2024-05-25 10:47:54] INFO root fetch - main [MainThread]: Store serial: [23373388]
+[2024-05-25 10:49:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373388]
+[2024-05-25 10:50:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 10:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiltlib
+[2024-05-25 10:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyLLM
+[2024-05-25 10:50:04] INFO root fetch - processPackages [MyLLM]: New version: [4.8.9] Old Version: [4.8.8]
+[2024-05-25 10:50:04] INFO root fetch - processPackages [tiltlib]: New version: [0.1] Old Version: [0.0.5]
+[2024-05-25 10:50:04] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/17/a3/c8c72d3fe2409e7c53f4f1b62d22d58eda0f109b746f00cee99c542888b9/myllm-4.8.8.tar.gz
+[2024-05-25 10:50:05] INFO root fetch - processPackages [tiltlib]: Downloading https://files.pythonhosted.org/packages/0b/ce/ec470c8df7be562386f579f29d6101940bf4557059301de05e5a344ee047/tiltlib-0.0.5.tar.gz
+[2024-05-25 10:50:05] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/57/3a/bfe2f2c55e10a6dee7a033bc1731f5ed17fe7c958a210478832a958f6d80/myllm-4.8.9.tar.gz
+[2024-05-25 10:50:05] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-05-25 10:50:05] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.8.8.tar.gz tmp/myllm-4.8.9.tar.gz --markdown 20240525/M/MyLLM/4.8.8-4.8.9/README.md --exclude *.pyd
+[2024-05-25 10:50:05] INFO root fetch - processPackages [tiltlib]: Downloading https://files.pythonhosted.org/packages/3f/f9/8a9601d8aadbbb5a6427ad53e8e75634816fca946d36785264c595a1de3b/tiltlib-0.1.tar.gz
+[2024-05-25 10:50:05] INFO root fetch - processPackages [tiltlib]: executing diffoscope
+[2024-05-25 10:50:05] INFO root fetch - processPackages [tiltlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiltlib-0.0.5.tar.gz tmp/tiltlib-0.1.tar.gz --markdown 20240525/t/tiltlib/0.0.5-0.1/README.md --exclude *.pyd
+[2024-05-25 10:50:05] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.8.tar.gz]
+[2024-05-25 10:50:05] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.9.tar.gz]
+[2024-05-25 10:50:05] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-05-25 10:50:06] INFO root fetch - processPackages [tiltlib]: Remove: archive file [/home/abi/fetcher/tmp/tiltlib-0.0.5.tar.gz]
+[2024-05-25 10:50:06] INFO root fetch - processPackages [tiltlib]: Remove: archive file [/home/abi/fetcher/tmp/tiltlib-0.1.tar.gz]
+[2024-05-25 10:50:06] INFO root fetch - main [MainThread]: End processing [tiltlib]: success
+[2024-05-25 10:50:06] INFO root fetch - main [MainThread]: Store serial: [23373404]
