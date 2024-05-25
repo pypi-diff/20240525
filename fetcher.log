@@ -18682,3 +18682,11 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:47:41] INFO root fetch - processPackages [matrix-gptbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_gptbot-0.3.9.tar.gz]
 [2024-05-25 17:47:41] INFO root fetch - main [MainThread]: End processing [matrix-gptbot]: success
 [2024-05-25 17:47:41] INFO root fetch - main [MainThread]: Store serial: [23376222]
+[2024-05-25 17:49:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376222]
+[2024-05-25 17:49:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 17:51:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376222]
+[2024-05-25 17:51:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 17:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: examy
+[2024-05-25 17:51:57] WARNING root fetch - processPackages [examy]: Skipping, unable to determine old version
+[2024-05-25 17:51:57] INFO root fetch - main [MainThread]: End processing [examy] error
+[2024-05-25 17:51:57] INFO root fetch - main [MainThread]: Store serial: [23376227]
