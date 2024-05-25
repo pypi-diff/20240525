@@ -21376,3 +21376,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:11:35] INFO root fetch - processPackages [findblas]: Remove: archive file [/home/abi/fetcher/tmp/findblas-0.1.9.tar.gz]
 [2024-05-25 21:11:35] INFO root fetch - main [MainThread]: End processing [findblas]: success
 [2024-05-25 21:11:35] INFO root fetch - main [MainThread]: Store serial: [23377375]
+[2024-05-25 21:13:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377375]
+[2024-05-25 21:13:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 21:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyiso20022
+[2024-05-25 21:13:46] INFO root fetch - processPackages [pyiso20022]: New version: [0.1.1] Old Version: [0.0.1]
+[2024-05-25 21:13:46] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/32/b8/a7aba741e19bbc876ce9e96eea5ec2d7904efc78294650d1b22765b2581a/pyiso20022-0.0.1.tar.gz
+[2024-05-25 21:13:46] INFO root fetch - processPackages [pyiso20022]: Downloading https://files.pythonhosted.org/packages/7f/d9/2363e683d85cac76dc76ae035a7d47718d96bf0dc78d86c54e7f7a0993c6/pyiso20022-0.1.1.tar.gz
+[2024-05-25 21:13:47] INFO root fetch - processPackages [pyiso20022]: executing diffoscope
+[2024-05-25 21:13:47] INFO root fetch - processPackages [pyiso20022]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiso20022-0.0.1.tar.gz tmp/pyiso20022-0.1.1.tar.gz --markdown 20240525/p/pyiso20022/0.0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-25 21:13:48] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.0.1.tar.gz]
+[2024-05-25 21:13:48] INFO root fetch - processPackages [pyiso20022]: Remove: archive file [/home/abi/fetcher/tmp/pyiso20022-0.1.1.tar.gz]
+[2024-05-25 21:13:48] INFO root fetch - main [MainThread]: End processing [pyiso20022]: success
+[2024-05-25 21:13:48] INFO root fetch - main [MainThread]: Store serial: [23377378]
