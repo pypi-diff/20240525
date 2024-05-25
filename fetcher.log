@@ -9771,3 +9771,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:32:51] INFO root fetch - processPackages [lfdfiles]: Remove: archive file [/home/abi/fetcher/tmp/lfdfiles-2024.5.24.tar.gz]
 [2024-05-25 08:32:51] INFO root fetch - main [MainThread]: End processing [lfdfiles]: success
 [2024-05-25 08:32:51] INFO root fetch - main [MainThread]: Store serial: [23372575]
+[2024-05-25 08:34:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372575]
+[2024-05-25 08:35:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: better-web3
+[2024-05-25 08:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stefutils
+[2024-05-25 08:35:01] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b4] Old Version: [4.0.0b3]
+[2024-05-25 08:35:01] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 08:35:01] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/c5/d0/a04c0916bc177f8f836f9490b8ccaad66af635e67642c41ef3a4c8ae4241/better_web3-4.0.0b3.tar.gz
+[2024-05-25 08:35:01] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-05-25 08:35:01] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-05-25 08:35:01] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/88/a4/7bcb7b9f856b8da2bba4ecbd4fb3dbded7ad1ad2ebba9a98a2b7ba73fac0/better_web3-4.0.0b4.tar.gz
+[2024-05-25 08:35:01] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-05-25 08:35:01] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240525/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 08:35:01] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-25 08:35:01] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b3.tar.gz tmp/better_web3-4.0.0b4.tar.gz --markdown 20240525/b/better-web3/4.0.0b3-4.0.0b4/README.md --exclude *.pyd
+[2024-05-25 08:35:02] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-05-25 08:35:02] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-05-25 08:35:02] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-05-25 08:35:02] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b3.tar.gz]
+[2024-05-25 08:35:02] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b4.tar.gz]
+[2024-05-25 08:35:02] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-25 08:35:02] INFO root fetch - main [MainThread]: Store serial: [23372582]
