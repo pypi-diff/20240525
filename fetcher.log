@@ -11545,3 +11545,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:52:19] INFO root fetch - processPackages [Orange3-WorldHappiness]: Remove: archive file [/home/abi/fetcher/tmp/Orange3-WorldHappiness-0.1.9.tar.gz]
 [2024-05-25 10:52:19] INFO root fetch - main [MainThread]: End processing [Orange3-WorldHappiness]: success
 [2024-05-25 10:52:19] INFO root fetch - main [MainThread]: Store serial: [23373430]
+[2024-05-25 10:54:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373430]
+[2024-05-25 10:54:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nagatoai_core
+[2024-05-25 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-05-25 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xingpyc
+[2024-05-25 10:54:28] INFO root fetch - processPackages [xingpyc]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 10:54:28] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.1.1] Old Version: [0.0.9]
+[2024-05-25 10:54:28] INFO root fetch - processPackages [nagatoai_core]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 10:54:28] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-25 10:54:28] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/27/5d/b475b5744d6466d066658dcbfd783e9f9806aaedb3616a4f695b5adc41e7/xingpyc-0.0.5.tar.gz
+[2024-05-25 10:54:29] INFO root fetch - processPackages [nagatoai_core]: Downloading https://files.pythonhosted.org/packages/64/f2/eca6ce9dfcf2846072e1dd078d3f779979be11631f9fbfed4a8de904ec68/nagatoai_core-0.8.0.tar.gz
+[2024-05-25 10:54:29] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/e7/64/a1487586ea86f2baf2ae51dd704045041b0632f1c99fc247b1d2ca69a3f9/dash_spread_grid-0.1.1.tar.gz
+[2024-05-25 10:54:29] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e7/fd/329edb9432f50f3a2bce4152e587fd319b415d2d73dae25e81e86fcb36ac/xingpyc-0.0.6.tar.gz
+[2024-05-25 10:54:29] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-25 10:54:29] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.9.tar.gz tmp/dash_spread_grid-0.1.1.tar.gz --markdown 20240525/d/dash-spread-grid/0.0.9-0.1.1/README.md --exclude *.pyd
+[2024-05-25 10:54:29] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 10:54:29] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.5.tar.gz tmp/xingpyc-0.0.6.tar.gz --markdown 20240525/x/xingpyc/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 10:54:29] INFO root fetch - processPackages [nagatoai_core]: Downloading https://files.pythonhosted.org/packages/79/56/eaaca906dc31aa5afee4de05ed86891e107f7ff92fa83a812b3eb3ae4c5f/nagatoai_core-0.9.0.tar.gz
+[2024-05-25 10:54:29] INFO root fetch - processPackages [nagatoai_core]: executing diffoscope
+[2024-05-25 10:54:29] INFO root fetch - processPackages [nagatoai_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nagatoai_core-0.8.0.tar.gz tmp/nagatoai_core-0.9.0.tar.gz --markdown 20240525/n/nagatoai_core/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 10:54:29] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.5.tar.gz]
+[2024-05-25 10:54:29] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.6.tar.gz]
+[2024-05-25 10:54:29] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 10:54:30] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.8.0.tar.gz]
+[2024-05-25 10:54:30] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.9.0.tar.gz]
+[2024-05-25 10:54:30] INFO root fetch - main [MainThread]: End processing [nagatoai_core]: success
+[2024-05-25 10:54:31] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-25 10:54:31] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.1.tar.gz]
+[2024-05-25 10:54:31] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-25 10:54:31] INFO root fetch - main [MainThread]: Store serial: [23373439]
