@@ -22080,3 +22080,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:12:15] INFO root fetch - processPackages [scikit-base]: Remove: archive file [/home/abi/fetcher/tmp/scikit_base-0.8.0.tar.gz]
 [2024-05-25 22:12:15] INFO root fetch - main [MainThread]: End processing [scikit-base]: success
 [2024-05-25 22:12:15] INFO root fetch - main [MainThread]: Store serial: [23377674]
+[2024-05-25 22:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377674]
+[2024-05-25 22:14:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 22:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piney-event
+[2024-05-25 22:14:25] INFO root fetch - processPackages [piney-event]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-25 22:14:26] INFO root fetch - processPackages [piney-event]: Downloading https://files.pythonhosted.org/packages/fb/01/9690db0c659f455d8c5b79ac24ed7bd5b388804f396fa0c59156009a92a7/piney_event-0.0.3.tar.gz
+[2024-05-25 22:14:26] INFO root fetch - processPackages [piney-event]: Downloading https://files.pythonhosted.org/packages/3f/f2/b04dae26de256fda1a246bb70e6d34ff119d62f51c8c2eec3373400ab762/piney_event-0.0.4.tar.gz
+[2024-05-25 22:14:26] INFO root fetch - processPackages [piney-event]: executing diffoscope
+[2024-05-25 22:14:26] INFO root fetch - processPackages [piney-event]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piney_event-0.0.3.tar.gz tmp/piney_event-0.0.4.tar.gz --markdown 20240525/p/piney-event/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-25 22:14:27] INFO root fetch - processPackages [piney-event]: Remove: archive file [/home/abi/fetcher/tmp/piney_event-0.0.3.tar.gz]
+[2024-05-25 22:14:27] INFO root fetch - processPackages [piney-event]: Remove: archive file [/home/abi/fetcher/tmp/piney_event-0.0.4.tar.gz]
+[2024-05-25 22:14:27] INFO root fetch - main [MainThread]: End processing [piney-event]: success
+[2024-05-25 22:14:27] INFO root fetch - main [MainThread]: Store serial: [23377678]
