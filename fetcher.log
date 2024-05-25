@@ -8170,3 +8170,9 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:00:34] INFO root fetch - processPackages [micodag]: Remove: archive file [/home/abi/fetcher/tmp/micodag-0.0.3.tar.gz]
 [2024-05-25 06:00:34] INFO root fetch - main [MainThread]: End processing [micodag]: success
 [2024-05-25 06:00:34] INFO root fetch - main [MainThread]: Store serial: [23371829]
+[2024-05-25 06:02:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371829]
+[2024-05-25 06:02:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 06:02:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simian3d
+[2024-05-25 06:02:42] WARNING root fetch - processPackages [simian3d]: Skipping, unable to determine old version
+[2024-05-25 06:02:42] INFO root fetch - main [MainThread]: End processing [simian3d] error
+[2024-05-25 06:02:42] INFO root fetch - main [MainThread]: Store serial: [23371834]
