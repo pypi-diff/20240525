@@ -23114,3 +23114,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:16:48] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-25 23:16:48] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 23:16:48] INFO root fetch - main [MainThread]: Store serial: [23378042]
+[2024-05-25 23:18:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378042]
+[2024-05-25 23:18:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 23:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymenu-cli
+[2024-05-25 23:18:57] INFO root fetch - processPackages [pymenu-cli]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-25 23:18:57] INFO root fetch - processPackages [pymenu-cli]: Downloading https://files.pythonhosted.org/packages/01/9d/88fe032c45b80da2113a3b1ed7b82e677f3102c8e28cba69df1c6efaa06f/pymenu_cli-1.0.6.tar.gz
+[2024-05-25 23:18:57] INFO root fetch - processPackages [pymenu-cli]: Downloading https://files.pythonhosted.org/packages/2a/24/8d66ac1c021602678dc6de9234f5ad5581dc0bb005b011d0789363730af5/pymenu-cli-1.0.7.tar.gz
+[2024-05-25 23:18:58] INFO root fetch - processPackages [pymenu-cli]: executing diffoscope
+[2024-05-25 23:18:58] INFO root fetch - processPackages [pymenu-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymenu_cli-1.0.6.tar.gz tmp/pymenu-cli-1.0.7.tar.gz --markdown 20240525/p/pymenu-cli/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-25 23:18:58] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu_cli-1.0.6.tar.gz]
+[2024-05-25 23:18:58] INFO root fetch - processPackages [pymenu-cli]: Remove: archive file [/home/abi/fetcher/tmp/pymenu-cli-1.0.7.tar.gz]
+[2024-05-25 23:18:58] INFO root fetch - main [MainThread]: End processing [pymenu-cli]: success
+[2024-05-25 23:18:58] INFO root fetch - main [MainThread]: Store serial: [23378045]
