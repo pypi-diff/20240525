@@ -17042,3 +17042,36 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:04:21] INFO root fetch - processPackages [colorpaletteconverter]: Remove: archive file [/home/abi/fetcher/tmp/colorpaletteconverter-0.3.1.tar.gz]
 [2024-05-25 16:04:21] INFO root fetch - main [MainThread]: End processing [colorpaletteconverter]: success
 [2024-05-25 16:04:21] INFO root fetch - main [MainThread]: Store serial: [23375579]
+[2024-05-25 16:06:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375579]
+[2024-05-25 16:06:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 16:06:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unprint
+[2024-05-25 16:06:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jftools
+[2024-05-25 16:06:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mercapy
+[2024-05-25 16:06:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: memorygenerator
+[2024-05-25 16:06:30] INFO root fetch - processPackages [unprint]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 16:06:30] INFO root fetch - processPackages [unprint]: Downloading https://files.pythonhosted.org/packages/31/f0/f8406a29d9385460adb9dfab2328f8e619898eb3fd3f98c0b56da40c6201/unprint-0.0.8.tar.gz
+[2024-05-25 16:06:30] WARNING root fetch - processPackages [memorygenerator]: Skipping, unable to determine old version
+[2024-05-25 16:06:30] INFO root fetch - main [MainThread]: End processing [memorygenerator] error
+[2024-05-25 16:06:30] INFO root fetch - processPackages [mercapy]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 16:06:30] INFO root fetch - processPackages [jftools]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-25 16:06:30] INFO root fetch - processPackages [jftools]: Downloading https://files.pythonhosted.org/packages/77/71/97c28cbef6cc9304308fd1169a569296fe40445923fdae38b0e06b321745/jftools-0.4.1.tar.gz
+[2024-05-25 16:06:30] INFO root fetch - processPackages [unprint]: Downloading https://files.pythonhosted.org/packages/9e/bf/753f285fdc18a94a6c0d366530b3c637c0d376ef2d217846acd6340bbc55/unprint-0.0.9.tar.gz
+[2024-05-25 16:06:30] INFO root fetch - processPackages [mercapy]: Downloading https://files.pythonhosted.org/packages/1f/09/6fd166462c1b16480c44dc0ae7352cdc8b8d6f3bacbd26e7df1ca85fb8e0/mercapy-1.0.2.tar.gz
+[2024-05-25 16:06:30] INFO root fetch - processPackages [unprint]: executing diffoscope
+[2024-05-25 16:06:30] INFO root fetch - processPackages [unprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unprint-0.0.8.tar.gz tmp/unprint-0.0.9.tar.gz --markdown 20240525/u/unprint/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 16:06:30] INFO root fetch - processPackages [mercapy]: Downloading https://files.pythonhosted.org/packages/13/47/26cacf818b8e60c53a7038719a4ed8685990d58b64ecbc008f9502339ec7/mercapy-1.0.3.tar.gz
+[2024-05-25 16:06:30] INFO root fetch - processPackages [jftools]: Downloading https://files.pythonhosted.org/packages/44/ae/73fbb47a39f253fdfe07b81310acaff34b4d16a9974bf608a9be3092131e/jftools-0.4.2.tar.gz
+[2024-05-25 16:06:30] INFO root fetch - processPackages [mercapy]: executing diffoscope
+[2024-05-25 16:06:30] INFO root fetch - processPackages [mercapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercapy-1.0.2.tar.gz tmp/mercapy-1.0.3.tar.gz --markdown 20240525/m/mercapy/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 16:06:30] INFO root fetch - processPackages [jftools]: executing diffoscope
+[2024-05-25 16:06:30] INFO root fetch - processPackages [jftools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jftools-0.4.1.tar.gz tmp/jftools-0.4.2.tar.gz --markdown 20240525/j/jftools/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-25 16:06:31] INFO root fetch - processPackages [unprint]: Remove: archive file [/home/abi/fetcher/tmp/unprint-0.0.8.tar.gz]
+[2024-05-25 16:06:31] INFO root fetch - processPackages [unprint]: Remove: archive file [/home/abi/fetcher/tmp/unprint-0.0.9.tar.gz]
+[2024-05-25 16:06:31] INFO root fetch - main [MainThread]: End processing [unprint]: success
+[2024-05-25 16:06:31] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-1.0.2.tar.gz]
+[2024-05-25 16:06:31] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-1.0.3.tar.gz]
+[2024-05-25 16:06:31] INFO root fetch - main [MainThread]: End processing [mercapy]: success
+[2024-05-25 16:06:31] INFO root fetch - processPackages [jftools]: Remove: archive file [/home/abi/fetcher/tmp/jftools-0.4.1.tar.gz]
+[2024-05-25 16:06:31] INFO root fetch - processPackages [jftools]: Remove: archive file [/home/abi/fetcher/tmp/jftools-0.4.2.tar.gz]
+[2024-05-25 16:06:31] INFO root fetch - main [MainThread]: End processing [jftools]: success
+[2024-05-25 16:06:31] INFO root fetch - main [MainThread]: Store serial: [23375593]
