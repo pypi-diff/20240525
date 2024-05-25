@@ -8527,3 +8527,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:50:15] INFO root fetch - processPackages [qdd]: Remove: archive file [/home/abi/fetcher/tmp/qdd-0.2.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.zip]
 [2024-05-25 06:50:15] INFO root fetch - main [MainThread]: End processing [qdd]: success
 [2024-05-25 06:50:15] INFO root fetch - main [MainThread]: Store serial: [23371970]
+[2024-05-25 06:52:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371970]
+[2024-05-25 06:52:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 06:52:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ConvKAN3D
+[2024-05-25 06:52:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quickstart-vdk
+[2024-05-25 06:52:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audio-separator
+[2024-05-25 06:52:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rottentomatoes-reviews-scraper
+[2024-05-25 06:52:26] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 06:52:26] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-25 06:52:26] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Downloading https://files.pythonhosted.org/packages/d8/9a/a8915a0bcce18361fc7a8acf3dc688c427d7cb48968442c85ed5a9d15969/rottentomatoes-reviews-scraper-0.0.4.tar.gz
+[2024-05-25 06:52:26] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-25 06:52:26] WARNING root fetch - processPackages [ConvKAN3D]: Skipping, unable to determine old version
+[2024-05-25 06:52:26] INFO root fetch - main [MainThread]: End processing [ConvKAN3D] error
+[2024-05-25 06:52:26] INFO root fetch - processPackages [audio-separator]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-25 06:52:27] INFO root fetch - processPackages [audio-separator]: Downloading https://files.pythonhosted.org/packages/db/93/9c9e5a71855de5f6721cb632a8b7f39c2222b6d91fa786832444797fc220/audio_separator-0.9.5.tar.gz
+[2024-05-25 06:52:27] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-25 06:52:27] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-25 06:52:27] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240525/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-25 06:52:27] INFO root fetch - processPackages [audio-separator]: Downloading https://files.pythonhosted.org/packages/02/e0/802f0c370b87eb4898db0bdf70f01171a743a04bc86cd3bbdda9c242f6cd/audio_separator-0.9.6.tar.gz
+[2024-05-25 06:52:27] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Downloading https://files.pythonhosted.org/packages/e0/dc/4258e752b49cbcc07cecfc798076eaa09b5f638c4f0cfc2070e4240e6752/rottentomatoes-reviews-scraper-0.0.5.tar.gz
+[2024-05-25 06:52:27] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: executing diffoscope
+[2024-05-25 06:52:27] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rottentomatoes-reviews-scraper-0.0.4.tar.gz tmp/rottentomatoes-reviews-scraper-0.0.5.tar.gz --markdown 20240525/r/rottentomatoes-reviews-scraper/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 06:52:27] INFO root fetch - processPackages [audio-separator]: executing diffoscope
+[2024-05-25 06:52:27] INFO root fetch - processPackages [audio-separator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audio_separator-0.9.5.tar.gz tmp/audio_separator-0.9.6.tar.gz --markdown 20240525/a/audio-separator/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-25 06:52:27] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-25 06:52:27] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-25 06:52:27] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-25 06:52:28] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Remove: archive file [/home/abi/fetcher/tmp/rottentomatoes-reviews-scraper-0.0.4.tar.gz]
+[2024-05-25 06:52:28] INFO root fetch - processPackages [rottentomatoes-reviews-scraper]: Remove: archive file [/home/abi/fetcher/tmp/rottentomatoes-reviews-scraper-0.0.5.tar.gz]
+[2024-05-25 06:52:28] INFO root fetch - main [MainThread]: End processing [rottentomatoes-reviews-scraper]: success
+[2024-05-25 06:52:28] INFO root fetch - processPackages [audio-separator]: Remove: archive file [/home/abi/fetcher/tmp/audio_separator-0.9.5.tar.gz]
+[2024-05-25 06:52:28] INFO root fetch - processPackages [audio-separator]: Remove: archive file [/home/abi/fetcher/tmp/audio_separator-0.9.6.tar.gz]
+[2024-05-25 06:52:28] INFO root fetch - main [MainThread]: End processing [audio-separator]: success
+[2024-05-25 06:52:28] INFO root fetch - main [MainThread]: Store serial: [23371983]
