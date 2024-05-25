@@ -19113,3 +19113,51 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:20:29] WARNING root fetch - processPackages [django-cefran]: Skipping, unable to determine old version
 [2024-05-25 18:20:29] INFO root fetch - main [MainThread]: End processing [django-cefran] error
 [2024-05-25 18:20:29] INFO root fetch - main [MainThread]: Store serial: [23376421]
+[2024-05-25 18:22:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376421]
+[2024-05-25 18:22:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backend1
+[2024-05-25 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fusio-sdk
+[2024-05-25 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: traceme
+[2024-05-25 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: argrelay
+[2024-05-25 18:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: colfi
+[2024-05-25 18:22:38] INFO root fetch - processPackages [argrelay]: New version: [0.7.1.dev9] Old Version: [0.7.1.dev8]
+[2024-05-25 18:22:38] INFO root fetch - processPackages [backend1]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-25 18:22:38] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/ae/11/58ad4c931594697f9ca8b4bc5b69eb03b279e68c5185f9e294ad624c9827/argrelay-0.7.1.dev8.tar.gz
+[2024-05-25 18:22:38] INFO root fetch - processPackages [traceme]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-25 18:22:38] INFO root fetch - processPackages [backend1]: Downloading https://files.pythonhosted.org/packages/a8/8f/627d0df3a99d1287ae3f83af38ea04f497ba0e258b00607dd5c1bf3050ca/backend1-1.0.7.tar.gz
+[2024-05-25 18:22:38] INFO root fetch - processPackages [colfi]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-25 18:22:38] INFO root fetch - processPackages [fusio-sdk]: New version: [5.0.8] Old Version: [5.0.7]
+[2024-05-25 18:22:38] INFO root fetch - processPackages [traceme]: Downloading https://files.pythonhosted.org/packages/19/85/ec95920e526467f0b067e361eb14a4aa57254f93a423779965131e5cb8fa/traceme-0.5.0.tar.gz
+[2024-05-25 18:22:38] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/90/31/9532685e9ee2441e3eb02442911c44b03460c7fd9633d833db2af27bc25b/fusio_sdk-5.0.7.tar.gz
+[2024-05-25 18:22:38] INFO root fetch - processPackages [colfi]: Downloading https://files.pythonhosted.org/packages/c0/e5/480a1abb97b25ae187c372aecf321ae1335d7ca7d373c4047dad8b76e9a0/colfi-0.6.0-py3-none-any.whl
+[2024-05-25 18:22:39] INFO root fetch - processPackages [backend1]: Downloading https://files.pythonhosted.org/packages/9a/d0/adea5a7dc21cc10287863f98b369d2d2638f113270d9199d58adeba1b579/backend1-1.0.9.tar.gz
+[2024-05-25 18:22:39] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/41/61/23651b2ac54bd70dd766c39e0f5ea91ca47f9db54ee35a349a5a39d791ac/argrelay-0.7.1.dev9.tar.gz
+[2024-05-25 18:22:39] INFO root fetch - processPackages [backend1]: executing diffoscope
+[2024-05-25 18:22:39] INFO root fetch - processPackages [backend1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend1-1.0.7.tar.gz tmp/backend1-1.0.9.tar.gz --markdown 20240525/b/backend1/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-25 18:22:39] INFO root fetch - processPackages [traceme]: Downloading https://files.pythonhosted.org/packages/ed/79/816ff26828bbdbfc71238327032d8ae78f29226c2e1be65ab09874451c62/traceme-0.6.0.tar.gz
+[2024-05-25 18:22:39] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/da/94/e158270345f6b99f95d2bd3e23cd64208600192b5080e16da9001b5a0341/fusio_sdk-5.0.8.tar.gz
+[2024-05-25 18:22:39] INFO root fetch - processPackages [traceme]: executing diffoscope
+[2024-05-25 18:22:39] INFO root fetch - processPackages [traceme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceme-0.5.0.tar.gz tmp/traceme-0.6.0.tar.gz --markdown 20240525/t/traceme/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-25 18:22:39] INFO root fetch - processPackages [fusio-sdk]: executing diffoscope
+[2024-05-25 18:22:39] INFO root fetch - processPackages [fusio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusio_sdk-5.0.7.tar.gz tmp/fusio_sdk-5.0.8.tar.gz --markdown 20240525/f/fusio-sdk/5.0.7-5.0.8/README.md --exclude *.pyd
+[2024-05-25 18:22:39] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-25 18:22:39] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.1.dev8.tar.gz tmp/argrelay-0.7.1.dev9.tar.gz --markdown 20240525/a/argrelay/0.7.1.dev8-0.7.1.dev9/README.md --exclude *.pyd
+[2024-05-25 18:22:39] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.7.tar.gz]
+[2024-05-25 18:22:39] INFO root fetch - processPackages [backend1]: Remove: archive file [/home/abi/fetcher/tmp/backend1-1.0.9.tar.gz]
+[2024-05-25 18:22:39] INFO root fetch - main [MainThread]: End processing [backend1]: success
+[2024-05-25 18:22:39] INFO root fetch - processPackages [traceme]: Remove: archive file [/home/abi/fetcher/tmp/traceme-0.5.0.tar.gz]
+[2024-05-25 18:22:39] INFO root fetch - processPackages [traceme]: Remove: archive file [/home/abi/fetcher/tmp/traceme-0.6.0.tar.gz]
+[2024-05-25 18:22:39] INFO root fetch - main [MainThread]: End processing [traceme]: success
+[2024-05-25 18:22:40] INFO root fetch - processPackages [colfi]: Downloading https://files.pythonhosted.org/packages/c2/24/91e52ec2e6910a585938d387da10b077d402bbcb759f5d902b02299efe04/colfi-0.6.1-py3-none-any.whl
+[2024-05-25 18:22:40] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio_sdk-5.0.7.tar.gz]
+[2024-05-25 18:22:40] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio_sdk-5.0.8.tar.gz]
+[2024-05-25 18:22:40] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
+[2024-05-25 18:22:40] INFO root fetch - processPackages [colfi]: executing diffoscope
+[2024-05-25 18:22:40] INFO root fetch - processPackages [colfi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colfi-0.6.0-py3-none-any.whl.zip tmp/colfi-0.6.1-py3-none-any.whl.zip --markdown 20240525/c/colfi/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-25 18:22:40] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev8.tar.gz]
+[2024-05-25 18:22:40] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev9.tar.gz]
+[2024-05-25 18:22:40] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-25 18:22:41] INFO root fetch - processPackages [colfi]: Remove: archive file [/home/abi/fetcher/tmp/colfi-0.6.0-py3-none-any.whl.zip]
+[2024-05-25 18:22:41] INFO root fetch - processPackages [colfi]: Remove: archive file [/home/abi/fetcher/tmp/colfi-0.6.1-py3-none-any.whl.zip]
+[2024-05-25 18:22:41] INFO root fetch - main [MainThread]: End processing [colfi]: success
+[2024-05-25 18:22:41] INFO root fetch - main [MainThread]: Store serial: [23376440]
