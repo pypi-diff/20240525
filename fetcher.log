@@ -20467,3 +20467,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:48:16] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.6.tar.gz]
 [2024-05-25 19:48:16] INFO root fetch - main [MainThread]: End processing [vbinsta]: success
 [2024-05-25 19:48:16] INFO root fetch - main [MainThread]: Store serial: [23376952]
+[2024-05-25 19:50:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376952]
+[2024-05-25 19:50:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 19:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-Pantry
+[2024-05-25 19:50:25] INFO root fetch - processPackages [python-Pantry]: New version: [3.0.2] Old Version: [2.0.1]
+[2024-05-25 19:50:25] INFO root fetch - processPackages [python-Pantry]: Downloading https://files.pythonhosted.org/packages/d6/85/8b6010b32bd92499097bf526d4448591538bc81cc73b4cfd01e5d7772a3c/python_pantry-2.0.1.tar.gz
+[2024-05-25 19:50:25] INFO root fetch - processPackages [python-Pantry]: Downloading https://files.pythonhosted.org/packages/04/b0/c080aba8e185a9d8ff77b2f0df8013056ec1da74436e20ce55964bbd1430/python_pantry-3.0.2.tar.gz
+[2024-05-25 19:50:25] INFO root fetch - processPackages [python-Pantry]: executing diffoscope
+[2024-05-25 19:50:25] INFO root fetch - processPackages [python-Pantry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_pantry-2.0.1.tar.gz tmp/python_pantry-3.0.2.tar.gz --markdown 20240525/p/python-Pantry/2.0.1-3.0.2/README.md --exclude *.pyd
+[2024-05-25 19:50:26] INFO root fetch - processPackages [python-Pantry]: Remove: archive file [/home/abi/fetcher/tmp/python_pantry-2.0.1.tar.gz]
+[2024-05-25 19:50:26] INFO root fetch - processPackages [python-Pantry]: Remove: archive file [/home/abi/fetcher/tmp/python_pantry-3.0.2.tar.gz]
+[2024-05-25 19:50:26] INFO root fetch - main [MainThread]: End processing [python-Pantry]: success
+[2024-05-25 19:50:26] INFO root fetch - main [MainThread]: Store serial: [23376956]
