@@ -12434,3 +12434,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:04:24] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-05-25 12:04:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-05-25 12:04:24] INFO root fetch - main [MainThread]: Store serial: [23373867]
+[2024-05-25 12:06:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373867]
+[2024-05-25 12:06:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 12:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wmill-pg
+[2024-05-25 12:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: systore
+[2024-05-25 12:06:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pybliometrics
+[2024-05-25 12:06:33] INFO root fetch - processPackages [systore]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 12:06:33] INFO root fetch - processPackages [pybliometrics]: New version: [4.0] Old Version: [3.6]
+[2024-05-25 12:06:33] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-25 12:06:33] INFO root fetch - processPackages [systore]: Downloading https://files.pythonhosted.org/packages/b0/76/48187b1e224e6b033cd9e5f7702665f978fad5b143bc7d357003e183d3d9/systore-1.0.0.tar.gz
+[2024-05-25 12:06:33] INFO root fetch - processPackages [pybliometrics]: Downloading https://files.pythonhosted.org/packages/35/29/68a6349d725670d67ef7ec47ae4952ced361f7a52453e48abfe4384611d2/pybliometrics-3.6.tar.gz
+[2024-05-25 12:06:33] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-05-25 12:06:33] INFO root fetch - processPackages [systore]: Downloading https://files.pythonhosted.org/packages/a5/ba/90c07ac87ab584ab69a96b27ddb82cbec4c8b3b1515143c21b5ec9dcbce6/systore-1.0.1.tar.gz
+[2024-05-25 12:06:34] INFO root fetch - processPackages [systore]: executing diffoscope
+[2024-05-25 12:06:34] INFO root fetch - processPackages [systore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systore-1.0.0.tar.gz tmp/systore-1.0.1.tar.gz --markdown 20240525/s/systore/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 12:06:34] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-05-25 12:06:34] INFO root fetch - processPackages [pybliometrics]: Downloading https://files.pythonhosted.org/packages/14/39/1c980e6b020eda7ef909a99abd8056ad249b45c71302bae42b03c0ea9b33/pybliometrics-4.0.tar.gz
+[2024-05-25 12:06:34] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-05-25 12:06:34] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240525/w/wmill-pg/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-25 12:06:34] INFO root fetch - processPackages [systore]: Remove: archive file [/home/abi/fetcher/tmp/systore-1.0.0.tar.gz]
+[2024-05-25 12:06:34] INFO root fetch - processPackages [systore]: Remove: archive file [/home/abi/fetcher/tmp/systore-1.0.1.tar.gz]
+[2024-05-25 12:06:34] INFO root fetch - main [MainThread]: End processing [systore]: success
+[2024-05-25 12:06:34] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-05-25 12:06:34] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-05-25 12:06:34] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-05-25 12:06:34] INFO root fetch - processPackages [pybliometrics]: executing diffoscope
+[2024-05-25 12:06:34] INFO root fetch - processPackages [pybliometrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybliometrics-3.6.tar.gz tmp/pybliometrics-4.0.tar.gz --markdown 20240525/p/pybliometrics/3.6-4.0/README.md --exclude *.pyd
+[2024-05-25 12:06:35] INFO root fetch - processPackages [pybliometrics]: Remove: archive file [/home/abi/fetcher/tmp/pybliometrics-3.6.tar.gz]
+[2024-05-25 12:06:35] INFO root fetch - processPackages [pybliometrics]: Remove: archive file [/home/abi/fetcher/tmp/pybliometrics-4.0.tar.gz]
+[2024-05-25 12:06:35] INFO root fetch - main [MainThread]: End processing [pybliometrics]: success
+[2024-05-25 12:06:35] INFO root fetch - main [MainThread]: Store serial: [23373881]
