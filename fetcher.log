@@ -11575,3 +11575,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:54:31] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.1.1.tar.gz]
 [2024-05-25 10:54:31] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-05-25 10:54:31] INFO root fetch - main [MainThread]: Store serial: [23373439]
+[2024-05-25 10:56:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373439]
+[2024-05-25 10:56:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 10:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuma-client
+[2024-05-25 10:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nagatoai_core
+[2024-05-25 10:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-islands
+[2024-05-25 10:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioqzone
+[2024-05-25 10:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jetson-examples
+[2024-05-25 10:56:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zern
+[2024-05-25 10:56:41] INFO root fetch - processPackages [nagatoai_core]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 10:56:41] INFO root fetch - processPackages [zern]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 10:56:41] INFO root fetch - processPackages [jetson-examples]: New version: [0.1.0] Old Version: [0.0.8]
+[2024-05-25 10:56:41] INFO root fetch - processPackages [nagatoai_core]: Downloading https://files.pythonhosted.org/packages/64/f2/eca6ce9dfcf2846072e1dd078d3f779979be11631f9fbfed4a8de904ec68/nagatoai_core-0.8.0.tar.gz
+[2024-05-25 10:56:41] WARNING root fetch - processPackages [streamlit-islands]: Skipping, unable to determine old version
+[2024-05-25 10:56:41] INFO root fetch - main [MainThread]: End processing [streamlit-islands] error
+[2024-05-25 10:56:41] INFO root fetch - processPackages [neuma-client]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 10:56:41] INFO root fetch - processPackages [zern]: Downloading https://files.pythonhosted.org/packages/1f/da/00162e2371310a89c93444b828c4ef9046e808f78d46d6d744de51a78a29/zern-0.0.8.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [aioqzone]: New version: [1.8.3.dev1] Old Version: [1.8.2.dev3]
+[2024-05-25 10:56:41] INFO root fetch - processPackages [nagatoai_core]: Downloading https://files.pythonhosted.org/packages/79/56/eaaca906dc31aa5afee4de05ed86891e107f7ff92fa83a812b3eb3ae4c5f/nagatoai_core-0.9.0.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [neuma-client]: Downloading https://files.pythonhosted.org/packages/7b/ea/c8d8e33845f0e9507092639ab89f68b0d4152b38c5bb24fe8a82b73cc5ab/neuma_client-0.1.0.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [jetson-examples]: Downloading https://files.pythonhosted.org/packages/80/1b/9087a6adbe184451bc7624cac746d119d027178a54edbd6c66bada61d212/jetson_examples-0.0.8.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [zern]: Downloading https://files.pythonhosted.org/packages/da/2b/b995610e20e170f20bfa70249e2c9ccfa458bda26c1898ebe6ba0844b9e6/zern-0.0.9.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [aioqzone]: Downloading https://files.pythonhosted.org/packages/dd/02/edee9b744ad4e1e9faa4f62c161e3fe161b194521bf4cefa84c9d33f070d/aioqzone-1.8.2.dev3.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [nagatoai_core]: executing diffoscope
+[2024-05-25 10:56:41] INFO root fetch - processPackages [nagatoai_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nagatoai_core-0.8.0.tar.gz tmp/nagatoai_core-0.9.0.tar.gz --markdown 20240525/n/nagatoai_core/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 10:56:41] INFO root fetch - processPackages [zern]: executing diffoscope
+[2024-05-25 10:56:41] INFO root fetch - processPackages [zern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zern-0.0.8.tar.gz tmp/zern-0.0.9.tar.gz --markdown 20240525/z/zern/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 10:56:41] INFO root fetch - processPackages [neuma-client]: Downloading https://files.pythonhosted.org/packages/09/f1/d51d697ce4edbceaf34eeae2918bdf8413a06b26edf0c0696f146d1b44a7/neuma_client-0.1.1.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [aioqzone]: Downloading https://files.pythonhosted.org/packages/5f/fa/325df0045f4b5c1ffbfdd117311d47b736add6be75ebaa8eb99a31331d72/aioqzone-1.8.3.dev1.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [jetson-examples]: Downloading https://files.pythonhosted.org/packages/b3/08/a26eb38a29e5109991d6866d46f99bcb436526c167ca162f5ba07aa2e88e/jetson_examples-0.1.0.tar.gz
+[2024-05-25 10:56:41] INFO root fetch - processPackages [neuma-client]: executing diffoscope
+[2024-05-25 10:56:41] INFO root fetch - processPackages [neuma-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuma_client-0.1.0.tar.gz tmp/neuma_client-0.1.1.tar.gz --markdown 20240525/n/neuma-client/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 10:56:42] INFO root fetch - processPackages [aioqzone]: executing diffoscope
+[2024-05-25 10:56:42] INFO root fetch - processPackages [aioqzone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqzone-1.8.2.dev3.tar.gz tmp/aioqzone-1.8.3.dev1.tar.gz --markdown 20240525/a/aioqzone/1.8.2.dev3-1.8.3.dev1/README.md --exclude *.pyd
+[2024-05-25 10:56:42] INFO root fetch - processPackages [jetson-examples]: executing diffoscope
+[2024-05-25 10:56:42] INFO root fetch - processPackages [jetson-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetson_examples-0.0.8.tar.gz tmp/jetson_examples-0.1.0.tar.gz --markdown 20240525/j/jetson-examples/0.0.8-0.1.0/README.md --exclude *.pyd
+[2024-05-25 10:56:42] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.8.0.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - processPackages [nagatoai_core]: Remove: archive file [/home/abi/fetcher/tmp/nagatoai_core-0.9.0.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - main [MainThread]: End processing [nagatoai_core]: success
+[2024-05-25 10:56:42] INFO root fetch - processPackages [zern]: Remove: archive file [/home/abi/fetcher/tmp/zern-0.0.8.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - processPackages [zern]: Remove: archive file [/home/abi/fetcher/tmp/zern-0.0.9.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - main [MainThread]: End processing [zern]: success
+[2024-05-25 10:56:42] INFO root fetch - processPackages [neuma-client]: Remove: archive file [/home/abi/fetcher/tmp/neuma_client-0.1.0.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - processPackages [neuma-client]: Remove: archive file [/home/abi/fetcher/tmp/neuma_client-0.1.1.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - main [MainThread]: End processing [neuma-client]: success
+[2024-05-25 10:56:42] INFO root fetch - processPackages [jetson-examples]: Remove: archive file [/home/abi/fetcher/tmp/jetson_examples-0.0.8.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - processPackages [jetson-examples]: Remove: archive file [/home/abi/fetcher/tmp/jetson_examples-0.1.0.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - processPackages [aioqzone]: Remove: archive file [/home/abi/fetcher/tmp/aioqzone-1.8.2.dev3.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - main [MainThread]: End processing [jetson-examples]: success
+[2024-05-25 10:56:42] INFO root fetch - processPackages [aioqzone]: Remove: archive file [/home/abi/fetcher/tmp/aioqzone-1.8.3.dev1.tar.gz]
+[2024-05-25 10:56:42] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
+[2024-05-25 10:56:42] INFO root fetch - main [MainThread]: Store serial: [23373457]
