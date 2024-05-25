@@ -17741,3 +17741,81 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:48:11] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.408-cp311-cp311-macosx_10_9_universal2.whl.zip]
 [2024-05-25 16:48:11] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 16:48:11] INFO root fetch - main [MainThread]: Store serial: [23375829]
+[2024-05-25 16:50:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375829]
+[2024-05-25 16:50:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moveread-pipelines-auto-extract
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: structables
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moveread-pipelines-extract-validation
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipeteer
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osbot-github
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AoE2ScenarioRms
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moveread-pipelines-manual-correct
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moveread-pipelines-manual-select
+[2024-05-25 16:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: moveread-pipelines-ocr-predict
+[2024-05-25 16:50:20] INFO root fetch - processPackages [structables]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-manual-select]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [AoE2ScenarioRms]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: Downloading https://files.pythonhosted.org/packages/56/05/5d38359c2b336ff85d3c500a25ad9fc4220c5b3e20b9e25e7b85dca9d785/moveread_pipelines_extract_validation-0.1.4.tar.gz
+[2024-05-25 16:50:20] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/d6/31/e85d13620f5217633fccf9d657f15382082055f04c422423566d2ac98465/structables-0.2.1.tar.gz
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 16:50:20] WARNING root fetch - processPackages [osbot-github]: Skipping, unable to determine old version
+[2024-05-25 16:50:20] INFO root fetch - main [MainThread]: End processing [osbot-github] error
+[2024-05-25 16:50:20] INFO root fetch - processPackages [pipeteer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Downloading https://files.pythonhosted.org/packages/c0/db/0ff676b5fc1e439decd88eb1c283f206a5f2ad677b013cfb2ef5fdb9468c/moveread_pipelines_ocr_predict-0.1.4.tar.gz
+[2024-05-25 16:50:20] INFO root fetch - processPackages [moveread-pipelines-manual-select]: Downloading https://files.pythonhosted.org/packages/8a/69/6952fd5ddb41191d73c13ba205672f13d6f34e1751c7ce30ba38e0e5c022/moveread_pipelines_manual_select-0.1.5.tar.gz
+[2024-05-25 16:50:20] INFO root fetch - processPackages [AoE2ScenarioRms]: Downloading https://files.pythonhosted.org/packages/18/ae/163d63670c58c623c56e5e8f9c51a201cbf3611488865ff8fdd2ba3b1def/AoE2ScenarioRms-0.2.6.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: Downloading https://files.pythonhosted.org/packages/6a/16/f658d1e42eb622b801e2e2cc03101b1cae6a171ef954666a412f028a77fa/moveread_pipelines_manual_correct-0.1.4.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [pipeteer]: Downloading https://files.pythonhosted.org/packages/17/32/c14f24e80eea6a903536b0dafcc1b2c5d4d380c167e1be63527ab844016a/pipeteer-0.1.0.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Downloading https://files.pythonhosted.org/packages/4f/3d/04c30c6f80a229e933ca2385c25d152c97172e8f13d5acd98ca5ceb38a43/moveread_pipelines_auto_extract-0.1.5.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [AoE2ScenarioRms]: Downloading https://files.pythonhosted.org/packages/89/0e/9c12af38a2ad07e74b4df67ab6c1a7eda7984a14f640ef26ad3793415cc8/AoE2ScenarioRms-0.2.7.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: Downloading https://files.pythonhosted.org/packages/95/10/f5df880d4dab4fd8eecf9c90073fc2a79d95a8901d59a5f1fddc2e588002/moveread_pipelines_extract_validation-0.1.5.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [structables]: Downloading https://files.pythonhosted.org/packages/b5/58/57f1731e7ffe20f375499e0f2c95fa277521fa220beb721c1094e09bed33/structables-0.2.2.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Downloading https://files.pythonhosted.org/packages/6a/e5/e2a1e58c46cebec675e4908f0e0362eb8f5badc7368907278b361a43085a/moveread_pipelines_ocr_predict-0.1.5.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-select]: Downloading https://files.pythonhosted.org/packages/ca/cb/5804fec83f9ba222ba372c7ac15bbe8ece50b6b9e56bde24e7cc81d53650/moveread_pipelines_manual_select-0.1.6.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: Downloading https://files.pythonhosted.org/packages/bf/1f/06822dfb0c4d2db50c4cb8c426714ba00993a3906b63ddeb189de14d0783/moveread_pipelines_manual_correct-0.1.5.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [AoE2ScenarioRms]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [AoE2ScenarioRms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoE2ScenarioRms-0.2.6.tar.gz tmp/AoE2ScenarioRms-0.2.7.tar.gz --markdown 20240525/A/AoE2ScenarioRms/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_extract_validation-0.1.4.tar.gz tmp/moveread_pipelines_extract_validation-0.1.5.tar.gz --markdown 20240525/m/moveread-pipelines-extract-validation/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Downloading https://files.pythonhosted.org/packages/07/98/699f7a472d5f812e1f4c8d0dc440326c0c6c0f9c85c90f8c1b530d3ffc07/moveread_pipelines_auto_extract-0.1.6.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_ocr_predict-0.1.4.tar.gz tmp/moveread_pipelines_ocr_predict-0.1.5.tar.gz --markdown 20240525/m/moveread-pipelines-ocr-predict/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-select]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-select]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_manual_select-0.1.5.tar.gz tmp/moveread_pipelines_manual_select-0.1.6.tar.gz --markdown 20240525/m/moveread-pipelines-manual-select/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [pipeteer]: Downloading https://files.pythonhosted.org/packages/9e/14/d7fd89fb31f64dd03b8427a495f7ce29d32e92ed2e9fdc33d4733a5e021e/pipeteer-0.1.1.tar.gz
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_manual_correct-0.1.4.tar.gz tmp/moveread_pipelines_manual_correct-0.1.5.tar.gz --markdown 20240525/m/moveread-pipelines-manual-correct/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [structables]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [structables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structables-0.2.1.tar.gz tmp/structables-0.2.2.tar.gz --markdown 20240525/s/structables/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_auto_extract-0.1.5.tar.gz tmp/moveread_pipelines_auto_extract-0.1.6.tar.gz --markdown 20240525/m/moveread-pipelines-auto-extract/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 16:50:21] INFO root fetch - processPackages [pipeteer]: executing diffoscope
+[2024-05-25 16:50:21] INFO root fetch - processPackages [pipeteer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipeteer-0.1.0.tar.gz tmp/pipeteer-0.1.1.tar.gz --markdown 20240525/p/pipeteer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_extract_validation-0.1.4.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-extract-validation]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_extract_validation-0.1.5.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-extract-validation]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [AoE2ScenarioRms]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioRms-0.2.6.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [AoE2ScenarioRms]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioRms-0.2.7.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioRms]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-manual-select]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_manual_select-0.1.5.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-manual-select]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_manual_select-0.1.6.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-manual-select]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_manual_correct-0.1.4.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-manual-correct]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_manual_correct-0.1.5.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-manual-correct]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_ocr_predict-0.1.4.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-ocr-predict]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_ocr_predict-0.1.5.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-ocr-predict]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [pipeteer]: Remove: archive file [/home/abi/fetcher/tmp/pipeteer-0.1.0.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [pipeteer]: Remove: archive file [/home/abi/fetcher/tmp/pipeteer-0.1.1.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [pipeteer]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.2.1.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [structables]: Remove: archive file [/home/abi/fetcher/tmp/structables-0.2.2.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [structables]: success
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_auto_extract-0.1.5.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_auto_extract-0.1.6.tar.gz]
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-auto-extract]: success
+[2024-05-25 16:50:22] INFO root fetch - main [MainThread]: Store serial: [23375858]
