@@ -7532,3 +7532,17 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:46:30] INFO root fetch - processPackages [Audyn]: Remove: archive file [/home/abi/fetcher/tmp/audyn-0.0.1.dev6.tar.gz]
 [2024-05-25 04:46:30] INFO root fetch - main [MainThread]: End processing [Audyn]: success
 [2024-05-25 04:46:30] INFO root fetch - main [MainThread]: Store serial: [23371479]
+[2024-05-25 04:48:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371479]
+[2024-05-25 04:48:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 04:50:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371479]
+[2024-05-25 04:50:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 04:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bencode-c
+[2024-05-25 04:50:44] INFO root fetch - processPackages [bencode-c]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 04:50:44] INFO root fetch - processPackages [bencode-c]: Downloading https://files.pythonhosted.org/packages/05/6a/9456cf8f95480e9b88c21ae29815d03d35588aa0bca46f4d4126cb085ece/bencode_c-0.0.8.tar.gz
+[2024-05-25 04:50:45] INFO root fetch - processPackages [bencode-c]: Downloading https://files.pythonhosted.org/packages/13/e9/f648f5710d23d050e7ab3d22b48c68b1224994488bc8942ef7316a9808bb/bencode_c-0.0.9.tar.gz
+[2024-05-25 04:50:45] INFO root fetch - processPackages [bencode-c]: executing diffoscope
+[2024-05-25 04:50:45] INFO root fetch - processPackages [bencode-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode_c-0.0.8.tar.gz tmp/bencode_c-0.0.9.tar.gz --markdown 20240525/b/bencode-c/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 04:50:45] INFO root fetch - processPackages [bencode-c]: Remove: archive file [/home/abi/fetcher/tmp/bencode_c-0.0.8.tar.gz]
+[2024-05-25 04:50:45] INFO root fetch - processPackages [bencode-c]: Remove: archive file [/home/abi/fetcher/tmp/bencode_c-0.0.9.tar.gz]
+[2024-05-25 04:50:45] INFO root fetch - main [MainThread]: End processing [bencode-c]: success
+[2024-05-25 04:50:45] INFO root fetch - main [MainThread]: Store serial: [23371487]
