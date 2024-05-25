@@ -8776,3 +8776,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:03:23] INFO root fetch - processPackages [odoo14-addon-l10n-br-stock-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_stock_account-14.0.3.7.1.dev3-py3-none-any.whl.zip]
 [2024-05-25 07:03:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-stock-account]: success
 [2024-05-25 07:03:23] INFO root fetch - main [MainThread]: Store serial: [23372049]
+[2024-05-25 07:05:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372049]
+[2024-05-25 07:05:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 07:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm
+[2024-05-25 07:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promising-stocks
+[2024-05-25 07:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchcat
+[2024-05-25 07:05:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mstk
+[2024-05-25 07:05:32] INFO root fetch - processPackages [torchcat]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 07:05:32] INFO root fetch - processPackages [promising-stocks]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 07:05:32] INFO root fetch - processPackages [torchcat]: Downloading https://files.pythonhosted.org/packages/ce/e0/90705ef9578d629309e5a6127f2a921f995b77e9f5a55f4424dcc9c86913/torchcat-0.0.4.tar.gz
+[2024-05-25 07:05:32] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/54/aa/05f44e912886d06786f4c6935a1459bc0fad7707aaa6dcd7ef59e4a8a6cd/promising_stocks-0.1.8.tar.gz
+[2024-05-25 07:05:32] INFO root fetch - processPackages [mstk]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-25 07:05:32] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-25 07:05:32] INFO root fetch - processPackages [mstk]: Downloading https://files.pythonhosted.org/packages/03/68/bedd17712c193cb037aa5c78650b3379c29a9b286923f180940859a2ec50/mstk-0.3.8.tar.gz
+[2024-05-25 07:05:32] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-25 07:05:33] INFO root fetch - processPackages [torchcat]: Downloading https://files.pythonhosted.org/packages/e7/65/c4769d0ce17afa979405f5484d8223929eb594f3927c2d7a8cdd5652dd37/torchcat-0.0.5.tar.gz
+[2024-05-25 07:05:33] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/e1/ed/a045ebba89e56d25b5513af9b99769aa018b52b99f1c4b4f479b2a9ec206/promising_stocks-0.1.9.tar.gz
+[2024-05-25 07:05:33] INFO root fetch - processPackages [promising-stocks]: executing diffoscope
+[2024-05-25 07:05:33] INFO root fetch - processPackages [torchcat]: executing diffoscope
+[2024-05-25 07:05:33] INFO root fetch - processPackages [torchcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchcat-0.0.4.tar.gz tmp/torchcat-0.0.5.tar.gz --markdown 20240525/t/torchcat/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 07:05:33] INFO root fetch - processPackages [promising-stocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promising_stocks-0.1.8.tar.gz tmp/promising_stocks-0.1.9.tar.gz --markdown 20240525/p/promising-stocks/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 07:05:33] INFO root fetch - processPackages [mstk]: Downloading https://files.pythonhosted.org/packages/36/91/b3806564c9f06ba7b764985f55bac1706d1dd4d974701f0bdf9e0c4098a8/mstk-0.3.9.tar.gz
+[2024-05-25 07:05:33] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-25 07:05:33] INFO root fetch - processPackages [mstk]: executing diffoscope
+[2024-05-25 07:05:33] INFO root fetch - processPackages [mstk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mstk-0.3.8.tar.gz tmp/mstk-0.3.9.tar.gz --markdown 20240525/m/mstk/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-25 07:05:33] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-25 07:05:33] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240525/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-25 07:05:33] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.8.tar.gz]
+[2024-05-25 07:05:33] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.9.tar.gz]
+[2024-05-25 07:05:33] INFO root fetch - main [MainThread]: End processing [promising-stocks]: success
+[2024-05-25 07:05:33] INFO root fetch - processPackages [torchcat]: Remove: archive file [/home/abi/fetcher/tmp/torchcat-0.0.4.tar.gz]
+[2024-05-25 07:05:33] INFO root fetch - processPackages [torchcat]: Remove: archive file [/home/abi/fetcher/tmp/torchcat-0.0.5.tar.gz]
+[2024-05-25 07:05:33] INFO root fetch - main [MainThread]: End processing [torchcat]: success
+[2024-05-25 07:05:34] INFO root fetch - processPackages [mstk]: Remove: archive file [/home/abi/fetcher/tmp/mstk-0.3.8.tar.gz]
+[2024-05-25 07:05:34] INFO root fetch - processPackages [mstk]: Remove: archive file [/home/abi/fetcher/tmp/mstk-0.3.9.tar.gz]
+[2024-05-25 07:05:34] INFO root fetch - main [MainThread]: End processing [mstk]: success
+[2024-05-25 07:05:34] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-25 07:05:34] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-25 07:05:34] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-25 07:05:34] INFO root fetch - main [MainThread]: Store serial: [23372061]
