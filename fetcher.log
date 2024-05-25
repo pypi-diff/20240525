@@ -9322,3 +9322,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:51:42] INFO root fetch - processPackages [ps3-update-dl]: Remove: archive file [/home/abi/fetcher/tmp/ps3_update_dl-0.3.0.post2.tar.gz]
 [2024-05-25 07:51:42] INFO root fetch - main [MainThread]: End processing [ps3-update-dl]: success
 [2024-05-25 07:51:42] INFO root fetch - main [MainThread]: Store serial: [23372347]
+[2024-05-25 07:53:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372347]
+[2024-05-25 07:53:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 07:53:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyremotechrome
+[2024-05-25 07:53:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silverback
+[2024-05-25 07:53:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openrank-sdk
+[2024-05-25 07:53:50] INFO root fetch - processPackages [pyremotechrome]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 07:53:50] INFO root fetch - processPackages [pyremotechrome]: Downloading https://files.pythonhosted.org/packages/32/54/fbd27be2561c75c8b34f40e0f41d6b6171d7a5f735b1719e089781ac8ce3/pyremotechrome-0.0.8.tar.gz
+[2024-05-25 07:53:50] INFO root fetch - processPackages [silverback]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-25 07:53:50] WARNING root fetch - processPackages [openrank-sdk]: Skipping, unable to determine old version
+[2024-05-25 07:53:50] INFO root fetch - main [MainThread]: End processing [openrank-sdk] error
+[2024-05-25 07:53:51] INFO root fetch - processPackages [silverback]: Downloading https://files.pythonhosted.org/packages/5a/29/0571fb9d217a3841d5bb0ee0459439227bb1701b673ae04401c74bc890d6/silverback-0.5.1.tar.gz
+[2024-05-25 07:53:51] INFO root fetch - processPackages [pyremotechrome]: Downloading https://files.pythonhosted.org/packages/0f/f9/cf2be78eae15a38c42ffff283b16f771ecd9bc99f3b07acedbc09c959be9/pyremotechrome-0.0.9.tar.gz
+[2024-05-25 07:53:51] INFO root fetch - processPackages [pyremotechrome]: executing diffoscope
+[2024-05-25 07:53:51] INFO root fetch - processPackages [pyremotechrome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyremotechrome-0.0.8.tar.gz tmp/pyremotechrome-0.0.9.tar.gz --markdown 20240525/p/pyremotechrome/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 07:53:51] INFO root fetch - processPackages [silverback]: Downloading https://files.pythonhosted.org/packages/2c/d2/f2747b59806c151261f15c2b582185a5e206e4f9c3c49930d2dd59196815/silverback-0.5.2.tar.gz
+[2024-05-25 07:53:51] INFO root fetch - processPackages [silverback]: executing diffoscope
+[2024-05-25 07:53:51] INFO root fetch - processPackages [silverback]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silverback-0.5.1.tar.gz tmp/silverback-0.5.2.tar.gz --markdown 20240525/s/silverback/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-25 07:53:52] INFO root fetch - processPackages [silverback]: Remove: archive file [/home/abi/fetcher/tmp/silverback-0.5.1.tar.gz]
+[2024-05-25 07:53:52] INFO root fetch - processPackages [silverback]: Remove: archive file [/home/abi/fetcher/tmp/silverback-0.5.2.tar.gz]
+[2024-05-25 07:53:52] INFO root fetch - main [MainThread]: End processing [silverback]: success
+[2024-05-25 07:53:52] INFO root fetch - processPackages [pyremotechrome]: Remove: archive file [/home/abi/fetcher/tmp/pyremotechrome-0.0.8.tar.gz]
+[2024-05-25 07:53:52] INFO root fetch - processPackages [pyremotechrome]: Remove: archive file [/home/abi/fetcher/tmp/pyremotechrome-0.0.9.tar.gz]
+[2024-05-25 07:53:52] INFO root fetch - main [MainThread]: End processing [pyremotechrome]: success
+[2024-05-25 07:53:52] INFO root fetch - main [MainThread]: Store serial: [23372359]
