@@ -13630,3 +13630,45 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:30:04] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.1.tar.gz]
 [2024-05-25 13:30:04] INFO root fetch - main [MainThread]: End processing [calculate-savings]: success
 [2024-05-25 13:30:04] INFO root fetch - main [MainThread]: Store serial: [23374377]
+[2024-05-25 13:32:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374377]
+[2024-05-25 13:32:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: that-depends
+[2024-05-25 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd-21
+[2024-05-25 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: buildable-dataclasses
+[2024-05-25 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchsnapshot-nightly
+[2024-05-25 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: classification-tension-for-image
+[2024-05-25 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rox-vectors
+[2024-05-25 13:32:23] WARNING root fetch - processPackages [rox-vectors]: Skipping, unable to determine old version
+[2024-05-25 13:32:23] INFO root fetch - main [MainThread]: End processing [rox-vectors] error
+[2024-05-25 13:32:23] INFO root fetch - processPackages [torchsnapshot-nightly]: New version: [2024.5.24] Old Version: [2024.5.22]
+[2024-05-25 13:32:23] INFO root fetch - processPackages [classification-tension-for-image]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 13:32:23] INFO root fetch - processPackages [that-depends]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-25 13:32:23] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/ac/1e/792eb97740d8339d904f0abe6931c6d3bb14e20a190d364fdf1bbf786233/torchsnapshot_nightly-2024.5.22.tar.gz
+[2024-05-25 13:32:23] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/72/a6/07710f73e1d92f685185c408aa76b0ecac1313df3225a264e63dee65af15/that_depends-1.9.0.tar.gz
+[2024-05-25 13:32:23] WARNING root fetch - processPackages [buildable-dataclasses]: Skipping, unable to determine old version
+[2024-05-25 13:32:23] INFO root fetch - main [MainThread]: End processing [buildable-dataclasses] error
+[2024-05-25 13:32:24] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240525] Old Version: [2.5.0b20240524]
+[2024-05-25 13:32:24] INFO root fetch - processPackages [classification-tension-for-image]: Downloading https://files.pythonhosted.org/packages/48/d6/9cd224b255f865b3e2b988061b56e90b99b486fd7f38677a5a2e6ee019a5/classification_tension_for_image-0.0.1.tar.gz
+[2024-05-25 13:32:24] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/b5/11/f2acb2e0c4c64fcc30aff7287b8e5b6b4022f245885c04d0828ed4db555e/bigdl_core_xe_esimd_21-2.5.0b20240524-cp39-cp39-win_amd64.whl
+[2024-05-25 13:32:24] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/23/8d/e8d00394625aea7e0e7225a1dd1f11efdf08fe7c8b75096143a44ab5b770/torchsnapshot_nightly-2024.5.24.tar.gz
+[2024-05-25 13:32:24] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/b3/13/f555aa99d5b20332de92f6cd5561364ce4caebb24923532fabea2a39b7a7/that_depends-1.9.1.tar.gz
+[2024-05-25 13:32:24] INFO root fetch - processPackages [torchsnapshot-nightly]: executing diffoscope
+[2024-05-25 13:32:24] INFO root fetch - processPackages [torchsnapshot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsnapshot_nightly-2024.5.22.tar.gz tmp/torchsnapshot_nightly-2024.5.24.tar.gz --markdown 20240525/t/torchsnapshot-nightly/2024.5.22-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 13:32:24] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-05-25 13:32:24] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.9.0.tar.gz tmp/that_depends-1.9.1.tar.gz --markdown 20240525/t/that-depends/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-25 13:32:24] INFO root fetch - processPackages [classification-tension-for-image]: Downloading https://files.pythonhosted.org/packages/e4/b7/0257aeb40f0d428fc879d5d5c118d17eeb35ab3baff6de54afccf163cbbf/classification_tension_for_image-0.0.2.tar.gz
+[2024-05-25 13:32:24] INFO root fetch - processPackages [classification-tension-for-image]: executing diffoscope
+[2024-05-25 13:32:24] INFO root fetch - processPackages [classification-tension-for-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classification_tension_for_image-0.0.1.tar.gz tmp/classification_tension_for_image-0.0.2.tar.gz --markdown 20240525/c/classification-tension-for-image/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 13:32:24] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/b3/88/12ede24a64b10d05d2d27f30d4b5a71620d5eff5c490894d89080cf41d60/bigdl_core_xe_esimd_21-2.5.0b20240525-cp310-cp310-manylinux2010_x86_64.whl
+[2024-05-25 13:32:24] WARNING root fetch - processPackages [bigdl-core-xe-esimd-21]: Skipping package: exceeds size limit 46710743>=10485760
+[2024-05-25 13:32:24] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-05-25 13:32:24] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.0.tar.gz]
+[2024-05-25 13:32:24] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.9.1.tar.gz]
+[2024-05-25 13:32:25] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-05-25 13:32:25] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.22.tar.gz]
+[2024-05-25 13:32:25] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.24.tar.gz]
+[2024-05-25 13:32:25] INFO root fetch - main [MainThread]: End processing [torchsnapshot-nightly]: success
+[2024-05-25 13:32:25] INFO root fetch - processPackages [classification-tension-for-image]: Remove: archive file [/home/abi/fetcher/tmp/classification_tension_for_image-0.0.1.tar.gz]
+[2024-05-25 13:32:25] INFO root fetch - processPackages [classification-tension-for-image]: Remove: archive file [/home/abi/fetcher/tmp/classification_tension_for_image-0.0.2.tar.gz]
+[2024-05-25 13:32:25] INFO root fetch - main [MainThread]: End processing [classification-tension-for-image]: success
+[2024-05-25 13:32:25] INFO root fetch - main [MainThread]: Store serial: [23374395]
