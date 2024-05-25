@@ -7271,3 +7271,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:11:43] INFO root fetch - processPackages [cogsworth]: Remove: archive file [/home/abi/fetcher/tmp/cogsworth-1.0.0.tar.gz]
 [2024-05-25 04:11:43] INFO root fetch - main [MainThread]: End processing [cogsworth]: success
 [2024-05-25 04:11:43] INFO root fetch - main [MainThread]: Store serial: [23371352]
+[2024-05-25 04:13:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371352]
+[2024-05-25 04:13:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 04:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uploadgram
+[2024-05-25 04:13:52] INFO root fetch - processPackages [uploadgram]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-25 04:13:52] INFO root fetch - processPackages [uploadgram]: Downloading https://files.pythonhosted.org/packages/c4/b8/70809f954f04be06c636713ca2eae7d241d9c62f05936b9c3efd070d0a98/uploadgram-0.3.1.tar.gz
+[2024-05-25 04:13:52] INFO root fetch - processPackages [uploadgram]: Downloading https://files.pythonhosted.org/packages/b0/91/2f18965de011cd842bb1514b47241365122de67a0cf6fc1df06eba70c649/uploadgram-0.3.2.tar.gz
+[2024-05-25 04:13:52] INFO root fetch - processPackages [uploadgram]: executing diffoscope
+[2024-05-25 04:13:52] INFO root fetch - processPackages [uploadgram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uploadgram-0.3.1.tar.gz tmp/uploadgram-0.3.2.tar.gz --markdown 20240525/u/uploadgram/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-25 04:13:53] INFO root fetch - processPackages [uploadgram]: Remove: archive file [/home/abi/fetcher/tmp/uploadgram-0.3.1.tar.gz]
+[2024-05-25 04:13:53] INFO root fetch - processPackages [uploadgram]: Remove: archive file [/home/abi/fetcher/tmp/uploadgram-0.3.2.tar.gz]
+[2024-05-25 04:13:53] INFO root fetch - main [MainThread]: End processing [uploadgram]: success
+[2024-05-25 04:13:53] INFO root fetch - main [MainThread]: Store serial: [23371355]
