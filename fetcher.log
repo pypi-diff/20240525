@@ -7811,3 +7811,39 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:19:32] INFO root fetch - processPackages [oasysdb]: Remove: archive file [/home/abi/fetcher/tmp/oasysdb-0.5.1-cp310-cp310-macosx_10_12_x86_64.whl.zip]
 [2024-05-25 05:19:32] INFO root fetch - main [MainThread]: End processing [oasysdb]: success
 [2024-05-25 05:19:32] INFO root fetch - main [MainThread]: Store serial: [23371663]
+[2024-05-25 05:21:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371663]
+[2024-05-25 05:21:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 05:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-newrelic
+[2024-05-25 05:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cleanPyData
+[2024-05-25 05:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: argrelay
+[2024-05-25 05:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: marlonpy
+[2024-05-25 05:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: etypes
+[2024-05-25 05:21:41] WARNING root fetch - processPackages [marlonpy]: Skipping, unable to determine old version
+[2024-05-25 05:21:41] INFO root fetch - main [MainThread]: End processing [marlonpy] error
+[2024-05-25 05:21:41] INFO root fetch - processPackages [argrelay]: New version: [0.7.1.dev7] Old Version: [0.7.1.dev6]
+[2024-05-25 05:21:41] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: New version: [9.0.3] Old Version: [9.0.2]
+[2024-05-25 05:21:41] WARNING root fetch - processPackages [cleanPyData]: Skipping, unable to determine old version
+[2024-05-25 05:21:41] INFO root fetch - main [MainThread]: End processing [cleanPyData] error
+[2024-05-25 05:21:41] INFO root fetch - processPackages [etypes]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 05:21:41] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/80/1b/47dee8161d24a8750e4eae188d5599124eb8f866d243a65523f35940c848/argrelay-0.7.1.dev6.tar.gz
+[2024-05-25 05:21:41] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: Downloading https://files.pythonhosted.org/packages/55/6c/13147eb9dc112527bf0b1655b4fe6d422b316473a9b1bba53a578fefe783/cdktf-cdktf-provider-newrelic-9.0.2.tar.gz
+[2024-05-25 05:21:41] INFO root fetch - processPackages [etypes]: Downloading https://files.pythonhosted.org/packages/7c/8f/f5d291c2072bbfb6d47febc15a568fda2a98fdd5e034376e1a3641bcb1c3/etypes-1.0.0.tar.gz
+[2024-05-25 05:21:41] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: Downloading https://files.pythonhosted.org/packages/88/f8/83dfce55259c0d4cd856368434e57e65d27ab17a9f11f751221db52666a7/cdktf-cdktf-provider-newrelic-9.0.3.tar.gz
+[2024-05-25 05:21:41] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/7c/6f/8e5e6f83ed5d1a65c4436201b7367dd8d78553ec43df144b728c7f45ab81/argrelay-0.7.1.dev7.tar.gz
+[2024-05-25 05:21:41] INFO root fetch - processPackages [etypes]: Downloading https://files.pythonhosted.org/packages/ab/f9/fed7e564dff50fc8039ae7360d5dbc03c20e0bf9e8a439eb691b80995c3e/etypes-1.0.1.tar.gz
+[2024-05-25 05:21:41] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-25 05:21:41] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.1.dev6.tar.gz tmp/argrelay-0.7.1.dev7.tar.gz --markdown 20240525/a/argrelay/0.7.1.dev6-0.7.1.dev7/README.md --exclude *.pyd
+[2024-05-25 05:21:42] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: executing diffoscope
+[2024-05-25 05:21:42] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-newrelic-9.0.2.tar.gz tmp/cdktf-cdktf-provider-newrelic-9.0.3.tar.gz --markdown 20240525/c/cdktf-cdktf-provider-newrelic/9.0.2-9.0.3/README.md --exclude *.pyd
+[2024-05-25 05:21:42] INFO root fetch - processPackages [etypes]: executing diffoscope
+[2024-05-25 05:21:42] INFO root fetch - processPackages [etypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etypes-1.0.0.tar.gz tmp/etypes-1.0.1.tar.gz --markdown 20240525/e/etypes/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 05:21:42] INFO root fetch - processPackages [etypes]: Remove: archive file [/home/abi/fetcher/tmp/etypes-1.0.0.tar.gz]
+[2024-05-25 05:21:42] INFO root fetch - processPackages [etypes]: Remove: archive file [/home/abi/fetcher/tmp/etypes-1.0.1.tar.gz]
+[2024-05-25 05:21:42] INFO root fetch - main [MainThread]: End processing [etypes]: success
+[2024-05-25 05:21:43] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev6.tar.gz]
+[2024-05-25 05:21:43] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev7.tar.gz]
+[2024-05-25 05:21:43] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-25 05:21:44] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-newrelic-9.0.2.tar.gz]
+[2024-05-25 05:21:44] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-newrelic-9.0.3.tar.gz]
+[2024-05-25 05:21:44] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-newrelic]: success
+[2024-05-25 05:21:44] INFO root fetch - main [MainThread]: Store serial: [23371680]
