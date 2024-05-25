@@ -11178,3 +11178,20 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:25:57] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_onpremise-4.4.9.tar.gz]
 [2024-05-25 10:25:57] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection-onpremise]: success
 [2024-05-25 10:25:57] INFO root fetch - main [MainThread]: Store serial: [23373181]
+[2024-05-25 10:28:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373181]
+[2024-05-25 10:28:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 10:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scikit-llm
+[2024-05-25 10:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matplotlib-inline-labels
+[2024-05-25 10:28:05] INFO root fetch - processPackages [matplotlib-inline-labels]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 10:28:05] INFO root fetch - processPackages [scikit-llm]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-25 10:28:06] INFO root fetch - processPackages [scikit-llm]: Downloading https://files.pythonhosted.org/packages/fc/37/167d306936b548b7eb54d289f8c872301a1eeac74e4135a9cd461416c57b/scikit-llm-1.0.0.tar.gz
+[2024-05-25 10:28:06] INFO root fetch - processPackages [matplotlib-inline-labels]: Downloading https://files.pythonhosted.org/packages/6e/fb/9454cfa4c3e7c07607bfd194c4b1e4852be4b17d445b1eadac4a37da0eee/matplotlib_inline_labels-0.2.1.tar.gz
+[2024-05-25 10:28:06] WARNING root fetch - processPackages [matplotlib-inline-labels]: Skipping package: exceeds size limit 11117033>=10485760
+[2024-05-25 10:28:06] INFO root fetch - main [MainThread]: End processing [matplotlib-inline-labels] error
+[2024-05-25 10:28:06] INFO root fetch - processPackages [scikit-llm]: Downloading https://files.pythonhosted.org/packages/81/31/ba378e42896718e8d6e867c07298b1d6b192880817bafd62c593189ede95/scikit_llm-1.1.0.tar.gz
+[2024-05-25 10:28:06] INFO root fetch - processPackages [scikit-llm]: executing diffoscope
+[2024-05-25 10:28:06] INFO root fetch - processPackages [scikit-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-llm-1.0.0.tar.gz tmp/scikit_llm-1.1.0.tar.gz --markdown 20240525/s/scikit-llm/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-25 10:28:07] INFO root fetch - processPackages [scikit-llm]: Remove: archive file [/home/abi/fetcher/tmp/scikit-llm-1.0.0.tar.gz]
+[2024-05-25 10:28:07] INFO root fetch - processPackages [scikit-llm]: Remove: archive file [/home/abi/fetcher/tmp/scikit_llm-1.1.0.tar.gz]
+[2024-05-25 10:28:07] INFO root fetch - main [MainThread]: End processing [scikit-llm]: success
+[2024-05-25 10:28:07] INFO root fetch - main [MainThread]: Store serial: [23373187]
