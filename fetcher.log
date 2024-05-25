@@ -10720,3 +10720,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:46:41] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.9.tar.gz]
 [2024-05-25 09:46:41] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
 [2024-05-25 09:46:41] INFO root fetch - main [MainThread]: Store serial: [23372928]
+[2024-05-25 09:48:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372928]
+[2024-05-25 09:48:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 09:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: brenthy-tools-beta
+[2024-05-25 09:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foscat
+[2024-05-25 09:48:51] WARNING root fetch - processPackages [brenthy-tools-beta]: Skipping, unable to determine old version
+[2024-05-25 09:48:51] INFO root fetch - main [MainThread]: End processing [brenthy-tools-beta] error
+[2024-05-25 09:48:51] INFO root fetch - processPackages [foscat]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-05-25 09:48:51] INFO root fetch - processPackages [foscat]: Downloading https://files.pythonhosted.org/packages/b6/1a/cff11416f3547c8dc9a5231634209d3692fac4d553dab54be2058eae0087/foscat-3.0.8.tar.gz
+[2024-05-25 09:48:51] INFO root fetch - processPackages [foscat]: Downloading https://files.pythonhosted.org/packages/42/3c/3ec0d9aa38fb2a3152ce79ba0f92a03372e73164626118a07121951ed317/foscat-3.0.9.tar.gz
+[2024-05-25 09:48:51] INFO root fetch - processPackages [foscat]: executing diffoscope
+[2024-05-25 09:48:51] INFO root fetch - processPackages [foscat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foscat-3.0.8.tar.gz tmp/foscat-3.0.9.tar.gz --markdown 20240525/f/foscat/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-05-25 09:48:52] INFO root fetch - processPackages [foscat]: Remove: archive file [/home/abi/fetcher/tmp/foscat-3.0.8.tar.gz]
+[2024-05-25 09:48:52] INFO root fetch - processPackages [foscat]: Remove: archive file [/home/abi/fetcher/tmp/foscat-3.0.9.tar.gz]
+[2024-05-25 09:48:52] INFO root fetch - main [MainThread]: End processing [foscat]: success
+[2024-05-25 09:48:52] INFO root fetch - main [MainThread]: Store serial: [23372935]
