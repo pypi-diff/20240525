@@ -1923,3 +1923,23 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:07:15] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
 [2024-05-25 02:07:15] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
 [2024-05-25 02:07:15] INFO root fetch - main [MainThread]: Store serial: [23369343]
+[2024-05-25 02:09:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369343]
+[2024-05-25 02:09:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chromedriver-py
+[2024-05-25 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-common
+[2024-05-25 02:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pazok
+[2024-05-25 02:09:24] WARNING root fetch - processPackages [pazok]: Skipping, unable to determine old version
+[2024-05-25 02:09:24] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-25 02:09:24] INFO root fetch - processPackages [chromedriver-py]: New version: [99.0.4844.51] Old Version: [99.0.4844.35]
+[2024-05-25 02:09:25] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-25 02:09:25] INFO root fetch - processPackages [chromedriver-py]: Downloading https://files.pythonhosted.org/packages/39/03/f1ac791b3c69bd62af64eb3b4f2f0c942828a41ad7eb4840f42ff715c79a/chromedriver-py-99.0.4844.35.tar.gz
+[2024-05-25 02:09:25] WARNING root fetch - processPackages [chromedriver-py]: Skipping package: exceeds size limit 29238079>=10485760
+[2024-05-25 02:09:25] INFO root fetch - main [MainThread]: End processing [chromedriver-py] error
+[2024-05-25 02:09:25] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-25 02:09:25] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-25 02:09:25] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-25 02:09:25] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240525/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-25 02:09:26] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-25 02:09:26] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-25 02:09:26] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-25 02:09:26] INFO root fetch - main [MainThread]: Store serial: [23369377]
