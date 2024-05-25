@@ -20110,3 +20110,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:24:08] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.2.tar.gz]
 [2024-05-25 19:24:08] INFO root fetch - main [MainThread]: End processing [django-postcodes]: success
 [2024-05-25 19:24:08] INFO root fetch - main [MainThread]: Store serial: [23376798]
+[2024-05-25 19:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376798]
+[2024-05-25 19:26:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KFSconfig
+[2024-05-25 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nautiluszim
+[2024-05-25 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oasgen
+[2024-05-25 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: squaredown
+[2024-05-25 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vbinsta
+[2024-05-25 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: promptml
+[2024-05-25 19:26:17] INFO root fetch - processPackages [vbinsta]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 19:26:17] INFO root fetch - processPackages [oasgen]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-25 19:26:17] INFO root fetch - processPackages [squaredown]: New version: [1.6.0] Old Version: [1.5.1]
+[2024-05-25 19:26:17] INFO root fetch - processPackages [nautiluszim]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-25 19:26:17] INFO root fetch - processPackages [KFSconfig]: New version: [2.2.0] Old Version: [2.1.6]
+[2024-05-25 19:26:17] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/af/36/561b0559ce311572523bf967e6ec0e47978e53dd3f785b378f5a8db66497/vbinsta-0.1.3.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/c0/6c/ec64a033ff83f0f32fa277bfe419777c89c7d68a2dedac792c739528c958/oasgen-0.6.0.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/d7/e7/05d9433cea6534db33a0a24f5090f07d51acc159146a43891ced8ddabe02/squaredown-1.5.1.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [promptml]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-25 19:26:17] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/b6/32/1f21cbe71d7b85472c94334bde077b59f92cb9616a8d155d0b4fbe269ed5/kfsconfig-2.1.6.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [nautiluszim]: Downloading https://files.pythonhosted.org/packages/8e/ef/a5d3865131d7e1ec1f338b1c745184f18f59b11c18433443cc3bfbee7f45/nautiluszim-1.2.0.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/3a/e1/7fb52fa502fd18c30ad98201003d30db108e52c175c8e3067d5daf08ccb2/squaredown-1.6.0.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [promptml]: Downloading https://files.pythonhosted.org/packages/f8/6b/fe988ed62abada47a48a1abd4a60b374755cff6cba56b2f4c0e66868a388/promptml-0.6.0.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/91/f1/8339b325683ec843eb48a2aceceb82d4bbc6354e7ee95a51fb089dd39128/oasgen-0.6.1.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [squaredown]: executing diffoscope
+[2024-05-25 19:26:17] INFO root fetch - processPackages [squaredown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squaredown-1.5.1.tar.gz tmp/squaredown-1.6.0.tar.gz --markdown 20240525/s/squaredown/1.5.1-1.6.0/README.md --exclude *.pyd
+[2024-05-25 19:26:17] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/dd/4d/3278d5900185015f7dac27e58540b74bd663467c9d5ec6759ace9e57bca2/vbinsta-0.1.4.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [oasgen]: executing diffoscope
+[2024-05-25 19:26:17] INFO root fetch - processPackages [oasgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasgen-0.6.0.tar.gz tmp/oasgen-0.6.1.tar.gz --markdown 20240525/o/oasgen/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-25 19:26:17] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/a2/1c/0753e22ee22c28b13ffac243f34c2dbb022ff0e6f22f0f06c91182f34bb7/kfsconfig-2.2.0.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [vbinsta]: executing diffoscope
+[2024-05-25 19:26:17] INFO root fetch - processPackages [vbinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbinsta-0.1.3.tar.gz tmp/vbinsta-0.1.4.tar.gz --markdown 20240525/v/vbinsta/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 19:26:17] INFO root fetch - processPackages [nautiluszim]: Downloading https://files.pythonhosted.org/packages/bf/d4/81ac92b4e82af1b571a26243ace5dc7d1f18846e3980e1bc17b5dd55ee8f/nautiluszim-1.2.1.tar.gz
+[2024-05-25 19:26:17] INFO root fetch - processPackages [KFSconfig]: executing diffoscope
+[2024-05-25 19:26:17] INFO root fetch - processPackages [KFSconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsconfig-2.1.6.tar.gz tmp/kfsconfig-2.2.0.tar.gz --markdown 20240525/K/KFSconfig/2.1.6-2.2.0/README.md --exclude *.pyd
+[2024-05-25 19:26:17] INFO root fetch - processPackages [nautiluszim]: executing diffoscope
+[2024-05-25 19:26:17] INFO root fetch - processPackages [nautiluszim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautiluszim-1.2.0.tar.gz tmp/nautiluszim-1.2.1.tar.gz --markdown 20240525/n/nautiluszim/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-25 19:26:17] INFO root fetch - processPackages [promptml]: Downloading https://files.pythonhosted.org/packages/2c/d8/0448ce2b80ab4a8a617c74cf0d646a6b8db6cf8adbebf3afe5f524f19269/promptml-0.6.1.tar.gz
+[2024-05-25 19:26:18] INFO root fetch - processPackages [promptml]: executing diffoscope
+[2024-05-25 19:26:18] INFO root fetch - processPackages [promptml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptml-0.6.0.tar.gz tmp/promptml-0.6.1.tar.gz --markdown 20240525/p/promptml/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-25 19:26:18] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.6.0.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.6.1.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [oasgen]: success
+[2024-05-25 19:26:18] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.5.1.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.6.0.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [squaredown]: success
+[2024-05-25 19:26:18] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.3.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.4.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [vbinsta]: success
+[2024-05-25 19:26:18] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.1.6.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.2.0.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [KFSconfig]: success
+[2024-05-25 19:26:18] INFO root fetch - processPackages [nautiluszim]: Remove: archive file [/home/abi/fetcher/tmp/nautiluszim-1.2.0.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - processPackages [nautiluszim]: Remove: archive file [/home/abi/fetcher/tmp/nautiluszim-1.2.1.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [nautiluszim]: success
+[2024-05-25 19:26:18] INFO root fetch - processPackages [promptml]: Remove: archive file [/home/abi/fetcher/tmp/promptml-0.6.0.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - processPackages [promptml]: Remove: archive file [/home/abi/fetcher/tmp/promptml-0.6.1.tar.gz]
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [promptml]: success
+[2024-05-25 19:26:18] INFO root fetch - main [MainThread]: Store serial: [23376817]
