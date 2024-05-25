@@ -1842,3 +1842,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 01:58:34] INFO root fetch - processPackages [cleanlab]: Remove: archive file [/home/abi/fetcher/tmp/cleanlab-2.6.5.tar.gz]
 [2024-05-25 01:58:34] INFO root fetch - main [MainThread]: End processing [cleanlab]: success
 [2024-05-25 01:58:34] INFO root fetch - main [MainThread]: Store serial: [23369276]
+[2024-05-25 02:00:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369276]
+[2024-05-25 02:00:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 02:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tt-damage-calculator
+[2024-05-25 02:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aravind-package
+[2024-05-25 02:00:42] INFO root fetch - processPackages [tt-damage-calculator]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-05-25 02:00:42] WARNING root fetch - processPackages [aravind-package]: Skipping, unable to determine old version
+[2024-05-25 02:00:42] INFO root fetch - main [MainThread]: End processing [aravind-package] error
+[2024-05-25 02:00:42] INFO root fetch - processPackages [tt-damage-calculator]: Downloading https://files.pythonhosted.org/packages/e1/e0/0716900b7ea98ed753405e2793697110b10bcff745193c861d2d1846bd82/tt_damage_calculator-4.2.0.tar.gz
+[2024-05-25 02:00:42] INFO root fetch - processPackages [tt-damage-calculator]: Downloading https://files.pythonhosted.org/packages/5e/a3/86e9a1b60f12e55b7f0143b71f4a3edf8e8a671a91d9da50e44511e63f1e/tt_damage_calculator-4.3.0.tar.gz
+[2024-05-25 02:00:43] INFO root fetch - processPackages [tt-damage-calculator]: executing diffoscope
+[2024-05-25 02:00:43] INFO root fetch - processPackages [tt-damage-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tt_damage_calculator-4.2.0.tar.gz tmp/tt_damage_calculator-4.3.0.tar.gz --markdown 20240525/t/tt-damage-calculator/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-05-25 02:00:43] INFO root fetch - processPackages [tt-damage-calculator]: Remove: archive file [/home/abi/fetcher/tmp/tt_damage_calculator-4.2.0.tar.gz]
+[2024-05-25 02:00:43] INFO root fetch - processPackages [tt-damage-calculator]: Remove: archive file [/home/abi/fetcher/tmp/tt_damage_calculator-4.3.0.tar.gz]
+[2024-05-25 02:00:43] INFO root fetch - main [MainThread]: End processing [tt-damage-calculator]: success
+[2024-05-25 02:00:43] INFO root fetch - main [MainThread]: Store serial: [23369294]
