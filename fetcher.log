@@ -15826,3 +15826,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:18:11] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240523171416-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
 [2024-05-25 15:18:11] INFO root fetch - main [MainThread]: End processing [tflite-micro]: success
 [2024-05-25 15:18:11] INFO root fetch - main [MainThread]: Store serial: [23375034]
+[2024-05-25 15:20:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375034]
+[2024-05-25 15:20:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 15:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wei-office-simptool
+[2024-05-25 15:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlowVisor
+[2024-05-25 15:20:20] INFO root fetch - processPackages [wei-office-simptool]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 15:20:20] INFO root fetch - processPackages [FlowVisor]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-25 15:20:21] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/d4/d0/be9405ce71183a255f101474ba4e11063f70403b4b0426d1a92dbfbfada1/wei_office_simptool-0.0.8.tar.gz
+[2024-05-25 15:20:21] INFO root fetch - processPackages [FlowVisor]: Downloading https://files.pythonhosted.org/packages/5e/2e/390a47336a812de2a0de57ea2c0ebae9b5af7d8c1ef8f63dad237ce8127f/FlowVisor-0.2.2.tar.gz
+[2024-05-25 15:20:21] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/18/9f/8bdb57d2d9f84f9c8c2ee436c57ae7c9a08c0e8749c620baec09149e9c12/wei_office_simptool-0.0.9.tar.gz
+[2024-05-25 15:20:21] INFO root fetch - processPackages [FlowVisor]: Downloading https://files.pythonhosted.org/packages/1a/d5/3c880f9a0476d95d3aad8923732e95d9660b58128a6e33c920a551d38d7c/FlowVisor-0.2.3.tar.gz
+[2024-05-25 15:20:21] INFO root fetch - processPackages [wei-office-simptool]: executing diffoscope
+[2024-05-25 15:20:21] INFO root fetch - processPackages [wei-office-simptool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wei_office_simptool-0.0.8.tar.gz tmp/wei_office_simptool-0.0.9.tar.gz --markdown 20240525/w/wei-office-simptool/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 15:20:21] INFO root fetch - processPackages [FlowVisor]: executing diffoscope
+[2024-05-25 15:20:21] INFO root fetch - processPackages [FlowVisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlowVisor-0.2.2.tar.gz tmp/FlowVisor-0.2.3.tar.gz --markdown 20240525/F/FlowVisor/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-25 15:20:22] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.8.tar.gz]
+[2024-05-25 15:20:22] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.9.tar.gz]
+[2024-05-25 15:20:22] INFO root fetch - main [MainThread]: End processing [wei-office-simptool]: success
+[2024-05-25 15:20:22] INFO root fetch - processPackages [FlowVisor]: Remove: archive file [/home/abi/fetcher/tmp/FlowVisor-0.2.2.tar.gz]
+[2024-05-25 15:20:22] INFO root fetch - processPackages [FlowVisor]: Remove: archive file [/home/abi/fetcher/tmp/FlowVisor-0.2.3.tar.gz]
+[2024-05-25 15:20:22] INFO root fetch - main [MainThread]: End processing [FlowVisor]: success
+[2024-05-25 15:20:22] INFO root fetch - main [MainThread]: Store serial: [23375044]
