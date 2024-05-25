@@ -22699,3 +22699,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.1.tar.gz]
 [2024-05-25 22:50:38] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
 [2024-05-25 22:50:38] INFO root fetch - main [MainThread]: Store serial: [23377906]
+[2024-05-25 22:52:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377906]
+[2024-05-25 22:52:47] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphscope
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yoto-api
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphscope-client
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gs-apps
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gs-coordinator
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gs-engine
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gs-include
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pipackager
+[2024-05-25 22:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: swc-utils
+[2024-05-25 22:52:48] WARNING root fetch - processPackages [pipackager]: Skipping, unable to determine old version
+[2024-05-25 22:52:48] INFO root fetch - main [MainThread]: End processing [pipackager] error
+[2024-05-25 22:52:48] INFO root fetch - processPackages [swc-utils]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-engine]: New version: [0.28.0a20240525] Old Version: [0.28.0a20240524]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-include]: New version: [0.28.0a20240525] Old Version: [0.28.0a20240524]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/a2/ec/625919123f8e1b364e15d90e61217113543ae64ce22346789611dde60aa2/swc_utils-0.1.2.tar.gz
+[2024-05-25 22:52:48] INFO root fetch - processPackages [graphscope-client]: New version: [0.28.0a20240525] Old Version: [0.28.0a20240524]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-coordinator]: New version: [0.28.0a20240525] Old Version: [0.28.0a20240524]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-apps]: New version: [0.28.0a20240525] Old Version: [0.28.0a20240524]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [graphscope]: New version: [0.28.0a20240525] Old Version: [0.28.0a20240524]
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/35/68/936aebb870bee36b67b1337b96b7a2d3d2e65efad1dc8bea33b9dbcdae3e/gs_engine-0.28.0a20240524-py2.py3-none-any.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/b3/47/0fb60813240c3302d565832681f713248d0e421e2ee1f1cc1f4d96702544/graphscope_client-0.28.0a20240524-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/36/1f/865c24462c3462c3eb850782d9d5d8aacd0f2aa4c6c4f1151ee844d0a172/gs_include-0.28.0a20240524-py2.py3-none-any.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/c4/34/5462d628930c14509aa6e26b5ae752a076bd3e5fe2a1b3186c702bf66aec/graphscope-0.28.0a20240524-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/a3/35/ba66828b16859f38bdf367d42d7c4143159ad18780dc1e1b43912d3448b0/swc_utils-0.2.0.tar.gz
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/e6/e9/4e191df9dcde721760f16544c6b813731bf302d2328d0ad30eb5af9c8299/gs_coordinator-0.28.0a20240524-py2.py3-none-any.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/fb/ad/b3ac6be9f7d2dc76833d8bd4633132f7085ae806af0dcc8fee16c8163a91/gs_apps-0.28.0a20240524-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 22:52:48] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 96588987>=10485760
+[2024-05-25 22:52:48] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2024-05-25 22:52:48] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 28865324>=10485760
+[2024-05-25 22:52:48] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2024-05-25 22:52:48] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 218060036>=10485760
+[2024-05-25 22:52:48] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2024-05-25 22:52:48] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47024167>=10485760
+[2024-05-25 22:52:48] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2024-05-25 22:52:48] INFO root fetch - processPackages [swc-utils]: executing diffoscope
+[2024-05-25 22:52:48] INFO root fetch - processPackages [swc-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swc_utils-0.1.2.tar.gz tmp/swc_utils-0.2.0.tar.gz --markdown 20240525/s/swc-utils/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-25 22:52:48] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-25 22:52:48] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240525/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/d9/cf/7bd12c4dee7784d9fff72befeaef8036ca831056c4f5ed8510c5dcd6cb9a/gs_engine-0.28.0a20240525-py2.py3-none-any.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/18/4e/6e06bf2461b06ecd84dc66f97dd59f1607f3fddf76e0b013916184dc8a15/gs_coordinator-0.28.0a20240525-py2.py3-none-any.whl
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-engine]: executing diffoscope
+[2024-05-25 22:52:48] INFO root fetch - processPackages [gs-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_engine-0.28.0a20240524-py2.py3-none-any.whl.zip tmp/gs_engine-0.28.0a20240525-py2.py3-none-any.whl.zip --markdown 20240525/g/gs-engine/0.28.0a20240524-0.28.0a20240525/README.md --exclude *.pyd
+[2024-05-25 22:52:49] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2024-05-25 22:52:49] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.28.0a20240524-py2.py3-none-any.whl.zip tmp/gs_coordinator-0.28.0a20240525-py2.py3-none-any.whl.zip --markdown 20240525/g/gs-coordinator/0.28.0a20240524-0.28.0a20240525/README.md --exclude *.pyd
+[2024-05-25 22:52:49] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.1.2.tar.gz]
+[2024-05-25 22:52:49] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.2.0.tar.gz]
+[2024-05-25 22:52:49] INFO root fetch - main [MainThread]: End processing [swc-utils]: success
+[2024-05-25 22:52:49] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-25 22:52:49] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-25 22:52:49] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-25 22:52:49] INFO root fetch - processPackages [gs-engine]: Remove: archive file [/home/abi/fetcher/tmp/gs_engine-0.28.0a20240524-py2.py3-none-any.whl.zip]
+[2024-05-25 22:52:49] INFO root fetch - processPackages [gs-engine]: Remove: archive file [/home/abi/fetcher/tmp/gs_engine-0.28.0a20240525-py2.py3-none-any.whl.zip]
+[2024-05-25 22:52:49] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
+[2024-05-25 22:52:49] INFO root fetch - processPackages [gs-coordinator]: Remove: archive file [/home/abi/fetcher/tmp/gs_coordinator-0.28.0a20240524-py2.py3-none-any.whl.zip]
+[2024-05-25 22:52:49] INFO root fetch - processPackages [gs-coordinator]: Remove: archive file [/home/abi/fetcher/tmp/gs_coordinator-0.28.0a20240525-py2.py3-none-any.whl.zip]
+[2024-05-25 22:52:49] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2024-05-25 22:52:49] INFO root fetch - main [MainThread]: Store serial: [23377931]
