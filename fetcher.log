@@ -1943,3 +1943,72 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:09:26] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-05-25 02:09:26] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-05-25 02:09:26] INFO root fetch - main [MainThread]: Store serial: [23369377]
+[2024-05-25 02:11:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369377]
+[2024-05-25 02:11:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epyfun
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zscaler-sdk-python
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CodonTransformer
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ofscraper
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-quantizers-nightly
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swag
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-datapack
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-events-notify
+[2024-05-25 02:11:36] INFO root fetch - processPackages [epyfun]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-25 02:11:36] WARNING root fetch - processPackages [CodonTransformer]: Skipping, unable to determine old version
+[2024-05-25 02:11:36] INFO root fetch - main [MainThread]: End processing [CodonTransformer] error
+[2024-05-25 02:11:36] INFO root fetch - processPackages [python-datapack]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ofscraper]: New version: [3.9.8] Old Version: [3.9.7]
+[2024-05-25 02:11:36] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240524.post1127] Old Version: [1.5.0.20240523.post1117]
+[2024-05-25 02:11:36] INFO root fetch - processPackages [zscaler-sdk-python]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-25 02:11:36] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-25 02:11:36] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/b4/d3/4eb23c7e5506667ed2162ea817fb7dd974fde0ec0da1cb0544567176c380/ofscraper-3.9.7.tar.gz
+[2024-05-25 02:11:36] INFO root fetch - processPackages [epyfun]: Downloading https://files.pythonhosted.org/packages/b6/c7/81e9718ee0dbadb292a6d849e4ccf1fee4935877f24a7c57e2b875446910/epyfun-0.3.5.tar.gz
+[2024-05-25 02:11:36] INFO root fetch - processPackages [swag]: New version: [2.0.0] Old Version: [1.7.3]
+[2024-05-25 02:11:36] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-25 02:11:36] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/63/94/c5d1040589bd5158be69fec98fae6b73245bc577cca09a6b53e2af69a8eb/mct-quantizers-nightly-1.5.0.20240523.post1117.tar.gz
+[2024-05-25 02:11:36] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/81/df/0eeb86f091052193dc262116c7e9f919f8221def9bc175ba196d182583b4/python_datapack-0.0.1.tar.gz
+[2024-05-25 02:11:36] INFO root fetch - processPackages [zscaler-sdk-python]: Downloading https://files.pythonhosted.org/packages/ed/41/d153ccf7cecd9cd3afad1497a26fccac2cf1da3d800273bff9a9dafd9c5d/zscaler_sdk_python-0.2.0.tar.gz
+[2024-05-25 02:11:36] INFO root fetch - processPackages [swag]: Downloading https://files.pythonhosted.org/packages/0e/ad/c472033dbd90c77259f76bfd1d3007473c468f5d67a336127e08eab02207/swag-1.7.3.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [epyfun]: Downloading https://files.pythonhosted.org/packages/af/77/807fd178213904b800e4d377d2f46d037e4a516d6c66d12b05a5d97e2f2b/epyfun-0.3.6.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/f7/40/e5e745935d4b9d1b0beffcda8c7474b1ce4f988a5c49457f9e735da3f015/ofscraper-3.9.8.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [epyfun]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [epyfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyfun-0.3.5.tar.gz tmp/epyfun-0.3.6.tar.gz --markdown 20240525/e/epyfun/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/69/d7/718263a49dcd4e94e716a639fba85dd3dafb47d0ae4c95073761e38bc36a/mct-quantizers-nightly-1.5.0.20240524.post1127.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-3.9.7.tar.gz tmp/ofscraper-3.9.8.tar.gz --markdown 20240525/o/ofscraper/3.9.7-3.9.8/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/ba/3d/8636fba6284c3217dfabc4949cb5381101ceb918fdeb379d598040c6d537/python_datapack-0.0.2.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240525/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [swag]: Downloading https://files.pythonhosted.org/packages/09/6f/799e063fdc3fea7a8abde96e8a5a69abb78bc34b1957c230bc6ebc95eb9e/swag-2.0.0.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [zscaler-sdk-python]: Downloading https://files.pythonhosted.org/packages/37/3d/f56a9c56a1b2117c6c9a62b23fb76395e519046b4ff27b6ee5b32528a33b/zscaler_sdk_python-0.3.0.tar.gz
+[2024-05-25 02:11:37] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240523.post1117.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240524.post1127.tar.gz --markdown 20240525/m/mct-quantizers-nightly/1.5.0.20240523.post1117-1.5.0.20240524.post1127/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.0.1.tar.gz tmp/python_datapack-0.0.2.tar.gz --markdown 20240525/p/python-datapack/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [swag]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [swag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swag-1.7.3.tar.gz tmp/swag-2.0.0.tar.gz --markdown 20240525/s/swag/1.7.3-2.0.0/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [zscaler-sdk-python]: executing diffoscope
+[2024-05-25 02:11:37] INFO root fetch - processPackages [zscaler-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zscaler_sdk_python-0.2.0.tar.gz tmp/zscaler_sdk_python-0.3.0.tar.gz --markdown 20240525/z/zscaler-sdk-python/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-25 02:11:37] INFO root fetch - processPackages [epyfun]: Remove: archive file [/home/abi/fetcher/tmp/epyfun-0.3.5.tar.gz]
+[2024-05-25 02:11:37] INFO root fetch - processPackages [epyfun]: Remove: archive file [/home/abi/fetcher/tmp/epyfun-0.3.6.tar.gz]
+[2024-05-25 02:11:37] INFO root fetch - main [MainThread]: End processing [epyfun]: success
+[2024-05-25 02:11:38] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-25 02:11:38] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.0.1.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.0.2.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-05-25 02:11:38] INFO root fetch - processPackages [swag]: Remove: archive file [/home/abi/fetcher/tmp/swag-1.7.3.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - processPackages [swag]: Remove: archive file [/home/abi/fetcher/tmp/swag-2.0.0.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: End processing [swag]: success
+[2024-05-25 02:11:38] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240523.post1117.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240524.post1127.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-05-25 02:11:38] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler_sdk_python-0.2.0.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler_sdk_python-0.3.0.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: End processing [zscaler-sdk-python]: success
+[2024-05-25 02:11:38] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.7.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.8.tar.gz]
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2024-05-25 02:11:38] INFO root fetch - main [MainThread]: Store serial: [23369401]
