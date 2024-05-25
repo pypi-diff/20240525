@@ -18661,3 +18661,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:45:30] INFO root fetch - processPackages [pandalibs]: Remove: archive file [/home/abi/fetcher/tmp/pandalibs-0.1.4.tar.gz]
 [2024-05-25 17:45:30] INFO root fetch - main [MainThread]: End processing [pandalibs]: success
 [2024-05-25 17:45:30] INFO root fetch - main [MainThread]: Store serial: [23376216]
+[2024-05-25 17:47:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376216]
+[2024-05-25 17:47:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 17:47:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hybridkf
+[2024-05-25 17:47:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matrix-gptbot
+[2024-05-25 17:47:39] INFO root fetch - processPackages [hybridkf]: New version: [1.0.42] Old Version: [1.0.41]
+[2024-05-25 17:47:39] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/eb/ee/e5c4a1773fbb1265406c5271710b23844faa2ffc46c43e4e99b7a9241e95/hybridkf-1.0.41.tar.gz
+[2024-05-25 17:47:39] INFO root fetch - processPackages [matrix-gptbot]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-25 17:47:40] INFO root fetch - processPackages [matrix-gptbot]: Downloading https://files.pythonhosted.org/packages/d7/32/d681dfe9679a330ec33035a50c701126ddd8222d0218a7eaf134bff2583f/matrix_gptbot-0.3.8.tar.gz
+[2024-05-25 17:47:40] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/3e/f0/f8ec146ab9f04a41c9624583672cf4beaa675471fdfbf542a9733fd983ec/hybridkf-1.0.42.tar.gz
+[2024-05-25 17:47:40] INFO root fetch - processPackages [hybridkf]: executing diffoscope
+[2024-05-25 17:47:40] INFO root fetch - processPackages [hybridkf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybridkf-1.0.41.tar.gz tmp/hybridkf-1.0.42.tar.gz --markdown 20240525/h/hybridkf/1.0.41-1.0.42/README.md --exclude *.pyd
+[2024-05-25 17:47:40] INFO root fetch - processPackages [matrix-gptbot]: Downloading https://files.pythonhosted.org/packages/6c/4a/2439a6a79129802308a126448cca1849029134a6e490258c44e9b81d1ea5/matrix_gptbot-0.3.9.tar.gz
+[2024-05-25 17:47:40] INFO root fetch - processPackages [matrix-gptbot]: executing diffoscope
+[2024-05-25 17:47:40] INFO root fetch - processPackages [matrix-gptbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix_gptbot-0.3.8.tar.gz tmp/matrix_gptbot-0.3.9.tar.gz --markdown 20240525/m/matrix-gptbot/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-25 17:47:40] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.41.tar.gz]
+[2024-05-25 17:47:40] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.42.tar.gz]
+[2024-05-25 17:47:40] INFO root fetch - main [MainThread]: End processing [hybridkf]: success
+[2024-05-25 17:47:41] INFO root fetch - processPackages [matrix-gptbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_gptbot-0.3.8.tar.gz]
+[2024-05-25 17:47:41] INFO root fetch - processPackages [matrix-gptbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_gptbot-0.3.9.tar.gz]
+[2024-05-25 17:47:41] INFO root fetch - main [MainThread]: End processing [matrix-gptbot]: success
+[2024-05-25 17:47:41] INFO root fetch - main [MainThread]: Store serial: [23376222]
