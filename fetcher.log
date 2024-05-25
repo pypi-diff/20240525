@@ -7576,3 +7576,48 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:55:45] INFO root fetch - processPackages [netron]: Remove: archive file [/home/abi/fetcher/tmp/netron-7.6.9-py3-none-any.whl.zip]
 [2024-05-25 04:55:45] INFO root fetch - main [MainThread]: End processing [netron]: success
 [2024-05-25 04:55:45] INFO root fetch - main [MainThread]: Store serial: [23371495]
+[2024-05-25 04:57:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371495]
+[2024-05-25 04:57:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 04:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: subjective-logic
+[2024-05-25 04:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argrelay
+[2024-05-25 04:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nanika
+[2024-05-25 04:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gibby-motifFinding
+[2024-05-25 04:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: logfmter
+[2024-05-25 04:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: validators
+[2024-05-25 04:57:54] INFO root fetch - processPackages [argrelay]: New version: [0.7.1.dev6] Old Version: [0.7.1.dev5]
+[2024-05-25 04:57:54] INFO root fetch - processPackages [validators]: New version: [0.9] Old Version: [0.8]
+[2024-05-25 04:57:54] INFO root fetch - processPackages [subjective-logic]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-05-25 04:57:54] WARNING root fetch - processPackages [nanika]: Skipping, unable to determine old version
+[2024-05-25 04:57:54] INFO root fetch - main [MainThread]: End processing [nanika] error
+[2024-05-25 04:57:54] WARNING root fetch - processPackages [gibby-motifFinding]: Skipping, unable to determine old version
+[2024-05-25 04:57:54] INFO root fetch - main [MainThread]: End processing [gibby-motifFinding] error
+[2024-05-25 04:57:54] INFO root fetch - processPackages [logfmter]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 04:57:54] INFO root fetch - processPackages [validators]: Downloading https://files.pythonhosted.org/packages/01/fd/252e65efd602dabab848e05cb1abdb6327c680d9e4734fcbd1a098faf738/validators-0.8.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/75/23/6cbe864addad43235a82a281ae7bf51c5e45035d55299b9eea570da93dbc/argrelay-0.7.1.dev5.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [logfmter]: Downloading https://files.pythonhosted.org/packages/45/28/ac1fb8015961487bd52e98564e9f5dd108be3ca8aaaeb8636d3de0bfd516/logfmter-0.0.7.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [subjective-logic]: Downloading https://files.pythonhosted.org/packages/78/9a/a7ef5e3b38793b657fd8e99443efa73f099bd30199b20c8392ae5aa34c9a/subjective_logic-0.0.1.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [validators]: Downloading https://files.pythonhosted.org/packages/70/e1/23fa50c66483b57e75ab945f5a5df1627f52df7b34aa3b6376a822ba9eaf/validators-0.9.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/80/1b/47dee8161d24a8750e4eae188d5599124eb8f866d243a65523f35940c848/argrelay-0.7.1.dev6.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [validators]: executing diffoscope
+[2024-05-25 04:57:54] INFO root fetch - processPackages [validators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validators-0.8.tar.gz tmp/validators-0.9.tar.gz --markdown 20240525/v/validators/0.8-0.9/README.md --exclude *.pyd
+[2024-05-25 04:57:54] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-25 04:57:54] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.1.dev5.tar.gz tmp/argrelay-0.7.1.dev6.tar.gz --markdown 20240525/a/argrelay/0.7.1.dev5-0.7.1.dev6/README.md --exclude *.pyd
+[2024-05-25 04:57:54] INFO root fetch - processPackages [logfmter]: Downloading https://files.pythonhosted.org/packages/70/d7/7acef367e86046758021ac8a3f5e7e8edce9dc0982561f8de69b7cf71186/logfmter-0.0.8.tar.gz
+[2024-05-25 04:57:54] INFO root fetch - processPackages [subjective-logic]: Downloading https://files.pythonhosted.org/packages/c3/fc/b2c726e81dea389761120c2816a7f303b7bd8876a395cc3ab54d51307f61/subjective_logic-1.0.0.tar.gz
+[2024-05-25 04:57:55] INFO root fetch - processPackages [subjective-logic]: executing diffoscope
+[2024-05-25 04:57:55] INFO root fetch - processPackages [subjective-logic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subjective_logic-0.0.1.tar.gz tmp/subjective_logic-1.0.0.tar.gz --markdown 20240525/s/subjective-logic/0.0.1-1.0.0/README.md --exclude *.pyd
+[2024-05-25 04:57:55] INFO root fetch - processPackages [logfmter]: executing diffoscope
+[2024-05-25 04:57:55] INFO root fetch - processPackages [logfmter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logfmter-0.0.7.tar.gz tmp/logfmter-0.0.8.tar.gz --markdown 20240525/l/logfmter/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 04:57:55] INFO root fetch - processPackages [validators]: Remove: archive file [/home/abi/fetcher/tmp/validators-0.8.tar.gz]
+[2024-05-25 04:57:55] INFO root fetch - processPackages [validators]: Remove: archive file [/home/abi/fetcher/tmp/validators-0.9.tar.gz]
+[2024-05-25 04:57:55] INFO root fetch - main [MainThread]: End processing [validators]: success
+[2024-05-25 04:57:55] INFO root fetch - processPackages [subjective-logic]: Remove: archive file [/home/abi/fetcher/tmp/subjective_logic-0.0.1.tar.gz]
+[2024-05-25 04:57:55] INFO root fetch - processPackages [subjective-logic]: Remove: archive file [/home/abi/fetcher/tmp/subjective_logic-1.0.0.tar.gz]
+[2024-05-25 04:57:55] INFO root fetch - main [MainThread]: End processing [subjective-logic]: success
+[2024-05-25 04:57:55] INFO root fetch - processPackages [logfmter]: Remove: archive file [/home/abi/fetcher/tmp/logfmter-0.0.7.tar.gz]
+[2024-05-25 04:57:55] INFO root fetch - processPackages [logfmter]: Remove: archive file [/home/abi/fetcher/tmp/logfmter-0.0.8.tar.gz]
+[2024-05-25 04:57:55] INFO root fetch - main [MainThread]: End processing [logfmter]: success
+[2024-05-25 04:57:56] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev5.tar.gz]
+[2024-05-25 04:57:56] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev6.tar.gz]
+[2024-05-25 04:57:56] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-25 04:57:56] INFO root fetch - main [MainThread]: Store serial: [23371515]
