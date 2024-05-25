@@ -6570,3 +6570,79 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:25:21] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
 [2024-05-25 03:25:21] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
 [2024-05-25 03:25:21] INFO root fetch - main [MainThread]: Store serial: [23370790]
+[2024-05-25 03:27:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23370790]
+[2024-05-25 03:27:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vancouver-watching
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vancouver-watching
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skill-bandcamp
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-skill-somafm
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: skill-news
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reddit-tts-bot
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: docugami-langchain
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: large-image
+[2024-05-25 03:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: girder-large-image
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-news]: New version: [0.0.4a8] Old Version: [0.0.4a7]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [ovos-skill-somafm]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-bandcamp]: New version: [0.0.2a2] Old Version: [0.0.2a1]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [girder-large-image]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:27:30] WARNING root fetch - processPackages [reddit-tts-bot]: Skipping, unable to determine old version
+[2024-05-25 03:27:30] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot] error
+[2024-05-25 03:27:30] INFO root fetch - processPackages [large-image]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: New version: [3.347.1] Old Version: [3.346.1]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: New version: [3.347.1] Old Version: [3.346.1]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.9rc9] Old Version: [0.0.9rc8]
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-news]: Downloading https://files.pythonhosted.org/packages/c0/fc/44cdfde40e91f30f0474db32c55e8b4884579cab552031650078e57e6aa0/skill_news-0.0.4a7-py3-none-any.whl
+[2024-05-25 03:27:30] INFO root fetch - processPackages [ovos-skill-somafm]: Downloading https://files.pythonhosted.org/packages/ca/46/b734a3463ccf0fc23f24db2dd03cc64ad14b83e93ce7e2333cccafa9812c/ovos_skill_somafm-0.0.2a2-py3-none-any.whl
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-bandcamp]: Downloading https://files.pythonhosted.org/packages/46/12/3a844dc9e79c8ceb08edd10bd82141e76f63d48db150b292266e3c79df05/skill_bandcamp-0.0.2a1-py3-none-any.whl
+[2024-05-25 03:27:30] INFO root fetch - processPackages [girder-large-image]: Downloading https://files.pythonhosted.org/packages/a1/de/9259311e8ad31f3131b016ae68dbee28c3a85340a5611063ba07e130f4dd/girder-large-image-1.9.1.dev6.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [large-image]: Downloading https://files.pythonhosted.org/packages/0e/97/f50d98f73951f053a140a085b971b043dc16e80844122ca59d5c2feeab13/large-image-1.9.1.dev6.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/76/af/382d5a0d8283d34b1feb52a3079403716d5509789484bcc5d1589cbe9b7c/vancouver_watching-3.346.1.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/76/af/382d5a0d8283d34b1feb52a3079403716d5509789484bcc5d1589cbe9b7c/vancouver_watching-3.346.1.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/2d/82/2d13050a1c94760818565c09bfbddb6b1c5e72e7dd098faada8a8b560a19/docugami_langchain-0.0.9rc8.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [ovos-skill-somafm]: Downloading https://files.pythonhosted.org/packages/ca/9c/c624ce9a50bf6942c1999cf885667232670df9b584374425b83f3c27f608/ovos_skill_somafm-0.0.2a3-py3-none-any.whl
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-bandcamp]: Downloading https://files.pythonhosted.org/packages/45/39/079fe9e42e88f8bfb3c36297d0d42b3f7ced59865f5876626fa5e99e2336/skill_bandcamp-0.0.2a2-py3-none-any.whl
+[2024-05-25 03:27:30] INFO root fetch - processPackages [large-image]: Downloading https://files.pythonhosted.org/packages/22/c4/18264ad18d3664df703883e2fb520f69d307805c93779d26bdaab792bb0b/large-image-1.9.1.dev8.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [girder-large-image]: Downloading https://files.pythonhosted.org/packages/f9/12/4dfe66c1b3eae390e20ba6a8e5537d1e114e878fe6346c8b5dbb5b9efdcc/girder-large-image-1.9.1.dev8.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-news]: Downloading https://files.pythonhosted.org/packages/73/00/2e8820b6365b5899827b312e45912a6dca7a8363d8105de9e3bc7b7867c8/skill_news-0.0.4a8-py3-none-any.whl
+[2024-05-25 03:27:30] INFO root fetch - processPackages [ovos-skill-somafm]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [ovos-skill-somafm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_somafm-0.0.2a2-py3-none-any.whl.zip tmp/ovos_skill_somafm-0.0.2a3-py3-none-any.whl.zip --markdown 20240525/o/ovos-skill-somafm/0.0.2a2-0.0.2a3/README.md --exclude *.pyd
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-bandcamp]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-bandcamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skill_bandcamp-0.0.2a1-py3-none-any.whl.zip tmp/skill_bandcamp-0.0.2a2-py3-none-any.whl.zip --markdown 20240525/s/skill-bandcamp/0.0.2a1-0.0.2a2/README.md --exclude *.pyd
+[2024-05-25 03:27:30] INFO root fetch - processPackages [large-image]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [large-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-1.9.1.dev6.tar.gz tmp/large-image-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:27:30] INFO root fetch - processPackages [girder-large-image]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [girder-large-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/girder-large-image-1.9.1.dev6.tar.gz tmp/girder-large-image-1.9.1.dev8.tar.gz --markdown 20240525/g/girder-large-image/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/8b/65/f136e9a9a6975371a3241effba343c3f086c5680ee7b5164d79c143f53ae/vancouver_watching-3.347.1.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: Downloading https://files.pythonhosted.org/packages/8b/65/f136e9a9a6975371a3241effba343c3f086c5680ee7b5164d79c143f53ae/vancouver_watching-3.347.1.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vancouver_watching-3.346.1.tar.gz tmp/vancouver_watching-3.347.1.tar.gz --markdown 20240525/v/vancouver-watching/3.346.1-3.347.1/README.md --exclude *.pyd
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [vancouver-watching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vancouver_watching-3.346.1.tar.gz tmp/vancouver_watching-3.347.1.tar.gz --markdown 20240525/v/vancouver-watching/3.346.1-3.347.1/README.md --exclude *.pyd
+[2024-05-25 03:27:30] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/f2/b2/d83b55cc8691eecf7a64a63a120a668c5ff1f8edee1994b69cf50d8ed91b/docugami_langchain-0.0.9rc9.tar.gz
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-news]: executing diffoscope
+[2024-05-25 03:27:30] INFO root fetch - processPackages [skill-news]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skill_news-0.0.4a7-py3-none-any.whl.zip tmp/skill_news-0.0.4a8-py3-none-any.whl.zip --markdown 20240525/s/skill-news/0.0.4a7-0.0.4a8/README.md --exclude *.pyd
+[2024-05-25 03:27:31] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-05-25 03:27:31] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.9rc8.tar.gz tmp/docugami_langchain-0.0.9rc9.tar.gz --markdown 20240525/d/docugami-langchain/0.0.9rc8-0.0.9rc9/README.md --exclude *.pyd
+[2024-05-25 03:27:31] INFO root fetch - processPackages [large-image]: Remove: archive file [/home/abi/fetcher/tmp/large-image-1.9.1.dev6.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - processPackages [large-image]: Remove: archive file [/home/abi/fetcher/tmp/large-image-1.9.1.dev8.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [large-image]: success
+[2024-05-25 03:27:31] INFO root fetch - processPackages [skill-bandcamp]: Remove: archive file [/home/abi/fetcher/tmp/skill_bandcamp-0.0.2a1-py3-none-any.whl.zip]
+[2024-05-25 03:27:31] INFO root fetch - processPackages [skill-bandcamp]: Remove: archive file [/home/abi/fetcher/tmp/skill_bandcamp-0.0.2a2-py3-none-any.whl.zip]
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [skill-bandcamp]: success
+[2024-05-25 03:27:31] INFO root fetch - processPackages [ovos-skill-somafm]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_somafm-0.0.2a2-py3-none-any.whl.zip]
+[2024-05-25 03:27:31] INFO root fetch - processPackages [ovos-skill-somafm]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_somafm-0.0.2a3-py3-none-any.whl.zip]
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [ovos-skill-somafm]: success
+[2024-05-25 03:27:31] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.346.1.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - processPackages [vancouver-watching]: Remove: archive file [/home/abi/fetcher/tmp/vancouver_watching-3.347.1.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [vancouver-watching]: success
+[2024-05-25 03:27:31] INFO root fetch - processPackages [girder-large-image]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-1.9.1.dev6.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - processPackages [girder-large-image]: Remove: archive file [/home/abi/fetcher/tmp/girder-large-image-1.9.1.dev8.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [girder-large-image]: success
+[2024-05-25 03:27:31] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc8.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.9rc9.tar.gz]
+[2024-05-25 03:27:31] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-05-25 03:27:32] INFO root fetch - processPackages [skill-news]: Remove: archive file [/home/abi/fetcher/tmp/skill_news-0.0.4a7-py3-none-any.whl.zip]
+[2024-05-25 03:27:32] INFO root fetch - processPackages [skill-news]: Remove: archive file [/home/abi/fetcher/tmp/skill_news-0.0.4a8-py3-none-any.whl.zip]
+[2024-05-25 03:27:32] INFO root fetch - main [MainThread]: End processing [skill-news]: success
+[2024-05-25 03:27:32] INFO root fetch - main [MainThread]: Store serial: [23370873]
