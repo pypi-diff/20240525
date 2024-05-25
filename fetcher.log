@@ -20279,3 +20279,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:35:03] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
 [2024-05-25 19:35:03] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-25 19:35:03] INFO root fetch - main [MainThread]: Store serial: [23376856]
+[2024-05-25 19:37:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376856]
+[2024-05-25 19:37:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:37:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zodchy-notations
+[2024-05-25 19:37:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: squaredown
+[2024-05-25 19:37:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mptradelib
+[2024-05-25 19:37:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blue-stability
+[2024-05-25 19:37:14] INFO root fetch - processPackages [squaredown]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-05-25 19:37:14] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/3a/e1/7fb52fa502fd18c30ad98201003d30db108e52c175c8e3067d5daf08ccb2/squaredown-1.6.0.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [zodchy-notations]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 19:37:14] INFO root fetch - processPackages [blue-stability]: New version: [4.30.1] Old Version: [4.29.1]
+[2024-05-25 19:37:14] INFO root fetch - processPackages [mptradelib]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-05-25 19:37:14] INFO root fetch - processPackages [zodchy-notations]: Downloading https://files.pythonhosted.org/packages/98/18/f50499e939c9b152d7fb12424934d9058bbceb1d4132ef8d56bd92d077ef/zodchy_notations-0.1.2.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/2a/7c/e10bb51888237758a820c0ec8dd6a1d30d66e74dc4dc034f200fb6ea76d7/mptradelib-0.5.7.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/a2/63/334227b0639c103737b92689186e8d775659ca79bc54e3d918371d388a34/squaredown-1.6.1.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [squaredown]: executing diffoscope
+[2024-05-25 19:37:14] INFO root fetch - processPackages [squaredown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squaredown-1.6.0.tar.gz tmp/squaredown-1.6.1.tar.gz --markdown 20240525/s/squaredown/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-05-25 19:37:14] INFO root fetch - processPackages [blue-stability]: Downloading https://files.pythonhosted.org/packages/f3/54/cec5c3a48c3a94fc7d48abaffeef6217a0a7037fd9360b5972d074117b65/blue_stability-4.29.1.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/f9/ee/36a4b31802d28157c362cf1662a5e7aa2ae4bd05c50e3ac220d08849ac56/mptradelib-0.5.8.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [zodchy-notations]: Downloading https://files.pythonhosted.org/packages/b6/62/5158640dd471fdedfdea2a0bda1994ba7b9f25382b27d1efd127dae13816/zodchy_notations-0.1.3.tar.gz
+[2024-05-25 19:37:14] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-25 19:37:14] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.5.7.tar.gz tmp/mptradelib-0.5.8.tar.gz --markdown 20240525/m/mptradelib/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-05-25 19:37:14] INFO root fetch - processPackages [zodchy-notations]: executing diffoscope
+[2024-05-25 19:37:14] INFO root fetch - processPackages [zodchy-notations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_notations-0.1.2.tar.gz tmp/zodchy_notations-0.1.3.tar.gz --markdown 20240525/z/zodchy-notations/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 19:37:15] INFO root fetch - processPackages [blue-stability]: Downloading https://files.pythonhosted.org/packages/59/be/8f04f0b5b66ed7f3ab6fe5ede583852d14f920b6e40dd8b468dffe7922e3/blue_stability-4.30.1.tar.gz
+[2024-05-25 19:37:15] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.6.0.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.6.1.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - main [MainThread]: End processing [squaredown]: success
+[2024-05-25 19:37:15] INFO root fetch - processPackages [blue-stability]: executing diffoscope
+[2024-05-25 19:37:15] INFO root fetch - processPackages [blue-stability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue_stability-4.29.1.tar.gz tmp/blue_stability-4.30.1.tar.gz --markdown 20240525/b/blue-stability/4.29.1-4.30.1/README.md --exclude *.pyd
+[2024-05-25 19:37:15] INFO root fetch - processPackages [zodchy-notations]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_notations-0.1.2.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - processPackages [zodchy-notations]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_notations-0.1.3.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - main [MainThread]: End processing [zodchy-notations]: success
+[2024-05-25 19:37:15] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.7.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.5.8.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-25 19:37:15] INFO root fetch - processPackages [blue-stability]: Remove: archive file [/home/abi/fetcher/tmp/blue_stability-4.29.1.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - processPackages [blue-stability]: Remove: archive file [/home/abi/fetcher/tmp/blue_stability-4.30.1.tar.gz]
+[2024-05-25 19:37:15] INFO root fetch - main [MainThread]: End processing [blue-stability]: success
+[2024-05-25 19:37:15] INFO root fetch - main [MainThread]: Store serial: [23376868]
