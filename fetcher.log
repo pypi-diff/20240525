@@ -7345,3 +7345,12 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:20:19] INFO root fetch - processPackages [transformations]: Remove: archive file [/home/abi/fetcher/tmp/transformations-2024.6.1.tar.gz]
 [2024-05-25 04:20:19] INFO root fetch - main [MainThread]: End processing [transformations]: success
 [2024-05-25 04:20:19] INFO root fetch - main [MainThread]: Store serial: [23371395]
+[2024-05-25 04:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371395]
+[2024-05-25 04:22:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jailbreakeval
+[2024-05-25 04:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-reportlab
+[2024-05-25 04:22:29] WARNING root fetch - processPackages [types-reportlab]: Skipping, unable to determine old version
+[2024-05-25 04:22:29] INFO root fetch - main [MainThread]: End processing [types-reportlab] error
+[2024-05-25 04:22:29] WARNING root fetch - processPackages [jailbreakeval]: Skipping, unable to determine old version
+[2024-05-25 04:22:29] INFO root fetch - main [MainThread]: End processing [jailbreakeval] error
+[2024-05-25 04:22:29] INFO root fetch - main [MainThread]: Store serial: [23371405]
