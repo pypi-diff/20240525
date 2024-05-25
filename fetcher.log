@@ -14316,3 +14316,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:46:41] INFO root fetch - processPackages [pixelyai-core]: Remove: archive file [/home/abi/fetcher/tmp/pixelyai_core-0.0.5.tar.gz]
 [2024-05-25 14:46:41] INFO root fetch - main [MainThread]: End processing [pixelyai-core]: success
 [2024-05-25 14:46:41] INFO root fetch - main [MainThread]: Store serial: [23374658]
+[2024-05-25 14:48:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374658]
+[2024-05-25 14:48:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 14:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pixelyai-core
+[2024-05-25 14:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symetrics
+[2024-05-25 14:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wsppchem
+[2024-05-25 14:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-05-25 14:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NEMO-reports
+[2024-05-25 14:48:50] INFO root fetch - processPackages [pixelyai-core]: New version: [0.0.5] Old Version: [0.0.41]
+[2024-05-25 14:48:50] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 14:48:50] INFO root fetch - processPackages [symetrics]: New version: [9.3.0] Old Version: [9.2.0]
+[2024-05-25 14:48:50] INFO root fetch - processPackages [NEMO-reports]: New version: [1.8.0] Old Version: [1.7.4]
+[2024-05-25 14:48:50] INFO root fetch - processPackages [wsppchem]: New version: [0.93] Old Version: [0.92]
+[2024-05-25 14:48:50] INFO root fetch - processPackages [pixelyai-core]: Downloading https://files.pythonhosted.org/packages/2f/15/3239708e1cc5c84ca5306fd339d0b220b69c38e50bb382dbc6aae0fc3328/pixelyai_core-0.0.41-py3-none-any.whl
+[2024-05-25 14:48:50] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-25 14:48:50] INFO root fetch - processPackages [symetrics]: Downloading https://files.pythonhosted.org/packages/45/43/0d0c5faeb33eba4adcfa9d1d3f285137f663a939d6116bac84d555b25f53/symetrics-9.2.0.tar.gz
+[2024-05-25 14:48:51] INFO root fetch - processPackages [wsppchem]: Downloading https://files.pythonhosted.org/packages/8f/1b/1c70e36b3073b7f425803f6341545e88da83dd67e67bc5050ed8ea2a1c7b/wsppchem-0.92.tar.gz
+[2024-05-25 14:48:51] INFO root fetch - processPackages [NEMO-reports]: Downloading https://files.pythonhosted.org/packages/d3/e3/4ef14b95498b9a4476216cbdf246951387c2edbd9098ce7053173188bc0d/NEMO_reports-1.7.4-py3-none-any.whl
+[2024-05-25 14:48:51] INFO root fetch - processPackages [pixelyai-core]: Downloading https://files.pythonhosted.org/packages/0d/1c/41f1e0fae55a8336787f31ad894d2c223ecc58acc49e50555d8d1f988a05/pixelyai_core-0.0.5.tar.gz
+[2024-05-25 14:48:51] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-25 14:48:51] INFO root fetch - processPackages [pixelyai-core]: executing diffoscope
+[2024-05-25 14:48:51] INFO root fetch - processPackages [pixelyai-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixelyai_core-0.0.41-py3-none-any.whl.zip tmp/pixelyai_core-0.0.5.tar.gz --markdown 20240525/p/pixelyai-core/0.0.41-0.0.5/README.md --exclude *.pyd
+[2024-05-25 14:48:51] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-25 14:48:51] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240525/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 14:48:51] INFO root fetch - processPackages [symetrics]: Downloading https://files.pythonhosted.org/packages/a5/f9/60bf35adaec588a23500716472e61bd7e2bc6890cbd670fc6fb0e35c578f/symetrics-9.3.0.tar.gz
+[2024-05-25 14:48:51] INFO root fetch - processPackages [NEMO-reports]: Downloading https://files.pythonhosted.org/packages/f7/ed/0458cb694879e092ee68133e499baa0610a8cf83c5286709aeabf1827094/NEMO_reports-1.8.0-py3-none-any.whl
+[2024-05-25 14:48:51] INFO root fetch - processPackages [symetrics]: executing diffoscope
+[2024-05-25 14:48:51] INFO root fetch - processPackages [symetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symetrics-9.2.0.tar.gz tmp/symetrics-9.3.0.tar.gz --markdown 20240525/s/symetrics/9.2.0-9.3.0/README.md --exclude *.pyd
+[2024-05-25 14:48:51] INFO root fetch - processPackages [wsppchem]: Downloading https://files.pythonhosted.org/packages/e0/b9/e74f38466d44f470537c4b8dc7b79387e16ecfcd6286f746e03f79bf15d2/wsppchem-0.93.tar.gz
+[2024-05-25 14:48:51] INFO root fetch - processPackages [NEMO-reports]: executing diffoscope
+[2024-05-25 14:48:51] INFO root fetch - processPackages [NEMO-reports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_reports-1.7.4-py3-none-any.whl.zip tmp/NEMO_reports-1.8.0-py3-none-any.whl.zip --markdown 20240525/N/NEMO-reports/1.7.4-1.8.0/README.md --exclude *.pyd
+[2024-05-25 14:48:51] INFO root fetch - processPackages [wsppchem]: executing diffoscope
+[2024-05-25 14:48:51] INFO root fetch - processPackages [wsppchem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsppchem-0.92.tar.gz tmp/wsppchem-0.93.tar.gz --markdown 20240525/w/wsppchem/0.92-0.93/README.md --exclude *.pyd
+[2024-05-25 14:48:51] INFO root fetch - processPackages [pixelyai-core]: Remove: archive file [/home/abi/fetcher/tmp/pixelyai_core-0.0.41-py3-none-any.whl.zip]
+[2024-05-25 14:48:51] INFO root fetch - processPackages [pixelyai-core]: Remove: archive file [/home/abi/fetcher/tmp/pixelyai_core-0.0.5.tar.gz]
+[2024-05-25 14:48:51] INFO root fetch - main [MainThread]: End processing [pixelyai-core]: success
+[2024-05-25 14:48:52] INFO root fetch - processPackages [symetrics]: Remove: archive file [/home/abi/fetcher/tmp/symetrics-9.2.0.tar.gz]
+[2024-05-25 14:48:52] INFO root fetch - processPackages [symetrics]: Remove: archive file [/home/abi/fetcher/tmp/symetrics-9.3.0.tar.gz]
+[2024-05-25 14:48:52] INFO root fetch - main [MainThread]: End processing [symetrics]: success
+[2024-05-25 14:48:52] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-25 14:48:52] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-25 14:48:52] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-25 14:48:52] INFO root fetch - processPackages [NEMO-reports]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_reports-1.7.4-py3-none-any.whl.zip]
+[2024-05-25 14:48:52] INFO root fetch - processPackages [NEMO-reports]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_reports-1.8.0-py3-none-any.whl.zip]
+[2024-05-25 14:48:52] INFO root fetch - main [MainThread]: End processing [NEMO-reports]: success
+[2024-05-25 14:48:52] INFO root fetch - processPackages [wsppchem]: Remove: archive file [/home/abi/fetcher/tmp/wsppchem-0.92.tar.gz]
+[2024-05-25 14:48:52] INFO root fetch - processPackages [wsppchem]: Remove: archive file [/home/abi/fetcher/tmp/wsppchem-0.93.tar.gz]
+[2024-05-25 14:48:52] INFO root fetch - main [MainThread]: End processing [wsppchem]: success
+[2024-05-25 14:48:52] INFO root fetch - main [MainThread]: Store serial: [23374699]
