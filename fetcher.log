@@ -11118,3 +11118,63 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:23:44] INFO root fetch - processPackages [elegantt]: Remove: archive file [/home/abi/fetcher/tmp/elegantt-0.0.5.tar.gz]
 [2024-05-25 10:23:44] INFO root fetch - main [MainThread]: End processing [elegantt]: success
 [2024-05-25 10:23:44] INFO root fetch - main [MainThread]: Store serial: [23373159]
+[2024-05-25 10:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373159]
+[2024-05-25 10:25:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dariopdf
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mhyy.py
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fiftyone-devicedetection-cloud
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fiftyone-devicedetection-shared
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fiftyone-devicedetection
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fiftyone-devicedetection-onpremise
+[2024-05-25 10:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyAibote
+[2024-05-25 10:25:53] INFO root fetch - processPackages [PyAibote]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-25 10:25:54] WARNING root fetch - processPackages [dariopdf]: Skipping, unable to determine old version
+[2024-05-25 10:25:54] INFO root fetch - main [MainThread]: End processing [dariopdf] error
+[2024-05-25 10:25:54] INFO root fetch - processPackages [mhyy.py]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-25 10:25:54] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/f6/fe/935731448582317a1018e28fce0401153a2748bfa7ac5b2b83814b67e6e9/PyAibote-1.4.8.tar.gz
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: New version: [4.4.9] Old Version: [4.4.8]
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: New version: [4.4.9] Old Version: [4.4.8]
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: New version: [4.4.9] Old Version: [4.4.8]
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection]: New version: [4.4.9] Old Version: [4.4.8]
+[2024-05-25 10:25:54] INFO root fetch - processPackages [mhyy.py]: Downloading https://files.pythonhosted.org/packages/30/04/68b9b9717383ea6f2bcc0fe15da90aa01c18bb65423a772075773697bb74/mhyy.py-2.0.0.tar.gz
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: Downloading https://files.pythonhosted.org/packages/3c/da/2412fa4de307b569d190795bb28dec9ae811596b99043386eca33940be28/fiftyone_devicedetection_shared-4.4.8.tar.gz
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Downloading https://files.pythonhosted.org/packages/b1/df/28d4ba95bd392c536fe961d8dce1e994f87aa3d48a01e55e9515d0842db3/fiftyone_devicedetection_onpremise-4.4.8.tar.gz
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: Downloading https://files.pythonhosted.org/packages/c2/05/001e319d2cfe159004ac1852e1838a815389b3339b57bf9be3291ee4e472/fiftyone_devicedetection_cloud-4.4.8.tar.gz
+[2024-05-25 10:25:54] INFO root fetch - processPackages [fiftyone-devicedetection]: Downloading https://files.pythonhosted.org/packages/78/9e/d445e0c4a0f6957a3f64eef83882b50ecf7254cd1dcfb1dd6194ac1a245c/fiftyone_devicedetection-4.4.8.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/d4/f4/b2096165ecb4b4f178ad968755680523ba1c214e3a1f2711c346071c6de1/PyAibote-1.4.9.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: Downloading https://files.pythonhosted.org/packages/4d/c9/c5ac416a606f9b136ac2929cef7206ef6e3af77c68ec3a349cacfdc42494/fiftyone_devicedetection_cloud-4.4.9.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection]: Downloading https://files.pythonhosted.org/packages/83/fc/34fd863cd6fbd72392513d7f5dac042f4229299394794a87719f20e1c2f7/fiftyone_devicedetection-4.4.9.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [mhyy.py]: Downloading https://files.pythonhosted.org/packages/52/ef/fc9b7646eb59be83b2d4e477a6222e899a1dbeddefe48e78b91dd6ad0765/mhyy_py-2.1.0.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: Downloading https://files.pythonhosted.org/packages/99/d4/d653c3be1089c3f8160a18a795f0c4962b77d69706332ebefdcb0e829cd5/fiftyone_devicedetection_shared-4.4.9.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-05-25 10:25:55] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.8.tar.gz tmp/PyAibote-1.4.9.tar.gz --markdown 20240525/P/PyAibote/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Downloading https://files.pythonhosted.org/packages/30/d5/2b4fa4cec92069e5925b2a0b23f3fd4dca0a3a23d10ee35da5d371f9980a/fiftyone_devicedetection_onpremise-4.4.9.tar.gz
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: executing diffoscope
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_devicedetection_cloud-4.4.8.tar.gz tmp/fiftyone_devicedetection_cloud-4.4.9.tar.gz --markdown 20240525/f/fiftyone-devicedetection-cloud/4.4.8-4.4.9/README.md --exclude *.pyd
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection]: executing diffoscope
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_devicedetection-4.4.8.tar.gz tmp/fiftyone_devicedetection-4.4.9.tar.gz --markdown 20240525/f/fiftyone-devicedetection/4.4.8-4.4.9/README.md --exclude *.pyd
+[2024-05-25 10:25:55] INFO root fetch - processPackages [mhyy.py]: executing diffoscope
+[2024-05-25 10:25:55] INFO root fetch - processPackages [mhyy.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mhyy.py-2.0.0.tar.gz tmp/mhyy_py-2.1.0.tar.gz --markdown 20240525/m/mhyy.py/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: executing diffoscope
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_devicedetection_shared-4.4.8.tar.gz tmp/fiftyone_devicedetection_shared-4.4.9.tar.gz --markdown 20240525/f/fiftyone-devicedetection-shared/4.4.8-4.4.9/README.md --exclude *.pyd
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: executing diffoscope
+[2024-05-25 10:25:55] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_devicedetection_onpremise-4.4.8.tar.gz tmp/fiftyone_devicedetection_onpremise-4.4.9.tar.gz --markdown 20240525/f/fiftyone-devicedetection-onpremise/4.4.8-4.4.9/README.md --exclude *.pyd
+[2024-05-25 10:25:56] INFO root fetch - processPackages [fiftyone-devicedetection]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection-4.4.8.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - processPackages [fiftyone-devicedetection]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection-4.4.9.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection]: success
+[2024-05-25 10:25:56] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_cloud-4.4.8.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - processPackages [fiftyone-devicedetection-cloud]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_cloud-4.4.9.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection-cloud]: success
+[2024-05-25 10:25:56] INFO root fetch - processPackages [mhyy.py]: Remove: archive file [/home/abi/fetcher/tmp/mhyy.py-2.0.0.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - processPackages [mhyy.py]: Remove: archive file [/home/abi/fetcher/tmp/mhyy_py-2.1.0.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - main [MainThread]: End processing [mhyy.py]: success
+[2024-05-25 10:25:56] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_shared-4.4.8.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - processPackages [fiftyone-devicedetection-shared]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_shared-4.4.9.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection-shared]: success
+[2024-05-25 10:25:56] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.8.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.9.tar.gz]
+[2024-05-25 10:25:56] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-05-25 10:25:57] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_onpremise-4.4.8.tar.gz]
+[2024-05-25 10:25:57] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_onpremise-4.4.9.tar.gz]
+[2024-05-25 10:25:57] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection-onpremise]: success
+[2024-05-25 10:25:57] INFO root fetch - main [MainThread]: Store serial: [23373181]
