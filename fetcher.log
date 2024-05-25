@@ -21235,3 +21235,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:00:40] INFO root fetch - processPackages [bencode-rs]: Remove: archive file [/home/abi/fetcher/tmp/bencode_rs-0.0.2a1.tar.gz]
 [2024-05-25 21:00:40] INFO root fetch - main [MainThread]: End processing [bencode-rs]: success
 [2024-05-25 21:00:40] INFO root fetch - main [MainThread]: Store serial: [23377294]
+[2024-05-25 21:02:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377294]
+[2024-05-25 21:02:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 21:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdo-sdk-python
+[2024-05-25 21:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EcoStock
+[2024-05-25 21:02:51] INFO root fetch - processPackages [EcoStock]: New version: [0.7] Old Version: [0.5.2]
+[2024-05-25 21:02:51] INFO root fetch - processPackages [cdo-sdk-python]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-25 21:02:51] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/15/f1/a680c76752c7a8d3b37d91d1a68ff84fc98e8229397f42cb929e08695dfb/EcoStock-0.5.2.tar.gz
+[2024-05-25 21:02:51] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/aa/54/d9c631d5702693a0921bbc1c50cad785f8fa75671cabdd662546a416a6b9/cdo-sdk-python-1.0.98.tar.gz
+[2024-05-25 21:02:51] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/e7/82/315a74250230986a5d6102a316c8bc03b3543f4707ecd7f8234a908708c8/ecostock-0.7.tar.gz
+[2024-05-25 21:02:51] INFO root fetch - processPackages [cdo-sdk-python]: Downloading https://files.pythonhosted.org/packages/9b/76/7267c3f3ac308bacc9e809ed54663a42556e896ff4e2d73a469a15d3556a/cdo-sdk-python-1.0.99.tar.gz
+[2024-05-25 21:02:51] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-25 21:02:51] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EcoStock-0.5.2.tar.gz tmp/ecostock-0.7.tar.gz --markdown 20240525/E/EcoStock/0.5.2-0.7/README.md --exclude *.pyd
+[2024-05-25 21:02:51] INFO root fetch - processPackages [cdo-sdk-python]: executing diffoscope
+[2024-05-25 21:02:51] INFO root fetch - processPackages [cdo-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdo-sdk-python-1.0.98.tar.gz tmp/cdo-sdk-python-1.0.99.tar.gz --markdown 20240525/c/cdo-sdk-python/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-25 21:02:52] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.5.2.tar.gz]
+[2024-05-25 21:02:52] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-0.7.tar.gz]
+[2024-05-25 21:02:52] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-25 21:02:52] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.98.tar.gz]
+[2024-05-25 21:02:52] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.99.tar.gz]
+[2024-05-25 21:02:52] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
+[2024-05-25 21:02:52] INFO root fetch - main [MainThread]: Store serial: [23377317]
