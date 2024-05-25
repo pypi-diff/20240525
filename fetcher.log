@@ -17465,3 +17465,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:30:30] INFO root fetch - processPackages [geo-track-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/geo_track_analyzer-1.4.0.tar.gz]
 [2024-05-25 16:30:30] INFO root fetch - main [MainThread]: End processing [geo-track-analyzer]: success
 [2024-05-25 16:30:30] INFO root fetch - main [MainThread]: Store serial: [23375740]
+[2024-05-25 16:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375740]
+[2024-05-25 16:32:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 16:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bttc
+[2024-05-25 16:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-passwordless
+[2024-05-25 16:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reddit-tts-bot
+[2024-05-25 16:32:39] INFO root fetch - processPackages [streamlit-passwordless]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-25 16:32:39] INFO root fetch - processPackages [reddit-tts-bot]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 16:32:39] INFO root fetch - processPackages [streamlit-passwordless]: Downloading https://files.pythonhosted.org/packages/4d/81/92d5495e385a08ff49c5e56645068957250a3aa72a53d365af948578a083/streamlit_passwordless-0.4.0.tar.gz
+[2024-05-25 16:32:39] INFO root fetch - processPackages [bttc]: New version: [0.0.80] Old Version: [0.0.79]
+[2024-05-25 16:32:39] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/6b/f1/65749aa68a710283a9f05711f359e2bc68a4aa59562df0be0d8d3ba79edf/reddit_tts_bot-1.0.2.tar.gz
+[2024-05-25 16:32:39] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/a8/e7/450ff45c84261b9c669460a79c6a310d5954a54669a75f5255ec33d44b77/bttc-0.0.79.tar.gz
+[2024-05-25 16:32:39] INFO root fetch - processPackages [streamlit-passwordless]: Downloading https://files.pythonhosted.org/packages/21/21/8fe8608488c59518fe89be3c2547ae0e371fd218f391f36c2ba6c37d54b5/streamlit_passwordless-0.5.0.tar.gz
+[2024-05-25 16:32:39] INFO root fetch - processPackages [reddit-tts-bot]: Downloading https://files.pythonhosted.org/packages/b3/8a/64327f6d15a16f67572a3caa5196a21f43dd4af1fb09338d5c1c8bd28d72/reddit_tts_bot-1.0.3.tar.gz
+[2024-05-25 16:32:39] INFO root fetch - processPackages [streamlit-passwordless]: executing diffoscope
+[2024-05-25 16:32:39] INFO root fetch - processPackages [streamlit-passwordless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_passwordless-0.4.0.tar.gz tmp/streamlit_passwordless-0.5.0.tar.gz --markdown 20240525/s/streamlit-passwordless/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-25 16:32:39] INFO root fetch - processPackages [reddit-tts-bot]: executing diffoscope
+[2024-05-25 16:32:39] INFO root fetch - processPackages [reddit-tts-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit_tts_bot-1.0.2.tar.gz tmp/reddit_tts_bot-1.0.3.tar.gz --markdown 20240525/r/reddit-tts-bot/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 16:32:39] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/a9/aa/5cbd1f4c9b2d6ee83ef438b89c41063ffff6ccf64f027c292432fe6df974/bttc-0.0.80.tar.gz
+[2024-05-25 16:32:39] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-05-25 16:32:39] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.79.tar.gz tmp/bttc-0.0.80.tar.gz --markdown 20240525/b/bttc/0.0.79-0.0.80/README.md --exclude *.pyd
+[2024-05-25 16:32:40] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.2.tar.gz]
+[2024-05-25 16:32:40] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.3.tar.gz]
+[2024-05-25 16:32:40] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
+[2024-05-25 16:32:40] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.79.tar.gz]
+[2024-05-25 16:32:40] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.80.tar.gz]
+[2024-05-25 16:32:40] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-05-25 16:32:45] INFO root fetch - processPackages [streamlit-passwordless]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_passwordless-0.4.0.tar.gz]
+[2024-05-25 16:32:45] INFO root fetch - processPackages [streamlit-passwordless]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_passwordless-0.5.0.tar.gz]
+[2024-05-25 16:32:45] INFO root fetch - main [MainThread]: End processing [streamlit-passwordless]: success
+[2024-05-25 16:32:45] INFO root fetch - main [MainThread]: Store serial: [23375750]
