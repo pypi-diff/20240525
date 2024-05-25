@@ -2386,3 +2386,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:29:19] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707934510.tar.gz]
 [2024-05-25 02:29:19] INFO root fetch - main [MainThread]: End processing [pulumi-gcp]: success
 [2024-05-25 02:29:19] INFO root fetch - main [MainThread]: Store serial: [23369557]
+[2024-05-25 02:31:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369557]
+[2024-05-25 02:31:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 02:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abnosql
+[2024-05-25 02:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sil-thot
+[2024-05-25 02:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aeppl-nightly
+[2024-05-25 02:31:29] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240524] Old Version: [0.1.5.dev20240523]
+[2024-05-25 02:31:29] INFO root fetch - processPackages [abnosql]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 02:31:29] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/dd/8c/1faeb3433ef14145b1747392474ec4eba2039f272353800a4a8cf74af538/aeppl_nightly-0.1.5.dev20240523.tar.gz
+[2024-05-25 02:31:29] INFO root fetch - processPackages [sil-thot]: New version: [3.4.4] Old Version: [3.4.3]
+[2024-05-25 02:31:29] INFO root fetch - processPackages [abnosql]: Downloading https://files.pythonhosted.org/packages/af/dd/3692a75af01e23f8d33b1dc66286d9756632760cd20b3076055ab7400c3f/abnosql-0.0.8.tar.gz
+[2024-05-25 02:31:29] INFO root fetch - processPackages [sil-thot]: Downloading https://files.pythonhosted.org/packages/47/b1/a583269e20030efd02b9c5f89e299e581b5c454fd36cb4f091d96aa65d8e/sil-thot-3.4.3.tar.gz
+[2024-05-25 02:31:29] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/a8/3c/ab14dc2f82b9c939214e5e2913e820055e60fcad9653b295002c1a337374/aeppl_nightly-0.1.5.dev20240524.tar.gz
+[2024-05-25 02:31:30] INFO root fetch - processPackages [abnosql]: Downloading https://files.pythonhosted.org/packages/35/79/a10bd8ee227d2a8dbc8591b29518d506355a8daca24d7440b787736fa266/abnosql-0.0.9.tar.gz
+[2024-05-25 02:31:30] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-25 02:31:30] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240523.tar.gz tmp/aeppl_nightly-0.1.5.dev20240524.tar.gz --markdown 20240525/a/aeppl-nightly/0.1.5.dev20240523-0.1.5.dev20240524/README.md --exclude *.pyd
+[2024-05-25 02:31:30] INFO root fetch - processPackages [sil-thot]: Downloading https://files.pythonhosted.org/packages/b2/59/175d2d5fe1eadcad813c9a094860f0b391dc7d6e5844c9ab9249ad5293bb/sil_thot-3.4.4.tar.gz
+[2024-05-25 02:31:30] INFO root fetch - processPackages [abnosql]: executing diffoscope
+[2024-05-25 02:31:30] INFO root fetch - processPackages [abnosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abnosql-0.0.8.tar.gz tmp/abnosql-0.0.9.tar.gz --markdown 20240525/a/abnosql/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 02:31:30] INFO root fetch - processPackages [sil-thot]: executing diffoscope
+[2024-05-25 02:31:30] INFO root fetch - processPackages [sil-thot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sil-thot-3.4.3.tar.gz tmp/sil_thot-3.4.4.tar.gz --markdown 20240525/s/sil-thot/3.4.3-3.4.4/README.md --exclude *.pyd
+[2024-05-25 02:31:30] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240523.tar.gz]
+[2024-05-25 02:31:30] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240524.tar.gz]
+[2024-05-25 02:31:30] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-25 02:31:30] INFO root fetch - processPackages [abnosql]: Remove: archive file [/home/abi/fetcher/tmp/abnosql-0.0.8.tar.gz]
+[2024-05-25 02:31:30] INFO root fetch - processPackages [abnosql]: Remove: archive file [/home/abi/fetcher/tmp/abnosql-0.0.9.tar.gz]
+[2024-05-25 02:31:30] INFO root fetch - main [MainThread]: End processing [abnosql]: success
+[2024-05-25 02:31:31] INFO root fetch - processPackages [sil-thot]: Remove: archive file [/home/abi/fetcher/tmp/sil-thot-3.4.3.tar.gz]
+[2024-05-25 02:31:31] INFO root fetch - processPackages [sil-thot]: Remove: archive file [/home/abi/fetcher/tmp/sil_thot-3.4.4.tar.gz]
+[2024-05-25 02:31:31] INFO root fetch - main [MainThread]: End processing [sil-thot]: success
+[2024-05-25 02:31:31] INFO root fetch - main [MainThread]: Store serial: [23369593]
