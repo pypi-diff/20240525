@@ -10509,3 +10509,38 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:33:37] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.2.0.1-py3-none-any.whl.zip]
 [2024-05-25 09:33:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-database-cleanup]: success
 [2024-05-25 09:33:37] INFO root fetch - main [MainThread]: Store serial: [23372831]
+[2024-05-25 09:35:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372831]
+[2024-05-25 09:35:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 09:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tree-sitter-c
+[2024-05-25 09:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cambridge
+[2024-05-25 09:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faster-norm
+[2024-05-25 09:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: computage
+[2024-05-25 09:35:46] INFO root fetch - processPackages [faster-norm]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-25 09:35:46] INFO root fetch - processPackages [tree-sitter-c]: New version: [0.21.2] Old Version: [0.21.1]
+[2024-05-25 09:35:46] INFO root fetch - processPackages [computage]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 09:35:46] INFO root fetch - processPackages [cambridge]: New version: [3.9.9] Old Version: [3.9.8]
+[2024-05-25 09:35:46] INFO root fetch - processPackages [faster-norm]: Downloading https://files.pythonhosted.org/packages/a9/19/7800ade5c03b435a43401f51624b74640038e4b4faef4b89e421107514b9/faster_norm-0.2.2.tar.gz
+[2024-05-25 09:35:46] INFO root fetch - processPackages [computage]: Downloading https://files.pythonhosted.org/packages/b5/88/e381aeac8e58e9f333a3203848fa4fae15bd27fc22898263a8c022baf969/computage-0.1.4.tar.gz
+[2024-05-25 09:35:46] INFO root fetch - processPackages [tree-sitter-c]: Downloading https://files.pythonhosted.org/packages/e5/ed/e9556735db7031206d8eaba8e7b1ef60ada114bd54963a103e41da61ef00/tree-sitter-c-0.21.1.tar.gz
+[2024-05-25 09:35:46] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/1a/6c/f6eac9a9a3c73dffe3d4cf7f2a1eb667444409b93eadf6759403b2fd04f0/cambridge-3.9.8.tar.gz
+[2024-05-25 09:35:46] WARNING root fetch - processPackages [computage]: Skipping package: exceeds size limit 14911177>=10485760
+[2024-05-25 09:35:46] INFO root fetch - main [MainThread]: End processing [computage] error
+[2024-05-25 09:35:46] INFO root fetch - processPackages [faster-norm]: Downloading https://files.pythonhosted.org/packages/ae/f2/0d8e206728c142aa3f9b8a92fc13b066bedaf5c1ef6830362141a6a6001b/faster_norm-0.3.0.tar.gz
+[2024-05-25 09:35:46] INFO root fetch - processPackages [tree-sitter-c]: Downloading https://files.pythonhosted.org/packages/b0/58/aad1f58532a356c26f71257f799424f7e8baa69ead17e8a1f8ee82ded149/tree-sitter-c-0.21.2.tar.gz
+[2024-05-25 09:35:46] INFO root fetch - processPackages [faster-norm]: executing diffoscope
+[2024-05-25 09:35:46] INFO root fetch - processPackages [faster-norm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_norm-0.2.2.tar.gz tmp/faster_norm-0.3.0.tar.gz --markdown 20240525/f/faster-norm/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-25 09:35:46] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/ba/7b/9c8dd2b5cf61b8ce1c5534fbe54410490464d40a63be4aa7c8964c61e97c/cambridge-3.9.9.tar.gz
+[2024-05-25 09:35:46] INFO root fetch - processPackages [tree-sitter-c]: executing diffoscope
+[2024-05-25 09:35:46] INFO root fetch - processPackages [tree-sitter-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-sitter-c-0.21.1.tar.gz tmp/tree-sitter-c-0.21.2.tar.gz --markdown 20240525/t/tree-sitter-c/0.21.1-0.21.2/README.md --exclude *.pyd
+[2024-05-25 09:35:47] INFO root fetch - processPackages [cambridge]: executing diffoscope
+[2024-05-25 09:35:47] INFO root fetch - processPackages [cambridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cambridge-3.9.8.tar.gz tmp/cambridge-3.9.9.tar.gz --markdown 20240525/c/cambridge/3.9.8-3.9.9/README.md --exclude *.pyd
+[2024-05-25 09:35:47] INFO root fetch - processPackages [faster-norm]: Remove: archive file [/home/abi/fetcher/tmp/faster_norm-0.2.2.tar.gz]
+[2024-05-25 09:35:47] INFO root fetch - processPackages [faster-norm]: Remove: archive file [/home/abi/fetcher/tmp/faster_norm-0.3.0.tar.gz]
+[2024-05-25 09:35:47] INFO root fetch - main [MainThread]: End processing [faster-norm]: success
+[2024-05-25 09:35:47] INFO root fetch - processPackages [cambridge]: Remove: archive file [/home/abi/fetcher/tmp/cambridge-3.9.8.tar.gz]
+[2024-05-25 09:35:47] INFO root fetch - processPackages [cambridge]: Remove: archive file [/home/abi/fetcher/tmp/cambridge-3.9.9.tar.gz]
+[2024-05-25 09:35:47] INFO root fetch - main [MainThread]: End processing [cambridge]: success
+[2024-05-25 09:35:48] INFO root fetch - processPackages [tree-sitter-c]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-c-0.21.1.tar.gz]
+[2024-05-25 09:35:48] INFO root fetch - processPackages [tree-sitter-c]: Remove: archive file [/home/abi/fetcher/tmp/tree-sitter-c-0.21.2.tar.gz]
+[2024-05-25 09:35:48] INFO root fetch - main [MainThread]: End processing [tree-sitter-c]: success
+[2024-05-25 09:35:48] INFO root fetch - main [MainThread]: Store serial: [23372847]
