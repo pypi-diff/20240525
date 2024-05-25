@@ -7257,3 +7257,17 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:07:18] INFO root fetch - processPackages [triton-model-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/triton_model_analyzer-1.9.0-py3-none-manylinux1_x86_64.whl.zip]
 [2024-05-25 04:07:18] INFO root fetch - main [MainThread]: End processing [triton-model-analyzer]: success
 [2024-05-25 04:07:18] INFO root fetch - main [MainThread]: Store serial: [23371349]
+[2024-05-25 04:09:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371349]
+[2024-05-25 04:09:36] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 04:11:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371349]
+[2024-05-25 04:11:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 04:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cogsworth
+[2024-05-25 04:11:42] INFO root fetch - processPackages [cogsworth]: New version: [1.0.0] Old Version: [0.0]
+[2024-05-25 04:11:42] INFO root fetch - processPackages [cogsworth]: Downloading https://files.pythonhosted.org/packages/76/70/3326673c2849d99d26578e7ea72086442c252c8881911e9a3fcc28b047bd/cogsworth-0.0.tar.gz
+[2024-05-25 04:11:42] INFO root fetch - processPackages [cogsworth]: Downloading https://files.pythonhosted.org/packages/2c/75/76b18e175ab0f15f591277d4ecc3b40d3eeab38ff489b0dd742a5bf565c6/cogsworth-1.0.0.tar.gz
+[2024-05-25 04:11:43] INFO root fetch - processPackages [cogsworth]: executing diffoscope
+[2024-05-25 04:11:43] INFO root fetch - processPackages [cogsworth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cogsworth-0.0.tar.gz tmp/cogsworth-1.0.0.tar.gz --markdown 20240525/c/cogsworth/0.0-1.0.0/README.md --exclude *.pyd
+[2024-05-25 04:11:43] INFO root fetch - processPackages [cogsworth]: Remove: archive file [/home/abi/fetcher/tmp/cogsworth-0.0.tar.gz]
+[2024-05-25 04:11:43] INFO root fetch - processPackages [cogsworth]: Remove: archive file [/home/abi/fetcher/tmp/cogsworth-1.0.0.tar.gz]
+[2024-05-25 04:11:43] INFO root fetch - main [MainThread]: End processing [cogsworth]: success
+[2024-05-25 04:11:43] INFO root fetch - main [MainThread]: Store serial: [23371352]
