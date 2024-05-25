@@ -9883,3 +9883,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:50:08] INFO root fetch - processPackages [QuLab]: Remove: archive file [/home/abi/fetcher/tmp/qulab-2.0.3.tar.gz]
 [2024-05-25 08:50:08] INFO root fetch - main [MainThread]: End processing [QuLab]: success
 [2024-05-25 08:50:08] INFO root fetch - main [MainThread]: Store serial: [23372618]
+[2024-05-25 08:52:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372618]
+[2024-05-25 08:52:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 08:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: txdpy
+[2024-05-25 08:52:17] INFO root fetch - processPackages [txdpy]: New version: [8.8.8] Old Version: [7.7.2]
+[2024-05-25 08:52:17] INFO root fetch - processPackages [txdpy]: Downloading https://files.pythonhosted.org/packages/35/71/6791e06a836643abe2c6d54b5b96f89caa007cb2eaf9c21166b31e014980/txdpy-7.7.2.tar.gz
+[2024-05-25 08:52:17] INFO root fetch - processPackages [txdpy]: Downloading https://files.pythonhosted.org/packages/46/39/2ed738b1ac8dc6dd12b79d202ceee904f49c10179938a85c6d84cfb48ee5/txdpy-8.8.8.tar.gz
+[2024-05-25 08:52:17] INFO root fetch - processPackages [txdpy]: executing diffoscope
+[2024-05-25 08:52:17] INFO root fetch - processPackages [txdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txdpy-7.7.2.tar.gz tmp/txdpy-8.8.8.tar.gz --markdown 20240525/t/txdpy/7.7.2-8.8.8/README.md --exclude *.pyd
+[2024-05-25 08:52:18] INFO root fetch - processPackages [txdpy]: Remove: archive file [/home/abi/fetcher/tmp/txdpy-7.7.2.tar.gz]
+[2024-05-25 08:52:18] INFO root fetch - processPackages [txdpy]: Remove: archive file [/home/abi/fetcher/tmp/txdpy-8.8.8.tar.gz]
+[2024-05-25 08:52:18] INFO root fetch - main [MainThread]: End processing [txdpy]: success
+[2024-05-25 08:52:18] INFO root fetch - main [MainThread]: Store serial: [23372624]
