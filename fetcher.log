@@ -21063,3 +21063,20 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:45:29] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
 [2024-05-25 20:45:29] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
 [2024-05-25 20:45:29] INFO root fetch - main [MainThread]: Store serial: [23377175]
+[2024-05-25 20:47:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377175]
+[2024-05-25 20:47:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 20:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377175]
+[2024-05-25 20:49:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 20:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web-retriever
+[2024-05-25 20:49:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygentic
+[2024-05-25 20:49:44] INFO root fetch - processPackages [web-retriever]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-25 20:49:44] WARNING root fetch - processPackages [pygentic]: Skipping, unable to determine old version
+[2024-05-25 20:49:44] INFO root fetch - main [MainThread]: End processing [pygentic] error
+[2024-05-25 20:49:44] INFO root fetch - processPackages [web-retriever]: Downloading https://files.pythonhosted.org/packages/fa/2b/9c5d5a0a0afaa444448e4cec69ec901dc4c89f07b9c5e77a915edb89ec12/web-retriever-0.2.0.tar.gz
+[2024-05-25 20:49:44] INFO root fetch - processPackages [web-retriever]: Downloading https://files.pythonhosted.org/packages/51/30/83256f4924c66b8cc100b0cd98d8d643505460dc56534f4d47442c5d4892/web-retriever-0.3.0.tar.gz
+[2024-05-25 20:49:44] INFO root fetch - processPackages [web-retriever]: executing diffoscope
+[2024-05-25 20:49:44] INFO root fetch - processPackages [web-retriever]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-retriever-0.2.0.tar.gz tmp/web-retriever-0.3.0.tar.gz --markdown 20240525/w/web-retriever/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-25 20:49:45] INFO root fetch - processPackages [web-retriever]: Remove: archive file [/home/abi/fetcher/tmp/web-retriever-0.2.0.tar.gz]
+[2024-05-25 20:49:45] INFO root fetch - processPackages [web-retriever]: Remove: archive file [/home/abi/fetcher/tmp/web-retriever-0.3.0.tar.gz]
+[2024-05-25 20:49:45] INFO root fetch - main [MainThread]: End processing [web-retriever]: success
+[2024-05-25 20:49:45] INFO root fetch - main [MainThread]: Store serial: [23377183]
