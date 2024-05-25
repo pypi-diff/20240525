@@ -18081,3 +18081,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:08:18] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl.zip]
 [2024-05-25 17:08:18] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-05-25 17:08:18] INFO root fetch - main [MainThread]: Store serial: [23375953]
+[2024-05-25 17:10:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375953]
+[2024-05-25 17:10:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 17:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nb-libs
+[2024-05-25 17:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stream-zip
+[2024-05-25 17:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-mail-gateway-telegram
+[2024-05-25 17:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-mail-gateway
+[2024-05-25 17:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-mail-gateway-whatsapp
+[2024-05-25 17:10:27] WARNING root fetch - processPackages [odoo-addon-mail-gateway]: Skipping, unable to determine old version
+[2024-05-25 17:10:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-gateway] error
+[2024-05-25 17:10:27] WARNING root fetch - processPackages [odoo-addon-mail-gateway-whatsapp]: Skipping, unable to determine old version
+[2024-05-25 17:10:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-gateway-whatsapp] error
+[2024-05-25 17:10:27] WARNING root fetch - processPackages [odoo-addon-mail-gateway-telegram]: Skipping, unable to determine old version
+[2024-05-25 17:10:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-gateway-telegram] error
+[2024-05-25 17:10:27] INFO root fetch - processPackages [nb-libs]: New version: [1.1] Old Version: [1.0]
+[2024-05-25 17:10:27] INFO root fetch - processPackages [stream-zip]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 17:10:27] INFO root fetch - processPackages [nb-libs]: Downloading https://files.pythonhosted.org/packages/42/7e/1f5497eb0349eb7869fb473aa8783e958e56d7271ba8c6bcf3276c25deb5/nb_libs-1.0.tar.gz
+[2024-05-25 17:10:27] INFO root fetch - processPackages [stream-zip]: Downloading https://files.pythonhosted.org/packages/4b/65/27b6998732f631a7691a5157fb51c5d5328faa138986c06684c5ae4fe771/stream-zip-0.0.8.tar.gz
+[2024-05-25 17:10:27] INFO root fetch - processPackages [stream-zip]: Downloading https://files.pythonhosted.org/packages/0e/94/162b767659b1b6afe9241c47773d921e2b8a0f97f124d374e76c7f1d2b53/stream-zip-0.0.9.tar.gz
+[2024-05-25 17:10:27] INFO root fetch - processPackages [nb-libs]: Downloading https://files.pythonhosted.org/packages/07/dc/5de0c1fca10267519f61b90a80b2d0f005bcbfbe9941a256deeb7afe26f7/nb_libs-1.1.tar.gz
+[2024-05-25 17:10:27] INFO root fetch - processPackages [stream-zip]: executing diffoscope
+[2024-05-25 17:10:27] INFO root fetch - processPackages [stream-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream-zip-0.0.8.tar.gz tmp/stream-zip-0.0.9.tar.gz --markdown 20240525/s/stream-zip/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 17:10:27] INFO root fetch - processPackages [nb-libs]: executing diffoscope
+[2024-05-25 17:10:27] INFO root fetch - processPackages [nb-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nb_libs-1.0.tar.gz tmp/nb_libs-1.1.tar.gz --markdown 20240525/n/nb-libs/1.0-1.1/README.md --exclude *.pyd
+[2024-05-25 17:10:28] INFO root fetch - processPackages [nb-libs]: Remove: archive file [/home/abi/fetcher/tmp/nb_libs-1.0.tar.gz]
+[2024-05-25 17:10:28] INFO root fetch - processPackages [nb-libs]: Remove: archive file [/home/abi/fetcher/tmp/nb_libs-1.1.tar.gz]
+[2024-05-25 17:10:28] INFO root fetch - main [MainThread]: End processing [nb-libs]: success
+[2024-05-25 17:10:28] INFO root fetch - processPackages [stream-zip]: Remove: archive file [/home/abi/fetcher/tmp/stream-zip-0.0.8.tar.gz]
+[2024-05-25 17:10:28] INFO root fetch - processPackages [stream-zip]: Remove: archive file [/home/abi/fetcher/tmp/stream-zip-0.0.9.tar.gz]
+[2024-05-25 17:10:28] INFO root fetch - main [MainThread]: End processing [stream-zip]: success
+[2024-05-25 17:10:28] INFO root fetch - main [MainThread]: Store serial: [23375971]
