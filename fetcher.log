@@ -8097,3 +8097,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:45:37] INFO root fetch - processPackages [odoo-addons-oca-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl.zip]
 [2024-05-25 05:45:37] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-contract]: success
 [2024-05-25 05:45:37] INFO root fetch - main [MainThread]: Store serial: [23371781]
+[2024-05-25 05:47:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371781]
+[2024-05-25 05:47:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 05:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371781]
+[2024-05-25 05:49:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 05:51:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371781]
+[2024-05-25 05:51:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-nasa
+[2024-05-25 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chebyfit
+[2024-05-25 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-weatherstack
+[2024-05-25 05:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: djpress
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-weatherstack]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 05:51:59] WARNING root fetch - processPackages [djpress]: Skipping, unable to determine old version
+[2024-05-25 05:51:59] INFO root fetch - main [MainThread]: End processing [djpress] error
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-nasa]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 05:51:59] INFO root fetch - processPackages [chebyfit]: New version: [2024.5.24] Old Version: [2024.4.24]
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-nasa]: Downloading https://files.pythonhosted.org/packages/ac/94/01977752f23847d12a52cf671b7d5b51430746ca189bbe9c9b4ee1bef031/airbyte-source-nasa-0.2.0.tar.gz
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-weatherstack]: Downloading https://files.pythonhosted.org/packages/15/74/ab5421d096d7b300ef56760d77aadf3a4e2179ca68e8d2583ebeb2023551/airbyte-source-weatherstack-0.1.0.tar.gz
+[2024-05-25 05:51:59] INFO root fetch - processPackages [chebyfit]: Downloading https://files.pythonhosted.org/packages/6a/81/b9fb1f05d99b6767fdc5e87c294d85d534be01dd3343952fd570a2650cb2/chebyfit-2024.4.24.tar.gz
+[2024-05-25 05:51:59] ERROR root fetch - processPackages [airbyte-source-weatherstack]: Unable to fetch info: No such project/version 'airbyte-source-weatherstack' 0.1.1
+[2024-05-25 05:51:59] INFO root fetch - main [MainThread]: End processing [airbyte-source-weatherstack] error
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-nasa]: Downloading https://files.pythonhosted.org/packages/65/b2/220d05200b626b62a746d2d021b97df9c8eb22934a9fef5f16ce7fdbc5f4/airbyte_source_nasa-0.2.1.tar.gz
+[2024-05-25 05:51:59] INFO root fetch - processPackages [chebyfit]: Downloading https://files.pythonhosted.org/packages/08/86/faf82e75277d77bad89a41e937eb2d265f93937e2b2762899b2cfd7a380d/chebyfit-2024.5.24.tar.gz
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-nasa]: executing diffoscope
+[2024-05-25 05:51:59] INFO root fetch - processPackages [airbyte-source-nasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-nasa-0.2.0.tar.gz tmp/airbyte_source_nasa-0.2.1.tar.gz --markdown 20240525/a/airbyte-source-nasa/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-25 05:52:00] INFO root fetch - processPackages [chebyfit]: executing diffoscope
+[2024-05-25 05:52:00] INFO root fetch - processPackages [chebyfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chebyfit-2024.4.24.tar.gz tmp/chebyfit-2024.5.24.tar.gz --markdown 20240525/c/chebyfit/2024.4.24-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 05:52:00] INFO root fetch - processPackages [airbyte-source-nasa]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-nasa-0.2.0.tar.gz]
+[2024-05-25 05:52:00] INFO root fetch - processPackages [airbyte-source-nasa]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_nasa-0.2.1.tar.gz]
+[2024-05-25 05:52:00] INFO root fetch - main [MainThread]: End processing [airbyte-source-nasa]: success
+[2024-05-25 05:52:00] INFO root fetch - processPackages [chebyfit]: Remove: archive file [/home/abi/fetcher/tmp/chebyfit-2024.4.24.tar.gz]
+[2024-05-25 05:52:00] INFO root fetch - processPackages [chebyfit]: Remove: archive file [/home/abi/fetcher/tmp/chebyfit-2024.5.24.tar.gz]
+[2024-05-25 05:52:00] INFO root fetch - main [MainThread]: End processing [chebyfit]: success
+[2024-05-25 05:52:00] INFO root fetch - main [MainThread]: Store serial: [23371817]
