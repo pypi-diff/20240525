@@ -7297,3 +7297,51 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:18:09] INFO root fetch - processPackages [webull-python-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_core-0.1.7.tar.gz]
 [2024-05-25 04:18:09] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-core]: success
 [2024-05-25 04:18:09] INFO root fetch - main [MainThread]: Store serial: [23371358]
+[2024-05-25 04:20:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371358]
+[2024-05-25 04:20:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 04:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transformations
+[2024-05-25 04:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webull-python-sdk-quotes-core
+[2024-05-25 04:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webull-python-sdk-mdata
+[2024-05-25 04:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webull-python-sdk-trade-events-core
+[2024-05-25 04:20:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webull-python-sdk-trade
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 04:20:18] INFO root fetch - processPackages [transformations]: New version: [2024.6.1] Old Version: [2024.5.24]
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: Downloading https://files.pythonhosted.org/packages/55/c0/bfe60790ba1d46127036f05807d00bbb98708c2f8f04c955610158b11f00/webull_python_sdk_mdata-0.1.6.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [transformations]: Downloading https://files.pythonhosted.org/packages/f3/bd/13cf3d21afdd64ed3f6dcdf0d0a70329549c5fb8759a634a35e27905b74a/transformations-2024.5.24.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Downloading https://files.pythonhosted.org/packages/6d/b7/93f40c735803aa5e4d871d303badcb910dceda7f0c232b235803e4e16143/webull_python_sdk_quotes_core-0.1.6.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Downloading https://files.pythonhosted.org/packages/e5/bc/9c39c09f83aae07710864791a914fa8e8ffd94a5749086a11730dcc57486/webull_python_sdk_trade_events_core-0.1.6.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade]: Downloading https://files.pythonhosted.org/packages/50/72/19ce6a592a3bb1f3e5897e66020249acad8fce73e2d4591938fa306d35f6/webull_python_sdk_trade-0.1.6.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Downloading https://files.pythonhosted.org/packages/82/49/d213f70df08bf992d915675d158d35ba9415fdad5bfd74014bca8fbe095f/webull_python_sdk_trade_events_core-0.1.7.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: Downloading https://files.pythonhosted.org/packages/06/00/582c0197edf780a83eb9ae2d51b8d148a07ce47fcdc4062a30e1cd7b0540/webull_python_sdk_mdata-0.1.7.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Downloading https://files.pythonhosted.org/packages/e2/ac/3cf83b1982987d8229805321274bfd12a32f0aa4a9449c4de38494659263/webull_python_sdk_quotes_core-0.1.7.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [transformations]: Downloading https://files.pythonhosted.org/packages/37/47/031a2d99b7ca4080a69209b52b7cc05106a16f33ea3ddd260fea1fb9dd44/transformations-2024.6.1.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade]: Downloading https://files.pythonhosted.org/packages/8b/a5/6faaa71a037afb7dbff3548bcf85881ddde2c210c1f458689c0ac470ad70/webull_python_sdk_trade-0.1.7.tar.gz
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: executing diffoscope
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_python_sdk_trade_events_core-0.1.6.tar.gz tmp/webull_python_sdk_trade_events_core-0.1.7.tar.gz --markdown 20240525/w/webull-python-sdk-trade-events-core/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: executing diffoscope
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_python_sdk_mdata-0.1.6.tar.gz tmp/webull_python_sdk_mdata-0.1.7.tar.gz --markdown 20240525/w/webull-python-sdk-mdata/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: executing diffoscope
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_python_sdk_quotes_core-0.1.6.tar.gz tmp/webull_python_sdk_quotes_core-0.1.7.tar.gz --markdown 20240525/w/webull-python-sdk-quotes-core/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 04:20:18] INFO root fetch - processPackages [transformations]: executing diffoscope
+[2024-05-25 04:20:18] INFO root fetch - processPackages [transformations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformations-2024.5.24.tar.gz tmp/transformations-2024.6.1.tar.gz --markdown 20240525/t/transformations/2024.5.24-2024.6.1/README.md --exclude *.pyd
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade]: executing diffoscope
+[2024-05-25 04:20:18] INFO root fetch - processPackages [webull-python-sdk-trade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_python_sdk_trade-0.1.6.tar.gz tmp/webull_python_sdk_trade-0.1.7.tar.gz --markdown 20240525/w/webull-python-sdk-trade/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_trade_events_core-0.1.6.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_trade_events_core-0.1.7.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-trade-events-core]: success
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_quotes_core-0.1.6.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_quotes_core-0.1.7.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-quotes-core]: success
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-trade]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_trade-0.1.6.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-trade]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_trade-0.1.7.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-trade]: success
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-mdata]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_mdata-0.1.6.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - processPackages [webull-python-sdk-mdata]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_mdata-0.1.7.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-mdata]: success
+[2024-05-25 04:20:19] INFO root fetch - processPackages [transformations]: Remove: archive file [/home/abi/fetcher/tmp/transformations-2024.5.24.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - processPackages [transformations]: Remove: archive file [/home/abi/fetcher/tmp/transformations-2024.6.1.tar.gz]
+[2024-05-25 04:20:19] INFO root fetch - main [MainThread]: End processing [transformations]: success
+[2024-05-25 04:20:19] INFO root fetch - main [MainThread]: Store serial: [23371395]
