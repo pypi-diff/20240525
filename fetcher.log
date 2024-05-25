@@ -9859,3 +9859,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:47:57] INFO root fetch - processPackages [Complex-Bidintha]: Remove: archive file [/home/abi/fetcher/tmp/Complex_Bidintha-0.7.tar.gz]
 [2024-05-25 08:47:57] INFO root fetch - main [MainThread]: End processing [Complex-Bidintha]: success
 [2024-05-25 08:47:57] INFO root fetch - main [MainThread]: Store serial: [23372604]
+[2024-05-25 08:50:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372604]
+[2024-05-25 08:50:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 08:50:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hydra-cache
+[2024-05-25 08:50:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QuLab
+[2024-05-25 08:50:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-problem
+[2024-05-25 08:50:06] WARNING root fetch - processPackages [hydra-cache]: Skipping, unable to determine old version
+[2024-05-25 08:50:06] INFO root fetch - main [MainThread]: End processing [hydra-cache] error
+[2024-05-25 08:50:06] INFO root fetch - processPackages [fastapi-problem]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-25 08:50:06] INFO root fetch - processPackages [fastapi-problem]: Downloading https://files.pythonhosted.org/packages/9a/46/066946726dee17bd984c54e6cb1b6a607c8858330058f05f55deb1a00091/fastapi_problem-0.7.8.tar.gz
+[2024-05-25 08:50:06] INFO root fetch - processPackages [QuLab]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-25 08:50:07] INFO root fetch - processPackages [QuLab]: Downloading https://files.pythonhosted.org/packages/90/fa/7223544087d4c3a2c0ba3a399077ddcf0df5f4f6c453a4be0b6457fa1c51/qulab-2.0.2.tar.gz
+[2024-05-25 08:50:07] INFO root fetch - processPackages [fastapi-problem]: Downloading https://files.pythonhosted.org/packages/d4/d0/a7ce60b4bd8f40086672b563c82b36bc980345555634a7ff83ff08ee1ba0/fastapi_problem-0.7.9.tar.gz
+[2024-05-25 08:50:07] INFO root fetch - processPackages [fastapi-problem]: executing diffoscope
+[2024-05-25 08:50:07] INFO root fetch - processPackages [fastapi-problem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_problem-0.7.8.tar.gz tmp/fastapi_problem-0.7.9.tar.gz --markdown 20240525/f/fastapi-problem/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-25 08:50:07] INFO root fetch - processPackages [QuLab]: Downloading https://files.pythonhosted.org/packages/b5/5c/1dbc20f2eb6d210594b217bd76c193d5e9f660050a0b441797bfa1a3fcc4/qulab-2.0.3.tar.gz
+[2024-05-25 08:50:07] INFO root fetch - processPackages [QuLab]: executing diffoscope
+[2024-05-25 08:50:07] INFO root fetch - processPackages [QuLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qulab-2.0.2.tar.gz tmp/qulab-2.0.3.tar.gz --markdown 20240525/Q/QuLab/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-25 08:50:07] INFO root fetch - processPackages [fastapi-problem]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_problem-0.7.8.tar.gz]
+[2024-05-25 08:50:07] INFO root fetch - processPackages [fastapi-problem]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_problem-0.7.9.tar.gz]
+[2024-05-25 08:50:07] INFO root fetch - main [MainThread]: End processing [fastapi-problem]: success
+[2024-05-25 08:50:08] INFO root fetch - processPackages [QuLab]: Remove: archive file [/home/abi/fetcher/tmp/qulab-2.0.2.tar.gz]
+[2024-05-25 08:50:08] INFO root fetch - processPackages [QuLab]: Remove: archive file [/home/abi/fetcher/tmp/qulab-2.0.3.tar.gz]
+[2024-05-25 08:50:08] INFO root fetch - main [MainThread]: End processing [QuLab]: success
+[2024-05-25 08:50:08] INFO root fetch - main [MainThread]: Store serial: [23372618]
