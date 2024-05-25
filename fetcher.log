@@ -2201,3 +2201,77 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:22:33] INFO root fetch - processPackages [xlcompose]: Remove: archive file [/home/abi/fetcher/tmp/xlcompose-0.3.2.tar.gz]
 [2024-05-25 02:22:33] INFO root fetch - main [MainThread]: End processing [xlcompose]: success
 [2024-05-25 02:22:33] INFO root fetch - main [MainThread]: Store serial: [23369472]
+[2024-05-25 02:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369472]
+[2024-05-25 02:24:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NEURON-nightly
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NMODL-nightly
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kolibri-desktop-auth-plugin
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: athena-intelligence
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pazok
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flowtask
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-certbot-dns-route53
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-serverless-clamscan
+[2024-05-25 02:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hddm-s
+[2024-05-25 02:24:41] WARNING root fetch - processPackages [pazok]: Skipping, unable to determine old version
+[2024-05-25 02:24:41] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-25 02:24:41] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.73]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [flowtask]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.6.99] Old Version: [2.6.98]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: New version: [1.0.0] Old Version: [0.0.7]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0a1.dev245] Old Version: [9.0a1.dev244]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [athena-intelligence]: New version: [0.1.61] Old Version: [0.1.60]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [NMODL-nightly]: New version: [0.6.168] Old Version: [0.6.167]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-05-25 02:24:41] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/04/67/6fb0e00ee65986b766391e4327a7370cec35f8458c0c80507e3b56a79e57/cdk-serverless-clamscan-2.6.98.tar.gz
+[2024-05-25 02:24:41] INFO root fetch - processPackages [flowtask]: Downloading https://files.pythonhosted.org/packages/46/fd/75fff4674ffccc46475973df59258c62d846e87c4130285eddf1ba2bb901/flowtask-5.2.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 02:24:41] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/e5/10/21dff2737882826a7b1a57077ce09a22439a00e2d846fe83fcb8a5f1b86e/hddm_s-1.0.73.tar.gz
+[2024-05-25 02:24:41] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: Downloading https://files.pythonhosted.org/packages/bc/fe/f9a5b62da8daf554eb5e7a28283cfb01f401618902c18012df0011585c7a/kolibri_desktop_auth_plugin-0.0.7-py2.py3-none-any.whl
+[2024-05-25 02:24:41] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/74/93/c0de4c1808337bf26451ca593008fcb71b494f9d852520464494765c6f80/athena_intelligence-0.1.60.tar.gz
+[2024-05-25 02:24:42] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/04/0e/21e0da61a4e192ab4ac1697da912aa892dbc83dd65c5f3b765eee2236971/nmodl_nightly-0.6.167-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 02:24:42] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/65/36/53203915992f81fe1c9b8feda6a2a5a7b36f194ed4194d1dfcb532d4874d/NEURON_nightly-9.0a1.dev244-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-05-25 02:24:42] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 26085708>=10485760
+[2024-05-25 02:24:42] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2024-05-25 02:24:42] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 02:24:42] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 02:24:42] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.73.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.73-1.0.9/README.md --exclude *.pyd
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/53/8f/ea40546b0f696761a1aaeee533ca8a5f53147131c3aa1f0aa1316112f44f/cdk-serverless-clamscan-2.6.99.tar.gz
+[2024-05-25 02:24:42] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/9c/88/e7af57ef3c6d755a7a2b2ea35dc0536f2e50ed9645db9ed742d32ecc4f8e/athena_intelligence-0.1.61.tar.gz
+[2024-05-25 02:24:42] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: Downloading https://files.pythonhosted.org/packages/6e/12/642ddff994b0ce1f86fb81835f4977b7caa48a94e927f91493c7888bd666/kolibri_desktop_auth_plugin-1.0.0-py2.py3-none-any.whl
+[2024-05-25 02:24:42] INFO root fetch - processPackages [flowtask]: Downloading https://files.pythonhosted.org/packages/29/74/7163ea2a085463197c6b3564295f933938ed331f98f517c7c52e778c9a9e/flowtask-5.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.6.98.tar.gz tmp/cdk-serverless-clamscan-2.6.99.tar.gz --markdown 20240525/c/cdk-serverless-clamscan/2.6.98-2.6.99/README.md --exclude *.pyd
+[2024-05-25 02:24:42] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: executing diffoscope
+[2024-05-25 02:24:42] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolibri_desktop_auth_plugin-0.0.7-py2.py3-none-any.whl.zip tmp/kolibri_desktop_auth_plugin-1.0.0-py2.py3-none-any.whl.zip --markdown 20240525/k/kolibri-desktop-auth-plugin/0.0.7-1.0.0/README.md --exclude *.pyd
+[2024-05-25 02:24:42] INFO root fetch - processPackages [athena-intelligence]: executing diffoscope
+[2024-05-25 02:24:42] INFO root fetch - processPackages [athena-intelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_intelligence-0.1.60.tar.gz tmp/athena_intelligence-0.1.61.tar.gz --markdown 20240525/a/athena-intelligence/0.1.60-0.1.61/README.md --exclude *.pyd
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-05-25 02:24:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240525/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-05-25 02:24:42] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/e7/4b/4033382ea9bc2040d1c597134ba18265e62dba12dffea7c0129c5fa460cb/nmodl_nightly-0.6.168-cp39-cp39-macosx_10_15_x86_64.whl
+[2024-05-25 02:24:42] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2024-05-25 02:24:42] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-5.2.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-5.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240525/f/flowtask/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-05-25 02:24:42] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.73.tar.gz]
+[2024-05-25 02:24:42] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 02:24:42] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 02:24:43] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.98.tar.gz]
+[2024-05-25 02:24:43] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.99.tar.gz]
+[2024-05-25 02:24:43] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2024-05-25 02:24:43] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: Remove: archive file [/home/abi/fetcher/tmp/kolibri_desktop_auth_plugin-0.0.7-py2.py3-none-any.whl.zip]
+[2024-05-25 02:24:43] INFO root fetch - processPackages [kolibri-desktop-auth-plugin]: Remove: archive file [/home/abi/fetcher/tmp/kolibri_desktop_auth_plugin-1.0.0-py2.py3-none-any.whl.zip]
+[2024-05-25 02:24:43] INFO root fetch - main [MainThread]: End processing [kolibri-desktop-auth-plugin]: success
+[2024-05-25 02:24:43] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-05-25 02:24:43] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-05-25 02:24:43] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-05-25 02:24:43] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.60.tar.gz]
+[2024-05-25 02:24:43] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.61.tar.gz]
+[2024-05-25 02:24:43] INFO root fetch - main [MainThread]: End processing [athena-intelligence]: success
+[2024-05-25 02:24:43] INFO root fetch - processPackages [NMODL-nightly]: executing diffoscope
+[2024-05-25 02:24:43] INFO root fetch - processPackages [NMODL-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmodl_nightly-0.6.167-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nmodl_nightly-0.6.168-cp39-cp39-macosx_10_15_x86_64.whl.zip --markdown 20240525/N/NMODL-nightly/0.6.167-0.6.168/README.md --exclude *.pyd
+[2024-05-25 02:24:46] INFO root fetch - processPackages [flowtask]: Remove: archive file [/home/abi/fetcher/tmp/flowtask-5.2.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 02:24:46] INFO root fetch - processPackages [flowtask]: Remove: archive file [/home/abi/fetcher/tmp/flowtask-5.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 02:24:46] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2024-05-25 02:24:46] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/nmodl_nightly-0.6.167-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-25 02:24:46] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/nmodl_nightly-0.6.168-cp39-cp39-macosx_10_15_x86_64.whl.zip]
+[2024-05-25 02:24:46] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
+[2024-05-25 02:24:46] INFO root fetch - main [MainThread]: Store serial: [23369507]
