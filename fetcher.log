@@ -19430,3 +19430,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:33:39] INFO root fetch - processPackages [py2app]: Remove: archive file [/home/abi/fetcher/tmp/py2app-0.9.tar.gz]
 [2024-05-25 18:33:39] INFO root fetch - main [MainThread]: End processing [py2app]: success
 [2024-05-25 18:33:39] INFO root fetch - main [MainThread]: Store serial: [23376497]
+[2024-05-25 18:35:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376497]
+[2024-05-25 18:35:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 18:35:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MaskaAI
+[2024-05-25 18:35:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-dfy
+[2024-05-25 18:35:50] INFO root fetch - processPackages [moveread-dfy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 18:35:50] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/ff/92/50e03a6b8317d0ce7ff4ceb6aa2af3fae5fc4901ec76d53efe02ff47ee64/moveread_dfy-0.1.8.tar.gz
+[2024-05-25 18:35:50] WARNING root fetch - processPackages [MaskaAI]: Skipping, unable to determine old version
+[2024-05-25 18:35:50] INFO root fetch - main [MainThread]: End processing [MaskaAI] error
+[2024-05-25 18:35:50] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/3e/d8/0b3df8fbc36631c29ac81442cd25d197377a6f20593d6fdfb69d9e93d9a3/moveread_dfy-0.1.9.tar.gz
+[2024-05-25 18:35:50] INFO root fetch - processPackages [moveread-dfy]: executing diffoscope
+[2024-05-25 18:35:50] INFO root fetch - processPackages [moveread-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_dfy-0.1.8.tar.gz tmp/moveread_dfy-0.1.9.tar.gz --markdown 20240525/m/moveread-dfy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 18:35:51] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.8.tar.gz]
+[2024-05-25 18:35:51] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.9.tar.gz]
+[2024-05-25 18:35:51] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
+[2024-05-25 18:35:51] INFO root fetch - main [MainThread]: Store serial: [23376505]
