@@ -2544,3 +2544,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:42:21] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.11.1.tar.gz]
 [2024-05-25 02:42:21] INFO root fetch - main [MainThread]: End processing [tensorpc]: success
 [2024-05-25 02:42:21] INFO root fetch - main [MainThread]: Store serial: [23369682]
+[2024-05-25 02:44:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369682]
+[2024-05-25 02:44:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 02:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kub
+[2024-05-25 02:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfds-nightly
+[2024-05-25 02:44:30] INFO root fetch - processPackages [kub]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 02:44:30] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405240044] Old Version: [4.9.4.dev202405230936]
+[2024-05-25 02:44:30] INFO root fetch - processPackages [kub]: Downloading https://files.pythonhosted.org/packages/ba/46/1ea43ae7f7f7aa8f58c076130aeb9c60824b69fe882f557793e7b5e889d9/kub-0.1.0.tar.gz
+[2024-05-25 02:44:30] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/79/87/a199fb69d86e4bec60a03aa099f941b0c371d2a2cb0c52b3cede819a06a7/tfds-nightly-4.9.4.dev202405230936.tar.gz
+[2024-05-25 02:44:30] INFO root fetch - processPackages [kub]: Downloading https://files.pythonhosted.org/packages/85/5b/c24aae760752a46258cc2d3da482bfe85238700908aa563674756c4f31fc/kub-0.1.1.tar.gz
+[2024-05-25 02:44:31] INFO root fetch - processPackages [kub]: executing diffoscope
+[2024-05-25 02:44:31] INFO root fetch - processPackages [kub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kub-0.1.0.tar.gz tmp/kub-0.1.1.tar.gz --markdown 20240525/k/kub/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 02:44:31] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/41/77/0b6f3a7653d3e0f225c1a4b58531ce13702093a66d1637fc446e8a6b0ea5/tfds-nightly-4.9.4.dev202405240044.tar.gz
+[2024-05-25 02:44:31] INFO root fetch - processPackages [kub]: Remove: archive file [/home/abi/fetcher/tmp/kub-0.1.0.tar.gz]
+[2024-05-25 02:44:31] INFO root fetch - processPackages [kub]: Remove: archive file [/home/abi/fetcher/tmp/kub-0.1.1.tar.gz]
+[2024-05-25 02:44:31] INFO root fetch - main [MainThread]: End processing [kub]: success
+[2024-05-25 02:44:31] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-25 02:44:31] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405230936.tar.gz tmp/tfds-nightly-4.9.4.dev202405240044.tar.gz --markdown 20240525/t/tfds-nightly/4.9.4.dev202405230936-4.9.4.dev202405240044/README.md --exclude *.pyd
+[2024-05-25 02:44:40] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405230936.tar.gz]
+[2024-05-25 02:44:40] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405240044.tar.gz]
+[2024-05-25 02:44:40] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-25 02:44:40] INFO root fetch - main [MainThread]: Store serial: [23369688]
