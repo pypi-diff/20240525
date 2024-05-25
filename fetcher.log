@@ -18057,3 +18057,27 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:05:40] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.409-cp311-cp311-macosx_10_9_universal2.whl.zip]
 [2024-05-25 17:05:40] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 17:05:40] INFO root fetch - main [MainThread]: Store serial: [23375935]
+[2024-05-25 17:07:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375935]
+[2024-05-25 17:07:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 17:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jccorte20-de-toolkit
+[2024-05-25 17:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipex-llm
+[2024-05-25 17:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trulens-eval
+[2024-05-25 17:07:50] INFO root fetch - processPackages [trulens-eval]: New version: [0.9.0a0] Old Version: [0.9.0]
+[2024-05-25 17:07:50] INFO root fetch - processPackages [trulens-eval]: Downloading https://files.pythonhosted.org/packages/6e/d8/00eb7c4751596e2673464e891416e900ec381133fbc7ddb44450a74fe1ae/trulens_eval-0.9.0-py3-none-any.whl
+[2024-05-25 17:07:50] WARNING root fetch - processPackages [jccorte20-de-toolkit]: Skipping, unable to determine old version
+[2024-05-25 17:07:50] INFO root fetch - main [MainThread]: End processing [jccorte20-de-toolkit] error
+[2024-05-25 17:07:50] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240525] Old Version: [2.1.0b20240524]
+[2024-05-25 17:07:50] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/91/7f/30bc12c167095a051b8d9b494bd46d61d015c26a309b6fc9703b63629b5d/ipex_llm-2.1.0b20240524-py3-none-win_amd64.whl
+[2024-05-25 17:07:50] INFO root fetch - processPackages [trulens-eval]: Downloading https://files.pythonhosted.org/packages/34/9e/54351cb2f09d6382b7f8c34fd89268bd601c767cc92ed6165e8cc4563812/trulens_eval-0.9.0a0-py3-none-any.whl
+[2024-05-25 17:07:50] INFO root fetch - processPackages [trulens-eval]: executing diffoscope
+[2024-05-25 17:07:50] INFO root fetch - processPackages [trulens-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trulens_eval-0.9.0-py3-none-any.whl.zip tmp/trulens_eval-0.9.0a0-py3-none-any.whl.zip --markdown 20240525/t/trulens-eval/0.9.0-0.9.0a0/README.md --exclude *.pyd
+[2024-05-25 17:07:50] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/c9/75/d2432acc6c866cfce303a14ccefa4eb0205d0f8600393533e9786d4f5450/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl
+[2024-05-25 17:07:51] INFO root fetch - processPackages [trulens-eval]: Remove: archive file [/home/abi/fetcher/tmp/trulens_eval-0.9.0-py3-none-any.whl.zip]
+[2024-05-25 17:07:51] INFO root fetch - processPackages [trulens-eval]: Remove: archive file [/home/abi/fetcher/tmp/trulens_eval-0.9.0a0-py3-none-any.whl.zip]
+[2024-05-25 17:07:51] INFO root fetch - main [MainThread]: End processing [trulens-eval]: success
+[2024-05-25 17:07:51] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-25 17:07:51] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240524-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl.zip --markdown 20240525/i/ipex-llm/2.1.0b20240524-2.1.0b20240525/README.md --exclude *.pyd
+[2024-05-25 17:08:18] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240524-py3-none-win_amd64.whl.zip]
+[2024-05-25 17:08:18] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240525-py3-none-win_amd64.whl.zip]
+[2024-05-25 17:08:18] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-25 17:08:18] INFO root fetch - main [MainThread]: Store serial: [23375953]
