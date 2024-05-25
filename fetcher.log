@@ -19107,3 +19107,9 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:18:20] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.9.tar.gz]
 [2024-05-25 18:18:20] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2024-05-25 18:18:20] INFO root fetch - main [MainThread]: Store serial: [23376416]
+[2024-05-25 18:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376416]
+[2024-05-25 18:20:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 18:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-cefran
+[2024-05-25 18:20:29] WARNING root fetch - processPackages [django-cefran]: Skipping, unable to determine old version
+[2024-05-25 18:20:29] INFO root fetch - main [MainThread]: End processing [django-cefran] error
+[2024-05-25 18:20:29] INFO root fetch - main [MainThread]: Store serial: [23376421]
