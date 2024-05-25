@@ -15654,3 +15654,51 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:06:40] INFO root fetch - processPackages [pygameextra]: Remove: archive file [/home/abi/fetcher/tmp/pygameextra-2.0.0rc1.tar.gz]
 [2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [pygameextra]: success
 [2024-05-25 15:06:40] INFO root fetch - main [MainThread]: Store serial: [23374963]
+[2024-05-25 15:08:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374963]
+[2024-05-25 15:08:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 15:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edurpa-cloud
+[2024-05-25 15:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xcompact3d-toolbox
+[2024-05-25 15:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fucktop
+[2024-05-25 15:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LWTools
+[2024-05-25 15:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bot-managers
+[2024-05-25 15:08:49] INFO root fetch - processPackages [fucktop]: New version: [3.0.0] Old Version: [2.0.0]
+[2024-05-25 15:08:49] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:08:49] INFO root fetch - processPackages [edurpa-cloud]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 15:08:49] INFO root fetch - processPackages [xcompact3d-toolbox]: New version: [1.2.0rc1] Old Version: [1.2.0rc0]
+[2024-05-25 15:08:49] INFO root fetch - processPackages [fucktop]: Downloading https://files.pythonhosted.org/packages/a4/af/cc3e6b2c29ed9c1581d79573efd7a7f35642af6d3dad05ee8f85ac8c1440/fucktop-2.0.0.tar.gz
+[2024-05-25 15:08:49] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:08:49] INFO root fetch - processPackages [LWTools]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 15:08:49] INFO root fetch - processPackages [edurpa-cloud]: Downloading https://files.pythonhosted.org/packages/a2/64/1370285c5bfded39f0d246901269a9c620cd02a12775ca520cd35c10a29a/edurpa_cloud-0.0.1-py3-none-any.whl
+[2024-05-25 15:08:49] INFO root fetch - processPackages [xcompact3d-toolbox]: Downloading https://files.pythonhosted.org/packages/36/18/4f6f007a8758abfa0ad45e4a5e510e55d91ce03f73e064f4ae4d363e3a93/xcompact3d_toolbox-1.2.0rc0.tar.gz
+[2024-05-25 15:08:49] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:08:49] INFO root fetch - processPackages [LWTools]: Downloading https://files.pythonhosted.org/packages/c6/28/10724b14295e129f00cfe16407a7f29035e8f35bde9ebec98a83f155c652/LWTools-1.1.1.tar.gz
+[2024-05-25 15:08:49] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:08:49] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:08:49] INFO root fetch - processPackages [fucktop]: Downloading https://files.pythonhosted.org/packages/8c/8d/bbb64ea2a2a9963696a54ae9e516687e8cdf865505be7e8ee0f791e6d116/fucktop-3.0.0.tar.gz
+[2024-05-25 15:08:49] INFO root fetch - processPackages [edurpa-cloud]: Downloading https://files.pythonhosted.org/packages/4c/38/7706817cfaca99a4f5ed96836beb4b7c52dd93d9ecd2e709ac1fff70c74d/edurpa_cloud-0.0.2-py3-none-any.whl
+[2024-05-25 15:08:49] INFO root fetch - processPackages [fucktop]: executing diffoscope
+[2024-05-25 15:08:49] INFO root fetch - processPackages [fucktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fucktop-2.0.0.tar.gz tmp/fucktop-3.0.0.tar.gz --markdown 20240525/f/fucktop/2.0.0-3.0.0/README.md --exclude *.pyd
+[2024-05-25 15:08:50] INFO root fetch - processPackages [edurpa-cloud]: executing diffoscope
+[2024-05-25 15:08:50] INFO root fetch - processPackages [edurpa-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edurpa_cloud-0.0.1-py3-none-any.whl.zip tmp/edurpa_cloud-0.0.2-py3-none-any.whl.zip --markdown 20240525/e/edurpa-cloud/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 15:08:50] INFO root fetch - processPackages [xcompact3d-toolbox]: Downloading https://files.pythonhosted.org/packages/1b/73/3d764528494c1fac3cc0d745bd0c1917ef14557a7497be777c4d4ac84e4d/xcompact3d_toolbox-1.2.0rc1.tar.gz
+[2024-05-25 15:08:50] INFO root fetch - processPackages [LWTools]: Downloading https://files.pythonhosted.org/packages/32/b2/ae480f27cad16b81d20c368d465bae36196888b7103f758752ac81ddeede/lwtools-1.1.2.tar.gz
+[2024-05-25 15:08:50] INFO root fetch - processPackages [LWTools]: executing diffoscope
+[2024-05-25 15:08:50] INFO root fetch - processPackages [LWTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LWTools-1.1.1.tar.gz tmp/lwtools-1.1.2.tar.gz --markdown 20240525/L/LWTools/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 15:08:50] INFO root fetch - processPackages [xcompact3d-toolbox]: executing diffoscope
+[2024-05-25 15:08:50] INFO root fetch - processPackages [xcompact3d-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcompact3d_toolbox-1.2.0rc0.tar.gz tmp/xcompact3d_toolbox-1.2.0rc1.tar.gz --markdown 20240525/x/xcompact3d-toolbox/1.2.0rc0-1.2.0rc1/README.md --exclude *.pyd
+[2024-05-25 15:08:50] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.998.tar.gz]
+[2024-05-25 15:08:50] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.999.tar.gz]
+[2024-05-25 15:08:50] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:08:50] INFO root fetch - processPackages [fucktop]: Remove: archive file [/home/abi/fetcher/tmp/fucktop-2.0.0.tar.gz]
+[2024-05-25 15:08:50] INFO root fetch - processPackages [fucktop]: Remove: archive file [/home/abi/fetcher/tmp/fucktop-3.0.0.tar.gz]
+[2024-05-25 15:08:50] INFO root fetch - main [MainThread]: End processing [fucktop]: success
+[2024-05-25 15:08:50] INFO root fetch - processPackages [edurpa-cloud]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_cloud-0.0.1-py3-none-any.whl.zip]
+[2024-05-25 15:08:50] INFO root fetch - processPackages [edurpa-cloud]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_cloud-0.0.2-py3-none-any.whl.zip]
+[2024-05-25 15:08:50] INFO root fetch - main [MainThread]: End processing [edurpa-cloud]: success
+[2024-05-25 15:08:51] INFO root fetch - processPackages [LWTools]: Remove: archive file [/home/abi/fetcher/tmp/LWTools-1.1.1.tar.gz]
+[2024-05-25 15:08:51] INFO root fetch - processPackages [LWTools]: Remove: archive file [/home/abi/fetcher/tmp/lwtools-1.1.2.tar.gz]
+[2024-05-25 15:08:51] INFO root fetch - main [MainThread]: End processing [LWTools]: success
+[2024-05-25 15:08:52] INFO root fetch - processPackages [xcompact3d-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/xcompact3d_toolbox-1.2.0rc0.tar.gz]
+[2024-05-25 15:08:52] INFO root fetch - processPackages [xcompact3d-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/xcompact3d_toolbox-1.2.0rc1.tar.gz]
+[2024-05-25 15:08:52] INFO root fetch - main [MainThread]: End processing [xcompact3d-toolbox]: success
+[2024-05-25 15:08:52] INFO root fetch - main [MainThread]: Store serial: [23374976]
