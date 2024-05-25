@@ -21256,3 +21256,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:02:52] INFO root fetch - processPackages [cdo-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/cdo-sdk-python-1.0.99.tar.gz]
 [2024-05-25 21:02:52] INFO root fetch - main [MainThread]: End processing [cdo-sdk-python]: success
 [2024-05-25 21:02:52] INFO root fetch - main [MainThread]: Store serial: [23377317]
+[2024-05-25 21:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377317]
+[2024-05-25 21:05:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 21:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygentic
+[2024-05-25 21:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-25 21:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-postcodes
+[2024-05-25 21:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: emailproxy
+[2024-05-25 21:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: custom-viz-lib
+[2024-05-25 21:05:01] INFO root fetch - processPackages [custom-viz-lib]: New version: [0.2.1] Old Version: [0.1.1]
+[2024-05-25 21:05:01] INFO root fetch - processPackages [django-postcodes]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 21:05:02] INFO root fetch - processPackages [pygentic]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 21:05:02] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 21:05:02] INFO root fetch - processPackages [emailproxy]: New version: [2024.5.25] Old Version: [2024.3.15]
+[2024-05-25 21:05:02] INFO root fetch - processPackages [django-postcodes]: Downloading https://files.pythonhosted.org/packages/38/7c/8511468ef03597052db6a7fa77d5222fe2dae066e674b00be86cb94518a6/django_postcodes-1.0.2.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [custom-viz-lib]: Downloading https://files.pythonhosted.org/packages/dc/be/dd8a0cfb871111648068f1c896b2873d59b538e2be5ef5b8a698a1725b6a/custom_viz_lib-0.1.1.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [pygentic]: Downloading https://files.pythonhosted.org/packages/ae/89/d549c2a028cd91a476f38a1083ebc5678668aa6cc48856354979b2bc5e92/pygentic-0.1.0.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [emailproxy]: Downloading https://files.pythonhosted.org/packages/31/0e/73a61e6d425c249174df0baf47017a3b60bf68c5600c2886b4a6dfa35c6b/emailproxy-2024.3.15.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [django-postcodes]: Downloading https://files.pythonhosted.org/packages/25/10/a95f4db5fe6394b40bca5ad35d4c4335b03e16a5ef5d8fcc5e7f660d75e3/django_postcodes-1.0.3.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [custom-viz-lib]: Downloading https://files.pythonhosted.org/packages/ba/62/5474e556cdf62f87f62ee95dbcd6ffec443d2cde3437ed4aefdbe7a5aa1c/custom_viz_lib-0.2.1.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-25 21:05:02] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240525/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 21:05:02] INFO root fetch - processPackages [pygentic]: Downloading https://files.pythonhosted.org/packages/fe/45/088721cf0ed5021707c6ab15a77148db9f8c29bafbf0ca58dc45c991496a/pygentic-0.1.1.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [django-postcodes]: executing diffoscope
+[2024-05-25 21:05:02] INFO root fetch - processPackages [django-postcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_postcodes-1.0.2.tar.gz tmp/django_postcodes-1.0.3.tar.gz --markdown 20240525/d/django-postcodes/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 21:05:02] INFO root fetch - processPackages [custom-viz-lib]: executing diffoscope
+[2024-05-25 21:05:02] INFO root fetch - processPackages [custom-viz-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_viz_lib-0.1.1.tar.gz tmp/custom_viz_lib-0.2.1.tar.gz --markdown 20240525/c/custom-viz-lib/0.1.1-0.2.1/README.md --exclude *.pyd
+[2024-05-25 21:05:02] INFO root fetch - processPackages [emailproxy]: Downloading https://files.pythonhosted.org/packages/c0/3a/7e97bd2d772b86c4cd990a55c9bf4162728e0387e508e4e93770b442ca5d/emailproxy-2024.5.25.tar.gz
+[2024-05-25 21:05:02] INFO root fetch - processPackages [pygentic]: executing diffoscope
+[2024-05-25 21:05:02] INFO root fetch - processPackages [pygentic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygentic-0.1.0.tar.gz tmp/pygentic-0.1.1.tar.gz --markdown 20240525/p/pygentic/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 21:05:02] INFO root fetch - processPackages [emailproxy]: executing diffoscope
+[2024-05-25 21:05:02] INFO root fetch - processPackages [emailproxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emailproxy-2024.3.15.tar.gz tmp/emailproxy-2024.5.25.tar.gz --markdown 20240525/e/emailproxy/2024.3.15-2024.5.25/README.md --exclude *.pyd
+[2024-05-25 21:05:03] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-25 21:05:03] INFO root fetch - processPackages [custom-viz-lib]: Remove: archive file [/home/abi/fetcher/tmp/custom_viz_lib-0.1.1.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - processPackages [custom-viz-lib]: Remove: archive file [/home/abi/fetcher/tmp/custom_viz_lib-0.2.1.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - main [MainThread]: End processing [custom-viz-lib]: success
+[2024-05-25 21:05:03] INFO root fetch - processPackages [pygentic]: Remove: archive file [/home/abi/fetcher/tmp/pygentic-0.1.0.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - processPackages [pygentic]: Remove: archive file [/home/abi/fetcher/tmp/pygentic-0.1.1.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - main [MainThread]: End processing [pygentic]: success
+[2024-05-25 21:05:03] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.2.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.3.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - main [MainThread]: End processing [django-postcodes]: success
+[2024-05-25 21:05:03] INFO root fetch - processPackages [emailproxy]: Remove: archive file [/home/abi/fetcher/tmp/emailproxy-2024.3.15.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - processPackages [emailproxy]: Remove: archive file [/home/abi/fetcher/tmp/emailproxy-2024.5.25.tar.gz]
+[2024-05-25 21:05:03] INFO root fetch - main [MainThread]: End processing [emailproxy]: success
+[2024-05-25 21:05:03] INFO root fetch - main [MainThread]: Store serial: [23377348]
