@@ -9816,3 +9816,11 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:39:22] INFO root fetch - processPackages [p2d]: Remove: archive file [/home/abi/fetcher/tmp/p2d-0.2.3a2.tar.gz]
 [2024-05-25 08:39:22] INFO root fetch - main [MainThread]: End processing [p2d]: success
 [2024-05-25 08:39:22] INFO root fetch - main [MainThread]: Store serial: [23372588]
+[2024-05-25 08:41:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372588]
+[2024-05-25 08:41:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 08:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: techgram
+[2024-05-25 08:41:31] INFO root fetch - processPackages [techgram]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 08:41:31] INFO root fetch - processPackages [techgram]: Downloading https://files.pythonhosted.org/packages/bb/6a/8f42ce2261917180e04383db934b3337df0e0e91cb53fa81e5c1a25f8e52/techgram-1.0.8-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-25 08:41:31] WARNING root fetch - processPackages [techgram]: Skipping package: exceeds size limit 11235555>=10485760
+[2024-05-25 08:41:31] INFO root fetch - main [MainThread]: End processing [techgram] error
+[2024-05-25 08:41:31] INFO root fetch - main [MainThread]: Store serial: [23372595]
