@@ -17390,3 +17390,15 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 16:23:59] INFO root fetch - processPackages [reddit-tts-bot]: Remove: archive file [/home/abi/fetcher/tmp/reddit_tts_bot-1.0.2.tar.gz]
 [2024-05-25 16:23:59] INFO root fetch - main [MainThread]: End processing [reddit-tts-bot]: success
 [2024-05-25 16:23:59] INFO root fetch - main [MainThread]: Store serial: [23375706]
+[2024-05-25 16:26:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375706]
+[2024-05-25 16:26:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 16:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-05-25 16:26:08] INFO root fetch - processPackages [flatpack]: New version: [3.4.99] Old Version: [3.4.98]
+[2024-05-25 16:26:08] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/cb/39/adcd388eba8071e3318b3a2224e5c96179761da6dbd7cfa96b20311e810f/flatpack-3.4.98.tar.gz
+[2024-05-25 16:26:08] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/20/a694f72cbfa96253cdb38b9f65c7cfd5f3a4fb145d2fe2483132b80dafd4/flatpack-3.4.99.tar.gz
+[2024-05-25 16:26:08] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-25 16:26:08] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.98.tar.gz tmp/flatpack-3.4.99.tar.gz --markdown 20240525/f/flatpack/3.4.98-3.4.99/README.md --exclude *.pyd
+[2024-05-25 16:26:09] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.98.tar.gz]
+[2024-05-25 16:26:09] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.99.tar.gz]
+[2024-05-25 16:26:09] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-25 16:26:09] INFO root fetch - main [MainThread]: Store serial: [23375717]
