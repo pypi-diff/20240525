@@ -11372,3 +11372,41 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:41:16] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev9.tar.gz]
 [2024-05-25 10:41:16] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-25 10:41:16] INFO root fetch - main [MainThread]: Store serial: [23373291]
+[2024-05-25 10:43:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373291]
+[2024-05-25 10:43:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 10:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FishShrimpCrab
+[2024-05-25 10:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nodetool
+[2024-05-25 10:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: burrow-cli
+[2024-05-25 10:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mns-scheduler
+[2024-05-25 10:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autosink-data-preparation
+[2024-05-25 10:43:26] WARNING root fetch - processPackages [FishShrimpCrab]: Skipping, unable to determine old version
+[2024-05-25 10:43:26] INFO root fetch - main [MainThread]: End processing [FishShrimpCrab] error
+[2024-05-25 10:43:26] INFO root fetch - processPackages [autosink-data-preparation]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-25 10:43:26] INFO root fetch - processPackages [burrow-cli]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 10:43:26] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.5.6] Old Version: [1.0.5.5]
+[2024-05-25 10:43:26] INFO root fetch - processPackages [nodetool]: New version: [0.1.30] Old Version: [0.1.29]
+[2024-05-25 10:43:26] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/b5/15/10b7be55b4686d8680a7109b570d1b90eccde57df290f44d7ba49e06ddd3/burrow_cli-0.1.7.tar.gz
+[2024-05-25 10:43:26] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/40/b0/2669384352027a09897f2e3a94107b47e731fe7b793ed21fb3c3eba34426/mns-scheduler-1.0.5.5.tar.gz
+[2024-05-25 10:43:26] INFO root fetch - processPackages [autosink-data-preparation]: Downloading https://files.pythonhosted.org/packages/41/98/668d77363aa0f15565175a81d7a79cbe436a438eb58f4c988688d181222c/autosink_data_preparation-0.1.0.tar.gz
+[2024-05-25 10:43:26] INFO root fetch - processPackages [nodetool]: Downloading https://files.pythonhosted.org/packages/e6/dc/744ce878a538c7d25244e3ad1f5101f71f640e83a998d51d761a248a7bf6/nodetool-0.1.29.tar.gz
+[2024-05-25 10:43:26] WARNING root fetch - processPackages [nodetool]: Skipping package: exceeds size limit 10851497>=10485760
+[2024-05-25 10:43:26] INFO root fetch - main [MainThread]: End processing [nodetool] error
+[2024-05-25 10:43:27] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/62/e4/cd602494d9afe6efac77f078fec06e33adc63778704cdafa0ae3952f3ab8/burrow_cli-0.1.8.tar.gz
+[2024-05-25 10:43:27] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/bc/64/4a8663e68f603933761f5975decab24fe5b105dd9d844443275863b05319/mns-scheduler-1.0.5.6.tar.gz
+[2024-05-25 10:43:27] INFO root fetch - processPackages [autosink-data-preparation]: Downloading https://files.pythonhosted.org/packages/45/18/e089d58a6819d3cd3a3a4637352c024e78169ee8d20bbf91f4109f6aeefc/autosink_data_preparation-0.2.0.tar.gz
+[2024-05-25 10:43:27] INFO root fetch - processPackages [burrow-cli]: executing diffoscope
+[2024-05-25 10:43:27] INFO root fetch - processPackages [burrow-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burrow_cli-0.1.7.tar.gz tmp/burrow_cli-0.1.8.tar.gz --markdown 20240525/b/burrow-cli/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 10:43:27] INFO root fetch - processPackages [autosink-data-preparation]: executing diffoscope
+[2024-05-25 10:43:27] INFO root fetch - processPackages [autosink-data-preparation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosink_data_preparation-0.1.0.tar.gz tmp/autosink_data_preparation-0.2.0.tar.gz --markdown 20240525/a/autosink-data-preparation/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-25 10:43:27] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-05-25 10:43:27] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.5.5.tar.gz tmp/mns-scheduler-1.0.5.6.tar.gz --markdown 20240525/m/mns-scheduler/1.0.5.5-1.0.5.6/README.md --exclude *.pyd
+[2024-05-25 10:43:27] INFO root fetch - processPackages [autosink-data-preparation]: Remove: archive file [/home/abi/fetcher/tmp/autosink_data_preparation-0.1.0.tar.gz]
+[2024-05-25 10:43:27] INFO root fetch - processPackages [autosink-data-preparation]: Remove: archive file [/home/abi/fetcher/tmp/autosink_data_preparation-0.2.0.tar.gz]
+[2024-05-25 10:43:27] INFO root fetch - main [MainThread]: End processing [autosink-data-preparation]: success
+[2024-05-25 10:43:27] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.7.tar.gz]
+[2024-05-25 10:43:27] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.8.tar.gz]
+[2024-05-25 10:43:27] INFO root fetch - main [MainThread]: End processing [burrow-cli]: success
+[2024-05-25 10:43:27] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.5.tar.gz]
+[2024-05-25 10:43:27] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.5.6.tar.gz]
+[2024-05-25 10:43:27] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-05-25 10:43:27] INFO root fetch - main [MainThread]: Store serial: [23373306]
