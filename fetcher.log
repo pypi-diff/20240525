@@ -13421,3 +13421,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:14:32] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-05-25 13:14:32] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-05-25 13:14:32] INFO root fetch - main [MainThread]: Store serial: [23374287]
+[2024-05-25 13:16:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374287]
+[2024-05-25 13:16:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 13:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-admin-console
+[2024-05-25 13:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyQuadriFlow
+[2024-05-25 13:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrader-sdk
+[2024-05-25 13:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mcqq-tool
+[2024-05-25 13:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-authrespond
+[2024-05-25 13:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: watchgha
+[2024-05-25 13:16:41] WARNING root fetch - processPackages [django-admin-console]: Skipping, unable to determine old version
+[2024-05-25 13:16:41] INFO root fetch - main [MainThread]: End processing [django-admin-console] error
+[2024-05-25 13:16:41] WARNING root fetch - processPackages [ctrader-sdk]: Skipping, unable to determine old version
+[2024-05-25 13:16:41] INFO root fetch - main [MainThread]: End processing [ctrader-sdk] error
+[2024-05-25 13:16:41] WARNING root fetch - processPackages [pyQuadriFlow]: Skipping, unable to determine old version
+[2024-05-25 13:16:41] INFO root fetch - main [MainThread]: End processing [pyQuadriFlow] error
+[2024-05-25 13:16:41] INFO root fetch - processPackages [mcqq-tool]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-05-25 13:16:41] INFO root fetch - processPackages [nonebot-plugin-authrespond]: New version: [1.6.1] Old Version: [1.6]
+[2024-05-25 13:16:41] INFO root fetch - processPackages [watchgha]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-25 13:16:41] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Downloading https://files.pythonhosted.org/packages/a3/8e/233a6b908609763b0e79ac21b039347f59ef695973fa416aac9daf337bb8/nonebot_plugin_authrespond-1.6.tar.gz
+[2024-05-25 13:16:41] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/59/07/1ebb32849902d158bc187a4ccf004be752a0534e8ae55eb29e27c778ac30/mcqq_tool-1.1.9.tar.gz
+[2024-05-25 13:16:41] INFO root fetch - processPackages [watchgha]: Downloading https://files.pythonhosted.org/packages/11/12/2f326f24eca1ef759a62f3a0fccba378d7e8139d768bd11566b90a840e9c/watchgha-2.3.0.tar.gz
+[2024-05-25 13:16:41] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Downloading https://files.pythonhosted.org/packages/e8/72/ce27ee4b09e56c7e57ecd50e2c1730ee460b147f133bc6050e9851749ee0/nonebot_plugin_authrespond-1.6.1.tar.gz
+[2024-05-25 13:16:41] INFO root fetch - processPackages [mcqq-tool]: Downloading https://files.pythonhosted.org/packages/c8/51/8481b9f8a86a369986f4b742c3965999b2936f08108a0f2ca5ab76065c04/mcqq_tool-1.2.0.tar.gz
+[2024-05-25 13:16:41] INFO root fetch - processPackages [nonebot-plugin-authrespond]: executing diffoscope
+[2024-05-25 13:16:41] INFO root fetch - processPackages [nonebot-plugin-authrespond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_authrespond-1.6.tar.gz tmp/nonebot_plugin_authrespond-1.6.1.tar.gz --markdown 20240525/n/nonebot-plugin-authrespond/1.6-1.6.1/README.md --exclude *.pyd
+[2024-05-25 13:16:42] INFO root fetch - processPackages [mcqq-tool]: executing diffoscope
+[2024-05-25 13:16:42] INFO root fetch - processPackages [mcqq-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcqq_tool-1.1.9.tar.gz tmp/mcqq_tool-1.2.0.tar.gz --markdown 20240525/m/mcqq-tool/1.1.9-1.2.0/README.md --exclude *.pyd
+[2024-05-25 13:16:42] INFO root fetch - processPackages [watchgha]: Downloading https://files.pythonhosted.org/packages/0c/ff/0e5216329139622f59719574336a3ba833cd7e6cd327c966da2ec046aafa/watchgha-2.3.1.tar.gz
+[2024-05-25 13:16:42] INFO root fetch - processPackages [watchgha]: executing diffoscope
+[2024-05-25 13:16:42] INFO root fetch - processPackages [watchgha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchgha-2.3.0.tar.gz tmp/watchgha-2.3.1.tar.gz --markdown 20240525/w/watchgha/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-25 13:16:42] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_authrespond-1.6.tar.gz]
+[2024-05-25 13:16:42] INFO root fetch - processPackages [nonebot-plugin-authrespond]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_authrespond-1.6.1.tar.gz]
+[2024-05-25 13:16:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-authrespond]: success
+[2024-05-25 13:16:42] INFO root fetch - processPackages [mcqq-tool]: Remove: archive file [/home/abi/fetcher/tmp/mcqq_tool-1.1.9.tar.gz]
+[2024-05-25 13:16:42] INFO root fetch - processPackages [mcqq-tool]: Remove: archive file [/home/abi/fetcher/tmp/mcqq_tool-1.2.0.tar.gz]
+[2024-05-25 13:16:42] INFO root fetch - main [MainThread]: End processing [mcqq-tool]: success
+[2024-05-25 13:16:42] INFO root fetch - processPackages [watchgha]: Remove: archive file [/home/abi/fetcher/tmp/watchgha-2.3.0.tar.gz]
+[2024-05-25 13:16:42] INFO root fetch - processPackages [watchgha]: Remove: archive file [/home/abi/fetcher/tmp/watchgha-2.3.1.tar.gz]
+[2024-05-25 13:16:42] INFO root fetch - main [MainThread]: End processing [watchgha]: success
+[2024-05-25 13:16:42] INFO root fetch - main [MainThread]: Store serial: [23374305]
