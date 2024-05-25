@@ -9978,3 +9978,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:00:58] INFO root fetch - processPackages [dotenvhub]: Remove: archive file [/home/abi/fetcher/tmp/dotenvhub-0.2.0.tar.gz]
 [2024-05-25 09:00:58] INFO root fetch - main [MainThread]: End processing [dotenvhub]: success
 [2024-05-25 09:00:58] INFO root fetch - main [MainThread]: Store serial: [23372656]
+[2024-05-25 09:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372656]
+[2024-05-25 09:03:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ryry-cli
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: retr0reg-pip-carepackage
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-models-nightly
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seqio-nightly
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ryry-cli]: New version: [2.3] Old Version: [2.2]
+[2024-05-25 09:03:07] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-05-25 09:03:07] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ryry-cli]: Downloading https://files.pythonhosted.org/packages/3c/09/cc41a89fb61fca516ed1a92c5366427fbff7bb9d25c2ae7f313120bf7fc4/ryry_cli-2.2.tar.gz
+[2024-05-25 09:03:07] WARNING root fetch - processPackages [retr0reg-pip-carepackage]: Skipping, unable to determine old version
+[2024-05-25 09:03:07] INFO root fetch - main [MainThread]: End processing [retr0reg-pip-carepackage] error
+[2024-05-25 09:03:07] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-05-25 09:03:07] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-05-25 09:03:07] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ryry-cli]: Downloading https://files.pythonhosted.org/packages/bf/86/87cbeb9858f8dfce36652ed7266b31be1319537054f85af02102e251e52a/ryry_cli-2.3.tar.gz
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ryry-cli]: executing diffoscope
+[2024-05-25 09:03:07] INFO root fetch - processPackages [ryry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryry_cli-2.2.tar.gz tmp/ryry_cli-2.3.tar.gz --markdown 20240525/r/ryry-cli/2.2-2.3/README.md --exclude *.pyd
+[2024-05-25 09:03:07] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-05-25 09:03:07] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240525/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-05-25 09:03:07] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-05-25 09:03:08] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-05-25 09:03:08] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240525/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/README.md --exclude *.pyd
+[2024-05-25 09:03:08] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.2.tar.gz]
+[2024-05-25 09:03:08] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.3.tar.gz]
+[2024-05-25 09:03:08] INFO root fetch - main [MainThread]: End processing [ryry-cli]: success
+[2024-05-25 09:03:08] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-05-25 09:03:08] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-05-25 09:03:08] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-05-25 09:03:11] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-05-25 09:03:11] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-05-25 09:03:11] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-05-25 09:03:11] INFO root fetch - main [MainThread]: Store serial: [23372669]
