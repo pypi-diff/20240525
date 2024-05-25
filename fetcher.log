@@ -19462,3 +19462,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:38:02] INFO root fetch - processPackages [pproject]: Remove: archive file [/home/abi/fetcher/tmp/pproject-0.0.2-py3-none-any.whl.zip]
 [2024-05-25 18:38:02] INFO root fetch - main [MainThread]: End processing [pproject]: success
 [2024-05-25 18:38:02] INFO root fetch - main [MainThread]: Store serial: [23376511]
+[2024-05-25 18:40:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376511]
+[2024-05-25 18:40:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 18:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MaskaAI
+[2024-05-25 18:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fcsfiles
+[2024-05-25 18:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xklb
+[2024-05-25 18:40:12] WARNING root fetch - processPackages [MaskaAI]: Skipping, unable to determine old version
+[2024-05-25 18:40:12] INFO root fetch - main [MainThread]: End processing [MaskaAI] error
+[2024-05-25 18:40:12] INFO root fetch - processPackages [fcsfiles]: New version: [2024.5.24] Old Version: [2023.8.30]
+[2024-05-25 18:40:12] INFO root fetch - processPackages [xklb]: New version: [2.8.9] Old Version: [2.8.7]
+[2024-05-25 18:40:12] INFO root fetch - processPackages [fcsfiles]: Downloading https://files.pythonhosted.org/packages/51/72/da40cda89aebf0f96af61ecd34ee1e788ce17ff4e7de70cd3328ef7af736/fcsfiles-2023.8.30.tar.gz
+[2024-05-25 18:40:12] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/d0/4c/dd8350e7201f303ad86c28ba6e4c3856a9aebf36175bf2091b4f223b9c8c/xklb-2.8.7.tar.gz
+[2024-05-25 18:40:12] INFO root fetch - processPackages [fcsfiles]: Downloading https://files.pythonhosted.org/packages/52/f1/5489df1b20b36a0c7b7b966c94ed0323297684a75e848a3c1e96af3a601d/fcsfiles-2024.5.24.tar.gz
+[2024-05-25 18:40:13] INFO root fetch - processPackages [fcsfiles]: executing diffoscope
+[2024-05-25 18:40:13] INFO root fetch - processPackages [fcsfiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fcsfiles-2023.8.30.tar.gz tmp/fcsfiles-2024.5.24.tar.gz --markdown 20240525/f/fcsfiles/2023.8.30-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 18:40:13] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/79/9c/400b6a77dca189a0e6b267e0a874e85e6bc388a14703931b845294411c06/xklb-2.8.9.tar.gz
+[2024-05-25 18:40:13] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2024-05-25 18:40:13] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-2.8.7.tar.gz tmp/xklb-2.8.9.tar.gz --markdown 20240525/x/xklb/2.8.7-2.8.9/README.md --exclude *.pyd
+[2024-05-25 18:40:13] INFO root fetch - processPackages [fcsfiles]: Remove: archive file [/home/abi/fetcher/tmp/fcsfiles-2023.8.30.tar.gz]
+[2024-05-25 18:40:13] INFO root fetch - processPackages [fcsfiles]: Remove: archive file [/home/abi/fetcher/tmp/fcsfiles-2024.5.24.tar.gz]
+[2024-05-25 18:40:13] INFO root fetch - main [MainThread]: End processing [fcsfiles]: success
+[2024-05-25 18:40:14] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.7.tar.gz]
+[2024-05-25 18:40:14] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.9.tar.gz]
+[2024-05-25 18:40:14] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2024-05-25 18:40:14] INFO root fetch - main [MainThread]: Store serial: [23376522]
