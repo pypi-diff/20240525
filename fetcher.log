@@ -9804,3 +9804,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:37:12] INFO root fetch - processPackages [p2d]: Remove: archive file [/home/abi/fetcher/tmp/p2d-0.2.3a2.tar.gz]
 [2024-05-25 08:37:12] INFO root fetch - main [MainThread]: End processing [p2d]: success
 [2024-05-25 08:37:12] INFO root fetch - main [MainThread]: Store serial: [23372585]
+[2024-05-25 08:39:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372585]
+[2024-05-25 08:39:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 08:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p2d
+[2024-05-25 08:39:21] INFO root fetch - processPackages [p2d]: New version: [0.2.3a2] Old Version: [0.2.3a1]
+[2024-05-25 08:39:21] INFO root fetch - processPackages [p2d]: Downloading https://files.pythonhosted.org/packages/eb/0a/e533fc0319b2f155dc83d9b776f2c40d157d50fe53584fc01c943b97b522/p2d-0.2.3a1.tar.gz
+[2024-05-25 08:39:21] INFO root fetch - processPackages [p2d]: Downloading https://files.pythonhosted.org/packages/ee/b8/7455a8245c71afa787592546704520a2f1348a0c3fdd9b33ba26c89383c1/p2d-0.2.3a2.tar.gz
+[2024-05-25 08:39:22] INFO root fetch - processPackages [p2d]: executing diffoscope
+[2024-05-25 08:39:22] INFO root fetch - processPackages [p2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p2d-0.2.3a1.tar.gz tmp/p2d-0.2.3a2.tar.gz --markdown 20240525/p/p2d/0.2.3a1-0.2.3a2/README.md --exclude *.pyd
+[2024-05-25 08:39:22] INFO root fetch - processPackages [p2d]: Remove: archive file [/home/abi/fetcher/tmp/p2d-0.2.3a1.tar.gz]
+[2024-05-25 08:39:22] INFO root fetch - processPackages [p2d]: Remove: archive file [/home/abi/fetcher/tmp/p2d-0.2.3a2.tar.gz]
+[2024-05-25 08:39:22] INFO root fetch - main [MainThread]: End processing [p2d]: success
+[2024-05-25 08:39:22] INFO root fetch - main [MainThread]: Store serial: [23372588]
