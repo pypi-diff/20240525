@@ -20167,3 +20167,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:26:18] INFO root fetch - processPackages [promptml]: Remove: archive file [/home/abi/fetcher/tmp/promptml-0.6.1.tar.gz]
 [2024-05-25 19:26:18] INFO root fetch - main [MainThread]: End processing [promptml]: success
 [2024-05-25 19:26:18] INFO root fetch - main [MainThread]: Store serial: [23376817]
+[2024-05-25 19:28:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376817]
+[2024-05-25 19:28:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 19:28:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agency-swarm
+[2024-05-25 19:28:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ultralytics
+[2024-05-25 19:28:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qdafile
+[2024-05-25 19:28:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Clipy-Chat
+[2024-05-25 19:28:28] INFO root fetch - processPackages [agency-swarm]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 19:28:28] INFO root fetch - processPackages [ultralytics]: New version: [8.2.9] Old Version: [8.2.8]
+[2024-05-25 19:28:28] INFO root fetch - processPackages [Clipy-Chat]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-25 19:28:28] INFO root fetch - processPackages [qdafile]: New version: [2024.5.24] Old Version: [2022.9.28]
+[2024-05-25 19:28:28] INFO root fetch - processPackages [agency-swarm]: Downloading https://files.pythonhosted.org/packages/f1/34/ebae563bdacb5dab70e87a610b73509ebec35333df0d0b15b92b377eb038/agency_swarm-0.2.1.tar.gz
+[2024-05-25 19:28:28] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/2d/1f/773ce923d52559a9246fe5b3e4d86c67714d941216658acdb23bf9d46212/ultralytics-8.2.8.tar.gz
+[2024-05-25 19:28:28] INFO root fetch - processPackages [Clipy-Chat]: Downloading https://files.pythonhosted.org/packages/56/7e/427640f49b6432a9e5af205ed785b071fcebe3db4e8a044d2aa44c383271/Clipy-Chat-1.1.1.tar.gz
+[2024-05-25 19:28:28] INFO root fetch - processPackages [qdafile]: Downloading https://files.pythonhosted.org/packages/e6/ed/a396a4fbdeee3c7779f26757e061d6c41ca4b20eddc78cd629456207693b/qdafile-2022.9.28.tar.gz
+[2024-05-25 19:28:29] INFO root fetch - processPackages [agency-swarm]: Downloading https://files.pythonhosted.org/packages/42/2a/ed7111b4b72011b1d5c635ac7fef00be18690ef77964ff9635320038bceb/agency_swarm-0.2.2.tar.gz
+[2024-05-25 19:28:29] INFO root fetch - processPackages [Clipy-Chat]: Downloading https://files.pythonhosted.org/packages/27/bd/25806ae19b2f3536e7022ad35fb330e758e2fa7c2f1e2687aa46aae76891/Clipy-Chat-1.1.2.tar.gz
+[2024-05-25 19:28:29] INFO root fetch - processPackages [qdafile]: Downloading https://files.pythonhosted.org/packages/05/7b/258102c2b9444e28a5a15db5d7244371f4fb0fd86a90c0968439fda93130/qdafile-2024.5.24.tar.gz
+[2024-05-25 19:28:29] INFO root fetch - processPackages [agency-swarm]: executing diffoscope
+[2024-05-25 19:28:29] INFO root fetch - processPackages [agency-swarm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agency_swarm-0.2.1.tar.gz tmp/agency_swarm-0.2.2.tar.gz --markdown 20240525/a/agency-swarm/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 19:28:29] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/17/6e/89a05ffed4bbaae94368f45323ff75db71965c94c1259457ef61dc551645/ultralytics-8.2.9.tar.gz
+[2024-05-25 19:28:29] INFO root fetch - processPackages [Clipy-Chat]: executing diffoscope
+[2024-05-25 19:28:29] INFO root fetch - processPackages [Clipy-Chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Clipy-Chat-1.1.1.tar.gz tmp/Clipy-Chat-1.1.2.tar.gz --markdown 20240525/C/Clipy-Chat/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-25 19:28:29] INFO root fetch - processPackages [qdafile]: executing diffoscope
+[2024-05-25 19:28:29] INFO root fetch - processPackages [qdafile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdafile-2022.9.28.tar.gz tmp/qdafile-2024.5.24.tar.gz --markdown 20240525/q/qdafile/2022.9.28-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 19:28:29] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2024-05-25 19:28:29] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.2.8.tar.gz tmp/ultralytics-8.2.9.tar.gz --markdown 20240525/u/ultralytics/8.2.8-8.2.9/README.md --exclude *.pyd
+[2024-05-25 19:28:29] INFO root fetch - processPackages [Clipy-Chat]: Remove: archive file [/home/abi/fetcher/tmp/Clipy-Chat-1.1.1.tar.gz]
+[2024-05-25 19:28:29] INFO root fetch - processPackages [Clipy-Chat]: Remove: archive file [/home/abi/fetcher/tmp/Clipy-Chat-1.1.2.tar.gz]
+[2024-05-25 19:28:29] INFO root fetch - main [MainThread]: End processing [Clipy-Chat]: success
+[2024-05-25 19:28:29] INFO root fetch - processPackages [qdafile]: Remove: archive file [/home/abi/fetcher/tmp/qdafile-2022.9.28.tar.gz]
+[2024-05-25 19:28:29] INFO root fetch - processPackages [qdafile]: Remove: archive file [/home/abi/fetcher/tmp/qdafile-2024.5.24.tar.gz]
+[2024-05-25 19:28:29] INFO root fetch - main [MainThread]: End processing [qdafile]: success
+[2024-05-25 19:28:30] INFO root fetch - processPackages [agency-swarm]: Remove: archive file [/home/abi/fetcher/tmp/agency_swarm-0.2.1.tar.gz]
+[2024-05-25 19:28:30] INFO root fetch - processPackages [agency-swarm]: Remove: archive file [/home/abi/fetcher/tmp/agency_swarm-0.2.2.tar.gz]
+[2024-05-25 19:28:30] INFO root fetch - main [MainThread]: End processing [agency-swarm]: success
+[2024-05-25 19:28:30] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.8.tar.gz]
+[2024-05-25 19:28:30] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.9.tar.gz]
+[2024-05-25 19:28:30] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2024-05-25 19:28:30] INFO root fetch - main [MainThread]: Store serial: [23376830]
