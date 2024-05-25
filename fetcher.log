@@ -8176,3 +8176,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:02:42] WARNING root fetch - processPackages [simian3d]: Skipping, unable to determine old version
 [2024-05-25 06:02:42] INFO root fetch - main [MainThread]: End processing [simian3d] error
 [2024-05-25 06:02:42] INFO root fetch - main [MainThread]: Store serial: [23371834]
+[2024-05-25 06:04:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371834]
+[2024-05-25 06:04:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 06:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vix-utils
+[2024-05-25 06:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cleanPyData
+[2024-05-25 06:04:51] WARNING root fetch - processPackages [cleanPyData]: Skipping, unable to determine old version
+[2024-05-25 06:04:51] INFO root fetch - main [MainThread]: End processing [cleanPyData] error
+[2024-05-25 06:04:51] INFO root fetch - processPackages [vix-utils]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 06:04:51] INFO root fetch - processPackages [vix-utils]: Downloading https://files.pythonhosted.org/packages/b9/7f/5425c945e7057a9769c3a305ab222af6038a2711afd2e71a8b8c20df4b61/vix_utils-0.1.6.tar.gz
+[2024-05-25 06:04:52] INFO root fetch - processPackages [vix-utils]: Downloading https://files.pythonhosted.org/packages/24/ca/fa16a8f9a132c2be0a7162536587560964f7d564d5b4c3b069a9bde58add/vix_utils-0.1.7.tar.gz
+[2024-05-25 06:04:52] INFO root fetch - processPackages [vix-utils]: executing diffoscope
+[2024-05-25 06:04:52] INFO root fetch - processPackages [vix-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vix_utils-0.1.6.tar.gz tmp/vix_utils-0.1.7.tar.gz --markdown 20240525/v/vix-utils/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 06:04:53] INFO root fetch - processPackages [vix-utils]: Remove: archive file [/home/abi/fetcher/tmp/vix_utils-0.1.6.tar.gz]
+[2024-05-25 06:04:53] INFO root fetch - processPackages [vix-utils]: Remove: archive file [/home/abi/fetcher/tmp/vix_utils-0.1.7.tar.gz]
+[2024-05-25 06:04:53] INFO root fetch - main [MainThread]: End processing [vix-utils]: success
+[2024-05-25 06:04:53] INFO root fetch - main [MainThread]: Store serial: [23371841]
