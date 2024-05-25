@@ -21840,3 +21840,67 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:44:14] INFO root fetch - processPackages [aioreactive]: Remove: archive file [/home/abi/fetcher/tmp/aioreactive-0.9.0.tar.gz]
 [2024-05-25 21:44:14] INFO root fetch - main [MainThread]: End processing [aioreactive]: success
 [2024-05-25 21:44:14] INFO root fetch - main [MainThread]: Store serial: [23377554]
+[2024-05-25 21:46:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377554]
+[2024-05-25 21:46:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wgconfig
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athena-intelligence
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-postcodes
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gizai
+[2024-05-25 21:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: d2cd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [django-postcodes]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [gizai]: New version: [5.9.1] Old Version: [5.6.1]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [athena-intelligence]: New version: [0.1.64] Old Version: [0.1.63]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [django-postcodes]: Downloading https://files.pythonhosted.org/packages/25/10/a95f4db5fe6394b40bca5ad35d4c4335b03e16a5ef5d8fcc5e7f660d75e3/django_postcodes-1.0.3.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [wgconfig]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [d2cd]: New version: [0.0.3b0] Old Version: [0.0.1a0]
+[2024-05-25 21:46:23] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/01/83/b0110f05b1480d30f378d727382dac2b2e091afab0e8b384fd19699747f7/gizai-5.6.1.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/54/45/40a6837dd0fb3f552fcf7bb2ed9445a09df8c32813cfd26080a7eb10db01/athena_intelligence-0.1.63.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [wgconfig]: Downloading https://files.pythonhosted.org/packages/aa/9f/e408e5c04f7a92cb6de206a64a7bd1d291a611969bca469fed743f38de35/wgconfig-1.0.1.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [gizai]: Downloading https://files.pythonhosted.org/packages/bd/e0/e34a72b06da9054a2c2be6561feb68d8df248f033dea7576bd6df6bb25a9/gizai-5.9.1.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [d2cd]: Downloading https://files.pythonhosted.org/packages/6b/02/8306ce5b4a2e73f9b204e0ccc27fe462a01e123dd93de70d51ec09fc30e1/d2cd-0.0.1a0.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [django-postcodes]: Downloading https://files.pythonhosted.org/packages/b0/8a/fa7311a12800846b51df5491d031c31a3930d8531387f51b43ec9a07e98c/django_postcodes-1.0.4.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [gizai]: executing diffoscope
+[2024-05-25 21:46:23] INFO root fetch - processPackages [gizai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gizai-5.6.1.tar.gz tmp/gizai-5.9.1.tar.gz --markdown 20240525/g/gizai/5.6.1-5.9.1/README.md --exclude *.pyd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/7a/ea/9ed95d1701f888da25d277fe9b4fb6ef37fff8136a4bb2c604624f67edc2/athena_intelligence-0.1.64.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [django-postcodes]: executing diffoscope
+[2024-05-25 21:46:23] INFO root fetch - processPackages [django-postcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_postcodes-1.0.3.tar.gz tmp/django_postcodes-1.0.4.tar.gz --markdown 20240525/d/django-postcodes/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [athena-intelligence]: executing diffoscope
+[2024-05-25 21:46:23] INFO root fetch - processPackages [athena-intelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_intelligence-0.1.63.tar.gz tmp/athena_intelligence-0.1.64.tar.gz --markdown 20240525/a/athena-intelligence/0.1.63-0.1.64/README.md --exclude *.pyd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [wgconfig]: Downloading https://files.pythonhosted.org/packages/64/31/365f4f9f47ff667f7c69ade16a33a3e4e26fabbb2ab3cc69c1f0e9c2e00e/wgconfig-1.0.2.tar.gz
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 21:46:23] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [wgconfig]: executing diffoscope
+[2024-05-25 21:46:23] INFO root fetch - processPackages [wgconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgconfig-1.0.1.tar.gz tmp/wgconfig-1.0.2.tar.gz --markdown 20240525/w/wgconfig/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 21:46:23] INFO root fetch - processPackages [d2cd]: Downloading https://files.pythonhosted.org/packages/15/04/6a7fdb3bd670635766fb085e9884d6c398673e70e0754da7f02a4e314271/d2cd-0.0.3b0.tar.gz
+[2024-05-25 21:46:24] INFO root fetch - processPackages [d2cd]: executing diffoscope
+[2024-05-25 21:46:24] INFO root fetch - processPackages [d2cd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d2cd-0.0.1a0.tar.gz tmp/d2cd-0.0.3b0.tar.gz --markdown 20240525/d/d2cd/0.0.1a0-0.0.3b0/README.md --exclude *.pyd
+[2024-05-25 21:46:24] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.6.1.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - processPackages [gizai]: Remove: archive file [/home/abi/fetcher/tmp/gizai-5.9.1.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - main [MainThread]: End processing [gizai]: success
+[2024-05-25 21:46:24] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.3.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - processPackages [django-postcodes]: Remove: archive file [/home/abi/fetcher/tmp/django_postcodes-1.0.4.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - main [MainThread]: End processing [django-postcodes]: success
+[2024-05-25 21:46:24] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.63.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.64.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - main [MainThread]: End processing [athena-intelligence]: success
+[2024-05-25 21:46:24] INFO root fetch - processPackages [wgconfig]: Remove: archive file [/home/abi/fetcher/tmp/wgconfig-1.0.1.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - processPackages [wgconfig]: Remove: archive file [/home/abi/fetcher/tmp/wgconfig-1.0.2.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - main [MainThread]: End processing [wgconfig]: success
+[2024-05-25 21:46:24] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 21:46:24] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 21:46:24] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 21:46:25] INFO root fetch - processPackages [d2cd]: Remove: archive file [/home/abi/fetcher/tmp/d2cd-0.0.1a0.tar.gz]
+[2024-05-25 21:46:25] INFO root fetch - processPackages [d2cd]: Remove: archive file [/home/abi/fetcher/tmp/d2cd-0.0.3b0.tar.gz]
+[2024-05-25 21:46:25] INFO root fetch - main [MainThread]: End processing [d2cd]: success
+[2024-05-25 21:46:25] INFO root fetch - main [MainThread]: Store serial: [23377572]
