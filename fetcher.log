@@ -2275,3 +2275,63 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:24:46] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/nmodl_nightly-0.6.168-cp39-cp39-macosx_10_15_x86_64.whl.zip]
 [2024-05-25 02:24:46] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
 [2024-05-25 02:24:46] INFO root fetch - main [MainThread]: Store serial: [23369507]
+[2024-05-25 02:26:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369507]
+[2024-05-25 02:26:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-hubspot
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anywidget_test
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-ecs-service-extensions
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama_tools
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Unified-python-sdk
+[2024-05-25 02:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: swag
+[2024-05-25 02:26:55] INFO root fetch - processPackages [swag]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-25 02:26:55] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a99] Old Version: [2.0.1a98]
+[2024-05-25 02:26:55] INFO root fetch - processPackages [Unified-python-sdk]: New version: [0.22.8] Old Version: [0.22.7]
+[2024-05-25 02:26:55] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-25 02:26:55] INFO root fetch - processPackages [llama_tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 02:26:55] WARNING root fetch - processPackages [anywidget_test]: Skipping, unable to determine old version
+[2024-05-25 02:26:55] INFO root fetch - main [MainThread]: End processing [anywidget_test] error
+[2024-05-25 02:26:55] INFO root fetch - processPackages [airbyte-source-hubspot]: New version: [4.2.0] Old Version: [4.1.4]
+[2024-05-25 02:26:55] INFO root fetch - processPackages [swag]: Downloading https://files.pythonhosted.org/packages/09/6f/799e063fdc3fea7a8abde96e8a5a69abb78bc34b1957c230bc6ebc95eb9e/swag-2.0.0.tar.gz
+[2024-05-25 02:26:55] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/c9/ad/d7965da0f34d52de670def31464963b3971de03ac20cddf5eac577722b31/cdk-ecs-service-extensions-2.0.1a98.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/f8/7c/5e5020f81911c0245990544bbc48b3742e3e0a846366ab3c87455f217928/Unified-python-sdk-0.22.7.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [llama_tools]: Downloading https://files.pythonhosted.org/packages/a8/55/43247b59a289e0459a611874224f09597a28f206ece4c888349b83d661bb/llama_tools-0.1.8.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [airbyte-source-hubspot]: Downloading https://files.pythonhosted.org/packages/89/62/1e63657c377712026e150d0a7b636b0148ca33d9f1b03835fb44a8862ba8/airbyte_source_hubspot-4.1.4.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/9c/f7/1a593c4ae0d3c80332cec251caad8f13a27842299475718ad186eea220ba/cdk-ecs-service-extensions-2.0.1a99.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/32/a6/f72a437f394e4be7013e909d461fac60a361f3138d10f790ffc410ed32a8/Unified-python-sdk-0.22.8.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [swag]: Downloading https://files.pythonhosted.org/packages/0d/13/f2c302aa6f84a47ce7026705a8e2a6cbbb973518e0b35092c41d7f7e5d40/swag-2.0.1.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240525/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2024-05-25 02:26:56] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz --markdown 20240525/c/cdk-ecs-service-extensions/2.0.1a98-2.0.1a99/README.md --exclude *.pyd
+[2024-05-25 02:26:56] INFO root fetch - processPackages [Unified-python-sdk]: executing diffoscope
+[2024-05-25 02:26:56] INFO root fetch - processPackages [Unified-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Unified-python-sdk-0.22.7.tar.gz tmp/Unified-python-sdk-0.22.8.tar.gz --markdown 20240525/U/Unified-python-sdk/0.22.7-0.22.8/README.md --exclude *.pyd
+[2024-05-25 02:26:56] INFO root fetch - processPackages [llama_tools]: Downloading https://files.pythonhosted.org/packages/b1/c0/71823f5e8c32246c13f14ee35afae675e0119488af8210d0d305c5d9dc5c/llama_tools-0.1.9.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [swag]: executing diffoscope
+[2024-05-25 02:26:56] INFO root fetch - processPackages [swag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swag-2.0.0.tar.gz tmp/swag-2.0.1.tar.gz --markdown 20240525/s/swag/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-25 02:26:56] INFO root fetch - processPackages [airbyte-source-hubspot]: Downloading https://files.pythonhosted.org/packages/67/47/a14b5a31effeb22ad1246f60acc68234d332c6e9bc959e7a42e11a727448/airbyte_source_hubspot-4.2.0.tar.gz
+[2024-05-25 02:26:56] INFO root fetch - processPackages [llama_tools]: executing diffoscope
+[2024-05-25 02:26:56] INFO root fetch - processPackages [llama_tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_tools-0.1.8.tar.gz tmp/llama_tools-0.1.9.tar.gz --markdown 20240525/l/llama_tools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 02:26:56] INFO root fetch - processPackages [airbyte-source-hubspot]: executing diffoscope
+[2024-05-25 02:26:56] INFO root fetch - processPackages [airbyte-source-hubspot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_hubspot-4.1.4.tar.gz tmp/airbyte_source_hubspot-4.2.0.tar.gz --markdown 20240525/a/airbyte-source-hubspot/4.1.4-4.2.0/README.md --exclude *.pyd
+[2024-05-25 02:26:57] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-25 02:26:57] INFO root fetch - processPackages [swag]: Remove: archive file [/home/abi/fetcher/tmp/swag-2.0.0.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - processPackages [swag]: Remove: archive file [/home/abi/fetcher/tmp/swag-2.0.1.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - main [MainThread]: End processing [swag]: success
+[2024-05-25 02:26:57] INFO root fetch - processPackages [llama_tools]: Remove: archive file [/home/abi/fetcher/tmp/llama_tools-0.1.8.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - processPackages [llama_tools]: Remove: archive file [/home/abi/fetcher/tmp/llama_tools-0.1.9.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - main [MainThread]: End processing [llama_tools]: success
+[2024-05-25 02:26:57] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2024-05-25 02:26:57] INFO root fetch - processPackages [airbyte-source-hubspot]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_hubspot-4.1.4.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - processPackages [airbyte-source-hubspot]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_hubspot-4.2.0.tar.gz]
+[2024-05-25 02:26:57] INFO root fetch - main [MainThread]: End processing [airbyte-source-hubspot]: success
+[2024-05-25 02:26:58] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.7.tar.gz]
+[2024-05-25 02:26:58] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.8.tar.gz]
+[2024-05-25 02:26:58] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
+[2024-05-25 02:26:58] INFO root fetch - main [MainThread]: Store serial: [23369532]
