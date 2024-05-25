@@ -20957,3 +20957,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:32:35] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
 [2024-05-25 20:32:35] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
 [2024-05-25 20:32:35] INFO root fetch - main [MainThread]: Store serial: [23377126]
+[2024-05-25 20:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377126]
+[2024-05-25 20:34:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 20:36:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377126]
+[2024-05-25 20:36:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 20:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchret
+[2024-05-25 20:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xmonkey-curator
+[2024-05-25 20:36:50] INFO root fetch - processPackages [xmonkey-curator]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-05-25 20:36:50] INFO root fetch - processPackages [torchret]: New version: [0.1.0] Old Version: [0.0.7]
+[2024-05-25 20:36:51] INFO root fetch - processPackages [torchret]: Downloading https://files.pythonhosted.org/packages/ef/e4/32a2ba055d851b7acf99a3b13390ca7ad64bc70a29e1e2c8f6f26a037b57/torchret-0.0.7.tar.gz
+[2024-05-25 20:36:51] INFO root fetch - processPackages [xmonkey-curator]: Downloading https://files.pythonhosted.org/packages/83/dc/fe9f051ce536bc7a6658c4a23de86073c4f1217996dd29b0cd9139cfb58d/xmonkey-curator-0.1.7.tar.gz
+[2024-05-25 20:36:51] INFO root fetch - processPackages [torchret]: Downloading https://files.pythonhosted.org/packages/6a/6c/3b867b552b035a3e470915beb3f0e58ce761c952a70824ca6b151e0d3cb0/torchret-0.1.0.tar.gz
+[2024-05-25 20:36:51] INFO root fetch - processPackages [xmonkey-curator]: Downloading https://files.pythonhosted.org/packages/33/2b/6188a251a3a3043369345f1b09ae8664446fdea4a9b4f17e6d17fd80628d/xmonkey-curator-0.1.9.tar.gz
+[2024-05-25 20:36:51] INFO root fetch - processPackages [torchret]: executing diffoscope
+[2024-05-25 20:36:51] INFO root fetch - processPackages [torchret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchret-0.0.7.tar.gz tmp/torchret-0.1.0.tar.gz --markdown 20240525/t/torchret/0.0.7-0.1.0/README.md --exclude *.pyd
+[2024-05-25 20:36:51] INFO root fetch - processPackages [xmonkey-curator]: executing diffoscope
+[2024-05-25 20:36:51] INFO root fetch - processPackages [xmonkey-curator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmonkey-curator-0.1.7.tar.gz tmp/xmonkey-curator-0.1.9.tar.gz --markdown 20240525/x/xmonkey-curator/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-05-25 20:36:52] INFO root fetch - processPackages [torchret]: Remove: archive file [/home/abi/fetcher/tmp/torchret-0.0.7.tar.gz]
+[2024-05-25 20:36:52] INFO root fetch - processPackages [torchret]: Remove: archive file [/home/abi/fetcher/tmp/torchret-0.1.0.tar.gz]
+[2024-05-25 20:36:52] INFO root fetch - main [MainThread]: End processing [torchret]: success
+[2024-05-25 20:36:52] INFO root fetch - processPackages [xmonkey-curator]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey-curator-0.1.7.tar.gz]
+[2024-05-25 20:36:52] INFO root fetch - processPackages [xmonkey-curator]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey-curator-0.1.9.tar.gz]
+[2024-05-25 20:36:52] INFO root fetch - main [MainThread]: End processing [xmonkey-curator]: success
+[2024-05-25 20:36:52] INFO root fetch - main [MainThread]: Store serial: [23377132]
