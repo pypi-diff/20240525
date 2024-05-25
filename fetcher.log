@@ -2747,3 +2747,34 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:55:52] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-05-25 02:55:52] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-05-25 02:55:52] INFO root fetch - main [MainThread]: Store serial: [23369814]
+[2024-05-25 02:57:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369814]
+[2024-05-25 02:58:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 02:58:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qick
+[2024-05-25 02:58:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hddm-s
+[2024-05-25 02:58:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mcemtools
+[2024-05-25 02:58:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nova-framework
+[2024-05-25 02:58:01] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.74]
+[2024-05-25 02:58:01] INFO root fetch - processPackages [nova-framework]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-25 02:58:01] INFO root fetch - processPackages [qick]: New version: [0.2.265] Old Version: [0.2.264]
+[2024-05-25 02:58:01] INFO root fetch - processPackages [mcemtools]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-25 02:58:01] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/11/44/dda313b90d689c3ef6a08a0248f9e18b3fafccba78d8190c43d77d46e246/hddm_s-1.0.74.tar.gz
+[2024-05-25 02:58:01] INFO root fetch - processPackages [qick]: Downloading https://files.pythonhosted.org/packages/7b/b8/37e976a27270d8ada9f5ced3cfd1a44ce3211adb2455e5080947148b575b/qick-0.2.264.tar.gz
+[2024-05-25 02:58:01] INFO root fetch - processPackages [mcemtools]: Downloading https://files.pythonhosted.org/packages/cb/aa/555239e151571536cd77ebc3d016fa10ef6f0f9f4b068344c4dbf7c1cfb6/mcemtools-0.9.3.tar.gz
+[2024-05-25 02:58:01] INFO root fetch - processPackages [nova-framework]: Downloading https://files.pythonhosted.org/packages/5f/40/2b02ea7ad264e2c2e08dc2a42f58378249fcdc0ab05aacf70e9064babf21/nova_framework-0.6.1.tar.gz
+[2024-05-25 02:58:01] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 02:58:01] WARNING root fetch - processPackages [qick]: Skipping package: exceeds size limit 16616908>=10485760
+[2024-05-25 02:58:01] INFO root fetch - main [MainThread]: End processing [qick] error
+[2024-05-25 02:58:01] WARNING root fetch - processPackages [nova-framework]: Skipping package: exceeds size limit 31786566>=10485760
+[2024-05-25 02:58:01] INFO root fetch - main [MainThread]: End processing [nova-framework] error
+[2024-05-25 02:58:01] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 02:58:01] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.74.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.74-1.0.9/README.md --exclude *.pyd
+[2024-05-25 02:58:01] INFO root fetch - processPackages [mcemtools]: Downloading https://files.pythonhosted.org/packages/24/e6/50afd4a01648d2150f7e24cc6ddc00b638a233f1eb26bffafcf82ad79207/mcemtools-0.9.4.tar.gz
+[2024-05-25 02:58:01] INFO root fetch - processPackages [mcemtools]: executing diffoscope
+[2024-05-25 02:58:01] INFO root fetch - processPackages [mcemtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcemtools-0.9.3.tar.gz tmp/mcemtools-0.9.4.tar.gz --markdown 20240525/m/mcemtools/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-25 02:58:02] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.74.tar.gz]
+[2024-05-25 02:58:02] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 02:58:02] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 02:58:02] INFO root fetch - processPackages [mcemtools]: Remove: archive file [/home/abi/fetcher/tmp/mcemtools-0.9.3.tar.gz]
+[2024-05-25 02:58:02] INFO root fetch - processPackages [mcemtools]: Remove: archive file [/home/abi/fetcher/tmp/mcemtools-0.9.4.tar.gz]
+[2024-05-25 02:58:02] INFO root fetch - main [MainThread]: End processing [mcemtools]: success
+[2024-05-25 02:58:02] INFO root fetch - main [MainThread]: Store serial: [23369825]
