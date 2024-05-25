@@ -18456,3 +18456,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:30:12] INFO root fetch - processPackages [blabpy]: Remove: archive file [/home/abi/fetcher/tmp/blabpy-0.9.1.tar.gz]
 [2024-05-25 17:30:12] INFO root fetch - main [MainThread]: End processing [blabpy]: success
 [2024-05-25 17:30:12] INFO root fetch - main [MainThread]: Store serial: [23376104]
+[2024-05-25 17:32:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376104]
+[2024-05-25 17:32:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 17:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djrender
+[2024-05-25 17:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pih-plb-db
+[2024-05-25 17:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moveread-pipelines-dfy
+[2024-05-25 17:32:21] INFO root fetch - processPackages [moveread-pipelines-dfy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 17:32:21] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/72/91/1ddd83530104d3bef4d0ac246e5d5a8306013aefd38bb36f1d9514091b1b/moveread_pipelines_dfy-0.1.6.tar.gz
+[2024-05-25 17:32:21] INFO root fetch - processPackages [pih-plb-db]: New version: [0.20.5] Old Version: [0.20.4]
+[2024-05-25 17:32:21] INFO root fetch - processPackages [djrender]: New version: [0.1b6] Old Version: [0.1b5]
+[2024-05-25 17:32:21] INFO root fetch - processPackages [djrender]: Downloading https://files.pythonhosted.org/packages/7c/8b/0236eb0acaf6e77bd576c6ff42e2ce5eb19b1bf6c0e33f2faa695062e0a4/djrender-0.1b5.tar.gz
+[2024-05-25 17:32:21] INFO root fetch - processPackages [pih-plb-db]: Downloading https://files.pythonhosted.org/packages/d2/c9/1300ebdaaffcdfd7601d2132e3d210d6edb977390e42a73f6f049c59409f/pih-plb_db-0.20.4.tar.gz
+[2024-05-25 17:32:22] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/3d/21/ac0223eed38324f1776c908a6095f3447b1345ec5dbecd81698022a69de6/moveread_pipelines_dfy-0.1.7.tar.gz
+[2024-05-25 17:32:22] INFO root fetch - processPackages [moveread-pipelines-dfy]: executing diffoscope
+[2024-05-25 17:32:22] INFO root fetch - processPackages [moveread-pipelines-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_dfy-0.1.6.tar.gz tmp/moveread_pipelines_dfy-0.1.7.tar.gz --markdown 20240525/m/moveread-pipelines-dfy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 17:32:22] INFO root fetch - processPackages [pih-plb-db]: Downloading https://files.pythonhosted.org/packages/f7/38/73da801a4d5b1c4d57b6f0308d3f9e0f2a6afe0dfb03ec2b2a4533a32769/pih-plb_db-0.20.5.tar.gz
+[2024-05-25 17:32:22] INFO root fetch - processPackages [djrender]: Downloading https://files.pythonhosted.org/packages/46/83/e3895b7a8d5303ca1ce49533a80d4f779c56f74bce7759ed09065c7781d2/djrender-0.1b6.tar.gz
+[2024-05-25 17:32:22] INFO root fetch - processPackages [pih-plb-db]: executing diffoscope
+[2024-05-25 17:32:22] INFO root fetch - processPackages [pih-plb-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pih-plb_db-0.20.4.tar.gz tmp/pih-plb_db-0.20.5.tar.gz --markdown 20240525/p/pih-plb-db/0.20.4-0.20.5/README.md --exclude *.pyd
+[2024-05-25 17:32:22] INFO root fetch - processPackages [djrender]: executing diffoscope
+[2024-05-25 17:32:22] INFO root fetch - processPackages [djrender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djrender-0.1b5.tar.gz tmp/djrender-0.1b6.tar.gz --markdown 20240525/d/djrender/0.1b5-0.1b6/README.md --exclude *.pyd
+[2024-05-25 17:32:22] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.6.tar.gz]
+[2024-05-25 17:32:22] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.7.tar.gz]
+[2024-05-25 17:32:22] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-dfy]: success
+[2024-05-25 17:32:22] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.20.4.tar.gz]
+[2024-05-25 17:32:22] INFO root fetch - processPackages [pih-plb-db]: Remove: archive file [/home/abi/fetcher/tmp/pih-plb_db-0.20.5.tar.gz]
+[2024-05-25 17:32:22] INFO root fetch - main [MainThread]: End processing [pih-plb-db]: success
+[2024-05-25 17:32:22] INFO root fetch - processPackages [djrender]: Remove: archive file [/home/abi/fetcher/tmp/djrender-0.1b5.tar.gz]
+[2024-05-25 17:32:22] INFO root fetch - processPackages [djrender]: Remove: archive file [/home/abi/fetcher/tmp/djrender-0.1b6.tar.gz]
+[2024-05-25 17:32:22] INFO root fetch - main [MainThread]: End processing [djrender]: success
+[2024-05-25 17:32:22] INFO root fetch - main [MainThread]: Store serial: [23376113]
