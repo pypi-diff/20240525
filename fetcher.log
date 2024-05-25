@@ -9440,3 +9440,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:02:29] INFO root fetch - processPackages [csv-identifier]: Remove: archive file [/home/abi/fetcher/tmp/csv_identifier-0.1.1.tar.gz]
 [2024-05-25 08:02:29] INFO root fetch - main [MainThread]: End processing [csv-identifier]: success
 [2024-05-25 08:02:29] INFO root fetch - main [MainThread]: Store serial: [23372411]
+[2024-05-25 08:04:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372411]
+[2024-05-25 08:04:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etypes
+[2024-05-25 08:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: repoqa
+[2024-05-25 08:04:38] INFO root fetch - processPackages [etypes]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 08:04:38] INFO root fetch - processPackages [etypes]: Downloading https://files.pythonhosted.org/packages/7c/8f/f5d291c2072bbfb6d47febc15a568fda2a98fdd5e034376e1a3641bcb1c3/etypes-1.0.0.tar.gz
+[2024-05-25 08:04:38] INFO root fetch - processPackages [repoqa]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 08:04:38] INFO root fetch - processPackages [repoqa]: Downloading https://files.pythonhosted.org/packages/68/9c/fb1447952ba66df70179ab36a62c7a19bb468d5318c54d7e0f579f9b124a/repoqa-0.1.1.tar.gz
+[2024-05-25 08:04:38] INFO root fetch - processPackages [etypes]: Downloading https://files.pythonhosted.org/packages/ab/f9/fed7e564dff50fc8039ae7360d5dbc03c20e0bf9e8a439eb691b80995c3e/etypes-1.0.1.tar.gz
+[2024-05-25 08:04:38] INFO root fetch - processPackages [etypes]: executing diffoscope
+[2024-05-25 08:04:38] INFO root fetch - processPackages [etypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etypes-1.0.0.tar.gz tmp/etypes-1.0.1.tar.gz --markdown 20240525/e/etypes/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 08:04:39] INFO root fetch - processPackages [etypes]: Remove: archive file [/home/abi/fetcher/tmp/etypes-1.0.0.tar.gz]
+[2024-05-25 08:04:39] INFO root fetch - processPackages [etypes]: Remove: archive file [/home/abi/fetcher/tmp/etypes-1.0.1.tar.gz]
+[2024-05-25 08:04:39] INFO root fetch - main [MainThread]: End processing [etypes]: success
+[2024-05-25 08:04:39] INFO root fetch - processPackages [repoqa]: Downloading https://files.pythonhosted.org/packages/13/63/c8154ab5680cdd6d8d56408a57af8e64cb95c6d52dbdf5e19f5866722777/repoqa-0.1.2.tar.gz
+[2024-05-25 08:04:39] INFO root fetch - processPackages [repoqa]: executing diffoscope
+[2024-05-25 08:04:39] INFO root fetch - processPackages [repoqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repoqa-0.1.1.tar.gz tmp/repoqa-0.1.2.tar.gz --markdown 20240525/r/repoqa/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 08:04:40] INFO root fetch - processPackages [repoqa]: Remove: archive file [/home/abi/fetcher/tmp/repoqa-0.1.1.tar.gz]
+[2024-05-25 08:04:40] INFO root fetch - processPackages [repoqa]: Remove: archive file [/home/abi/fetcher/tmp/repoqa-0.1.2.tar.gz]
+[2024-05-25 08:04:40] INFO root fetch - main [MainThread]: End processing [repoqa]: success
+[2024-05-25 08:04:40] INFO root fetch - main [MainThread]: Store serial: [23372418]
