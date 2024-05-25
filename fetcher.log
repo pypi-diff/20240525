@@ -20452,3 +20452,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:46:06] INFO root fetch - processPackages [toolstr]: Remove: archive file [/home/abi/fetcher/tmp/toolstr-0.9.9.tar.gz]
 [2024-05-25 19:46:06] INFO root fetch - main [MainThread]: End processing [toolstr]: success
 [2024-05-25 19:46:06] INFO root fetch - main [MainThread]: Store serial: [23376945]
+[2024-05-25 19:48:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376945]
+[2024-05-25 19:48:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 19:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taichi-breakout-game
+[2024-05-25 19:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbinsta
+[2024-05-25 19:48:15] INFO root fetch - processPackages [vbinsta]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 19:48:15] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/e4/12/934aa6123d105080554dacfee99f6a8a24fe0b5d90298676ce776a5c0592/vbinsta-0.1.5.tar.gz
+[2024-05-25 19:48:15] WARNING root fetch - processPackages [taichi-breakout-game]: Skipping, unable to determine old version
+[2024-05-25 19:48:15] INFO root fetch - main [MainThread]: End processing [taichi-breakout-game] error
+[2024-05-25 19:48:15] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/ba/80/5663cabd63636db186efa665b880317a49123ad0cd606ff16cb94c07c75b/vbinsta-0.1.6.tar.gz
+[2024-05-25 19:48:15] INFO root fetch - processPackages [vbinsta]: executing diffoscope
+[2024-05-25 19:48:15] INFO root fetch - processPackages [vbinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbinsta-0.1.5.tar.gz tmp/vbinsta-0.1.6.tar.gz --markdown 20240525/v/vbinsta/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 19:48:16] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.5.tar.gz]
+[2024-05-25 19:48:16] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.6.tar.gz]
+[2024-05-25 19:48:16] INFO root fetch - main [MainThread]: End processing [vbinsta]: success
+[2024-05-25 19:48:16] INFO root fetch - main [MainThread]: Store serial: [23376952]
