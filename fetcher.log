@@ -14424,3 +14424,30 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:53:20] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.9.4.tar.gz]
 [2024-05-25 14:53:20] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
 [2024-05-25 14:53:20] INFO root fetch - main [MainThread]: Store serial: [23374738]
+[2024-05-25 14:55:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374738]
+[2024-05-25 14:55:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 14:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djpress
+[2024-05-25 14:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fucktop
+[2024-05-25 14:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-25 14:55:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytorr-play
+[2024-05-25 14:55:29] INFO root fetch - processPackages [djpress]: New version: [0.2.1] Old Version: [0.1.2]
+[2024-05-25 14:55:29] WARNING root fetch - processPackages [pytorr-play]: Skipping, unable to determine old version
+[2024-05-25 14:55:29] INFO root fetch - main [MainThread]: End processing [pytorr-play] error
+[2024-05-25 14:55:29] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 14:55:29] WARNING root fetch - processPackages [fucktop]: Skipping, unable to determine old version
+[2024-05-25 14:55:29] INFO root fetch - main [MainThread]: End processing [fucktop] error
+[2024-05-25 14:55:29] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/26/17/845e5db769114abf70103bdcbb2be5fb5ffe3f2e78ceac2f0093f1fb7400/djpress-0.1.2.tar.gz
+[2024-05-25 14:55:29] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-25 14:55:30] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-25 14:55:30] INFO root fetch - processPackages [djpress]: Downloading https://files.pythonhosted.org/packages/46/36/fadfd659f9adf2737e2fbd499408fdd92774fa6308942be4658b254e7c7e/djpress-0.2.1.tar.gz
+[2024-05-25 14:55:30] INFO root fetch - processPackages [djpress]: executing diffoscope
+[2024-05-25 14:55:30] INFO root fetch - processPackages [djpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djpress-0.1.2.tar.gz tmp/djpress-0.2.1.tar.gz --markdown 20240525/d/djpress/0.1.2-0.2.1/README.md --exclude *.pyd
+[2024-05-25 14:55:30] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-25 14:55:30] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240525/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 14:55:30] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.1.2.tar.gz]
+[2024-05-25 14:55:30] INFO root fetch - processPackages [djpress]: Remove: archive file [/home/abi/fetcher/tmp/djpress-0.2.1.tar.gz]
+[2024-05-25 14:55:30] INFO root fetch - main [MainThread]: End processing [djpress]: success
+[2024-05-25 14:55:31] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-25 14:55:31] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-25 14:55:31] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-25 14:55:31] INFO root fetch - main [MainThread]: Store serial: [23374752]
