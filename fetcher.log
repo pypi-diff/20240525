@@ -19373,3 +19373,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:31:25] INFO root fetch - processPackages [proxypool-util]: Remove: archive file [/home/abi/fetcher/tmp/proxypool_util-0.1.4.tar.gz]
 [2024-05-25 18:31:25] INFO root fetch - main [MainThread]: End processing [proxypool-util]: success
 [2024-05-25 18:31:25] INFO root fetch - main [MainThread]: Store serial: [23376479]
+[2024-05-25 18:33:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376479]
+[2024-05-25 18:33:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proxypool-util
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytora
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nicegui-tabulator
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py2app
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ingredient-slicer
+[2024-05-25 18:33:34] INFO root fetch - processPackages [proxypool-util]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 18:33:34] INFO root fetch - processPackages [pypipr]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-25 18:33:34] INFO root fetch - processPackages [proxypool-util]: Downloading https://files.pythonhosted.org/packages/f0/6a/f2e4a109823768eb75dadca31c06566651416a49c01083f363a5267ebdaf/proxypool_util-0.1.3.tar.gz
+[2024-05-25 18:33:34] INFO root fetch - processPackages [nicegui-tabulator]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-25 18:33:34] INFO root fetch - processPackages [pytora]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-25 18:33:34] INFO root fetch - processPackages [ingredient-slicer]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 18:33:34] INFO root fetch - processPackages [py2app]: New version: [0.9] Old Version: [0.8.1]
+[2024-05-25 18:33:34] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/41/8e/296646c6a3d68ecf6c58c3ec52ece636443172c24750f76c7001939e52d3/pypipr-1.0.98.tar.gz
+[2024-05-25 18:33:34] INFO root fetch - processPackages [pytora]: Downloading https://files.pythonhosted.org/packages/41/60/729c8060e954e225315652999af5a61889e0791cca0615e5a415ac43bf47/pytora-0.0.3.tar.gz
+[2024-05-25 18:33:34] INFO root fetch - processPackages [proxypool-util]: Downloading https://files.pythonhosted.org/packages/d9/c4/e762b1b1825ce5623869d721567f537ed4f5f3f691ba5789d28878d62c25/proxypool_util-0.1.4.tar.gz
+[2024-05-25 18:33:34] INFO root fetch - processPackages [nicegui-tabulator]: Downloading https://files.pythonhosted.org/packages/b8/08/8c724b07bb06c0a76ad1bb6e3b1d430ac525a93e2b7cf7e54fc6d2c94538/nicegui_tabulator-0.1.2.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [py2app]: Downloading https://files.pythonhosted.org/packages/ea/dd/af0813b8b308284be0146b382c569d91f4b249f913c331c0a871296fd442/py2app-0.8.1.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/49/d0/c23afc67d1fa03531bbd97cc72ad024e79b8e25678a6a5674d469d19cdf9/pypipr-1.0.99.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [ingredient-slicer]: Downloading https://files.pythonhosted.org/packages/6c/74/c6efdcb6bb1e97773717fdf93b5de66c3c4d2206716514914bcf726de8d6/ingredient_slicer-1.0.2.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [proxypool-util]: executing diffoscope
+[2024-05-25 18:33:35] INFO root fetch - processPackages [proxypool-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxypool_util-0.1.3.tar.gz tmp/proxypool_util-0.1.4.tar.gz --markdown 20240525/p/proxypool-util/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.98.tar.gz tmp/pypipr-1.0.99.tar.gz --markdown 20240525/p/pypipr/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pytora]: Downloading https://files.pythonhosted.org/packages/3a/7b/9f80fd9d636bddd23dab11558538b163b2e6b89ade79cdb30c5150f7671f/pytora-0.0.4.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [nicegui-tabulator]: Downloading https://files.pythonhosted.org/packages/3b/6c/34796a6790beb126b2e452e8bb59f286fda5d4af9499a8aff56e95be883f/nicegui_tabulator-0.1.3.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pytora]: executing diffoscope
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pytora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytora-0.0.3.tar.gz tmp/pytora-0.0.4.tar.gz --markdown 20240525/p/pytora/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-25 18:33:35] INFO root fetch - processPackages [ingredient-slicer]: Downloading https://files.pythonhosted.org/packages/a9/be/b36fc5113b93ff5bb67147dff3c1aca85699f1af896a84e972a25ec43186/ingredient_slicer-1.0.3.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [nicegui-tabulator]: executing diffoscope
+[2024-05-25 18:33:35] INFO root fetch - processPackages [nicegui-tabulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nicegui_tabulator-0.1.2.tar.gz tmp/nicegui_tabulator-0.1.3.tar.gz --markdown 20240525/n/nicegui-tabulator/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-25 18:33:35] INFO root fetch - processPackages [ingredient-slicer]: executing diffoscope
+[2024-05-25 18:33:35] INFO root fetch - processPackages [ingredient-slicer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ingredient_slicer-1.0.2.tar.gz tmp/ingredient_slicer-1.0.3.tar.gz --markdown 20240525/i/ingredient-slicer/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-25 18:33:35] INFO root fetch - processPackages [py2app]: Downloading https://files.pythonhosted.org/packages/9e/e9/c834ca0467781ca54097aaea6756f6a8c156a00818a7dd00d534fe439a2c/py2app-0.9.tar.gz
+[2024-05-25 18:33:35] INFO root fetch - processPackages [proxypool-util]: Remove: archive file [/home/abi/fetcher/tmp/proxypool_util-0.1.3.tar.gz]
+[2024-05-25 18:33:35] INFO root fetch - processPackages [proxypool-util]: Remove: archive file [/home/abi/fetcher/tmp/proxypool_util-0.1.4.tar.gz]
+[2024-05-25 18:33:35] INFO root fetch - main [MainThread]: End processing [proxypool-util]: success
+[2024-05-25 18:33:35] INFO root fetch - processPackages [py2app]: executing diffoscope
+[2024-05-25 18:33:35] INFO root fetch - processPackages [py2app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py2app-0.8.1.tar.gz tmp/py2app-0.9.tar.gz --markdown 20240525/p/py2app/0.8.1-0.9/README.md --exclude *.pyd
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pytora]: Remove: archive file [/home/abi/fetcher/tmp/pytora-0.0.3.tar.gz]
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pytora]: Remove: archive file [/home/abi/fetcher/tmp/pytora-0.0.4.tar.gz]
+[2024-05-25 18:33:35] INFO root fetch - main [MainThread]: End processing [pytora]: success
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.98.tar.gz]
+[2024-05-25 18:33:35] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.99.tar.gz]
+[2024-05-25 18:33:35] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-05-25 18:33:36] INFO root fetch - processPackages [nicegui-tabulator]: Remove: archive file [/home/abi/fetcher/tmp/nicegui_tabulator-0.1.2.tar.gz]
+[2024-05-25 18:33:36] INFO root fetch - processPackages [nicegui-tabulator]: Remove: archive file [/home/abi/fetcher/tmp/nicegui_tabulator-0.1.3.tar.gz]
+[2024-05-25 18:33:36] INFO root fetch - main [MainThread]: End processing [nicegui-tabulator]: success
+[2024-05-25 18:33:36] INFO root fetch - processPackages [ingredient-slicer]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_slicer-1.0.2.tar.gz]
+[2024-05-25 18:33:36] INFO root fetch - processPackages [ingredient-slicer]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_slicer-1.0.3.tar.gz]
+[2024-05-25 18:33:36] INFO root fetch - main [MainThread]: End processing [ingredient-slicer]: success
+[2024-05-25 18:33:39] INFO root fetch - processPackages [py2app]: Remove: archive file [/home/abi/fetcher/tmp/py2app-0.8.1.tar.gz]
+[2024-05-25 18:33:39] INFO root fetch - processPackages [py2app]: Remove: archive file [/home/abi/fetcher/tmp/py2app-0.9.tar.gz]
+[2024-05-25 18:33:39] INFO root fetch - main [MainThread]: End processing [py2app]: success
+[2024-05-25 18:33:39] INFO root fetch - main [MainThread]: Store serial: [23376497]
