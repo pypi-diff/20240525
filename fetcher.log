@@ -18628,3 +18628,36 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:43:20] INFO root fetch - processPackages [AzizKitten]: Remove: archive file [/home/abi/fetcher/tmp/azizkitten-11.1.4.tar.gz]
 [2024-05-25 17:43:20] INFO root fetch - main [MainThread]: End processing [AzizKitten]: success
 [2024-05-25 17:43:20] INFO root fetch - main [MainThread]: Store serial: [23376208]
+[2024-05-25 17:45:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376208]
+[2024-05-25 17:45:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 17:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pandalibs
+[2024-05-25 17:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-pppd
+[2024-05-25 17:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pproject
+[2024-05-25 17:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hybridkf
+[2024-05-25 17:45:29] INFO root fetch - processPackages [python-pppd]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-25 17:45:29] WARNING root fetch - processPackages [pproject]: Skipping, unable to determine old version
+[2024-05-25 17:45:29] INFO root fetch - main [MainThread]: End processing [pproject] error
+[2024-05-25 17:45:29] INFO root fetch - processPackages [hybridkf]: New version: [1.0.41] Old Version: [1.0.4]
+[2024-05-25 17:45:29] INFO root fetch - processPackages [python-pppd]: Downloading https://files.pythonhosted.org/packages/29/20/4576e026b1298871dc033edb1aac318c8ecf6a18ebcb7fc7d3a13942b576/python_pppd-1.0.6.tar.gz
+[2024-05-25 17:45:29] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/5d/34/2dbf47d1eb2d6b84ced3d1e44c29e448735f6706bc2aecdc2e411c8dcfef/hybridkf-1.0.4.tar.gz
+[2024-05-25 17:45:29] INFO root fetch - processPackages [pandalibs]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 17:45:29] INFO root fetch - processPackages [pandalibs]: Downloading https://files.pythonhosted.org/packages/21/a8/21bca100b6139344805f405c78b28aa857303e5d5b75f7b255733848b606/pandalibs-0.1.3.tar.gz
+[2024-05-25 17:45:29] INFO root fetch - processPackages [python-pppd]: Downloading https://files.pythonhosted.org/packages/15/aa/7f1947db0e9f01422d0c8ace64b8db6b6d0959424c914c25b0ceca0e7d91/python_pppd-1.0.7.tar.gz
+[2024-05-25 17:45:29] INFO root fetch - processPackages [python-pppd]: executing diffoscope
+[2024-05-25 17:45:29] INFO root fetch - processPackages [python-pppd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_pppd-1.0.6.tar.gz tmp/python_pppd-1.0.7.tar.gz --markdown 20240525/p/python-pppd/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-25 17:45:29] INFO root fetch - processPackages [hybridkf]: Downloading https://files.pythonhosted.org/packages/eb/ee/e5c4a1773fbb1265406c5271710b23844faa2ffc46c43e4e99b7a9241e95/hybridkf-1.0.41.tar.gz
+[2024-05-25 17:45:29] INFO root fetch - processPackages [hybridkf]: executing diffoscope
+[2024-05-25 17:45:29] INFO root fetch - processPackages [hybridkf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybridkf-1.0.4.tar.gz tmp/hybridkf-1.0.41.tar.gz --markdown 20240525/h/hybridkf/1.0.4-1.0.41/README.md --exclude *.pyd
+[2024-05-25 17:45:29] INFO root fetch - processPackages [pandalibs]: Downloading https://files.pythonhosted.org/packages/17/4c/61d81bbc966c15130b2d82cf5957652825441e45460c078f244dff8b6322/pandalibs-0.1.4.tar.gz
+[2024-05-25 17:45:29] INFO root fetch - processPackages [pandalibs]: executing diffoscope
+[2024-05-25 17:45:29] INFO root fetch - processPackages [pandalibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandalibs-0.1.3.tar.gz tmp/pandalibs-0.1.4.tar.gz --markdown 20240525/p/pandalibs/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 17:45:30] INFO root fetch - processPackages [python-pppd]: Remove: archive file [/home/abi/fetcher/tmp/python_pppd-1.0.6.tar.gz]
+[2024-05-25 17:45:30] INFO root fetch - processPackages [python-pppd]: Remove: archive file [/home/abi/fetcher/tmp/python_pppd-1.0.7.tar.gz]
+[2024-05-25 17:45:30] INFO root fetch - main [MainThread]: End processing [python-pppd]: success
+[2024-05-25 17:45:30] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.4.tar.gz]
+[2024-05-25 17:45:30] INFO root fetch - processPackages [hybridkf]: Remove: archive file [/home/abi/fetcher/tmp/hybridkf-1.0.41.tar.gz]
+[2024-05-25 17:45:30] INFO root fetch - main [MainThread]: End processing [hybridkf]: success
+[2024-05-25 17:45:30] INFO root fetch - processPackages [pandalibs]: Remove: archive file [/home/abi/fetcher/tmp/pandalibs-0.1.3.tar.gz]
+[2024-05-25 17:45:30] INFO root fetch - processPackages [pandalibs]: Remove: archive file [/home/abi/fetcher/tmp/pandalibs-0.1.4.tar.gz]
+[2024-05-25 17:45:30] INFO root fetch - main [MainThread]: End processing [pandalibs]: success
+[2024-05-25 17:45:30] INFO root fetch - main [MainThread]: Store serial: [23376216]
