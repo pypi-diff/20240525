@@ -12892,3 +12892,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:33:03] INFO root fetch - processPackages [jk_smallgraph]: Remove: archive file [/home/abi/fetcher/tmp/jk_smallgraph-0.2024.5.25.tar.gz]
 [2024-05-25 12:33:03] INFO root fetch - main [MainThread]: End processing [jk_smallgraph]: success
 [2024-05-25 12:33:03] INFO root fetch - main [MainThread]: Store serial: [23374060]
+[2024-05-25 12:35:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374060]
+[2024-05-25 12:35:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 12:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ok-script
+[2024-05-25 12:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: picture2pixel
+[2024-05-25 12:35:13] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 12:35:14] INFO root fetch - processPackages [picture2pixel]: New version: [1.0.0] Old Version: [0.2.0]
+[2024-05-25 12:35:14] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-05-25 12:35:14] INFO root fetch - processPackages [picture2pixel]: Downloading https://files.pythonhosted.org/packages/65/27/0af5d5831309686267e6d636c98245614411176c3ff70be2318f5820d5fd/picture2pixel-0.2.0.tar.gz
+[2024-05-25 12:35:14] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-05-25 12:35:14] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-05-25 12:35:14] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240525/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 12:35:14] INFO root fetch - processPackages [picture2pixel]: Downloading https://files.pythonhosted.org/packages/c4/30/36a546f7b4b480f1f8f7a1e921d0c48256a645bb91644f23a4fe006e5ab3/picture2pixel-1.0.0.tar.gz
+[2024-05-25 12:35:14] INFO root fetch - processPackages [picture2pixel]: executing diffoscope
+[2024-05-25 12:35:14] INFO root fetch - processPackages [picture2pixel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picture2pixel-0.2.0.tar.gz tmp/picture2pixel-1.0.0.tar.gz --markdown 20240525/p/picture2pixel/0.2.0-1.0.0/README.md --exclude *.pyd
+[2024-05-25 12:35:15] INFO root fetch - processPackages [picture2pixel]: Remove: archive file [/home/abi/fetcher/tmp/picture2pixel-0.2.0.tar.gz]
+[2024-05-25 12:35:15] INFO root fetch - processPackages [picture2pixel]: Remove: archive file [/home/abi/fetcher/tmp/picture2pixel-1.0.0.tar.gz]
+[2024-05-25 12:35:15] INFO root fetch - main [MainThread]: End processing [picture2pixel]: success
+[2024-05-25 12:35:15] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-05-25 12:35:15] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-05-25 12:35:15] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-05-25 12:35:15] INFO root fetch - main [MainThread]: Store serial: [23374066]
