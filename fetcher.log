@@ -13879,3 +13879,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:00:32] INFO root fetch - processPackages [plover-vipe]: Remove: archive file [/home/abi/fetcher/tmp/plover_vipe-1.0.2.tar.gz]
 [2024-05-25 14:00:32] INFO root fetch - main [MainThread]: End processing [plover-vipe]: success
 [2024-05-25 14:00:32] INFO root fetch - main [MainThread]: Store serial: [23374484]
+[2024-05-25 14:02:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374484]
+[2024-05-25 14:02:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 14:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onboardapis
+[2024-05-25 14:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paper-admin-permission-field
+[2024-05-25 14:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transformapy
+[2024-05-25 14:02:41] INFO root fetch - processPackages [transformapy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-25 14:02:41] INFO root fetch - processPackages [onboardapis]: New version: [2.0.0rc4] Old Version: [2.0.0rc3]
+[2024-05-25 14:02:41] WARNING root fetch - processPackages [paper-admin-permission-field]: Skipping, unable to determine old version
+[2024-05-25 14:02:41] INFO root fetch - main [MainThread]: End processing [paper-admin-permission-field] error
+[2024-05-25 14:02:41] INFO root fetch - processPackages [transformapy]: Downloading https://files.pythonhosted.org/packages/c8/c0/51edcbbd75eeb2425fc55038ae11bad58436ec98457d3531aa5dd729a28f/transformapy-0.0.4.zip
+[2024-05-25 14:02:41] INFO root fetch - processPackages [onboardapis]: Downloading https://files.pythonhosted.org/packages/60/ab/9c96b3411a63ae4ae074beed756e1652c6118b4027c30a7f179d65b670c7/onboardapis-2.0.0rc3.tar.gz
+[2024-05-25 14:02:41] INFO root fetch - processPackages [onboardapis]: Downloading https://files.pythonhosted.org/packages/ae/15/0791d95815448e4b06d4588065180f6e7dd07b24e9d48927bc699d86ac19/onboardapis-2.0.0rc4.tar.gz
+[2024-05-25 14:02:41] INFO root fetch - processPackages [transformapy]: Downloading https://files.pythonhosted.org/packages/2a/ac/6e4ec2ae1ad2d49432c434231ff3b3685cf0c7650bf0ba40d104155241eb/transformapy-0.0.5.zip
+[2024-05-25 14:02:41] INFO root fetch - processPackages [onboardapis]: executing diffoscope
+[2024-05-25 14:02:41] INFO root fetch - processPackages [onboardapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardapis-2.0.0rc3.tar.gz tmp/onboardapis-2.0.0rc4.tar.gz --markdown 20240525/o/onboardapis/2.0.0rc3-2.0.0rc4/README.md --exclude *.pyd
+[2024-05-25 14:02:41] INFO root fetch - processPackages [transformapy]: executing diffoscope
+[2024-05-25 14:02:41] INFO root fetch - processPackages [transformapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformapy-0.0.4.zip tmp/transformapy-0.0.5.zip --markdown 20240525/t/transformapy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-25 14:02:42] INFO root fetch - processPackages [onboardapis]: Remove: archive file [/home/abi/fetcher/tmp/onboardapis-2.0.0rc3.tar.gz]
+[2024-05-25 14:02:42] INFO root fetch - processPackages [onboardapis]: Remove: archive file [/home/abi/fetcher/tmp/onboardapis-2.0.0rc4.tar.gz]
+[2024-05-25 14:02:42] INFO root fetch - main [MainThread]: End processing [onboardapis]: success
+[2024-05-25 14:02:42] INFO root fetch - processPackages [transformapy]: Remove: archive file [/home/abi/fetcher/tmp/transformapy-0.0.4.zip]
+[2024-05-25 14:02:42] INFO root fetch - processPackages [transformapy]: Remove: archive file [/home/abi/fetcher/tmp/transformapy-0.0.5.zip]
+[2024-05-25 14:02:42] INFO root fetch - main [MainThread]: End processing [transformapy]: success
+[2024-05-25 14:02:42] INFO root fetch - main [MainThread]: Store serial: [23374495]
