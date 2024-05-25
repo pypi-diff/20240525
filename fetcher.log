@@ -12016,3 +12016,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:25:05] WARNING root fetch - processPackages [comment-scanner]: Skipping, unable to determine old version
 [2024-05-25 11:25:05] INFO root fetch - main [MainThread]: End processing [comment-scanner] error
 [2024-05-25 11:25:05] INFO root fetch - main [MainThread]: Store serial: [23373580]
+[2024-05-25 11:27:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373580]
+[2024-05-25 11:27:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 11:27:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idlea
+[2024-05-25 11:27:15] INFO root fetch - processPackages [idlea]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-25 11:27:16] INFO root fetch - processPackages [idlea]: Downloading https://files.pythonhosted.org/packages/d4/7e/8df584d2d51f5d02602ebde736771ff7a0222baceffcdbe25a09efb3b56c/idlea-1.2.8.tar.gz
+[2024-05-25 11:27:16] INFO root fetch - processPackages [idlea]: Downloading https://files.pythonhosted.org/packages/88/0e/3980a6064b51625d6c914f5febb128fcc40a4f1889d0a2086185f47fa740/idlea-1.2.9.tar.gz
+[2024-05-25 11:27:16] INFO root fetch - processPackages [idlea]: executing diffoscope
+[2024-05-25 11:27:16] INFO root fetch - processPackages [idlea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idlea-1.2.8.tar.gz tmp/idlea-1.2.9.tar.gz --markdown 20240525/i/idlea/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-25 11:27:17] INFO root fetch - processPackages [idlea]: Remove: archive file [/home/abi/fetcher/tmp/idlea-1.2.8.tar.gz]
+[2024-05-25 11:27:17] INFO root fetch - processPackages [idlea]: Remove: archive file [/home/abi/fetcher/tmp/idlea-1.2.9.tar.gz]
+[2024-05-25 11:27:17] INFO root fetch - main [MainThread]: End processing [idlea]: success
+[2024-05-25 11:27:17] INFO root fetch - main [MainThread]: Store serial: [23373583]
