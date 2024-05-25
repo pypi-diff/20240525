@@ -9211,3 +9211,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:40:50] INFO root fetch - processPackages [pyserde]: Remove: archive file [/home/abi/fetcher/tmp/pyserde-0.9.8.tar.gz]
 [2024-05-25 07:40:50] INFO root fetch - main [MainThread]: End processing [pyserde]: success
 [2024-05-25 07:40:50] INFO root fetch - main [MainThread]: Store serial: [23372299]
+[2024-05-25 07:42:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372299]
+[2024-05-25 07:42:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 07:42:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GMXvg
+[2024-05-25 07:42:59] INFO root fetch - processPackages [GMXvg]: New version: [0.4.8] Old Version: [0.4.6]
+[2024-05-25 07:42:59] INFO root fetch - processPackages [GMXvg]: Downloading https://files.pythonhosted.org/packages/d7/d5/a773e558f281a3432c3691f4892df684564e6e0dc02758728ee54c71320e/GMXvg-0.4.6.tar.gz
+[2024-05-25 07:43:00] INFO root fetch - processPackages [GMXvg]: Downloading https://files.pythonhosted.org/packages/6f/27/1c23777cd49ec4e7930bb0317a49c918804c84c6b75c6a0a02de9c5873af/gmxvg-0.4.8.tar.gz
+[2024-05-25 07:43:00] INFO root fetch - processPackages [GMXvg]: executing diffoscope
+[2024-05-25 07:43:00] INFO root fetch - processPackages [GMXvg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GMXvg-0.4.6.tar.gz tmp/gmxvg-0.4.8.tar.gz --markdown 20240525/G/GMXvg/0.4.6-0.4.8/README.md --exclude *.pyd
+[2024-05-25 07:43:00] INFO root fetch - processPackages [GMXvg]: Remove: archive file [/home/abi/fetcher/tmp/GMXvg-0.4.6.tar.gz]
+[2024-05-25 07:43:00] INFO root fetch - processPackages [GMXvg]: Remove: archive file [/home/abi/fetcher/tmp/gmxvg-0.4.8.tar.gz]
+[2024-05-25 07:43:00] INFO root fetch - main [MainThread]: End processing [GMXvg]: success
+[2024-05-25 07:43:00] INFO root fetch - main [MainThread]: Store serial: [23372302]
