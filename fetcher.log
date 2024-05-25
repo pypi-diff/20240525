@@ -7215,3 +7215,45 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:04:05] INFO root fetch - processPackages [mb-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/mb_pytorch-1.0.5.tar.gz]
 [2024-05-25 04:04:05] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
 [2024-05-25 04:04:05] INFO root fetch - main [MainThread]: Store serial: [23371335]
+[2024-05-25 04:06:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371335]
+[2024-05-25 04:06:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 04:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cleanPyData
+[2024-05-25 04:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: triton-model-analyzer
+[2024-05-25 04:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oresat-olaf
+[2024-05-25 04:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyAibote
+[2024-05-25 04:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mkdocs-ai-summary
+[2024-05-25 04:06:14] WARNING root fetch - processPackages [cleanPyData]: Skipping, unable to determine old version
+[2024-05-25 04:06:14] INFO root fetch - main [MainThread]: End processing [cleanPyData] error
+[2024-05-25 04:06:14] INFO root fetch - processPackages [triton-model-analyzer]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-05-25 04:06:14] INFO root fetch - processPackages [oresat-olaf]: New version: [3.6.1] Old Version: [3.6.0]
+[2024-05-25 04:06:14] INFO root fetch - processPackages [PyAibote]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-25 04:06:14] INFO root fetch - processPackages [mkdocs-ai-summary]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-25 04:06:14] INFO root fetch - processPackages [mkdocs-ai-summary]: Downloading https://files.pythonhosted.org/packages/97/e3/699622371a3109e5eb4fce38479a20324d4cb67828a70c78db417eb10cf4/mkdocs_ai_summary-0.2.2.tar.gz
+[2024-05-25 04:06:14] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/6f/98/6c0184524c74c76364f5747759c0a7acfb4fce4b6c4808689ac7407a3b2c/oresat_olaf-3.6.0.tar.gz
+[2024-05-25 04:06:14] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/f6/fe/935731448582317a1018e28fce0401153a2748bfa7ac5b2b83814b67e6e9/PyAibote-1.4.8.tar.gz
+[2024-05-25 04:06:14] INFO root fetch - processPackages [triton-model-analyzer]: Downloading https://files.pythonhosted.org/packages/e4/95/c1a2235fbea9614bd44d50d85c82baec45d9df35a6940561683723df51c6/triton_model_analyzer-1.8.2-py3-none-manylinux1_x86_64.whl
+[2024-05-25 04:06:14] INFO root fetch - processPackages [mkdocs-ai-summary]: Downloading https://files.pythonhosted.org/packages/42/c7/1933068e6d0a788f1c3a8ff4872ba56bf2ead4924d87d418ce4f5153c0e8/mkdocs_ai_summary-0.2.3.tar.gz
+[2024-05-25 04:06:14] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/ed/45/8ca0acafcf486dbd85e8ec1629144ba85a32c52870321ad4a8f48cde6774/oresat_olaf-3.6.1.tar.gz
+[2024-05-25 04:06:14] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/d4/f4/b2096165ecb4b4f178ad968755680523ba1c214e3a1f2711c346071c6de1/PyAibote-1.4.9.tar.gz
+[2024-05-25 04:06:14] INFO root fetch - processPackages [mkdocs-ai-summary]: executing diffoscope
+[2024-05-25 04:06:14] INFO root fetch - processPackages [mkdocs-ai-summary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_ai_summary-0.2.2.tar.gz tmp/mkdocs_ai_summary-0.2.3.tar.gz --markdown 20240525/m/mkdocs-ai-summary/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-25 04:06:15] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-05-25 04:06:15] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.8.tar.gz tmp/PyAibote-1.4.9.tar.gz --markdown 20240525/P/PyAibote/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-25 04:06:15] INFO root fetch - processPackages [oresat-olaf]: executing diffoscope
+[2024-05-25 04:06:15] INFO root fetch - processPackages [oresat-olaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_olaf-3.6.0.tar.gz tmp/oresat_olaf-3.6.1.tar.gz --markdown 20240525/o/oresat-olaf/3.6.0-3.6.1/README.md --exclude *.pyd
+[2024-05-25 04:06:15] INFO root fetch - processPackages [mkdocs-ai-summary]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_ai_summary-0.2.2.tar.gz]
+[2024-05-25 04:06:15] INFO root fetch - processPackages [mkdocs-ai-summary]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_ai_summary-0.2.3.tar.gz]
+[2024-05-25 04:06:15] INFO root fetch - main [MainThread]: End processing [mkdocs-ai-summary]: success
+[2024-05-25 04:06:15] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.8.tar.gz]
+[2024-05-25 04:06:15] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.9.tar.gz]
+[2024-05-25 04:06:15] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-05-25 04:06:15] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.6.0.tar.gz]
+[2024-05-25 04:06:15] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.6.1.tar.gz]
+[2024-05-25 04:06:15] INFO root fetch - main [MainThread]: End processing [oresat-olaf]: success
+[2024-05-25 04:06:17] INFO root fetch - processPackages [triton-model-analyzer]: Downloading https://files.pythonhosted.org/packages/82/41/75e5ffa380231754a15d5198d358e5dd821ffdf154976cf8ff9a2980408c/triton_model_analyzer-1.9.0-py3-none-manylinux1_x86_64.whl
+[2024-05-25 04:06:18] INFO root fetch - processPackages [triton-model-analyzer]: executing diffoscope
+[2024-05-25 04:06:18] INFO root fetch - processPackages [triton-model-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triton_model_analyzer-1.8.2-py3-none-manylinux1_x86_64.whl.zip tmp/triton_model_analyzer-1.9.0-py3-none-manylinux1_x86_64.whl.zip --markdown 20240525/t/triton-model-analyzer/1.8.2-1.9.0/README.md --exclude *.pyd
+[2024-05-25 04:07:18] INFO root fetch - processPackages [triton-model-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/triton_model_analyzer-1.8.2-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-25 04:07:18] INFO root fetch - processPackages [triton-model-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/triton_model_analyzer-1.9.0-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-25 04:07:18] INFO root fetch - main [MainThread]: End processing [triton-model-analyzer]: success
+[2024-05-25 04:07:18] INFO root fetch - main [MainThread]: Store serial: [23371349]
