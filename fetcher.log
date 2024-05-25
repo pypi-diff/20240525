@@ -20738,3 +20738,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:12:20] INFO root fetch - main [MainThread]: End processing [splines]: success
 [2024-05-25 20:12:20] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-25 20:12:20] INFO root fetch - main [MainThread]: Store serial: [23377046]
+[2024-05-25 20:14:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377046]
+[2024-05-25 20:14:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 20:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pennylane-qrack
+[2024-05-25 20:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: squaredown
+[2024-05-25 20:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: terminaltexteffects
+[2024-05-25 20:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: splitlog
+[2024-05-25 20:14:29] INFO root fetch - processPackages [squaredown]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-05-25 20:14:29] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/a2/63/334227b0639c103737b92689186e8d775659ca79bc54e3d918371d388a34/squaredown-1.6.1.tar.gz
+[2024-05-25 20:14:29] INFO root fetch - processPackages [pennylane-qrack]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-25 20:14:29] INFO root fetch - processPackages [splitlog]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-25 20:14:29] INFO root fetch - processPackages [terminaltexteffects]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-25 20:14:30] INFO root fetch - processPackages [pennylane-qrack]: Downloading https://files.pythonhosted.org/packages/68/8d/ca070d76498079067fec9aca4038e5366a1eda9f961d2a9b6c9e026ea172/pennylane-qrack-0.5.0.tar.gz
+[2024-05-25 20:14:30] INFO root fetch - processPackages [terminaltexteffects]: Downloading https://files.pythonhosted.org/packages/db/eb/7185b1690fc2e1cfe3412bd29c45e35877e8ff29ba9aa3973ce7629e64c2/terminaltexteffects-0.9.2.tar.gz
+[2024-05-25 20:14:30] INFO root fetch - processPackages [splitlog]: Downloading https://files.pythonhosted.org/packages/30/91/03939acdc91a588b8e36681c54e8d90715aeab8d12a6075067c07a4faedf/splitlog-3.0.0.tar.gz
+[2024-05-25 20:14:30] INFO root fetch - processPackages [squaredown]: Downloading https://files.pythonhosted.org/packages/ef/04/16332051a9b30cba84290c4fb423d2b30f0863cdbca37cda3310d3b438b3/squaredown-1.6.2.tar.gz
+[2024-05-25 20:14:30] INFO root fetch - processPackages [squaredown]: executing diffoscope
+[2024-05-25 20:14:30] INFO root fetch - processPackages [squaredown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squaredown-1.6.1.tar.gz tmp/squaredown-1.6.2.tar.gz --markdown 20240525/s/squaredown/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-05-25 20:14:30] INFO root fetch - processPackages [pennylane-qrack]: Downloading https://files.pythonhosted.org/packages/ab/4f/c7b050d5493db22f503efe8a3d471dea0b8c542f5a2d718a985a60e345aa/pennylane_qrack-0.6.0-cp312-cp312-manylinux_2_39_x86_64.whl
+[2024-05-25 20:14:30] INFO root fetch - processPackages [splitlog]: Downloading https://files.pythonhosted.org/packages/51/6c/06a8cd525052c015a16e8e06076ce09925b7a66e833f9b2a23359bdc78a0/splitlog-3.0.1.tar.gz
+[2024-05-25 20:14:30] INFO root fetch - processPackages [terminaltexteffects]: Downloading https://files.pythonhosted.org/packages/b3/41/ceb2c6328836a9312511dc69151be9a778eed96fb23f419b3d6237501876/terminaltexteffects-0.9.3.tar.gz
+[2024-05-25 20:14:30] INFO root fetch - processPackages [splitlog]: executing diffoscope
+[2024-05-25 20:14:30] INFO root fetch - processPackages [splitlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splitlog-3.0.0.tar.gz tmp/splitlog-3.0.1.tar.gz --markdown 20240525/s/splitlog/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-25 20:14:30] INFO root fetch - processPackages [pennylane-qrack]: executing diffoscope
+[2024-05-25 20:14:30] INFO root fetch - processPackages [pennylane-qrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pennylane-qrack-0.5.0.tar.gz tmp/pennylane_qrack-0.6.0-cp312-cp312-manylinux_2_39_x86_64.whl.zip --markdown 20240525/p/pennylane-qrack/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-25 20:14:30] INFO root fetch - processPackages [terminaltexteffects]: executing diffoscope
+[2024-05-25 20:14:30] INFO root fetch - processPackages [terminaltexteffects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminaltexteffects-0.9.2.tar.gz tmp/terminaltexteffects-0.9.3.tar.gz --markdown 20240525/t/terminaltexteffects/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-25 20:14:30] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.6.1.tar.gz]
+[2024-05-25 20:14:30] INFO root fetch - processPackages [squaredown]: Remove: archive file [/home/abi/fetcher/tmp/squaredown-1.6.2.tar.gz]
+[2024-05-25 20:14:30] INFO root fetch - main [MainThread]: End processing [squaredown]: success
+[2024-05-25 20:14:31] INFO root fetch - processPackages [splitlog]: Remove: archive file [/home/abi/fetcher/tmp/splitlog-3.0.0.tar.gz]
+[2024-05-25 20:14:31] INFO root fetch - processPackages [splitlog]: Remove: archive file [/home/abi/fetcher/tmp/splitlog-3.0.1.tar.gz]
+[2024-05-25 20:14:31] INFO root fetch - main [MainThread]: End processing [splitlog]: success
+[2024-05-25 20:14:31] INFO root fetch - processPackages [pennylane-qrack]: Remove: archive file [/home/abi/fetcher/tmp/pennylane-qrack-0.5.0.tar.gz]
+[2024-05-25 20:14:31] INFO root fetch - processPackages [pennylane-qrack]: Remove: archive file [/home/abi/fetcher/tmp/pennylane_qrack-0.6.0-cp312-cp312-manylinux_2_39_x86_64.whl.zip]
+[2024-05-25 20:14:31] INFO root fetch - main [MainThread]: End processing [pennylane-qrack]: success
+[2024-05-25 20:14:31] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.2.tar.gz]
+[2024-05-25 20:14:31] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.3.tar.gz]
+[2024-05-25 20:14:31] INFO root fetch - main [MainThread]: End processing [terminaltexteffects]: success
+[2024-05-25 20:14:31] INFO root fetch - main [MainThread]: Store serial: [23377057]
