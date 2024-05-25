@@ -22056,3 +22056,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:10:05] INFO root fetch - processPackages [talipp]: Remove: archive file [/home/abi/fetcher/tmp/talipp-2.3.0.tar.gz]
 [2024-05-25 22:10:05] INFO root fetch - main [MainThread]: End processing [talipp]: success
 [2024-05-25 22:10:05] INFO root fetch - main [MainThread]: Store serial: [23377665]
+[2024-05-25 22:12:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377665]
+[2024-05-25 22:12:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 22:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discord-react
+[2024-05-25 22:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-05-25 22:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scikit-base
+[2024-05-25 22:12:14] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:12:14] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:12:14] WARNING root fetch - processPackages [discord-react]: Skipping, unable to determine old version
+[2024-05-25 22:12:14] INFO root fetch - main [MainThread]: End processing [discord-react] error
+[2024-05-25 22:12:14] INFO root fetch - processPackages [scikit-base]: New version: [0.8.0] Old Version: [0.7.8]
+[2024-05-25 22:12:14] INFO root fetch - processPackages [scikit-base]: Downloading https://files.pythonhosted.org/packages/64/bc/5e42d74e560b060a33b6cddc0c887c89a3a6ae9deb6f49d095fe5f88ebd7/scikit_base-0.7.8.tar.gz
+[2024-05-25 22:12:14] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:12:14] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:12:14] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:12:14] INFO root fetch - processPackages [scikit-base]: Downloading https://files.pythonhosted.org/packages/60/64/a96c251d024b1954880645744c2249965ba39dc6412261995c73fbb62b80/scikit_base-0.8.0.tar.gz
+[2024-05-25 22:12:14] INFO root fetch - processPackages [scikit-base]: executing diffoscope
+[2024-05-25 22:12:14] INFO root fetch - processPackages [scikit-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_base-0.7.8.tar.gz tmp/scikit_base-0.8.0.tar.gz --markdown 20240525/s/scikit-base/0.7.8-0.8.0/README.md --exclude *.pyd
+[2024-05-25 22:12:15] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:12:15] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:12:15] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:12:15] INFO root fetch - processPackages [scikit-base]: Remove: archive file [/home/abi/fetcher/tmp/scikit_base-0.7.8.tar.gz]
+[2024-05-25 22:12:15] INFO root fetch - processPackages [scikit-base]: Remove: archive file [/home/abi/fetcher/tmp/scikit_base-0.8.0.tar.gz]
+[2024-05-25 22:12:15] INFO root fetch - main [MainThread]: End processing [scikit-base]: success
+[2024-05-25 22:12:15] INFO root fetch - main [MainThread]: Store serial: [23377674]
