@@ -12255,3 +12255,45 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:55:31] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
 [2024-05-25 11:55:31] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
 [2024-05-25 11:55:31] INFO root fetch - main [MainThread]: Store serial: [23373714]
+[2024-05-25 11:57:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373714]
+[2024-05-25 11:57:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-cardvalidator
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-sharedmemory
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-chucknorrisjokes
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-citieslookup
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apiverve-cocktail
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rten-convert
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apiverve-colorconverter
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: propar
+[2024-05-25 11:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: apiverve-colorpalettegenerator
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [apiverve-cardvalidator]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [apiverve-cardvalidator] error
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [apiverve-colorpalettegenerator]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [apiverve-colorpalettegenerator] error
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [apiverve-cocktail]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [apiverve-cocktail] error
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [apiverve-chucknorrisjokes]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [apiverve-chucknorrisjokes] error
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [apiverve-colorconverter]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [apiverve-colorconverter] error
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [apiverve-citieslookup]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [apiverve-citieslookup] error
+[2024-05-25 11:57:42] WARNING root fetch - processPackages [py-sharedmemory]: Skipping, unable to determine old version
+[2024-05-25 11:57:42] INFO root fetch - main [MainThread]: End processing [py-sharedmemory] error
+[2024-05-25 11:57:42] INFO root fetch - processPackages [propar]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 11:57:42] INFO root fetch - processPackages [rten-convert]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 11:57:42] INFO root fetch - processPackages [rten-convert]: Downloading https://files.pythonhosted.org/packages/53/9f/b65d1ef18f52ad141cba9e2a1025fd99db14a8f88309710f94496a5feda6/rten_convert-0.8.0.tar.gz
+[2024-05-25 11:57:42] INFO root fetch - processPackages [propar]: Downloading https://files.pythonhosted.org/packages/10/4c/6aba009f467bf7c8fd34718d1d54e9583b1004094158278380affb484dbd/propar-1.0.1.tar.gz
+[2024-05-25 11:57:42] INFO root fetch - processPackages [rten-convert]: Downloading https://files.pythonhosted.org/packages/7b/f4/c18ad03e17b7345cf8c403b531caa6a1ca1ebdf5ec12fe51a651b452d78a/rten_convert-0.9.0.tar.gz
+[2024-05-25 11:57:42] INFO root fetch - processPackages [propar]: Downloading https://files.pythonhosted.org/packages/bd/75/83ad5bae01cf0c1305c5c9b6db701f9ae116359f67fe799ad5798ed6495e/propar-1.0.2.tar.gz
+[2024-05-25 11:57:42] INFO root fetch - processPackages [rten-convert]: executing diffoscope
+[2024-05-25 11:57:42] INFO root fetch - processPackages [rten-convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rten_convert-0.8.0.tar.gz tmp/rten_convert-0.9.0.tar.gz --markdown 20240525/r/rten-convert/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 11:57:42] INFO root fetch - processPackages [propar]: executing diffoscope
+[2024-05-25 11:57:42] INFO root fetch - processPackages [propar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propar-1.0.1.tar.gz tmp/propar-1.0.2.tar.gz --markdown 20240525/p/propar/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 11:57:43] INFO root fetch - processPackages [rten-convert]: Remove: archive file [/home/abi/fetcher/tmp/rten_convert-0.8.0.tar.gz]
+[2024-05-25 11:57:43] INFO root fetch - processPackages [rten-convert]: Remove: archive file [/home/abi/fetcher/tmp/rten_convert-0.9.0.tar.gz]
+[2024-05-25 11:57:43] INFO root fetch - main [MainThread]: End processing [rten-convert]: success
+[2024-05-25 11:57:43] INFO root fetch - processPackages [propar]: Remove: archive file [/home/abi/fetcher/tmp/propar-1.0.1.tar.gz]
+[2024-05-25 11:57:43] INFO root fetch - processPackages [propar]: Remove: archive file [/home/abi/fetcher/tmp/propar-1.0.2.tar.gz]
+[2024-05-25 11:57:43] INFO root fetch - main [MainThread]: End processing [propar]: success
+[2024-05-25 11:57:43] INFO root fetch - main [MainThread]: Store serial: [23373743]
