@@ -18486,3 +18486,67 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:32:22] INFO root fetch - processPackages [djrender]: Remove: archive file [/home/abi/fetcher/tmp/djrender-0.1b6.tar.gz]
 [2024-05-25 17:32:22] INFO root fetch - main [MainThread]: End processing [djrender]: success
 [2024-05-25 17:32:22] INFO root fetch - main [MainThread]: Store serial: [23376113]
+[2024-05-25 17:34:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376113]
+[2024-05-25 17:34:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybrid-api-id-python
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-dfy
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cybrid-api-organization-python
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cybrid-api-bank-python
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qis
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moveread-dfy
+[2024-05-25 17:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mrgrain.cdk-esbuild
+[2024-05-25 17:34:32] INFO root fetch - processPackages [moveread-dfy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 17:34:32] INFO root fetch - processPackages [moveread-dfy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 17:34:32] INFO root fetch - processPackages [qis]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-25 17:34:32] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-25 17:34:32] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-25 17:34:32] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/ff/92/50e03a6b8317d0ce7ff4ceb6aa2af3fae5fc4901ec76d53efe02ff47ee64/moveread_dfy-0.1.8.tar.gz
+[2024-05-25 17:34:32] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/ff/92/50e03a6b8317d0ce7ff4ceb6aa2af3fae5fc4901ec76d53efe02ff47ee64/moveread_dfy-0.1.8.tar.gz
+[2024-05-25 17:34:32] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: New version: [5.2.0] Old Version: [5.1.0]
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/75/d9/17a583a2d5fccaef7210a11d9f7dc963aab51cd4a5ae5f7983c03291f4bc/cybrid-api-organization-python-0.98.2.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-25 17:34:33] INFO root fetch - processPackages [qis]: Downloading https://files.pythonhosted.org/packages/bd/2c/5c832b4cf644bd5e1a4fa48ceb8daae5e87bd13310f2010ddf6a36e1b12d/qis-2.0.8.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/2d/66/0d5dc17801b737dd53e021a1548eb784ef8520799bdffbae60e088bf723c/cybrid-api-id-python-0.98.2.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/3e/d8/0b3df8fbc36631c29ac81442cd25d197377a6f20593d6fdfb69d9e93d9a3/moveread_dfy-0.1.9.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/3e/d8/0b3df8fbc36631c29ac81442cd25d197377a6f20593d6fdfb69d9e93d9a3/moveread_dfy-0.1.9.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Downloading https://files.pythonhosted.org/packages/86/6e/852676b76e7ad4a113881711df95b7a20e10a9269a428d0b63ea847a0fb6/mrgrain.cdk-esbuild-5.1.0.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/da/dd/e8ea2fc7e8f671e18adae35333d00fdc692f7637860f9e361fba5fe3b85a/cybrid-api-bank-python-0.98.2.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/93/ab/a857018ac26aeaa884608066dbe6bd482e17a4edf88533d3335a3ed2a25c/cybrid-api-organization-python-0.99.0.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/de/07/de389a95ca98f482f653401dbe8342cf8d4930d1efee86d1f28f3c1afcd1/cybrid-api-id-python-0.99.0.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [moveread-dfy]: executing diffoscope
+[2024-05-25 17:34:33] INFO root fetch - processPackages [moveread-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_dfy-0.1.8.tar.gz tmp/moveread_dfy-0.1.9.tar.gz --markdown 20240525/m/moveread-dfy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 17:34:33] INFO root fetch - processPackages [moveread-dfy]: executing diffoscope
+[2024-05-25 17:34:33] INFO root fetch - processPackages [moveread-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_dfy-0.1.8.tar.gz tmp/moveread_dfy-0.1.9.tar.gz --markdown 20240525/m/moveread-dfy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.98.2.tar.gz tmp/cybrid-api-organization-python-0.99.0.tar.gz --markdown 20240525/c/cybrid-api-organization-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.98.2.tar.gz tmp/cybrid-api-id-python-0.99.0.tar.gz --markdown 20240525/c/cybrid-api-id-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-25 17:34:33] INFO root fetch - processPackages [qis]: Downloading https://files.pythonhosted.org/packages/c0/b0/459b4f2dea31cb086b72572c0b334fc4c42992355e22b2bd289becc4d395/qis-2.0.9.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Downloading https://files.pythonhosted.org/packages/a0/16/2b550bba682c064045a313052288453b3961494420782514b6b6af9a422b/mrgrain.cdk-esbuild-5.2.0.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/a1/e6/1c6a95191a8826ea0636949d5bfdb7d34a65b1f81b3cb27e1863a88a1552/cybrid-api-bank-python-0.99.0.tar.gz
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2024-05-25 17:34:33] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.98.2.tar.gz tmp/cybrid-api-bank-python-0.99.0.tar.gz --markdown 20240525/c/cybrid-api-bank-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-25 17:34:33] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: executing diffoscope
+[2024-05-25 17:34:33] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrgrain.cdk-esbuild-5.1.0.tar.gz tmp/mrgrain.cdk-esbuild-5.2.0.tar.gz --markdown 20240525/m/mrgrain.cdk-esbuild/5.1.0-5.2.0/README.md --exclude *.pyd
+[2024-05-25 17:34:34] INFO root fetch - processPackages [qis]: executing diffoscope
+[2024-05-25 17:34:34] INFO root fetch - processPackages [qis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qis-2.0.8.tar.gz tmp/qis-2.0.9.tar.gz --markdown 20240525/q/qis/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-25 17:34:34] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.8.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.9.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
+[2024-05-25 17:34:34] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
+[2024-05-25 17:34:34] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.98.2.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.99.0.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2024-05-25 17:34:34] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Remove: archive file [/home/abi/fetcher/tmp/mrgrain.cdk-esbuild-5.1.0.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Remove: archive file [/home/abi/fetcher/tmp/mrgrain.cdk-esbuild-5.2.0.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - main [MainThread]: End processing [mrgrain.cdk-esbuild]: success
+[2024-05-25 17:34:34] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.98.2.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.99.0.tar.gz]
+[2024-05-25 17:34:34] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2024-05-25 17:34:35] INFO root fetch - processPackages [qis]: Remove: archive file [/home/abi/fetcher/tmp/qis-2.0.8.tar.gz]
+[2024-05-25 17:34:35] INFO root fetch - processPackages [qis]: Remove: archive file [/home/abi/fetcher/tmp/qis-2.0.9.tar.gz]
+[2024-05-25 17:34:35] INFO root fetch - main [MainThread]: End processing [qis]: success
+[2024-05-25 17:34:36] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.98.2.tar.gz]
+[2024-05-25 17:34:36] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
+[2024-05-25 17:34:36] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2024-05-25 17:34:36] INFO root fetch - main [MainThread]: Store serial: [23376133]
