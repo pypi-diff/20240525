@@ -10054,3 +10054,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:07:31] INFO root fetch - processPackages [pynenv]: Remove: archive file [/home/abi/fetcher/tmp/pynenv-0.2.6.tar.gz]
 [2024-05-25 09:07:31] INFO root fetch - main [MainThread]: End processing [pynenv]: success
 [2024-05-25 09:07:31] INFO root fetch - main [MainThread]: Store serial: [23372685]
+[2024-05-25 09:09:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372685]
+[2024-05-25 09:09:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdkfabric-airtable
+[2024-05-25 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-hub-nightly
+[2024-05-25 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sevenapps-py-easy
+[2024-05-25 09:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: better-web3
+[2024-05-25 09:09:39] INFO root fetch - processPackages [sevenapps-py-easy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 09:09:39] INFO root fetch - processPackages [better-web3]: New version: [4.0.0b5] Old Version: [4.0.0b4]
+[2024-05-25 09:09:39] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-05-25 09:09:39] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/88/a4/7bcb7b9f856b8da2bba4ecbd4fb3dbded7ad1ad2ebba9a98a2b7ba73fac0/better_web3-4.0.0b4.tar.gz
+[2024-05-25 09:09:39] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/cc/30/059178e416d45cccb613c5e0722cea9582184c3720c3c24b1284de43f85d/sevenapps_py_easy-0.0.5.tar.gz
+[2024-05-25 09:09:39] INFO root fetch - processPackages [sdkfabric-airtable]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-25 09:09:40] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sdkfabric-airtable]: Downloading https://files.pythonhosted.org/packages/8d/f0/75cfc125f2b3c4838807d617a5b61d5a7ee2504ee2801345ab5d2d276e1e/sdkfabric_airtable-0.3.1.tar.gz
+[2024-05-25 09:09:40] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-05-25 09:09:40] INFO root fetch - processPackages [better-web3]: Downloading https://files.pythonhosted.org/packages/bc/54/2eaa7c777b816fc8b56e90ee15064bd21599cea09220091c459c7f90a1ac/better_web3-4.0.0b5.tar.gz
+[2024-05-25 09:09:40] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-05-25 09:09:40] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240525/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sevenapps-py-easy]: Downloading https://files.pythonhosted.org/packages/02/d7/0e4981222c4ecc6f1943fe5b2bf6f8b7d3a1516467d49e91386dfff3bda5/sevenapps_py_easy-0.0.6.tar.gz
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sdkfabric-airtable]: Downloading https://files.pythonhosted.org/packages/c8/6d/d8e0c01386d43897111e010b7e54cacbbf551a6ca1c05e6f4d00da6892a1/sdkfabric_airtable-0.4.0.tar.gz
+[2024-05-25 09:09:40] INFO root fetch - processPackages [better-web3]: executing diffoscope
+[2024-05-25 09:09:40] INFO root fetch - processPackages [better-web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_web3-4.0.0b4.tar.gz tmp/better_web3-4.0.0b5.tar.gz --markdown 20240525/b/better-web3/4.0.0b4-4.0.0b5/README.md --exclude *.pyd
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sevenapps-py-easy]: executing diffoscope
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sevenapps-py-easy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sevenapps_py_easy-0.0.5.tar.gz tmp/sevenapps_py_easy-0.0.6.tar.gz --markdown 20240525/s/sevenapps-py-easy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sdkfabric-airtable]: executing diffoscope
+[2024-05-25 09:09:40] INFO root fetch - processPackages [sdkfabric-airtable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkfabric_airtable-0.3.1.tar.gz tmp/sdkfabric_airtable-0.4.0.tar.gz --markdown 20240525/s/sdkfabric-airtable/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-25 09:09:41] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b4.tar.gz]
+[2024-05-25 09:09:41] INFO root fetch - processPackages [better-web3]: Remove: archive file [/home/abi/fetcher/tmp/better_web3-4.0.0b5.tar.gz]
+[2024-05-25 09:09:41] INFO root fetch - main [MainThread]: End processing [better-web3]: success
+[2024-05-25 09:09:41] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.5.tar.gz]
+[2024-05-25 09:09:41] INFO root fetch - processPackages [sevenapps-py-easy]: Remove: archive file [/home/abi/fetcher/tmp/sevenapps_py_easy-0.0.6.tar.gz]
+[2024-05-25 09:09:41] INFO root fetch - main [MainThread]: End processing [sevenapps-py-easy]: success
+[2024-05-25 09:09:41] INFO root fetch - processPackages [sdkfabric-airtable]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_airtable-0.3.1.tar.gz]
+[2024-05-25 09:09:41] INFO root fetch - processPackages [sdkfabric-airtable]: Remove: archive file [/home/abi/fetcher/tmp/sdkfabric_airtable-0.4.0.tar.gz]
+[2024-05-25 09:09:41] INFO root fetch - main [MainThread]: End processing [sdkfabric-airtable]: success
+[2024-05-25 09:09:41] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-05-25 09:09:41] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-05-25 09:09:41] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-05-25 09:09:41] INFO root fetch - main [MainThread]: Store serial: [23372695]
