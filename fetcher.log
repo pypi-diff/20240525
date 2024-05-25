@@ -19343,3 +19343,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:29:14] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.413-cp311-cp311-manylinux2014_x86_64.whl.zip]
 [2024-05-25 18:29:14] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 18:29:14] INFO root fetch - main [MainThread]: Store serial: [23376471]
+[2024-05-25 18:31:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376471]
+[2024-05-25 18:31:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 18:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uprock-sdk
+[2024-05-25 18:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-pipelines-preprocess
+[2024-05-25 18:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proxypool-util
+[2024-05-25 18:31:23] INFO root fetch - processPackages [uprock-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 18:31:23] INFO root fetch - processPackages [moveread-pipelines-preprocess]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 18:31:23] INFO root fetch - processPackages [uprock-sdk]: Downloading https://files.pythonhosted.org/packages/26/22/126fb32f31645995a5011f583fcbff3a5bd9d706b40186f5a97d77b1809b/uprock_sdk-0.1.8.tar.gz
+[2024-05-25 18:31:23] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Downloading https://files.pythonhosted.org/packages/7e/78/e1eec20a193d02258b1d5527e542d1b6934db75f13ae80ab1f82ad4ac182/moveread_pipelines_preprocess-0.1.6.tar.gz
+[2024-05-25 18:31:23] INFO root fetch - processPackages [proxypool-util]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-25 18:31:23] INFO root fetch - processPackages [uprock-sdk]: Downloading https://files.pythonhosted.org/packages/9f/c4/b3c22c4effa404516d26a91e86a36be6214f4ddddbf45903687c612dc45c/uprock_sdk-0.1.9.tar.gz
+[2024-05-25 18:31:24] INFO root fetch - processPackages [proxypool-util]: Downloading https://files.pythonhosted.org/packages/f0/6a/f2e4a109823768eb75dadca31c06566651416a49c01083f363a5267ebdaf/proxypool_util-0.1.3.tar.gz
+[2024-05-25 18:31:24] INFO root fetch - processPackages [uprock-sdk]: executing diffoscope
+[2024-05-25 18:31:24] INFO root fetch - processPackages [uprock-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uprock_sdk-0.1.8.tar.gz tmp/uprock_sdk-0.1.9.tar.gz --markdown 20240525/u/uprock-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 18:31:24] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Downloading https://files.pythonhosted.org/packages/ec/ba/f86d90c23d424fda467838401fb112c25c473daadcffdb1628ee175cd35a/moveread_pipelines_preprocess-0.1.7.tar.gz
+[2024-05-25 18:31:24] INFO root fetch - processPackages [moveread-pipelines-preprocess]: executing diffoscope
+[2024-05-25 18:31:24] INFO root fetch - processPackages [moveread-pipelines-preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_preprocess-0.1.6.tar.gz tmp/moveread_pipelines_preprocess-0.1.7.tar.gz --markdown 20240525/m/moveread-pipelines-preprocess/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 18:31:24] INFO root fetch - processPackages [proxypool-util]: Downloading https://files.pythonhosted.org/packages/d9/c4/e762b1b1825ce5623869d721567f537ed4f5f3f691ba5789d28878d62c25/proxypool_util-0.1.4.tar.gz
+[2024-05-25 18:31:24] INFO root fetch - processPackages [uprock-sdk]: Remove: archive file [/home/abi/fetcher/tmp/uprock_sdk-0.1.8.tar.gz]
+[2024-05-25 18:31:24] INFO root fetch - processPackages [uprock-sdk]: Remove: archive file [/home/abi/fetcher/tmp/uprock_sdk-0.1.9.tar.gz]
+[2024-05-25 18:31:24] INFO root fetch - main [MainThread]: End processing [uprock-sdk]: success
+[2024-05-25 18:31:24] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_preprocess-0.1.6.tar.gz]
+[2024-05-25 18:31:24] INFO root fetch - processPackages [moveread-pipelines-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_preprocess-0.1.7.tar.gz]
+[2024-05-25 18:31:24] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-preprocess]: success
+[2024-05-25 18:31:24] INFO root fetch - processPackages [proxypool-util]: executing diffoscope
+[2024-05-25 18:31:24] INFO root fetch - processPackages [proxypool-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxypool_util-0.1.3.tar.gz tmp/proxypool_util-0.1.4.tar.gz --markdown 20240525/p/proxypool-util/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-25 18:31:25] INFO root fetch - processPackages [proxypool-util]: Remove: archive file [/home/abi/fetcher/tmp/proxypool_util-0.1.3.tar.gz]
+[2024-05-25 18:31:25] INFO root fetch - processPackages [proxypool-util]: Remove: archive file [/home/abi/fetcher/tmp/proxypool_util-0.1.4.tar.gz]
+[2024-05-25 18:31:25] INFO root fetch - main [MainThread]: End processing [proxypool-util]: success
+[2024-05-25 18:31:25] INFO root fetch - main [MainThread]: Store serial: [23376479]
