@@ -21519,3 +21519,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:26:45] INFO root fetch - processPackages [kv-sql]: Remove: archive file [/home/abi/fetcher/tmp/kv_sql-0.1.2.tar.gz]
 [2024-05-25 21:26:45] INFO root fetch - main [MainThread]: End processing [kv-sql]: success
 [2024-05-25 21:26:45] INFO root fetch - main [MainThread]: Store serial: [23377443]
+[2024-05-25 21:28:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377443]
+[2024-05-25 21:28:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 21:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xRedUtils
+[2024-05-25 21:28:54] INFO root fetch - processPackages [xRedUtils]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-25 21:28:54] INFO root fetch - processPackages [xRedUtils]: Downloading https://files.pythonhosted.org/packages/62/39/c8c1632b220a6ecf6dd34ffd158782a23a0a6b4d7cc2d627d1b70ae387c3/xredutils-0.1.0.tar.gz
+[2024-05-25 21:28:55] INFO root fetch - processPackages [xRedUtils]: Downloading https://files.pythonhosted.org/packages/3b/11/d34f98dbad6f7c333a706e2e84236060a6fe061439feea3adccefb725baa/xredutils-1.0.0.tar.gz
+[2024-05-25 21:28:55] INFO root fetch - processPackages [xRedUtils]: executing diffoscope
+[2024-05-25 21:28:55] INFO root fetch - processPackages [xRedUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xredutils-0.1.0.tar.gz tmp/xredutils-1.0.0.tar.gz --markdown 20240525/x/xRedUtils/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-25 21:28:55] INFO root fetch - processPackages [xRedUtils]: Remove: archive file [/home/abi/fetcher/tmp/xredutils-0.1.0.tar.gz]
+[2024-05-25 21:28:55] INFO root fetch - processPackages [xRedUtils]: Remove: archive file [/home/abi/fetcher/tmp/xredutils-1.0.0.tar.gz]
+[2024-05-25 21:28:55] INFO root fetch - main [MainThread]: End processing [xRedUtils]: success
+[2024-05-25 21:28:55] INFO root fetch - main [MainThread]: Store serial: [23377446]
