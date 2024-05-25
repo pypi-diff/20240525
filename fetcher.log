@@ -7712,3 +7712,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:10:48] INFO root fetch - processPackages [vnstock3]: Remove: archive file [/home/abi/fetcher/tmp/vnstock3-0.3.0.2.tar.gz]
 [2024-05-25 05:10:48] INFO root fetch - main [MainThread]: End processing [vnstock3]: success
 [2024-05-25 05:10:48] INFO root fetch - main [MainThread]: Store serial: [23371553]
+[2024-05-25 05:12:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371553]
+[2024-05-25 05:12:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 05:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coiled
+[2024-05-25 05:12:57] INFO root fetch - processPackages [coiled]: New version: [1.9.1.dev9] Old Version: [1.9.1.dev8]
+[2024-05-25 05:12:57] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/8b/97/14337c08d9fc8bec2c9c7a5961519e141cf75d7dffa582bb987eecacefa4/coiled-1.9.1.dev8.tar.gz
+[2024-05-25 05:12:57] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/58/16/aec6b9100728dfee740792b7dd55fc6e56240fdadb5ef317a1d120e019d7/coiled-1.9.1.dev9.tar.gz
+[2024-05-25 05:12:57] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2024-05-25 05:12:57] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-1.9.1.dev8.tar.gz tmp/coiled-1.9.1.dev9.tar.gz --markdown 20240525/c/coiled/1.9.1.dev8-1.9.1.dev9/README.md --exclude *.pyd
+[2024-05-25 05:12:58] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev8.tar.gz]
+[2024-05-25 05:12:58] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
+[2024-05-25 05:12:58] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2024-05-25 05:12:58] INFO root fetch - main [MainThread]: Store serial: [23371562]
