@@ -10765,3 +10765,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:51:03] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.7a4.tar.gz]
 [2024-05-25 09:51:03] INFO root fetch - main [MainThread]: End processing [pyontoenv]: success
 [2024-05-25 09:51:03] INFO root fetch - main [MainThread]: Store serial: [23372947]
+[2024-05-25 09:53:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372947]
+[2024-05-25 09:53:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 09:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-sync-roles
+[2024-05-25 09:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: online-scheduler
+[2024-05-25 09:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: walytis-beta-api
+[2024-05-25 09:53:12] INFO root fetch - processPackages [online-scheduler]: New version: [1.2] Old Version: [1.1]
+[2024-05-25 09:53:12] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/4d/e9/a8eb6fada58689d4e1c7d59f5defff96e2a3ae9ae202928d70b2121095bd/online_scheduler-1.1.tar.gz
+[2024-05-25 09:53:12] WARNING root fetch - processPackages [walytis-beta-api]: Skipping, unable to determine old version
+[2024-05-25 09:53:12] INFO root fetch - main [MainThread]: End processing [walytis-beta-api] error
+[2024-05-25 09:53:12] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 09:53:12] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-25 09:53:13] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/18/33/84ab55b6f71cd2d731591153fea0beaa4a6be4a57f317004dbb9995213b6/online_scheduler-1.2.tar.gz
+[2024-05-25 09:53:13] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 09:53:13] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-1.1.tar.gz tmp/online_scheduler-1.2.tar.gz --markdown 20240525/o/online-scheduler/1.1-1.2/README.md --exclude *.pyd
+[2024-05-25 09:53:13] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-25 09:53:13] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-25 09:53:13] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240525/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 09:53:13] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.1.tar.gz]
+[2024-05-25 09:53:13] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.2.tar.gz]
+[2024-05-25 09:53:13] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 09:53:13] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-25 09:53:13] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-25 09:53:13] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-25 09:53:13] INFO root fetch - main [MainThread]: Store serial: [23372958]
