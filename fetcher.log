@@ -14035,3 +14035,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:18:04] WARNING root fetch - processPackages [node-ec2-instance]: Skipping, unable to determine old version
 [2024-05-25 14:18:04] INFO root fetch - main [MainThread]: End processing [node-ec2-instance] error
 [2024-05-25 14:18:04] INFO root fetch - main [MainThread]: Store serial: [23374559]
+[2024-05-25 14:20:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374559]
+[2024-05-25 14:20:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 14:20:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-25 14:20:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyprpy
+[2024-05-25 14:20:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pmnb
+[2024-05-25 14:20:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: elucidoc
+[2024-05-25 14:20:13] INFO root fetch - processPackages [hyprpy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 14:20:13] INFO root fetch - processPackages [pmnb]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 14:20:13] INFO root fetch - processPackages [elucidoc]: New version: [2024.5.25] Old Version: [2024.5.17]
+[2024-05-25 14:20:13] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 14:20:13] INFO root fetch - processPackages [hyprpy]: Downloading https://files.pythonhosted.org/packages/9f/1c/19565c0761bc94af531043ebc0ee071d81392883b772159634a5bbeeaff0/hyprpy-0.1.6.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [pmnb]: Downloading https://files.pythonhosted.org/packages/06/40/4bbb9fb9f1055b6d7d060762af74fdf80d35828a0fd9bec79c6d358eecc1/pmnb-0.1.6.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [elucidoc]: Downloading https://files.pythonhosted.org/packages/98/10/5d880d5af4b4d4e721a54d6a388ffe2958f2588c5a2f49a01e6776e44b7a/elucidoc-2024.5.17.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [elucidoc]: Downloading https://files.pythonhosted.org/packages/6d/04/285e8b0f0096159b89451a75af5b34722722b8bc7c4a3c74c0c009d47255/elucidoc-2024.5.25-py3-none-any.whl
+[2024-05-25 14:20:13] INFO root fetch - processPackages [hyprpy]: Downloading https://files.pythonhosted.org/packages/ff/1c/d089aa6e259ffa1bf1b061adcc74c22d37976fd059d50ccce381ddf148c5/hyprpy-0.1.7.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [pmnb]: Downloading https://files.pythonhosted.org/packages/1c/4a/afd829b4886ad0e5936b5044ad998fdb67f68fae5347604b2a998db5fb36/pmnb-0.1.7.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [elucidoc]: executing diffoscope
+[2024-05-25 14:20:13] INFO root fetch - processPackages [elucidoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elucidoc-2024.5.17.tar.gz tmp/elucidoc-2024.5.25-py3-none-any.whl.zip --markdown 20240525/e/elucidoc/2024.5.17-2024.5.25/README.md --exclude *.pyd
+[2024-05-25 14:20:13] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-25 14:20:13] INFO root fetch - processPackages [hyprpy]: executing diffoscope
+[2024-05-25 14:20:13] INFO root fetch - processPackages [hyprpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyprpy-0.1.6.tar.gz tmp/hyprpy-0.1.7.tar.gz --markdown 20240525/h/hyprpy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 14:20:13] INFO root fetch - processPackages [pmnb]: executing diffoscope
+[2024-05-25 14:20:13] INFO root fetch - processPackages [pmnb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmnb-0.1.6.tar.gz tmp/pmnb-0.1.7.tar.gz --markdown 20240525/p/pmnb/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 14:20:14] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-25 14:20:14] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240525/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 14:20:14] INFO root fetch - processPackages [elucidoc]: Remove: archive file [/home/abi/fetcher/tmp/elucidoc-2024.5.17.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - processPackages [elucidoc]: Remove: archive file [/home/abi/fetcher/tmp/elucidoc-2024.5.25-py3-none-any.whl.zip]
+[2024-05-25 14:20:14] INFO root fetch - main [MainThread]: End processing [elucidoc]: success
+[2024-05-25 14:20:14] INFO root fetch - processPackages [pmnb]: Remove: archive file [/home/abi/fetcher/tmp/pmnb-0.1.6.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - processPackages [pmnb]: Remove: archive file [/home/abi/fetcher/tmp/pmnb-0.1.7.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - main [MainThread]: End processing [pmnb]: success
+[2024-05-25 14:20:14] INFO root fetch - processPackages [hyprpy]: Remove: archive file [/home/abi/fetcher/tmp/hyprpy-0.1.6.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - processPackages [hyprpy]: Remove: archive file [/home/abi/fetcher/tmp/hyprpy-0.1.7.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - main [MainThread]: End processing [hyprpy]: success
+[2024-05-25 14:20:14] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-25 14:20:14] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-25 14:20:14] INFO root fetch - main [MainThread]: Store serial: [23374570]
