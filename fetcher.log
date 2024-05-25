@@ -18798,3 +18798,36 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 18:00:53] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.2.tar.gz]
 [2024-05-25 18:00:53] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
 [2024-05-25 18:00:53] INFO root fetch - main [MainThread]: Store serial: [23376296]
+[2024-05-25 18:02:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376296]
+[2024-05-25 18:03:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-25 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moveread-pipelines-auto-extract
+[2024-05-25 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: examy
+[2024-05-25 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moveread-pipelines-dfy
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-25 18:03:01] WARNING root fetch - processPackages [examy]: Skipping, unable to determine old version
+[2024-05-25 18:03:01] INFO root fetch - main [MainThread]: End processing [examy] error
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-dfy]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Downloading https://files.pythonhosted.org/packages/4f/3d/04c30c6f80a229e933ca2385c25d152c97172e8f13d5acd98ca5ceb38a43/moveread_pipelines_auto_extract-0.1.5.tar.gz
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/3d/21/ac0223eed38324f1776c908a6095f3447b1345ec5dbecd81698022a69de6/moveread_pipelines_dfy-0.1.7.tar.gz
+[2024-05-25 18:03:01] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.412] Old Version: [0.45.20240525.410]
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Downloading https://files.pythonhosted.org/packages/07/98/699f7a472d5f812e1f4c8d0dc440326c0c6c0f9c85c90f8c1b530d3ffc07/moveread_pipelines_auto_extract-0.1.6.tar.gz
+[2024-05-25 18:03:01] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/76/eb/853f09a3267076314b9556e05c43b3f28010e3516c16118c1191f0c14c17/pkscreener-0.45.20240525.410-cp311-cp311-win_amd64.whl
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-dfy]: Downloading https://files.pythonhosted.org/packages/a0/4a/aee2cbf4e9407eef240abeb0e2bcde4d6e3ec27c7b880df7a98d77acf13f/moveread_pipelines_dfy-0.1.8.tar.gz
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: executing diffoscope
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_auto_extract-0.1.5.tar.gz tmp/moveread_pipelines_auto_extract-0.1.6.tar.gz --markdown 20240525/m/moveread-pipelines-auto-extract/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-dfy]: executing diffoscope
+[2024-05-25 18:03:01] INFO root fetch - processPackages [moveread-pipelines-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_pipelines_dfy-0.1.7.tar.gz tmp/moveread_pipelines_dfy-0.1.8.tar.gz --markdown 20240525/m/moveread-pipelines-dfy/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 18:03:02] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/11/72/5bd4681b2dfa981054bf23b5917982a2beddd6b8e821b7c1ebe06ca9dc94/pkscreener-0.45.20240525.412-cp311-cp311-macosx_10_9_universal2.whl
+[2024-05-25 18:03:02] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_auto_extract-0.1.5.tar.gz]
+[2024-05-25 18:03:02] INFO root fetch - processPackages [moveread-pipelines-auto-extract]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_auto_extract-0.1.6.tar.gz]
+[2024-05-25 18:03:02] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-auto-extract]: success
+[2024-05-25 18:03:02] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.7.tar.gz]
+[2024-05-25 18:03:02] INFO root fetch - processPackages [moveread-pipelines-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_pipelines_dfy-0.1.8.tar.gz]
+[2024-05-25 18:03:02] INFO root fetch - main [MainThread]: End processing [moveread-pipelines-dfy]: success
+[2024-05-25 18:03:02] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 18:03:02] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.410-cp311-cp311-win_amd64.whl.zip tmp/pkscreener-0.45.20240525.412-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20240525/p/pkscreener/0.45.20240525.410-0.45.20240525.412/README.md --exclude *.pyd
+[2024-05-25 18:03:03] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.410-cp311-cp311-win_amd64.whl.zip]
+[2024-05-25 18:03:03] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.412-cp311-cp311-macosx_10_9_universal2.whl.zip]
+[2024-05-25 18:03:03] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 18:03:03] INFO root fetch - main [MainThread]: Store serial: [23376310]
