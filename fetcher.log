@@ -19635,3 +19635,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:53:21] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.414.tar.gz]
 [2024-05-25 18:53:21] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 18:53:21] INFO root fetch - main [MainThread]: Store serial: [23376577]
+[2024-05-25 18:55:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376577]
+[2024-05-25 18:55:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 18:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oasgen
+[2024-05-25 18:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgeimpulse-api
+[2024-05-25 18:55:34] INFO root fetch - processPackages [oasgen]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-25 18:55:34] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/1e/f2/bfbd9689c78a2a11fe4e1ff0f566026059fd2bf432b401bfdc6eb0ba47f9/oasgen-0.2.1.tar.gz
+[2024-05-25 18:55:34] INFO root fetch - processPackages [edgeimpulse-api]: New version: [1.50.6] Old Version: [1.50.10]
+[2024-05-25 18:55:34] INFO root fetch - processPackages [edgeimpulse-api]: Downloading https://files.pythonhosted.org/packages/09/28/d04e1071a7d8155e45dd99367121d7630b98eee1b3d27fe1fca2b78c37ba/edgeimpulse_api-1.50.10.tar.gz
+[2024-05-25 18:55:34] INFO root fetch - processPackages [oasgen]: Downloading https://files.pythonhosted.org/packages/2c/ff/7a135cd4cf98984fe055822af0b9eee255d57c99d0ffb3af880cd5e3b4e7/oasgen-0.3.0.tar.gz
+[2024-05-25 18:55:34] INFO root fetch - processPackages [oasgen]: executing diffoscope
+[2024-05-25 18:55:34] INFO root fetch - processPackages [oasgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasgen-0.2.1.tar.gz tmp/oasgen-0.3.0.tar.gz --markdown 20240525/o/oasgen/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-25 18:55:35] INFO root fetch - processPackages [edgeimpulse-api]: Downloading https://files.pythonhosted.org/packages/d6/03/805dd746d4d0dfaa7c2a0d6b7dc7c06416eafd5216a1060423b01ce5f097/edgeimpulse_api-1.50.6.tar.gz
+[2024-05-25 18:55:35] INFO root fetch - processPackages [edgeimpulse-api]: executing diffoscope
+[2024-05-25 18:55:35] INFO root fetch - processPackages [edgeimpulse-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgeimpulse_api-1.50.10.tar.gz tmp/edgeimpulse_api-1.50.6.tar.gz --markdown 20240525/e/edgeimpulse-api/1.50.10-1.50.6/README.md --exclude *.pyd
+[2024-05-25 18:55:35] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.2.1.tar.gz]
+[2024-05-25 18:55:35] INFO root fetch - processPackages [oasgen]: Remove: archive file [/home/abi/fetcher/tmp/oasgen-0.3.0.tar.gz]
+[2024-05-25 18:55:35] INFO root fetch - main [MainThread]: End processing [oasgen]: success
+[2024-05-25 18:55:38] INFO root fetch - processPackages [edgeimpulse-api]: Remove: archive file [/home/abi/fetcher/tmp/edgeimpulse_api-1.50.10.tar.gz]
+[2024-05-25 18:55:38] INFO root fetch - processPackages [edgeimpulse-api]: Remove: archive file [/home/abi/fetcher/tmp/edgeimpulse_api-1.50.6.tar.gz]
+[2024-05-25 18:55:38] INFO root fetch - main [MainThread]: End processing [edgeimpulse-api]: success
+[2024-05-25 18:55:38] INFO root fetch - main [MainThread]: Store serial: [23376584]
