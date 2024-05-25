@@ -12354,3 +12354,45 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:59:55] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024052409.tar.gz]
 [2024-05-25 11:59:55] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-05-25 11:59:55] INFO root fetch - main [MainThread]: Store serial: [23373789]
+[2024-05-25 12:02:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373789]
+[2024-05-25 12:02:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apiverve-dictionary
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: demoparser2
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apiverve-distancecalculator
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apiverve-dnslookup
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apiverve-dogbreeds
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apiverve-domainavailability
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apiverve-domainexpiration
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bencodingpy
+[2024-05-25 12:02:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PyFunceble-dev
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [apiverve-dnslookup]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [apiverve-dnslookup] error
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [apiverve-dogbreeds]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [apiverve-dogbreeds] error
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [apiverve-domainexpiration]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [apiverve-domainexpiration] error
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [bencodingpy]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [bencodingpy] error
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [apiverve-distancecalculator]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [apiverve-dictionary]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [apiverve-distancecalculator] error
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [apiverve-dictionary] error
+[2024-05-25 12:02:06] WARNING root fetch - processPackages [apiverve-domainavailability]: Skipping, unable to determine old version
+[2024-05-25 12:02:06] INFO root fetch - main [MainThread]: End processing [apiverve-domainavailability] error
+[2024-05-25 12:02:06] INFO root fetch - processPackages [demoparser2]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-25 12:02:06] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.9] Old Version: [4.2.7]
+[2024-05-25 12:02:06] INFO root fetch - processPackages [demoparser2]: Downloading https://files.pythonhosted.org/packages/cf/0e/23a8019a6f953df11f6d18da167c40de3155ff587b5d705df10de1bd5774/demoparser2-0.9.0-cp39-none-win_amd64.whl
+[2024-05-25 12:02:06] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/a9/09/2ffbe87530f0aece577d1ebfa1ea3ff3585590610c864c8b8d3e5b18411c/PyFunceble-dev-4.2.7.tar.gz
+[2024-05-25 12:02:07] INFO root fetch - processPackages [demoparser2]: Downloading https://files.pythonhosted.org/packages/2a/c9/d58b3ca133949aa9598dde59da3e112a8ea818151963f58fd846af20185f/demoparser2-0.9.1-cp39-none-win_amd64.whl
+[2024-05-25 12:02:07] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/8d/a6/ce1b409ecb908fd4d991b77970805c1b0d784005b2b00817f8b4233ac9d4/PyFunceble-dev-4.2.9.tar.gz
+[2024-05-25 12:02:07] INFO root fetch - processPackages [demoparser2]: executing diffoscope
+[2024-05-25 12:02:07] INFO root fetch - processPackages [demoparser2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demoparser2-0.9.0-cp39-none-win_amd64.whl.zip tmp/demoparser2-0.9.1-cp39-none-win_amd64.whl.zip --markdown 20240525/d/demoparser2/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-25 12:02:07] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2024-05-25 12:02:07] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.7.tar.gz tmp/PyFunceble-dev-4.2.9.tar.gz --markdown 20240525/P/PyFunceble-dev/4.2.7-4.2.9/README.md --exclude *.pyd
+[2024-05-25 12:02:07] INFO root fetch - processPackages [demoparser2]: Remove: archive file [/home/abi/fetcher/tmp/demoparser2-0.9.0-cp39-none-win_amd64.whl.zip]
+[2024-05-25 12:02:07] INFO root fetch - processPackages [demoparser2]: Remove: archive file [/home/abi/fetcher/tmp/demoparser2-0.9.1-cp39-none-win_amd64.whl.zip]
+[2024-05-25 12:02:07] INFO root fetch - main [MainThread]: End processing [demoparser2]: success
+[2024-05-25 12:02:08] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.7.tar.gz]
+[2024-05-25 12:02:08] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
+[2024-05-25 12:02:08] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2024-05-25 12:02:08] INFO root fetch - main [MainThread]: Store serial: [23373846]
