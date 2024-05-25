@@ -13797,3 +13797,19 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:45:27] INFO root fetch - processPackages [PythonCodeVault]: Remove: archive file [/home/abi/fetcher/tmp/PythonCodeVault-0.0.9.tar.gz]
 [2024-05-25 13:45:27] INFO root fetch - main [MainThread]: End processing [PythonCodeVault]: success
 [2024-05-25 13:45:27] INFO root fetch - main [MainThread]: Store serial: [23374453]
+[2024-05-25 13:47:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374453]
+[2024-05-25 13:47:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 13:49:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374454]
+[2024-05-25 13:49:42] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 13:51:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374454]
+[2024-05-25 13:51:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 13:51:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygda
+[2024-05-25 13:51:48] INFO root fetch - processPackages [pygda]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 13:51:48] INFO root fetch - processPackages [pygda]: Downloading https://files.pythonhosted.org/packages/4f/dc/190d1a622da9be114f31e383ba9de5e1a5f56cb429b3d1da308d7b50bbd7/pygda-0.0.1.tar.gz
+[2024-05-25 13:51:48] INFO root fetch - processPackages [pygda]: Downloading https://files.pythonhosted.org/packages/8f/c4/9a80ca2387c9db2aeae17e3fc22c3aa83c5f9ef7e7dd6faa0a664d275349/pygda-0.0.2.tar.gz
+[2024-05-25 13:51:48] INFO root fetch - processPackages [pygda]: executing diffoscope
+[2024-05-25 13:51:48] INFO root fetch - processPackages [pygda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygda-0.0.1.tar.gz tmp/pygda-0.0.2.tar.gz --markdown 20240525/p/pygda/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 13:51:49] INFO root fetch - processPackages [pygda]: Remove: archive file [/home/abi/fetcher/tmp/pygda-0.0.1.tar.gz]
+[2024-05-25 13:51:49] INFO root fetch - processPackages [pygda]: Remove: archive file [/home/abi/fetcher/tmp/pygda-0.0.2.tar.gz]
+[2024-05-25 13:51:49] INFO root fetch - main [MainThread]: End processing [pygda]: success
+[2024-05-25 13:51:49] INFO root fetch - main [MainThread]: Store serial: [23374457]
