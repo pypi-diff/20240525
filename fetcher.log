@@ -8215,3 +8215,21 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:09:14] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.6.0.tar.gz]
 [2024-05-25 06:09:14] INFO root fetch - main [MainThread]: End processing [pytest-databases]: success
 [2024-05-25 06:09:14] INFO root fetch - main [MainThread]: Store serial: [23371846]
+[2024-05-25 06:11:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371846]
+[2024-05-25 06:11:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 06:13:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371846]
+[2024-05-25 06:13:28] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 06:15:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371846]
+[2024-05-25 06:15:33] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 06:17:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371846]
+[2024-05-25 06:17:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 06:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fudstop
+[2024-05-25 06:17:39] INFO root fetch - processPackages [fudstop]: New version: [2.7.2] Old Version: [2.7.1]
+[2024-05-25 06:17:39] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/ef/73/e803481142c6a9c300cdd66452a199672a468e9e772dbd079a557244c8b7/fudstop-2.7.1.tar.gz
+[2024-05-25 06:17:39] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/99/a9/c311d2cb65dc87bb0418592386a6622999fe83d6a71a9093a4ac6845c7f4/fudstop-2.7.2.tar.gz
+[2024-05-25 06:17:40] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-05-25 06:17:40] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.7.1.tar.gz tmp/fudstop-2.7.2.tar.gz --markdown 20240525/f/fudstop/2.7.1-2.7.2/README.md --exclude *.pyd
+[2024-05-25 06:17:41] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.7.1.tar.gz]
+[2024-05-25 06:17:41] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.7.2.tar.gz]
+[2024-05-25 06:17:41] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-05-25 06:17:41] INFO root fetch - main [MainThread]: Store serial: [23371849]
