@@ -20912,3 +20912,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:28:15] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
 [2024-05-25 20:28:15] INFO root fetch - main [MainThread]: End processing [location-local]: success
 [2024-05-25 20:28:15] INFO root fetch - main [MainThread]: Store serial: [23377111]
+[2024-05-25 20:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377111]
+[2024-05-25 20:30:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kisters.network-store.model-library.water
+[2024-05-25 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: splitlog
+[2024-05-25 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autonomous-app
+[2024-05-25 20:30:23] INFO root fetch - processPackages [kisters.network-store.model-library.water]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-25 20:30:23] INFO root fetch - processPackages [splitlog]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-25 20:30:23] INFO root fetch - processPackages [splitlog]: Downloading https://files.pythonhosted.org/packages/30/91/03939acdc91a588b8e36681c54e8d90715aeab8d12a6075067c07a4faedf/splitlog-3.0.0.tar.gz
+[2024-05-25 20:30:23] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Downloading https://files.pythonhosted.org/packages/32/5c/c46fa03715d9d803156ff9aa298a775cb8eb2067f070a5359b845823b99e/kisters.network_store.model_library.water-0.2.9.tar.gz
+[2024-05-25 20:30:23] INFO root fetch - processPackages [autonomous-app]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 20:30:24] INFO root fetch - processPackages [splitlog]: Downloading https://files.pythonhosted.org/packages/51/6c/06a8cd525052c015a16e8e06076ce09925b7a66e833f9b2a23359bdc78a0/splitlog-3.0.1.tar.gz
+[2024-05-25 20:30:24] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Downloading https://files.pythonhosted.org/packages/01/b2/93fac30b06ea3fcb16d3e2664556db7a140fc256bfead590e958f9771d5a/kisters.network_store.model_library.water-0.3.0.tar.gz
+[2024-05-25 20:30:24] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/d0/14/f69a96e9632ab04613d624b241c41d89e240b957f6cb90becb7ce163fcbe/autonomous_app-0.2.8.tar.gz
+[2024-05-25 20:30:24] INFO root fetch - processPackages [splitlog]: executing diffoscope
+[2024-05-25 20:30:24] INFO root fetch - processPackages [splitlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splitlog-3.0.0.tar.gz tmp/splitlog-3.0.1.tar.gz --markdown 20240525/s/splitlog/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-25 20:30:24] INFO root fetch - processPackages [kisters.network-store.model-library.water]: executing diffoscope
+[2024-05-25 20:30:24] INFO root fetch - processPackages [kisters.network-store.model-library.water]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kisters.network_store.model_library.water-0.2.9.tar.gz tmp/kisters.network_store.model_library.water-0.3.0.tar.gz --markdown 20240525/k/kisters.network-store.model-library.water/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-25 20:30:24] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/87/68/a4e9b4dc303589bac13c8f9fab4ec2b60ddc3a35c7c0406fadd3000820cb/autonomous_app-0.2.9.tar.gz
+[2024-05-25 20:30:24] INFO root fetch - processPackages [autonomous-app]: executing diffoscope
+[2024-05-25 20:30:24] INFO root fetch - processPackages [autonomous-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomous_app-0.2.8.tar.gz tmp/autonomous_app-0.2.9.tar.gz --markdown 20240525/a/autonomous-app/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 20:30:24] INFO root fetch - processPackages [splitlog]: Remove: archive file [/home/abi/fetcher/tmp/splitlog-3.0.0.tar.gz]
+[2024-05-25 20:30:24] INFO root fetch - processPackages [splitlog]: Remove: archive file [/home/abi/fetcher/tmp/splitlog-3.0.1.tar.gz]
+[2024-05-25 20:30:24] INFO root fetch - main [MainThread]: End processing [splitlog]: success
+[2024-05-25 20:30:24] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Remove: archive file [/home/abi/fetcher/tmp/kisters.network_store.model_library.water-0.2.9.tar.gz]
+[2024-05-25 20:30:24] INFO root fetch - processPackages [kisters.network-store.model-library.water]: Remove: archive file [/home/abi/fetcher/tmp/kisters.network_store.model_library.water-0.3.0.tar.gz]
+[2024-05-25 20:30:24] INFO root fetch - main [MainThread]: End processing [kisters.network-store.model-library.water]: success
+[2024-05-25 20:30:25] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.8.tar.gz]
+[2024-05-25 20:30:25] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.9.tar.gz]
+[2024-05-25 20:30:25] INFO root fetch - main [MainThread]: End processing [autonomous-app]: success
+[2024-05-25 20:30:25] INFO root fetch - main [MainThread]: Store serial: [23377120]
