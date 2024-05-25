@@ -22552,3 +22552,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:37:30] INFO root fetch - processPackages [tubesml]: Remove: archive file [/home/abi/fetcher/tmp/tubesml-0.7.2.tar.gz]
 [2024-05-25 22:37:30] INFO root fetch - main [MainThread]: End processing [tubesml]: success
 [2024-05-25 22:37:30] INFO root fetch - main [MainThread]: Store serial: [23377851]
+[2024-05-25 22:39:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377851]
+[2024-05-25 22:39:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 22:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcdm-scheduler
+[2024-05-25 22:39:41] INFO root fetch - processPackages [mcdm-scheduler]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-05-25 22:39:41] INFO root fetch - processPackages [mcdm-scheduler]: Downloading https://files.pythonhosted.org/packages/88/9a/531b3d2e443726b611578c0c8c1f92dc3e596ab727499f49e2daccb97653/mcdm_scheduler-1.5.2.tar.gz
+[2024-05-25 22:39:41] INFO root fetch - processPackages [mcdm-scheduler]: Downloading https://files.pythonhosted.org/packages/f4/33/faabaddf46a78ebfecd15d5af9f03c2116e252c924bcbfeb4002c1e6f09e/mcdm_scheduler-1.5.3.tar.gz
+[2024-05-25 22:39:41] INFO root fetch - processPackages [mcdm-scheduler]: executing diffoscope
+[2024-05-25 22:39:41] INFO root fetch - processPackages [mcdm-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcdm_scheduler-1.5.2.tar.gz tmp/mcdm_scheduler-1.5.3.tar.gz --markdown 20240525/m/mcdm-scheduler/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-05-25 22:39:42] INFO root fetch - processPackages [mcdm-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mcdm_scheduler-1.5.2.tar.gz]
+[2024-05-25 22:39:42] INFO root fetch - processPackages [mcdm-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mcdm_scheduler-1.5.3.tar.gz]
+[2024-05-25 22:39:42] INFO root fetch - main [MainThread]: End processing [mcdm-scheduler]: success
+[2024-05-25 22:39:42] INFO root fetch - main [MainThread]: Store serial: [23377854]
