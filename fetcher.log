@@ -8919,3 +8919,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 07:16:25] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 10640161>=10485760
 [2024-05-25 07:16:25] INFO root fetch - main [MainThread]: End processing [duckdb] error
 [2024-05-25 07:16:25] INFO root fetch - main [MainThread]: Store serial: [23372137]
+[2024-05-25 07:18:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372137]
+[2024-05-25 07:18:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 07:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapidpe-rift-pipe
+[2024-05-25 07:18:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-it-fatturapa-in
+[2024-05-25 07:18:35] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.7]
+[2024-05-25 07:18:35] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-05-25 07:18:35] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Downloading https://files.pythonhosted.org/packages/44/be/1202564bd0f9fceb84b813b685669e585db0a4e9b47393f932fa546ff3a3/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.7-py3-none-any.whl
+[2024-05-25 07:18:35] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-05-25 07:18:35] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-05-25 07:18:35] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Downloading https://files.pythonhosted.org/packages/1d/a1/3f558a0520af3007e07d89f819cd8a6d2b3b1083337a96a09cee83a4bea4/odoo_addon_l10n_it_fatturapa_in-16.0.1.1.0-py3-none-any.whl
+[2024-05-25 07:18:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-05-25 07:18:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240525/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-05-25 07:18:36] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: executing diffoscope
+[2024-05-25 07:18:36] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.7-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-l10n-it-fatturapa-in/16.0.1.0.7-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-25 07:18:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-05-25 07:18:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-05-25 07:18:36] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-05-25 07:18:36] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.7-py3-none-any.whl.zip]
+[2024-05-25 07:18:36] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-25 07:18:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-in]: success
+[2024-05-25 07:18:36] INFO root fetch - main [MainThread]: Store serial: [23372180]
