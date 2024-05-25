@@ -20479,3 +20479,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:50:26] INFO root fetch - processPackages [python-Pantry]: Remove: archive file [/home/abi/fetcher/tmp/python_pantry-3.0.2.tar.gz]
 [2024-05-25 19:50:26] INFO root fetch - main [MainThread]: End processing [python-Pantry]: success
 [2024-05-25 19:50:26] INFO root fetch - main [MainThread]: Store serial: [23376956]
+[2024-05-25 19:52:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376956]
+[2024-05-25 19:52:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 19:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colabvenv
+[2024-05-25 19:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonmapper
+[2024-05-25 19:52:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyshellscript
+[2024-05-25 19:52:36] WARNING root fetch - processPackages [pyshellscript]: Skipping, unable to determine old version
+[2024-05-25 19:52:36] INFO root fetch - main [MainThread]: End processing [pyshellscript] error
+[2024-05-25 19:52:36] INFO root fetch - processPackages [dragonmapper]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-25 19:52:36] WARNING root fetch - processPackages [colabvenv]: Skipping, unable to determine old version
+[2024-05-25 19:52:36] INFO root fetch - main [MainThread]: End processing [colabvenv] error
+[2024-05-25 19:52:37] INFO root fetch - processPackages [dragonmapper]: Downloading https://files.pythonhosted.org/packages/d9/ec/2d7ba67efa5ce88c91db08b8fd1fc65f3bab5619c4768705b3b5c3bbed15/dragonmapper-0.2.6.tar.gz
+[2024-05-25 19:52:37] INFO root fetch - processPackages [dragonmapper]: Downloading https://files.pythonhosted.org/packages/d2/88/66be3e4a1c9bc7d9cbdbc41843ef97ea69e2a79b3822fd4fe5087e22c198/dragonmapper-0.2.7.tar.gz
+[2024-05-25 19:52:37] INFO root fetch - processPackages [dragonmapper]: executing diffoscope
+[2024-05-25 19:52:37] INFO root fetch - processPackages [dragonmapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonmapper-0.2.6.tar.gz tmp/dragonmapper-0.2.7.tar.gz --markdown 20240525/d/dragonmapper/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-25 19:52:40] INFO root fetch - processPackages [dragonmapper]: Remove: archive file [/home/abi/fetcher/tmp/dragonmapper-0.2.6.tar.gz]
+[2024-05-25 19:52:40] INFO root fetch - processPackages [dragonmapper]: Remove: archive file [/home/abi/fetcher/tmp/dragonmapper-0.2.7.tar.gz]
+[2024-05-25 19:52:40] INFO root fetch - main [MainThread]: End processing [dragonmapper]: success
+[2024-05-25 19:52:40] INFO root fetch - main [MainThread]: Store serial: [23376969]
