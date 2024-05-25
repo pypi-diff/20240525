@@ -11306,3 +11306,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:34:39] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.3.tar.gz]
 [2024-05-25 10:34:39] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
 [2024-05-25 10:34:39] INFO root fetch - main [MainThread]: Store serial: [23373240]
+[2024-05-25 10:36:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373240]
+[2024-05-25 10:36:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 10:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jdmtool
+[2024-05-25 10:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xrvoyage
+[2024-05-25 10:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goalchain
+[2024-05-25 10:36:48] INFO root fetch - processPackages [xrvoyage]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-25 10:36:48] INFO root fetch - processPackages [xrvoyage]: Downloading https://files.pythonhosted.org/packages/d3/33/f7d07087f64536c533bbe5f3e48c504cdefdb008df9180f55baff1a51824/xrvoyage-1.0.8.tar.gz
+[2024-05-25 10:36:48] INFO root fetch - processPackages [jdmtool]: New version: [0.1] Old Version: [0.0.4]
+[2024-05-25 10:36:48] INFO root fetch - processPackages [goalchain]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 10:36:48] INFO root fetch - processPackages [jdmtool]: Downloading https://files.pythonhosted.org/packages/55/48/b84adabf0868a9298e1a29c0cee02a04ec20a2a962c8ca30a1119facdbd8/jdmtool-0.0.4.tar.gz
+[2024-05-25 10:36:48] INFO root fetch - processPackages [xrvoyage]: Downloading https://files.pythonhosted.org/packages/ad/62/42e63b65f7f89ab31dd4936759df40532087961628b4740fd5d5812307f6/xrvoyage-1.0.9.tar.gz
+[2024-05-25 10:36:48] INFO root fetch - processPackages [goalchain]: Downloading https://files.pythonhosted.org/packages/b1/3f/36da875d7d0297bf6a03f146ed07de885e11356f9772c91f9cca3775e832/goalchain-0.0.2.tar.gz
+[2024-05-25 10:36:48] INFO root fetch - processPackages [xrvoyage]: executing diffoscope
+[2024-05-25 10:36:48] INFO root fetch - processPackages [xrvoyage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrvoyage-1.0.8.tar.gz tmp/xrvoyage-1.0.9.tar.gz --markdown 20240525/x/xrvoyage/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-25 10:36:49] INFO root fetch - processPackages [jdmtool]: Downloading https://files.pythonhosted.org/packages/04/14/7fa62f21094be8b96e2c419199ea6f8623c39d789d1da2f6e2740a35e643/jdmtool-0.1.tar.gz
+[2024-05-25 10:36:49] INFO root fetch - processPackages [goalchain]: Downloading https://files.pythonhosted.org/packages/72/d3/a0af8a7503a95f147787b2d410c1dd7ca1b679e8c1944d41878f330cffeb/goalchain-0.0.3.tar.gz
+[2024-05-25 10:36:49] INFO root fetch - processPackages [jdmtool]: executing diffoscope
+[2024-05-25 10:36:49] INFO root fetch - processPackages [jdmtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdmtool-0.0.4.tar.gz tmp/jdmtool-0.1.tar.gz --markdown 20240525/j/jdmtool/0.0.4-0.1/README.md --exclude *.pyd
+[2024-05-25 10:36:49] INFO root fetch - processPackages [goalchain]: executing diffoscope
+[2024-05-25 10:36:49] INFO root fetch - processPackages [goalchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goalchain-0.0.2.tar.gz tmp/goalchain-0.0.3.tar.gz --markdown 20240525/g/goalchain/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 10:36:49] INFO root fetch - processPackages [xrvoyage]: Remove: archive file [/home/abi/fetcher/tmp/xrvoyage-1.0.8.tar.gz]
+[2024-05-25 10:36:49] INFO root fetch - processPackages [xrvoyage]: Remove: archive file [/home/abi/fetcher/tmp/xrvoyage-1.0.9.tar.gz]
+[2024-05-25 10:36:49] INFO root fetch - main [MainThread]: End processing [xrvoyage]: success
+[2024-05-25 10:36:49] INFO root fetch - processPackages [goalchain]: Remove: archive file [/home/abi/fetcher/tmp/goalchain-0.0.2.tar.gz]
+[2024-05-25 10:36:49] INFO root fetch - processPackages [goalchain]: Remove: archive file [/home/abi/fetcher/tmp/goalchain-0.0.3.tar.gz]
+[2024-05-25 10:36:49] INFO root fetch - main [MainThread]: End processing [goalchain]: success
+[2024-05-25 10:36:49] INFO root fetch - processPackages [jdmtool]: Remove: archive file [/home/abi/fetcher/tmp/jdmtool-0.0.4.tar.gz]
+[2024-05-25 10:36:49] INFO root fetch - processPackages [jdmtool]: Remove: archive file [/home/abi/fetcher/tmp/jdmtool-0.1.tar.gz]
+[2024-05-25 10:36:49] INFO root fetch - main [MainThread]: End processing [jdmtool]: success
+[2024-05-25 10:36:49] INFO root fetch - main [MainThread]: Store serial: [23373249]
