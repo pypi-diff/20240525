@@ -12123,3 +12123,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:40:19] INFO root fetch - processPackages [jeddinformatics]: Remove: archive file [/home/abi/fetcher/tmp/jeddinformatics-0.6.1.tar.gz]
 [2024-05-25 11:40:19] INFO root fetch - main [MainThread]: End processing [jeddinformatics]: success
 [2024-05-25 11:40:19] INFO root fetch - main [MainThread]: Store serial: [23373612]
+[2024-05-25 11:42:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373612]
+[2024-05-25 11:42:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 11:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Chrfinder
+[2024-05-25 11:42:27] INFO root fetch - processPackages [Chrfinder]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 11:42:27] INFO root fetch - processPackages [Chrfinder]: Downloading https://files.pythonhosted.org/packages/f7/6f/d6083ede03520f4ab25b38edd2550309e73a37502cf17593bc98da6a88dd/chrfinder-0.0.1.tar.gz
+[2024-05-25 11:42:28] INFO root fetch - processPackages [Chrfinder]: Downloading https://files.pythonhosted.org/packages/50/d6/65544028e5f18eca248205fc238d37a9360a722153e7fdebb755300072e4/chrfinder-0.0.2.tar.gz
+[2024-05-25 11:42:28] INFO root fetch - processPackages [Chrfinder]: executing diffoscope
+[2024-05-25 11:42:28] INFO root fetch - processPackages [Chrfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chrfinder-0.0.1.tar.gz tmp/chrfinder-0.0.2.tar.gz --markdown 20240525/C/Chrfinder/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 11:42:29] INFO root fetch - processPackages [Chrfinder]: Remove: archive file [/home/abi/fetcher/tmp/chrfinder-0.0.1.tar.gz]
+[2024-05-25 11:42:29] INFO root fetch - processPackages [Chrfinder]: Remove: archive file [/home/abi/fetcher/tmp/chrfinder-0.0.2.tar.gz]
+[2024-05-25 11:42:29] INFO root fetch - main [MainThread]: End processing [Chrfinder]: success
+[2024-05-25 11:42:29] INFO root fetch - main [MainThread]: Store serial: [23373615]
