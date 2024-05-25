@@ -19902,3 +19902,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:10:59] INFO root fetch - processPackages [yangsuite-gnmi]: Remove: archive file [/home/abi/fetcher/tmp/yangsuite_gnmi-2.7.9.post0.dev1-py3-none-any.whl.zip]
 [2024-05-25 19:10:59] INFO root fetch - main [MainThread]: End processing [yangsuite-gnmi]: success
 [2024-05-25 19:11:00] INFO root fetch - main [MainThread]: Store serial: [23376679]
+[2024-05-25 19:13:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376679]
+[2024-05-25 19:13:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baseball
+[2024-05-25 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iSmartDownloader
+[2024-05-25 19:13:11] WARNING root fetch - processPackages [iSmartDownloader]: Skipping, unable to determine old version
+[2024-05-25 19:13:11] INFO root fetch - main [MainThread]: End processing [iSmartDownloader] error
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 19:13:12] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 19:13:12] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 19:13:12] INFO root fetch - main [MainThread]: Store serial: [23376686]
