@@ -11809,3 +11809,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:05:34] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240524.tar.gz]
 [2024-05-25 11:05:34] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
 [2024-05-25 11:05:34] INFO root fetch - main [MainThread]: Store serial: [23373509]
+[2024-05-25 11:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373509]
+[2024-05-25 11:07:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.timeseries
+[2024-05-25 11:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon
+[2024-05-25 11:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celery-callback-service
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240524] Old Version: [1.1.1b20240523]
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240524] Old Version: [1.1.1b20240523]
+[2024-05-25 11:07:43] WARNING root fetch - processPackages [celery-callback-service]: Skipping, unable to determine old version
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/0f/a0/11e4077e0b3a82d39df2009fa3809124f1774ddd60d8a357b3a70762ae98/autogluon.timeseries-1.1.1b20240523.tar.gz
+[2024-05-25 11:07:43] INFO root fetch - main [MainThread]: End processing [celery-callback-service] error
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/c0/29/83abda0ef5c332213796a538c3c6186721ade20f9993bdfe859e83247aee/autogluon-1.1.1b20240523.tar.gz
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/f5/0d/b9527b81a255cf75f94f4a578ab5143731b3665ebce93218eb8c5a362a28/autogluon-1.1.1b20240524.tar.gz
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/95/c4/a6fb6a47c971c35309d3cbf563f4b88a393b18a35a6a7d1cf923a0441429/autogluon.timeseries-1.1.1b20240524.tar.gz
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240523.tar.gz tmp/autogluon-1.1.1b20240524.tar.gz --markdown 20240525/a/autogluon/1.1.1b20240523-1.1.1b20240524/README.md --exclude *.pyd
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-05-25 11:07:43] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240523.tar.gz tmp/autogluon.timeseries-1.1.1b20240524.tar.gz --markdown 20240525/a/autogluon.timeseries/1.1.1b20240523-1.1.1b20240524/README.md --exclude *.pyd
+[2024-05-25 11:07:44] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240523.tar.gz]
+[2024-05-25 11:07:44] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240524.tar.gz]
+[2024-05-25 11:07:44] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-05-25 11:07:44] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240523.tar.gz]
+[2024-05-25 11:07:44] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240524.tar.gz]
+[2024-05-25 11:07:44] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-05-25 11:07:44] INFO root fetch - main [MainThread]: Store serial: [23373520]
