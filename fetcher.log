@@ -21223,3 +21223,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:58:30] INFO root fetch - processPackages [soar-sml]: Remove: archive file [/home/abi/fetcher/tmp/soar_sml-9.6.3.202405172339.dev122-cp35-abi3-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-05-25 20:58:30] INFO root fetch - main [MainThread]: End processing [soar-sml]: success
 [2024-05-25 20:58:30] INFO root fetch - main [MainThread]: Store serial: [23377262]
+[2024-05-25 21:00:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377262]
+[2024-05-25 21:00:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 21:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bencode-rs
+[2024-05-25 21:00:39] INFO root fetch - processPackages [bencode-rs]: New version: [0.0.2a1] Old Version: [0.0.1]
+[2024-05-25 21:00:39] INFO root fetch - processPackages [bencode-rs]: Downloading https://files.pythonhosted.org/packages/52/8c/757eabe9f85bf774ff9c726d904cbbdd94f6bab3c00d3844a3dd104d2a89/bencode_rs-0.0.1-cp38-abi3-win_amd64.whl
+[2024-05-25 21:00:39] INFO root fetch - processPackages [bencode-rs]: Downloading https://files.pythonhosted.org/packages/36/d9/0ef6641b9f261efdcd285b878914f37d8724972760518d99783d9cf35c77/bencode_rs-0.0.2a1.tar.gz
+[2024-05-25 21:00:39] INFO root fetch - processPackages [bencode-rs]: executing diffoscope
+[2024-05-25 21:00:39] INFO root fetch - processPackages [bencode-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode_rs-0.0.1-cp38-abi3-win_amd64.whl.zip tmp/bencode_rs-0.0.2a1.tar.gz --markdown 20240525/b/bencode-rs/0.0.1-0.0.2a1/README.md --exclude *.pyd
+[2024-05-25 21:00:40] INFO root fetch - processPackages [bencode-rs]: Remove: archive file [/home/abi/fetcher/tmp/bencode_rs-0.0.1-cp38-abi3-win_amd64.whl.zip]
+[2024-05-25 21:00:40] INFO root fetch - processPackages [bencode-rs]: Remove: archive file [/home/abi/fetcher/tmp/bencode_rs-0.0.2a1.tar.gz]
+[2024-05-25 21:00:40] INFO root fetch - main [MainThread]: End processing [bencode-rs]: success
+[2024-05-25 21:00:40] INFO root fetch - main [MainThread]: Store serial: [23377294]
