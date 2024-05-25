@@ -20410,3 +20410,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 19:43:56] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
 [2024-05-25 19:43:56] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
 [2024-05-25 19:43:56] INFO root fetch - main [MainThread]: Store serial: [23376927]
+[2024-05-25 19:45:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376927]
+[2024-05-25 19:46:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 19:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djrender
+[2024-05-25 19:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolstr
+[2024-05-25 19:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xRedUtils
+[2024-05-25 19:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netbom
+[2024-05-25 19:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vbinsta
+[2024-05-25 19:46:04] INFO root fetch - processPackages [djrender]: New version: [0.1b6] Old Version: [0.1b5]
+[2024-05-25 19:46:04] INFO root fetch - processPackages [vbinsta]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-25 19:46:04] INFO root fetch - processPackages [djrender]: Downloading https://files.pythonhosted.org/packages/7c/8b/0236eb0acaf6e77bd576c6ff42e2ce5eb19b1bf6c0e33f2faa695062e0a4/djrender-0.1b5.tar.gz
+[2024-05-25 19:46:04] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/dd/4d/3278d5900185015f7dac27e58540b74bd663467c9d5ec6759ace9e57bca2/vbinsta-0.1.4.tar.gz
+[2024-05-25 19:46:04] INFO root fetch - processPackages [toolstr]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-25 19:46:04] WARNING root fetch - processPackages [xRedUtils]: Skipping, unable to determine old version
+[2024-05-25 19:46:04] INFO root fetch - main [MainThread]: End processing [xRedUtils] error
+[2024-05-25 19:46:04] INFO root fetch - processPackages [netbom]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-25 19:46:05] INFO root fetch - processPackages [netbom]: Downloading https://files.pythonhosted.org/packages/6c/37/2211686460d4017f64d6548304a8dea8b9ac74d4897020fad43369c3adaf/netbom-0.0.13.tar.gz
+[2024-05-25 19:46:05] INFO root fetch - processPackages [toolstr]: Downloading https://files.pythonhosted.org/packages/7e/1f/70f4cef196737df67aaa9c9d6298c1ee33cbac96ecfa323aed2668e82f01/toolstr-0.9.8.tar.gz
+[2024-05-25 19:46:05] INFO root fetch - processPackages [djrender]: Downloading https://files.pythonhosted.org/packages/46/83/e3895b7a8d5303ca1ce49533a80d4f779c56f74bce7759ed09065c7781d2/djrender-0.1b6.tar.gz
+[2024-05-25 19:46:05] INFO root fetch - processPackages [vbinsta]: Downloading https://files.pythonhosted.org/packages/e4/12/934aa6123d105080554dacfee99f6a8a24fe0b5d90298676ce776a5c0592/vbinsta-0.1.5.tar.gz
+[2024-05-25 19:46:05] INFO root fetch - processPackages [djrender]: executing diffoscope
+[2024-05-25 19:46:05] INFO root fetch - processPackages [djrender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djrender-0.1b5.tar.gz tmp/djrender-0.1b6.tar.gz --markdown 20240525/d/djrender/0.1b5-0.1b6/README.md --exclude *.pyd
+[2024-05-25 19:46:05] INFO root fetch - processPackages [vbinsta]: executing diffoscope
+[2024-05-25 19:46:05] INFO root fetch - processPackages [vbinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbinsta-0.1.4.tar.gz tmp/vbinsta-0.1.5.tar.gz --markdown 20240525/v/vbinsta/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-25 19:46:05] INFO root fetch - processPackages [netbom]: Downloading https://files.pythonhosted.org/packages/4e/12/5129d5f5125845d13a96f064ff668eeeab0ba5f0b8dd62e3b7a7d540a917/netbom-0.0.14.tar.gz
+[2024-05-25 19:46:05] INFO root fetch - processPackages [toolstr]: Downloading https://files.pythonhosted.org/packages/fd/fc/aaece76465a20c361f606aa1e2de869b122daf7a8e63f78d497f1e7dfd36/toolstr-0.9.9.tar.gz
+[2024-05-25 19:46:05] INFO root fetch - processPackages [toolstr]: executing diffoscope
+[2024-05-25 19:46:05] INFO root fetch - processPackages [toolstr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolstr-0.9.8.tar.gz tmp/toolstr-0.9.9.tar.gz --markdown 20240525/t/toolstr/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-25 19:46:05] INFO root fetch - processPackages [netbom]: executing diffoscope
+[2024-05-25 19:46:05] INFO root fetch - processPackages [netbom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbom-0.0.13.tar.gz tmp/netbom-0.0.14.tar.gz --markdown 20240525/n/netbom/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-25 19:46:05] INFO root fetch - processPackages [djrender]: Remove: archive file [/home/abi/fetcher/tmp/djrender-0.1b5.tar.gz]
+[2024-05-25 19:46:05] INFO root fetch - processPackages [djrender]: Remove: archive file [/home/abi/fetcher/tmp/djrender-0.1b6.tar.gz]
+[2024-05-25 19:46:05] INFO root fetch - main [MainThread]: End processing [djrender]: success
+[2024-05-25 19:46:05] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.4.tar.gz]
+[2024-05-25 19:46:05] INFO root fetch - processPackages [vbinsta]: Remove: archive file [/home/abi/fetcher/tmp/vbinsta-0.1.5.tar.gz]
+[2024-05-25 19:46:05] INFO root fetch - main [MainThread]: End processing [vbinsta]: success
+[2024-05-25 19:46:06] INFO root fetch - processPackages [netbom]: Remove: archive file [/home/abi/fetcher/tmp/netbom-0.0.13.tar.gz]
+[2024-05-25 19:46:06] INFO root fetch - processPackages [netbom]: Remove: archive file [/home/abi/fetcher/tmp/netbom-0.0.14.tar.gz]
+[2024-05-25 19:46:06] INFO root fetch - main [MainThread]: End processing [netbom]: success
+[2024-05-25 19:46:06] INFO root fetch - processPackages [toolstr]: Remove: archive file [/home/abi/fetcher/tmp/toolstr-0.9.8.tar.gz]
+[2024-05-25 19:46:06] INFO root fetch - processPackages [toolstr]: Remove: archive file [/home/abi/fetcher/tmp/toolstr-0.9.9.tar.gz]
+[2024-05-25 19:46:06] INFO root fetch - main [MainThread]: End processing [toolstr]: success
+[2024-05-25 19:46:06] INFO root fetch - main [MainThread]: Store serial: [23376945]
