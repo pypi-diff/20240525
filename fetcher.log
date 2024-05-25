@@ -23280,3 +23280,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:32:01] INFO root fetch - processPackages [magyar]: Remove: archive file [/home/abi/fetcher/tmp/magyar-4.0.1.tar.gz]
 [2024-05-25 23:32:01] INFO root fetch - main [MainThread]: End processing [magyar]: success
 [2024-05-25 23:32:01] INFO root fetch - main [MainThread]: Store serial: [23378110]
+[2024-05-25 23:34:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378110]
+[2024-05-25 23:34:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 23:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aihorde
+[2024-05-25 23:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BinaryAndSerializableMath
+[2024-05-25 23:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask_postgres
+[2024-05-25 23:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bibcite
+[2024-05-25 23:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: palinuro-lib
+[2024-05-25 23:34:10] INFO root fetch - processPackages [palinuro-lib]: New version: [0.5] Old Version: [0.4]
+[2024-05-25 23:34:10] INFO root fetch - processPackages [palinuro-lib]: Downloading https://files.pythonhosted.org/packages/e3/6c/d36b3d3051fcc6e64cf3e88fe725038b6b2c9ad77c3ba669dd10bbdd3792/palinuro_lib-0.4.tar.gz
+[2024-05-25 23:34:10] INFO root fetch - processPackages [bibcite]: New version: [0.2.3] Old Version: [0.2.1]
+[2024-05-25 23:34:10] INFO root fetch - processPackages [aihorde]: New version: [0.3] Old Version: [0.1]
+[2024-05-25 23:34:10] WARNING root fetch - processPackages [BinaryAndSerializableMath]: Skipping, unable to determine old version
+[2024-05-25 23:34:10] INFO root fetch - main [MainThread]: End processing [BinaryAndSerializableMath] error
+[2024-05-25 23:34:10] INFO root fetch - processPackages [flask_postgres]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-25 23:34:11] INFO root fetch - processPackages [aihorde]: Downloading https://files.pythonhosted.org/packages/c7/2c/45c5ca6c20661286aef519d418f472231b9d58dea60e4454eef45499e9b5/aihorde-0.1.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [bibcite]: Downloading https://files.pythonhosted.org/packages/15/7c/c14bcf875ce91b3e315c1c18af9f0eff0ae60f431fffba5403e77de3ffc6/bibcite-0.2.1.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [flask_postgres]: Downloading https://files.pythonhosted.org/packages/2a/f5/f90ce0994b3701c21184d1ddbae6de62dec5ae3058f41f3dbf1e4fe4f090/flask_postgres-0.2.2.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [palinuro-lib]: Downloading https://files.pythonhosted.org/packages/9f/af/5c4210524ac47c22673047d820118615cf06f2bc4598576a24f2523b1976/palinuro_lib-0.5.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [palinuro-lib]: executing diffoscope
+[2024-05-25 23:34:11] INFO root fetch - processPackages [palinuro-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palinuro_lib-0.4.tar.gz tmp/palinuro_lib-0.5.tar.gz --markdown 20240525/p/palinuro-lib/0.4-0.5/README.md --exclude *.pyd
+[2024-05-25 23:34:11] INFO root fetch - processPackages [aihorde]: Downloading https://files.pythonhosted.org/packages/5d/dd/fbff2ffb6c9bd506584a699d3a0ecddbf2cd4d644b5552f0f53bdccd6d0c/aihorde-0.3.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [bibcite]: Downloading https://files.pythonhosted.org/packages/fa/20/a01aa9ba8e92c1ace4fb315be5196f3ddd22930792d2045e767a62120009/bibcite-0.2.3.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [flask_postgres]: Downloading https://files.pythonhosted.org/packages/35/a4/7e8159b0fa44cf7df4be645fdecc348015fa57713557cd7c97377eb56b30/flask_postgres-0.2.3.tar.gz
+[2024-05-25 23:34:11] INFO root fetch - processPackages [aihorde]: executing diffoscope
+[2024-05-25 23:34:11] INFO root fetch - processPackages [aihorde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihorde-0.1.tar.gz tmp/aihorde-0.3.tar.gz --markdown 20240525/a/aihorde/0.1-0.3/README.md --exclude *.pyd
+[2024-05-25 23:34:11] INFO root fetch - processPackages [bibcite]: executing diffoscope
+[2024-05-25 23:34:11] INFO root fetch - processPackages [bibcite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibcite-0.2.1.tar.gz tmp/bibcite-0.2.3.tar.gz --markdown 20240525/b/bibcite/0.2.1-0.2.3/README.md --exclude *.pyd
+[2024-05-25 23:34:11] INFO root fetch - processPackages [flask_postgres]: executing diffoscope
+[2024-05-25 23:34:11] INFO root fetch - processPackages [flask_postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_postgres-0.2.2.tar.gz tmp/flask_postgres-0.2.3.tar.gz --markdown 20240525/f/flask_postgres/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-25 23:34:12] INFO root fetch - processPackages [palinuro-lib]: Remove: archive file [/home/abi/fetcher/tmp/palinuro_lib-0.4.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - processPackages [palinuro-lib]: Remove: archive file [/home/abi/fetcher/tmp/palinuro_lib-0.5.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - main [MainThread]: End processing [palinuro-lib]: success
+[2024-05-25 23:34:12] INFO root fetch - processPackages [bibcite]: Remove: archive file [/home/abi/fetcher/tmp/bibcite-0.2.1.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - processPackages [bibcite]: Remove: archive file [/home/abi/fetcher/tmp/bibcite-0.2.3.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - main [MainThread]: End processing [bibcite]: success
+[2024-05-25 23:34:12] INFO root fetch - processPackages [aihorde]: Remove: archive file [/home/abi/fetcher/tmp/aihorde-0.1.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - processPackages [aihorde]: Remove: archive file [/home/abi/fetcher/tmp/aihorde-0.3.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - main [MainThread]: End processing [aihorde]: success
+[2024-05-25 23:34:12] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.2.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - processPackages [flask_postgres]: Remove: archive file [/home/abi/fetcher/tmp/flask_postgres-0.2.3.tar.gz]
+[2024-05-25 23:34:12] INFO root fetch - main [MainThread]: End processing [flask_postgres]: success
+[2024-05-25 23:34:12] INFO root fetch - main [MainThread]: Store serial: [23378127]
