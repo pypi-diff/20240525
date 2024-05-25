@@ -9824,3 +9824,26 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:41:31] WARNING root fetch - processPackages [techgram]: Skipping package: exceeds size limit 11235555>=10485760
 [2024-05-25 08:41:31] INFO root fetch - main [MainThread]: End processing [techgram] error
 [2024-05-25 08:41:31] INFO root fetch - main [MainThread]: Store serial: [23372595]
+[2024-05-25 08:43:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372595]
+[2024-05-25 08:43:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 08:45:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372595]
+[2024-05-25 08:45:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyuptech
+[2024-05-25 08:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-researcher
+[2024-05-25 08:45:46] INFO root fetch - processPackages [gpt-researcher]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-25 08:45:46] INFO root fetch - processPackages [pyuptech]: New version: [0.1.6.1] Old Version: [0.1.6]
+[2024-05-25 08:45:46] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/a1/dd/ced4ca35e6e8edbdbd366b6db61cbd9f78786a11bc4462558f24f03bbfeb/gpt-researcher-0.5.3.tar.gz
+[2024-05-25 08:45:46] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/88/7b/20b5b9e8a51723f13c56d06436c6eb0e80ced43761c117517e9bb9ea0ad9/pyuptech-0.1.6.tar.gz
+[2024-05-25 08:45:46] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/93/9c/ac022a6ff538f18805ac198cead94d6981a5051dc3ea3d47ad9fc69223ca/gpt-researcher-0.5.4.tar.gz
+[2024-05-25 08:45:46] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/87/6d/b4f31cfc8bb0033598d8bff095af04d674c87036310fe8ce6fac7c6a93cf/pyuptech-0.1.6.1.tar.gz
+[2024-05-25 08:45:46] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-05-25 08:45:46] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.6.tar.gz tmp/pyuptech-0.1.6.1.tar.gz --markdown 20240525/p/pyuptech/0.1.6-0.1.6.1/README.md --exclude *.pyd
+[2024-05-25 08:45:46] INFO root fetch - processPackages [gpt-researcher]: executing diffoscope
+[2024-05-25 08:45:46] INFO root fetch - processPackages [gpt-researcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-researcher-0.5.3.tar.gz tmp/gpt-researcher-0.5.4.tar.gz --markdown 20240525/g/gpt-researcher/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-25 08:45:47] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.tar.gz]
+[2024-05-25 08:45:47] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.6.1.tar.gz]
+[2024-05-25 08:45:47] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-05-25 08:45:47] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.5.3.tar.gz]
+[2024-05-25 08:45:47] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.5.4.tar.gz]
+[2024-05-25 08:45:47] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
+[2024-05-25 08:45:47] INFO root fetch - main [MainThread]: Store serial: [23372601]
