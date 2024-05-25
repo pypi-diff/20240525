@@ -19304,3 +19304,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:27:02] INFO root fetch - processPackages [zipreport-lib]: Remove: archive file [/home/abi/fetcher/tmp/zipreport-lib-2.0.1.tar.gz]
 [2024-05-25 18:27:02] INFO root fetch - main [MainThread]: End processing [zipreport-lib]: success
 [2024-05-25 18:27:02] INFO root fetch - main [MainThread]: Store serial: [23376458]
+[2024-05-25 18:29:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376458]
+[2024-05-25 18:29:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 18:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdtfile
+[2024-05-25 18:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sunnyday-bg3737366
+[2024-05-25 18:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-25 18:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: muko
+[2024-05-25 18:29:12] INFO root fetch - processPackages [muko]: New version: [2.55] Old Version: [2.54]
+[2024-05-25 18:29:12] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/3e/98/dd4a0be3cdc4f3ba88102dd291a0e873894e6434b6b61b486255c640745a/muko-2.54-py3-none-any.whl
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sdtfile]: New version: [2024.5.24] Old Version: [2024.4.24]
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sunnyday-bg3737366]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 18:29:12] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240525.413] Old Version: [0.45.20240525.412]
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sunnyday-bg3737366]: Downloading https://files.pythonhosted.org/packages/44/33/b4c84559ced78108cb30605672e3d07b22a295dd17c970aa24acfed9a396/sunnyday_bg3737366-1.0.0.tar.gz
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sdtfile]: Downloading https://files.pythonhosted.org/packages/55/51/c5a190812ce73adaaf8afdeb550c0c536d0b9fd777a4a64a333c81070509/sdtfile-2024.4.24.tar.gz
+[2024-05-25 18:29:12] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/1e/4f/2d982f6a0bde6c8a8ccc38e7dbef57dc06b4c4c5882a26bc3bdb4dbd5ecb/pkscreener-0.45.20240525.412-cp311-cp311-win_amd64.whl
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sunnyday-bg3737366]: Downloading https://files.pythonhosted.org/packages/89/07/82277eb4e932df5c2a4c4822c49864ad72084ba1c64cc56acf8c84ff4794/sunnyday_bg3737366-1.0.1.tar.gz
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sdtfile]: Downloading https://files.pythonhosted.org/packages/9b/66/1ce7fb0912d32ee90e72abe07949d898709813016b54e0cfa9a572aba888/sdtfile-2024.5.24.tar.gz
+[2024-05-25 18:29:12] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/90/64/9029370cd9966d79551001cbf978d8db694b311fd293c66309e706ad2f54/muko-2.55-py3-none-any.whl
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sunnyday-bg3737366]: executing diffoscope
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sunnyday-bg3737366]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunnyday_bg3737366-1.0.0.tar.gz tmp/sunnyday_bg3737366-1.0.1.tar.gz --markdown 20240525/s/sunnyday-bg3737366/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sdtfile]: executing diffoscope
+[2024-05-25 18:29:12] INFO root fetch - processPackages [sdtfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdtfile-2024.4.24.tar.gz tmp/sdtfile-2024.5.24.tar.gz --markdown 20240525/s/sdtfile/2024.4.24-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 18:29:13] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-05-25 18:29:13] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.54-py3-none-any.whl.zip tmp/muko-2.55-py3-none-any.whl.zip --markdown 20240525/m/muko/2.54-2.55/README.md --exclude *.pyd
+[2024-05-25 18:29:13] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/e2/7c/317831ea18ef0f06bbd75a1fdbe430c65b56e76ab1c0a1d77c7ebe8687a2/pkscreener-0.45.20240525.413-cp311-cp311-manylinux2014_x86_64.whl
+[2024-05-25 18:29:13] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-25 18:29:13] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240525.412-cp311-cp311-win_amd64.whl.zip tmp/pkscreener-0.45.20240525.413-cp311-cp311-manylinux2014_x86_64.whl.zip --markdown 20240525/p/pkscreener/0.45.20240525.412-0.45.20240525.413/README.md --exclude *.pyd
+[2024-05-25 18:29:13] INFO root fetch - processPackages [sunnyday-bg3737366]: Remove: archive file [/home/abi/fetcher/tmp/sunnyday_bg3737366-1.0.0.tar.gz]
+[2024-05-25 18:29:13] INFO root fetch - processPackages [sunnyday-bg3737366]: Remove: archive file [/home/abi/fetcher/tmp/sunnyday_bg3737366-1.0.1.tar.gz]
+[2024-05-25 18:29:13] INFO root fetch - main [MainThread]: End processing [sunnyday-bg3737366]: success
+[2024-05-25 18:29:13] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.54-py3-none-any.whl.zip]
+[2024-05-25 18:29:13] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.55-py3-none-any.whl.zip]
+[2024-05-25 18:29:13] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-05-25 18:29:13] INFO root fetch - processPackages [sdtfile]: Remove: archive file [/home/abi/fetcher/tmp/sdtfile-2024.4.24.tar.gz]
+[2024-05-25 18:29:13] INFO root fetch - processPackages [sdtfile]: Remove: archive file [/home/abi/fetcher/tmp/sdtfile-2024.5.24.tar.gz]
+[2024-05-25 18:29:13] INFO root fetch - main [MainThread]: End processing [sdtfile]: success
+[2024-05-25 18:29:14] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.412-cp311-cp311-win_amd64.whl.zip]
+[2024-05-25 18:29:14] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.413-cp311-cp311-manylinux2014_x86_64.whl.zip]
+[2024-05-25 18:29:14] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-25 18:29:14] INFO root fetch - main [MainThread]: Store serial: [23376471]
