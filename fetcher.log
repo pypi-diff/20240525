@@ -21481,3 +21481,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:22:30] INFO root fetch - processPackages [django-mongo-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_mongo_backend-0.27.tar.gz]
 [2024-05-25 21:22:30] INFO root fetch - main [MainThread]: End processing [django-mongo-backend]: success
 [2024-05-25 21:22:30] INFO root fetch - main [MainThread]: Store serial: [23377426]
+[2024-05-25 21:24:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377426]
+[2024-05-25 21:24:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 21:26:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377426]
+[2024-05-25 21:26:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 21:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygentic
+[2024-05-25 21:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tabswitcher
+[2024-05-25 21:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kv-sql
+[2024-05-25 21:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: palinuro-lib
+[2024-05-25 21:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parupome
+[2024-05-25 21:26:44] INFO root fetch - processPackages [tabswitcher]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 21:26:44] INFO root fetch - processPackages [pygentic]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-25 21:26:44] WARNING root fetch - processPackages [palinuro-lib]: Skipping, unable to determine old version
+[2024-05-25 21:26:44] INFO root fetch - main [MainThread]: End processing [palinuro-lib] error
+[2024-05-25 21:26:44] INFO root fetch - processPackages [kv-sql]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 21:26:44] WARNING root fetch - processPackages [parupome]: Skipping, unable to determine old version
+[2024-05-25 21:26:44] INFO root fetch - main [MainThread]: End processing [parupome] error
+[2024-05-25 21:26:44] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/d5/aa/263fc4e2d8bfac053a46672db7a0c1e19a8ff13da8610f20efc4bb5cdf89/tabswitcher-0.0.2.tar.gz
+[2024-05-25 21:26:44] INFO root fetch - processPackages [pygentic]: Downloading https://files.pythonhosted.org/packages/e0/14/2776f4b8cf7112f1572efccbdb36c9f4d42e9fec200246a2796d21dd7aa3/pygentic-0.1.2.tar.gz
+[2024-05-25 21:26:44] INFO root fetch - processPackages [kv-sql]: Downloading https://files.pythonhosted.org/packages/29/88/0861fa29e081b9bf4dedfc509ec757641df52815bfa2f6a8267b250b0fb6/kv_sql-0.1.1.tar.gz
+[2024-05-25 21:26:45] INFO root fetch - processPackages [tabswitcher]: Downloading https://files.pythonhosted.org/packages/b1/f8/e9282ffe76d59ea4feb507cb96cda4c2575d56af45b0ad5982acab75d0fb/tabswitcher-0.0.3.tar.gz
+[2024-05-25 21:26:45] INFO root fetch - processPackages [pygentic]: Downloading https://files.pythonhosted.org/packages/3d/95/703b17c2e633cdb0245b2fc16cd66b8e28c5501e2869495575a234ada1f8/pygentic-0.2.0.tar.gz
+[2024-05-25 21:26:45] INFO root fetch - processPackages [kv-sql]: Downloading https://files.pythonhosted.org/packages/15/87/517764959c6edc1d82c5e044531ddf6c15ec34fa696e5b71c0309b063f50/kv_sql-0.1.2.tar.gz
+[2024-05-25 21:26:45] INFO root fetch - processPackages [pygentic]: executing diffoscope
+[2024-05-25 21:26:45] INFO root fetch - processPackages [pygentic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygentic-0.1.2.tar.gz tmp/pygentic-0.2.0.tar.gz --markdown 20240525/p/pygentic/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-25 21:26:45] INFO root fetch - processPackages [kv-sql]: executing diffoscope
+[2024-05-25 21:26:45] INFO root fetch - processPackages [kv-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_sql-0.1.1.tar.gz tmp/kv_sql-0.1.2.tar.gz --markdown 20240525/k/kv-sql/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 21:26:45] INFO root fetch - processPackages [tabswitcher]: executing diffoscope
+[2024-05-25 21:26:45] INFO root fetch - processPackages [tabswitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabswitcher-0.0.2.tar.gz tmp/tabswitcher-0.0.3.tar.gz --markdown 20240525/t/tabswitcher/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 21:26:45] INFO root fetch - processPackages [pygentic]: Remove: archive file [/home/abi/fetcher/tmp/pygentic-0.1.2.tar.gz]
+[2024-05-25 21:26:45] INFO root fetch - processPackages [pygentic]: Remove: archive file [/home/abi/fetcher/tmp/pygentic-0.2.0.tar.gz]
+[2024-05-25 21:26:45] INFO root fetch - main [MainThread]: End processing [pygentic]: success
+[2024-05-25 21:26:45] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.2.tar.gz]
+[2024-05-25 21:26:45] INFO root fetch - processPackages [tabswitcher]: Remove: archive file [/home/abi/fetcher/tmp/tabswitcher-0.0.3.tar.gz]
+[2024-05-25 21:26:45] INFO root fetch - main [MainThread]: End processing [tabswitcher]: success
+[2024-05-25 21:26:45] INFO root fetch - processPackages [kv-sql]: Remove: archive file [/home/abi/fetcher/tmp/kv_sql-0.1.1.tar.gz]
+[2024-05-25 21:26:45] INFO root fetch - processPackages [kv-sql]: Remove: archive file [/home/abi/fetcher/tmp/kv_sql-0.1.2.tar.gz]
+[2024-05-25 21:26:45] INFO root fetch - main [MainThread]: End processing [kv-sql]: success
+[2024-05-25 21:26:45] INFO root fetch - main [MainThread]: Store serial: [23377443]
