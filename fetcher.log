@@ -7847,3 +7847,54 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:21:44] INFO root fetch - processPackages [cdktf-cdktf-provider-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-newrelic-9.0.3.tar.gz]
 [2024-05-25 05:21:44] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-newrelic]: success
 [2024-05-25 05:21:44] INFO root fetch - main [MainThread]: Store serial: [23371680]
+[2024-05-25 05:23:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371680]
+[2024-05-25 05:23:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xingpyc
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docmesh-core
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctrip-app-ui
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: psf
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-qs
+[2024-05-25 05:23:53] WARNING root fetch - processPackages [xingpyc]: Skipping, unable to determine old version
+[2024-05-25 05:23:53] INFO root fetch - main [MainThread]: End processing [xingpyc] error
+[2024-05-25 05:23:53] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024052403] Old Version: [3.3.3.dev2024052303]
+[2024-05-25 05:23:53] INFO root fetch - processPackages [docmesh-core]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 05:23:53] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-05-25 05:23:53] INFO root fetch - processPackages [streamlit-qs]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-25 05:23:53] INFO root fetch - processPackages [psf]: New version: [2024.5.24] Old Version: [2024.4.24]
+[2024-05-25 05:23:53] INFO root fetch - processPackages [docmesh-core]: Downloading https://files.pythonhosted.org/packages/a3/79/d9bc004bfc279a44ed20456d2291276a0531edffff8ccdb16e8541ea48ca/docmesh_core-0.0.8.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/cc/5f/a9a8998c581e199405c9e1531a2e521c5931c3d92bbe7f4376ce05835f4a/keras_nightly-3.3.3.dev2024052303.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/3d/1d/dc284a30b4b54e679bce6192857da5c94689a91d1757036fb2af3cebc603/ctrip-app-ui-0.7.4.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [psf]: Downloading https://files.pythonhosted.org/packages/21/f5/a53dc1c780b56c0a6dc4c3a5298f0ca68521acd3acb040e9a02c7f228677/psf-2024.4.24.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [streamlit-qs]: Downloading https://files.pythonhosted.org/packages/cb/94/73580b3d53b829afa919ce124e9e81a738fe1536b007f6cc9f7bf2f8514c/streamlit_qs-0.3.2.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [docmesh-core]: Downloading https://files.pythonhosted.org/packages/d6/89/4e5e06acbd9fd64c128954c7f0f43c0b5423e73d15cb7075e3e4d27c55f4/docmesh_core-0.0.9.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [docmesh-core]: executing diffoscope
+[2024-05-25 05:23:54] INFO root fetch - processPackages [docmesh-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docmesh_core-0.0.8.tar.gz tmp/docmesh_core-0.0.9.tar.gz --markdown 20240525/d/docmesh-core/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 05:23:54] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/c3/da/4e099d4f8b275b4ed0bee62c4fd5b0af81614f09515a8fd89de7fe8befbc/ctrip-app-ui-0.7.5.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [streamlit-qs]: Downloading https://files.pythonhosted.org/packages/a2/25/a9d9ebe4f7f4a1c2c1c4f8d43036ebe7489d7cb90afefbed8a182c17af52/streamlit_qs-0.3.3.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/f7/fc/462e17a2aabf45065b8f4f7289570145d2b446ca520585bea514a0a8124f/keras_nightly-3.3.3.dev2024052403.tar.gz
+[2024-05-25 05:23:54] INFO root fetch - processPackages [psf]: Downloading https://files.pythonhosted.org/packages/8d/ed/7ae43b1267bd0c6769246e00c9d586988cfbe364d78e8ab61b7f0d62ebf9/psf-2024.5.24-cp39-cp39-macosx_11_0_arm64.whl
+[2024-05-25 05:23:54] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-25 05:23:54] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.7.4.tar.gz tmp/ctrip-app-ui-0.7.5.tar.gz --markdown 20240525/c/ctrip-app-ui/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-05-25 05:23:54] INFO root fetch - processPackages [streamlit-qs]: executing diffoscope
+[2024-05-25 05:23:54] INFO root fetch - processPackages [streamlit-qs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_qs-0.3.2.tar.gz tmp/streamlit_qs-0.3.3.tar.gz --markdown 20240525/s/streamlit-qs/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-25 05:23:54] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-05-25 05:23:54] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024052303.tar.gz tmp/keras_nightly-3.3.3.dev2024052403.tar.gz --markdown 20240525/k/keras-nightly/3.3.3.dev2024052303-3.3.3.dev2024052403/README.md --exclude *.pyd
+[2024-05-25 05:23:54] INFO root fetch - processPackages [docmesh-core]: Remove: archive file [/home/abi/fetcher/tmp/docmesh_core-0.0.8.tar.gz]
+[2024-05-25 05:23:54] INFO root fetch - processPackages [docmesh-core]: Remove: archive file [/home/abi/fetcher/tmp/docmesh_core-0.0.9.tar.gz]
+[2024-05-25 05:23:54] INFO root fetch - main [MainThread]: End processing [docmesh-core]: success
+[2024-05-25 05:23:55] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.7.4.tar.gz]
+[2024-05-25 05:23:55] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.7.5.tar.gz]
+[2024-05-25 05:23:55] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-25 05:23:55] INFO root fetch - processPackages [psf]: executing diffoscope
+[2024-05-25 05:23:55] INFO root fetch - processPackages [psf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psf-2024.4.24.tar.gz tmp/psf-2024.5.24-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240525/p/psf/2024.4.24-2024.5.24/README.md --exclude *.pyd
+[2024-05-25 05:23:55] INFO root fetch - processPackages [streamlit-qs]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_qs-0.3.2.tar.gz]
+[2024-05-25 05:23:55] INFO root fetch - processPackages [streamlit-qs]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_qs-0.3.3.tar.gz]
+[2024-05-25 05:23:55] INFO root fetch - main [MainThread]: End processing [streamlit-qs]: success
+[2024-05-25 05:23:55] INFO root fetch - processPackages [psf]: Remove: archive file [/home/abi/fetcher/tmp/psf-2024.4.24.tar.gz]
+[2024-05-25 05:23:55] INFO root fetch - processPackages [psf]: Remove: archive file [/home/abi/fetcher/tmp/psf-2024.5.24-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-05-25 05:23:55] INFO root fetch - main [MainThread]: End processing [psf]: success
+[2024-05-25 05:23:56] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024052303.tar.gz]
+[2024-05-25 05:23:56] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024052403.tar.gz]
+[2024-05-25 05:23:56] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-05-25 05:23:56] INFO root fetch - main [MainThread]: Store serial: [23371713]
