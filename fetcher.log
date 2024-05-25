@@ -11626,3 +11626,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 10:56:42] INFO root fetch - processPackages [aioqzone]: Remove: archive file [/home/abi/fetcher/tmp/aioqzone-1.8.3.dev1.tar.gz]
 [2024-05-25 10:56:42] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
 [2024-05-25 10:56:42] INFO root fetch - main [MainThread]: Store serial: [23373457]
+[2024-05-25 10:58:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373457]
+[2024-05-25 10:58:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 10:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zern
+[2024-05-25 10:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-05-25 10:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-mail-post-defer
+[2024-05-25 10:58:53] INFO root fetch - processPackages [zern]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 10:58:53] INFO root fetch - processPackages [zern]: Downloading https://files.pythonhosted.org/packages/1f/da/00162e2371310a89c93444b828c4ef9046e808f78d46d6d744de51a78a29/zern-0.0.8.tar.gz
+[2024-05-25 10:58:53] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.1.5]
+[2024-05-25 10:58:53] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 10:58:53] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Downloading https://files.pythonhosted.org/packages/3b/e0/3d30187cc3d9421f00d591e264c987dfd6319fd02cde84d9fd609b84c941/odoo_addon_mail_post_defer-16.0.1.0.1.5-py3-none-any.whl
+[2024-05-25 10:58:53] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 10:58:53] INFO root fetch - processPackages [zern]: Downloading https://files.pythonhosted.org/packages/da/2b/b995610e20e170f20bfa70249e2c9ccfa458bda26c1898ebe6ba0844b9e6/zern-0.0.9.tar.gz
+[2024-05-25 10:58:53] INFO root fetch - processPackages [zern]: executing diffoscope
+[2024-05-25 10:58:53] INFO root fetch - processPackages [zern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zern-0.0.8.tar.gz tmp/zern-0.0.9.tar.gz --markdown 20240525/z/zern/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 10:58:53] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Downloading https://files.pythonhosted.org/packages/09/bf/23123b4de059dc4ba32175483c37c10bedbcb8a821be4cae793224db6bab/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl
+[2024-05-25 10:58:53] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: executing diffoscope
+[2024-05-25 10:58:53] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_post_defer-16.0.1.0.1.5-py3-none-any.whl.zip tmp/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-mail-post-defer/16.0.1.0.1.5-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-25 10:58:54] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 10:58:54] INFO root fetch - processPackages [zern]: Remove: archive file [/home/abi/fetcher/tmp/zern-0.0.8.tar.gz]
+[2024-05-25 10:58:54] INFO root fetch - processPackages [zern]: Remove: archive file [/home/abi/fetcher/tmp/zern-0.0.9.tar.gz]
+[2024-05-25 10:58:54] INFO root fetch - main [MainThread]: End processing [zern]: success
+[2024-05-25 10:58:54] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 10:58:54] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 10:58:54] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_post_defer-16.0.1.0.1.5-py3-none-any.whl.zip]
+[2024-05-25 10:58:54] INFO root fetch - processPackages [odoo-addon-mail-post-defer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_post_defer-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-25 10:58:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-post-defer]: success
+[2024-05-25 10:58:56] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 10:58:56] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 10:58:56] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 10:58:56] INFO root fetch - main [MainThread]: Store serial: [23373464]
