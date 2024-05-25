@@ -14238,3 +14238,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:40:08] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240525.406-cp311-cp311-macosx_10_9_universal2.whl.zip]
 [2024-05-25 14:40:08] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-25 14:40:08] INFO root fetch - main [MainThread]: Store serial: [23374630]
+[2024-05-25 14:42:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374630]
+[2024-05-25 14:42:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 14:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2024-05-25 14:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-llm
+[2024-05-25 14:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: upsonic
+[2024-05-25 14:42:17] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-05-25 14:42:17] INFO root fetch - processPackages [upsonic]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-05-25 14:42:17] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-05-25 14:42:17] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240525] Old Version: [2.5.0b20240522]
+[2024-05-25 14:42:17] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/ce/d7/5c0f30d60d2fa22330cfeea53d272383b2f1e0b5885e9273da052826b388/bigdl_llm-2.5.0b20240522-py3-none-win_amd64.whl
+[2024-05-25 14:42:17] INFO root fetch - processPackages [upsonic]: Downloading https://files.pythonhosted.org/packages/28/4f/e4de97c3853a38f0003dd35e31de9d8003b16d10fd76b190f4778626ce27/upsonic-0.8.4.tar.gz
+[2024-05-25 14:42:17] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-05-25 14:42:17] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-05-25 14:42:17] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240525/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/README.md --exclude *.pyd
+[2024-05-25 14:42:17] INFO root fetch - processPackages [upsonic]: Downloading https://files.pythonhosted.org/packages/e2/c6/1f2c73c8b576a9a13477f4177f58dce58e65a860c35204e42f53a5db8144/upsonic-0.9.0.tar.gz
+[2024-05-25 14:42:18] INFO root fetch - processPackages [upsonic]: executing diffoscope
+[2024-05-25 14:42:18] INFO root fetch - processPackages [upsonic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upsonic-0.8.4.tar.gz tmp/upsonic-0.9.0.tar.gz --markdown 20240525/u/upsonic/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-05-25 14:42:18] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/26/01/6e1da0da2bc5e1d28b8a641624cef3f9a9b8d549aa420b8a62751e163f98/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl
+[2024-05-25 14:42:18] INFO root fetch - processPackages [upsonic]: Remove: archive file [/home/abi/fetcher/tmp/upsonic-0.8.4.tar.gz]
+[2024-05-25 14:42:18] INFO root fetch - processPackages [upsonic]: Remove: archive file [/home/abi/fetcher/tmp/upsonic-0.9.0.tar.gz]
+[2024-05-25 14:42:18] INFO root fetch - main [MainThread]: End processing [upsonic]: success
+[2024-05-25 14:42:18] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-05-25 14:42:18] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-05-25 14:42:18] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-05-25 14:42:19] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-25 14:42:19] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240522-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl.zip --markdown 20240525/b/bigdl-llm/2.5.0b20240522-2.5.0b20240525/README.md --exclude *.pyd
+[2024-05-25 14:42:20] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240522-py3-none-win_amd64.whl.zip]
+[2024-05-25 14:42:20] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240525-py3-none-win_amd64.whl.zip]
+[2024-05-25 14:42:20] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-25 14:42:20] INFO root fetch - main [MainThread]: Store serial: [23374637]
