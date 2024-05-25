@@ -1863,3 +1863,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:02:52] WARNING root fetch - processPackages [enigma-workflow-14]: Skipping, unable to determine old version
 [2024-05-25 02:02:52] INFO root fetch - main [MainThread]: End processing [enigma-workflow-14] error
 [2024-05-25 02:02:52] INFO root fetch - main [MainThread]: Store serial: [23369311]
+[2024-05-25 02:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369311]
+[2024-05-25 02:05:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 02:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-nightly
+[2024-05-25 02:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onnxscript
+[2024-05-25 02:05:01] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240524] Old Version: [0.1.0.dev20240523]
+[2024-05-25 02:05:01] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240524.446] Old Version: [2.0.0.20240523.418]
+[2024-05-25 02:05:01] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/40/0f/89137565d416dd084667782536b97dbeaa69f2ad70092eeca456ee744e80/onnxscript-0.1.0.dev20240523.tar.gz
+[2024-05-25 02:05:01] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a7/e0/fe5d248df537e5a5c80db5e56fb76f57d9ee6541fa66323b5136696efadc/mct-nightly-2.0.0.20240523.418.tar.gz
+[2024-05-25 02:05:02] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a0/37/624a05bc0596f42226daa90a37cb1f9ede140aaac0e3d42954fa667e585b/mct-nightly-2.0.0.20240524.446.tar.gz
+[2024-05-25 02:05:02] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/21/99/82551663bdf312059defb879a0a12f3bc5dd0f3b75882f1ba7f0fabaa2e3/onnxscript-0.1.0.dev20240524.tar.gz
+[2024-05-25 02:05:02] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-25 02:05:02] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240523.418.tar.gz tmp/mct-nightly-2.0.0.20240524.446.tar.gz --markdown 20240525/m/mct-nightly/2.0.0.20240523.418-2.0.0.20240524.446/README.md --exclude *.pyd
+[2024-05-25 02:05:02] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-25 02:05:02] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240523.tar.gz tmp/onnxscript-0.1.0.dev20240524.tar.gz --markdown 20240525/o/onnxscript/0.1.0.dev20240523-0.1.0.dev20240524/README.md --exclude *.pyd
+[2024-05-25 02:05:03] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240523.tar.gz]
+[2024-05-25 02:05:03] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240524.tar.gz]
+[2024-05-25 02:05:03] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-25 02:05:04] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240523.418.tar.gz]
+[2024-05-25 02:05:04] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240524.446.tar.gz]
+[2024-05-25 02:05:04] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-25 02:05:04] INFO root fetch - main [MainThread]: Store serial: [23369332]
