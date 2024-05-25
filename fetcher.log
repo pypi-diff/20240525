@@ -14205,3 +14205,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:35:33] INFO root fetch - processPackages [whisper-cpp-python-smr]: Remove: archive file [/home/abi/fetcher/tmp/whisper_cpp_python_smr-0.2.1.tar.gz]
 [2024-05-25 14:35:33] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python-smr]: success
 [2024-05-25 14:35:33] INFO root fetch - main [MainThread]: Store serial: [23374621]
+[2024-05-25 14:37:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374621]
+[2024-05-25 14:37:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 14:37:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-05-25 14:37:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-fastoche
+[2024-05-25 14:37:42] INFO root fetch - processPackages [python-115]: New version: [0.0.8.3.6] Old Version: [0.0.8.3.5]
+[2024-05-25 14:37:42] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/20/28/96c78540a7cbfd531e39a489b6c9e07af6fcfcb293b0e45a1ad40466479a/python_115-0.0.8.3.5.tar.gz
+[2024-05-25 14:37:42] INFO root fetch - processPackages [django-fastoche]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-25 14:37:42] INFO root fetch - processPackages [django-fastoche]: Downloading https://files.pythonhosted.org/packages/09/a5/b814ec5e1c16602f98448ae97dde4422d12c59b742651d4b75c350e4ba80/django_fastoche-0.1.1.tar.gz
+[2024-05-25 14:37:42] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/f1/b0/cd57bdc3c92dbfe7393a86cf0de720db5f9b75eb799d8f7d299e7f225138/python_115-0.0.8.3.6.tar.gz
+[2024-05-25 14:37:42] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-05-25 14:37:42] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.3.5.tar.gz tmp/python_115-0.0.8.3.6.tar.gz --markdown 20240525/p/python-115/0.0.8.3.5-0.0.8.3.6/README.md --exclude *.pyd
+[2024-05-25 14:37:43] INFO root fetch - processPackages [django-fastoche]: Downloading https://files.pythonhosted.org/packages/eb/45/23531a2d8100a32cad31103cecff7f494b5024cfb63d0146d51b50889a69/django_fastoche-0.1.2.tar.gz
+[2024-05-25 14:37:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.5.tar.gz]
+[2024-05-25 14:37:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.6.tar.gz]
+[2024-05-25 14:37:43] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-05-25 14:37:44] INFO root fetch - processPackages [django-fastoche]: executing diffoscope
+[2024-05-25 14:37:44] INFO root fetch - processPackages [django-fastoche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fastoche-0.1.1.tar.gz tmp/django_fastoche-0.1.2.tar.gz --markdown 20240525/d/django-fastoche/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-25 14:37:56] INFO root fetch - processPackages [django-fastoche]: Remove: archive file [/home/abi/fetcher/tmp/django_fastoche-0.1.1.tar.gz]
+[2024-05-25 14:37:56] INFO root fetch - processPackages [django-fastoche]: Remove: archive file [/home/abi/fetcher/tmp/django_fastoche-0.1.2.tar.gz]
+[2024-05-25 14:37:56] INFO root fetch - main [MainThread]: End processing [django-fastoche]: success
+[2024-05-25 14:37:56] INFO root fetch - main [MainThread]: Store serial: [23374627]
