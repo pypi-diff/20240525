@@ -13813,3 +13813,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:51:49] INFO root fetch - processPackages [pygda]: Remove: archive file [/home/abi/fetcher/tmp/pygda-0.0.2.tar.gz]
 [2024-05-25 13:51:49] INFO root fetch - main [MainThread]: End processing [pygda]: success
 [2024-05-25 13:51:49] INFO root fetch - main [MainThread]: Store serial: [23374457]
+[2024-05-25 13:53:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374457]
+[2024-05-25 13:53:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 13:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faultier
+[2024-05-25 13:53:58] INFO root fetch - processPackages [faultier]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 13:53:59] INFO root fetch - processPackages [faultier]: Downloading https://files.pythonhosted.org/packages/27/ad/58a239a68f23f88fb228355bb00b3d807df6ab0e80a0ba8f57a5a3c5424e/faultier-0.1.8.tar.gz
+[2024-05-25 13:53:59] INFO root fetch - processPackages [faultier]: Downloading https://files.pythonhosted.org/packages/6f/d3/e7967405ff44c881f405408832e76d29031f99bac5de234dfcdaf0ea3a96/faultier-0.1.9.tar.gz
+[2024-05-25 13:53:59] INFO root fetch - processPackages [faultier]: executing diffoscope
+[2024-05-25 13:53:59] INFO root fetch - processPackages [faultier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faultier-0.1.8.tar.gz tmp/faultier-0.1.9.tar.gz --markdown 20240525/f/faultier/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 13:54:00] INFO root fetch - processPackages [faultier]: Remove: archive file [/home/abi/fetcher/tmp/faultier-0.1.8.tar.gz]
+[2024-05-25 13:54:00] INFO root fetch - processPackages [faultier]: Remove: archive file [/home/abi/fetcher/tmp/faultier-0.1.9.tar.gz]
+[2024-05-25 13:54:00] INFO root fetch - main [MainThread]: End processing [faultier]: success
+[2024-05-25 13:54:00] INFO root fetch - main [MainThread]: Store serial: [23374460]
