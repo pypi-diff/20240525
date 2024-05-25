@@ -19587,3 +19587,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:48:58] INFO root fetch - processPackages [liulianmao]: Remove: archive file [/home/abi/fetcher/tmp/liulianmao-2.1.0.tar.gz]
 [2024-05-25 18:48:58] INFO root fetch - main [MainThread]: End processing [liulianmao]: success
 [2024-05-25 18:48:58] INFO root fetch - main [MainThread]: Store serial: [23376558]
+[2024-05-25 18:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376558]
+[2024-05-25 18:51:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 18:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mongo-api-client
+[2024-05-25 18:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kgr
+[2024-05-25 18:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gslmathieu
+[2024-05-25 18:51:07] WARNING root fetch - processPackages [mongo-api-client]: Skipping, unable to determine old version
+[2024-05-25 18:51:07] WARNING root fetch - processPackages [gslmathieu]: Skipping, unable to determine old version
+[2024-05-25 18:51:07] INFO root fetch - main [MainThread]: End processing [mongo-api-client] error
+[2024-05-25 18:51:07] INFO root fetch - main [MainThread]: End processing [gslmathieu] error
+[2024-05-25 18:51:07] INFO root fetch - processPackages [kgr]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-25 18:51:07] INFO root fetch - processPackages [kgr]: Downloading https://files.pythonhosted.org/packages/43/07/d456664c4b4ce0e182f603cfdc409800f9f54e34df3f746195426ff033c3/kgr-0.2.2.tar.gz
+[2024-05-25 18:51:08] INFO root fetch - processPackages [kgr]: Downloading https://files.pythonhosted.org/packages/81/32/73e6c6adeedf809553e7705f6d2b79424112c941239b3c2260ac91ba7a77/kgr-0.3.0.tar.gz
+[2024-05-25 18:51:08] INFO root fetch - processPackages [kgr]: executing diffoscope
+[2024-05-25 18:51:08] INFO root fetch - processPackages [kgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgr-0.2.2.tar.gz tmp/kgr-0.3.0.tar.gz --markdown 20240525/k/kgr/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-25 18:51:08] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.2.2.tar.gz]
+[2024-05-25 18:51:08] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.3.0.tar.gz]
+[2024-05-25 18:51:08] INFO root fetch - main [MainThread]: End processing [kgr]: success
+[2024-05-25 18:51:08] INFO root fetch - main [MainThread]: Store serial: [23376566]
