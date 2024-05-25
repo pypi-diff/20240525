@@ -7402,3 +7402,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 04:26:57] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.24.tar.gz]
 [2024-05-25 04:26:57] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
 [2024-05-25 04:26:57] INFO root fetch - main [MainThread]: Store serial: [23371429]
+[2024-05-25 04:29:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371429]
+[2024-05-25 04:29:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 04:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlpx
+[2024-05-25 04:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: angle-emb
+[2024-05-25 04:29:13] INFO root fetch - processPackages [nlpx]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-25 04:29:13] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/ca/ae/e7692b2413a87e3f4c042f4cf7c0f8f66dee3cebf28cc1c1259685b64996/nlpx-1.1.2.tar.gz
+[2024-05-25 04:29:13] INFO root fetch - processPackages [angle-emb]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-25 04:29:14] INFO root fetch - processPackages [angle-emb]: Downloading https://files.pythonhosted.org/packages/1b/9c/1c8fb6eb1273246f75125983bd8b57cad34f24033e4325a334d4df16827b/angle_emb-0.4.1.tar.gz
+[2024-05-25 04:29:14] INFO root fetch - processPackages [nlpx]: Downloading https://files.pythonhosted.org/packages/04/30/c6fd21deb9d41a85af0ba01aa0777aaae2c6f0e3e3efc2b405ce31f1c3a3/nlpx-1.1.3.tar.gz
+[2024-05-25 04:29:14] INFO root fetch - processPackages [nlpx]: executing diffoscope
+[2024-05-25 04:29:14] INFO root fetch - processPackages [nlpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpx-1.1.2.tar.gz tmp/nlpx-1.1.3.tar.gz --markdown 20240525/n/nlpx/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-25 04:29:14] INFO root fetch - processPackages [angle-emb]: Downloading https://files.pythonhosted.org/packages/13/1e/b7adfbad568ff9e8fe26551fcca6bea5a418db8246a45a3a4ffe63e8b905/angle_emb-0.4.2.tar.gz
+[2024-05-25 04:29:14] INFO root fetch - processPackages [angle-emb]: executing diffoscope
+[2024-05-25 04:29:14] INFO root fetch - processPackages [angle-emb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angle_emb-0.4.1.tar.gz tmp/angle_emb-0.4.2.tar.gz --markdown 20240525/a/angle-emb/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-25 04:29:14] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.2.tar.gz]
+[2024-05-25 04:29:14] INFO root fetch - processPackages [nlpx]: Remove: archive file [/home/abi/fetcher/tmp/nlpx-1.1.3.tar.gz]
+[2024-05-25 04:29:14] INFO root fetch - main [MainThread]: End processing [nlpx]: success
+[2024-05-25 04:29:15] INFO root fetch - processPackages [angle-emb]: Remove: archive file [/home/abi/fetcher/tmp/angle_emb-0.4.1.tar.gz]
+[2024-05-25 04:29:15] INFO root fetch - processPackages [angle-emb]: Remove: archive file [/home/abi/fetcher/tmp/angle_emb-0.4.2.tar.gz]
+[2024-05-25 04:29:15] INFO root fetch - main [MainThread]: End processing [angle-emb]: success
+[2024-05-25 04:29:15] INFO root fetch - main [MainThread]: Store serial: [23371434]
