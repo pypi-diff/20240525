@@ -23172,3 +23172,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:25:25] INFO root fetch - processPackages [schwifty]: Remove: archive file [/home/abi/fetcher/tmp/schwifty-2024.5.4.tar.gz]
 [2024-05-25 23:25:25] INFO root fetch - main [MainThread]: End processing [schwifty]: success
 [2024-05-25 23:25:25] INFO root fetch - main [MainThread]: Store serial: [23378067]
+[2024-05-25 23:27:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378067]
+[2024-05-25 23:27:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 23:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysubs2
+[2024-05-25 23:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: criteria-local
+[2024-05-25 23:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gradio-agentchatbot
+[2024-05-25 23:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geofileops
+[2024-05-25 23:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: registries
+[2024-05-25 23:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: v2share
+[2024-05-25 23:27:34] INFO root fetch - processPackages [criteria-local]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-25 23:27:34] INFO root fetch - processPackages [geofileops]: New version: [0.8.2] Old Version: [0.8.1a0]
+[2024-05-25 23:27:34] WARNING root fetch - processPackages [registries]: Skipping, unable to determine old version
+[2024-05-25 23:27:34] INFO root fetch - main [MainThread]: End processing [registries] error
+[2024-05-25 23:27:34] INFO root fetch - processPackages [v2share]: New version: [0.1.0b2] Old Version: [0.1.0b1]
+[2024-05-25 23:27:34] INFO root fetch - processPackages [gradio-agentchatbot]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-05-25 23:27:34] INFO root fetch - processPackages [pysubs2]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-05-25 23:27:35] INFO root fetch - processPackages [v2share]: Downloading https://files.pythonhosted.org/packages/37/d8/d548ac7fc684939d830db2c792e7b1be4fbe7eabf5ffe9ec9bbae9126434/v2share-0.1.0b1.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [criteria-local]: Downloading https://files.pythonhosted.org/packages/6a/64/3cfdc8c1fab42a46a86e91f09bc94dac7098131bf28a574989d677a5c176/criteria-local-0.0.7.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [geofileops]: Downloading https://files.pythonhosted.org/packages/5e/32/ac40f4c0fc34469f411b3a8fc4124fbd1b0dae31a0304186b032d1f81713/geofileops-0.8.1a0.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [gradio-agentchatbot]: Downloading https://files.pythonhosted.org/packages/98/21/eff4fee6467de3f375fcba0be4a14755dbc2162bcddd1af162afe8fbecb1/gradio_agentchatbot-0.0.2.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [pysubs2]: Downloading https://files.pythonhosted.org/packages/d1/cd/309b63ee53e9ead3305d4f622ee3c57b02633da251877b8ab959db6360f0/pysubs2-1.7.1.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [v2share]: Downloading https://files.pythonhosted.org/packages/8a/1f/32131eedfbfba86782690c6375d19b7d47026a9cefe08abe5dbabdc63a4d/v2share-0.1.0b2.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [criteria-local]: Downloading https://files.pythonhosted.org/packages/64/00/8a1d3648f3a7e5706ec3bdd7415e0f7db56b10dc9df9b5fb8ade8dfdeda6/criteria-local-0.0.8.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [criteria-local]: executing diffoscope
+[2024-05-25 23:27:35] INFO root fetch - processPackages [geofileops]: Downloading https://files.pythonhosted.org/packages/60/5c/638604b73403049a8f16d7087c7d8671110b4dbd899cab0f26171b69c1b9/geofileops-0.8.2.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [criteria-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/criteria-local-0.0.7.tar.gz tmp/criteria-local-0.0.8.tar.gz --markdown 20240525/c/criteria-local/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-25 23:27:35] INFO root fetch - processPackages [gradio-agentchatbot]: Downloading https://files.pythonhosted.org/packages/70/5b/2a60916ca8d708568ed72a4c1e3e06dfcc9b62f36e7c385b91ec1e1e3c17/gradio_agentchatbot-0.0.4.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [v2share]: executing diffoscope
+[2024-05-25 23:27:35] INFO root fetch - processPackages [v2share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v2share-0.1.0b1.tar.gz tmp/v2share-0.1.0b2.tar.gz --markdown 20240525/v/v2share/0.1.0b1-0.1.0b2/README.md --exclude *.pyd
+[2024-05-25 23:27:35] INFO root fetch - processPackages [pysubs2]: Downloading https://files.pythonhosted.org/packages/1f/72/e9d8ac5aeb431bd49666fb49a6f6cdabfa040917a95a320e0f75d22b694e/pysubs2-1.7.2.tar.gz
+[2024-05-25 23:27:35] INFO root fetch - processPackages [geofileops]: executing diffoscope
+[2024-05-25 23:27:35] INFO root fetch - processPackages [geofileops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geofileops-0.8.1a0.tar.gz tmp/geofileops-0.8.2.tar.gz --markdown 20240525/g/geofileops/0.8.1a0-0.8.2/README.md --exclude *.pyd
+[2024-05-25 23:27:35] INFO root fetch - processPackages [gradio-agentchatbot]: executing diffoscope
+[2024-05-25 23:27:35] INFO root fetch - processPackages [gradio-agentchatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_agentchatbot-0.0.2.tar.gz tmp/gradio_agentchatbot-0.0.4.tar.gz --markdown 20240525/g/gradio-agentchatbot/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-05-25 23:27:35] INFO root fetch - processPackages [pysubs2]: executing diffoscope
+[2024-05-25 23:27:35] INFO root fetch - processPackages [pysubs2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysubs2-1.7.1.tar.gz tmp/pysubs2-1.7.2.tar.gz --markdown 20240525/p/pysubs2/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-05-25 23:27:36] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.7.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - processPackages [criteria-local]: Remove: archive file [/home/abi/fetcher/tmp/criteria-local-0.0.8.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - main [MainThread]: End processing [criteria-local]: success
+[2024-05-25 23:27:36] INFO root fetch - processPackages [v2share]: Remove: archive file [/home/abi/fetcher/tmp/v2share-0.1.0b1.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - processPackages [v2share]: Remove: archive file [/home/abi/fetcher/tmp/v2share-0.1.0b2.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - main [MainThread]: End processing [v2share]: success
+[2024-05-25 23:27:36] INFO root fetch - processPackages [pysubs2]: Remove: archive file [/home/abi/fetcher/tmp/pysubs2-1.7.1.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - processPackages [pysubs2]: Remove: archive file [/home/abi/fetcher/tmp/pysubs2-1.7.2.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - main [MainThread]: End processing [pysubs2]: success
+[2024-05-25 23:27:36] INFO root fetch - processPackages [geofileops]: Remove: archive file [/home/abi/fetcher/tmp/geofileops-0.8.1a0.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - processPackages [geofileops]: Remove: archive file [/home/abi/fetcher/tmp/geofileops-0.8.2.tar.gz]
+[2024-05-25 23:27:36] INFO root fetch - main [MainThread]: End processing [geofileops]: success
+[2024-05-25 23:27:40] INFO root fetch - processPackages [gradio-agentchatbot]: Remove: archive file [/home/abi/fetcher/tmp/gradio_agentchatbot-0.0.2.tar.gz]
+[2024-05-25 23:27:40] INFO root fetch - processPackages [gradio-agentchatbot]: Remove: archive file [/home/abi/fetcher/tmp/gradio_agentchatbot-0.0.4.tar.gz]
+[2024-05-25 23:27:40] INFO root fetch - main [MainThread]: End processing [gradio-agentchatbot]: success
+[2024-05-25 23:27:40] INFO root fetch - main [MainThread]: Store serial: [23378087]
