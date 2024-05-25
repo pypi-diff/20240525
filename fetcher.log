@@ -23375,3 +23375,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:40:41] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
 [2024-05-25 23:40:41] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-05-25 23:40:41] INFO root fetch - main [MainThread]: Store serial: [23378141]
+[2024-05-25 23:42:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23378141]
+[2024-05-25 23:42:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 23:42:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rio-ui
+[2024-05-25 23:42:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: turboconf
+[2024-05-25 23:42:50] WARNING root fetch - processPackages [turboconf]: Skipping, unable to determine old version
+[2024-05-25 23:42:50] INFO root fetch - main [MainThread]: End processing [turboconf] error
+[2024-05-25 23:42:50] INFO root fetch - processPackages [rio-ui]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-05-25 23:42:50] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/a1/41/4a63fae683fd7cceb7f5d9f0fd84cbe3776f64f9cd07b1d81af201bc5b76/rio_ui-0.8.2.tar.gz
+[2024-05-25 23:42:51] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/ec/10/57ca25ab0464266f3c2d254b82cfe0d2b7c07818f723755d6522500e91eb/rio_ui-0.8.3.tar.gz
+[2024-05-25 23:42:51] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-05-25 23:42:51] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.8.2.tar.gz tmp/rio_ui-0.8.3.tar.gz --markdown 20240525/r/rio-ui/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-05-25 23:42:53] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.2.tar.gz]
+[2024-05-25 23:42:53] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.8.3.tar.gz]
+[2024-05-25 23:42:53] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-05-25 23:42:53] INFO root fetch - main [MainThread]: Store serial: [23378149]
