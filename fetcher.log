@@ -14490,3 +14490,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:59:52] INFO root fetch - processPackages [upsonic-legacy]: Remove: archive file [/home/abi/fetcher/tmp/upsonic_legacy-0.27.0.tar.gz]
 [2024-05-25 14:59:52] INFO root fetch - main [MainThread]: End processing [upsonic-legacy]: success
 [2024-05-25 14:59:52] INFO root fetch - main [MainThread]: Store serial: [23374768]
+[2024-05-25 15:01:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374768]
+[2024-05-25 15:02:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 15:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tinyDisplay
+[2024-05-25 15:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hddm-s
+[2024-05-25 15:02:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: KunTimeChange
+[2024-05-25 15:02:02] INFO root fetch - processPackages [hddm-s]: New version: [1.0.9] Old Version: [1.0.84]
+[2024-05-25 15:02:02] WARNING root fetch - processPackages [tinyDisplay]: Skipping, unable to determine old version
+[2024-05-25 15:02:02] INFO root fetch - processPackages [KunTimeChange]: New version: [11.5.dev1] Old Version: [11.5]
+[2024-05-25 15:02:02] INFO root fetch - main [MainThread]: End processing [tinyDisplay] error
+[2024-05-25 15:02:03] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/7c/6d/4e44016f19d30c5a72d876eb354a2a736312ce50a0184ff6b153bc138627/hddm_s-1.0.84.tar.gz
+[2024-05-25 15:02:03] INFO root fetch - processPackages [KunTimeChange]: Downloading https://files.pythonhosted.org/packages/25/c1/e6cbc9c331d8fac26d69c1ec9399938d8c7ff8a8a21d7c2b0e6d34d60da9/KunTimeChange-11.5.tar.gz
+[2024-05-25 15:02:03] INFO root fetch - processPackages [hddm-s]: Downloading https://files.pythonhosted.org/packages/d2/24/0bac70948a0f916016590dddfc7e17148c466fa4b02e8bd2d4f3119e1816/hddm_s-1.0.9.tar.gz
+[2024-05-25 15:02:03] INFO root fetch - processPackages [hddm-s]: executing diffoscope
+[2024-05-25 15:02:03] INFO root fetch - processPackages [hddm-s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hddm_s-1.0.84.tar.gz tmp/hddm_s-1.0.9.tar.gz --markdown 20240525/h/hddm-s/1.0.84-1.0.9/README.md --exclude *.pyd
+[2024-05-25 15:02:03] INFO root fetch - processPackages [KunTimeChange]: Downloading https://files.pythonhosted.org/packages/95/09/68d61d4c7c8d36e84a169543d1b7019a897e076c719a680d57bb01f0924f/kuntimechange-11.5.dev1.tar.gz
+[2024-05-25 15:02:03] INFO root fetch - processPackages [KunTimeChange]: executing diffoscope
+[2024-05-25 15:02:03] INFO root fetch - processPackages [KunTimeChange]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KunTimeChange-11.5.tar.gz tmp/kuntimechange-11.5.dev1.tar.gz --markdown 20240525/K/KunTimeChange/11.5-11.5.dev1/README.md --exclude *.pyd
+[2024-05-25 15:02:03] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.84.tar.gz]
+[2024-05-25 15:02:03] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
+[2024-05-25 15:02:03] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
+[2024-05-25 15:02:04] INFO root fetch - processPackages [KunTimeChange]: Remove: archive file [/home/abi/fetcher/tmp/KunTimeChange-11.5.tar.gz]
+[2024-05-25 15:02:04] INFO root fetch - processPackages [KunTimeChange]: Remove: archive file [/home/abi/fetcher/tmp/kuntimechange-11.5.dev1.tar.gz]
+[2024-05-25 15:02:04] INFO root fetch - main [MainThread]: End processing [KunTimeChange]: success
+[2024-05-25 15:02:04] INFO root fetch - main [MainThread]: Store serial: [23374778]
