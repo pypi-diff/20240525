@@ -13840,3 +13840,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:56:10] INFO root fetch - processPackages [roxbot]: Remove: archive file [/home/abi/fetcher/tmp/roxbot-2.1.0.tar.gz]
 [2024-05-25 13:56:10] INFO root fetch - main [MainThread]: End processing [roxbot]: success
 [2024-05-25 13:56:10] INFO root fetch - main [MainThread]: Store serial: [23374467]
+[2024-05-25 13:58:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374467]
+[2024-05-25 13:58:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 13:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ryry-cli
+[2024-05-25 13:58:20] INFO root fetch - processPackages [ryry-cli]: New version: [2.5] Old Version: [2.4]
+[2024-05-25 13:58:20] INFO root fetch - processPackages [ryry-cli]: Downloading https://files.pythonhosted.org/packages/c4/56/705d441df33743f2debcdf910e7b9e61d4bf7ea7bdb5210dca036aaa16bc/ryry_cli-2.4.tar.gz
+[2024-05-25 13:58:21] INFO root fetch - processPackages [ryry-cli]: Downloading https://files.pythonhosted.org/packages/8d/5a/08b0beddf7092e1cf112bc83a6d20faa8ec82a5e39126cb6309961816f07/ryry_cli-2.5.tar.gz
+[2024-05-25 13:58:21] INFO root fetch - processPackages [ryry-cli]: executing diffoscope
+[2024-05-25 13:58:21] INFO root fetch - processPackages [ryry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryry_cli-2.4.tar.gz tmp/ryry_cli-2.5.tar.gz --markdown 20240525/r/ryry-cli/2.4-2.5/README.md --exclude *.pyd
+[2024-05-25 13:58:21] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.4.tar.gz]
+[2024-05-25 13:58:21] INFO root fetch - processPackages [ryry-cli]: Remove: archive file [/home/abi/fetcher/tmp/ryry_cli-2.5.tar.gz]
+[2024-05-25 13:58:21] INFO root fetch - main [MainThread]: End processing [ryry-cli]: success
+[2024-05-25 13:58:21] INFO root fetch - main [MainThread]: Store serial: [23374470]
