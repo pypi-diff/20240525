@@ -13137,3 +13137,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:52:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-25 12:52:47] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-25 12:52:47] INFO root fetch - main [MainThread]: Store serial: [23374193]
+[2024-05-25 12:54:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374193]
+[2024-05-25 12:54:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 12:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: klldFN
+[2024-05-25 12:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: muko
+[2024-05-25 12:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TrueFloat
+[2024-05-25 12:54:56] WARNING root fetch - processPackages [TrueFloat]: Skipping, unable to determine old version
+[2024-05-25 12:54:56] INFO root fetch - main [MainThread]: End processing [TrueFloat] error
+[2024-05-25 12:54:56] INFO root fetch - processPackages [muko]: New version: [2.54] Old Version: [2.53]
+[2024-05-25 12:54:56] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/f0/cd/4d8019bf8b732f75e2ca5dfd7c2bf75eb5f18a7fec492f6435d4021adeba/muko-2.53-py3-none-any.whl
+[2024-05-25 12:54:57] INFO root fetch - processPackages [klldFN]: New version: [2.0.0b1] Old Version: [1.9.9]
+[2024-05-25 12:54:57] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/d2/86/a4304ead2225296a04de73a47aff42cddc2ab24249f4a57e014fcfd9860f/klldFN-1.9.9.tar.gz
+[2024-05-25 12:54:57] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/3e/98/dd4a0be3cdc4f3ba88102dd291a0e873894e6434b6b61b486255c640745a/muko-2.54-py3-none-any.whl
+[2024-05-25 12:54:57] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/5e/f6/4eaa21cb31e382fd1949ebe2ea4afaece002819ca3a9b92409de8c8ce806/klldFN-2.0.0b1.tar.gz
+[2024-05-25 12:54:57] INFO root fetch - processPackages [klldFN]: executing diffoscope
+[2024-05-25 12:54:57] INFO root fetch - processPackages [klldFN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klldFN-1.9.9.tar.gz tmp/klldFN-2.0.0b1.tar.gz --markdown 20240525/k/klldFN/1.9.9-2.0.0b1/README.md --exclude *.pyd
+[2024-05-25 12:54:57] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-05-25 12:54:57] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.53-py3-none-any.whl.zip tmp/muko-2.54-py3-none-any.whl.zip --markdown 20240525/m/muko/2.53-2.54/README.md --exclude *.pyd
+[2024-05-25 12:54:58] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-1.9.9.tar.gz]
+[2024-05-25 12:54:58] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-2.0.0b1.tar.gz]
+[2024-05-25 12:54:58] INFO root fetch - main [MainThread]: End processing [klldFN]: success
+[2024-05-25 12:54:58] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.53-py3-none-any.whl.zip]
+[2024-05-25 12:54:58] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.54-py3-none-any.whl.zip]
+[2024-05-25 12:54:58] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-05-25 12:54:58] INFO root fetch - main [MainThread]: Store serial: [23374201]
