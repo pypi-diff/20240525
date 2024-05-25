@@ -12464,3 +12464,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:06:35] INFO root fetch - processPackages [pybliometrics]: Remove: archive file [/home/abi/fetcher/tmp/pybliometrics-4.0.tar.gz]
 [2024-05-25 12:06:35] INFO root fetch - main [MainThread]: End processing [pybliometrics]: success
 [2024-05-25 12:06:35] INFO root fetch - main [MainThread]: Store serial: [23373881]
+[2024-05-25 12:08:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373881]
+[2024-05-25 12:08:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 12:08:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TaGra
+[2024-05-25 12:08:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gliner
+[2024-05-25 12:08:44] INFO root fetch - processPackages [TaGra]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-25 12:08:45] INFO root fetch - processPackages [gliner]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 12:08:45] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/68/b0/efa2e4374bd25819df9aadec71eb13d689b21c4d2ab86ddbd98e2dee8913/TaGra-0.1.7.tar.gz
+[2024-05-25 12:08:45] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/4a/ee/c794dd4d843e1b869cfa087fb4f5065174e23201cb216a6920ae919a0702/gliner-0.1.8.tar.gz
+[2024-05-25 12:08:45] INFO root fetch - processPackages [TaGra]: Downloading https://files.pythonhosted.org/packages/cf/c5/e8f37303dea0f88057e22236028442c3679c399d985a4e61cb0cc290df25/TaGra-0.1.8.tar.gz
+[2024-05-25 12:08:45] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/54/53/182c5c1b761ab40ca0d4b9b3dfdd6aa606d105eb3ad7d4c743fbcca13471/gliner-0.1.9.tar.gz
+[2024-05-25 12:08:45] INFO root fetch - processPackages [TaGra]: executing diffoscope
+[2024-05-25 12:08:45] INFO root fetch - processPackages [TaGra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TaGra-0.1.7.tar.gz tmp/TaGra-0.1.8.tar.gz --markdown 20240525/T/TaGra/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-25 12:08:45] INFO root fetch - processPackages [gliner]: executing diffoscope
+[2024-05-25 12:08:45] INFO root fetch - processPackages [gliner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliner-0.1.8.tar.gz tmp/gliner-0.1.9.tar.gz --markdown 20240525/g/gliner/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 12:08:46] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.7.tar.gz]
+[2024-05-25 12:08:46] INFO root fetch - processPackages [TaGra]: Remove: archive file [/home/abi/fetcher/tmp/TaGra-0.1.8.tar.gz]
+[2024-05-25 12:08:46] INFO root fetch - main [MainThread]: End processing [TaGra]: success
+[2024-05-25 12:08:46] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.8.tar.gz]
+[2024-05-25 12:08:46] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.9.tar.gz]
+[2024-05-25 12:08:46] INFO root fetch - main [MainThread]: End processing [gliner]: success
+[2024-05-25 12:08:46] INFO root fetch - main [MainThread]: Store serial: [23373892]
