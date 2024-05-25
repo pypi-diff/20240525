@@ -8040,3 +8040,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 05:39:07] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
 [2024-05-25 05:39:07] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
 [2024-05-25 05:39:07] INFO root fetch - main [MainThread]: Store serial: [23371761]
+[2024-05-25 05:41:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371761]
+[2024-05-25 05:41:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 05:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-05-25 05:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schwab-api-wrapper
+[2024-05-25 05:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xingpyc
+[2024-05-25 05:41:17] INFO root fetch - processPackages [schwab-api-wrapper]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-25 05:41:17] INFO root fetch - processPackages [xingpyc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 05:41:17] INFO root fetch - processPackages [python-115]: New version: [0.0.8.3.2] Old Version: [0.0.8.3.1]
+[2024-05-25 05:41:17] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/99/ae/9e7ea4f51e9c98ced229cc7cc02baf74e13ffea6a1e9071209d7f6c57f54/schwab_api_wrapper-0.0.5.tar.gz
+[2024-05-25 05:41:17] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/76/fd/628a43e665d4c5bafa096cff8a33877a4ee69daec08608bf30f3b77dba4e/python_115-0.0.8.3.1.tar.gz
+[2024-05-25 05:41:17] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/e5/83/73964dda27e35ec918bfeb2af301b9c3b7edbcfcc33ab479e5c2835bb293/xingpyc-0.0.1.tar.gz
+[2024-05-25 05:41:17] INFO root fetch - processPackages [schwab-api-wrapper]: Downloading https://files.pythonhosted.org/packages/31/62/68d31a1b940011c2035996df082147e86c89e71e40551f2abcb55ea87417/schwab_api_wrapper-0.0.6.tar.gz
+[2024-05-25 05:41:17] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/23/ab/a8aaea7de6b0caa5ff848b7deb332273b2a4aa9d8d6caa6ebf58b1646174/python_115-0.0.8.3.2.tar.gz
+[2024-05-25 05:41:17] INFO root fetch - processPackages [schwab-api-wrapper]: executing diffoscope
+[2024-05-25 05:41:17] INFO root fetch - processPackages [schwab-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab_api_wrapper-0.0.5.tar.gz tmp/schwab_api_wrapper-0.0.6.tar.gz --markdown 20240525/s/schwab-api-wrapper/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-25 05:41:17] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/a3/8b/cb61ace4ced305ed9e864e3d8cb33ac86451eaef8a65351c2eb37e9ba56c/xingpyc-0.0.2.tar.gz
+[2024-05-25 05:41:17] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-05-25 05:41:17] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.3.1.tar.gz tmp/python_115-0.0.8.3.2.tar.gz --markdown 20240525/p/python-115/0.0.8.3.1-0.0.8.3.2/README.md --exclude *.pyd
+[2024-05-25 05:41:18] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 05:41:18] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.0.1.tar.gz tmp/xingpyc-0.0.2.tar.gz --markdown 20240525/x/xingpyc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 05:41:18] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.1.tar.gz]
+[2024-05-25 05:41:18] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.0.2.tar.gz]
+[2024-05-25 05:41:18] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 05:41:18] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.0.5.tar.gz]
+[2024-05-25 05:41:18] INFO root fetch - processPackages [schwab-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/schwab_api_wrapper-0.0.6.tar.gz]
+[2024-05-25 05:41:18] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper]: success
+[2024-05-25 05:41:18] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.1.tar.gz]
+[2024-05-25 05:41:18] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.2.tar.gz]
+[2024-05-25 05:41:18] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-05-25 05:41:18] INFO root fetch - main [MainThread]: Store serial: [23371769]
