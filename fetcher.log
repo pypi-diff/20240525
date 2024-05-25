@@ -14164,3 +14164,44 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:31:13] WARNING root fetch - processPackages [Majhool-Bionomial]: Skipping, unable to determine old version
 [2024-05-25 14:31:13] INFO root fetch - main [MainThread]: End processing [Majhool-Bionomial] error
 [2024-05-25 14:31:13] INFO root fetch - main [MainThread]: Store serial: [23374601]
+[2024-05-25 14:33:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374601]
+[2024-05-25 14:33:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-25 14:35:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374601]
+[2024-05-25 14:35:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 14:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-05-25 14:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whisper-cpp-python-smr
+[2024-05-25 14:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: node-ec2-instance
+[2024-05-25 14:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlalchemy-turbodbc
+[2024-05-25 14:35:29] INFO root fetch - processPackages [node-ec2-instance]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 14:35:29] INFO root fetch - processPackages [python-115]: New version: [0.0.8.3.5] Old Version: [0.0.8.3.4]
+[2024-05-25 14:35:29] INFO root fetch - processPackages [whisper-cpp-python-smr]: New version: [0.2.1] Old Version: [0.2]
+[2024-05-25 14:35:29] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/6a/7c/eb56c6fdbd7c47d67f1268af24d607933965eaf66af9b6da500253278652/node-ec2-instance-0.0.1.tar.gz
+[2024-05-25 14:35:29] INFO root fetch - processPackages [sqlalchemy-turbodbc]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-25 14:35:29] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/7a/24/49d11bd7b773fe5fc29ee6b485aea78df90b0aa9724ebb25c25a06cd35f8/python_115-0.0.8.3.4.tar.gz
+[2024-05-25 14:35:29] INFO root fetch - processPackages [whisper-cpp-python-smr]: Downloading https://files.pythonhosted.org/packages/a2/b2/d463d0b3f8f0372d7249a864bc624b25194e8904fa2be9c3334480f4d17e/whisper_cpp_python_smr-0.2.tar.gz
+[2024-05-25 14:35:29] INFO root fetch - processPackages [sqlalchemy-turbodbc]: Downloading https://files.pythonhosted.org/packages/e1/11/f05d23600e37b0e929022b40cebbf35723e6656934adcc972087cf3e1b91/sqlalchemy_turbodbc-1.2.2.tar.gz
+[2024-05-25 14:35:29] INFO root fetch - processPackages [node-ec2-instance]: Downloading https://files.pythonhosted.org/packages/31/ec/91864a8a10ed662906de3d75434045621fd02176a907b25db0317327d24e/node-ec2-instance-0.0.2.tar.gz
+[2024-05-25 14:35:29] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/20/28/96c78540a7cbfd531e39a489b6c9e07af6fcfcb293b0e45a1ad40466479a/python_115-0.0.8.3.5.tar.gz
+[2024-05-25 14:35:29] INFO root fetch - processPackages [node-ec2-instance]: executing diffoscope
+[2024-05-25 14:35:29] INFO root fetch - processPackages [node-ec2-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node-ec2-instance-0.0.1.tar.gz tmp/node-ec2-instance-0.0.2.tar.gz --markdown 20240525/n/node-ec2-instance/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 14:35:29] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-05-25 14:35:29] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.8.3.4.tar.gz tmp/python_115-0.0.8.3.5.tar.gz --markdown 20240525/p/python-115/0.0.8.3.4-0.0.8.3.5/README.md --exclude *.pyd
+[2024-05-25 14:35:29] INFO root fetch - processPackages [sqlalchemy-turbodbc]: Downloading https://files.pythonhosted.org/packages/da/94/50a8915928442bfea5dc1a67db942b2ae0b4c2a27f0f30a70cad20075c99/sqlalchemy_turbodbc-1.2.3-py3-none-any.whl
+[2024-05-25 14:35:30] INFO root fetch - processPackages [sqlalchemy-turbodbc]: executing diffoscope
+[2024-05-25 14:35:30] INFO root fetch - processPackages [sqlalchemy-turbodbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_turbodbc-1.2.2.tar.gz tmp/sqlalchemy_turbodbc-1.2.3-py3-none-any.whl.zip --markdown 20240525/s/sqlalchemy-turbodbc/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-25 14:35:30] INFO root fetch - processPackages [whisper-cpp-python-smr]: Downloading https://files.pythonhosted.org/packages/e0/9c/5e66ef046cc0af33c7618c5cfae02e605ecff09d96a26511d1c6d70b46df/whisper_cpp_python_smr-0.2.1.tar.gz
+[2024-05-25 14:35:30] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.1.tar.gz]
+[2024-05-25 14:35:30] INFO root fetch - processPackages [node-ec2-instance]: Remove: archive file [/home/abi/fetcher/tmp/node-ec2-instance-0.0.2.tar.gz]
+[2024-05-25 14:35:30] INFO root fetch - main [MainThread]: End processing [node-ec2-instance]: success
+[2024-05-25 14:35:30] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.4.tar.gz]
+[2024-05-25 14:35:30] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.8.3.5.tar.gz]
+[2024-05-25 14:35:30] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-05-25 14:35:30] INFO root fetch - processPackages [sqlalchemy-turbodbc]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_turbodbc-1.2.2.tar.gz]
+[2024-05-25 14:35:30] INFO root fetch - processPackages [sqlalchemy-turbodbc]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_turbodbc-1.2.3-py3-none-any.whl.zip]
+[2024-05-25 14:35:30] INFO root fetch - main [MainThread]: End processing [sqlalchemy-turbodbc]: success
+[2024-05-25 14:35:31] INFO root fetch - processPackages [whisper-cpp-python-smr]: executing diffoscope
+[2024-05-25 14:35:31] INFO root fetch - processPackages [whisper-cpp-python-smr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_cpp_python_smr-0.2.tar.gz tmp/whisper_cpp_python_smr-0.2.1.tar.gz --markdown 20240525/w/whisper-cpp-python-smr/0.2-0.2.1/README.md --exclude *.pyd
+[2024-05-25 14:35:33] INFO root fetch - processPackages [whisper-cpp-python-smr]: Remove: archive file [/home/abi/fetcher/tmp/whisper_cpp_python_smr-0.2.tar.gz]
+[2024-05-25 14:35:33] INFO root fetch - processPackages [whisper-cpp-python-smr]: Remove: archive file [/home/abi/fetcher/tmp/whisper_cpp_python_smr-0.2.1.tar.gz]
+[2024-05-25 14:35:33] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python-smr]: success
+[2024-05-25 14:35:33] INFO root fetch - main [MainThread]: Store serial: [23374621]
