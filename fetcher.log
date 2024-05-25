@@ -13221,3 +13221,42 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:01:28] INFO root fetch - processPackages [vbart]: Remove: archive file [/home/abi/fetcher/tmp/vbart-0.1.2.tar.gz]
 [2024-05-25 13:01:28] INFO root fetch - main [MainThread]: End processing [vbart]: success
 [2024-05-25 13:01:28] INFO root fetch - main [MainThread]: Store serial: [23374225]
+[2024-05-25 13:03:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374225]
+[2024-05-25 13:03:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 13:03:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scikit-lego
+[2024-05-25 13:03:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingpyc
+[2024-05-25 13:03:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AoE2ScenarioRms
+[2024-05-25 13:03:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pne
+[2024-05-25 13:03:37] INFO root fetch - processPackages [xingpyc]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 13:03:38] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/95/e9/695de2632e91b63f7eca08092c204a1aa2c6ef452fa54277ae24a94f97e2/xingpyc-0.1.0.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [AoE2ScenarioRms]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-25 13:03:38] INFO root fetch - processPackages [pne]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-25 13:03:38] INFO root fetch - processPackages [scikit-lego]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 13:03:38] INFO root fetch - processPackages [scikit-lego]: Downloading https://files.pythonhosted.org/packages/76/7f/780956ef621e9049f0bdf9c3867ab34495b17612fd119e83e30086713114/scikit-lego-0.8.2.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [pne]: Downloading https://files.pythonhosted.org/packages/c2/b0/b5bacb2c3d8fad52838a2d3985736205595819b4cdf231029654657710a4/pne-1.0.0.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [AoE2ScenarioRms]: Downloading https://files.pythonhosted.org/packages/18/ae/163d63670c58c623c56e5e8f9c51a201cbf3611488865ff8fdd2ba3b1def/AoE2ScenarioRms-0.2.6.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [xingpyc]: Downloading https://files.pythonhosted.org/packages/0e/f9/2d5d91f09ab60f2f403799b0f35ceb839dbf21eb35aa292fb41b672f0c59/xingpyc-0.1.1.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [xingpyc]: executing diffoscope
+[2024-05-25 13:03:38] INFO root fetch - processPackages [xingpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingpyc-0.1.0.tar.gz tmp/xingpyc-0.1.1.tar.gz --markdown 20240525/x/xingpyc/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 13:03:38] INFO root fetch - processPackages [scikit-lego]: Downloading https://files.pythonhosted.org/packages/35/ca/17d142a32bb97369279e6a9ba8b7742b34749783541cd964b4fc2718adfe/scikit-lego-0.9.0.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [pne]: Downloading https://files.pythonhosted.org/packages/30/6c/0395d498d84d09a3773b704d0ef1346caae6678996fc91a56f9f599b154e/pne-1.0.1.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [AoE2ScenarioRms]: Downloading https://files.pythonhosted.org/packages/89/0e/9c12af38a2ad07e74b4df67ab6c1a7eda7984a14f640ef26ad3793415cc8/AoE2ScenarioRms-0.2.7.tar.gz
+[2024-05-25 13:03:38] INFO root fetch - processPackages [scikit-lego]: executing diffoscope
+[2024-05-25 13:03:38] INFO root fetch - processPackages [scikit-lego]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-lego-0.8.2.tar.gz tmp/scikit-lego-0.9.0.tar.gz --markdown 20240525/s/scikit-lego/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 13:03:38] INFO root fetch - processPackages [AoE2ScenarioRms]: executing diffoscope
+[2024-05-25 13:03:38] INFO root fetch - processPackages [AoE2ScenarioRms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoE2ScenarioRms-0.2.6.tar.gz tmp/AoE2ScenarioRms-0.2.7.tar.gz --markdown 20240525/A/AoE2ScenarioRms/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-25 13:03:38] INFO root fetch - processPackages [pne]: executing diffoscope
+[2024-05-25 13:03:38] INFO root fetch - processPackages [pne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pne-1.0.0.tar.gz tmp/pne-1.0.1.tar.gz --markdown 20240525/p/pne/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-25 13:03:39] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.0.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - processPackages [xingpyc]: Remove: archive file [/home/abi/fetcher/tmp/xingpyc-0.1.1.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - main [MainThread]: End processing [xingpyc]: success
+[2024-05-25 13:03:39] INFO root fetch - processPackages [pne]: Remove: archive file [/home/abi/fetcher/tmp/pne-1.0.0.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - processPackages [pne]: Remove: archive file [/home/abi/fetcher/tmp/pne-1.0.1.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - main [MainThread]: End processing [pne]: success
+[2024-05-25 13:03:39] INFO root fetch - processPackages [AoE2ScenarioRms]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioRms-0.2.6.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - processPackages [AoE2ScenarioRms]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioRms-0.2.7.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioRms]: success
+[2024-05-25 13:03:39] INFO root fetch - processPackages [scikit-lego]: Remove: archive file [/home/abi/fetcher/tmp/scikit-lego-0.8.2.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - processPackages [scikit-lego]: Remove: archive file [/home/abi/fetcher/tmp/scikit-lego-0.9.0.tar.gz]
+[2024-05-25 13:03:39] INFO root fetch - main [MainThread]: End processing [scikit-lego]: success
+[2024-05-25 13:03:39] INFO root fetch - main [MainThread]: Store serial: [23374237]
