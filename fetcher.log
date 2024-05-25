@@ -12396,3 +12396,41 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:02:08] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
 [2024-05-25 12:02:08] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
 [2024-05-25 12:02:08] INFO root fetch - main [MainThread]: Store serial: [23373846]
+[2024-05-25 12:04:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373846]
+[2024-05-25 12:04:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 12:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: detect-dice
+[2024-05-25 12:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scripro
+[2024-05-25 12:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: windmill-api
+[2024-05-25 12:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wmill
+[2024-05-25 12:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GenAIRR
+[2024-05-25 12:04:19] WARNING root fetch - processPackages [GenAIRR]: Skipping, unable to determine old version
+[2024-05-25 12:04:19] INFO root fetch - main [MainThread]: End processing [GenAIRR] error
+[2024-05-25 12:04:19] INFO root fetch - processPackages [detect-dice]: New version: [1.0.4] Old Version: [1.0.11]
+[2024-05-25 12:04:19] INFO root fetch - processPackages [scripro]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-25 12:04:19] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-25 12:04:19] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-05-25 12:04:19] INFO root fetch - processPackages [detect-dice]: Downloading https://files.pythonhosted.org/packages/3b/3a/4715fdddb780156dfbf610576c4d91a9e7eb7e0049d5dcacf3f7508ae136/detect_dice-1.0.11.tar.gz
+[2024-05-25 12:04:19] INFO root fetch - processPackages [scripro]: Downloading https://files.pythonhosted.org/packages/58/e4/5dc51c40ddc482d810ce85fa5386b832d6de3b76032f1949a8b9bb3bef9e/scripro-1.1.8.tar.gz
+[2024-05-25 12:04:19] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/6d/91/6b6052c80b8d367e051cc2905d1d921bf9a11f63e27a0f802b5c1277aa20/wmill-1.98.0.tar.gz
+[2024-05-25 12:04:19] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/bd/de/5d29ca258adee967295dbf926ab306c480527c234336f0725d4c2bc1d718/windmill_api-1.98.0.tar.gz
+[2024-05-25 12:04:19] WARNING root fetch - processPackages [scripro]: Skipping package: exceeds size limit 21360012>=10485760
+[2024-05-25 12:04:19] INFO root fetch - main [MainThread]: End processing [scripro] error
+[2024-05-25 12:04:20] INFO root fetch - processPackages [detect-dice]: Downloading https://files.pythonhosted.org/packages/85/21/2a5d5226d944207358751cdc3804bdd19ea4de355b93be7a89b0e52eec26/detect_dice-1.0.4.tar.gz
+[2024-05-25 12:04:20] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/f1/d1/eb5b4c7d25f969fc3603441c8e90a5a8e00688be43ce0631166287977a65/wmill-1.99.0.tar.gz
+[2024-05-25 12:04:20] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/32/94/9431b41ce6b9c2670fbc125624f7ebc3d186482c80c271e3d7acde511319/windmill_api-1.99.0.tar.gz
+[2024-05-25 12:04:20] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2024-05-25 12:04:20] INFO root fetch - processPackages [detect-dice]: executing diffoscope
+[2024-05-25 12:04:20] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20240525/w/wmill/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-25 12:04:20] INFO root fetch - processPackages [detect-dice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/detect_dice-1.0.11.tar.gz tmp/detect_dice-1.0.4.tar.gz --markdown 20240525/d/detect-dice/1.0.11-1.0.4/README.md --exclude *.pyd
+[2024-05-25 12:04:20] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2024-05-25 12:04:20] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20240525/w/windmill-api/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-05-25 12:04:20] INFO root fetch - processPackages [detect-dice]: Remove: archive file [/home/abi/fetcher/tmp/detect_dice-1.0.11.tar.gz]
+[2024-05-25 12:04:20] INFO root fetch - processPackages [detect-dice]: Remove: archive file [/home/abi/fetcher/tmp/detect_dice-1.0.4.tar.gz]
+[2024-05-25 12:04:20] INFO root fetch - main [MainThread]: End processing [detect-dice]: success
+[2024-05-25 12:04:20] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.98.0.tar.gz]
+[2024-05-25 12:04:20] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.99.0.tar.gz]
+[2024-05-25 12:04:20] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2024-05-25 12:04:24] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.98.0.tar.gz]
+[2024-05-25 12:04:24] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
+[2024-05-25 12:04:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2024-05-25 12:04:24] INFO root fetch - main [MainThread]: Store serial: [23373867]
