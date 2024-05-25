@@ -8203,3 +8203,15 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:07:02] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
 [2024-05-25 06:07:02] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
 [2024-05-25 06:07:02] INFO root fetch - main [MainThread]: Store serial: [23371843]
+[2024-05-25 06:09:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371843]
+[2024-05-25 06:09:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 06:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-databases
+[2024-05-25 06:09:12] INFO root fetch - processPackages [pytest-databases]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-25 06:09:12] INFO root fetch - processPackages [pytest-databases]: Downloading https://files.pythonhosted.org/packages/e3/db/ef12ed0836cc4d5528945a1c87c41c13ebff9adb17f0b85d252ca20dbbf4/pytest_databases-0.5.0.tar.gz
+[2024-05-25 06:09:13] INFO root fetch - processPackages [pytest-databases]: Downloading https://files.pythonhosted.org/packages/f1/3d/29cacb7b8ac889f4f03df98e88f3388d39a26bf0a27617ab19118d7570cc/pytest_databases-0.6.0.tar.gz
+[2024-05-25 06:09:13] INFO root fetch - processPackages [pytest-databases]: executing diffoscope
+[2024-05-25 06:09:13] INFO root fetch - processPackages [pytest-databases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_databases-0.5.0.tar.gz tmp/pytest_databases-0.6.0.tar.gz --markdown 20240525/p/pytest-databases/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-25 06:09:14] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.5.0.tar.gz]
+[2024-05-25 06:09:14] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.6.0.tar.gz]
+[2024-05-25 06:09:14] INFO root fetch - main [MainThread]: End processing [pytest-databases]: success
+[2024-05-25 06:09:14] INFO root fetch - main [MainThread]: Store serial: [23371846]
