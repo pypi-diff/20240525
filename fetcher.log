@@ -22687,3 +22687,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:48:29] INFO root fetch - processPackages [mpf]: Remove: archive file [/home/abi/fetcher/tmp/mpf-0.80.0.dev1.tar.gz]
 [2024-05-25 22:48:29] INFO root fetch - main [MainThread]: End processing [mpf]: success
 [2024-05-25 22:48:29] INFO root fetch - main [MainThread]: Store serial: [23377903]
+[2024-05-25 22:50:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377903]
+[2024-05-25 22:50:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 22:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EcoStock
+[2024-05-25 22:50:37] INFO root fetch - processPackages [EcoStock]: New version: [1.1] Old Version: [1.0]
+[2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/42/ee/a08b9a074822dc07dbaf0a7760f0ef1d793e997056968ec5a0a3de391874/ecostock-1.0.tar.gz
+[2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/3b/af/bfa8913eb6cb74422445a91bdc6d25cfb21d0c597c61c36400a9d85bc98d/ecostock-1.1.tar.gz
+[2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecostock-1.0.tar.gz tmp/ecostock-1.1.tar.gz --markdown 20240525/E/EcoStock/1.0-1.1/README.md --exclude *.pyd
+[2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.0.tar.gz]
+[2024-05-25 22:50:38] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/ecostock-1.1.tar.gz]
+[2024-05-25 22:50:38] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-05-25 22:50:38] INFO root fetch - main [MainThread]: Store serial: [23377906]
