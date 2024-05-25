@@ -13825,3 +13825,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:54:00] INFO root fetch - processPackages [faultier]: Remove: archive file [/home/abi/fetcher/tmp/faultier-0.1.9.tar.gz]
 [2024-05-25 13:54:00] INFO root fetch - main [MainThread]: End processing [faultier]: success
 [2024-05-25 13:54:00] INFO root fetch - main [MainThread]: Store serial: [23374460]
+[2024-05-25 13:56:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374460]
+[2024-05-25 13:56:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 13:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mypystarter
+[2024-05-25 13:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roxbot
+[2024-05-25 13:56:08] WARNING root fetch - processPackages [mypystarter]: Skipping, unable to determine old version
+[2024-05-25 13:56:08] INFO root fetch - main [MainThread]: End processing [mypystarter] error
+[2024-05-25 13:56:09] INFO root fetch - processPackages [roxbot]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-25 13:56:09] INFO root fetch - processPackages [roxbot]: Downloading https://files.pythonhosted.org/packages/19/62/c550191f6b19e16c5d0c975935918260897d987d38206a60987fc1d4a464/roxbot-2.0.0.tar.gz
+[2024-05-25 13:56:09] INFO root fetch - processPackages [roxbot]: Downloading https://files.pythonhosted.org/packages/14/9e/ae6bcd43babc69b5a768c68ba7fad400195a069620797f0f750f158fe12f/roxbot-2.1.0.tar.gz
+[2024-05-25 13:56:09] INFO root fetch - processPackages [roxbot]: executing diffoscope
+[2024-05-25 13:56:09] INFO root fetch - processPackages [roxbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roxbot-2.0.0.tar.gz tmp/roxbot-2.1.0.tar.gz --markdown 20240525/r/roxbot/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-25 13:56:10] INFO root fetch - processPackages [roxbot]: Remove: archive file [/home/abi/fetcher/tmp/roxbot-2.0.0.tar.gz]
+[2024-05-25 13:56:10] INFO root fetch - processPackages [roxbot]: Remove: archive file [/home/abi/fetcher/tmp/roxbot-2.1.0.tar.gz]
+[2024-05-25 13:56:10] INFO root fetch - main [MainThread]: End processing [roxbot]: success
+[2024-05-25 13:56:10] INFO root fetch - main [MainThread]: Store serial: [23374467]
