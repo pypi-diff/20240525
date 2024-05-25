@@ -13672,3 +13672,18 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:32:25] INFO root fetch - processPackages [classification-tension-for-image]: Remove: archive file [/home/abi/fetcher/tmp/classification_tension_for_image-0.0.2.tar.gz]
 [2024-05-25 13:32:25] INFO root fetch - main [MainThread]: End processing [classification-tension-for-image]: success
 [2024-05-25 13:32:25] INFO root fetch - main [MainThread]: Store serial: [23374395]
+[2024-05-25 13:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374395]
+[2024-05-25 13:34:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 13:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wiggle-camera
+[2024-05-25 13:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-mcqq
+[2024-05-25 13:34:35] WARNING root fetch - processPackages [wiggle-camera]: Skipping, unable to determine old version
+[2024-05-25 13:34:35] INFO root fetch - main [MainThread]: End processing [wiggle-camera] error
+[2024-05-25 13:34:35] INFO root fetch - processPackages [nonebot-plugin-mcqq]: New version: [2.5.7.post1] Old Version: [2.5.6]
+[2024-05-25 13:34:35] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Downloading https://files.pythonhosted.org/packages/af/27/30fc000232e151bc1d799074d72b22e2ff6e18b4adce31f734edb302c8c3/nonebot_plugin_mcqq-2.5.6.tar.gz
+[2024-05-25 13:34:35] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Downloading https://files.pythonhosted.org/packages/7e/cd/c7b7ec9ad1e23a504d92862d23553b4e5d112d57b17e51b189e7bcd59ae7/nonebot_plugin_mcqq-2.5.7.post1.tar.gz
+[2024-05-25 13:34:36] INFO root fetch - processPackages [nonebot-plugin-mcqq]: executing diffoscope
+[2024-05-25 13:34:36] INFO root fetch - processPackages [nonebot-plugin-mcqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mcqq-2.5.6.tar.gz tmp/nonebot_plugin_mcqq-2.5.7.post1.tar.gz --markdown 20240525/n/nonebot-plugin-mcqq/2.5.6-2.5.7.post1/README.md --exclude *.pyd
+[2024-05-25 13:34:36] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mcqq-2.5.6.tar.gz]
+[2024-05-25 13:34:36] INFO root fetch - processPackages [nonebot-plugin-mcqq]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mcqq-2.5.7.post1.tar.gz]
+[2024-05-25 13:34:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcqq]: success
+[2024-05-25 13:34:36] INFO root fetch - main [MainThread]: Store serial: [23374403]
