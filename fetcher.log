@@ -16937,3 +16937,36 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:55:38] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
 [2024-05-25 15:55:38] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-05-25 15:55:38] INFO root fetch - main [MainThread]: Store serial: [23375527]
+[2024-05-25 15:57:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375527]
+[2024-05-25 15:57:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 15:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cemirutils
+[2024-05-25 15:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PepperPepper
+[2024-05-25 15:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: investimentpy
+[2024-05-25 15:57:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: online-scheduler
+[2024-05-25 15:57:47] INFO root fetch - processPackages [online-scheduler]: New version: [1.4] Old Version: [1.3]
+[2024-05-25 15:57:47] WARNING root fetch - processPackages [investimentpy]: Skipping, unable to determine old version
+[2024-05-25 15:57:47] INFO root fetch - main [MainThread]: End processing [investimentpy] error
+[2024-05-25 15:57:47] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/8a/f0/cdaeefa2f57755397a1f2437db8a33d84e6230a757ebcfb356406a02d0c5/online_scheduler-1.3.tar.gz
+[2024-05-25 15:57:47] INFO root fetch - processPackages [cemirutils]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-25 15:57:47] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-25 15:57:47] INFO root fetch - processPackages [cemirutils]: Downloading https://files.pythonhosted.org/packages/ce/76/6a4975e212645b3da448c2b5301c0724455624dcb51f7edaede0b87cbc80/cemirutils-0.2.1.tar.gz
+[2024-05-25 15:57:47] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-25 15:57:47] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/c6/2b/5f5aeae71bfaf9119b2857f0420a3fb52e69df4b87826588d88c20b5c0bb/online_scheduler-1.4.tar.gz
+[2024-05-25 15:57:47] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 15:57:47] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-1.3.tar.gz tmp/online_scheduler-1.4.tar.gz --markdown 20240525/o/online-scheduler/1.3-1.4/README.md --exclude *.pyd
+[2024-05-25 15:57:48] INFO root fetch - processPackages [cemirutils]: Downloading https://files.pythonhosted.org/packages/ea/13/79ed891177b91627689448f7f242917a6839d43af0d9da1da5f2444c6223/cemirutils-0.2.2.tar.gz
+[2024-05-25 15:57:48] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-25 15:57:48] INFO root fetch - processPackages [cemirutils]: executing diffoscope
+[2024-05-25 15:57:48] INFO root fetch - processPackages [cemirutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cemirutils-0.2.1.tar.gz tmp/cemirutils-0.2.2.tar.gz --markdown 20240525/c/cemirutils/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-25 15:57:48] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-25 15:57:48] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240525/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-25 15:57:48] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.3.tar.gz]
+[2024-05-25 15:57:48] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-1.4.tar.gz]
+[2024-05-25 15:57:48] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 15:57:48] INFO root fetch - processPackages [cemirutils]: Remove: archive file [/home/abi/fetcher/tmp/cemirutils-0.2.1.tar.gz]
+[2024-05-25 15:57:48] INFO root fetch - processPackages [cemirutils]: Remove: archive file [/home/abi/fetcher/tmp/cemirutils-0.2.2.tar.gz]
+[2024-05-25 15:57:48] INFO root fetch - main [MainThread]: End processing [cemirutils]: success
+[2024-05-25 15:57:48] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-25 15:57:48] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-25 15:57:48] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-25 15:57:48] INFO root fetch - main [MainThread]: Store serial: [23375543]
