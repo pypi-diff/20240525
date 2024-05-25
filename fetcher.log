@@ -18771,3 +18771,30 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:58:41] INFO root fetch - processPackages [cyvcf2]: Remove: archive file [/home/abi/fetcher/tmp/cyvcf2-0.9.0.tar.gz]
 [2024-05-25 17:58:41] INFO root fetch - main [MainThread]: End processing [cyvcf2]: success
 [2024-05-25 17:58:41] INFO root fetch - main [MainThread]: Store serial: [23376280]
+[2024-05-25 18:00:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376280]
+[2024-05-25 18:00:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 18:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytoileur
+[2024-05-25 18:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findanywhere
+[2024-05-25 18:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wixcf
+[2024-05-25 18:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: satsure-core-test
+[2024-05-25 18:00:51] WARNING root fetch - processPackages [pytoileur]: Skipping, unable to determine old version
+[2024-05-25 18:00:51] INFO root fetch - main [MainThread]: End processing [pytoileur] error
+[2024-05-25 18:00:51] INFO root fetch - processPackages [wixcf]: New version: [5.2.0] Old Version: [5.1.2]
+[2024-05-25 18:00:51] INFO root fetch - processPackages [satsure-core-test]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-25 18:00:51] WARNING root fetch - processPackages [findanywhere]: Skipping, unable to determine old version
+[2024-05-25 18:00:51] INFO root fetch - main [MainThread]: End processing [findanywhere] error
+[2024-05-25 18:00:51] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/fe/0f/ca15a216cd10c0eed7fe70e71ee973ecc91db38b58c84c76988e88aca5b4/satsure-core-test-0.3.1.tar.gz
+[2024-05-25 18:00:51] INFO root fetch - processPackages [wixcf]: Downloading https://files.pythonhosted.org/packages/8f/c9/0c14efd91c9d4c7d5410475caaa3d6c75a6b5a6b6380f4432d148c413567/wixcf-5.1.2.tar.gz
+[2024-05-25 18:00:52] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/e0/f7/41c016ffafc059d20a7a77b536db06953c65a886c0224d99dbaab3507a73/satsure-core-test-0.3.2.tar.gz
+[2024-05-25 18:00:52] INFO root fetch - processPackages [wixcf]: Downloading https://files.pythonhosted.org/packages/c9/c7/a2e3f4daff08ad78f41db6c2762ebf6a34f2713cf65c9c05a398463279d6/wixcf-5.2.0.tar.gz
+[2024-05-25 18:00:52] INFO root fetch - processPackages [satsure-core-test]: executing diffoscope
+[2024-05-25 18:00:52] INFO root fetch - processPackages [satsure-core-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsure-core-test-0.3.1.tar.gz tmp/satsure-core-test-0.3.2.tar.gz --markdown 20240525/s/satsure-core-test/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-25 18:00:52] INFO root fetch - processPackages [wixcf]: executing diffoscope
+[2024-05-25 18:00:52] INFO root fetch - processPackages [wixcf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wixcf-5.1.2.tar.gz tmp/wixcf-5.2.0.tar.gz --markdown 20240525/w/wixcf/5.1.2-5.2.0/README.md --exclude *.pyd
+[2024-05-25 18:00:52] INFO root fetch - processPackages [wixcf]: Remove: archive file [/home/abi/fetcher/tmp/wixcf-5.1.2.tar.gz]
+[2024-05-25 18:00:52] INFO root fetch - processPackages [wixcf]: Remove: archive file [/home/abi/fetcher/tmp/wixcf-5.2.0.tar.gz]
+[2024-05-25 18:00:52] INFO root fetch - main [MainThread]: End processing [wixcf]: success
+[2024-05-25 18:00:53] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.1.tar.gz]
+[2024-05-25 18:00:53] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure-core-test-0.3.2.tar.gz]
+[2024-05-25 18:00:53] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
+[2024-05-25 18:00:53] INFO root fetch - main [MainThread]: Store serial: [23376296]
