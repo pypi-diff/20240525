@@ -12862,3 +12862,9 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 12:28:43] INFO root fetch - processPackages [hddm-s]: Remove: archive file [/home/abi/fetcher/tmp/hddm_s-1.0.9.tar.gz]
 [2024-05-25 12:28:43] INFO root fetch - main [MainThread]: End processing [hddm-s]: success
 [2024-05-25 12:28:43] INFO root fetch - main [MainThread]: Store serial: [23374050]
+[2024-05-25 12:30:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374050]
+[2024-05-25 12:30:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-25 12:30:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dynamic-py-loader
+[2024-05-25 12:30:54] ERROR root fetch - processPackages [dynamic-py-loader]: Unable to get metadata: No such project 'dynamic-py-loader'
+[2024-05-25 12:30:54] INFO root fetch - main [MainThread]: End processing [dynamic-py-loader] error
+[2024-05-25 12:30:54] INFO root fetch - main [MainThread]: Store serial: [23374052]
