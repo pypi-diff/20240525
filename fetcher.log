@@ -8245,3 +8245,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 06:19:51] INFO root fetch - processPackages [functionize-notebook]: Remove: archive file [/home/abi/fetcher/tmp/functionize_notebook-0.0.5.tar.gz]
 [2024-05-25 06:19:51] INFO root fetch - main [MainThread]: End processing [functionize-notebook]: success
 [2024-05-25 06:19:51] INFO root fetch - main [MainThread]: Store serial: [23371853]
+[2024-05-25 06:21:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23371853]
+[2024-05-25 06:21:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 06:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nanika
+[2024-05-25 06:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promising-stocks
+[2024-05-25 06:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: niwatoko
+[2024-05-25 06:22:00] INFO root fetch - processPackages [promising-stocks]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 06:22:00] INFO root fetch - processPackages [niwatoko]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-25 06:22:00] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/c7/74/fb5129475b97470e4ab8c5f198c5a62d57bf131150039f8ae9f85365dfb3/promising_stocks-0.1.6.tar.gz
+[2024-05-25 06:22:00] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/df/db/76f5e8788d5d4f0fc9fe377a45642efd0d3f771afb552404d4c6e5992545/niwatoko-1.2.2.tar.gz
+[2024-05-25 06:22:00] WARNING root fetch - processPackages [nanika]: Skipping, unable to determine old version
+[2024-05-25 06:22:00] INFO root fetch - main [MainThread]: End processing [nanika] error
+[2024-05-25 06:22:00] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/25/16/a892099d6d500a429b3354d1fceaafe0e7338ef335c03dd700a16857e4c1/niwatoko-1.2.3.tar.gz
+[2024-05-25 06:22:00] INFO root fetch - processPackages [promising-stocks]: Downloading https://files.pythonhosted.org/packages/10/6e/6f2148c1ecba25c30690a0c6961ca8640b7520c54b3d5c60060910e3eaca/promising_stocks-0.1.7.tar.gz
+[2024-05-25 06:22:00] INFO root fetch - processPackages [niwatoko]: executing diffoscope
+[2024-05-25 06:22:00] INFO root fetch - processPackages [niwatoko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niwatoko-1.2.2.tar.gz tmp/niwatoko-1.2.3.tar.gz --markdown 20240525/n/niwatoko/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-25 06:22:00] INFO root fetch - processPackages [promising-stocks]: executing diffoscope
+[2024-05-25 06:22:00] INFO root fetch - processPackages [promising-stocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promising_stocks-0.1.6.tar.gz tmp/promising_stocks-0.1.7.tar.gz --markdown 20240525/p/promising-stocks/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 06:22:01] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.6.tar.gz]
+[2024-05-25 06:22:01] INFO root fetch - processPackages [promising-stocks]: Remove: archive file [/home/abi/fetcher/tmp/promising_stocks-0.1.7.tar.gz]
+[2024-05-25 06:22:01] INFO root fetch - main [MainThread]: End processing [promising-stocks]: success
+[2024-05-25 06:22:01] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.2.2.tar.gz]
+[2024-05-25 06:22:01] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.2.3.tar.gz]
+[2024-05-25 06:22:01] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
+[2024-05-25 06:22:01] INFO root fetch - main [MainThread]: Store serial: [23371862]
