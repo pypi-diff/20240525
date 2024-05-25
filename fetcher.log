@@ -16666,3 +16666,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:33:51] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
 [2024-05-25 15:33:51] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
 [2024-05-25 15:33:51] INFO root fetch - main [MainThread]: Store serial: [23375346]
+[2024-05-25 15:35:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375346]
+[2024-05-25 15:36:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 15:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpanalyze
+[2024-05-25 15:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sharedkernel
+[2024-05-25 15:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypi-shell
+[2024-05-25 15:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-postcodes
+[2024-05-25 15:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cloudstructs
+[2024-05-25 15:36:01] WARNING root fetch - processPackages [mpanalyze]: Skipping, unable to determine old version
+[2024-05-25 15:36:01] INFO root fetch - main [MainThread]: End processing [mpanalyze] error
+[2024-05-25 15:36:01] WARNING root fetch - processPackages [pypi-shell]: Skipping, unable to determine old version
+[2024-05-25 15:36:01] INFO root fetch - main [MainThread]: End processing [pypi-shell] error
+[2024-05-25 15:36:01] WARNING root fetch - processPackages [django-postcodes]: Skipping, unable to determine old version
+[2024-05-25 15:36:01] INFO root fetch - main [MainThread]: End processing [django-postcodes] error
+[2024-05-25 15:36:01] INFO root fetch - processPackages [sharedkernel]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-25 15:36:01] INFO root fetch - processPackages [cloudstructs]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-25 15:36:01] INFO root fetch - processPackages [sharedkernel]: Downloading https://files.pythonhosted.org/packages/8f/6d/a8408b25787fce7b5264cab0247e7d6e636be4dc8e79e829bcbbd1931a69/sharedkernel-1.1.0.tar.gz
+[2024-05-25 15:36:01] INFO root fetch - processPackages [cloudstructs]: Downloading https://files.pythonhosted.org/packages/f3/b3/a3fa8b978172278d2486d8fd27405c6445ead2c3e1d5c7067ce1872255eb/cloudstructs-0.9.6.tar.gz
+[2024-05-25 15:36:01] INFO root fetch - processPackages [sharedkernel]: Downloading https://files.pythonhosted.org/packages/3e/68/1bb8df9ac3c0bc0004a7bf1bd4bcb9f78048fbca9b13e3dbad3677c95acf/sharedkernel-1.1.1.tar.gz
+[2024-05-25 15:36:01] INFO root fetch - processPackages [sharedkernel]: executing diffoscope
+[2024-05-25 15:36:01] INFO root fetch - processPackages [sharedkernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharedkernel-1.1.0.tar.gz tmp/sharedkernel-1.1.1.tar.gz --markdown 20240525/s/sharedkernel/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-25 15:36:02] INFO root fetch - processPackages [cloudstructs]: Downloading https://files.pythonhosted.org/packages/53/6c/e840e66d0838772c81dea894c89248453a655c71a418ba615627e13a61ac/cloudstructs-0.9.7.tar.gz
+[2024-05-25 15:36:02] INFO root fetch - processPackages [sharedkernel]: Remove: archive file [/home/abi/fetcher/tmp/sharedkernel-1.1.0.tar.gz]
+[2024-05-25 15:36:02] INFO root fetch - processPackages [sharedkernel]: Remove: archive file [/home/abi/fetcher/tmp/sharedkernel-1.1.1.tar.gz]
+[2024-05-25 15:36:02] INFO root fetch - main [MainThread]: End processing [sharedkernel]: success
+[2024-05-25 15:36:02] INFO root fetch - processPackages [cloudstructs]: executing diffoscope
+[2024-05-25 15:36:02] INFO root fetch - processPackages [cloudstructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudstructs-0.9.6.tar.gz tmp/cloudstructs-0.9.7.tar.gz --markdown 20240525/c/cloudstructs/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-25 15:36:03] INFO root fetch - processPackages [cloudstructs]: Remove: archive file [/home/abi/fetcher/tmp/cloudstructs-0.9.6.tar.gz]
+[2024-05-25 15:36:03] INFO root fetch - processPackages [cloudstructs]: Remove: archive file [/home/abi/fetcher/tmp/cloudstructs-0.9.7.tar.gz]
+[2024-05-25 15:36:03] INFO root fetch - main [MainThread]: End processing [cloudstructs]: success
+[2024-05-25 15:36:03] INFO root fetch - main [MainThread]: Store serial: [23375364]
