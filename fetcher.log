@@ -10032,3 +10032,25 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: Remove: archive file [/home/abi/fetcher/tmp/ddir-3.1.2-py3-none-any.whl.zip]
 [2024-05-25 09:05:20] INFO root fetch - main [MainThread]: End processing [ddir]: success
 [2024-05-25 09:05:20] INFO root fetch - main [MainThread]: Store serial: [23372674]
+[2024-05-25 09:07:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372674]
+[2024-05-25 09:07:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 09:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tilearn-llm
+[2024-05-25 09:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynenv
+[2024-05-25 09:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tilearn-llm
+[2024-05-25 09:07:30] INFO root fetch - processPackages [pynenv]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-25 09:07:30] INFO root fetch - processPackages [tilearn-llm]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-25 09:07:30] INFO root fetch - processPackages [tilearn-llm]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-25 09:07:30] INFO root fetch - processPackages [pynenv]: Downloading https://files.pythonhosted.org/packages/dd/b2/10f2b5822f0ea6504062258535a5027d11f73758c56e41676224a1271d17/pynenv-0.2.5.tar.gz
+[2024-05-25 09:07:30] INFO root fetch - processPackages [tilearn-llm]: Downloading https://files.pythonhosted.org/packages/9f/79/c0d27365d415ab9303bfe54e6872813f6488d4611e6a63e92370cf294172/tilearn_llm-0.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 09:07:30] INFO root fetch - processPackages [tilearn-llm]: Downloading https://files.pythonhosted.org/packages/9f/79/c0d27365d415ab9303bfe54e6872813f6488d4611e6a63e92370cf294172/tilearn_llm-0.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-25 09:07:30] WARNING root fetch - processPackages [tilearn-llm]: Skipping package: exceeds size limit 15253241>=10485760
+[2024-05-25 09:07:30] INFO root fetch - main [MainThread]: End processing [tilearn-llm] error
+[2024-05-25 09:07:30] WARNING root fetch - processPackages [tilearn-llm]: Skipping package: exceeds size limit 15253241>=10485760
+[2024-05-25 09:07:30] INFO root fetch - main [MainThread]: End processing [tilearn-llm] error
+[2024-05-25 09:07:30] INFO root fetch - processPackages [pynenv]: Downloading https://files.pythonhosted.org/packages/ee/8d/f997027b6f16c70e0c4d8515e96b0fe15cf6a11a0326dddc7af7acaeb09c/pynenv-0.2.6.tar.gz
+[2024-05-25 09:07:30] INFO root fetch - processPackages [pynenv]: executing diffoscope
+[2024-05-25 09:07:30] INFO root fetch - processPackages [pynenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynenv-0.2.5.tar.gz tmp/pynenv-0.2.6.tar.gz --markdown 20240525/p/pynenv/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-25 09:07:31] INFO root fetch - processPackages [pynenv]: Remove: archive file [/home/abi/fetcher/tmp/pynenv-0.2.5.tar.gz]
+[2024-05-25 09:07:31] INFO root fetch - processPackages [pynenv]: Remove: archive file [/home/abi/fetcher/tmp/pynenv-0.2.6.tar.gz]
+[2024-05-25 09:07:31] INFO root fetch - main [MainThread]: End processing [pynenv]: success
+[2024-05-25 09:07:31] INFO root fetch - main [MainThread]: Store serial: [23372685]
