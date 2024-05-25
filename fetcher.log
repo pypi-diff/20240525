@@ -14403,3 +14403,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 14:51:09] INFO root fetch - processPackages [paper-admin]: Remove: archive file [/home/abi/fetcher/tmp/paper_admin-7.7.0.tar.gz]
 [2024-05-25 14:51:09] INFO root fetch - main [MainThread]: End processing [paper-admin]: success
 [2024-05-25 14:51:09] INFO root fetch - main [MainThread]: Store serial: [23374732]
+[2024-05-25 14:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374732]
+[2024-05-25 14:53:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 14:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: InternEvo
+[2024-05-25 14:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyQtUIkit
+[2024-05-25 14:53:18] INFO root fetch - processPackages [InternEvo]: New version: [0.5.2.dev20240525] Old Version: [0.5.2]
+[2024-05-25 14:53:18] INFO root fetch - processPackages [PyQtUIkit]: New version: [2.9.4] Old Version: [2.9.3]
+[2024-05-25 14:53:18] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/40/1a/d636b21100f68befaa91e3dd0d846e5abf0684098e10dbc217b3ffaa8390/PyQtUIkit-2.9.3.tar.gz
+[2024-05-25 14:53:18] INFO root fetch - processPackages [InternEvo]: Downloading https://files.pythonhosted.org/packages/88/03/f65ec2955c83f9c28f8f0ccdbd04a2552ea4a615401578a7c681b0d57f0d/InternEvo-0.5.2.tar.gz
+[2024-05-25 14:53:19] INFO root fetch - processPackages [InternEvo]: Downloading https://files.pythonhosted.org/packages/64/7c/8aed08941e4ffe83aa5b2b90cd2bb9b55e4f92ade2b99f76e24060f52566/InternEvo-0.5.2.dev20240525.tar.gz
+[2024-05-25 14:53:19] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/2e/47/9c7a845880448933cbadbbdb3aaa39eeee86fa65f22173af1bdc3833e09d/PyQtUIkit-2.9.4.tar.gz
+[2024-05-25 14:53:19] INFO root fetch - processPackages [InternEvo]: executing diffoscope
+[2024-05-25 14:53:19] INFO root fetch - processPackages [InternEvo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InternEvo-0.5.2.tar.gz tmp/InternEvo-0.5.2.dev20240525.tar.gz --markdown 20240525/I/InternEvo/0.5.2-0.5.2.dev20240525/README.md --exclude *.pyd
+[2024-05-25 14:53:19] INFO root fetch - processPackages [PyQtUIkit]: executing diffoscope
+[2024-05-25 14:53:19] INFO root fetch - processPackages [PyQtUIkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtUIkit-2.9.3.tar.gz tmp/PyQtUIkit-2.9.4.tar.gz --markdown 20240525/P/PyQtUIkit/2.9.3-2.9.4/README.md --exclude *.pyd
+[2024-05-25 14:53:20] INFO root fetch - processPackages [InternEvo]: Remove: archive file [/home/abi/fetcher/tmp/InternEvo-0.5.2.tar.gz]
+[2024-05-25 14:53:20] INFO root fetch - processPackages [InternEvo]: Remove: archive file [/home/abi/fetcher/tmp/InternEvo-0.5.2.dev20240525.tar.gz]
+[2024-05-25 14:53:20] INFO root fetch - main [MainThread]: End processing [InternEvo]: success
+[2024-05-25 14:53:20] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.9.3.tar.gz]
+[2024-05-25 14:53:20] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.9.4.tar.gz]
+[2024-05-25 14:53:20] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
+[2024-05-25 14:53:20] INFO root fetch - main [MainThread]: Store serial: [23374738]
