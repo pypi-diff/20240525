@@ -16898,3 +16898,42 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 15:53:27] INFO root fetch - processPackages [sforecast]: Remove: archive file [/home/abi/fetcher/tmp/sforecast-0.5.8.tar.gz]
 [2024-05-25 15:53:27] INFO root fetch - main [MainThread]: End processing [sforecast]: success
 [2024-05-25 15:53:27] INFO root fetch - main [MainThread]: Store serial: [23375512]
+[2024-05-25 15:55:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23375512]
+[2024-05-25 15:55:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 15:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensordict-nightly
+[2024-05-25 15:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vialin
+[2024-05-25 15:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biobricks
+[2024-05-25 15:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moveread-dfy
+[2024-05-25 15:55:36] INFO root fetch - processPackages [vialin]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-25 15:55:36] INFO root fetch - processPackages [moveread-dfy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-25 15:55:36] INFO root fetch - processPackages [biobricks]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-25 15:55:36] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-25 15:55:36] INFO root fetch - processPackages [vialin]: Downloading https://files.pythonhosted.org/packages/71/12/333f199fb136380ee9632715209825f35f66243a4f2f6706ddfbc2f17da2/vialin-0.0.0.tar.gz
+[2024-05-25 15:55:37] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/82/ef/165443b58d2cd7fd4626dc9cef486b87c23c0b36343de1eee84052e2cd4d/moveread_dfy-0.1.6.tar.gz
+[2024-05-25 15:55:37] INFO root fetch - processPackages [biobricks]: Downloading https://files.pythonhosted.org/packages/7f/9e/1979b252ee1f7e486dc153e70ed8d861e825ad1372e0315ace772860cdb5/biobricks-0.3.6.tar.gz
+[2024-05-25 15:55:37] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/92/36/819c077c6f13e604fee257ce897f68e5860a53e54214b83dce4b4878dff6/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-25 15:55:37] INFO root fetch - processPackages [vialin]: Downloading https://files.pythonhosted.org/packages/e0/19/dfa55abab0156668f4ed89f2812acc6740f675d59d14de281c39323fa38a/vialin-0.0.1.tar.gz
+[2024-05-25 15:55:37] INFO root fetch - processPackages [vialin]: executing diffoscope
+[2024-05-25 15:55:37] INFO root fetch - processPackages [vialin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vialin-0.0.0.tar.gz tmp/vialin-0.0.1.tar.gz --markdown 20240525/v/vialin/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-25 15:55:37] INFO root fetch - processPackages [moveread-dfy]: Downloading https://files.pythonhosted.org/packages/77/65/c68b5ff76f51fc8381508ec417c5fda6c7d3f7b1db08f2aee3dd2c276d63/moveread_dfy-0.1.7.tar.gz
+[2024-05-25 15:55:37] INFO root fetch - processPackages [biobricks]: Downloading https://files.pythonhosted.org/packages/d0/4a/89a495537efcb1fd6284dd1896d1986602f9742a9bfd7e8dc55ff3f4f3a7/biobricks-0.3.7.tar.gz
+[2024-05-25 15:55:37] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/b9/28/e296d4b168e87aedf19b6cf0d7e65b1474a3da33b8e5314b4a04050bda78/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-25 15:55:37] INFO root fetch - processPackages [moveread-dfy]: executing diffoscope
+[2024-05-25 15:55:37] INFO root fetch - processPackages [moveread-dfy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moveread_dfy-0.1.6.tar.gz tmp/moveread_dfy-0.1.7.tar.gz --markdown 20240525/m/moveread-dfy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-25 15:55:37] INFO root fetch - processPackages [biobricks]: executing diffoscope
+[2024-05-25 15:55:37] INFO root fetch - processPackages [biobricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobricks-0.3.6.tar.gz tmp/biobricks-0.3.7.tar.gz --markdown 20240525/b/biobricks/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-25 15:55:37] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-05-25 15:55:37] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240525/t/tensordict-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-25 15:55:37] INFO root fetch - processPackages [vialin]: Remove: archive file [/home/abi/fetcher/tmp/vialin-0.0.0.tar.gz]
+[2024-05-25 15:55:37] INFO root fetch - processPackages [vialin]: Remove: archive file [/home/abi/fetcher/tmp/vialin-0.0.1.tar.gz]
+[2024-05-25 15:55:37] INFO root fetch - main [MainThread]: End processing [vialin]: success
+[2024-05-25 15:55:38] INFO root fetch - processPackages [biobricks]: Remove: archive file [/home/abi/fetcher/tmp/biobricks-0.3.6.tar.gz]
+[2024-05-25 15:55:38] INFO root fetch - processPackages [biobricks]: Remove: archive file [/home/abi/fetcher/tmp/biobricks-0.3.7.tar.gz]
+[2024-05-25 15:55:38] INFO root fetch - main [MainThread]: End processing [biobricks]: success
+[2024-05-25 15:55:38] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.6.tar.gz]
+[2024-05-25 15:55:38] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.7.tar.gz]
+[2024-05-25 15:55:38] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
+[2024-05-25 15:55:38] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 15:55:38] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 15:55:38] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-05-25 15:55:38] INFO root fetch - main [MainThread]: Store serial: [23375527]
