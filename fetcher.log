@@ -21937,3 +21937,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 21:50:45] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc9.tar.gz]
 [2024-05-25 21:50:45] INFO root fetch - main [MainThread]: End processing [req-compile]: success
 [2024-05-25 21:50:45] INFO root fetch - main [MainThread]: Store serial: [23377581]
+[2024-05-25 21:52:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377581]
+[2024-05-25 21:52:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 21:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: palinuro-lib
+[2024-05-25 21:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: micropython-uncrustify
+[2024-05-25 21:52:54] INFO root fetch - processPackages [palinuro-lib]: New version: [0.4] Old Version: [0.3]
+[2024-05-25 21:52:54] INFO root fetch - processPackages [palinuro-lib]: Downloading https://files.pythonhosted.org/packages/28/a1/d5f374df51cc590ab959edea01caf29bf43bcb7eb204fcb0de89d4d8e2c3/palinuro_lib-0.3.tar.gz
+[2024-05-25 21:52:54] WARNING root fetch - processPackages [micropython-uncrustify]: Skipping, unable to determine old version
+[2024-05-25 21:52:54] INFO root fetch - main [MainThread]: End processing [micropython-uncrustify] error
+[2024-05-25 21:52:54] INFO root fetch - processPackages [palinuro-lib]: Downloading https://files.pythonhosted.org/packages/e3/6c/d36b3d3051fcc6e64cf3e88fe725038b6b2c9ad77c3ba669dd10bbdd3792/palinuro_lib-0.4.tar.gz
+[2024-05-25 21:52:54] INFO root fetch - processPackages [palinuro-lib]: executing diffoscope
+[2024-05-25 21:52:54] INFO root fetch - processPackages [palinuro-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palinuro_lib-0.3.tar.gz tmp/palinuro_lib-0.4.tar.gz --markdown 20240525/p/palinuro-lib/0.3-0.4/README.md --exclude *.pyd
+[2024-05-25 21:52:55] INFO root fetch - processPackages [palinuro-lib]: Remove: archive file [/home/abi/fetcher/tmp/palinuro_lib-0.3.tar.gz]
+[2024-05-25 21:52:55] INFO root fetch - processPackages [palinuro-lib]: Remove: archive file [/home/abi/fetcher/tmp/palinuro_lib-0.4.tar.gz]
+[2024-05-25 21:52:55] INFO root fetch - main [MainThread]: End processing [palinuro-lib]: success
+[2024-05-25 21:52:55] INFO root fetch - main [MainThread]: Store serial: [23377593]
