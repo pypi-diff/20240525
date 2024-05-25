@@ -22968,3 +22968,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 23:08:03] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
 [2024-05-25 23:08:03] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-25 23:08:03] INFO root fetch - main [MainThread]: Store serial: [23377995]
+[2024-05-25 23:10:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377995]
+[2024-05-25 23:10:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 23:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bitstring
+[2024-05-25 23:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lyriks
+[2024-05-25 23:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MobileInventoryCLI
+[2024-05-25 23:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: picodi
+[2024-05-25 23:10:13] INFO root fetch - processPackages [lyriks]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-25 23:10:13] INFO root fetch - processPackages [bitstring]: New version: [4.2.2] Old Version: [4.2.1]
+[2024-05-25 23:10:13] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 23:10:13] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/f6/75/31b71b6c352bf4e1e1f2cff7ea0e9cf2a6fb644e0deaacf56d080be04db8/lyriks-0.2.0.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [picodi]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-05-25 23:10:13] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/eb/57/699428f6ab4c0863f8555d80ffceb3e7b385622cefdcebe5264121349986/bitstring-4.2.1.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/71/11/ee888c97870633183fa8343540720078077426131dd3be1aea7c81401ae0/picodi-0.7.1.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [lyriks]: Downloading https://files.pythonhosted.org/packages/02/07/8547d7241f73bff39d48303072efaeddf8684497a430672e7c53463d43f3/lyriks-0.2.1.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [lyriks]: executing diffoscope
+[2024-05-25 23:10:13] INFO root fetch - processPackages [lyriks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyriks-0.2.0.tar.gz tmp/lyriks-0.2.1.tar.gz --markdown 20240525/l/lyriks/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-25 23:10:13] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/2d/1f/f0ba279ed3291133921ccace1f8500031a23a129870b8220f1cc509186a4/bitstring-4.2.2.tar.gz
+[2024-05-25 23:10:13] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 23:10:13] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 23:10:13] INFO root fetch - processPackages [bitstring]: executing diffoscope
+[2024-05-25 23:10:13] INFO root fetch - processPackages [bitstring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitstring-4.2.1.tar.gz tmp/bitstring-4.2.2.tar.gz --markdown 20240525/b/bitstring/4.2.1-4.2.2/README.md --exclude *.pyd
+[2024-05-25 23:10:13] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/57/13/1efcb2ce0a4d6b5cbe6d4031dff4f688120648f0d162a170f6b1127ee1c1/picodi-0.8.0.tar.gz
+[2024-05-25 23:10:14] INFO root fetch - processPackages [picodi]: executing diffoscope
+[2024-05-25 23:10:14] INFO root fetch - processPackages [picodi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picodi-0.7.1.tar.gz tmp/picodi-0.8.0.tar.gz --markdown 20240525/p/picodi/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-05-25 23:10:14] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.0.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - processPackages [lyriks]: Remove: archive file [/home/abi/fetcher/tmp/lyriks-0.2.1.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - main [MainThread]: End processing [lyriks]: success
+[2024-05-25 23:10:14] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 23:10:14] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.7.1.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.8.0.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - main [MainThread]: End processing [picodi]: success
+[2024-05-25 23:10:14] INFO root fetch - processPackages [bitstring]: Remove: archive file [/home/abi/fetcher/tmp/bitstring-4.2.1.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - processPackages [bitstring]: Remove: archive file [/home/abi/fetcher/tmp/bitstring-4.2.2.tar.gz]
+[2024-05-25 23:10:14] INFO root fetch - main [MainThread]: End processing [bitstring]: success
+[2024-05-25 23:10:14] INFO root fetch - main [MainThread]: Store serial: [23378007]
