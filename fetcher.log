@@ -6766,3 +6766,96 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 03:29:44] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
 [2024-05-25 03:29:44] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
 [2024-05-25 03:29:44] INFO root fetch - main [MainThread]: Store serial: [23370962]
+[2024-05-25 03:31:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23370962]
+[2024-05-25 03:31:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: large-image-source-multi
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: large-image-source-nd2
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: large-image-source-ometiff
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: large-image-source-openjpeg
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kamangir
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: large-image-source-openslide
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dash-spread-grid
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: large-image-source-pil
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: large-image-source-rasterio
+[2024-05-25 03:31:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: large-image-source-test
+[2024-05-25 03:31:53] INFO root fetch - processPackages [kamangir]: New version: [3.52.1] Old Version: [3.48.1]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-nd2]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-openjpeg]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-ometiff]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-rasterio]: New version: [1.28.3.dev8] Old Version: [1.28.3.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-multi]: New version: [1.28.3.dev8] Old Version: [1.28.3.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-test]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-openslide]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-pil]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev6]
+[2024-05-25 03:31:53] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-ometiff]: Downloading https://files.pythonhosted.org/packages/e8/92/40431cff52dd08697018589d4cd716496dc3b1a45d50f232d8d37f735798/large-image-source-ometiff-1.9.1.dev6.tar.gz
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-nd2]: Downloading https://files.pythonhosted.org/packages/1a/29/7390d858dfa6f7980312cb40b7706fbad943f78bf477bf6315522dafc015/large-image-source-nd2-1.9.1.dev6.tar.gz
+[2024-05-25 03:31:53] INFO root fetch - processPackages [large-image-source-rasterio]: Downloading https://files.pythonhosted.org/packages/59/fd/85010827dcfb31a43360ecb5fc659be3439f2f1fe9ccdb0febc47aacbb5d/large-image-source-rasterio-1.28.3.dev6.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/0e/61/0fcfbce8f1238318c436cd0ff4cbdef8d7ba4ac6fd49df850074e6e21077/kamangir-3.48.1.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-multi]: Downloading https://files.pythonhosted.org/packages/0d/67/24a92af5ddf9c8d4c03a7849bfb0b5f136142bbce81fbc2ea51b6f872458/large-image-source-multi-1.28.3.dev6.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-test]: Downloading https://files.pythonhosted.org/packages/8d/5f/0655a339ab1bb6dda15d0c4e174a5c2f0eae690a497018f912f490f67c26/large-image-source-test-1.9.1.dev6.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openslide]: Downloading https://files.pythonhosted.org/packages/73/2c/cb5bcd12f494516af0965d8399bae2e5b62d6c0afc01da7b16b2ebef69c2/large-image-source-openslide-1.9.1.dev6.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-pil]: Downloading https://files.pythonhosted.org/packages/62/43/ee7dff22ed2010638ae04420c847d0eeeffd3ec95c15aef5dd78c0f9de79/large-image-source-pil-1.9.1.dev6.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openjpeg]: Downloading https://files.pythonhosted.org/packages/95/ea/1df84324de3d3648afee1380dfe201cc2df04f407dc2811e7244e4f911d8/large-image-source-openjpeg-1.9.1.dev6.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-nd2]: Downloading https://files.pythonhosted.org/packages/e2/73/86ec6d93de63690b5e2a8a2f6fc98fce9a12e4da38b4cfc37f1188c0240c/large-image-source-nd2-1.9.1.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-ometiff]: Downloading https://files.pythonhosted.org/packages/8f/73/a25300dd64f045a5c3bad6c454d98e1d7dc0728d40536c8ec22fe913f92b/large-image-source-ometiff-1.9.1.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-rasterio]: Downloading https://files.pythonhosted.org/packages/11/db/a0b7850a7c17cf0845c21d1c6f3c451736d5a8e89d13f852162254724f68/large-image-source-rasterio-1.28.3.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-test]: Downloading https://files.pythonhosted.org/packages/6c/52/b863313751b2cf1efc96557c639944027ef1db00dedd386ad79707764cfe/large-image-source-test-1.9.1.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [kamangir]: Downloading https://files.pythonhosted.org/packages/bb/a1/43115d7d2b0c37d10cbfa010fe8b796702e1e1b575eeed5d29f2335ef8f5/kamangir-3.52.1.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-multi]: Downloading https://files.pythonhosted.org/packages/16/f2/4ce8ee507b5f2d0cca50488156966aa9c142dcb7c21913a5d9d0e2b74176/large-image-source-multi-1.28.3.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openslide]: Downloading https://files.pythonhosted.org/packages/f0/7e/d45a7c8f1888ff585bf418622f627fb048aaa7ed8d8e2b8d7e97a3c27f8e/large-image-source-openslide-1.9.1.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-pil]: Downloading https://files.pythonhosted.org/packages/51/73/2b201201e4bd4d42037d602dc35d468eba8131dce691debda3e43e3817f7/large-image-source-pil-1.9.1.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openjpeg]: Downloading https://files.pythonhosted.org/packages/b7/c9/95c7e2154104780b160e9968dd9863f2de88d77a5986bc280d05e4811ebd/large-image-source-openjpeg-1.9.1.dev8.tar.gz
+[2024-05-25 03:31:54] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240525/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-nd2]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-nd2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-nd2-1.9.1.dev6.tar.gz tmp/large-image-source-nd2-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image-source-nd2/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-ometiff]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-ometiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-ometiff-1.9.1.dev6.tar.gz tmp/large-image-source-ometiff-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image-source-ometiff/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-rasterio]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-rasterio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-rasterio-1.28.3.dev6.tar.gz tmp/large-image-source-rasterio-1.28.3.dev8.tar.gz --markdown 20240525/l/large-image-source-rasterio/1.28.3.dev6-1.28.3.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-test]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-test-1.9.1.dev6.tar.gz tmp/large-image-source-test-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image-source-test/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [kamangir]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [kamangir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kamangir-3.48.1.tar.gz tmp/kamangir-3.52.1.tar.gz --markdown 20240525/k/kamangir/3.48.1-3.52.1/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openslide]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openslide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-openslide-1.9.1.dev6.tar.gz tmp/large-image-source-openslide-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image-source-openslide/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openjpeg]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-multi]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-pil]: executing diffoscope
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-openjpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-openjpeg-1.9.1.dev6.tar.gz tmp/large-image-source-openjpeg-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image-source-openjpeg/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-multi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-multi-1.28.3.dev6.tar.gz tmp/large-image-source-multi-1.28.3.dev8.tar.gz --markdown 20240525/l/large-image-source-multi/1.28.3.dev6-1.28.3.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:54] INFO root fetch - processPackages [large-image-source-pil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/large-image-source-pil-1.9.1.dev6.tar.gz tmp/large-image-source-pil-1.9.1.dev8.tar.gz --markdown 20240525/l/large-image-source-pil/1.9.1.dev6-1.9.1.dev8/README.md --exclude *.pyd
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-ometiff]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-ometiff-1.9.1.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-ometiff]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-ometiff-1.9.1.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-ometiff]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-rasterio]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-rasterio-1.28.3.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-rasterio]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-rasterio-1.28.3.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-rasterio]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.48.1.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.52.1.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [kamangir]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-openslide]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-openslide-1.9.1.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-openslide]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-openslide-1.9.1.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-openslide]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-pil]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-pil-1.9.1.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-pil]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-pil-1.9.1.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-pil]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-multi]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-multi-1.28.3.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-multi]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-multi-1.28.3.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-multi]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-nd2]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-nd2-1.9.1.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-nd2]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-nd2-1.9.1.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-nd2]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-openjpeg]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-openjpeg-1.9.1.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-openjpeg]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-openjpeg-1.9.1.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-openjpeg]: success
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-test]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-test-1.9.1.dev6.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - processPackages [large-image-source-test]: Remove: archive file [/home/abi/fetcher/tmp/large-image-source-test-1.9.1.dev8.tar.gz]
+[2024-05-25 03:31:55] INFO root fetch - main [MainThread]: End processing [large-image-source-test]: success
+[2024-05-25 03:31:56] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-25 03:31:56] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-25 03:31:56] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-25 03:31:56] INFO root fetch - main [MainThread]: Store serial: [23371052]
