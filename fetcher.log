@@ -9748,3 +9748,14 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 08:28:32] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-05-25 08:28:32] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-05-25 08:28:32] INFO root fetch - main [MainThread]: Store serial: [23372545]
+[2024-05-25 08:30:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372545]
+[2024-05-25 08:30:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 08:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metav
+[2024-05-25 08:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rxd
+[2024-05-25 08:30:41] INFO root fetch - processPackages [metav]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-25 08:30:41] WARNING root fetch - processPackages [rxd]: Skipping, unable to determine old version
+[2024-05-25 08:30:41] INFO root fetch - main [MainThread]: End processing [rxd] error
+[2024-05-25 08:30:41] INFO root fetch - processPackages [metav]: Downloading https://files.pythonhosted.org/packages/86/86/50d022127f59e82013f9283a63845a5725b5c07ff6030ab7990e893a3210/metav-1.0.2.tar.gz
+[2024-05-25 08:30:41] ERROR root fetch - processPackages [metav]: Unable to fetch info: No such project/version 'metav' 1.0.3
+[2024-05-25 08:30:41] INFO root fetch - main [MainThread]: End processing [metav] error
+[2024-05-25 08:30:41] INFO root fetch - main [MainThread]: Store serial: [23372551]
