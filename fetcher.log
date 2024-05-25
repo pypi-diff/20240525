@@ -18571,3 +18571,24 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:36:46] INFO root fetch - processPackages [AzizKitten]: Remove: archive file [/home/abi/fetcher/tmp/azizkitten-11.1.4.tar.gz]
 [2024-05-25 17:36:46] INFO root fetch - main [MainThread]: End processing [AzizKitten]: success
 [2024-05-25 17:36:46] INFO root fetch - main [MainThread]: Store serial: [23376139]
+[2024-05-25 17:38:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376139]
+[2024-05-25 17:38:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ab-test-advanced-toolkit
+[2024-05-25 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyresidfp
+[2024-05-25 17:38:57] INFO root fetch - processPackages [ab-test-advanced-toolkit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 17:38:57] INFO root fetch - processPackages [pyresidfp]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-25 17:38:57] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Downloading https://files.pythonhosted.org/packages/d8/42/ab004b4ccd6255554b61e818ddbed6d3124273a7fb9d64d2805cb852d1bf/ab_test_advanced_toolkit-0.0.8.tar.gz
+[2024-05-25 17:38:57] INFO root fetch - processPackages [pyresidfp]: Downloading https://files.pythonhosted.org/packages/27/20/13a50737d09d7238861598e32245dc291b2e657d4040c14b5e55c2de0f5c/pyresidfp-0.8.2.tar.gz
+[2024-05-25 17:38:57] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Downloading https://files.pythonhosted.org/packages/83/21/c8975e01e119d8bd94b24149ac6babca6fd2e5707a3bf6814a00df981294/ab_test_advanced_toolkit-0.0.9.tar.gz
+[2024-05-25 17:38:57] INFO root fetch - processPackages [ab-test-advanced-toolkit]: executing diffoscope
+[2024-05-25 17:38:57] INFO root fetch - processPackages [ab-test-advanced-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ab_test_advanced_toolkit-0.0.8.tar.gz tmp/ab_test_advanced_toolkit-0.0.9.tar.gz --markdown 20240525/a/ab-test-advanced-toolkit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 17:38:57] INFO root fetch - processPackages [pyresidfp]: Downloading https://files.pythonhosted.org/packages/c9/2e/bf5521e646bdf5757232886cad0bc5c35e2387b4f0b0142e40750eb117a5/pyresidfp-0.9.0.tar.gz
+[2024-05-25 17:38:57] INFO root fetch - processPackages [pyresidfp]: executing diffoscope
+[2024-05-25 17:38:57] INFO root fetch - processPackages [pyresidfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyresidfp-0.8.2.tar.gz tmp/pyresidfp-0.9.0.tar.gz --markdown 20240525/p/pyresidfp/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-25 17:38:58] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.8.tar.gz]
+[2024-05-25 17:38:58] INFO root fetch - processPackages [ab-test-advanced-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/ab_test_advanced_toolkit-0.0.9.tar.gz]
+[2024-05-25 17:38:58] INFO root fetch - main [MainThread]: End processing [ab-test-advanced-toolkit]: success
+[2024-05-25 17:38:58] INFO root fetch - processPackages [pyresidfp]: Remove: archive file [/home/abi/fetcher/tmp/pyresidfp-0.8.2.tar.gz]
+[2024-05-25 17:38:58] INFO root fetch - processPackages [pyresidfp]: Remove: archive file [/home/abi/fetcher/tmp/pyresidfp-0.9.0.tar.gz]
+[2024-05-25 17:38:58] INFO root fetch - main [MainThread]: End processing [pyresidfp]: success
+[2024-05-25 17:38:58] INFO root fetch - main [MainThread]: Store serial: [23376170]
