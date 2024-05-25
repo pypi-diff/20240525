@@ -19445,3 +19445,20 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 18:35:51] INFO root fetch - processPackages [moveread-dfy]: Remove: archive file [/home/abi/fetcher/tmp/moveread_dfy-0.1.9.tar.gz]
 [2024-05-25 18:35:51] INFO root fetch - main [MainThread]: End processing [moveread-dfy]: success
 [2024-05-25 18:35:51] INFO root fetch - main [MainThread]: Store serial: [23376505]
+[2024-05-25 18:37:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376505]
+[2024-05-25 18:38:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 18:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rnavirhost
+[2024-05-25 18:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pproject
+[2024-05-25 18:38:01] INFO root fetch - processPackages [pproject]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-25 18:38:01] INFO root fetch - processPackages [rnavirhost]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-25 18:38:01] INFO root fetch - processPackages [pproject]: Downloading https://files.pythonhosted.org/packages/10/ec/0fbfa3fa69454305d77458c207f819d7686652683695970d6ba5ece88421/pproject-0.0.1.tar.gz
+[2024-05-25 18:38:01] INFO root fetch - processPackages [rnavirhost]: Downloading https://files.pythonhosted.org/packages/86/13/fe4384bec92aa8a1fcd9e292f9b8a828be0c714a30130c18119385f882f7/rnavirhost-1.0.4.tar.gz
+[2024-05-25 18:38:01] WARNING root fetch - processPackages [rnavirhost]: Skipping package: exceeds size limit 63285047>=10485760
+[2024-05-25 18:38:01] INFO root fetch - main [MainThread]: End processing [rnavirhost] error
+[2024-05-25 18:38:01] INFO root fetch - processPackages [pproject]: Downloading https://files.pythonhosted.org/packages/b0/3b/e4062a0552d5a6fe020a879d91785ef5f8bed353b67e569823f1d1ae0c07/pproject-0.0.2-py3-none-any.whl
+[2024-05-25 18:38:01] INFO root fetch - processPackages [pproject]: executing diffoscope
+[2024-05-25 18:38:01] INFO root fetch - processPackages [pproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pproject-0.0.1.tar.gz tmp/pproject-0.0.2-py3-none-any.whl.zip --markdown 20240525/p/pproject/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-25 18:38:02] INFO root fetch - processPackages [pproject]: Remove: archive file [/home/abi/fetcher/tmp/pproject-0.0.1.tar.gz]
+[2024-05-25 18:38:02] INFO root fetch - processPackages [pproject]: Remove: archive file [/home/abi/fetcher/tmp/pproject-0.0.2-py3-none-any.whl.zip]
+[2024-05-25 18:38:02] INFO root fetch - main [MainThread]: End processing [pproject]: success
+[2024-05-25 18:38:02] INFO root fetch - main [MainThread]: Store serial: [23376511]
