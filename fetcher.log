@@ -2511,3 +2511,36 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 02:40:11] WARNING root fetch - processPackages [unofficial-shipengine]: Skipping, unable to determine old version
 [2024-05-25 02:40:11] INFO root fetch - main [MainThread]: End processing [unofficial-shipengine] error
 [2024-05-25 02:40:11] INFO root fetch - main [MainThread]: Store serial: [23369668]
+[2024-05-25 02:42:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23369668]
+[2024-05-25 02:42:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 02:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyonepassword
+[2024-05-25 02:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pazok
+[2024-05-25 02:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyE2
+[2024-05-25 02:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensorpc
+[2024-05-25 02:42:19] WARNING root fetch - processPackages [pazok]: Skipping, unable to determine old version
+[2024-05-25 02:42:19] INFO root fetch - main [MainThread]: End processing [pazok] error
+[2024-05-25 02:42:19] INFO root fetch - processPackages [PyE2]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-05-25 02:42:19] INFO root fetch - processPackages [PyE2]: Downloading https://files.pythonhosted.org/packages/4e/d5/21cb56c807a3ae9663f9ad6868de2aa64ab8a0f4109e1a66bd9b8ff9097a/pye2-0.8.6.tar.gz
+[2024-05-25 02:42:19] INFO root fetch - processPackages [tensorpc]: New version: [0.11.1] Old Version: [0.11.0]
+[2024-05-25 02:42:19] INFO root fetch - processPackages [pyonepassword]: New version: [5.0.0] Old Version: [4.3.0]
+[2024-05-25 02:42:20] INFO root fetch - processPackages [pyonepassword]: Downloading https://files.pythonhosted.org/packages/bd/2d/7b4067f8f9d1cf1b557f3bbf5f522d47ce75af60e281403a86598590844d/pyonepassword-4.3.0.tar.gz
+[2024-05-25 02:42:20] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/c6/98/c76f368285904d8ad82165f44f6fba3d2d0a4b75b0c73e084b7f54199132/tensorpc-0.11.0.tar.gz
+[2024-05-25 02:42:20] INFO root fetch - processPackages [PyE2]: Downloading https://files.pythonhosted.org/packages/f7/12/a352b75546cc14129fc342aae5661e57f9609130c9f202b4b4ee03989a01/pye2-0.8.7.tar.gz
+[2024-05-25 02:42:20] INFO root fetch - processPackages [pyonepassword]: Downloading https://files.pythonhosted.org/packages/33/ab/1c1a12813972d950e2c7b7d08a8e051bd8309fcfccea6104b7443660df6a/pyonepassword-5.0.0.tar.gz
+[2024-05-25 02:42:20] INFO root fetch - processPackages [PyE2]: executing diffoscope
+[2024-05-25 02:42:20] INFO root fetch - processPackages [PyE2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pye2-0.8.6.tar.gz tmp/pye2-0.8.7.tar.gz --markdown 20240525/P/PyE2/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-05-25 02:42:20] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/fd/4e/3529f8bcd29f740e5363750cbf28b02741429d340b9debda03c39ef29eea/tensorpc-0.11.1.tar.gz
+[2024-05-25 02:42:20] INFO root fetch - processPackages [pyonepassword]: executing diffoscope
+[2024-05-25 02:42:20] INFO root fetch - processPackages [pyonepassword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyonepassword-4.3.0.tar.gz tmp/pyonepassword-5.0.0.tar.gz --markdown 20240525/p/pyonepassword/4.3.0-5.0.0/README.md --exclude *.pyd
+[2024-05-25 02:42:20] INFO root fetch - processPackages [tensorpc]: executing diffoscope
+[2024-05-25 02:42:20] INFO root fetch - processPackages [tensorpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorpc-0.11.0.tar.gz tmp/tensorpc-0.11.1.tar.gz --markdown 20240525/t/tensorpc/0.11.0-0.11.1/README.md --exclude *.pyd
+[2024-05-25 02:42:21] INFO root fetch - processPackages [PyE2]: Remove: archive file [/home/abi/fetcher/tmp/pye2-0.8.6.tar.gz]
+[2024-05-25 02:42:21] INFO root fetch - processPackages [PyE2]: Remove: archive file [/home/abi/fetcher/tmp/pye2-0.8.7.tar.gz]
+[2024-05-25 02:42:21] INFO root fetch - main [MainThread]: End processing [PyE2]: success
+[2024-05-25 02:42:21] INFO root fetch - processPackages [pyonepassword]: Remove: archive file [/home/abi/fetcher/tmp/pyonepassword-4.3.0.tar.gz]
+[2024-05-25 02:42:21] INFO root fetch - processPackages [pyonepassword]: Remove: archive file [/home/abi/fetcher/tmp/pyonepassword-5.0.0.tar.gz]
+[2024-05-25 02:42:21] INFO root fetch - main [MainThread]: End processing [pyonepassword]: success
+[2024-05-25 02:42:21] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.11.0.tar.gz]
+[2024-05-25 02:42:21] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.11.1.tar.gz]
+[2024-05-25 02:42:21] INFO root fetch - main [MainThread]: End processing [tensorpc]: success
+[2024-05-25 02:42:21] INFO root fetch - main [MainThread]: Store serial: [23369682]
