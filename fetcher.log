@@ -11695,3 +11695,33 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 11:01:10] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-05-25 11:01:10] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-05-25 11:01:10] INFO root fetch - main [MainThread]: Store serial: [23373474]
+[2024-05-25 11:03:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23373474]
+[2024-05-25 11:03:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 11:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usso
+[2024-05-25 11:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: burrow-cli
+[2024-05-25 11:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freegenius
+[2024-05-25 11:03:19] INFO root fetch - processPackages [burrow-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 11:03:19] INFO root fetch - processPackages [usso]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-25 11:03:19] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-25 11:03:19] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/62/e4/cd602494d9afe6efac77f078fec06e33adc63778704cdafa0ae3952f3ab8/burrow_cli-0.1.8.tar.gz
+[2024-05-25 11:03:19] INFO root fetch - processPackages [usso]: Downloading https://files.pythonhosted.org/packages/32/6b/affc9cd10fca733f24a31679e715e276c8462d5b2199f3d9a35123e9e7d2/usso-0.8.0.tar.gz
+[2024-05-25 11:03:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-25 11:03:19] INFO root fetch - processPackages [usso]: Downloading https://files.pythonhosted.org/packages/70/21/51c7a85adbbfdaf9730493f23f5076201187ebeed4cf1923b633e2a66a14/usso-0.9.0.tar.gz
+[2024-05-25 11:03:19] INFO root fetch - processPackages [usso]: executing diffoscope
+[2024-05-25 11:03:19] INFO root fetch - processPackages [usso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usso-0.8.0.tar.gz tmp/usso-0.9.0.tar.gz --markdown 20240525/u/usso/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-25 11:03:19] INFO root fetch - processPackages [burrow-cli]: Downloading https://files.pythonhosted.org/packages/d8/51/46c6ef5265b5b7d2638d52696c7ad050ed55cbbefafb110db7abea7a2f7a/burrow_cli-0.1.9.tar.gz
+[2024-05-25 11:03:19] INFO root fetch - processPackages [burrow-cli]: executing diffoscope
+[2024-05-25 11:03:19] INFO root fetch - processPackages [burrow-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burrow_cli-0.1.8.tar.gz tmp/burrow_cli-0.1.9.tar.gz --markdown 20240525/b/burrow-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 11:03:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-25 11:03:20] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-25 11:03:20] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240525/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-25 11:03:20] INFO root fetch - processPackages [usso]: Remove: archive file [/home/abi/fetcher/tmp/usso-0.8.0.tar.gz]
+[2024-05-25 11:03:20] INFO root fetch - processPackages [usso]: Remove: archive file [/home/abi/fetcher/tmp/usso-0.9.0.tar.gz]
+[2024-05-25 11:03:20] INFO root fetch - main [MainThread]: End processing [usso]: success
+[2024-05-25 11:03:20] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.8.tar.gz]
+[2024-05-25 11:03:20] INFO root fetch - processPackages [burrow-cli]: Remove: archive file [/home/abi/fetcher/tmp/burrow_cli-0.1.9.tar.gz]
+[2024-05-25 11:03:20] INFO root fetch - main [MainThread]: End processing [burrow-cli]: success
+[2024-05-25 11:03:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-25 11:03:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-25 11:03:21] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-25 11:03:21] INFO root fetch - main [MainThread]: Store serial: [23373483]
