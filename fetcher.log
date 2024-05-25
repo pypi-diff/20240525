@@ -10281,3 +10281,27 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:27:03] INFO root fetch - processPackages [odoo13-addon-module-analysis]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_module_analysis-13.0.1.1.3.dev2-py3-none-any.whl.zip]
 [2024-05-25 09:27:03] INFO root fetch - main [MainThread]: End processing [odoo13-addon-module-analysis]: success
 [2024-05-25 09:27:03] INFO root fetch - main [MainThread]: Store serial: [23372775]
+[2024-05-25 09:29:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372775]
+[2024-05-25 09:29:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 09:29:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-module-analysis
+[2024-05-25 09:29:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ChatTTS
+[2024-05-25 09:29:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-module-analysis
+[2024-05-25 09:29:11] WARNING root fetch - processPackages [ChatTTS]: Skipping, unable to determine old version
+[2024-05-25 09:29:11] INFO root fetch - main [MainThread]: End processing [ChatTTS] error
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo-addon-module-analysis]: New version: [16.0.1.0.1.9] Old Version: [16.0.1.0.1.8]
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo14-addon-module-analysis]: New version: [14.0.1.0.2.dev5] Old Version: [14.0.1.0.2.dev4]
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo14-addon-module-analysis]: Downloading https://files.pythonhosted.org/packages/47/80/4bf417838b29f4c624be5307031c640e58e0d72392b16f2d37912f147eb1/odoo14_addon_module_analysis-14.0.1.0.2.dev4-py3-none-any.whl
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo-addon-module-analysis]: Downloading https://files.pythonhosted.org/packages/d3/c2/9ed2509ff7bc58504ed42b59c8fdc8d18babc3876bbf4c6f03b8570f27a3/odoo_addon_module_analysis-16.0.1.0.1.8-py3-none-any.whl
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo-addon-module-analysis]: Downloading https://files.pythonhosted.org/packages/49/25/cae54065c440791bc34a53b7019f1e55f3072702e3cda4ee3b07afd8ebfc/odoo_addon_module_analysis-16.0.1.0.1.9-py3-none-any.whl
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo14-addon-module-analysis]: Downloading https://files.pythonhosted.org/packages/c4/64/7bca5d51fd116d0225fe34f436a5dd60d1ac0e7849394b43caa14fb6ff15/odoo14_addon_module_analysis-14.0.1.0.2.dev5-py3-none-any.whl
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo-addon-module-analysis]: executing diffoscope
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo-addon-module-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_module_analysis-16.0.1.0.1.8-py3-none-any.whl.zip tmp/odoo_addon_module_analysis-16.0.1.0.1.9-py3-none-any.whl.zip --markdown 20240525/o/odoo-addon-module-analysis/16.0.1.0.1.8-16.0.1.0.1.9/README.md --exclude *.pyd
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo14-addon-module-analysis]: executing diffoscope
+[2024-05-25 09:29:12] INFO root fetch - processPackages [odoo14-addon-module-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_module_analysis-14.0.1.0.2.dev4-py3-none-any.whl.zip tmp/odoo14_addon_module_analysis-14.0.1.0.2.dev5-py3-none-any.whl.zip --markdown 20240525/o/odoo14-addon-module-analysis/14.0.1.0.2.dev4-14.0.1.0.2.dev5/README.md --exclude *.pyd
+[2024-05-25 09:29:13] INFO root fetch - processPackages [odoo-addon-module-analysis]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_module_analysis-16.0.1.0.1.8-py3-none-any.whl.zip]
+[2024-05-25 09:29:13] INFO root fetch - processPackages [odoo-addon-module-analysis]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_module_analysis-16.0.1.0.1.9-py3-none-any.whl.zip]
+[2024-05-25 09:29:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-module-analysis]: success
+[2024-05-25 09:29:13] INFO root fetch - processPackages [odoo14-addon-module-analysis]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_module_analysis-14.0.1.0.2.dev4-py3-none-any.whl.zip]
+[2024-05-25 09:29:13] INFO root fetch - processPackages [odoo14-addon-module-analysis]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_module_analysis-14.0.1.0.2.dev5-py3-none-any.whl.zip]
+[2024-05-25 09:29:13] INFO root fetch - main [MainThread]: End processing [odoo14-addon-module-analysis]: success
+[2024-05-25 09:29:13] INFO root fetch - main [MainThread]: Store serial: [23372782]
