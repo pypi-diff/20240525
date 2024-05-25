@@ -21027,3 +21027,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 20:43:19] INFO root fetch - processPackages [schedule]: Remove: archive file [/home/abi/fetcher/tmp/schedule-1.2.2-py3-none-any.whl.zip]
 [2024-05-25 20:43:19] INFO root fetch - main [MainThread]: End processing [schedule]: success
 [2024-05-25 20:43:19] INFO root fetch - main [MainThread]: Store serial: [23377159]
+[2024-05-25 20:45:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377159]
+[2024-05-25 20:45:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-25 20:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baseball
+[2024-05-25 20:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bencode-rs
+[2024-05-25 20:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xRedUtils
+[2024-05-25 20:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alphafold3-pytorch
+[2024-05-25 20:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfancytranslator
+[2024-05-25 20:45:28] WARNING root fetch - processPackages [xRedUtils]: Skipping, unable to determine old version
+[2024-05-25 20:45:28] INFO root fetch - main [MainThread]: End processing [xRedUtils] error
+[2024-05-25 20:45:28] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2024-05-25 20:45:28] INFO root fetch - processPackages [pyfancytranslator]: New version: [1.1.0] Old Version: [1.0.6]
+[2024-05-25 20:45:28] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 20:45:28] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2024-05-25 20:45:28] WARNING root fetch - processPackages [bencode-rs]: Skipping, unable to determine old version
+[2024-05-25 20:45:28] INFO root fetch - main [MainThread]: End processing [bencode-rs] error
+[2024-05-25 20:45:28] INFO root fetch - processPackages [pyfancytranslator]: Downloading https://files.pythonhosted.org/packages/b1/ac/8e7aa5fe8d45b3c137d16cd63ee74e7328234f4c2a03d1a2b6df29572f93/pyfancytranslator-1.0.6.tar.gz
+[2024-05-25 20:45:28] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/e2/142b19b529aba5b96d18902a5f1c99660ab625fa64921af86b97ac678b40/alphafold3_pytorch-0.0.8.tar.gz
+[2024-05-25 20:45:28] INFO root fetch - processPackages [pyfancytranslator]: Downloading https://files.pythonhosted.org/packages/c8/38/37b3bcddd0773cf6c6b06b798a82f036e40f9cc5b8d4529716c6329a3c94/pyfancytranslator-1.1.0.tar.gz
+[2024-05-25 20:45:28] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2024-05-25 20:45:28] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/96/47/97f198b647d508e9e64e32b67c24069f872d2ff29ca39b5d1ef44a81f68b/alphafold3_pytorch-0.0.9.tar.gz
+[2024-05-25 20:45:28] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2024-05-25 20:45:28] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20240525/b/baseball/9.8-9.9/README.md --exclude *.pyd
+[2024-05-25 20:45:28] INFO root fetch - processPackages [pyfancytranslator]: executing diffoscope
+[2024-05-25 20:45:28] INFO root fetch - processPackages [pyfancytranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfancytranslator-1.0.6.tar.gz tmp/pyfancytranslator-1.1.0.tar.gz --markdown 20240525/p/pyfancytranslator/1.0.6-1.1.0/README.md --exclude *.pyd
+[2024-05-25 20:45:29] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-05-25 20:45:29] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.0.8.tar.gz tmp/alphafold3_pytorch-0.0.9.tar.gz --markdown 20240525/a/alphafold3-pytorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 20:45:29] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.8.tar.gz]
+[2024-05-25 20:45:29] INFO root fetch - processPackages [baseball]: Remove: archive file [/home/abi/fetcher/tmp/baseball-9.9.tar.gz]
+[2024-05-25 20:45:29] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2024-05-25 20:45:29] INFO root fetch - processPackages [pyfancytranslator]: Remove: archive file [/home/abi/fetcher/tmp/pyfancytranslator-1.0.6.tar.gz]
+[2024-05-25 20:45:29] INFO root fetch - processPackages [pyfancytranslator]: Remove: archive file [/home/abi/fetcher/tmp/pyfancytranslator-1.1.0.tar.gz]
+[2024-05-25 20:45:29] INFO root fetch - main [MainThread]: End processing [pyfancytranslator]: success
+[2024-05-25 20:45:29] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.8.tar.gz]
+[2024-05-25 20:45:29] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.0.9.tar.gz]
+[2024-05-25 20:45:29] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-05-25 20:45:29] INFO root fetch - main [MainThread]: Store serial: [23377175]
