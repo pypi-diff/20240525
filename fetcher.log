@@ -18702,3 +18702,33 @@ AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
 [2024-05-25 17:54:08] INFO root fetch - processPackages [cubao-headers]: Remove: archive file [/home/abi/fetcher/tmp/cubao_headers-0.0.3.tar.gz]
 [2024-05-25 17:54:08] INFO root fetch - main [MainThread]: End processing [cubao-headers]: success
 [2024-05-25 17:54:08] INFO root fetch - main [MainThread]: Store serial: [23376230]
+[2024-05-25 17:56:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23376230]
+[2024-05-25 17:56:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-25 17:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pure-cv
+[2024-05-25 17:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccxt
+[2024-05-25 17:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TINTOlib
+[2024-05-25 17:56:17] INFO root fetch - processPackages [TINTOlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-25 17:56:17] INFO root fetch - processPackages [pure-cv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-25 17:56:17] INFO root fetch - processPackages [ccxt]: New version: [4.3.9] Old Version: [4.3.8]
+[2024-05-25 17:56:17] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/a1/d6/b74bd499875e6643f4a97d72098432e12c0b957837f5163b1ebc266d6b71/pure_cv-0.1.8.tar.gz
+[2024-05-25 17:56:17] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/88/66/5ff78a7354d96c5cb6040119eab2be915cdf9e9570f5bf18b1c2dba81c64/tintolib-0.0.8.tar.gz
+[2024-05-25 17:56:17] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/1c/a1/3a1a3f9672e43a2620d2ab195c398183c3594751d3a306bd022e7ceccbb7/ccxt-4.3.8.tar.gz
+[2024-05-25 17:56:18] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/05/1f/42a69fcafdcdddda1f19b187fdc4d1895eebefd62a93b5be218beccaac06/pure_cv-0.1.9.tar.gz
+[2024-05-25 17:56:18] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-05-25 17:56:18] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_cv-0.1.8.tar.gz tmp/pure_cv-0.1.9.tar.gz --markdown 20240525/p/pure-cv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-25 17:56:18] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/f0/34/c7c38c5c0bec0a22183d7eed68184bef3efe315a8570460824012267cbac/ccxt-4.3.9.tar.gz
+[2024-05-25 17:56:18] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/c4/27/a91d5cfaf102a55a2a1c9d05c61fa9b4e7a94ef94ddb79a837edafdb6324/tintolib-0.0.9.tar.gz
+[2024-05-25 17:56:18] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.8.tar.gz]
+[2024-05-25 17:56:18] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.9.tar.gz]
+[2024-05-25 17:56:18] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-05-25 17:56:18] INFO root fetch - processPackages [TINTOlib]: executing diffoscope
+[2024-05-25 17:56:18] INFO root fetch - processPackages [TINTOlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tintolib-0.0.8.tar.gz tmp/tintolib-0.0.9.tar.gz --markdown 20240525/T/TINTOlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-25 17:56:18] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-05-25 17:56:18] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.8.tar.gz tmp/ccxt-4.3.9.tar.gz --markdown 20240525/c/ccxt/4.3.8-4.3.9/README.md --exclude *.pyd
+[2024-05-25 17:56:23] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.8.tar.gz]
+[2024-05-25 17:56:23] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
+[2024-05-25 17:56:23] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-05-25 17:56:27] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.8.tar.gz]
+[2024-05-25 17:56:27] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
+[2024-05-25 17:56:27] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
+[2024-05-25 17:56:27] INFO root fetch - main [MainThread]: Store serial: [23376239]
