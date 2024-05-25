@@ -15334,3 +15334,323 @@ AssertionError: tmp/bot-managers-0.0.971.tar.gz does not exist
 [2024-05-25 15:04:25] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
 [2024-05-25 15:04:25] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
 [2024-05-25 15:04:25] INFO root fetch - main [MainThread]: Store serial: [23374896]
+[2024-05-25 15:06:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374896]
+[2024-05-25 15:06:34] INFO root fetch - main [MainThread]: Found 31 changed packages
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: peaqevcore
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bot-managers
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: New version: [0.0.98] Old Version: [0.0.972]
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:34] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/96/af/08167f92b0f4c7b7667d4d28d9fa2b6678e56f68e483cbf84d0f58da131b/bot-managers-0.0.972.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/4b/29/5b445f677b554efacfbc1a568ff7a4379b11ae939f662fff3e27bf28d058/bot-managers-0.0.98.tar.gz
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240525/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:35] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.972.tar.gz tmp/bot-managers-0.0.98.tar.gz --markdown 20240525/b/bot-managers/0.0.972-0.0.98/README.md --exclude *.pyd
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.972.tar.gz]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.98.tar.gz]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:36] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-25 15:06:36] INFO root fetch - processPackages [peaqevcore]: Start processing: bot-managers
+[2024-05-25 15:06:36] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-25 15:06:36] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:37] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.998.tar.gz]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.999.tar.gz]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.998.tar.gz]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:38] ERROR root fetch - processPackages [bot-managers]: Diffoscope failed: time="2024-05-25T15:06:37+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
+
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers] error
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: bot-managers
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/c4/85/6f5e0cf93362ca1ce5be3ca61913a5301b2a47a71866bca1f55dd3bb00f0/bot-managers-0.0.999.tar.gz
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.998.tar.gz]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Start processing: vialin
+[2024-05-25 15:06:38] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: New version: [0.0.999] Old Version: [0.0.998]
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:38] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.999.tar.gz]
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Start processing: pygameextra
+[2024-05-25 15:06:39] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:39] WARNING root fetch - processPackages [vialin]: Skipping, unable to determine old version
+[2024-05-25 15:06:39] INFO root fetch - processPackages [vialin]: Start processing: fucktop
+[2024-05-25 15:06:39] INFO root fetch - main [MainThread]: End processing [vialin] error
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Downloading https://files.pythonhosted.org/packages/1d/4d/3455f763b5ea5092b026580da971c078b27860567e2a0ab4de40e84d179c/bot-managers-0.0.998.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - processPackages [fucktop]: New version: [2.0.0] Old Version: [1.0.0]
+[2024-05-25 15:06:39] INFO root fetch - processPackages [pygameextra]: New version: [2.0.0rc1] Old Version: [2.0.0b9]
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: executing diffoscope
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot-managers-0.0.998.tar.gz tmp/bot-managers-0.0.999.tar.gz --markdown 20240525/b/bot-managers/0.0.998-0.0.999/README.md --exclude *.pyd
+[2024-05-25 15:06:39] INFO root fetch - processPackages [fucktop]: Downloading https://files.pythonhosted.org/packages/38/81/9cb1a944af527cfbd084a70e7031b1624143b60c1b4725a9ba1e49ccae0d/fucktop-1.0.0.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - processPackages [pygameextra]: Downloading https://files.pythonhosted.org/packages/15/cb/24a5d9be0275983b579bf12118e5e33ef9078ad6bbf622a6335e2f1afdb4/pygameextra-2.0.0b9.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - processPackages [fucktop]: Downloading https://files.pythonhosted.org/packages/a4/af/cc3e6b2c29ed9c1581d79573efd7a7f35642af6d3dad05ee8f85ac8c1440/fucktop-2.0.0.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.998.tar.gz]
+[2024-05-25 15:06:39] INFO root fetch - processPackages [bot-managers]: Remove: archive file [/home/abi/fetcher/tmp/bot-managers-0.0.999.tar.gz]
+[2024-05-25 15:06:39] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:39] INFO root fetch - processPackages [pygameextra]: Downloading https://files.pythonhosted.org/packages/2b/a7/fac6c4d7d9b52934a787a48365b843d0cd5354fdf2af0bc5e0c5d843bb55/pygameextra-2.0.0rc1.tar.gz
+[2024-05-25 15:06:39] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:39] INFO root fetch - processPackages [fucktop]: executing diffoscope
+[2024-05-25 15:06:39] INFO root fetch - processPackages [fucktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fucktop-1.0.0.tar.gz tmp/fucktop-2.0.0.tar.gz --markdown 20240525/f/fucktop/1.0.0-2.0.0/README.md --exclude *.pyd
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:40] INFO root fetch - processPackages [pygameextra]: executing diffoscope
+[2024-05-25 15:06:40] INFO root fetch - processPackages [pygameextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygameextra-2.0.0b9.tar.gz tmp/pygameextra-2.0.0rc1.tar.gz --markdown 20240525/p/pygameextra/2.0.0b9-2.0.0rc1/README.md --exclude *.pyd
+[2024-05-25 15:06:40] ERROR root fetch - processPackages [bot-managers]: Diffoscope failed: time="2024-05-25T15:06:39+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
+
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [bot-managers] error
+[2024-05-25 15:06:40] ERROR root fetch - processPackages [bot-managers]: Diffoscope failed: time="2024-05-25T15:06:39+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
+
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [bot-managers] error
+[2024-05-25 15:06:40] ERROR root fetch - processPackages [bot-managers]: Diffoscope failed: time="2024-05-25T15:06:39+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
+
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [bot-managers] error
+[2024-05-25 15:06:40] ERROR root fetch - processPackages [bot-managers]: Diffoscope failed: time="2024-05-25T15:06:39+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/bot-managers-0.0.998.tar.gz does not exist
+
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [bot-managers] error
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [bot-managers]: success
+[2024-05-25 15:06:40] INFO root fetch - processPackages [fucktop]: Remove: archive file [/home/abi/fetcher/tmp/fucktop-1.0.0.tar.gz]
+[2024-05-25 15:06:40] INFO root fetch - processPackages [fucktop]: Remove: archive file [/home/abi/fetcher/tmp/fucktop-2.0.0.tar.gz]
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [fucktop]: success
+[2024-05-25 15:06:40] INFO root fetch - processPackages [pygameextra]: Remove: archive file [/home/abi/fetcher/tmp/pygameextra-2.0.0b9.tar.gz]
+[2024-05-25 15:06:40] INFO root fetch - processPackages [pygameextra]: Remove: archive file [/home/abi/fetcher/tmp/pygameextra-2.0.0rc1.tar.gz]
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: End processing [pygameextra]: success
+[2024-05-25 15:06:40] INFO root fetch - main [MainThread]: Store serial: [23374963]
