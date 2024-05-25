@@ -10011,3 +10011,24 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 09:03:11] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-05-25 09:03:11] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-05-25 09:03:11] INFO root fetch - main [MainThread]: Store serial: [23372669]
+[2024-05-25 09:05:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23372669]
+[2024-05-25 09:05:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-25 09:05:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: online-scheduler
+[2024-05-25 09:05:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ddir
+[2024-05-25 09:05:19] INFO root fetch - processPackages [online-scheduler]: New version: [0.7] Old Version: [0.6]
+[2024-05-25 09:05:19] INFO root fetch - processPackages [ddir]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-05-25 09:05:19] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/bb/38/b52522dad258c404b7db66000bad41fb48e439ff664893d14817e7d0e9a9/online_scheduler-0.6.tar.gz
+[2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: Downloading https://files.pythonhosted.org/packages/14/b5/b60711f2114a389c90cc0f6599aa8c46637b189bf08ffba7aed9c9ea48df/ddir-3.1.1-py3-none-any.whl
+[2024-05-25 09:05:20] INFO root fetch - processPackages [online-scheduler]: Downloading https://files.pythonhosted.org/packages/1e/52/f261ff53d89f0bbf66ccb9a570a912e2526fe5b0e75007ad80facb7ea26a/online_scheduler-0.7.tar.gz
+[2024-05-25 09:05:20] INFO root fetch - processPackages [online-scheduler]: executing diffoscope
+[2024-05-25 09:05:20] INFO root fetch - processPackages [online-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/online_scheduler-0.6.tar.gz tmp/online_scheduler-0.7.tar.gz --markdown 20240525/o/online-scheduler/0.6-0.7/README.md --exclude *.pyd
+[2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: Downloading https://files.pythonhosted.org/packages/52/08/6d8cacd4442353fc5f9ee729f87138501bd7f03eb3a0a18a99e194fe1c56/ddir-3.1.2-py3-none-any.whl
+[2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: executing diffoscope
+[2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddir-3.1.1-py3-none-any.whl.zip tmp/ddir-3.1.2-py3-none-any.whl.zip --markdown 20240525/d/ddir/3.1.1-3.1.2/README.md --exclude *.pyd
+[2024-05-25 09:05:20] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.6.tar.gz]
+[2024-05-25 09:05:20] INFO root fetch - processPackages [online-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/online_scheduler-0.7.tar.gz]
+[2024-05-25 09:05:20] INFO root fetch - main [MainThread]: End processing [online-scheduler]: success
+[2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: Remove: archive file [/home/abi/fetcher/tmp/ddir-3.1.1-py3-none-any.whl.zip]
+[2024-05-25 09:05:20] INFO root fetch - processPackages [ddir]: Remove: archive file [/home/abi/fetcher/tmp/ddir-3.1.2-py3-none-any.whl.zip]
+[2024-05-25 09:05:20] INFO root fetch - main [MainThread]: End processing [ddir]: success
+[2024-05-25 09:05:20] INFO root fetch - main [MainThread]: Store serial: [23372674]
