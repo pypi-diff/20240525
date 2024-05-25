@@ -22513,3 +22513,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-05-25 22:35:20] INFO root fetch - processPackages [kamangir]: Remove: archive file [/home/abi/fetcher/tmp/kamangir-3.64.1.tar.gz]
 [2024-05-25 22:35:20] INFO root fetch - main [MainThread]: End processing [kamangir]: success
 [2024-05-25 22:35:20] INFO root fetch - main [MainThread]: Store serial: [23377840]
+[2024-05-25 22:37:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23377840]
+[2024-05-25 22:37:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ascii-colors
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swc-utils
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tubesml
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ascii-colors]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-25 22:37:29] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ascii-colors]: Downloading https://files.pythonhosted.org/packages/ce/b5/257d3092179fba13aafcd23a23eb33d5c9835480063ebe28a7fe84cfb2de/ascii_colors-0.2.2.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [tubesml]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-25 22:37:29] INFO root fetch - processPackages [swc-utils]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-25 22:37:29] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/a2/ec/625919123f8e1b364e15d90e61217113543ae64ce22346789611dde60aa2/swc_utils-0.1.2.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [tubesml]: Downloading https://files.pythonhosted.org/packages/b3/5f/f5837b192eef525c8152377beec0b99d802b6078de1159ea64152e5aad55/tubesml-0.7.1.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ascii-colors]: Downloading https://files.pythonhosted.org/packages/2b/94/1a289d876af1adf8560ac52f97cf54f11038ff08e9982088399cc3526607/ascii_colors-0.3.0.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ascii-colors]: executing diffoscope
+[2024-05-25 22:37:29] INFO root fetch - processPackages [ascii-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascii_colors-0.2.2.tar.gz tmp/ascii_colors-0.3.0.tar.gz --markdown 20240525/a/ascii-colors/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-25 22:37:29] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-25 22:37:29] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240525/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-25 22:37:29] INFO root fetch - processPackages [swc-utils]: Downloading https://files.pythonhosted.org/packages/a3/35/ba66828b16859f38bdf367d42d7c4143159ad18780dc1e1b43912d3448b0/swc_utils-0.2.0.tar.gz
+[2024-05-25 22:37:29] INFO root fetch - processPackages [tubesml]: Downloading https://files.pythonhosted.org/packages/74/55/b7b107ddffa9747d9e38f3381bd7ba293d47d018d1186e24103fd1fd2f81/tubesml-0.7.2.tar.gz
+[2024-05-25 22:37:30] INFO root fetch - processPackages [swc-utils]: executing diffoscope
+[2024-05-25 22:37:30] INFO root fetch - processPackages [swc-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swc_utils-0.1.2.tar.gz tmp/swc_utils-0.2.0.tar.gz --markdown 20240525/s/swc-utils/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-25 22:37:30] INFO root fetch - processPackages [tubesml]: executing diffoscope
+[2024-05-25 22:37:30] INFO root fetch - processPackages [tubesml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tubesml-0.7.1.tar.gz tmp/tubesml-0.7.2.tar.gz --markdown 20240525/t/tubesml/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-25 22:37:30] INFO root fetch - processPackages [ascii-colors]: Remove: archive file [/home/abi/fetcher/tmp/ascii_colors-0.2.2.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - processPackages [ascii-colors]: Remove: archive file [/home/abi/fetcher/tmp/ascii_colors-0.3.0.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - main [MainThread]: End processing [ascii-colors]: success
+[2024-05-25 22:37:30] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-25 22:37:30] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.1.2.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - processPackages [swc-utils]: Remove: archive file [/home/abi/fetcher/tmp/swc_utils-0.2.0.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - main [MainThread]: End processing [swc-utils]: success
+[2024-05-25 22:37:30] INFO root fetch - processPackages [tubesml]: Remove: archive file [/home/abi/fetcher/tmp/tubesml-0.7.1.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - processPackages [tubesml]: Remove: archive file [/home/abi/fetcher/tmp/tubesml-0.7.2.tar.gz]
+[2024-05-25 22:37:30] INFO root fetch - main [MainThread]: End processing [tubesml]: success
+[2024-05-25 22:37:30] INFO root fetch - main [MainThread]: Store serial: [23377851]
