@@ -13503,3 +13503,48 @@ AssertionError: tmp/luxos-0.0.8b29.tar.gz does not exist
 [2024-05-25 13:23:09] INFO root fetch - processPackages [sopa]: Remove: archive file [/home/abi/fetcher/tmp/sopa-1.0.9.tar.gz]
 [2024-05-25 13:23:09] INFO root fetch - main [MainThread]: End processing [sopa]: success
 [2024-05-25 13:23:09] INFO root fetch - main [MainThread]: Store serial: [23374321]
+[2024-05-25 13:25:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23374321]
+[2024-05-25 13:25:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calculate-savings
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxies-tg-wrapper
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctube
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchrl-nightly
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rox-vectors
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: classification-tension-for-image
+[2024-05-25 13:25:18] WARNING root fetch - processPackages [classification-tension-for-image]: Skipping, unable to determine old version
+[2024-05-25 13:25:18] INFO root fetch - main [MainThread]: End processing [classification-tension-for-image] error
+[2024-05-25 13:25:18] INFO root fetch - processPackages [calculate-savings]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-25 13:25:18] INFO root fetch - processPackages [proxies-tg-wrapper]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-25 13:25:18] WARNING root fetch - processPackages [rox-vectors]: Skipping, unable to determine old version
+[2024-05-25 13:25:18] INFO root fetch - main [MainThread]: End processing [rox-vectors] error
+[2024-05-25 13:25:18] INFO root fetch - processPackages [ctube]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-25 13:25:18] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-25 13:25:18] INFO root fetch - processPackages [calculate-savings]: Downloading https://files.pythonhosted.org/packages/a6/4c/aa37d0c6d77e314555ae46f1d82885549d738f382b93037a1fc290ac18e1/calculate_savings-0.1.0-py3-none-any.whl
+[2024-05-25 13:25:18] INFO root fetch - processPackages [proxies-tg-wrapper]: Downloading https://files.pythonhosted.org/packages/73/c2/890c90952de41ba8f1672600fb126d8925c97128230e69d002af39527897/proxies-tg-wrapper-1.0.1.tar.gz
+[2024-05-25 13:25:19] INFO root fetch - processPackages [ctube]: Downloading https://files.pythonhosted.org/packages/ee/25/7559d959d87194859ec3f89742f3598c753fd81f24f9af1bb422ea32edfd/ctube-0.0.2.tar.gz
+[2024-05-25 13:25:19] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/a5/6d/9461214af24f1d24305421c7f45896fa740108e193fceb8f3145648e07e2/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-25 13:25:19] INFO root fetch - processPackages [calculate-savings]: Downloading https://files.pythonhosted.org/packages/c1/77/c3b892d09386acfb81a7e48347301a011703531611bfe147af3eee45f3ad/calculate_savings-0.1.1.tar.gz
+[2024-05-25 13:25:19] INFO root fetch - processPackages [proxies-tg-wrapper]: Downloading https://files.pythonhosted.org/packages/21/c9/478b78f4cc9b83fb60d670eba3ee4cbc3a60944f95e4a0f5223ab47bb8b2/proxies-tg-wrapper-1.0.2.tar.gz
+[2024-05-25 13:25:19] INFO root fetch - processPackages [ctube]: Downloading https://files.pythonhosted.org/packages/ec/1e/5ecaa53dfc71a22b3c55fc7b1461e08970009966591200cb32aecf67ea6c/ctube-0.0.3.tar.gz
+[2024-05-25 13:25:19] INFO root fetch - processPackages [proxies-tg-wrapper]: executing diffoscope
+[2024-05-25 13:25:19] INFO root fetch - processPackages [proxies-tg-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxies-tg-wrapper-1.0.1.tar.gz tmp/proxies-tg-wrapper-1.0.2.tar.gz --markdown 20240525/p/proxies-tg-wrapper/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-25 13:25:19] INFO root fetch - processPackages [ctube]: executing diffoscope
+[2024-05-25 13:25:19] INFO root fetch - processPackages [ctube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctube-0.0.2.tar.gz tmp/ctube-0.0.3.tar.gz --markdown 20240525/c/ctube/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-25 13:25:19] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/e9/e4/1d21a71adb0d6367cd81a5f47617cabf90f99ac96a421dda991f6aeefff2/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-25 13:25:19] INFO root fetch - processPackages [calculate-savings]: executing diffoscope
+[2024-05-25 13:25:19] INFO root fetch - processPackages [calculate-savings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calculate_savings-0.1.0-py3-none-any.whl.zip tmp/calculate_savings-0.1.1.tar.gz --markdown 20240525/c/calculate-savings/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-25 13:25:19] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-25 13:25:19] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240525:/home/abi/fetcher/20240525:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240525/t/torchrl-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-25 13:25:20] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.2.tar.gz]
+[2024-05-25 13:25:20] INFO root fetch - processPackages [ctube]: Remove: archive file [/home/abi/fetcher/tmp/ctube-0.0.3.tar.gz]
+[2024-05-25 13:25:20] INFO root fetch - main [MainThread]: End processing [ctube]: success
+[2024-05-25 13:25:20] INFO root fetch - processPackages [proxies-tg-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/proxies-tg-wrapper-1.0.1.tar.gz]
+[2024-05-25 13:25:20] INFO root fetch - processPackages [proxies-tg-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/proxies-tg-wrapper-1.0.2.tar.gz]
+[2024-05-25 13:25:20] INFO root fetch - main [MainThread]: End processing [proxies-tg-wrapper]: success
+[2024-05-25 13:25:20] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 13:25:20] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-25 13:25:20] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-25 13:25:24] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.0-py3-none-any.whl.zip]
+[2024-05-25 13:25:24] INFO root fetch - processPackages [calculate-savings]: Remove: archive file [/home/abi/fetcher/tmp/calculate_savings-0.1.1.tar.gz]
+[2024-05-25 13:25:24] INFO root fetch - main [MainThread]: End processing [calculate-savings]: success
+[2024-05-25 13:25:24] INFO root fetch - main [MainThread]: Store serial: [23374343]
